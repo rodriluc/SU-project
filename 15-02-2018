@@ -1,3 +1,5 @@
+Navigating Files and Directories
+
 PS1="$"
 $man ls -> list all and search for something with /'text'
 back N - forward n -> got through search
@@ -12,6 +14,9 @@ $touch my_file.txt  -> generates new file called my_file.txt in home directory
 $rm draft.txt  -> removes files FOREVER not directories
   rm -r thesis (to get rid of directory have to remove file in it as well)
 $pwd -> shows you where you are
+
+Working with Files and Directories
+
 $cd something -> brings you to something directory
   $ cd Desktop/data-shell/data
     tell it to follow this string
