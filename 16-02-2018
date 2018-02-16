@@ -1,0 +1,114 @@
+GitHub Tutorial
+
+$ mkdir planets
+$ cd planets
+  create a directory for our work and then move into that directory
+$ git init
+  tell Git to make planets a repository—a place where Git can store versions of our files
+$ ls -a
+  to show everything, hidden directory
+$ git status
+  check set up correctly
+$ mkdir moons    # make a sub-directory planets/moons
+$ cd moons       # go into moons sub-directory
+$ rm -rf moons/.git
+    CAREFUL! remove the .git folder in the moons subdirectory 
+    this command in the wrong directory, will remove the entire git-history of a project
+    use pwd
+    
+Tracking Changes
+    
+$ nano mars.txt
+  create a file called mars.txt that contains some notes
+  nano (editor)
+$ ls
+$ cat mars.txt
+  displays line in mars.txt
+Untracked files:
+   (use "git add <file>..." to include in what will be committed)
+  -> means “untracked files” message means that there’s a file in the directory that Git isn’t keeping track of
+$ git add mars.txt
+  tell Git to track a file using git add
+Git now knows that it’s supposed to keep track of mars.txt, but it hasn’t recorded these changes as a commit yet. 
+  To get it to do that, we need to run one more command:
+  $ git commit -m "Start notes on Mars as a base" -> ALWAYS write a commit message
+  stores a copy permanently inside the special .git directory
+$ git log
+  project history
+$ git diff
+  shows us the differences between the current state of the file and the most recently saved version
+$ git diff --staged
+  shows us the difference between the last committed change and what’s in the staging area
+--color-words
+  highlights the changed words using colors
+When the output of git log is too long to fit in your screen, git uses a program to split it into pages of the size of your screen. 
+When this “pager” is called, you will notice that the last line in your screen is a :, instead of your usual prompt.
+    To get out of the pager, press q.
+    To move to the next page, press the space bar.
+    To search for some_word in all pages, type /some_word and navigate through matches pressing n
+$ git log -1
+  can limit the number of commits that Git lists by using -N, where N is the number of commits that you want to view
+$ git log --oneline --graph --all --decorate
+  reduce quantity oneline and etc.
+$ git add <directory-with-files>
+  if you create a directory in your Git repository and populate it with files, you can add all files in the directory at once 
+$ git add mars.txt venus.txt
+  can add multiple files to staging area at once
+
+Exploring History
+
+refer to the most recent commit of the working directory by using the identifier HEAD
+$ git diff HEAD~1 mars.txt
+  adding ~1 to refer to the commit one before HEAD
+use git show which shows us what changes we made at an older commit as well as the commit message, rather than the differences between a 
+  commit and our working directory that we see by using git diff
+  $ git show HEAD~2 mars.txt
+can also refer to commits using those long strings of digits and letters that git log displays.
+  also can jsut write a few characters
+$ git checkout HEAD mars.txt
+  git checkout checks out (i.e., restores) an old version of a file. In this case, we’re telling Git that we want to recover the version of the file recorded in HEAD, 
+  which is the last saved commit
+If we want to go back even further, we can use a commit identifier instead:
+  $ git checkout f22b25e mars.txt or $ git checkout HEAD~1 mars.txt
+CAREFUL: 
+  For example, if you forget mars.txt in that command, Git will tell you that “You are in ‘detached HEAD’ state.” In this state, you shouldn’t make any changes. 
+  You can fix this by reattaching your head using git checkout master
+git revert [wrong commit ID] will make a new commit that undoes Jennifer’s previous wrong commit. Therefore git revert is different than git checkout [commit ID] 
+  because checkout is for local changes not committed to the group repository
+$ git log --patch mars.txt
+   long list of output, and you should be able to see both commit messages and the difference between each commit
+ 
+Ignoring Things
+
+press q when done running through above log
+"touch" really means create, whatever you write after that is the name of the thing created
+To tell Git to ignore certain files, for example .dat files
+  $ nano .gitignore
+    *.dat
+    results/
+  $ cat .gitignore
+  ignore any file whose name ends in .dat and everything in the results directory
+  $ git add .gitignore
+  $ git commit -m "Add the ignore file"
+  $ git status
+$ git status --ignored
+  see status of ignored files
+**/results/plots/*
+  would make git ignore the results/plots directory in any root directory
+How would you ignore all .data files in your root directory except for final.data?
+  You would add the following two lines to your .gitignore:
+  *.data           # ignore all data files
+  !final.data      # except final.data
+  The exclamation point operator will include a previously excluded entry.
+results/data/position/gps/*.data 
+  will match every file in results/data/position/gps that ends with .data
+The order of rules:
+  *.data
+  !*.data
+  ! modifier will negate an entry from a previously defined ignore pattern. Because the !*.data entry negates all of the previous .data files in the .gitignore, 
+  none of them will be ignored, and all .data files will be tracked
+
+Remotes in GitHub
+
+
+  
