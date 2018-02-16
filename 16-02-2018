@@ -129,6 +129,10 @@ git pull copies changes from a remote repository to a local repository
 
 Collaborating
 
+To accept access to the Owner’s repo, the Collaborator needs to go to https://github.com/notifications. Once there she can accept access to the Owner’s repo.
+Next, the Collaborator needs to download a copy of the Owner’s repository to her machine. This is called “cloning a repo”. To clone the Owner’s repo into her Desktop folder, the Collaborator enters:
+  $ git clone https://github.com/vlad/planets.git ~/Desktop/vlad-planets
+  replace vlad with 
 
 
 
