@@ -110,5 +110,27 @@ The order of rules:
 
 Remotes in GitHub
 
+Our local repository still contains our earlier work on mars.txt, but the remote repository on GitHub doesn’t contain any files yet:
+   to connect the two repositories. We do this by making the GitHub repository a remote for the local repository. The home page of the repository on GitHub includes 
+   the string we need to identify it
+   Copy that URL from the browser, go into the local planets repository, and run this command:
+      $ git remote add origin https://github.com/vlad/planets.git  -> origin is your remote repository
+   Make sure to use the URL for your repository rather than Vlad’s: the only difference should be your username instead of vlad.
+   We can check that the command has worked by running git remote -v:
+      $ git remote -v
+Once the nickname origin is set up, this command will push the changes from our local repository to the repository on GitHub:
+    $ git push origin master
+We can pull changes from the remote repository to the local one as well:
+    $ git pull origin master
+When we push changes, we’re interacting with a remote repository to update it with the changes we’ve made locally (often this corresponds to sharing the changes we’ve made with others). 
+    Commit only updates your local repository.
+git push copies changes from a local repository to a remote repository
+git pull copies changes from a remote repository to a local repository
+
+Collaborating
+
+
+
+
 
   
