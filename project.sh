@@ -4,12 +4,21 @@ cd molecularproject
 
 echo -e "This is a template, follow the steps: " > readme.txt
 
-mkdir paper
-cd paper
+mkdir projects/membrane-beta_4state
+cd projects/membrane-beta_4state
 echo "Notes for individual project" > notes.txt
+touch ./scripts/ # directory for all the python/R/perl scripts
+touch ./bash/ # driver scripts that call all other scripts and execute pipelines
+touch ./bash/runall.sh # the main driver script
+touch ./bash/filter.sh # scripts that I use usually only once to filter input directories and create soft links
+touch ./input/ # input directories
+touch ./output/ # output directories
+touch ./logs # stdout and stderr of runall.sh scripts
+touch readme.txt # description of files and scripts in this project folder
+touch commands.txt # commands that I run in this directory
 cd ..
-mkdir general_scripts
 mkdir datasets
+mkdir general_scripts
 mkdir codes
 cd codes
 echo "#This is a sample code" > samplecode.py
