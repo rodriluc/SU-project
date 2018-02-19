@@ -1,9 +1,8 @@
-cd
 
-echo -e "This is a template, follow the steps: " > readme.txt
 
 mkdir projects/membrane-beta_4state
 cd projects/membrane-beta_4state
+echo -e "This is a template, follow the steps: " > readme.txt
 echo "Notes for individual project" > notes.txt
 touch ./scripts/ # directory for all the python/R/perl scripts
 touch ./bash/ # driver scripts that call all other scripts and execute pipelines
