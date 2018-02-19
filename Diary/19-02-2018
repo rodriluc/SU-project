@@ -1,0 +1,4 @@
+remove locally before
+$ git rm project.sh
+  then commit and push
+  removes from github, online
