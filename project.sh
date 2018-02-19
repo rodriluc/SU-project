@@ -1,6 +1,4 @@
 cd
-mkdir molecularproject
-cd molecularproject
 
 echo -e "This is a template, follow the steps: " > readme.txt
 
