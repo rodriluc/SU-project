@@ -6,3 +6,8 @@ Today's goal:
 I made 3 separate lists: ID, amino acid sequence, and topology. Then I assigned the ID as the key, 
 and zipped two different dictionaries with the amino acid sequence and topology as values. Then compared 
 the keys and if they matched then set a new dictionary with the 2 values.
+
+I need to make sure that when doing formatting the input for SVM, that teh sequences are teh same length since SVM requires it.
+  - format sliding window by adding 0s or X as padding
+  - input vector is 2D matrix (sample*features)
+  - input has to be 2D
