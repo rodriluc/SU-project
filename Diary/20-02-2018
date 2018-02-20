@@ -3,3 +3,6 @@ Today's goal:
         -dictionary (key=ID, [value=aa_seq,topology])
   2. Comprehend the steps that I will take in order to do the project
 
+I made 3 separate lists: ID, amino acid sequence, and topology. Then I assigned the ID as the key, 
+and zipped two different dictionaries with the amino acid sequence and topology as values. Then compared 
+the keys and if they matched then set a new dictionary with the 2 values.
