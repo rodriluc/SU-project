@@ -3,3 +3,4 @@ Today's goal:
         -one-hot encoding
         -binary input
 
+For machine learning algorithms, all input and output variables are required to be numeric. In order to convert my data to numerical data I will have to do interger encoding and tehn one-hot encoding. 
