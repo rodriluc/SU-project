@@ -1,0 +1,11 @@
+Today's goal:
+  1. Input vector for sklearn
+        -one-hot encoding
+        -binary input
+
+For machine learning algorithms, all input and output variables are required to be numeric. In order to convert my data to numerical data I will have to do interger encoding and then one-hot encoding. 
+
+- I need to check whether the input integer is odd and >= than 3, for window size. 
+- With a window size = input, break down the protein sequence with sliding window maybe overlap. 
+- Then map protein into assigned numerical values. 
+- Do the same for the features: alpha, beta, and coils. 
