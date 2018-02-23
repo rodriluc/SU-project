@@ -42,40 +42,85 @@ def parseBeta(infile):
 ###################################################################################
 # Convert into SVM input vector (numerical input) - Steps to follow
 ###################################################################################
- 
-"""
-- I need to check whether the input integer is odd and >= than 3, for window size. 
-- With a window size = input, break down the protein sequence with sliding window maybe overlap. 
-- Then map protein into assigned numerical values. 
-- Do the same for the features: alpha, beta, and coils. """
+def inputSVM(infile):
+
 
 #AA letters: A,C,D,E,F,G,H,I,K,L,M,N,P,Q,R,S,T,V,W,Y
 
-AA_seq={'A':'1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
-        'C':'0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
-        'D':'0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
-        'E':'0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
-        'F':'0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
-        'G':'0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
-        'H':'0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0',
-        'I':'0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0',
-        'K':'0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0',
-        'L':'0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0',
-        'M':'0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0',
-        'N':'0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0',
-        'P':'0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0',
-        'Q':'0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0',
-        'R':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0',
-        'S':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0',
-        'T':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0',
-        'V':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0',
-        'W':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0',
-        'Y':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1'}
+    AA_seq={'A':'1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
+            'C':'0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
+            'D':'0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
+            'E':'0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
+            'F':'0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
+            'G':'0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0',
+            'H':'0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0',
+            'I':'0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0',
+            'K':'0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0',
+            'L':'0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0',
+            'M':'0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0',
+            'N':'0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0',
+            'P':'0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0',
+            'Q':'0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0',
+            'R':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0',
+            'S':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0',
+            'T':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0',
+            'V':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0',
+            'W':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0',
+            'Y':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1',
+            'X':'0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0'} #extra residue for window
  
-def inputSVM(infile):
-    #AA letters: "A,C,D,E,F,G,H,I,K,L,M,N,P,Q,R,S,T,V,W,Y"
+    structure_ = {  'i':'0', #inner
+                    'P':'1',
+                    'L':'2',
+                    'o':'3'}#outer
+                    
+###################################################################################
+# Convert into SVM input vector: Sliding Window Input
+###################################################################################
     
-    mappedprotein = []
+    listID = []
+    listaa = []
+    listTop = []
+    AAlist = []
+    Toplist = []
+  
+    with open(infile) as pf:
+        #lines = pf.readlines()
+        lines = [line.strip() for line in pf]
+    listID = lines[0::3]
+    listaa = lines[1::3]
+    listTop = lines[2::3]
+    
+    window = int(input("Window size (must be odd number): "))
+    
+###################################################################################
+# Convert into SVM input vector: Sliding Window Input for AA sequence
+###################################################################################
+    
+    for AA_seq in listaa:
+        listAA = list(AA_seq)
+        for ch in range(0, len(listAA)-(window-1)): #instead of accounting for the null residue before and after, I account for it when I specify the range
+            AAlist.append(listAA[ch:ch+window])
+    
+    #return AAlist
+    #print (listaa)
+    
+###################################################################################
+# Convert into SVM input vector: Sliding Window Input for topology
+###################################################################################
+    
+    for structure_ in listTop:
+        listTOP = list(structure_)
+        for ch in range(0, len(listTOP)-(window-1)):
+            Toplist.append(listTOP[ch:ch+window])
+    
+    return Toplist
+    
+###################################################################################
+# Convert into SVM input vector: AA sequence to binary
+###################################################################################
+    
+    """mappedprotein = []
     map = {'0':0, 'A':1, 'C':2, 'D':3, 'E':4, 'F':5, 'G':6, 'H':7,'I':8, 'K':9,'L':10,  'M':11, 'N':12, 'P':13, 'Q':14, 'R':15, 'S':16, 'T':17, 'V':18, 'W':19,'Y':20}
     # 0 to be used for window (to make of equal size)
     dictAA = parseBeta(infile)
@@ -93,7 +138,7 @@ def inputSVM(infile):
  
 def onehotEncoder(infile):
 
-    """values = array(inputData)
+    values = array(inputData)
     print(values)
     # integer encode
     label_encoder = LabelEncoder()
@@ -126,8 +171,8 @@ def onehotEncoder(infile):
 if __name__ == '__main__':
 
     #print(parseBeta("../datasets/parsetest"))
-    print(onehotEncoder("../datasets/parsetest"))
-    #print(inputSVM("../datasets/parsetest"))
+    #print(onehotEncoder("../datasets/parsetest"))
+    print(inputSVM("../datasets/parsetest"))
     
     
     
