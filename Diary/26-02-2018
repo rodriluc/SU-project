@@ -13,4 +13,10 @@ Problem 2 to be fixed:
   -padding does not work
   -do I need sublist
 Solution: 
-  -TBD
+  -added an embedded "if" statement
+  
+Problem 3 to be fixed:
+  -my final_AAlist outputs 27 windows when I specify a window length of 3
+  -I want to concatenate every 3 window as one long list and appended them to a master list
+Solution:
+  - to be determined
