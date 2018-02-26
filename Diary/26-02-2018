@@ -20,3 +20,6 @@ Problem 3 to be fixed:
   -I want to concatenate every 3 window as one long list and appended them to a master list (so for this example, I want 9 lists)
 Solution:
   - to be determined
+  
+For tomorrow:
+  -figure out how to extend list and SVM input
