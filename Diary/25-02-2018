@@ -1,0 +1,7 @@
+I started with a fresh set of ideas for the code after discussing different solutions for the SVM input with classmates. I decided to create the a list with the windows for the AA sequence and then convert to binary with the dictionary, and do the same for topology. I now understand that we only want the middle character for the window topology.
+
+Problems to be fixed:
+1. my list of amino acids is just a list with different strings
+2. my window list for AA retunrs me just one long list, I want sublist for each sequence
+3. KeyError: '0'
+  - I believe it has to do with not finding the string '0' as a key
