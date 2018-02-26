@@ -6,3 +6,5 @@ I understand that each training set must be one-dimensional and that for each wi
 
 Problem to be fixed:
   -do not have the same number of features and windows
+Solution: 
+  -just used my topology list, and ignored windows (solved!)
