@@ -1,0 +1,4 @@
+Today's goals:
+  -fix problems from yesterday (AA sequence to binary and topology to numerical)
+  
+I fixed the problem and made sure my dictionaries gave me integer values for my one-hot encoder.
