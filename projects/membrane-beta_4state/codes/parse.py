@@ -83,9 +83,10 @@ def inputSVM(infile):
     listID = []
     listaa = []
     listTop = []
-    AAlist = [] 
+    #AAlist = [] 
     #Toplist = [] 
-    final_AAlist = [] #final
+    final_AAlist = [] 
+    finalized_AAlist = [] 
     final_Toplist = [] #final
     #listAA = list(AA_seq)
     listaa_window = []
@@ -113,11 +114,14 @@ def inputSVM(infile):
 ###################################################################################
 # Convert into SVM input vector: Sliding Window Input for AA sequence
 ###################################################################################
-    print ("Breaking down sequences into windows...")
-    
+    #print ("Breaking down sequences into windows...")
+    #print(listaa)
     #for element in listaa:
+
     for zeroseq in listaa:
         zeroseq = ((x)*'0')+zeroseq+((x)*'0')
+        #zeroseq = ((x)*(AA_seq_dict['X']))+zeroseq+((x)*(AA_seq_dict['X']))
+
         for aa in range(0,len(zeroseq)):
             window=zeroseq[aa:aa+window_input]
             if len(window)==window_input:
@@ -131,59 +135,80 @@ def inputSVM(infile):
     
     for aa in listaa_window:
             for ch in aa: #in range or enumerate
+                AAlist = []
+                #for loop to specify range for master list
                 if ch in AA_seq_dict.keys():
+                
                 #for key in aa_seq:
                     #listaa_window[sequence][aa] = aa_seq[key]
-                    AAlist.append(AA_seq_dict[ch]) #[(key)]
+                    AAlist.extend(AA_seq_dict[ch]) #[(key)]
+                if ch == '0':
+                    AAlist.extend(AA_seq_dict['X'])
                 # ** expanding dictionaries into k,v pairs
                 #AAlist.extend(AA_seq_dict.get(key))
-            final_AAlist.append(np.array(AAlist))
-    #return final_AAlist
+                final_AAlist.append(AAlist)
+    return final_AAlist
     
 ###################################################################################
 # Convert into SVM input vector: Sliding Window Input for topology
 ###################################################################################
-    print ("Breaking down topology into windows...")
+    #ignore this step, and just use list
     
-    for lineT in listTop:
+    #print ("Breaking down topology into windows...")
+    
+    """for lineT in listTop:
         for ch in range (0, len(lineT)):
             window=lineT[ch:ch+window_input]
             if len(window)==window_input:
-                listTop_window.append(window)
+                listTop_window.append(window)"""
             
     #return listTop_window  
             
 ###################################################################################
 # Convert into SVM input vector: topology to numerical
 ###################################################################################
-            
-    for ch in listTop_window:
-        if window_input != 1:
-            middle = ch[x]
-            final_Toplist.append(structure_dict[middle])
-        else:
-            final_Toplist.append(structure_dict[ch])
+    for ch in listTop:
+        for x in ch:
+            """if window_input != 1:
+                middle = ch[x]
+                final_Toplist.append(structure_dict[middle])
+            else:"""
+            final_Toplist.append(x) #append each character as individual string
             
     #return final_Toplist            
     
 ###################################################################################
-# One-Hot Encoder
+# Double check that windows=features (used dmtr13's code) to check
 ###################################################################################    
+    countFeat = 0
+    for i in final_Toplist:
+        countFeat += 1
+    countAA = 0
+    for i in final_AAlist:
+        countAA += 1
+    if countFeat != countAA:
+        print ("Windows",countAA, "!= Features",countFeat)
+    else:
+        print("You're good!")
     
-    for sequence in listaa_window:
+###################################################################################
+# One-Hot Encoder
+################################################################################### 
+    
+    """for sequence in listaa_window:
         for aa in sequence:
-            enc = OneHotEncoder(sparse=False)
+            enc = OneHotEncoder()
             enc_window = enc.fit_transform(aa).toarray()
             encwindow_list.append(enc_window)
         encwindow_list = np.array(encwindow_list)
     return encwindow_list
     
-    listTop_window = np.array(listTop_window)
+    final_Toplist = np.array(final_Toplist)
     #return listTop_window
     
     #return encwindow_list, listTop_window
     
-    """for value in listaa_window:
+    for value in listaa_window:
         letter=[0 for _ in range(len(AA_seq_dict))]
         letter[value]=1
         encwindow_list.append(letter)
