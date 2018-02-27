@@ -1,18 +1,21 @@
 import numpy as np
-from numpy import array
-from numpy import argmax
+from numpy import array #not in use
+from numpy import argmax #not in use
 from sklearn import svm
 from sklearn import preprocessing
-#rom sklearn.model_selection import cross_val_score
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.preprocessing import LabelEncoder
-from sklearn.feature_extraction import DictVectorizer
+#from sklearn.model_selection import cross_val_score
+from sklearn.preprocessing import OneHotEncoder #not in use
+from sklearn.preprocessing import LabelEncoder #not in use
+from sklearn.feature_extraction import DictVectorizer #not in use
+import matplotlib.pyplot as plt
+from sklearn import datasets
+import json as js
 
 ###################################################################################
 # Opens the file and appends each feature of the file into 3 lists then dictionary
 ###################################################################################
 
-testfile = "D:/SU-project/projects/membrane-beta_4state/datasets/parsetest"
+#testfile = "D:/SU-project/projects/membrane-beta_4state/datasets/parsetest"
 
 def parseBeta(infile):
 
@@ -71,10 +74,10 @@ def inputSVM(infile):
             'Y':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
             'X':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]} #extra residue for window/ not being used for my new verison of code
     #print (AA_seq_dict)
-    structure_dict = {'i':0, #inner
-                      'P':1,
-                      'L':2,
-                      'o':3}#outer
+    structure_dict = {'i':[0], #0 inner 
+                      'P':[1], # 1
+                      'L':[2], # 2
+                      'o':[3]} #3 outer 
                     
 ###################################################################################
 # Convert into SVM input vector: Sliding Window Input
@@ -126,28 +129,30 @@ def inputSVM(infile):
             window=zeroseq[aa:aa+window_input]
             if len(window)==window_input:
                 listaa_window.append(window)
-    #return listaa_window           
+    #return listaa_window
     #key = 0
     #seq[i-x:i+x] 
 ###################################################################################
 # Convert into SVM input vector: AA sequence to binary
 ###################################################################################
     
-    for aa in listaa_window:
-            for ch in aa: #in range or enumerate
-                AAlist = []
-                #for loop to specify range for master list
-                if ch in AA_seq_dict.keys():
-                
-                #for key in aa_seq:
-                    #listaa_window[sequence][aa] = aa_seq[key]
-                    AAlist.extend(AA_seq_dict[ch]) #[(key)]
-                if ch == '0':
-                    AAlist.extend(AA_seq_dict['X'])
-                # ** expanding dictionaries into k,v pairs
-                #AAlist.extend(AA_seq_dict.get(key))
-                final_AAlist.append(AAlist)
-    return final_AAlist
+    for aa in listaa_window:    
+        AAlist = [] 
+        for ch in aa: #in range or enumerate
+            
+            #for loop to specify range for master list
+            if ch in AA_seq_dict.keys():
+            
+            #for key in aa_seq:
+                #listaa_window[sequence][aa] = aa_seq[key]
+                AAlist.extend(AA_seq_dict[ch]) #[(key)]
+            if ch == '0':
+                AAlist.extend(AA_seq_dict['X'])
+            # ** expanding dictionaries into k,v pairs
+            #AAlist.extend(AA_seq_dict.get(key))
+        final_AAlist.append(AAlist) #np.asarray
+    #print(len(final_AAlist))
+    #return final_AAlist
     
 ###################################################################################
 # Convert into SVM input vector: Sliding Window Input for topology
@@ -161,7 +166,7 @@ def inputSVM(infile):
             window=lineT[ch:ch+window_input]
             if len(window)==window_input:
                 listTop_window.append(window)"""
-            
+    #return listTop        
     #return listTop_window  
             
 ###################################################################################
@@ -173,8 +178,8 @@ def inputSVM(infile):
                 middle = ch[x]
                 final_Toplist.append(structure_dict[middle])
             else:"""
-            final_Toplist.append(x) #append each character as individual string
-            
+            final_Toplist.extend(structure_dict[x]) #append each character as individual string
+    #return listTop        
     #return final_Toplist            
     
 ###################################################################################
@@ -214,13 +219,20 @@ def inputSVM(infile):
         encwindow_list.append(letter)
     return encwindow_list"""
     
-   #each training example has to be 1D 
+   #each training example has to be 1D
 ###################################################################################
-# Cross-validation
+# Cross-validation (cross_val_score) - Multi-class classification
 ###################################################################################    
-
-
-
+    #final_AAlist and final_Toplist
+    
+    AA_array = np.array(final_AAlist)
+    Top_array = np.array(final_Toplist)
+    x,y = AA_array[:-1], Top_array[:-1] #testing set
+    print (x,y)
+    #cross_val = selectcrossvalid()
+    clf = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(x,y) #gamma matters
+    print ("Prediction: ", clf.predict(AA_array)) # ([AA_array[-1]])
+    
     
 if __name__ == '__main__':
 
