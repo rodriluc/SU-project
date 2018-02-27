@@ -5,4 +5,8 @@ Today's goal:
 Tips and tricks:
   -Shift+Tab unindents!
   
-I managed to fix my window, now outputs correct amount of windows, this was because I had an indentation error as to where I was appening my master list and I also needed to create my temporary list outside my second for loop. 
+I managed to fix my window, now outputs correct amount of windows, this was because I had an indentation error as to where I was appending my master list and I also needed to create my temporary list outside my second for loop. 
+
+I found a new error with the way I had coded my dictionary for the features, but managed to fix it and now outputs the correct amount of features for the correct amo8unt of windows. 
+
+I managed to finish my predictor for Friday by converting my lists to arrays and then using SVM and fitting both.
