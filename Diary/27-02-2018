@@ -1,0 +1,8 @@
+Today's goal:
+  -fix sliding window (instead of should have 3)
+  -finish and complete SVM input
+  
+Tips and tricks:
+  -Shift+Tab unindents!
+  
+I managed to fix my window, now outputs correct amount of windows, this was because I had an indentation error as to where I was appening my master list and I also needed to create my temporary list outside my second for loop. 
