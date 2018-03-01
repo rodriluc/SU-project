@@ -195,7 +195,8 @@ def inputSVM(infile):
 if __name__ == '__main__':
 
     #print(parseBeta("../datasets/parsetest"))
-    print(inputSVM("../datasets/parsetest"))
+    #print(inputSVM("../datasets/parsetest"))
+    print(inputSVM("../datasets/membrane-beta_4state.3line.txt"))
     
     
     
@@ -204,8 +205,7 @@ if __name__ == '__main__':
     
     
     
-    
-    
+    LautenbachMJ
     
     
     
