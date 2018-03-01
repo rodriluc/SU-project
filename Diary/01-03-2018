@@ -1,0 +1,3 @@
+Today, I wanted to make sure my linear regression and cross-validation worked on not only my small dataset but also my large dataset thaht I was given. The code ran perfectly with my main text file, "membrane-beta_4state.3line.txt". 
+
+I now want to try and save my trained model using np.save and make another function and try and test it on another protein that I will find on PDB to predict the topology. 
