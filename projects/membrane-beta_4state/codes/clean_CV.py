@@ -5,38 +5,17 @@ from sklearn import preprocessing
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import train_test_split
 from sklearn import datasets
-    
+from AA_dictionary import AA_seq_dict
+from structure_dict import structure_dict
+from structure_decode_dict import structure_decode_dict
+   
+testfile = "../datasets/membrane-beta_4state.3line.txt"
+smalltestfile = "../datasets/parsetest"    
+
 ###################################################################################
 # Convert into SVM input vector (numerical input) - Steps to follow
 ###################################################################################
 def inputSVM(infile):
-
-    AA_seq_dict={'A':[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0], 
-            'C':[0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-            'D':[0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-            'E':[0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-            'F':[0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-            'G':[0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-            'H':[0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0],
-            'I':[0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0],
-            'K':[0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0],
-            'L':[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0],
-            'M':[0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0],
-            'N':[0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0],
-            'P':[0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0],
-            'Q':[0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0],
-            'R':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0],
-            'S':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0],
-            'T':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0],
-            'V':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0],
-            'W':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0],
-            'Y':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1],
-            'X':[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]} #extra residue for window
-    
-    structure_dict = {'i':[0], #0 inner 
-                      'P':[1], # 1
-                      'L':[2], # 2
-                      'o':[3]} #3 outer 
                     
 ###################################################################################
 # Convert into SVM input vector: Sliding Window Input
@@ -97,25 +76,62 @@ def inputSVM(infile):
     for ch in listTop:
         for x in ch:
             final_Toplist.extend(structure_dict[x]) 
-  
-    #each training example has to be 1D
+            
 ###################################################################################
-# Predict/Cross-validation (cross_val_score) - Multi-class classification
-###################################################################################    
-    
+# Convert into array and save
+###################################################################################            
+            
     AA_array = np.array(final_AAlist)
     Top_array = np.array(final_Toplist)
-    x,y = AA_array[:-1], Top_array[:-1] #testing set
-
-    cross_val = int(input("Fold of cross-validation: "))
-    clf = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(x,y) 
-    #print ("Prediction: ", clf.predict(AA_array)) 
+    x,y = AA_array, Top_array #testing set
+    outfile = 'testfile'
+    np.savez(outfile, x, y)
+            
+    return AA_array, Top_array
+    #return len(x), len(y)
+###################################################################################
+# SVM model prediction
+###################################################################################    
     
-    cvs = cross_val_score(clf, AA_array, Top_array, cv = cross_val) 
+def SVM(infile): 
+    Top_output = []   
+    #array_data = inputSVM(infile)
+    #x = array_data[0] 
+    #y = array_data[1] 
+    
+    np.set_printoptions(threshold = np.inf) #svm
+    endfile = np.load('testfile.npz')
+    x = endfile['arr_0.npy']
+    y = endfile['arr_1.npy']
+
+    clf_model = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(x,y) 
+    result = clf_model.predict(x) 
+    
+    for element in result:
+        Top_output.append(structure_decode_dict[element])
+    s = ", "  
+    out = s.join(Top_output)  
+    return out
+    
+###################################################################################
+# Predict/Cross-validation (cross_val_score) - Multi-class classification
+################################################################################### 
+    
+def cross_val(infile):
+    clf_model = SVM(infile)
+    array_data = inputSVM(infile)
+    AA_array = array_data[0] 
+    Top_array = array_data[1] 
+    
+    cross_val = int(input("Fold of cross-validation: "))
+    cvs = cross_val_score(clf_model, AA_array, Top_array, cv = cross_val) 
     avg = np.average(cvs) 
     return avg
     
 if __name__ == '__main__':
-
-    print(inputSVM("../datasets/parsetest"))
+    inputSVM(testfile)
+    SVM(testfile)
+    #print(inputSVM(testfile))
+    #print(SVM(smalltestfile))
+    #print(cross_val(smalltestfile))
     

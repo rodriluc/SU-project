@@ -99,6 +99,8 @@ def inputSVM(infile):
     listID = lines[0::3]
     listaa = lines[1::3]
     listTop = lines[2::3]
+    
+    #print (len(listID))    
         
     #return listaa    #returns difeerent string sets not sublist
     """for element in dictAll.values():
@@ -187,7 +189,8 @@ def inputSVM(infile):
     #print (x,y)
     cross_val = int(input("Fold of cross-validation: "))
     clf = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(x,y) #gamma matters
-    #print ("Prediction: ", clf.predict(AA_array)) # ([AA_array[-1]])
+    print ("Prediction: ", clf.predict(AA_array)) # ([AA_array[-1]])
+    
     cvs = cross_val_score(clf, AA_array, Top_array, cv = cross_val) #scoring="precision"
     avg = np.average(cvs) #np.mean
     return avg
@@ -205,7 +208,7 @@ if __name__ == '__main__':
     
     
     
-    LautenbachMJ
+   
     
     
     
