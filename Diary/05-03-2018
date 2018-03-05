@@ -1,6 +1,7 @@
 Today's goal:
   1. Save the model, so I can test it on any sequence 
-  2. Run on multiple window sizes at a time to see whihc is best
+  2. Run on multiple window sizes at a time to see which is best
   3. Try and return predicted topology for each individually called protein
   
-I created another dictionary to return my predicted topology back into characters. 
+I created another dictionary to return my predicted topology back into characters. Then I saved the trained model in 'trained_model' and created a new code to predict called 'predictor'. 
+
