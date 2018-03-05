@@ -9,4 +9,4 @@ y = endfile['arr_1.npy']
 clf_model = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(x,y) 
 
 inputfile = 'TTmodel.sav'
-joblib.dump(clf_model, "inputfile")
+joblib.dump(clf_model, 'inputfile')
