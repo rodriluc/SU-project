@@ -7,3 +7,5 @@ I created another dictionary to return my predicted topology back into character
 
 I desperately need to organize my code and put more functions to clean up my scripts. I added my separate functions in clean_CV and made a separate file to test another protein. 
 
+All the functions work in clean_CV as well as my trained_model but my predictor is returning a ValueError: setting an array element with a sequence. I need to debug this error tomorrow. 
+
