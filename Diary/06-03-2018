@@ -1,3 +1,5 @@
 Today's Goals:
   1. There is an error in my trained_model, I have an array of 246 and the other one of 0 which gives me an error when I run it in my predictor
   2. Test best cross-validation fold
+
+My model saves correctly now, but I get a ValueError on my predictor that says could not convert string to float for my test dataset. I now want to run a cross validation for window sizes 3 through 32 in increments of 2 in order to find the optimal window size for my model in order to optimize it, to test my predictor. 
