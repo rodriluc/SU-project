@@ -3,6 +3,8 @@ import numpy as np
 from sklearn import svm
 from sklearn.model_selection import cross_val_score
     
+#found that window size:17 gave me the best score
+    
 testfile = "../datasets/membrane-beta_4state.3line.txt"
 smalltestfile = "../datasets/parsetest"  
     
@@ -16,9 +18,11 @@ def cross_val(infile):
         
         #cross_val = int(input("Fold of cross-validation: "))
         clf_model = svm.SVC()
-        cvs = cross_val_score(clf_model, AA_array, Top_array, cv = 5, verbose=True) 
+        cvs = cross_val_score(clf_model, AA_array, Top_array, cv = 5, verbose=True, n_jobs=-1) 
         avg = np.average(cvs) 
         print ("window size:", window_input, "score:", avg)
     
 if __name__ == '__main__':
     cross_val(testfile)
+    
+    

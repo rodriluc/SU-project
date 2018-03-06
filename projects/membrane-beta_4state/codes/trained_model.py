@@ -8,8 +8,7 @@ def train(infile):
     X = loaded['x']
     Y = loaded['y']
     #print (len(X), len(Y))
-    clf_model = svm.SVC().fit(X,Y) 
-    
+    clf_model = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(X,Y) 
 
     inputfile = 'TTmodel.sav'
     joblib.dump(clf_model, inputfile)

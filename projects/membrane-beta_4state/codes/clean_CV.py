@@ -17,6 +17,7 @@ smalltestfile = "../datasets/parsetest"
 ###################################################################################
 # Convert into SVM input vector (numerical input) - Steps to follow
 ###################################################################################
+
 def inputSVM(infile, window_input):
                     
 ###################################################################################
@@ -79,15 +80,14 @@ def inputSVM(infile, window_input):
             final_Toplist.extend(structure_dict[x]) 
             
 ###################################################################################
-# Convert into array and save
+# Save
 ###################################################################################            
             
     #AA_array = np.array(final_AAlist)
     #Top_array = np.array(final_Toplist)
     #x,y = final_AAlist, final_Toplist #testing set
     outfile = 'SVM_test'
-    np.savez(outfile, x=final_AAlist, y=final_Toplist)
-    #print (len(testfile))        
+    np.savez(outfile, x=final_AAlist, y=final_Toplist)       
     return (final_AAlist, final_Toplist)
     #return len(x), len(y)
 ###################################################################################
@@ -112,8 +112,8 @@ def SVM(infile):
     for element in result:
         Top_output.append(structure_decode_dict[element])
     s = ", "  
-    out = s.join(Top_output)  
-    return out
+    decode = s.join(Top_output)  
+    return decode
     
 ###################################################################################
 # Predict/Cross-validation (cross_val_score) - Multi-class classification
@@ -133,7 +133,7 @@ def cross_val(infile):
 if __name__ == '__main__':
     #inputSVM(testfile)
     #SVM(testfile)
-    #print(inputSVM(testfile, 3))
-    print(SVM(testfile))
+    print(inputSVM(testfile, 17))
+    #print(SVM(testfile))
     #print(cross_val(smalltestfile))
     

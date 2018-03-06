@@ -19,7 +19,7 @@ z = np.load('SVM_test.npz')
 result = saved_model.predict(z)
 print(result)'''
 
-def inputSVM(infile):
+def inputSVM(infile, window_input):
     
     listID = []
     listaa = []
@@ -33,12 +33,6 @@ def inputSVM(infile):
         lines = [line.strip() for line in pf]
     listID = lines[0::3]
     listaa = lines[1::3]
-    listTop = lines[2::3]
-        
-        
-    window_input = 0
-    while window_input%2==0:
-        window_input = int(input("Window size (must be odd number): "))
     
     x = window_input//2
     
@@ -77,7 +71,7 @@ def pred(infile2):
     
     
 if __name__ == '__main__':
-    #print(inputSVM(test))
+    #print(inputSVM(test, 17))
     print(pred(test))
    
 
