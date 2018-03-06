@@ -8,6 +8,8 @@ from sklearn import datasets
 from AA_dictionary import AA_seq_dict
 from structure_dict import structure_dict
 from structure_decode_dict import structure_decode_dict
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.externals import joblib
    
 testfile = "../datasets/membrane-beta_4state.3line.txt"
 smalltestfile = "../datasets/parsetest"    
@@ -15,7 +17,7 @@ smalltestfile = "../datasets/parsetest"
 ###################################################################################
 # Convert into SVM input vector (numerical input) - Steps to follow
 ###################################################################################
-def inputSVM(infile):
+def inputSVM(infile, window_input):
                     
 ###################################################################################
 # Convert into SVM input vector: Sliding Window Input
@@ -25,9 +27,8 @@ def inputSVM(infile):
     listaa = []
     listTop = []
     final_AAlist = [] 
-    final_Toplist = [] #final
+    final_Toplist = [] 
     listaa_window = []
-
   
     with open(infile) as pf:
         lines = [line.strip() for line in pf]
@@ -36,9 +37,9 @@ def inputSVM(infile):
     listTop = lines[2::3]
         
         
-    window_input = 0
-    while window_input%2==0:
-        window_input = int(input("Window size (must be odd number): "))
+    #window_input = 0
+    #while window_input%2==0:
+        #window_input = int(input("Window size (must be odd number): "))
     
     x = window_input//2
     
@@ -81,31 +82,32 @@ def inputSVM(infile):
 # Convert into array and save
 ###################################################################################            
             
-    AA_array = np.array(final_AAlist)
-    Top_array = np.array(final_Toplist)
-    x,y = AA_array, Top_array #testing set
-    outfile = 'testfile'
-    np.savez(outfile, x, y)
-            
-    return AA_array, Top_array
+    #AA_array = np.array(final_AAlist)
+    #Top_array = np.array(final_Toplist)
+    #x,y = final_AAlist, final_Toplist #testing set
+    outfile = 'SVM_test'
+    np.savez(outfile, x=final_AAlist, y=final_Toplist)
+    #print (len(testfile))        
+    return (final_AAlist, final_Toplist)
     #return len(x), len(y)
 ###################################################################################
-# SVM model prediction
+# SVM model and training
 ###################################################################################    
     
 def SVM(infile): 
     Top_output = []   
-    #array_data = inputSVM(infile)
-    #x = array_data[0] 
-    #y = array_data[1] 
+    '''array_data = inputSVM(infile)
+    x = array_data[0] 
+    y = array_data[1]'''
     
     np.set_printoptions(threshold = np.inf) #svm
-    endfile = np.load('testfile.npz')
-    x = endfile['arr_0.npy']
-    y = endfile['arr_1.npy']
-
-    clf_model = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(x,y) 
-    result = clf_model.predict(x) 
+    loaded = np.load('SVM_test.npz')
+    X = loaded['x']
+    Y = loaded['y']
+    #print (len(X), len(Y))
+    
+    clf_model = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(X,Y) 
+    result = clf_model.predict(X) 
     
     for element in result:
         Top_output.append(structure_decode_dict[element])
@@ -129,9 +131,9 @@ def cross_val(infile):
     return avg
     
 if __name__ == '__main__':
-    inputSVM(testfile)
-    SVM(testfile)
-    #print(inputSVM(testfile))
-    #print(SVM(smalltestfile))
+    #inputSVM(testfile)
+    #SVM(testfile)
+    #print(inputSVM(testfile, 3))
+    print(SVM(testfile))
     #print(cross_val(smalltestfile))
     

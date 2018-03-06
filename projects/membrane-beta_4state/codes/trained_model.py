@@ -4,15 +4,15 @@ from numpy import array
 from sklearn import svm
 
 def train(infile):
-    endfile = np.load(infile)
-    x = endfile['arr_0.npy']
-    y = endfile['arr_1.npy']
-    #print (len(x), len(y))
-    clf_model = svm.SVC().fit(x,y) 
+    loaded = np.load(infile)
+    X = loaded['x']
+    Y = loaded['y']
+    #print (len(X), len(Y))
+    clf_model = svm.SVC().fit(X,Y) 
     
 
     inputfile = 'TTmodel.sav'
     joblib.dump(clf_model, inputfile)
-    
+    print ("Model trained!")
 if __name__ == '__main__':
-    train('testfile.npz')
+    train('SVM_test.npz')
