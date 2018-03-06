@@ -5,4 +5,4 @@ Today's Goals:
 My model saves correctly now, but I get a ValueError on my predictor that says could not convert string to float for my test dataset. I now want to run a cross validation for window sizes 3 through 35 in increments of 2 in order to find the optimal window size for my model in order to optimize it, to test my predictor. 
 I started to test it on a small dataset and realized it was taking too long, because my computer only has 3GB so switching computers. I let my code run, and came back to find that window size 17 returned me the best score. 
 
-I will now train my model overnight with the optimal parameters.
+I will now train my model overnight with the optimal parameters. My model saved quite quickly, so it is now saved and will fix my predictor in the morning and try to do PSSM.
