@@ -1,0 +1,3 @@
+Today's Goals:
+  1. There is an error in my trained_model, I have an array of 246 and the other one of 0 which gives me an error when I run it in my predictor
+  2. Test best cross-validation fold
