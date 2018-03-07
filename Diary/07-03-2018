@@ -1,3 +1,5 @@
 Today's goal:
   1. Make predictor work
   2. Output: ID/AA sequence/predicted topology (ch not int)
+  
+My predictor works, but I get all the predicted topologies for all the proteins in one line, I need to separate them so I can organize them. 
