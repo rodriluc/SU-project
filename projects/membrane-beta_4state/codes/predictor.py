@@ -10,7 +10,8 @@ from sklearn import svm
 import trained_model
 
 testfile = "../datasets/membrane-beta_4state.3line.txt"
-test = "../datasets/PDBtest.txt"
+test = "../datasets/PDBtest.txt" #one aa seq
+test1 = "../datasets/parsetest"
 saved_model = joblib.load('TTmodel.sav')
 
 '''clean_CV.inputSVM(test)
@@ -23,11 +24,8 @@ def inputSVM(infile, window_input):
     
     listID = []
     listaa = []
-    listTop = []
     final_AAlist = [] 
-    final_Toplist = [] 
     listaa_window = []
-
   
     with open(infile) as pf:
         lines = [line.strip() for line in pf]
@@ -43,35 +41,41 @@ def inputSVM(infile, window_input):
             window=zeroseq[aa:aa+window_input]
             if len(window)==window_input:
                 listaa_window.append(window)
-    
+
     for aa in listaa_window:    
         AAlist = [] 
         for ch in aa: 
 
-            if ch in AA_seq_dict.keys():
-            
+            if ch in AA_seq_dict.keys():           
                 AAlist.extend(AA_seq_dict[ch]) 
             if ch == '0':
                 AAlist.extend(AA_seq_dict['X'])
 
-        final_AAlist.append(AAlist) 
-                 
+        final_AAlist.append(AAlist)
+
     return final_AAlist
     
 def pred(infile2): 
-    Top_output = []   
+    
+    Top_output = [] 
+    
     z = saved_model.predict(infile2)
     result = z
-    
+
     for element in result:
         Top_output.append(structure_decode_dict[element])
-    s = ", "  
+        
+    s = ""  
     decode = s.join(Top_output)  
+        
     return decode
     
-    
+
+   
 if __name__ == '__main__':
-    #print(inputSVM(test, 17))
-    print(pred(test))
+    print(inputSVM(test1, 17))
+    #x=inputSVM(test1, 17)
+    #print(pred(x))
+    
    
 
