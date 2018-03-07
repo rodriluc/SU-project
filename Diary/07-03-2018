@@ -7,4 +7,4 @@ My predictor works, but I get all the predicted topologies for all the proteins 
 
 I made a for loop with an embedded for loop to try and call the topology prediction for each protein one at a time, but my output is incorrect. I have managed to make a list where I zip the ID, sequence and for the moment wrong topology. The topology returned is just a single predicted topology instead of the entirety of the topology for that protein. 
 
-FINALLY, my predictor works beautifully but I need to join the topology strings together so it looks better. 
+FINALLY, my predictor works beautifully but I need to join the topology strings together so it looks better. I joined the topologies, now everything looks correct even with multiple proteins.
