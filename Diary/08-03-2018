@@ -9,5 +9,7 @@ I manage to save/write my results in a text file named "prediction.txt" with the
 
 I will attempt to save each of my proteins as individual fasta file and then create a bash script where I will run a code that outputs me the PSSMs for all of them.
 
+I managed to save each of my proteins as individual FASTA files with "file_indFASTA.py", now I will write a bash script for PSSM.
+
 To be learnt:
 from sklearn import metrics (last slide)
