@@ -8,7 +8,7 @@ from sklearn import svm
 
 testfile = "../datasets/membrane-beta_4state.3line.txt"
 test = "../datasets/PDBtest.txt" #one aa seq
-test1 = "../datasets/parsetest"
+test1 = "../datasets/testingdata_pred.txt"
 saved_model = joblib.load('TTmodel.sav')
 
     
@@ -63,18 +63,23 @@ for element in result:
 outputPred = 0
 init = 0
 #print(all_list)
-for i in range(len(filelines)):
-    # id plus sequence imprime les deux 
-    if filelines[i].startswith (">"):
-        print (filelines[0])
-        print (filelines[1])
-        outputPred = outputPred +len(filelines[i+1])
-        x ="".join(Top_output[init:outputPred])
-        print (x)
-        init = outputPred
 
+with open("prediction.txt", "w") as fn:
+
+    for i in range(len(filelines)):
+        # id plus sequence imprime les deux 
+        if filelines[i].startswith (">"):
+            fn.write(filelines[0])
+            fn.write("\n")
+            fn.write(filelines[1])
+            fn.write("\n")
+            outputPred = outputPred +len(filelines[i+1])
+            x ="".join(Top_output[init:outputPred])
+            fn.write(x)
+            fn.write("\n")
+            init = outputPred
    
 #ID_seq_pred = list(zip(listID, listaa, Top_output))    
 #print (ID_seq_pred)
-
+  
 
