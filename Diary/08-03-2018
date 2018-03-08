@@ -2,7 +2,12 @@ Today's goal:
   1. Save results into a file
   2. Try PSSM
 
-I will attempt to save each of my proteins as individual fasta file and tehn create a bash script where I will run a code that outputs me the PSSMs for all of them.
+I manage to save/write my results in a text file named "prediction.txt" with the following output:
+  ID
+  ammino acid sequence
+  predicted topology
+
+I will attempt to save each of my proteins as individual fasta file and then create a bash script where I will run a code that outputs me the PSSMs for all of them.
 
 To be learnt:
 from sklearn import metrics (last slide)
