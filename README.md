@@ -26,4 +26,4 @@ Beta barrel (4 state) individual assignment
       predicted topology
       
 Trained my model with all the proteins I was given (42 proteins) and window size 17 with a linear kernel.
-Using "parsetest" as my test file for predictor. 
+Used "testingdata_pred.txt" as my test file for predictor. 
