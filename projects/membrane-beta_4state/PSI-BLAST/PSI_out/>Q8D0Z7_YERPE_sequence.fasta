@@ -1,0 +1,793 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= Q8D0Z7_YERPE_sequence
+
+Length=194
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|Q56957|AIL_YERPS Attachment invasion locus protein OS=Yersin...  370     4e-130
+  sp|P16454|AIL_YEREN Attachment invasion locus protein OS=Yersin...  265     8e-89 
+  sp|P0A920|OMPX_SHIFL Outer membrane protein X OS=Shigella flexn...  123     1e-33 
+  sp|P0A917|OMPX_ECOLI Outer membrane protein X OS=Escherichia co...  123     1e-33 
+  sp|P0A918|OMPX_ECOL6 Outer membrane protein X OS=Escherichia co...  123     1e-33 
+  sp|P0A919|OMPX_ECO57 Outer membrane protein X OS=Escherichia co...  123     1e-33 
+  sp|P25253|OMPX_ENTCL Outer membrane protein X OS=Enterobacter c...  116     8e-31 
+  sp|P23988|PAGC_SALTY Virulence membrane protein PagC OS=Salmone...  100     1e-24 
+  sp|P03701|VLOM_LAMBD Outer membrane protein lom OS=Escherichia ...  70.9    5e-14 
+
+
+> sp|Q56957|AIL_YERPS Attachment invasion locus protein OS=Yersinia 
+pseudotuberculosis serotype I (strain IP32953) OX=273123 
+GN=ail PE=3 SV=2
+Length=182
+
+ Score = 370 bits (949),  Expect = 4e-130, Method: Compositional matrix adjust.
+ Identities = 181/182 (99%), Positives = 181/182 (99%), Gaps = 0/182 (0%)
+
+Query  13   MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR  72
+            MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR
+Sbjct  1    MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR  60
+
+Query  73   YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG  132
+            YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG
+Sbjct  61   YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG  120
+
+Query  133  HGKAKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY  192
+            HGKAK SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY
+Sbjct  121  HGKAKVSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY  180
+
+Query  193  RF  194
+            RF
+Sbjct  181  RF  182
+
+
+> sp|P16454|AIL_YEREN Attachment invasion locus protein OS=Yersinia 
+enterocolitica OX=630 GN=ail PE=1 SV=1
+Length=178
+
+ Score = 265 bits (677),  Expect = 8e-89, Method: Compositional matrix adjust.
+ Identities = 133/179 (74%), Positives = 148/179 (83%), Gaps = 1/179 (1%)
+
+Query  16   MNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEF  75
+            M KTLL SSLIACLSIASVNVYA  ESSISIGYAQS VKE+GY LD +P+GFNLKYRYE 
+Sbjct  1    MKKTLLASSLIACLSIASVNVYAASESSISIGYAQSHVKENGYTLDNDPKGFNLKYRYEL  60
+
+Query  76   NNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGK  135
+            +++WGVIGSFA T +G++      K   GD  YYSVT GP FRINEYVSLYGLLGA HGK
+Sbjct  61   DDNWGVIGSFAYTHQGYDFFYGSNKFGHGDVDYYSVTMGPSFRINEYVSLYGLLGAAHGK  120
+
+Query  136  AKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+             K +S+F +S S SKTS+AYGAG+QFNP PNFVIDASYEYSKLD +KVGTWMLGAGYRF
+Sbjct  121  VK-ASVFDESISASKTSMAYGAGVQFNPLPNFVIDASYEYSKLDSIKVGTWMLGAGYRF  178
+
+
+> sp|P0A920|OMPX_SHIFL Outer membrane protein X OS=Shigella flexneri 
+OX=623 GN=ompX PE=3 SV=1
+Length=171
+
+ Score = 123 bits (309),  Expect = 1e-33, Method: Compositional matrix adjust.
+ Identities = 77/179 (43%), Positives = 104/179 (58%), Gaps = 21/179 (12%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNND-  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDF---KYYSVTAGPVFRINEYVSLYGLLGAGHGK  135
+             GVIGSF  T +    S        GD+   +YY +TAGP +RIN++ S+YG++G G+GK
+Sbjct  60   LGVIGSFTYTEKSRTAS-------SGDYNKNQYYGITAGPAYRINDWASIYGVVGVGYGK  112
+
+Query  136  AKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+             + +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  113  FQTTEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A917|OMPX_ECOLI Outer membrane protein X OS=Escherichia 
+coli (strain K12) OX=83333 GN=ompX PE=1 SV=1
+Length=171
+
+ Score = 123 bits (309),  Expect = 1e-33, Method: Compositional matrix adjust.
+ Identities = 77/179 (43%), Positives = 104/179 (58%), Gaps = 21/179 (12%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNND-  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDF---KYYSVTAGPVFRINEYVSLYGLLGAGHGK  135
+             GVIGSF  T +    S        GD+   +YY +TAGP +RIN++ S+YG++G G+GK
+Sbjct  60   LGVIGSFTYTEKSRTAS-------SGDYNKNQYYGITAGPAYRINDWASIYGVVGVGYGK  112
+
+Query  136  AKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+             + +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  113  FQTTEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A918|OMPX_ECOL6 Outer membrane protein X OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=ompX 
+PE=3 SV=1
+Length=171
+
+ Score = 123 bits (309),  Expect = 1e-33, Method: Compositional matrix adjust.
+ Identities = 77/179 (43%), Positives = 104/179 (58%), Gaps = 21/179 (12%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNND-  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDF---KYYSVTAGPVFRINEYVSLYGLLGAGHGK  135
+             GVIGSF  T +    S        GD+   +YY +TAGP +RIN++ S+YG++G G+GK
+Sbjct  60   LGVIGSFTYTEKSRTAS-------SGDYNKNQYYGITAGPAYRINDWASIYGVVGVGYGK  112
+
+Query  136  AKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+             + +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  113  FQTTEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A919|OMPX_ECO57 Outer membrane protein X OS=Escherichia 
+coli O157:H7 OX=83334 GN=ompX PE=3 SV=1
+Length=171
+
+ Score = 123 bits (309),  Expect = 1e-33, Method: Compositional matrix adjust.
+ Identities = 77/179 (43%), Positives = 104/179 (58%), Gaps = 21/179 (12%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNND-  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDF---KYYSVTAGPVFRINEYVSLYGLLGAGHGK  135
+             GVIGSF  T +    S        GD+   +YY +TAGP +RIN++ S+YG++G G+GK
+Sbjct  60   LGVIGSFTYTEKSRTAS-------SGDYNKNQYYGITAGPAYRINDWASIYGVVGVGYGK  112
+
+Query  136  AKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+             + +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  113  FQTTEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P25253|OMPX_ENTCL Outer membrane protein X OS=Enterobacter 
+cloacae OX=550 GN=ompX PE=1 SV=1
+Length=172
+
+ Score = 116 bits (290),  Expect = 8e-31, Method: Compositional matrix adjust.
+ Identities = 68/159 (43%), Positives = 98/159 (62%), Gaps = 18/159 (11%)
+
+Query  42   SSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEF-NNDWGVIGSFAQTRRGFEESVDGFK  100
+            S+++ GYAQS ++     +     GFNLKYRYE  NN  GVIGSF  T +   E      
+Sbjct  26   STVTGGYAQSDMQ----GVMNKTNGFNLKYRYEQDNNPLGVIGSFTYTEKDRTE------  75
+
+Query  101  LIDGDF---KYYSVTAGPVFRINEYVSLYGLLGAGHGKAKFSSIFG--QSESRSKTSLAY  155
+              +G +   +YY +TAGP +R+N++ S+YG++G G+GK + +   G  ++ S S    +Y
+Sbjct  76   --NGSYNKGQYYGITAGPAYRLNDWASIYGVVGVGYGKFQQTENQGLNRTASNSDYGFSY  133
+
+Query  156  GAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            GAG+QFNP  N  +D SYE S++ +V VGTW+ G GYRF
+Sbjct  134  GAGMQFNPIENVALDFSYEQSRIRNVDVGTWIAGVGYRF  172
+
+
+> sp|P23988|PAGC_SALTY Virulence membrane protein PagC OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=pagC PE=3 SV=2
+Length=185
+
+ Score = 100 bits (249),  Expect = 1e-24, Method: Compositional matrix adjust.
+ Identities = 68/191 (36%), Positives = 98/191 (51%), Gaps = 21/191 (11%)
+
+Query  18   KTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN  77
+            K +++S+L+   S+  VNV     ++ S+GYAQS+V++      KN RG N+KYRYE ++
+Sbjct  2    KNIILSTLVITTSVLVVNVAQADTNAFSVGYAQSKVQDF-----KNIRGVNVKYRYEDDS  56
+
+Query  78   DWGVIGSFA------QTRRGFEESVDGFKLIDG-DFKYYSVTAGPVFRINEYVSLYGLLG  130
+                I S +      Q     E   +G    D  + KY S+  GP +R+++  SLY L G
+Sbjct  57   PVSFISSLSYLYGDRQASGSVEP--EGIHYHDKFEVKYGSLMVGPAYRLSDNFSLYALAG  114
+
+Query  131  AGHGKAKFSS-------IFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKV  183
+             G  KA F          F    S  KT  A+GAG+Q NP  N V+D  YE S +   K+
+Sbjct  115  VGTVKATFKEHSTQDGDSFSNKISSRKTGFAWGAGVQMNPLENIVVDVGYEGSNISSTKI  174
+
+Query  184  GTWMLGAGYRF  194
+              + +G GYRF
+Sbjct  175  NGFNVGVGYRF  185
+
+
+> sp|P03701|VLOM_LAMBD Outer membrane protein lom OS=Escherichia 
+phage lambda OX=10710 GN=lom PE=1 SV=1
+Length=206
+
+ Score = 70.9 bits (172),  Expect = 5e-14, Method: Compositional matrix adjust.
+ Identities = 47/156 (30%), Positives = 73/156 (47%), Gaps = 31/156 (20%)
+
+Query  65   RGFNLKYRYEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGD---------FKYYSVTAGP  115
+            +G N+KYRYE  +  GV+ S      GF  S     ++ G+          +Y SV AGP
+Sbjct  56   KGINVKYRYELTDSVGVMASL-----GFAASKKSSTVMTGEDTFHYESLRGRYVSVMAGP  110
+
+Query  116  VFRINEYVSLYGLLGAGH-----------------GKAKFSSIFGQSESRSKTSLAYGAG  158
+            V +I++ VS Y + G  H                 G  K ++      +   TS+A+ AG
+Sbjct  111  VLQISKQVSAYAMAGVAHSRWSGSTMDYRKTEITPGYMKETTTARDESAMRHTSVAWSAG  170
+
+Query  159  LQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +Q NP  + V+D +YE S   D +   +++G GY+F
+Sbjct  171  IQINPAASVVVDIAYEGSGSGDWRTDGFIVGVGYKF  206
+
+
+
+Lambda      K        H        a         alpha
+   0.320    0.138    0.412    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11441108357
+Results from round 2
+
+
+Query= Q8D0Z7_YERPE_sequence
+
+Length=194
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q56957|AIL_YERPS Attachment invasion locus protein OS=Yersin...  282     1e-95
+  sp|P16454|AIL_YEREN Attachment invasion locus protein OS=Yersin...  250     5e-83
+  sp|P23988|PAGC_SALTY Virulence membrane protein PagC OS=Salmone...  196     1e-61
+  sp|P0A920|OMPX_SHIFL Outer membrane protein X OS=Shigella flexn...  189     4e-59
+  sp|P0A917|OMPX_ECOLI Outer membrane protein X OS=Escherichia co...  189     4e-59
+  sp|P0A918|OMPX_ECOL6 Outer membrane protein X OS=Escherichia co...  189     4e-59
+  sp|P0A919|OMPX_ECO57 Outer membrane protein X OS=Escherichia co...  189     4e-59
+  sp|P25253|OMPX_ENTCL Outer membrane protein X OS=Enterobacter c...  179     2e-55
+  sp|P03701|VLOM_LAMBD Outer membrane protein lom OS=Escherichia ...  144     4e-41
+
+Sequences not found previously or not previously below threshold:
+
+  sp|P77184|LOMR_ECOLI Putative protein LomR OS=Escherichia coli ...  40.5    7e-04
+  sp|Q2SQ17|LAMB_HAHCH Maltoporin OS=Hahella chejuensis (strain K...  41.6    0.002
+  sp|P13794|PORF_PSEAE Outer membrane porin F OS=Pseudomonas aeru...  39.7    0.009
+
+
+> sp|Q56957|AIL_YERPS Attachment invasion locus protein OS=Yersinia 
+pseudotuberculosis serotype I (strain IP32953) OX=273123 
+GN=ail PE=3 SV=2
+Length=182
+
+ Score = 282 bits (722),  Expect = 1e-95, Method: Composition-based stats.
+ Identities = 181/182 (99%), Positives = 181/182 (99%), Gaps = 0/182 (0%)
+
+Query  13   MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR  72
+            MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR
+Sbjct  1    MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR  60
+
+Query  73   YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG  132
+            YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG
+Sbjct  61   YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG  120
+
+Query  133  HGKAKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY  192
+            HGKAK SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY
+Sbjct  121  HGKAKVSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY  180
+
+Query  193  RF  194
+            RF
+Sbjct  181  RF  182
+
+
+> sp|P16454|AIL_YEREN Attachment invasion locus protein OS=Yersinia 
+enterocolitica OX=630 GN=ail PE=1 SV=1
+Length=178
+
+ Score = 250 bits (638),  Expect = 5e-83, Method: Composition-based stats.
+ Identities = 133/179 (74%), Positives = 148/179 (83%), Gaps = 1/179 (1%)
+
+Query  16   MNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEF  75
+            M KTLL SSLIACLSIASVNVYA  ESSISIGYAQS VKE+GY LD +P+GFNLKYRYE 
+Sbjct  1    MKKTLLASSLIACLSIASVNVYAASESSISIGYAQSHVKENGYTLDNDPKGFNLKYRYEL  60
+
+Query  76   NNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGK  135
+            +++WGVIGSFA T +G++      K   GD  YYSVT GP FRINEYVSLYGLLGA HGK
+Sbjct  61   DDNWGVIGSFAYTHQGYDFFYGSNKFGHGDVDYYSVTMGPSFRINEYVSLYGLLGAAHGK  120
+
+Query  136  AKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+             K +S+F +S S SKTS+AYGAG+QFNP PNFVIDASYEYSKLD +KVGTWMLGAGYRF
+Sbjct  121  VK-ASVFDESISASKTSMAYGAGVQFNPLPNFVIDASYEYSKLDSIKVGTWMLGAGYRF  178
+
+
+> sp|P23988|PAGC_SALTY Virulence membrane protein PagC OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=pagC PE=3 SV=2
+Length=185
+
+ Score = 196 bits (498),  Expect = 1e-61, Method: Composition-based stats.
+ Identities = 67/189 (35%), Positives = 98/189 (52%), Gaps = 17/189 (9%)
+
+Query  18   KTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN  77
+            K +++S+L+   S+  VNV     ++ S+GYAQS+V++      KN RG N+KYRYE ++
+Sbjct  2    KNIILSTLVITTSVLVVNVAQADTNAFSVGYAQSKVQDF-----KNIRGVNVKYRYEDDS  56
+
+Query  78   DWGVIGSFAQTRRGFEES----VDGFKLIDG-DFKYYSVTAGPVFRINEYVSLYGLLGAG  132
+                I S +      + S     +G    D  + KY S+  GP +R+++  SLY L G G
+Sbjct  57   PVSFISSLSYLYGDRQASGSVEPEGIHYHDKFEVKYGSLMVGPAYRLSDNFSLYALAGVG  116
+
+Query  133  HGKAKFSS-------IFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGT  185
+              KA F          F    S  KT  A+GAG+Q NP  N V+D  YE S +   K+  
+Sbjct  117  TVKATFKEHSTQDGDSFSNKISSRKTGFAWGAGVQMNPLENIVVDVGYEGSNISSTKING  176
+
+Query  186  WMLGAGYRF  194
+            + +G GYRF
+Sbjct  177  FNVGVGYRF  185
+
+
+> sp|P0A920|OMPX_SHIFL Outer membrane protein X OS=Shigella flexneri 
+OX=623 GN=ompX PE=3 SV=1
+Length=171
+
+ Score = 189 bits (479),  Expect = 4e-59, Method: Composition-based stats.
+ Identities = 75/176 (43%), Positives = 102/176 (58%), Gaps = 15/176 (9%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN-D  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             GVIGSF  T +    S   +       +YY +TAGP +RIN++ S+YG++G G+GK + 
+Sbjct  60   LGVIGSFTYTEKSRTASSGDYN----KNQYYGITAGPAYRINDWASIYGVVGVGYGKFQT  115
+
+Query  139  SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  116  TEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A917|OMPX_ECOLI Outer membrane protein X OS=Escherichia 
+coli (strain K12) OX=83333 GN=ompX PE=1 SV=1
+Length=171
+
+ Score = 189 bits (479),  Expect = 4e-59, Method: Composition-based stats.
+ Identities = 75/176 (43%), Positives = 102/176 (58%), Gaps = 15/176 (9%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN-D  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             GVIGSF  T +    S   +       +YY +TAGP +RIN++ S+YG++G G+GK + 
+Sbjct  60   LGVIGSFTYTEKSRTASSGDYN----KNQYYGITAGPAYRINDWASIYGVVGVGYGKFQT  115
+
+Query  139  SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  116  TEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A918|OMPX_ECOL6 Outer membrane protein X OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=ompX 
+PE=3 SV=1
+Length=171
+
+ Score = 189 bits (479),  Expect = 4e-59, Method: Composition-based stats.
+ Identities = 75/176 (43%), Positives = 102/176 (58%), Gaps = 15/176 (9%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN-D  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             GVIGSF  T +    S   +       +YY +TAGP +RIN++ S+YG++G G+GK + 
+Sbjct  60   LGVIGSFTYTEKSRTASSGDYN----KNQYYGITAGPAYRINDWASIYGVVGVGYGKFQT  115
+
+Query  139  SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  116  TEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A919|OMPX_ECO57 Outer membrane protein X OS=Escherichia 
+coli O157:H7 OX=83334 GN=ompX PE=3 SV=1
+Length=171
+
+ Score = 189 bits (479),  Expect = 4e-59, Method: Composition-based stats.
+ Identities = 75/176 (43%), Positives = 102/176 (58%), Gaps = 15/176 (9%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN-D  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             GVIGSF  T +    S   +       +YY +TAGP +RIN++ S+YG++G G+GK + 
+Sbjct  60   LGVIGSFTYTEKSRTASSGDYN----KNQYYGITAGPAYRINDWASIYGVVGVGYGKFQT  115
+
+Query  139  SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  116  TEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P25253|OMPX_ENTCL Outer membrane protein X OS=Enterobacter 
+cloacae OX=550 GN=ompX PE=1 SV=1
+Length=172
+
+ Score = 179 bits (455),  Expect = 2e-55, Method: Composition-based stats.
+ Identities = 68/161 (42%), Positives = 97/161 (60%), Gaps = 12/161 (7%)
+
+Query  37   YAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYE-FNNDWGVIGSFAQTRRGFEES  95
+                 S+++ GYAQS ++     +     GFNLKYRYE  NN  GVIGSF  T +   E+
+Sbjct  21   AVAATSTVTGGYAQSDMQ----GVMNKTNGFNLKYRYEQDNNPLGVIGSFTYTEKDRTEN  76
+
+Query  96   VDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKFSSIFG--QSESRSKTSL  153
+                K      +YY +TAGP +R+N++ S+YG++G G+GK + +   G  ++ S S    
+Sbjct  77   GSYNK-----GQYYGITAGPAYRLNDWASIYGVVGVGYGKFQQTENQGLNRTASNSDYGF  131
+
+Query  154  AYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +YGAG+QFNP  N  +D SYE S++ +V VGTW+ G GYRF
+Sbjct  132  SYGAGMQFNPIENVALDFSYEQSRIRNVDVGTWIAGVGYRF  172
+
+
+> sp|P03701|VLOM_LAMBD Outer membrane protein lom OS=Escherichia 
+phage lambda OX=10710 GN=lom PE=1 SV=1
+Length=206
+
+ Score = 144 bits (362),  Expect = 4e-41, Method: Composition-based stats.
+ Identities = 52/189 (28%), Positives = 83/189 (44%), Gaps = 36/189 (19%)
+
+Query  37   YAEGESSISIGYAQSR-----VKEDGYKLDKNPRGFNLKYRYEFNNDWGVIGSFAQTRRG  91
+               G  + ++GY Q +         G     + +G N+KYRYE  +  GV+ S      G
+Sbjct  23   AEGGHGTFTVGYFQVKPGTLPSLSGGDTGVSHLKGINVKYRYELTDSVGVMASL-----G  77
+
+Query  92   FEESVDGFKLIDGD---------FKYYSVTAGPVFRINEYVSLYGLLGAGH---------  133
+            F  S     ++ G+          +Y SV AGPV +I++ VS Y + G  H         
+Sbjct  78   FAASKKSSTVMTGEDTFHYESLRGRYVSVMAGPVLQISKQVSAYAMAGVAHSRWSGSTMD  137
+
+Query  134  --------GKAKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGT  185
+                    G  K ++      +   TS+A+ AG+Q NP  + V+D +YE S   D +   
+Sbjct  138  YRKTEITPGYMKETTTARDESAMRHTSVAWSAGIQINPAASVVVDIAYEGSGSGDWRTDG  197
+
+Query  186  WMLGAGYRF  194
+            +++G GY+F
+Sbjct  198  FIVGVGYKF  206
+
+
+> sp|P77184|LOMR_ECOLI Putative protein LomR OS=Escherichia coli 
+(strain K12) OX=83333 GN=lomR PE=5 SV=4
+Length=51
+
+ Score = 40.5 bits (93),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 10/32 (31%), Positives = 18/32 (56%), Gaps = 0/32 (0%)
+
+Query  107  KYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+            +++SV  GP  R+NE+ S Y + G  + +   
+Sbjct  4    RWFSVMVGPSVRVNEWFSAYAMAGMAYSRVST  35
+
+
+> sp|Q2SQ17|LAMB_HAHCH Maltoporin OS=Hahella chejuensis (strain 
+KCTC 2396) OX=349521 GN=lamB PE=3 SV=1
+Length=398
+
+ Score = 41.6 bits (96),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 35/145 (24%), Positives = 58/145 (40%), Gaps = 22/145 (15%)
+
+Query  36   VYAEGESSISIGYAQSRVKEDGYK-----LDKNPRGFNLKYRYEFNNDWGVIGSFAQTRR  90
+            V+  G      GYA S ++  G       LDK  +GF L        DWGV+   A    
+Sbjct  242  VFQYGTE----GYA-SPMRNFGGGQWNGTLDKGGKGFRLI-------DWGVVKPSANIEL  289
+
+Query  91   GFEESVDGFKL--IDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKFSSIFGQSESR  148
+             +      F+   ++ D  +YS++A P ++ ++Y+  Y  +G                + 
+Sbjct  290  SYAAMYGVFEDDDMNDDSSFYSISARPAYKWSDYMRTYLEVGYFAADDDGVDSQLDKITI  349
+
+Query  149  SKTSLAYGAGLQFNPHPNFVIDASY  173
+            ++   A+ AG  F   P   + ASY
+Sbjct  350  AQ---AWSAGPSFWARPEIRVFASY  371
+
+
+> sp|P13794|PORF_PSEAE Outer membrane porin F OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 
+/ LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=oprF PE=1 
+SV=1
+Length=350
+
+ Score = 39.7 bits (91),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 46/185 (25%), Positives = 76/185 (41%), Gaps = 21/185 (11%)
+
+Query  20   LLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNNDW  79
+            +++ SL+A    +++N +A+G++S+ I     R   D  +  KN   +     Y   +D 
+Sbjct  9    VVIGSLVAA---SAMNAFAQGQNSVEIEAFGKRYFTDSVRNMKNADLYGGSIGYFLTDDV  65
+
+Query  80   GVIGSFAQTRRGFEESVDGFKLIDG-----DFKYYSVTAGPVFRINEYVSLYGLLGAGHG  134
+             +  S+ +          G K + G     D  Y+  T G   R       Y   G  H 
+Sbjct  66   ELALSYGEYHDVRGTYETGNKKVHGNLTSLDAIYHFGTPGVGLR------PYVSAGLAH-  118
+
+Query  135  KAKFSSIFGQSESRSKTSLA-YGAGLQFNPHPNF----VIDASYEYSKLDDVKVGTWMLG  189
+                ++I   S+ R + ++A  GAGL++    NF     +D  Y   K D+   G WM G
+Sbjct  119  -QNITNINSDSQGRQQMTMANIGAGLKYYFTENFFAKASLDGQYGLEKRDNGHQGEWMAG  177
+
+Query  190  AGYRF  194
+             G  F
+Sbjct  178  LGVGF  182
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.129    0.340    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0396    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11441108357
+Results from round 3
+
+
+Query= Q8D0Z7_YERPE_sequence
+
+Length=194
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q56957|AIL_YERPS Attachment invasion locus protein OS=Yersin...  271     3e-91
+  sp|P16454|AIL_YEREN Attachment invasion locus protein OS=Yersin...  243     3e-80
+  sp|P23988|PAGC_SALTY Virulence membrane protein PagC OS=Salmone...  197     5e-62
+  sp|P0A920|OMPX_SHIFL Outer membrane protein X OS=Shigella flexn...  190     1e-59
+  sp|P0A917|OMPX_ECOLI Outer membrane protein X OS=Escherichia co...  190     1e-59
+  sp|P0A918|OMPX_ECOL6 Outer membrane protein X OS=Escherichia co...  190     1e-59
+  sp|P0A919|OMPX_ECO57 Outer membrane protein X OS=Escherichia co...  190     1e-59
+  sp|P25253|OMPX_ENTCL Outer membrane protein X OS=Enterobacter c...  183     1e-56
+  sp|P03701|VLOM_LAMBD Outer membrane protein lom OS=Escherichia ...  159     3e-47
+  sp|P77184|LOMR_ECOLI Putative protein LomR OS=Escherichia coli ...  50.1    2e-07
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q56957|AIL_YERPS Attachment invasion locus protein OS=Yersinia 
+pseudotuberculosis serotype I (strain IP32953) OX=273123 
+GN=ail PE=3 SV=2
+Length=182
+
+ Score = 271 bits (694),  Expect = 3e-91, Method: Composition-based stats.
+ Identities = 181/182 (99%), Positives = 181/182 (99%), Gaps = 0/182 (0%)
+
+Query  13   MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR  72
+            MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR
+Sbjct  1    MVFMNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYR  60
+
+Query  73   YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG  132
+            YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG
+Sbjct  61   YEFNNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAG  120
+
+Query  133  HGKAKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY  192
+            HGKAK SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY
+Sbjct  121  HGKAKVSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGY  180
+
+Query  193  RF  194
+            RF
+Sbjct  181  RF  182
+
+
+> sp|P16454|AIL_YEREN Attachment invasion locus protein OS=Yersinia 
+enterocolitica OX=630 GN=ail PE=1 SV=1
+Length=178
+
+ Score = 243 bits (620),  Expect = 3e-80, Method: Composition-based stats.
+ Identities = 133/179 (74%), Positives = 148/179 (83%), Gaps = 1/179 (1%)
+
+Query  16   MNKTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEF  75
+            M KTLL SSLIACLSIASVNVYA  ESSISIGYAQS VKE+GY LD +P+GFNLKYRYE 
+Sbjct  1    MKKTLLASSLIACLSIASVNVYAASESSISIGYAQSHVKENGYTLDNDPKGFNLKYRYEL  60
+
+Query  76   NNDWGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGK  135
+            +++WGVIGSFA T +G++      K   GD  YYSVT GP FRINEYVSLYGLLGA HGK
+Sbjct  61   DDNWGVIGSFAYTHQGYDFFYGSNKFGHGDVDYYSVTMGPSFRINEYVSLYGLLGAAHGK  120
+
+Query  136  AKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+             K +S+F +S S SKTS+AYGAG+QFNP PNFVIDASYEYSKLD +KVGTWMLGAGYRF
+Sbjct  121  VK-ASVFDESISASKTSMAYGAGVQFNPLPNFVIDASYEYSKLDSIKVGTWMLGAGYRF  178
+
+
+> sp|P23988|PAGC_SALTY Virulence membrane protein PagC OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=pagC PE=3 SV=2
+Length=185
+
+ Score = 197 bits (500),  Expect = 5e-62, Method: Composition-based stats.
+ Identities = 67/189 (35%), Positives = 98/189 (52%), Gaps = 17/189 (9%)
+
+Query  18   KTLLVSSLIACLSIASVNVYAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN  77
+            K +++S+L+   S+  VNV     ++ S+GYAQS+V++      KN RG N+KYRYE ++
+Sbjct  2    KNIILSTLVITTSVLVVNVAQADTNAFSVGYAQSKVQDF-----KNIRGVNVKYRYEDDS  56
+
+Query  78   DWGVIGSFAQTRRGFEES----VDGFKLIDG-DFKYYSVTAGPVFRINEYVSLYGLLGAG  132
+                I S +      + S     +G    D  + KY S+  GP +R+++  SLY L G G
+Sbjct  57   PVSFISSLSYLYGDRQASGSVEPEGIHYHDKFEVKYGSLMVGPAYRLSDNFSLYALAGVG  116
+
+Query  133  HGKAKFSS-------IFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGT  185
+              KA F          F    S  KT  A+GAG+Q NP  N V+D  YE S +   K+  
+Sbjct  117  TVKATFKEHSTQDGDSFSNKISSRKTGFAWGAGVQMNPLENIVVDVGYEGSNISSTKING  176
+
+Query  186  WMLGAGYRF  194
+            + +G GYRF
+Sbjct  177  FNVGVGYRF  185
+
+
+> sp|P0A920|OMPX_SHIFL Outer membrane protein X OS=Shigella flexneri 
+OX=623 GN=ompX PE=3 SV=1
+Length=171
+
+ Score = 190 bits (483),  Expect = 1e-59, Method: Composition-based stats.
+ Identities = 75/176 (43%), Positives = 102/176 (58%), Gaps = 15/176 (9%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN-D  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             GVIGSF  T +    S   +       +YY +TAGP +RIN++ S+YG++G G+GK + 
+Sbjct  60   LGVIGSFTYTEKSRTASSGDYN----KNQYYGITAGPAYRINDWASIYGVVGVGYGKFQT  115
+
+Query  139  SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  116  TEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A917|OMPX_ECOLI Outer membrane protein X OS=Escherichia 
+coli (strain K12) OX=83333 GN=ompX PE=1 SV=1
+Length=171
+
+ Score = 190 bits (483),  Expect = 1e-59, Method: Composition-based stats.
+ Identities = 75/176 (43%), Positives = 102/176 (58%), Gaps = 15/176 (9%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN-D  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             GVIGSF  T +    S   +       +YY +TAGP +RIN++ S+YG++G G+GK + 
+Sbjct  60   LGVIGSFTYTEKSRTASSGDYN----KNQYYGITAGPAYRINDWASIYGVVGVGYGKFQT  115
+
+Query  139  SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  116  TEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A918|OMPX_ECOL6 Outer membrane protein X OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 GN=ompX 
+PE=3 SV=1
+Length=171
+
+ Score = 190 bits (483),  Expect = 1e-59, Method: Composition-based stats.
+ Identities = 75/176 (43%), Positives = 102/176 (58%), Gaps = 15/176 (9%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN-D  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             GVIGSF  T +    S   +       +YY +TAGP +RIN++ S+YG++G G+GK + 
+Sbjct  60   LGVIGSFTYTEKSRTASSGDYN----KNQYYGITAGPAYRINDWASIYGVVGVGYGKFQT  115
+
+Query  139  SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  116  TEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P0A919|OMPX_ECO57 Outer membrane protein X OS=Escherichia 
+coli O157:H7 OX=83334 GN=ompX PE=3 SV=1
+Length=171
+
+ Score = 190 bits (483),  Expect = 1e-59, Method: Composition-based stats.
+ Identities = 75/176 (43%), Positives = 102/176 (58%), Gaps = 15/176 (9%)
+
+Query  26   IACLS-IASVNVYAEGES-----SISIGYAQSRVKEDGYKLDKNPRGFNLKYRYEFNN-D  78
+            IACLS +A+V  +  G S     +++ GYAQS  +    K+     GFNLKYRYE +N  
+Sbjct  4    IACLSALAAVLAFTAGTSVAATSTVTGGYAQSDAQGQMNKMG----GFNLKYRYEEDNSP  59
+
+Query  79   WGVIGSFAQTRRGFEESVDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             GVIGSF  T +    S   +       +YY +TAGP +RIN++ S+YG++G G+GK + 
+Sbjct  60   LGVIGSFTYTEKSRTASSGDYN----KNQYYGITAGPAYRINDWASIYGVVGVGYGKFQT  115
+
+Query  139  SSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +         S    +YGAGLQFNP  N  +D SYE S++  V VGTW+ G GYRF
+Sbjct  116  TEYPTYKHDTSDYGFSYGAGLQFNPMENVALDFSYEQSRIRSVDVGTWIAGVGYRF  171
+
+
+> sp|P25253|OMPX_ENTCL Outer membrane protein X OS=Enterobacter 
+cloacae OX=550 GN=ompX PE=1 SV=1
+Length=172
+
+ Score = 183 bits (464),  Expect = 1e-56, Method: Composition-based stats.
+ Identities = 68/161 (42%), Positives = 97/161 (60%), Gaps = 12/161 (7%)
+
+Query  37   YAEGESSISIGYAQSRVKEDGYKLDKNPRGFNLKYRYE-FNNDWGVIGSFAQTRRGFEES  95
+                 S+++ GYAQS ++     +     GFNLKYRYE  NN  GVIGSF  T +   E+
+Sbjct  21   AVAATSTVTGGYAQSDMQG----VMNKTNGFNLKYRYEQDNNPLGVIGSFTYTEKDRTEN  76
+
+Query  96   VDGFKLIDGDFKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKFSSIFG--QSESRSKTSL  153
+                K      +YY +TAGP +R+N++ S+YG++G G+GK + +   G  ++ S S    
+Sbjct  77   GSYNK-----GQYYGITAGPAYRLNDWASIYGVVGVGYGKFQQTENQGLNRTASNSDYGF  131
+
+Query  154  AYGAGLQFNPHPNFVIDASYEYSKLDDVKVGTWMLGAGYRF  194
+            +YGAG+QFNP  N  +D SYE S++ +V VGTW+ G GYRF
+Sbjct  132  SYGAGMQFNPIENVALDFSYEQSRIRNVDVGTWIAGVGYRF  172
+
+
+> sp|P03701|VLOM_LAMBD Outer membrane protein lom OS=Escherichia 
+phage lambda OX=10710 GN=lom PE=1 SV=1
+Length=206
+
+ Score = 159 bits (403),  Expect = 3e-47, Method: Composition-based stats.
+ Identities = 52/189 (28%), Positives = 83/189 (44%), Gaps = 36/189 (19%)
+
+Query  37   YAEGESSISIGYAQSR-----VKEDGYKLDKNPRGFNLKYRYEFNNDWGVIGSFAQTRRG  91
+               G  + ++GY Q +         G     + +G N+KYRYE  +  GV+ S      G
+Sbjct  23   AEGGHGTFTVGYFQVKPGTLPSLSGGDTGVSHLKGINVKYRYELTDSVGVMASL-----G  77
+
+Query  92   FEESVDGFKLIDGD---------FKYYSVTAGPVFRINEYVSLYGLLGAGH---------  133
+            F  S     ++ G+          +Y SV AGPV +I++ VS Y + G  H         
+Sbjct  78   FAASKKSSTVMTGEDTFHYESLRGRYVSVMAGPVLQISKQVSAYAMAGVAHSRWSGSTMD  137
+
+Query  134  --------GKAKFSSIFGQSESRSKTSLAYGAGLQFNPHPNFVIDASYEYSKLDDVKVGT  185
+                    G  K ++      +   TS+A+ AG+Q NP  + V+D +YE S   D +   
+Sbjct  138  YRKTEITPGYMKETTTARDESAMRHTSVAWSAGIQINPAASVVVDIAYEGSGSGDWRTDG  197
+
+Query  186  WMLGAGYRF  194
+            +++G GY+F
+Sbjct  198  FIVGVGYKF  206
+
+
+> sp|P77184|LOMR_ECOLI Putative protein LomR OS=Escherichia coli 
+(strain K12) OX=83333 GN=lomR PE=5 SV=4
+Length=51
+
+ Score = 50.1 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 10/33 (30%), Positives = 18/33 (55%), Gaps = 0/33 (0%)
+
+Query  106  FKYYSVTAGPVFRINEYVSLYGLLGAGHGKAKF  138
+             +++SV  GP  R+NE+ S Y + G  + +   
+Sbjct  3    NRWFSVMVGPSVRVNEWFSAYAMAGMAYSRVST  35
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.130    0.340    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0400    0.140     1.90     42.6     43.6 
+
+Effective search space used: 11441108357
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

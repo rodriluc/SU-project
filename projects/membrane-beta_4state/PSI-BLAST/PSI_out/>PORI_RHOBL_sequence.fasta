@@ -1,0 +1,178 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= PORI_RHOBL_sequence
+
+Length=289
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P39767|PORI_RHOBL Porin OS=Rhodobacter blasticus OX=1075 GN=...  562     0.0  
+
+
+> sp|P39767|PORI_RHOBL Porin OS=Rhodobacter blasticus OX=1075 GN=opmA 
+PE=1 SV=1
+Length=289
+
+ Score = 562 bits (1448),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 289/289 (100%), Positives = 289/289 (100%), Gaps = 0/289 (0%)
+
+Query  1    EISLNGYGRFGLQYVEDRGVGLEDTIISSRLRINIVGTTETDQGVTFGAKLRMQWDDGDA  60
+            EISLNGYGRFGLQYVEDRGVGLEDTIISSRLRINIVGTTETDQGVTFGAKLRMQWDDGDA
+Sbjct  1    EISLNGYGRFGLQYVEDRGVGLEDTIISSRLRINIVGTTETDQGVTFGAKLRMQWDDGDA  60
+
+Query  61   FAGTAGNAAQFWTSYNGVTVSVGNVDTAFDSVALTYDSEMGYEASSFGDAQSSFFAYNSK  120
+            FAGTAGNAAQFWTSYNGVTVSVGNVDTAFDSVALTYDSEMGYEASSFGDAQSSFFAYNSK
+Sbjct  61   FAGTAGNAAQFWTSYNGVTVSVGNVDTAFDSVALTYDSEMGYEASSFGDAQSSFFAYNSK  120
+
+Query  121  YDASGALDNYNGIAVTYSISGVNLYLSYVDPDQTVDSSLVTEEFGIAADWSNDMISLAAA  180
+            YDASGALDNYNGIAVTYSISGVNLYLSYVDPDQTVDSSLVTEEFGIAADWSNDMISLAAA
+Sbjct  121  YDASGALDNYNGIAVTYSISGVNLYLSYVDPDQTVDSSLVTEEFGIAADWSNDMISLAAA  180
+
+Query  181  YTTDAGGIVDNDIAFVGAAYKFNDAGTVGLNWYDNGLSTAGDQVTLYGNYAFGATTVRAY  240
+            YTTDAGGIVDNDIAFVGAAYKFNDAGTVGLNWYDNGLSTAGDQVTLYGNYAFGATTVRAY
+Sbjct  181  YTTDAGGIVDNDIAFVGAAYKFNDAGTVGLNWYDNGLSTAGDQVTLYGNYAFGATTVRAY  240
+
+Query  241  VSDIDRAGADTAYGIGADYQFAEGVKVSGSVQSGFANETVADVGVRFDF  289
+            VSDIDRAGADTAYGIGADYQFAEGVKVSGSVQSGFANETVADVGVRFDF
+Sbjct  241  VSDIDRAGADTAYGIGADYQFAEGVKVSGSVQSGFANETVADVGVRFDF  289
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.133    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23134641388
+Results from round 2
+
+
+Query= PORI_RHOBL_sequence
+
+Length=289
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P39767|PORI_RHOBL Porin OS=Rhodobacter blasticus OX=1075 GN=...  515     0.0  
+
+Sequences not found previously or not previously below threshold:
+
+  sp|P31243|PORI_RHOCA Porin OS=Rhodobacter capsulatus OX=1061 PE...  41.6    0.004
+
+
+> sp|P39767|PORI_RHOBL Porin OS=Rhodobacter blasticus OX=1075 GN=opmA 
+PE=1 SV=1
+Length=289
+
+ Score = 515 bits (1325),  Expect = 0.0, Method: Composition-based stats.
+ Identities = 289/289 (100%), Positives = 289/289 (100%), Gaps = 0/289 (0%)
+
+Query  1    EISLNGYGRFGLQYVEDRGVGLEDTIISSRLRINIVGTTETDQGVTFGAKLRMQWDDGDA  60
+            EISLNGYGRFGLQYVEDRGVGLEDTIISSRLRINIVGTTETDQGVTFGAKLRMQWDDGDA
+Sbjct  1    EISLNGYGRFGLQYVEDRGVGLEDTIISSRLRINIVGTTETDQGVTFGAKLRMQWDDGDA  60
+
+Query  61   FAGTAGNAAQFWTSYNGVTVSVGNVDTAFDSVALTYDSEMGYEASSFGDAQSSFFAYNSK  120
+            FAGTAGNAAQFWTSYNGVTVSVGNVDTAFDSVALTYDSEMGYEASSFGDAQSSFFAYNSK
+Sbjct  61   FAGTAGNAAQFWTSYNGVTVSVGNVDTAFDSVALTYDSEMGYEASSFGDAQSSFFAYNSK  120
+
+Query  121  YDASGALDNYNGIAVTYSISGVNLYLSYVDPDQTVDSSLVTEEFGIAADWSNDMISLAAA  180
+            YDASGALDNYNGIAVTYSISGVNLYLSYVDPDQTVDSSLVTEEFGIAADWSNDMISLAAA
+Sbjct  121  YDASGALDNYNGIAVTYSISGVNLYLSYVDPDQTVDSSLVTEEFGIAADWSNDMISLAAA  180
+
+Query  181  YTTDAGGIVDNDIAFVGAAYKFNDAGTVGLNWYDNGLSTAGDQVTLYGNYAFGATTVRAY  240
+            YTTDAGGIVDNDIAFVGAAYKFNDAGTVGLNWYDNGLSTAGDQVTLYGNYAFGATTVRAY
+Sbjct  181  YTTDAGGIVDNDIAFVGAAYKFNDAGTVGLNWYDNGLSTAGDQVTLYGNYAFGATTVRAY  240
+
+Query  241  VSDIDRAGADTAYGIGADYQFAEGVKVSGSVQSGFANETVADVGVRFDF  289
+            VSDIDRAGADTAYGIGADYQFAEGVKVSGSVQSGFANETVADVGVRFDF
+Sbjct  241  VSDIDRAGADTAYGIGADYQFAEGVKVSGSVQSGFANETVADVGVRFDF  289
+
+
+> sp|P31243|PORI_RHOCA Porin OS=Rhodobacter capsulatus OX=1061 
+PE=1 SV=1
+Length=301
+
+ Score = 41.6 bits (96),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 84/317 (26%), Positives = 124/317 (39%), Gaps = 44/317 (14%)
+
+Query  1    EISLNGYGRFGLQYVEDRGVGLEDTIISSRLRINIVGTTETDQGVTFGAKLRMQWDDGDA  60
+            E+ L+G  R G+ Y  D      D   SSR R+    +  TD G+ FGA  +     G  
+Sbjct  1    EVKLSGDARMGVMYNGD------DWNFSSRSRVLFTMSGTTDSGLEFGASFKAHESVG--  52
+
+Query  61   FAGTAGNAAQFWTSYNGVTVSVGNVDTAFDSVALTYD-SEMGYEASSFGDAQSSFFAYNS  119
+             A T  +   F +   G  + +G+   A  S AL  D  E+GY  +   D   +   Y +
+Sbjct  53   -AETGEDGTVFLSGAFG-KIEMGDALGA--SEALFGDLYEVGY--TDLDDRGGNDIPYLT  106
+
+Query  120  KYDASGALDNYNGIAVTYSISGVNLYLSYVDPDQTVDSSLVTEEFGIAADWSNDMISLAA  179
+              +   A DN   +  TYS    ++  S  D      S    +E  +AA ++    ++  
+Sbjct  107  GDERLTAEDN-PVLLYTYSAGAFSVAASMSDGKVGETSEDDAQEMAVAAAYTFGNYTVGL  165
+
+Query  180  AY----TTDAGGIVDNDIAFVGAAYKFNDAGTVGLNWYDNGLSTAGDQVTL---------  226
+             Y    + D   + D +   + A  KF  A  V   + D  L     +            
+Sbjct  166  GYEKIDSPDTALMADMEQLELAAIAKFG-ATNVKAYYADGELDRDFARAVFDLTPVAAAA  224
+
+Query  227  -------YG---NYAFGATTVRAYVS--DIDRAGADTAYGIGADYQFAEGVKVSGSVQSG  274
+                   YG   +  FGATTV  YV   DID     T YG+GA Y    G  + G +   
+Sbjct  225  TAVDHKAYGLSVDSTFGATTVGGYVQVLDIDTIDDVTYYGLGASYDLGGGASIVGGIADN  284
+
+Query  275  FA--NETVADVGVRFDF  289
+                ++ VAD+GV+F F
+Sbjct  285  DLPNSDMVADLGVKFKF  301
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.133    0.385    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0408    0.140     1.90     42.6     43.6 
+
+Effective search space used: 23134641388
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

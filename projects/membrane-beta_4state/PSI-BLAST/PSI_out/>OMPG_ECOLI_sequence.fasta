@@ -1,0 +1,153 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= OMPG_ECOLI_sequence
+
+Length=301
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P76045|OMPG_ECOLI Outer membrane protein G OS=Escherichia co...  627     0.0  
+
+
+> sp|P76045|OMPG_ECOLI Outer membrane protein G OS=Escherichia 
+coli (strain K12) OX=83333 GN=ompG PE=1 SV=1
+Length=301
+
+ Score = 627 bits (1616),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 301/301 (100%), Positives = 301/301 (100%), Gaps = 0/301 (0%)
+
+Query  1    MKKLLPCTALVMCAGMACAQAEERNDWHFNIGAMYEIENVEGYGEDMDGLAEPSVYFNAA  60
+            MKKLLPCTALVMCAGMACAQAEERNDWHFNIGAMYEIENVEGYGEDMDGLAEPSVYFNAA
+Sbjct  1    MKKLLPCTALVMCAGMACAQAEERNDWHFNIGAMYEIENVEGYGEDMDGLAEPSVYFNAA  60
+
+Query  61   NGPWRIALAYYQEGPVDYSAGKRGTWFDRPELEVHYQFLENDDFSFGLTGGFRNYGYHYV  120
+            NGPWRIALAYYQEGPVDYSAGKRGTWFDRPELEVHYQFLENDDFSFGLTGGFRNYGYHYV
+Sbjct  61   NGPWRIALAYYQEGPVDYSAGKRGTWFDRPELEVHYQFLENDDFSFGLTGGFRNYGYHYV  120
+
+Query  121  DEPGKDTANMQRWKIAPDWDVKLTDDLRFNGWLSMYKFANDLNTTGYADTRVETETGLQY  180
+            DEPGKDTANMQRWKIAPDWDVKLTDDLRFNGWLSMYKFANDLNTTGYADTRVETETGLQY
+Sbjct  121  DEPGKDTANMQRWKIAPDWDVKLTDDLRFNGWLSMYKFANDLNTTGYADTRVETETGLQY  180
+
+Query  181  TFNETVALRVNYYLERGFNMDDSRNNGEFSTQEIRAYLPLTLGNHSVTPYTRIGLDRWSN  240
+            TFNETVALRVNYYLERGFNMDDSRNNGEFSTQEIRAYLPLTLGNHSVTPYTRIGLDRWSN
+Sbjct  181  TFNETVALRVNYYLERGFNMDDSRNNGEFSTQEIRAYLPLTLGNHSVTPYTRIGLDRWSN  240
+
+Query  241  WDWQDDIEREGHDFNRVGLFYGYDFQNGLSVSLEYAFEWQDHDEGDSDKFHYAGVGVNYS  300
+            WDWQDDIEREGHDFNRVGLFYGYDFQNGLSVSLEYAFEWQDHDEGDSDKFHYAGVGVNYS
+Sbjct  241  WDWQDDIEREGHDFNRVGLFYGYDFQNGLSVSLEYAFEWQDHDEGDSDKFHYAGVGVNYS  300
+
+Query  301  F  301
+            F
+Sbjct  301  F  301
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.449    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 24748686136
+Results from round 2
+
+
+Query= OMPG_ECOLI_sequence
+
+Length=301
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P76045|OMPG_ECOLI Outer membrane protein G OS=Escherichia co...  644     0.0  
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P76045|OMPG_ECOLI Outer membrane protein G OS=Escherichia 
+coli (strain K12) OX=83333 GN=ompG PE=1 SV=1
+Length=301
+
+ Score = 644 bits (1662),  Expect = 0.0, Method: Composition-based stats.
+ Identities = 301/301 (100%), Positives = 301/301 (100%), Gaps = 0/301 (0%)
+
+Query  1    MKKLLPCTALVMCAGMACAQAEERNDWHFNIGAMYEIENVEGYGEDMDGLAEPSVYFNAA  60
+            MKKLLPCTALVMCAGMACAQAEERNDWHFNIGAMYEIENVEGYGEDMDGLAEPSVYFNAA
+Sbjct  1    MKKLLPCTALVMCAGMACAQAEERNDWHFNIGAMYEIENVEGYGEDMDGLAEPSVYFNAA  60
+
+Query  61   NGPWRIALAYYQEGPVDYSAGKRGTWFDRPELEVHYQFLENDDFSFGLTGGFRNYGYHYV  120
+            NGPWRIALAYYQEGPVDYSAGKRGTWFDRPELEVHYQFLENDDFSFGLTGGFRNYGYHYV
+Sbjct  61   NGPWRIALAYYQEGPVDYSAGKRGTWFDRPELEVHYQFLENDDFSFGLTGGFRNYGYHYV  120
+
+Query  121  DEPGKDTANMQRWKIAPDWDVKLTDDLRFNGWLSMYKFANDLNTTGYADTRVETETGLQY  180
+            DEPGKDTANMQRWKIAPDWDVKLTDDLRFNGWLSMYKFANDLNTTGYADTRVETETGLQY
+Sbjct  121  DEPGKDTANMQRWKIAPDWDVKLTDDLRFNGWLSMYKFANDLNTTGYADTRVETETGLQY  180
+
+Query  181  TFNETVALRVNYYLERGFNMDDSRNNGEFSTQEIRAYLPLTLGNHSVTPYTRIGLDRWSN  240
+            TFNETVALRVNYYLERGFNMDDSRNNGEFSTQEIRAYLPLTLGNHSVTPYTRIGLDRWSN
+Sbjct  181  TFNETVALRVNYYLERGFNMDDSRNNGEFSTQEIRAYLPLTLGNHSVTPYTRIGLDRWSN  240
+
+Query  241  WDWQDDIEREGHDFNRVGLFYGYDFQNGLSVSLEYAFEWQDHDEGDSDKFHYAGVGVNYS  300
+            WDWQDDIEREGHDFNRVGLFYGYDFQNGLSVSLEYAFEWQDHDEGDSDKFHYAGVGVNYS
+Sbjct  241  WDWQDDIEREGHDFNRVGLFYGYDFQNGLSVSLEYAFEWQDHDEGDSDKFHYAGVGVNYS  300
+
+Query  301  F  301
+            F
+Sbjct  301  F  301
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.138    0.449    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0426    0.140     1.90     42.6     43.6 
+
+Effective search space used: 24748686136
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

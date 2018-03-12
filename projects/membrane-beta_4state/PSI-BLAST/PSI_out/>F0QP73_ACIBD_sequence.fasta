@@ -1,0 +1,113 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= F0QP73_ACIBD_sequence
+
+Length=246
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P83446|OM29_ACIBA 29 kDa outer membrane protein (Fragment) O...  53.1    2e-08
+
+
+> sp|P83446|OM29_ACIBA 29 kDa outer membrane protein (Fragment) 
+OS=Acinetobacter baumannii OX=470 PE=1 SV=1
+Length=24
+
+ Score = 53.1 bits (126),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 24/24 (100%), Positives = 24/24 (100%), Gaps = 0/24 (0%)
+
+Query  22  DEAVVHDSYAFDKNQLIPVGARAE  45
+           DEAVVHDSYAFDKNQLIPVGARAE
+Sbjct  1   DEAVVHDSYAFDKNQLIPVGARAE  24
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.408    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17765876649
+Results from round 2
+
+
+Query= F0QP73_ACIBD_sequence
+
+Length=246
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P83446|OM29_ACIBA 29 kDa outer membrane protein (Fragment) O...  55.5    3e-09
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P83446|OM29_ACIBA 29 kDa outer membrane protein (Fragment) 
+OS=Acinetobacter baumannii OX=470 PE=1 SV=1
+Length=24
+
+ Score = 55.5 bits (132),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 24/24 (100%), Positives = 24/24 (100%), Gaps = 0/24 (0%)
+
+Query  22  DEAVVHDSYAFDKNQLIPVGARAE  45
+           DEAVVHDSYAFDKNQLIPVGARAE
+Sbjct  1   DEAVVHDSYAFDKNQLIPVGARAE  24
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.408    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0409    0.140     1.90     42.6     43.6 
+
+Effective search space used: 17765876649
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

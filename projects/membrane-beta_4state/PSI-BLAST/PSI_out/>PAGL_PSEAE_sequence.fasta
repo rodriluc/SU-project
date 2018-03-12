@@ -1,0 +1,177 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= PAGL_PSEAE_sequence
+
+Length=173
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|Q9HVD1|PAGL_PSEAE Lipid A deacylase PagL OS=Pseudomonas aeru...  350     1e-122
+  sp|Q7WD07|PAGL_BORBR Lipid A deacylase PagL OS=Bordetella bronc...  69.7    9e-14 
+
+
+> sp|Q9HVD1|PAGL_PSEAE Lipid A deacylase PagL OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 
+/ LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=pagL PE=1 
+SV=1
+Length=173
+
+ Score = 350 bits (897),  Expect = 1e-122, Method: Compositional matrix adjust.
+ Identities = 173/173 (100%), Positives = 173/173 (100%), Gaps = 0/173 (0%)
+
+Query  1    MKKLLPLAVLAALSSVHVASAQAADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRL  60
+            MKKLLPLAVLAALSSVHVASAQAADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRL
+Sbjct  1    MKKLLPLAVLAALSSVHVASAQAADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRL  60
+
+Query  61   TGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGTRVGDQN  120
+            TGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGTRVGDQN
+Sbjct  61   TGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGTRVGDQN  120
+
+Query  121  LGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI  173
+            LGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI
+Sbjct  121  LGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI  173
+
+
+> sp|Q7WD07|PAGL_BORBR Lipid A deacylase PagL OS=Bordetella bronchiseptica 
+(strain ATCC BAA-588 / NCTC 13252 / RB50) OX=257310 
+GN=pagL PE=1 SV=1
+Length=178
+
+ Score = 69.7 bits (169),  Expect = 9e-14, Method: Compositional matrix adjust.
+ Identities = 56/175 (32%), Positives = 84/175 (48%), Gaps = 10/175 (6%)
+
+Query  1    MKKLLPLAVLAALSSVHVASAQAADVSAAVGATGQSGMTY-RLGLSWDWDKSWWQT---S  56
+            +KK  PL  +  L+ +  A+AQA      V      G  Y R+ L+++    W      +
+Sbjct  4    LKKNKPLFGIVTLA-LACATAQAQPTQGGVSLHYGIGDHYQRVTLNYETPTLWSHQFGGN  62
+
+Query  57   TGRLTGYWDAGYTYWEGGDEGAGKH--SLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGT  114
+             GRL    + G +YW      +  H    S  P+F + + G+    +IEAGIG   FS T
+Sbjct  63   WGRLDLTPELGASYWWADGSRSPGHVWQASAIPMFRW-WTGERF--YIEAGIGATVFSST  119
+
+Query  115  RVGDQNLGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFY  169
+               D+ +GS+  F D IG G        +G+R  H+SNAG+K+PN G++   L Y
+Sbjct  120  SFADKRIGSAFQFGDHIGLGFLLTPSNRIGLRYSHFSNAGIKEPNPGLDIVQLTY  174
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.134    0.413    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8719294752
+Results from round 2
+
+
+Query= PAGL_PSEAE_sequence
+
+Length=173
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q9HVD1|PAGL_PSEAE Lipid A deacylase PagL OS=Pseudomonas aeru...  242     4e-80
+  sp|Q7WD07|PAGL_BORBR Lipid A deacylase PagL OS=Bordetella bronc...  236     1e-77
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q9HVD1|PAGL_PSEAE Lipid A deacylase PagL OS=Pseudomonas aeruginosa 
+(strain ATCC 15692 / DSM 22644 / CIP 104116 / JCM 14847 
+/ LMG 12228 / 1C / PRS 101 / PAO1) OX=208964 GN=pagL PE=1 
+SV=1
+Length=173
+
+ Score = 242 bits (617),  Expect = 4e-80, Method: Composition-based stats.
+ Identities = 173/173 (100%), Positives = 173/173 (100%), Gaps = 0/173 (0%)
+
+Query  1    MKKLLPLAVLAALSSVHVASAQAADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRL  60
+            MKKLLPLAVLAALSSVHVASAQAADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRL
+Sbjct  1    MKKLLPLAVLAALSSVHVASAQAADVSAAVGATGQSGMTYRLGLSWDWDKSWWQTSTGRL  60
+
+Query  61   TGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGTRVGDQN  120
+            TGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGTRVGDQN
+Sbjct  61   TGYWDAGYTYWEGGDEGAGKHSLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGTRVGDQN  120
+
+Query  121  LGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI  173
+            LGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI
+Sbjct  121  LGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFYKIPI  173
+
+
+> sp|Q7WD07|PAGL_BORBR Lipid A deacylase PagL OS=Bordetella bronchiseptica 
+(strain ATCC BAA-588 / NCTC 13252 / RB50) OX=257310 
+GN=pagL PE=1 SV=1
+Length=178
+
+ Score = 236 bits (601),  Expect = 1e-77, Method: Composition-based stats.
+ Identities = 56/175 (32%), Positives = 84/175 (48%), Gaps = 10/175 (6%)
+
+Query  1    MKKLLPLAVLAALSSVHVASAQAADVSAAVGATGQSGMTY-RLGLSWDWDKSWWQT---S  56
+            +KK  PL  +  L+ +  A+AQA      V      G  Y R+ L+++    W      +
+Sbjct  4    LKKNKPLFGIVTLA-LACATAQAQPTQGGVSLHYGIGDHYQRVTLNYETPTLWSHQFGGN  62
+
+Query  57   TGRLTGYWDAGYTYWEGGDEGAGKH--SLSFAPVFVYEFAGDSIKPFIEAGIGVAAFSGT  114
+             GRL    + G +YW      +  H    S  P+F + + G+    +IEAGIG   FS T
+Sbjct  63   WGRLDLTPELGASYWWADGSRSPGHVWQASAIPMFRW-WTGERF--YIEAGIGATVFSST  119
+
+Query  115  RVGDQNLGSSLNFEDRIGAGLKFANGQSVGVRAIHYSNAGLKQPNDGIESYSLFY  169
+               D+ +GS+  F D IG G        +G+R  H+SNAG+K+PN G++   L Y
+Sbjct  120  SFADKRIGSAFQFGDHIGLGFLLTPSNRIGLRYSHFSNAGIKEPNPGLDIVQLTY  174
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.134    0.389    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0392    0.140     1.90     42.6     43.6 
+
+Effective search space used: 8719294752
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40
