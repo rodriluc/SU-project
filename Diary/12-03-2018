@@ -4,4 +4,6 @@ Today's goals:
     3. Troubleshoot PSSM bash script
     
 I ran into an error with my attempt at an f1 score, so I decided to move on for now and finish my bash script for my PSSM. It worked and I used SwissProt in order to BLAST them. I had a lower amount of PSSM files then my original input, I believe it is because some of my sequences were too short to find homologs. 
+
+I need to parse my matrix by removing the top 3 lines and bottom 5 lines and only intake columns 94-171, I will put all my matrices for each of my PSSMs in one list. I will then create sliding windows for it. 
     
