@@ -3,5 +3,5 @@ Today's goals:
     2. Confusion matrix
     3. Troubleshoot PSSM bash script
     
-
+I ran into an error with my attempt at an f1 score, so I decided to move on for now and finish my bash script for my PSSM. It worked and I used SwissProt in order to BLAST them. I had a lower amount of PSSM files then my original input, I believe it is because some of my sequences were too short to find homologs. 
     
