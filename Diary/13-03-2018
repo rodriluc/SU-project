@@ -1,3 +1,5 @@
 Today's goals:
   1. Parse PSSM
   2. Get the entirety of PSSM part to work
+
+By some miracle, managed to get my os.path to work and managed to extract the correct matrix and add them to a list, which I will use later on. I also added the padding to these arrays. 
