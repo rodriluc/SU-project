@@ -4,3 +4,5 @@ Today's goal:
   3. 50 unique proteins to test
   4. Confusion Matrix
   5. F1 score and  MCC
+
+I spent half the day trying to fit my arrays since they are of different lengths, decided to try and put functions in my code so it was more readable and maybe get my code to work and loop through all the matrices and not just the last one as it is currently doing. 
