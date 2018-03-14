@@ -6,3 +6,5 @@ Today's goal:
   5. F1 score and  MCC
 
 I spent half the day trying to fit my arrays since they are of different lengths, decided to try and put functions in my code so it was more readable and maybe get my code to work and loop through all the matrices and not just the last one as it is currently doing. 
+
+After a lifetime, I managed to get it to work and save a model. Now trying to get the confusion matrix and other scores. I will work on predictor and getting pretty pictures tomorrow. 
