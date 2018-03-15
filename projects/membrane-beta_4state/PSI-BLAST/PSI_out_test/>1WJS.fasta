@@ -1,0 +1,4323 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= 1WJS
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|Q96JM7|LMBL3_HUMAN Lethal(3)malignant brain tumor-like prote...  249     2e-77
+  sp|Q8BLB7|LMBL3_MOUSE Lethal(3)malignant brain tumor-like prote...  242     2e-74
+  sp|D3ZWK4|LMBL1_RAT Lethal(3)malignant brain tumor-like protein...  184     9e-54
+  sp|Q9Y468|LMBL1_HUMAN Lethal(3)malignant brain tumor-like prote...  181     7e-53
+  sp|A2A5N8|LMBL1_MOUSE Lethal(3)malignant brain tumor-like prote...  180     3e-52
+  sp|E1C2V1|LMBL1_CHICK Lethal(3)malignant brain tumor-like prote...  180     4e-52
+  sp|Q8NA19|LMBL4_HUMAN Lethal(3)malignant brain tumor-like prote...  169     8e-49
+  sp|B1B1A0|LMBL4_MOUSE Lethal(3)malignant brain tumor-like prote...  162     4e-46
+  sp|Q9UQR0|SCML2_HUMAN Sex comb on midleg-like protein 2 OS=Homo...  90.1    4e-20
+  sp|Q6DIN3|MBTD1_XENTR MBT domain-containing protein 1 OS=Xenopu...  84.3    3e-18
+  sp|Q32N90|MBTD1_XENLA MBT domain-containing protein 1 OS=Xenopu...  84.0    5e-18
+  sp|P59178|LMBL2_MOUSE Lethal(3)malignant brain tumor-like prote...  83.6    7e-18
+  sp|Q3MIF2|LMBL2_RAT Lethal(3)malignant brain tumor-like protein...  83.6    8e-18
+  sp|Q05BQ5|MBTD1_HUMAN MBT domain-containing protein 1 OS=Homo s...  82.8    9e-18
+  sp|Q5R737|LMBL2_PONAB Lethal(3)malignant brain tumor-like prote...  82.8    1e-17
+  sp|Q969R5|LMBL2_HUMAN Lethal(3)malignant brain tumor-like prote...  82.8    1e-17
+  sp|Q1JQD9|LMBL2_BOVIN Lethal(3)malignant brain tumor-like prote...  82.8    1e-17
+  sp|Q6P5G3|MBTD1_MOUSE MBT domain-containing protein 1 OS=Mus mu...  82.0    2e-17
+  sp|Q9VHA0|SCM_DROME Polycomb protein Scm OS=Drosophila melanoga...  81.6    4e-17
+  sp|Q29L50|SMBT_DROPS Polycomb protein Sfmbt OS=Drosophila pseud...  79.7    2e-16
+  sp|Q96GD3|SCMH1_HUMAN Polycomb protein SCMH1 OS=Homo sapiens OX...  79.0    2e-16
+  sp|Q8K214|SCMH1_MOUSE Polycomb protein SCMH1 OS=Mus musculus OX...  79.0    3e-16
+  sp|Q9VK33|SMBT_DROME Polycomb protein Sfmbt OS=Drosophila melan...  79.0    4e-16
+  sp|Q5VUG0|SMBT2_HUMAN Scm-like with four MBT domains protein 2 ...  67.8    2e-12
+  sp|Q5DTW2|SMBT2_MOUSE Scm-like with four MBT domains protein 2 ...  67.8    2e-12
+  sp|Q9UHJ3|SMBT1_HUMAN Scm-like with four MBT domains protein 1 ...  66.6    5e-12
+  sp|B2D6M2|LIN61_CAEEL Protein lin-61 OS=Caenorhabditis elegans ...  64.3    2e-11
+  sp|Q9JMD1|SMBT1_MOUSE Scm-like with four MBT domains protein 1 ...  61.2    3e-10
+  sp|Q9JMD2|SMBT1_RAT Scm-like with four MBT domains protein 1 OS...  59.3    1e-09
+  sp|A0SQM0|MBTR1_CAEEL Malignant brain tumor repeat protein 1 OS...  56.2    1e-08
+
+
+> sp|Q96JM7|LMBL3_HUMAN Lethal(3)malignant brain tumor-like protein 
+3 OS=Homo sapiens OX=9606 GN=L3MBTL3 PE=1 SV=2
+Length=780
+
+ Score = 249 bits (636),  Expect = 2e-77, Method: Compositional matrix adjust.
+ Identities = 115/116 (99%), Positives = 115/116 (99%), Gaps = 0/116 (0%)
+
+Query  6    SGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALD  65
+            S PYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALD
+Sbjct  256  SFPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALD  315
+
+Query  66   IHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            IHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF
+Sbjct  316  IHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  371
+
+
+ Score = 93.2 bits (230),  Expect = 4e-21, Method: Compositional matrix adjust.
+ Identities = 39/71 (55%), Positives = 53/71 (75%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+  MKLE VD  +     V TVA+   +R+K+HFDG+++CYD+W++AD+ DIHPVGW
+Sbjct  473  HGFQKKMKLEVVDKRNPMFIRVATVADTDDHRVKVHFDGWNNCYDYWIDADSPDIHPVGW  532
+
+Query  72   CEKTGHKLHPP  82
+            C KTGH L PP
+Sbjct  533  CSKTGHPLQPP  543
+
+
+ Score = 87.8 bits (216),  Expect = 3e-19, Method: Compositional matrix adjust.
+ Identities = 41/100 (41%), Positives = 59/100 (59%), Gaps = 1/100 (1%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD ++ S  CV TV ++   R  +HFD + + YD+W  A +  IHPVGW
+Sbjct  369  SGFRVGMKLEAVDKKNPSFICVATVTDMVDNRFLVHFDNWDESYDYWCEASSPHIHPVGW  428
+
+Query  72   CEKTGHKLHPPKGYKE-EEFNWQTYLKTCKAQAAPKSLFE  110
+            C++    L  P GY   + F+W  YL+   +  AP   F+
+Sbjct  429  CKEHRRTLITPPGYPNVKHFSWDKYLEETNSLPAPARAFK  468
+
+
+> sp|Q8BLB7|LMBL3_MOUSE Lethal(3)malignant brain tumor-like protein 
+3 OS=Mus musculus OX=10090 GN=L3mbtl3 PE=1 SV=1
+Length=883
+
+ Score = 242 bits (618),  Expect = 2e-74, Method: Compositional matrix adjust.
+ Identities = 110/116 (95%), Positives = 114/116 (98%), Gaps = 0/116 (0%)
+
+Query  6    SGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALD  65
+            S PYNKNGFKVGMKLEGVDP+HQ++YCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALD
+Sbjct  256  SFPYNKNGFKVGMKLEGVDPDHQAMYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALD  315
+
+Query  66   IHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            IHPVGWCEKTGHKL PPKGYKEEEFNWQ+YLKTCKAQAAPKSLFENQNITVIPSGF
+Sbjct  316  IHPVGWCEKTGHKLRPPKGYKEEEFNWQSYLKTCKAQAAPKSLFENQNITVIPSGF  371
+
+
+ Score = 92.4 bits (228),  Expect = 7e-21, Method: Compositional matrix adjust.
+ Identities = 40/71 (56%), Positives = 51/71 (72%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+  MKLE VD  +     V TVA+   +RIK+HFDG+S CYD+W++AD+ DIHPVGW
+Sbjct  473  HGFQKKMKLEAVDKRNPLFIRVATVADTDDHRIKVHFDGWSSCYDYWIDADSPDIHPVGW  532
+
+Query  72   CEKTGHKLHPP  82
+            C KTGH L  P
+Sbjct  533  CSKTGHPLQAP  543
+
+
+ Score = 87.4 bits (215),  Expect = 4e-19, Method: Compositional matrix adjust.
+ Identities = 40/100 (40%), Positives = 59/100 (59%), Gaps = 1/100 (1%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE  D +  SV CV TV ++   R  +HFD + + YD+W  +++  IHPVGW
+Sbjct  369  SGFRVGMKLEAADKKSPSVICVATVTDMVDNRFLVHFDNWDESYDYWCESNSPHIHPVGW  428
+
+Query  72   CEKTGHKLHPPKGYKE-EEFNWQTYLKTCKAQAAPKSLFE  110
+            C++    L  P GY   + F+W  YL+   +  AP   F+
+Sbjct  429  CKEHRRTLITPPGYSHVKHFSWDKYLEETNSLPAPARAFK  468
+
+
+> sp|D3ZWK4|LMBL1_RAT Lethal(3)malignant brain tumor-like protein 
+1 OS=Rattus norvegicus OX=10116 GN=L3mbtl1 PE=3 SV=1
+Length=826
+
+ Score = 184 bits (468),  Expect = 9e-54, Method: Compositional matrix adjust.
+ Identities = 82/113 (73%), Positives = 98/113 (87%), Gaps = 0/113 (0%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHP  68
+            +NKNGFK+GMKLEGVDP+H S+Y VLTVAEVCGYR++LHFDGYS+C+DFWVNA++ DIHP
+Sbjct  307  HNKNGFKLGMKLEGVDPQHPSMYFVLTVAEVCGYRLRLHFDGYSECHDFWVNANSPDIHP  366
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             GW EKTGHKL PPKGYKEEEF+W  YL++ KAQAAPK LF +Q+ +  P GF
+Sbjct  367  AGWFEKTGHKLQPPKGYKEEEFSWSQYLRSTKAQAAPKHLFVSQSHSPPPVGF  419
+
+
+ Score = 91.3 bits (225),  Expect = 2e-20, Method: Compositional matrix adjust.
+ Identities = 41/76 (54%), Positives = 52/76 (68%), Gaps = 0/76 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIKLHFDG+S  YDFW++AD  DIHP GW
+Sbjct  521  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKLHFDGWSHNYDFWIDADHPDIHPAGW  580
+
+Query  72   CEKTGHKLHPPKGYKE  87
+            C KTGH L PP   +E
+Sbjct  581  CSKTGHPLEPPLRPRE  596
+
+
+ Score = 75.9 bits (185),  Expect = 3e-15, Method: Compositional matrix adjust.
+ Identities = 44/99 (44%), Positives = 61/99 (62%), Gaps = 1/99 (1%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +A +  IHPVGWC
+Sbjct  418  GFQVGMKLEAVDRMNPSLVCVASVTDVVASRFLVHFDDWDDTYDYWCDASSPYIHPVGWC  477
+
+Query  73   EKTGHKLHPPKGYKE-EEFNWQTYLKTCKAQAAPKSLFE  110
+            +K G  L PP+ Y + + F W+ YL+     A P   F+
+Sbjct  478  QKQGKPLTPPQDYPDPDSFCWEKYLEETGTSAVPTWAFK  516
+
+
+> sp|Q9Y468|LMBL1_HUMAN Lethal(3)malignant brain tumor-like protein 
+1 OS=Homo sapiens OX=9606 GN=L3MBTL1 PE=1 SV=3
+Length=752
+
+ Score = 181 bits (460),  Expect = 7e-53, Method: Compositional matrix adjust.
+ Identities = 79/113 (70%), Positives = 98/113 (87%), Gaps = 0/113 (0%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHP  68
+            +NKNGFK+GMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFWVNA++ DIHP
+Sbjct  233  HNKNGFKLGMKLEGIDPQHPSMYFILTVAEVCGYRLRLHFDGYSECHDFWVNANSPDIHP  292
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             GW EKTGHKL PPKGYKEEEF+W  YL++ +AQAAPK LF +Q+ +  P GF
+Sbjct  293  AGWFEKTGHKLQPPKGYKEEEFSWSQYLRSTRAQAAPKHLFVSQSHSPPPLGF  345
+
+
+ Score = 94.0 bits (232),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 44/99 (44%), Positives = 61/99 (62%), Gaps = 1/99 (1%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +  +  IHPVGWC
+Sbjct  344  GFQVGMKLEAVDRMNPSLVCVASVTDVVDSRFLVHFDNWDDTYDYWCDPSSPYIHPVGWC  403
+
+Query  73   EKTGHKLHPPKGYKE-EEFNWQTYLKTCKAQAAPKSLFE  110
+            +K G  L PP+ Y + + F W+ YL+   A A P   F+
+Sbjct  404  QKQGKPLTPPQDYPDPDNFCWEKYLEETGASAVPTWAFK  442
+
+
+ Score = 92.4 bits (228),  Expect = 6e-21, Method: Compositional matrix adjust.
+ Identities = 41/76 (54%), Positives = 53/76 (70%), Gaps = 0/76 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIK+HFDG+S  YDFW++AD  DIHP GW
+Sbjct  447  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKIHFDGWSHGYDFWIDADHPDIHPAGW  506
+
+Query  72   CEKTGHKLHPPKGYKE  87
+            C KTGH L PP G +E
+Sbjct  507  CSKTGHPLQPPLGPRE  522
+
+
+> sp|A2A5N8|LMBL1_MOUSE Lethal(3)malignant brain tumor-like protein 
+1 OS=Mus musculus OX=10090 GN=L3mbtl1 PE=2 SV=1
+Length=826
+
+ Score = 180 bits (457),  Expect = 3e-52, Method: Compositional matrix adjust.
+ Identities = 79/113 (70%), Positives = 97/113 (86%), Gaps = 0/113 (0%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHP  68
+            +NKNGFK+GMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFWVNA++ DIHP
+Sbjct  307  HNKNGFKLGMKLEGIDPQHPSMYFILTVAEVCGYRLRLHFDGYSECHDFWVNANSPDIHP  366
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             GW EKTGHKL  PKGYKEEEF+W  YL++ KAQAAPK LF +Q+ +  P GF
+Sbjct  367  AGWFEKTGHKLQLPKGYKEEEFSWSQYLRSTKAQAAPKHLFVSQSHSTPPVGF  419
+
+
+ Score = 92.4 bits (228),  Expect = 6e-21, Method: Compositional matrix adjust.
+ Identities = 43/99 (43%), Positives = 60/99 (61%), Gaps = 1/99 (1%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +  +  IHPVGWC
+Sbjct  418  GFQVGMKLEAVDRMNPSLVCVASVTDVVDSRFLVHFDDWGDTYDYWCDPSSPYIHPVGWC  477
+
+Query  73   EKTGHKLHPPKGYKE-EEFNWQTYLKTCKAQAAPKSLFE  110
+            +K G  L PP+ Y + + F W+ YL+     A P   F+
+Sbjct  478  QKQGKPLTPPQDYPDPDSFCWEKYLEETGTSAVPNWAFK  516
+
+
+ Score = 90.9 bits (224),  Expect = 2e-20, Method: Compositional matrix adjust.
+ Identities = 41/76 (54%), Positives = 52/76 (68%), Gaps = 0/76 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIKLHFDG+S  YDFW++AD  DIHP GW
+Sbjct  521  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKLHFDGWSHNYDFWIDADHPDIHPAGW  580
+
+Query  72   CEKTGHKLHPPKGYKE  87
+            C KTGH L PP   +E
+Sbjct  581  CSKTGHPLEPPLRPRE  596
+
+
+> sp|E1C2V1|LMBL1_CHICK Lethal(3)malignant brain tumor-like protein 
+1 OS=Gallus gallus OX=9031 GN=L3MBTL1 PE=3 SV=1
+Length=847
+
+ Score = 180 bits (456),  Expect = 4e-52, Method: Compositional matrix adjust.
+ Identities = 80/112 (71%), Positives = 94/112 (84%), Gaps = 0/112 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+            +KNGFKVGMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFW+NAD+ DIHP 
+Sbjct  328  HKNGFKVGMKLEGIDPQHPSMYFILTVAEVCGYRMRLHFDGYSECHDFWLNADSPDIHPA  387
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            GW E+TGHKL PPKGYKEEEF+W  YLK  KAQAAPK LF  +N    P GF
+Sbjct  388  GWFEETGHKLQPPKGYKEEEFSWTNYLKITKAQAAPKHLFVIRNTHEAPPGF  439
+
+
+ Score = 94.7 bits (234),  Expect = 1e-21, Method: Compositional matrix adjust.
+ Identities = 45/99 (45%), Positives = 61/99 (62%), Gaps = 1/99 (1%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV TV +V   R  +HFD + D YD+W +  +  IHPVGWC
+Sbjct  438  GFEVGMKLEAVDRMNPSLICVATVTDVVDDRFLVHFDNWDDTYDYWCDPSSPYIHPVGWC  497
+
+Query  73   EKTGHKLHPPKGYKE-EEFNWQTYLKTCKAQAAPKSLFE  110
+            ++ G  L PP+ Y + + F W+ YLK   A A P   F+
+Sbjct  498  QEHGKPLTPPQDYPDPDNFIWEKYLKETGASAVPAWAFK  536
+
+
+ Score = 94.0 bits (232),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 43/76 (57%), Positives = 52/76 (68%), Gaps = 0/76 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF V MKLE VD    S   V +V +V  +RIK+HFDG+S  YDFW++AD  DIHP+GW
+Sbjct  541  HGFLVNMKLEAVDRRTPSFIRVASVEDVEDHRIKIHFDGWSHVYDFWIDADHPDIHPIGW  600
+
+Query  72   CEKTGHKLHPPKGYKE  87
+            C KTGH L PP   KE
+Sbjct  601  CSKTGHPLQPPLRPKE  616
+
+
+> sp|Q8NA19|LMBL4_HUMAN Lethal(3)malignant brain tumor-like protein 
+4 OS=Homo sapiens OX=9606 GN=L3MBTL4 PE=1 SV=2
+Length=623
+
+ Score = 169 bits (429),  Expect = 8e-49, Method: Compositional matrix adjust.
+ Identities = 72/112 (64%), Positives = 90/112 (80%), Gaps = 0/112 (0%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNA  61
+            S   S P ++NGF++GM+LEG+DP H SV+CVL+VAEVCGYR++LHFDGY  CYDFW NA
+Sbjct  72   SKDQSFPEHENGFQIGMRLEGIDPRHPSVFCVLSVAEVCGYRLRLHFDGYLSCYDFWTNA  131
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQN  113
+             + DIHPVGWCEKT H+LH PKGY++++F W  YLK CK Q APK LF N++
+Sbjct  132  GSPDIHPVGWCEKTKHELHIPKGYRKDKFVWMDYLKACKLQNAPKKLFRNRS  183
+
+
+ Score = 97.4 bits (241),  Expect = 8e-23, Method: Compositional matrix adjust.
+ Identities = 46/117 (39%), Positives = 73/117 (62%), Gaps = 6/117 (5%)
+
+Query  6    SGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALD  65
+            +GP +K  F+VGMKLE VD ++ S+ CV T+A++   R+ +HFD + D YD+W + ++  
+Sbjct  185  NGPMSKE-FQVGMKLEAVDRKNPSLVCVATIADIVEDRLLVHFDNWDDSYDYWCDVNSPY  243
+
+Query  66   IHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            + PVGWC++ G  L  P+GY   E F+W  YL+  +  A P  +F+ +    +P GF
+Sbjct  244  VQPVGWCQENGRTLIAPQGYPNPENFSWTEYLEATQTNAVPAKVFKMR----LPHGF  296
+
+
+ Score = 79.7 bits (195),  Expect = 1e-16, Method: Compositional matrix adjust.
+ Identities = 35/72 (49%), Positives = 48/72 (67%), Gaps = 0/72 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF   MKLE VD  +  +  V T+ +V   R+K+HFDG+   YD+WV AD+ DIHP+GW
+Sbjct  294  HGFLPNMKLEVVDKRNPRLIRVATIVDVDDQRVKVHFDGWDHKYDYWVEADSPDIHPIGW  353
+
+Query  72   CEKTGHKLHPPK  83
+            C+ TGH L  P+
+Sbjct  354  CDVTGHPLEVPQ  365
+
+
+> sp|B1B1A0|LMBL4_MOUSE Lethal(3)malignant brain tumor-like protein 
+4 OS=Mus musculus OX=10090 GN=L3mbtl4 PE=2 SV=2
+Length=621
+
+ Score = 162 bits (409),  Expect = 4e-46, Method: Composition-based stats.
+ Identities = 67/112 (60%), Positives = 87/112 (78%), Gaps = 0/112 (0%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNA  61
+            S   S P ++NGF+VGM+LEG+D    SV+CVL+VAEVCGYR++LHFDGY  CYDFW NA
+Sbjct  72   SKDQSFPEHENGFQVGMRLEGIDARRPSVFCVLSVAEVCGYRLRLHFDGYLSCYDFWTNA  131
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQN  113
+             + DIHPVGWC+KT H+LH P+ Y++++F W  YLK C+ Q APK LF N++
+Sbjct  132  GSPDIHPVGWCQKTKHELHIPRDYRKDKFVWMDYLKACRLQNAPKKLFRNRS  183
+
+
+ Score = 94.7 bits (234),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 44/118 (37%), Positives = 71/118 (60%), Gaps = 6/118 (5%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+            S+GP  +  F+VGMKLE VD  +  + CV T+A++   R+++HFD   D +D+W + ++ 
+Sbjct  184  SNGPVPRE-FQVGMKLEAVDRRNPCLMCVATIADIVEDRVRVHFDSLDDSFDYWCDVNSP  242
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKE-EEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             I PVGWC++ G  L  P+GY   ++F+W  YL+  +++A P   F  +     P GF
+Sbjct  243  YIQPVGWCQENGRTLVAPQGYPHPDKFSWTDYLRASQSKAVPAKAFGMRT----PHGF  296
+
+
+ Score = 89.7 bits (221),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 40/80 (50%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  7    GPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDI  66
+            G    +GF   MKLE VD  +  +  V T+A+V  YR+K+HFDG+   YD+WV+AD+ DI
+Sbjct  289  GMRTPHGFLPNMKLEAVDKRNPQLIRVATIADVDDYRVKIHFDGWDHKYDYWVDADSQDI  348
+
+Query  67   HPVGWCEKTGHKLHPPKGYK  86
+            HP+GWC+ TGH L  P G K
+Sbjct  349  HPIGWCDVTGHPLEVPYGSK  368
+
+
+> sp|Q9UQR0|SCML2_HUMAN Sex comb on midleg-like protein 2 OS=Homo 
+sapiens OX=9606 GN=SCML2 PE=1 SV=1
+Length=700
+
+ Score = 90.1 bits (222),  Expect = 4e-20, Method: Compositional matrix adjust.
+ Identities = 44/103 (43%), Positives = 60/103 (58%), Gaps = 2/103 (2%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FKVGMKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ DI PVG 
+Sbjct  61   NDFKVGMKLEARDPRNATSVCIATVIGITGARLRLRLDGSDNRNDFWRLVDSPDIQPVGT  120
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTY-LKTCK-AQAAPKSLFENQ  112
+            CEK G  L PP GY+    +W  + LKT   ++ A  +LF+ +
+Sbjct  121  CEKEGDLLQPPLGYQMNTSSWPMFLLKTLNGSEMASATLFKKE  163
+
+
+ Score = 76.3 bits (186),  Expect = 2e-15, Method: Compositional matrix adjust.
+ Identities = 32/71 (45%), Positives = 44/71 (62%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FKVGMKLE +D ++  + C  T+ +V G  + + FDG+S  +D+W   D+ DI P GW
+Sbjct  170  NNFKVGMKLEAIDKKNPYLICPATIGDVKGDEVHITFDGWSGAFDYWCKYDSRDIFPAGW  229
+
+Query  72   CEKTGHKLHPP  82
+            C  TG  L PP
+Sbjct  230  CRLTGDVLQPP  240
+
+
+> sp|Q6DIN3|MBTD1_XENTR MBT domain-containing protein 1 OS=Xenopus 
+tropicalis OX=8364 GN=mbtd1 PE=2 SV=1
+Length=651
+
+ Score = 84.3 bits (207),  Expect = 3e-18, Method: Compositional matrix adjust.
+ Identities = 34/71 (48%), Positives = 50/71 (70%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD     + CV TV  +    +++HFDG+ D YD WV+ ++ D++PVGW
+Sbjct  513  HGFRVGMKLEAVDLMEPRLVCVATVTRIIHRLLRIHFDGWEDEYDQWVDCESSDLYPVGW  572
+
+Query  72   CEKTGHKLHPP  82
+            C+ TG++L PP
+Sbjct  573  CQLTGYQLQPP  583
+
+
+ Score = 66.6 bits (161),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 42/105 (40%), Positives = 58/105 (55%), Gaps = 8/105 (8%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYD----FWVNADALDIH  67
+            FK GMKLE +DP + S  CV T+ +V   GY + +  DG S+  D    F  +A +  I 
+Sbjct  407  FKEGMKLEAIDPLNLSAICVATIRKVLADGY-LMIGIDG-SEAADGSDWFCYHASSPSIF  464
+
+Query  68   PVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQ  112
+            PVG+CE    +L PP+GY +  F W  YL+   + AAP  LF  +
+Sbjct  465  PVGFCEINKIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNKE  509
+
+
+ Score = 54.3 bits (129),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 22/69 (32%), Positives = 39/69 (57%), Gaps = 2/69 (3%)
+
+Query  30   VYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGWCEKTGHKLHPPKGYKE  87
+            V+ +  + ++ G+   L ++G+ +    DFW N    D+HPVGWC  +G  L PP+  + 
+Sbjct  214  VFWISGIVKLAGFNALLRYEGFENDSSLDFWCNICGPDVHPVGWCATSGKPLVPPQTIQH  273
+
+Query  88   EEFNWQTYL  96
+            +  NW+ +L
+Sbjct  274  KYTNWKAFL  282
+
+
+ Score = 49.7 bits (117),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 27/80 (34%), Positives = 40/80 (50%), Gaps = 1/80 (1%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSD-CYDFWVNADALDIHPVGWC  72
+            FK  M++E VD  H     V  V  V G R++L ++   D   DFW +  +  IHP+GW 
+Sbjct  308  FKPSMRVEVVDKTHLCRTRVAVVDSVIGGRLRLVYEESEDKTDDFWCHMYSPLIHPIGWS  367
+
+Query  73   EKTGHKLHPPKGYKEEEFNW  92
+               GH+       K++E N+
+Sbjct  368  RSIGHRFKRTDILKKQESNY  387
+
+
+> sp|Q32N90|MBTD1_XENLA MBT domain-containing protein 1 OS=Xenopus 
+laevis OX=8355 GN=mbtd1 PE=2 SV=1
+Length=621
+
+ Score = 84.0 bits (206),  Expect = 5e-18, Method: Compositional matrix adjust.
+ Identities = 34/71 (48%), Positives = 50/71 (70%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD     + CV TV  +    +++HFDG+ D YD WV+ ++ D++PVGW
+Sbjct  513  HGFRVGMKLEAVDLMEPRLVCVATVTRIIHRLLRIHFDGWEDEYDQWVDCESPDLYPVGW  572
+
+Query  72   CEKTGHKLHPP  82
+            C+ TG++L PP
+Sbjct  573  CQLTGYQLQPP  583
+
+
+ Score = 66.2 bits (160),  Expect = 6e-12, Method: Compositional matrix adjust.
+ Identities = 42/102 (41%), Positives = 57/102 (56%), Gaps = 8/102 (8%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYD----FWVNADALDIH  67
+            FK GMKLE +DP + S  CV T+ +V   GY + +  DG S+  D    F  +A +  I 
+Sbjct  407  FKEGMKLEAIDPLNLSAICVATIRKVLAEGY-LMIGIDG-SEAADGSDWFCYHASSPSIF  464
+
+Query  68   PVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            PVG+CE    +L PP+GY +  F W  YL+   + AAP  LF
+Sbjct  465  PVGFCEINKIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLF  506
+
+
+ Score = 56.6 bits (135),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 39/69 (57%), Gaps = 2/69 (3%)
+
+Query  30   VYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGWCEKTGHKLHPPKGYKE  87
+            V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGWC  +G  L PP+  + 
+Sbjct  214  VFWISGIVKLAGYNALLRYEGFENDSSLDFWCNICGPDIHPVGWCATSGKPLVPPQSIQH  273
+
+Query  88   EEFNWQTYL  96
+            +  NW+ +L
+Sbjct  274  KYTNWKAFL  282
+
+
+ Score = 49.7 bits (117),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 27/80 (34%), Positives = 40/80 (50%), Gaps = 1/80 (1%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSD-CYDFWVNADALDIHPVGWC  72
+            FK  M++E VD  H     V  V  V G R++L ++   D   DFW +  +  IHP+GW 
+Sbjct  308  FKPSMRVEVVDKTHLCRTRVAVVESVIGGRLRLVYEESEDKTDDFWCHMYSPLIHPIGWS  367
+
+Query  73   EKTGHKLHPPKGYKEEEFNW  92
+               GH+       K++E N+
+Sbjct  368  RSIGHRFKRTDILKKQESNY  387
+
+
+> sp|P59178|LMBL2_MOUSE Lethal(3)malignant brain tumor-like protein 
+2 OS=Mus musculus OX=10090 GN=L3mbtl2 PE=1 SV=2
+Length=703
+
+ Score = 83.6 bits (205),  Expect = 7e-18, Method: Compositional matrix adjust.
+ Identities = 37/71 (52%), Positives = 49/71 (69%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+ + YD WV+ ++ DI+PVGW
+Sbjct  534  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDNEYDQWVDCESPDIYPVGW  593
+
+Query  72   CEKTGHKLHPP  82
+            CE TG++L PP
+Sbjct  594  CELTGYQLQPP  604
+
+
+ Score = 67.4 bits (163),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 43/107 (40%), Positives = 63/107 (59%), Gaps = 7/107 (7%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDG--YSDCYD-FWVNAD  62
+            Y + G F+ GMKLE +DP +    CV T+ +V   GY + +  DG   +D  D F  +A 
+Sbjct  422  YTEGGWFEEGMKLEAIDPLNLGSICVATICKVLLDGY-LMICVDGGPSTDGSDWFCYHAS  480
+
+Query  63   ALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            +  I P  +C+K   +L PPKGY+ + F W+TYL+  K++AAP  LF
+Sbjct  481  SHAIFPATFCQKNDIELTPPKGYETQPFAWETYLEKTKSKAAPARLF  527
+
+
+ Score = 64.7 bits (156),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 33/108 (31%), Positives = 59/108 (55%), Gaps = 7/108 (6%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + TV +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIATVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPS  119
+            C      L PP+    +  +W++YL   K     ++L  + +I ++ S
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKSYL--MKRLVGSRTLPADFHIKMVES  318
+
+
+ Score = 48.1 bits (113),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 29/68 (43%), Positives = 38/68 (56%), Gaps = 2/68 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHF-DGYSDCYDFWVNADALDIHPV  69
+            K  F+ GM+LE VD    S   +  V  V G R++L + DG SD  DFW +  +  IHPV
+Sbjct  320  KYPFRQGMRLEVVDKTQVSRTRMAVVDTVIGGRLRLLYEDGDSD-DDFWCHMWSPLIHPV  378
+
+Query  70   GWCEKTGH  77
+            GW  + GH
+Sbjct  379  GWSRRVGH  386
+
+
+> sp|Q3MIF2|LMBL2_RAT Lethal(3)malignant brain tumor-like protein 
+2 OS=Rattus norvegicus OX=10116 GN=L3mbtl2 PE=1 SV=1
+Length=703
+
+ Score = 83.6 bits (205),  Expect = 8e-18, Method: Compositional matrix adjust.
+ Identities = 37/71 (52%), Positives = 49/71 (69%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+ + YD WV+ ++ DI+PVGW
+Sbjct  534  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDNEYDQWVDCESPDIYPVGW  593
+
+Query  72   CEKTGHKLHPP  82
+            CE TG++L PP
+Sbjct  594  CELTGYQLQPP  604
+
+
+ Score = 66.6 bits (161),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 42/107 (39%), Positives = 64/107 (60%), Gaps = 7/107 (7%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDG--YSDCYD-FWVNAD  62
+            Y + G F+ GMKLE +DP +    CV T+ +V   GY + +  DG   +D  D F  +A 
+Sbjct  422  YTEGGWFEEGMKLEAIDPLNLGNICVATICKVLLDGY-LMICVDGGPSTDGSDWFCYHAS  480
+
+Query  63   ALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            +  I P  +C+K   +L PPKGY+ + F+W++YL+  K++AAP  LF
+Sbjct  481  SHAIFPATFCQKNDIELTPPKGYETQPFDWESYLEKTKSKAAPARLF  527
+
+
+ Score = 64.7 bits (156),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 33/108 (31%), Positives = 59/108 (55%), Gaps = 7/108 (6%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + TV +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIATVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPS  119
+            C      L PP+    +  +W++YL   K     ++L  + +I ++ S
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKSYL--MKRLVGSRTLPADFHIKMVES  318
+
+
+ Score = 48.1 bits (113),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 29/68 (43%), Positives = 38/68 (56%), Gaps = 2/68 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHF-DGYSDCYDFWVNADALDIHPV  69
+            K  F+ GM+LE VD    S   +  V  V G R++L + DG SD  DFW +  +  IHPV
+Sbjct  320  KYPFRQGMRLEVVDKTQVSRTRMAVVDTVIGGRLRLLYEDGDSD-DDFWCHMWSPLIHPV  378
+
+Query  70   GWCEKTGH  77
+            GW  + GH
+Sbjct  379  GWSRRVGH  386
+
+
+> sp|Q05BQ5|MBTD1_HUMAN MBT domain-containing protein 1 OS=Homo 
+sapiens OX=9606 GN=MBTD1 PE=1 SV=2
+Length=628
+
+ Score = 82.8 bits (203),  Expect = 9e-18, Method: Compositional matrix adjust.
+ Identities = 34/78 (44%), Positives = 51/78 (65%), Gaps = 0/78 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD     + CV TV  +    +++HFDG+ + YD WV+ ++ D++PVGW
+Sbjct  490  HGFRVGMKLEAVDLMEPRLICVATVTRIIHRLLRIHFDGWEEEYDQWVDCESPDLYPVGW  549
+
+Query  72   CEKTGHKLHPPKGYKEEE  89
+            C+ TG++L PP      E
+Sbjct  550  CQLTGYQLQPPASQSSRE  567
+
+
+ Score = 64.3 bits (155),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 41/102 (40%), Positives = 57/102 (56%), Gaps = 8/102 (8%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYD----FWVNADALDIH  67
+            FK GMKLE +DP + S  CV T+ +V   G+ + +  DG S+  D    F  +A +  I 
+Sbjct  384  FKEGMKLEAIDPLNLSTICVATIRKVLADGF-LMIGIDG-SEAADGSDWFCYHATSPSIF  441
+
+Query  68   PVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            PVG+CE    +L PP+GY +  F W  YL+   + AAP  LF
+Sbjct  442  PVGFCEINMIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLF  483
+
+
+ Score = 56.2 bits (134),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 39/69 (57%), Gaps = 2/69 (3%)
+
+Query  30   VYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGWCEKTGHKLHPPKGYKE  87
+            V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGWC  +G  L PP+  + 
+Sbjct  191  VFWIAGIVKLAGYNALLRYEGFENDSGLDFWCNICGSDIHPVGWCAASGKPLVPPRTIQH  250
+
+Query  88   EEFNWQTYL  96
+            +  NW+ +L
+Sbjct  251  KYTNWKAFL  259
+
+
+ Score = 43.1 bits (100),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 25/82 (30%), Positives = 40/82 (49%), Gaps = 1/82 (1%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSD-CYDFWVNADALDIHPVGWC  72
+            FK  M++E VD  H     V  V  V G R++L ++   D   DFW +  +  IH +GW 
+Sbjct  285  FKPCMRVEVVDKRHLCRTRVAVVESVIGGRLRLVYEESEDRTDDFWCHMHSPLIHHIGWS  344
+
+Query  73   EKTGHKLHPPKGYKEEEFNWQT  94
+               GH+       K+++ ++ T
+Sbjct  345  RSIGHRFKRSDITKKQDGHFDT  366
+
+
+> sp|Q5R737|LMBL2_PONAB Lethal(3)malignant brain tumor-like protein 
+2 OS=Pongo abelii OX=9601 GN=L3MBTL2 PE=2 SV=1
+Length=705
+
+ Score = 82.8 bits (203),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 37/71 (52%), Positives = 48/71 (68%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PVGW
+Sbjct  534  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPVGW  593
+
+Query  72   CEKTGHKLHPP  82
+            CE TG++L PP
+Sbjct  594  CELTGYQLQPP  604
+
+
+ Score = 68.2 bits (165),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 44/107 (41%), Positives = 63/107 (59%), Gaps = 7/107 (7%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDG--YSDCYD-FWVNAD  62
+            Y + G F+ GMKLE +DP +    CV TV +V   GY + +  DG   +D  D F  +A 
+Sbjct  422  YTEGGWFEEGMKLEAIDPLNLGNICVATVCKVLLDGY-LMVCVDGGPSTDGSDWFCYHAS  480
+
+Query  63   ALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            +  I P  +C+K   +L PPKGY+ + FNW+ YL+  K++AAP  LF
+Sbjct  481  SHAIFPATFCQKNDIELTPPKGYEAQTFNWENYLEKTKSKAAPSRLF  527
+
+
+ Score = 62.0 bits (149),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 28/85 (33%), Positives = 48/85 (56%), Gaps = 5/85 (6%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIASVIQTAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL  96
+            C      L PP+    +  +W+ YL
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKGYL  297
+
+
+ Score = 48.5 bits (114),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 29/68 (43%), Positives = 38/68 (56%), Gaps = 2/68 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHF-DGYSDCYDFWVNADALDIHPV  69
+            K  F+ GM+LE VD    S   +  V  V G R++L + DG SD  DFW +  +  IHPV
+Sbjct  320  KYPFRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSD-DDFWCHMWSPLIHPV  378
+
+Query  70   GWCEKTGH  77
+            GW  + GH
+Sbjct  379  GWSRRVGH  386
+
+
+> sp|Q969R5|LMBL2_HUMAN Lethal(3)malignant brain tumor-like protein 
+2 OS=Homo sapiens OX=9606 GN=L3MBTL2 PE=1 SV=1
+Length=705
+
+ Score = 82.8 bits (203),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 37/71 (52%), Positives = 48/71 (68%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PVGW
+Sbjct  534  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPVGW  593
+
+Query  72   CEKTGHKLHPP  82
+            CE TG++L PP
+Sbjct  594  CELTGYQLQPP  604
+
+
+ Score = 69.7 bits (169),  Expect = 3e-13, Method: Compositional matrix adjust.
+ Identities = 44/113 (39%), Positives = 59/113 (52%), Gaps = 19/113 (17%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGY-SDCYDFWVNADALD-  65
+            Y + G F+ GMKLE +DP +    CV TV +V         DGY   C D   + D LD 
+Sbjct  422  YTEGGWFEEGMKLEAIDPLNLGNICVATVCKVL-------LDGYLMICVDGGPSTDGLDW  474
+
+Query  66   ---------IHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+                     I P  +C+K   +L PPKGY+ + FNW+ YL+  K++AAP  LF
+Sbjct  475  FCYHASSHAIFPATFCQKNDIELTPPKGYEAQTFNWENYLEKTKSKAAPSRLF  527
+
+
+ Score = 62.0 bits (149),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 28/85 (33%), Positives = 48/85 (56%), Gaps = 5/85 (6%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIASVIQTAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL  96
+            C      L PP+    +  +W+ YL
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKGYL  297
+
+
+ Score = 48.5 bits (114),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 29/68 (43%), Positives = 38/68 (56%), Gaps = 2/68 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHF-DGYSDCYDFWVNADALDIHPV  69
+            K  F+ GM+LE VD    S   +  V  V G R++L + DG SD  DFW +  +  IHPV
+Sbjct  320  KYPFRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSD-DDFWCHMWSPLIHPV  378
+
+Query  70   GWCEKTGH  77
+            GW  + GH
+Sbjct  379  GWSRRVGH  386
+
+
+> sp|Q1JQD9|LMBL2_BOVIN Lethal(3)malignant brain tumor-like protein 
+2 OS=Bos taurus OX=9913 GN=L3MBTL2 PE=2 SV=1
+Length=706
+
+ Score = 82.8 bits (203),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 37/71 (52%), Positives = 48/71 (68%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PVGW
+Sbjct  535  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPVGW  594
+
+Query  72   CEKTGHKLHPP  82
+            CE TG++L PP
+Sbjct  595  CELTGYQLQPP  605
+
+
+ Score = 66.6 bits (161),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 43/107 (40%), Positives = 62/107 (58%), Gaps = 7/107 (7%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDG--YSDCYD-FWVNAD  62
+            Y + G F+ GMKLE +DP +    CV T+ +V   GY + +  DG   +D  D F  +A 
+Sbjct  423  YTEGGWFEEGMKLEAIDPLNLGNICVATICKVLLDGY-LMICVDGGPSTDGSDWFCYHAS  481
+
+Query  63   ALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            +  I P  +C+K   +L PPKGY+   F+W+ YL+  KA+AAP  LF
+Sbjct  482  SHAIFPANFCQKNDIELTPPKGYEAHTFSWEAYLEKTKAKAAPSRLF  528
+
+
+ Score = 61.6 bits (148),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 28/85 (33%), Positives = 48/85 (56%), Gaps = 5/85 (6%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  214  GMKVEVLNSDAVLPSRVYWIASVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  273
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL  96
+            C      L PP+    +  +W+ YL
+Sbjct  274  CAINSKILVPPRTIHAKFTDWKGYL  298
+
+
+ Score = 48.1 bits (113),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 29/68 (43%), Positives = 38/68 (56%), Gaps = 2/68 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHF-DGYSDCYDFWVNADALDIHPV  69
+            K  F+ GM+LE VD    S   +  V  V G R++L + DG SD  DFW +  +  IHPV
+Sbjct  321  KYPFRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSD-DDFWCHMWSPLIHPV  379
+
+Query  70   GWCEKTGH  77
+            GW  + GH
+Sbjct  380  GWSRRVGH  387
+
+
+> sp|Q6P5G3|MBTD1_MOUSE MBT domain-containing protein 1 OS=Mus 
+musculus OX=10090 GN=Mbtd1 PE=1 SV=1
+Length=631
+
+ Score = 82.0 bits (201),  Expect = 2e-17, Method: Compositional matrix adjust.
+ Identities = 33/71 (46%), Positives = 50/71 (70%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD     + CV TV  +    +++HFDG+ + YD WV+ ++ D++PVGW
+Sbjct  493  HGFRVGMKLEAVDLMEPRLICVATVTRIIHRLLRIHFDGWEEEYDQWVDCESPDLYPVGW  552
+
+Query  72   CEKTGHKLHPP  82
+            C+ TG++L PP
+Sbjct  553  CQLTGYQLQPP  563
+
+
+ Score = 64.3 bits (155),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 41/102 (40%), Positives = 57/102 (56%), Gaps = 8/102 (8%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYD----FWVNADALDIH  67
+            FK GMKLE +DP + S  CV T+ +V   G+ + +  DG S+  D    F  +A +  I 
+Sbjct  387  FKEGMKLEAIDPLNLSTICVATIRKVLADGF-LMIGIDG-SEAADGSDWFCYHATSPSIF  444
+
+Query  68   PVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            PVG+CE    +L PP+GY +  F W  YL+   + AAP  LF
+Sbjct  445  PVGFCEINMIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLF  486
+
+
+ Score = 56.6 bits (135),  Expect = 9e-09, Method: Compositional matrix adjust.
+ Identities = 24/69 (35%), Positives = 39/69 (57%), Gaps = 2/69 (3%)
+
+Query  30   VYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGWCEKTGHKLHPPKGYKE  87
+            V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGWC  +G  L PP+  + 
+Sbjct  194  VFWIAGIIKLAGYNALLRYEGFENDSSLDFWCNICGSDIHPVGWCAASGKPLVPPRTVQH  253
+
+Query  88   EEFNWQTYL  96
+            +  NW+ +L
+Sbjct  254  KYTNWKAFL  262
+
+
+ Score = 43.1 bits (100),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 25/82 (30%), Positives = 40/82 (49%), Gaps = 1/82 (1%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSD-CYDFWVNADALDIHPVGWC  72
+            FK  M++E VD  H     V  V  V G R++L ++   D   DFW +  +  IH +GW 
+Sbjct  288  FKPCMRVEVVDKRHLCRTRVAVVESVIGGRLRLVYEESEDRTDDFWCHMHSPLIHHIGWS  347
+
+Query  73   EKTGHKLHPPKGYKEEEFNWQT  94
+               GH+       K+++ ++ T
+Sbjct  348  RSIGHRFKRSDITKKQDGHFDT  369
+
+
+> sp|Q9VHA0|SCM_DROME Polycomb protein Scm OS=Drosophila melanogaster 
+OX=7227 GN=Scm PE=1 SV=2
+Length=877
+
+ Score = 81.6 bits (200),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 39/89 (44%), Positives = 52/89 (58%), Gaps = 2/89 (2%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FK+GMKLE +DP + +  C+ TV  V G R++L  DG     DFW   D+ +IH +G 
+Sbjct  203  NDFKIGMKLEALDPRNVTSTCIATVVGVLGSRLRLRLDGSDSQNDFWRLVDSTEIHAIGH  262
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYLKTCK  100
+            CEK G  L PP G++    +W  YL  CK
+Sbjct  263  CEKNGGMLQPPLGFRMNASSWPGYL--CK  289
+
+
+ Score = 67.8 bits (164),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 31/75 (41%), Positives = 45/75 (60%), Gaps = 1/75 (1%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FKVG KLE VD ++  + C  TV  +   +I + FDG+   +D+W N  + DI P GW
+Sbjct  312  NLFKVGQKLEAVDKKNPQLICCATVDAIKDDQIHVTFDGWRGAFDYWCNYRSRDIFPAGW  371
+
+Query  72   CEKTGHKLHPPKGYK  86
+            C ++ H + PP G+K
+Sbjct  372  CARSCHPMQPP-GHK  385
+
+
+> sp|Q29L50|SMBT_DROPS Polycomb protein Sfmbt OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=Sfmbt PE=3 SV=2
+Length=1274
+
+ Score = 79.7 bits (195),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 36/74 (49%), Positives = 50/74 (68%), Gaps = 1/74 (1%)
+
+Query  11    KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVG  70
+             ++GF+ GM LE  D     + CV TVA V G  +K+HFDG++D YD W++ ++ DI+PVG
+Sbjct  932   EHGFETGMSLECADLMDPRLVCVATVARVVGRLLKVHFDGWTDEYDQWLDCESADIYPVG  991
+
+Query  71    WCEKTGHKLH-PPK  83
+             WC   GHKL  PP+
+Sbjct  992   WCILVGHKLEGPPR  1005
+
+
+ Score = 58.5 bits (140),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 39/104 (38%), Positives = 49/104 (47%), Gaps = 7/104 (7%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGY----SDCYDFWVNADALD  65
+            NGF  GMKLE VDP + S  C  TV  V   GY + +  D Y    S    F  +  +  
+Sbjct  824  NGFIEGMKLEAVDPLNLSSICPATVMAVLKFGYMM-IRIDSYQPDESGSDWFCYHEKSPC  882
+
+Query  66   IHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            I P G+C      + PP GY    F W+ YL+   A AA + LF
+Sbjct  883  IFPAGFCSANNISVTPPNGYDSRTFTWEVYLRNTGAVAANQHLF  926
+
+
+ Score = 58.2 bits (139),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 31/112 (28%), Positives = 58/112 (52%), Gaps = 14/112 (13%)
+
+Query  16   VGMKLEGVDPEHQSV-----------YCVLTVAEVCGYRIKLHFDGY-SDCYDFWVNADA  63
+            VGMK+E  + +  ++           + V T+ E+ GY+  + ++G+ +D +DFWVN   
+Sbjct  597  VGMKVEVENTDCDNIEIIQPGQTPTSFWVATILEIKGYKALMSYEGFDTDSHDFWVNLCN  656
+
+Query  64   LDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQN  113
+             ++H VGWC   G  L PP+  + +  +W+ +L  +   A+  P + +   N
+Sbjct  657  AEVHSVGWCATRGKPLIPPRTIEHKYKDWKDFLVGRLSGARTLPSNFYNKIN  708
+
+
+ Score = 53.9 bits (128),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 28/74 (38%), Positives = 40/74 (54%), Gaps = 2/74 (3%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F++G+ LE VD +  S   + TV ++ G R+ L +    D   FW + D+  IHPVGW  
+Sbjct  715  FRLGLNLECVDKDRISQVRLATVTKIVGKRLFLRYFDTDD--GFWCHEDSPIIHPVGWAT  772
+
+Query  74   KTGHKLHPPKGYKE  87
+              GH L  P+ Y E
+Sbjct  773  TVGHNLAAPQDYLE  786
+
+
+> sp|Q96GD3|SCMH1_HUMAN Polycomb protein SCMH1 OS=Homo sapiens 
+OX=9606 GN=SCMH1 PE=1 SV=1
+Length=660
+
+ Score = 79.0 bits (193),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 40/103 (39%), Positives = 58/103 (56%), Gaps = 2/103 (2%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FK+ MKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ +I P+G 
+Sbjct  56   NEFKISMKLEAQDPRNTTSTCIATVVGLTGARLRLRLDGSDNKNDFWRLVDSAEIQPIGN  115
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTY-LKTCK-AQAAPKSLFENQ  112
+            CEK G  L PP G++    +W  + LKT   A+ AP  +F  +
+Sbjct  116  CEKNGGMLQPPLGFRLNASSWPMFLLKTLNGAEMAPIRIFHKE  158
+
+
+ Score = 74.3 bits (181),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 33/71 (46%), Positives = 43/71 (61%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FK+GMKLE VD ++    C  T+ EV G  + + FDG+   +D+W   D+ DI PVGW
+Sbjct  165  NFFKMGMKLEAVDRKNPHFICPATIGEVRGSEVLVTFDGWRGAFDYWCRFDSRDIFPVGW  224
+
+Query  72   CEKTGHKLHPP  82
+            C  TG  L PP
+Sbjct  225  CSLTGDNLQPP  235
+
+
+> sp|Q8K214|SCMH1_MOUSE Polycomb protein SCMH1 OS=Mus musculus 
+OX=10090 GN=Scmh1 PE=1 SV=1
+Length=706
+
+ Score = 79.0 bits (193),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 40/103 (39%), Positives = 58/103 (56%), Gaps = 2/103 (2%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FK+ MKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ +I P+G 
+Sbjct  56   NEFKISMKLEAQDPRNTTSTCIATVVGLTGARLRLRLDGSDNKNDFWRLVDSSEIQPIGN  115
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTY-LKTCK-AQAAPKSLFENQ  112
+            CEK G  L PP G++    +W  + LKT   A+ AP  +F  +
+Sbjct  116  CEKNGGMLQPPLGFRLNASSWPMFLLKTLNGAEMAPIKIFHKE  158
+
+
+ Score = 74.3 bits (181),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 33/71 (46%), Positives = 43/71 (61%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FK+GMKLE VD ++    C  T+ EV G  + + FDG+   +D+W   D+ DI PVGW
+Sbjct  165  NFFKMGMKLEAVDRKNPHFICPATIGEVRGAEVLVTFDGWRGAFDYWCRFDSRDIFPVGW  224
+
+Query  72   CEKTGHKLHPP  82
+            C  TG  L PP
+Sbjct  225  CSLTGDNLQPP  235
+
+
+> sp|Q9VK33|SMBT_DROME Polycomb protein Sfmbt OS=Drosophila melanogaster 
+OX=7227 GN=Sfmbt PE=1 SV=2
+Length=1220
+
+ Score = 79.0 bits (193),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 36/73 (49%), Positives = 49/73 (67%), Gaps = 1/73 (1%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGM LE  D     + CV TVA V G  +K+HFDG++D YD W++ ++ DI+PVGW
+Sbjct  905  HGFEVGMSLECADLMDPRLVCVATVARVVGRLLKVHFDGWTDEYDQWLDCESADIYPVGW  964
+
+Query  72   CEKTGHKLH-PPK  83
+            C    HKL  PP+
+Sbjct  965  CVLVNHKLEGPPR  977
+
+
+ Score = 59.7 bits (143),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 32/112 (29%), Positives = 58/112 (52%), Gaps = 14/112 (13%)
+
+Query  16   VGMKLEGVDPEHQSV-----------YCVLTVAEVCGYRIKLHFDGY-SDCYDFWVNADA  63
+            VGMK+E  + +  S+           + V T+ E+ GY+  + ++G+ +D +DFWVN   
+Sbjct  569  VGMKVEVENTDCDSIEVIQPGQTPTSFWVATILEIKGYKALMSYEGFDTDSHDFWVNLCN  628
+
+Query  64   LDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQN  113
+             ++H VGWC   G  L PP+  + +  +W+ +L  +   A+  P + +   N
+Sbjct  629  AEVHSVGWCATRGKPLIPPRTIEHKYKDWKDFLVGRLSGARTLPSNFYNKIN  680
+
+
+ Score = 54.7 bits (130),  Expect = 4e-08, Method: Composition-based stats.
+ Identities = 38/104 (37%), Positives = 48/104 (46%), Gaps = 7/104 (7%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGY----SDCYDFWVNADALD  65
+            N F  GMKLE VDP + S  C  TV  V   GY + +  D Y    S    F  +  +  
+Sbjct  796  NSFVEGMKLEAVDPLNLSSICPATVMAVLKFGYMM-IRIDSYQPDASGSDWFCYHEKSPC  854
+
+Query  66   IHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            I P G+C      + PP GY    F W+ YL+   A AA + LF
+Sbjct  855  IFPAGFCSVNNISVTPPNGYDSRTFTWEGYLRDTGAVAAGQHLF  898
+
+
+ Score = 53.9 bits (128),  Expect = 9e-08, Method: Composition-based stats.
+ Identities = 28/74 (38%), Positives = 40/74 (54%), Gaps = 2/74 (3%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F++G+ LE VD +  S   + TV ++ G R+ L +    D   FW + D+  IHPVGW  
+Sbjct  687  FRLGLNLECVDKDRISQVRLATVTKIVGKRLFLRYFDSDD--GFWCHEDSPIIHPVGWAT  744
+
+Query  74   KTGHKLHPPKGYKE  87
+              GH L  P+ Y E
+Sbjct  745  TVGHNLAAPQDYLE  758
+
+
+> sp|Q5VUG0|SMBT2_HUMAN Scm-like with four MBT domains protein 
+2 OS=Homo sapiens OX=9606 GN=SFMBT2 PE=1 SV=1
+Length=894
+
+ Score = 67.8 bits (164),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 35/104 (34%), Positives = 53/104 (51%), Gaps = 4/104 (4%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            ++ F+ GMKLE  +  +   Y V T+   CG  + L + GY +    DFW +    D+HP
+Sbjct  71   QSNFQPGMKLEVANKNNPDTYWVATIITTCGQLLLLRYCGYGEDRRADFWCDVVIADLHP  130
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFE  110
+            VGWC +    L PP   KE+  +W  +L      ++ AP +L E
+Sbjct  131  VGWCTQNNKVLMPPDAIKEKYTDWTEFLIRDLTGSRTAPANLLE  174
+
+
+ Score = 56.6 bits (135),  Expect = 1e-08, Method: Compositional matrix adjust.
+ Identities = 38/106 (36%), Positives = 51/106 (48%), Gaps = 4/106 (4%)
+
+Query  14   FKVGMKLEGV---DPEHQSVYCVLTVAEVCGYRIKLH-FDGYSDCYDFWVNADALDIHPV  69
+            F VGMKLE V   +P + S   V  V     +++ +              +AD+L I PV
+Sbjct  300  FTVGMKLETVNMCEPFYISPASVTKVFNNHFFQVTIDDLRPEPSKLSMLCHADSLGILPV  359
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNIT  115
+             WC K G  L PPKGY  ++F+W  Y K   AQ AP   F N + +
+Sbjct  360  QWCLKNGVSLTPPKGYSGQDFDWADYHKQHGAQEAPPFCFRNTSFS  405
+
+
+ Score = 54.7 bits (130),  Expect = 4e-08, Method: Compositional matrix adjust.
+ Identities = 27/72 (38%), Positives = 39/72 (54%), Gaps = 1/72 (1%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGY-SDCYDFWVNADALDIHPVG  70
+             GF   MKLE V+P +    CV +V  V G  + LH +G  +   +  V+ +++DI PVG
+Sbjct  406  RGFTKNMKLEAVNPRNPGELCVASVVSVKGRLMWLHLEGLQTPVPEVIVDVESMDIFPVG  465
+
+Query  71   WCEKTGHKLHPP  82
+            WCE   + L  P
+Sbjct  466  WCEANSYPLTAP  477
+
+
+ Score = 45.8 bits (107),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 25/82 (30%), Positives = 41/82 (50%), Gaps = 6/82 (7%)
+
+Query  7    GPYNKNG----FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVN  60
+            GP    G      VG  +E  D ++   Y +++V E  G R++L + G  D   YD W+ 
+Sbjct  175  GPLRGKGPIDLITVGSLIELQDSQNPFQYWIVSVIENVGGRLRLRYVGLEDTESYDQWLF  234
+
+Query  61   ADALDIHPVGWCEKTGHKLHPP  82
+                 + PVGWC++  +++ PP
+Sbjct  235  YLDYRLRPVGWCQENKYRMDPP  256
+
+
+> sp|Q5DTW2|SMBT2_MOUSE Scm-like with four MBT domains protein 
+2 OS=Mus musculus OX=10090 GN=Sfmbt2 PE=1 SV=2
+Length=938
+
+ Score = 67.8 bits (164),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 34/104 (33%), Positives = 54/104 (52%), Gaps = 4/104 (4%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHP  68
+            ++ F+ GMKLE  +  +   Y V T+   CG  + L + GY +    DFW +    D+HP
+Sbjct  70   RSNFQPGMKLEVANKNNPDTYWVATIITTCGQLLLLRYCGYGEDRRADFWCDVIIADLHP  129
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFE  110
+            VGWC +    L PP   K++  +W  +L  +   ++ AP +L E
+Sbjct  130  VGWCTQNNKVLRPPDAIKDKYSDWTDFLIRELTGSRTAPANLLE  173
+
+
+ Score = 61.2 bits (147),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 38/102 (37%), Positives = 52/102 (51%), Gaps = 4/102 (4%)
+
+Query  14   FKVGMKLEGV---DPEHQSVYCVLTVAEVCGYRIKLH-FDGYSDCYDFWVNADALDIHPV  69
+            F VGM+LE +   DP H     V  V     +++ +      +D      +AD+L I PV
+Sbjct  299  FTVGMRLETLHISDPFHIYPASVTKVFNSKFFQVAIDDLRPEADKPTMLCHADSLGILPV  358
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFEN  111
+             WC K G  L PPKGY  ++FNW  Y K  +A+ AP   F+N
+Sbjct  359  QWCLKNGVNLAPPKGYSGQDFNWVDYHKQRQAEEAPHFCFKN  400
+
+
+ Score = 57.0 bits (136),  Expect = 8e-09, Method: Composition-based stats.
+ Identities = 30/71 (42%), Positives = 39/71 (55%), Gaps = 1/71 (1%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGY-SDCYDFWVNADALDIHPVGW  71
+            GF   MKLE V+P +    CV TV  V G  + LH +G  +   D  V+ D++DI PVGW
+Sbjct  405  GFSKNMKLEAVNPVNPGEVCVATVVSVKGRLLWLHLEGLETPMPDIIVDMDSMDIFPVGW  464
+
+Query  72   CEKTGHKLHPP  82
+            CE   + L  P
+Sbjct  465  CEANSYPLTTP  475
+
+
+ Score = 46.6 bits (109),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/93 (27%), Positives = 48/93 (52%), Gaps = 4/93 (4%)
+
+Query  20   LEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG--YSDCYDFWVNADALDIHPVGWCEKTGH  77
+            +E  D ++   Y +++V E  G R++L + G  +++ YD W+      + P+GWC++  +
+Sbjct  191  IELQDSQNPFQYWIVSVTENVGGRLRLRYVGLEHTESYDRWLFYLDYRLRPIGWCQENKY  250
+
+Query  78   KLHPPKG--YKEEEFNWQTYLKTCKAQAAPKSL  108
+            ++ PP    Y +  F W+  L+     AA   L
+Sbjct  251  RMDPPSDLYYLKLPFEWKCALEKALVLAAESPL  283
+
+
+> sp|Q9UHJ3|SMBT1_HUMAN Scm-like with four MBT domains protein 
+1 OS=Homo sapiens OX=9606 GN=SFMBT1 PE=1 SV=2
+Length=866
+
+ Score = 66.6 bits (161),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 31/89 (35%), Positives = 47/89 (53%), Gaps = 2/89 (2%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            +NGF  GMKLE         Y V TV   C   + L +DGY +    DFW +    D++P
+Sbjct  47   QNGFAPGMKLEVAVRTDPETYWVATVITTCEQLLLLRYDGYGEDRRADFWCDIRKADLYP  106
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLK  97
+            +GWCE+    L  P+G +++  +W  +L+
+Sbjct  107  IGWCEQNKKTLEAPEGIRDKVSDWDEFLR  135
+
+
+ Score = 58.2 bits (139),  Expect = 3e-09, Method: Compositional matrix adjust.
+ Identities = 38/101 (38%), Positives = 48/101 (48%), Gaps = 5/101 (5%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKL-HFDGYSD----CYDFWVNADALDIHP  68
+            F V MKLE VDP         TV +V   +  L   D           F  +AD+  I P
+Sbjct  275  FSVNMKLEAVDPWSPFGISPATVVKVFDEKYFLVEMDDLRPENHARRSFVCHADSPGIFP  334
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            V W  K G  + PP GY  ++F+W  YLK C A+AAP+  F
+Sbjct  335  VQWSLKNGLHISPPPGYPSQDFDWADYLKQCGAEAAPQRCF  375
+
+
+ Score = 52.4 bits (124),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 28/81 (35%), Positives = 43/81 (53%), Gaps = 7/81 (9%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG----YSDCYDFWVNADALD  65
+            +++ FK  MKLE V+P      CV T+  V G  + L  +G      +C    V+ +++D
+Sbjct  380  SEHEFKENMKLEAVNPILPEEVCVATITAVRGSYLWLQLEGSKKPIPECI---VSVESMD  436
+
+Query  66   IHPVGWCEKTGHKLHPPKGYK  86
+            I P+GWCE  GH L  P+  +
+Sbjct  437  IFPLGWCETNGHPLSTPRRAR  457
+
+
+ Score = 48.1 bits (113),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 29/92 (32%), Positives = 47/92 (51%), Gaps = 7/92 (8%)
+
+Query  33   VLTVAEVCGYRIKLHFDGY--SDCYDFWVNADALDIHPVGWCEKTGHKLHPPKGYK--EE  88
+            ++TV E  G R+KL ++G   SD Y+ W+      +H VGW  + G++L PP   +  + 
+Sbjct  181  IVTVVENIGGRLKLRYEGLESSDNYEHWLYYLDPFLHHVGWAAQQGYELQPPSAIRHLKN  240
+
+Query  89   EFNWQTYLKTCKAQA---APKSLFENQNITVI  117
+            E  WQ  L   K +     P  LF+++ +  I
+Sbjct  241  EAEWQEILAKVKEEEEEPLPSYLFKDKQVIGI  272
+
+
+> sp|B2D6M2|LIN61_CAEEL Protein lin-61 OS=Caenorhabditis elegans 
+OX=6239 GN=lin-61 PE=1 SV=1
+Length=612
+
+ Score = 64.3 bits (155),  Expect = 2e-11, Method: Compositional matrix adjust.
+ Identities = 30/74 (41%), Positives = 42/74 (57%), Gaps = 0/74 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + FKVG++LE  D       C  TV  V G  I ++FDG+ + +D   + D+ DI P+GW
+Sbjct  537  DKFKVGLRLEAADMCENQFICPATVKSVHGRLINVNFDGWDEEFDELYDVDSHDILPIGW  596
+
+Query  72   CEKTGHKLHPPKGY  85
+            CE   + L PPK Y
+Sbjct  597  CEAHSYVLQPPKKY  610
+
+
+ Score = 43.5 bits (101),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 34/102 (33%), Positives = 48/102 (47%), Gaps = 8/102 (8%)
+
+Query  15   KVGMKLEGVDPEHQS-----VYCVLTVAEVCGYRIKLHFDGYSDCYD-FWVNADALDIHP  68
+            KVG K E +DP  Q      V  +L   +  GY I +  DG     D F ++ +   + P
+Sbjct  429  KVGQKFELIDPLAQQFNNLHVASILKFCKTEGYLI-VGMDGPDALEDSFPIHINNTFMFP  487
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+            VG+ EK   +L PP  +K   F W  YL+   A+  P  LF+
+Sbjct  488  VGYAEKYNLELVPPDEFK-GTFRWDEYLEKESAETLPLDLFK  528
+
+
+ Score = 38.5 bits (88),  Expect = 0.008, Method: Compositional matrix adjust.
+ Identities = 23/94 (24%), Positives = 43/94 (46%), Gaps = 16/94 (17%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG----------------YSD  53
+            +K+ FKVG +LE ++  + +   V  + E+CG R+ +                    +S 
+Sbjct  295  SKHRFKVGQRLELLNYSNSTEIRVARIQEICGRRMNVSITKKDFPESLPDADDDRQVFSS  354
+
+Query  54   CYDFWVNADALDIHPVGWCEKTGHKLHPPKGYKE  87
+               +W++  +  I PVG+    G++L+  K Y E
+Sbjct  355  GSQYWIDEGSFFIFPVGFAAVNGYQLNAKKEYIE  388
+
+
+> sp|Q9JMD1|SMBT1_MOUSE Scm-like with four MBT domains protein 
+1 OS=Mus musculus OX=10090 GN=Sfmbt1 PE=1 SV=1
+Length=863
+
+ Score = 61.2 bits (147),  Expect = 3e-10, Method: Compositional matrix adjust.
+ Identities = 35/120 (29%), Positives = 54/120 (45%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            +NGF  GMKLE         Y V T+   C   + L ++GY +    DFW +     ++P
+Sbjct  47   QNGFAPGMKLEVALKNDPETYWVATIITACEQLLLLRYEGYGEDRKADFWCDIRKAGLYP  106
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAA--PKSLFENQNITVIPSGFSGPSS  126
+            +GWC++    L  P+G +++  +W  +L+     A   P SL E       P     P S
+Sbjct  107  IGWCQQNKKTLEAPEGIRDKVSDWNAFLQQTLIGACGPPVSLLEGLRNGRNPLDLIAPGS  166
+
+
+ Score = 58.2 bits (139),  Expect = 4e-09, Method: Compositional matrix adjust.
+ Identities = 35/103 (34%), Positives = 51/103 (50%), Gaps = 9/103 (9%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY-------DFWVNADALDI  66
+            F + MKLE VDP         T+A+V  +  K       D          F  +A++  I
+Sbjct  273  FSINMKLEAVDPWSPFGISPATIAKV--FDDKYFLVEMDDLRPEDHTRRSFVCHANSPGI  330
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+             PV W  K G  ++PP G++ ++F+W  YLK C A+AAP+  F
+Sbjct  331  FPVQWSLKNGLHINPPPGFRSQDFDWADYLKQCGAEAAPQKCF  373
+
+
+ Score = 55.8 bits (133),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 28/78 (36%), Positives = 44/78 (56%), Gaps = 1/78 (1%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSD-CYDFWVNADALDIHP  68
+            +++ FK  MKLE V+P      C+ TV  V G  + L  +G      +F V+A++++I P
+Sbjct  378  SEHQFKENMKLEAVNPLFPEEVCIATVTAVRGSYLWLQLEGSKKPVPEFIVSAESMNIFP  437
+
+Query  69   VGWCEKTGHKLHPPKGYK  86
+            +GWCE  GH L  P+  +
+Sbjct  438  LGWCETNGHPLSTPRRAR  455
+
+
+ Score = 45.4 bits (106),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 31/103 (30%), Positives = 49/103 (48%), Gaps = 5/103 (5%)
+
+Query  17   GMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGY--SDCYDFWVNADALDIHPVGWCEK  74
+            G KLE  D        ++TV E  G R+KL ++G    D ++ W+      +H +GW  +
+Sbjct  165  GSKLECQDFRDSLSTWLVTVVENIGGRLKLRYEGLESRDGFEHWLYYLDPFLHHIGWAAQ  224
+
+Query  75   TGHKLHPPKGYK--EEEFNWQTYLKTCKAQA-APKSLFENQNI  114
+             G  L PP   K  + E +WQ  L   K +   P  LF+++ +
+Sbjct  225  QGCDLQPPLAIKHLKSEADWQEILAKVKEEEPLPSYLFKDKQV  267
+
+
+> sp|Q9JMD2|SMBT1_RAT Scm-like with four MBT domains protein 1 
+OS=Rattus norvegicus OX=10116 GN=Sfmbt1 PE=1 SV=2
+Length=863
+
+ Score = 59.3 bits (142),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 34/120 (28%), Positives = 55/120 (46%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            ++GF  GMKLE    +    Y V TV   C   + L ++GY +    DFW +     ++P
+Sbjct  47   QSGFAPGMKLEVALRKDPETYWVATVITACEQLLLLRYEGYGEDRKADFWCDIRRAGLYP  106
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAA--PKSLFENQNITVIPSGFSGPSS  126
+            +GWC++    L  P+G +++  +W  +L+     A   P +L E       P     P S
+Sbjct  107  IGWCQQNKKTLEAPEGIRDKVSDWSAFLQRTLTGACGPPVALLEGLRNGRNPLDLIAPGS  166
+
+
+ Score = 57.8 bits (138),  Expect = 4e-09, Method: Compositional matrix adjust.
+ Identities = 35/103 (34%), Positives = 51/103 (50%), Gaps = 9/103 (9%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY-------DFWVNADALDI  66
+            F + MKLE VDP         T+A+V  +  K       D          F  +A++  I
+Sbjct  273  FSINMKLEAVDPWSPFGISPATIAKV--FDDKYFLVEIDDLRPEDHARRSFVCHANSPGI  330
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+             PV W  K G  ++PP G++ ++F+W  YLK C A+AAP+  F
+Sbjct  331  FPVQWSLKNGLHINPPPGFRSQDFDWADYLKQCGAEAAPQKCF  373
+
+
+ Score = 50.8 bits (120),  Expect = 7e-07, Method: Compositional matrix adjust.
+ Identities = 26/78 (33%), Positives = 42/78 (54%), Gaps = 1/78 (1%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSD-CYDFWVNADALDIHP  68
+            +++ FK  MKLE V+P       + TV  V G  + L  +G      +F V+ ++++I P
+Sbjct  378  SEHQFKENMKLEAVNPLFPEEVSIATVTAVRGSYLWLQLEGSKKPVPEFIVSVESMNIFP  437
+
+Query  69   VGWCEKTGHKLHPPKGYK  86
+            +GWCE  GH L  P+  +
+Sbjct  438  LGWCETNGHPLSTPRRAR  455
+
+
+ Score = 47.4 bits (111),  Expect = 1e-05, Method: Compositional matrix adjust.
+ Identities = 29/103 (28%), Positives = 51/103 (50%), Gaps = 5/103 (5%)
+
+Query  17   GMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYS--DCYDFWVNADALDIHPVGWCEK  74
+            G +LE  D        ++TV E  G R+KL ++G    D ++ W+      +H +GW  +
+Sbjct  165  GSRLECQDFRDSVSTWIVTVVENIGGRLKLQYEGLERHDGFEHWLYYLDPFLHHIGWAAQ  224
+
+Query  75   TGHKLHPPKGYK--EEEFNWQTYLKTCKAQA-APKSLFENQNI  114
+             G++L PP   +  + E +WQ  L   K +   P  LF+++ +
+Sbjct  225  QGYELQPPLAIRHLKNEADWQEILARVKEEEPLPSYLFKDKQV  267
+
+
+> sp|A0SQM0|MBTR1_CAEEL Malignant brain tumor repeat protein 1 
+OS=Caenorhabditis elegans OX=6239 GN=mbtr-1 PE=1 SV=1
+Length=564
+
+ Score = 56.2 bits (134),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 54/103 (52%), Gaps = 5/103 (5%)
+
+Query  12   NGFKVGMKLEGVDP--EHQSVYCVLTVAEVC---GYRIKLHFDGYSDCYDFWVNADALDI  66
+            N  KVG K E +DP  + +  +CV T+ ++C   G+ I    +  SD   F ++ D   +
+Sbjct  367  NLLKVGQKFELLDPLSDLRQSFCVATIRKICKTPGFLIISPDETESDDESFPIHIDNHFM  426
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+            HPVG+ EK G KL    G +  +F W+ YLK  +A+  P  + 
+Sbjct  427  HPVGYAEKFGIKLDRLAGTEPGKFKWEGYLKEKQAEKIPDEML  469
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.136    0.446    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5027495986
+Results from round 2
+
+
+Query= 1WJS
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q96JM7|LMBL3_HUMAN Lethal(3)malignant brain tumor-like prote...  200     2e-59
+  sp|Q8BLB7|LMBL3_MOUSE Lethal(3)malignant brain tumor-like prote...  197     2e-58
+  sp|Q8NA19|LMBL4_HUMAN Lethal(3)malignant brain tumor-like prote...  189     8e-56
+  sp|B1B1A0|LMBL4_MOUSE Lethal(3)malignant brain tumor-like prote...  185     2e-54
+  sp|E1C2V1|LMBL1_CHICK Lethal(3)malignant brain tumor-like prote...  184     2e-53
+  sp|D3ZWK4|LMBL1_RAT Lethal(3)malignant brain tumor-like protein...  184     2e-53
+  sp|Q9Y468|LMBL1_HUMAN Lethal(3)malignant brain tumor-like prote...  179     4e-52
+  sp|A2A5N8|LMBL1_MOUSE Lethal(3)malignant brain tumor-like prote...  178     2e-51
+  sp|Q9UHJ3|SMBT1_HUMAN Scm-like with four MBT domains protein 1 ...  162     1e-45
+  sp|Q9JMD1|SMBT1_MOUSE Scm-like with four MBT domains protein 1 ...  158     5e-44
+  sp|Q9JMD2|SMBT1_RAT Scm-like with four MBT domains protein 1 OS...  155     3e-43
+  sp|Q5DTW2|SMBT2_MOUSE Scm-like with four MBT domains protein 2 ...  151     2e-41
+  sp|Q5VUG0|SMBT2_HUMAN Scm-like with four MBT domains protein 2 ...  150     3e-41
+  sp|Q9UQR0|SCML2_HUMAN Sex comb on midleg-like protein 2 OS=Homo...  143     5e-39
+  sp|Q96GD3|SCMH1_HUMAN Polycomb protein SCMH1 OS=Homo sapiens OX...  140     2e-38
+  sp|Q8K214|SCMH1_MOUSE Polycomb protein SCMH1 OS=Mus musculus OX...  139     9e-38
+  sp|P59178|LMBL2_MOUSE Lethal(3)malignant brain tumor-like prote...  135     3e-36
+  sp|Q1JQD9|LMBL2_BOVIN Lethal(3)malignant brain tumor-like prote...  135     3e-36
+  sp|Q3MIF2|LMBL2_RAT Lethal(3)malignant brain tumor-like protein...  135     4e-36
+  sp|Q05BQ5|MBTD1_HUMAN MBT domain-containing protein 1 OS=Homo s...  134     5e-36
+  sp|Q969R5|LMBL2_HUMAN Lethal(3)malignant brain tumor-like prote...  134     1e-35
+  sp|Q9VHA0|SCM_DROME Polycomb protein Scm OS=Drosophila melanoga...  134     1e-35
+  sp|Q5R737|LMBL2_PONAB Lethal(3)malignant brain tumor-like prote...  134     1e-35
+  sp|Q6P5G3|MBTD1_MOUSE MBT domain-containing protein 1 OS=Mus mu...  132     1e-35
+  sp|Q32N90|MBTD1_XENLA MBT domain-containing protein 1 OS=Xenopu...  132     2e-35
+  sp|Q6DIN3|MBTD1_XENTR MBT domain-containing protein 1 OS=Xenopu...  131     7e-35
+  sp|Q29L50|SMBT_DROPS Polycomb protein Sfmbt OS=Drosophila pseud...  127     6e-33
+  sp|Q9VK33|SMBT_DROME Polycomb protein Sfmbt OS=Drosophila melan...  125     2e-32
+  sp|A0SQM0|MBTR1_CAEEL Malignant brain tumor repeat protein 1 OS...  116     7e-30
+  sp|B2D6M2|LIN61_CAEEL Protein lin-61 OS=Caenorhabditis elegans ...  115     2e-29
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q11193|SOR3_CAEEL Sop-2-related protein 3 OS=Caenorhabditis ...  40.4    0.002
+
+
+> sp|Q96JM7|LMBL3_HUMAN Lethal(3)malignant brain tumor-like protein 
+3 OS=Homo sapiens OX=9606 GN=L3MBTL3 PE=1 SV=2
+Length=780
+
+ Score = 200 bits (508),  Expect = 2e-59, Method: Composition-based stats.
+ Identities = 115/117 (98%), Positives = 115/117 (98%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S PYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL
+Sbjct  255  QSFPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  314
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF
+Sbjct  315  DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  371
+
+
+ Score = 123 bits (310),  Expect = 6e-32, Method: Composition-based stats.
+ Identities = 44/111 (40%), Positives = 62/111 (56%), Gaps = 5/111 (5%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD ++ S  CV TV ++   R  +HFD + + YD+W  A +  IHPVGW
+Sbjct  369  SGFRVGMKLEAVDKKNPSFICVATVTDMVDNRFLVHFDNWDESYDYWCEASSPHIHPVGW  428
+
+Query  72   CEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            C++    L  P GY   + F+W  YL+   +  AP   F+       P GF
+Sbjct  429  CKEHRRTLITPPGYPNVKHFSWDKYLEETNSLPAPARAFK----VKPPHGF  475
+
+
+ Score = 107 bits (268),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 39/73 (53%), Positives = 53/73 (73%), Gaps = 0/73 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+  MKLE VD  +     V TVA+   +R+K+HFDG+++CYD+W++AD+ DIHPVGW
+Sbjct  473  HGFQKKMKLEVVDKRNPMFIRVATVADTDDHRVKVHFDGWNNCYDYWIDADSPDIHPVGW  532
+
+Query  72   CEKTGHKLHPPKG  84
+            C KTGH L PP  
+Sbjct  533  CSKTGHPLQPPLS  545
+
+
+> sp|Q8BLB7|LMBL3_MOUSE Lethal(3)malignant brain tumor-like protein 
+3 OS=Mus musculus OX=10090 GN=L3mbtl3 PE=1 SV=1
+Length=883
+
+ Score = 197 bits (502),  Expect = 2e-58, Method: Composition-based stats.
+ Identities = 110/117 (94%), Positives = 114/117 (97%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S PYNKNGFKVGMKLEGVDP+HQ++YCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL
+Sbjct  255  QSFPYNKNGFKVGMKLEGVDPDHQAMYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  314
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHPVGWCEKTGHKL PPKGYKEEEFNWQ+YLKTCKAQAAPKSLFENQNITVIPSGF
+Sbjct  315  DIHPVGWCEKTGHKLRPPKGYKEEEFNWQSYLKTCKAQAAPKSLFENQNITVIPSGF  371
+
+
+ Score = 122 bits (306),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 43/111 (39%), Positives = 62/111 (56%), Gaps = 5/111 (5%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE  D +  SV CV TV ++   R  +HFD + + YD+W  +++  IHPVGW
+Sbjct  369  SGFRVGMKLEAADKKSPSVICVATVTDMVDNRFLVHFDNWDESYDYWCESNSPHIHPVGW  428
+
+Query  72   CEKTGHKLHPPKGYKE-EEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            C++    L  P GY   + F+W  YL+   +  AP   F+       P GF
+Sbjct  429  CKEHRRTLITPPGYSHVKHFSWDKYLEETNSLPAPARAFK----VKPPHGF  475
+
+
+ Score = 106 bits (264),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 40/73 (55%), Positives = 51/73 (70%), Gaps = 0/73 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+  MKLE VD  +     V TVA+   +RIK+HFDG+S CYD+W++AD+ DIHPVGW
+Sbjct  473  HGFQKKMKLEAVDKRNPLFIRVATVADTDDHRIKVHFDGWSSCYDYWIDADSPDIHPVGW  532
+
+Query  72   CEKTGHKLHPPKG  84
+            C KTGH L  P  
+Sbjct  533  CSKTGHPLQAPLS  545
+
+
+> sp|Q8NA19|LMBL4_HUMAN Lethal(3)malignant brain tumor-like protein 
+4 OS=Homo sapiens OX=9606 GN=L3MBTL4 PE=1 SV=2
+Length=623
+
+ Score = 189 bits (479),  Expect = 8e-56, Method: Composition-based stats.
+ Identities = 72/116 (62%), Positives = 90/116 (78%), Gaps = 0/116 (0%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNA  61
+            S   S P ++NGF++GM+LEG+DP H SV+CVL+VAEVCGYR++LHFDGY  CYDFW NA
+Sbjct  72   SKDQSFPEHENGFQIGMRLEGIDPRHPSVFCVLSVAEVCGYRLRLHFDGYLSCYDFWTNA  131
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVI  117
+             + DIHPVGWCEKT H+LH PKGY++++F W  YLK CK Q APK LF N++    
+Sbjct  132  GSPDIHPVGWCEKTKHELHIPKGYRKDKFVWMDYLKACKLQNAPKKLFRNRSPNGP  187
+
+
+ Score = 138 bits (347),  Expect = 2e-37, Method: Composition-based stats.
+ Identities = 46/122 (38%), Positives = 73/122 (60%), Gaps = 6/122 (5%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNA  61
+            +   +GP +K  F+VGMKLE VD ++ S+ CV T+A++   R+ +HFD + D YD+W + 
+Sbjct  181  NRSPNGPMSK-EFQVGMKLEAVDRKNPSLVCVATIADIVEDRLLVHFDNWDDSYDYWCDV  239
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSG  120
+            ++  + PVGWC++ G  L  P+GY   E F+W  YL+  +  A P  +F+      +P G
+Sbjct  240  NSPYVQPVGWCQENGRTLIAPQGYPNPENFSWTEYLEATQTNAVPAKVFK----MRLPHG  295
+
+Query  121  FS  122
+            F 
+Sbjct  296  FL  297
+
+
+ Score = 104 bits (259),  Expect = 3e-25, Method: Composition-based stats.
+ Identities = 35/76 (46%), Positives = 49/76 (64%), Gaps = 0/76 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF   MKLE VD  +  +  V T+ +V   R+K+HFDG+   YD+WV AD+ DIHP+GW
+Sbjct  294  HGFLPNMKLEVVDKRNPRLIRVATIVDVDDQRVKVHFDGWDHKYDYWVEADSPDIHPIGW  353
+
+Query  72   CEKTGHKLHPPKGYKE  87
+            C+ TGH L  P+   +
+Sbjct  354  CDVTGHPLEVPQRTND  369
+
+
+> sp|B1B1A0|LMBL4_MOUSE Lethal(3)malignant brain tumor-like protein 
+4 OS=Mus musculus OX=10090 GN=L3mbtl4 PE=2 SV=2
+Length=621
+
+ Score = 185 bits (469),  Expect = 2e-54, Method: Composition-based stats.
+ Identities = 69/121 (57%), Positives = 90/121 (74%), Gaps = 1/121 (1%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNA  61
+            S   S P ++NGF+VGM+LEG+D    SV+CVL+VAEVCGYR++LHFDGY  CYDFW NA
+Sbjct  72   SKDQSFPEHENGFQVGMRLEGIDARRPSVFCVLSVAEVCGYRLRLHFDGYLSCYDFWTNA  131
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQ-NITVIPSG  120
+             + DIHPVGWC+KT H+LH P+ Y++++F W  YLK C+ Q APK LF N+ +   +P  
+Sbjct  132  GSPDIHPVGWCQKTKHELHIPRDYRKDKFVWMDYLKACRLQNAPKKLFRNRSSNGPVPRE  191
+
+Query  121  F  121
+            F
+Sbjct  192  F  192
+
+
+ Score = 131 bits (330),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 44/122 (36%), Positives = 71/122 (58%), Gaps = 6/122 (5%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNA  61
+            +  S+GP  +  F+VGMKLE VD  +  + CV T+A++   R+++HFD   D +D+W + 
+Sbjct  181  NRSSNGPVPR-EFQVGMKLEAVDRRNPCLMCVATIADIVEDRVRVHFDSLDDSFDYWCDV  239
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSG  120
+            ++  I PVGWC++ G  L  P+GY   ++F+W  YL+  +++A P   F        P G
+Sbjct  240  NSPYIQPVGWCQENGRTLVAPQGYPHPDKFSWTDYLRASQSKAVPAKAF----GMRTPHG  295
+
+Query  121  FS  122
+            F 
+Sbjct  296  FL  297
+
+
+ Score = 107 bits (268),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 39/78 (50%), Positives = 52/78 (67%), Gaps = 0/78 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GF   MKLE VD  +  +  V T+A+V  YR+K+HFDG+   YD+WV+AD+ DIHP+
+Sbjct  292  TPHGFLPNMKLEAVDKRNPQLIRVATIADVDDYRVKIHFDGWDHKYDYWVDADSQDIHPI  351
+
+Query  70   GWCEKTGHKLHPPKGYKE  87
+            GWC+ TGH L  P G K 
+Sbjct  352  GWCDVTGHPLEVPYGSKH  369
+
+
+> sp|E1C2V1|LMBL1_CHICK Lethal(3)malignant brain tumor-like protein 
+1 OS=Gallus gallus OX=9031 GN=L3MBTL1 PE=3 SV=1
+Length=847
+
+ Score = 184 bits (466),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 80/117 (68%), Positives = 94/117 (80%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+                 +KNGFKVGMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFW+NAD+ 
+Sbjct  323  QVASQHKNGFKVGMKLEGIDPQHPSMYFILTVAEVCGYRMRLHFDGYSECHDFWLNADSP  382
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHP GW E+TGHKL PPKGYKEEEF+W  YLK  KAQAAPK LF  +N    P GF
+Sbjct  383  DIHPAGWFEETGHKLQPPKGYKEEEFSWTNYLKITKAQAAPKHLFVIRNTHEAPPGF  439
+
+
+ Score = 134 bits (336),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 48/111 (43%), Positives = 63/111 (57%), Gaps = 5/111 (5%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV TV +V   R  +HFD + D YD+W +  +  IHPVGWC
+Sbjct  438  GFEVGMKLEAVDRMNPSLICVATVTDVVDDRFLVHFDNWDDTYDYWCDPSSPYIHPVGWC  497
+
+Query  73   EKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+            ++ G  L PP+ Y   + F W+ YLK   A A P   F+       P GF 
+Sbjct  498  QEHGKPLTPPQDYPDPDNFIWEKYLKETGASAVPAWAFK----VRPPHGFL  544
+
+
+ Score = 105 bits (263),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 45/94 (48%), Positives = 57/94 (61%), Gaps = 0/94 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF V MKLE VD    S   V +V +V  +RIK+HFDG+S  YDFW++AD  DIHP+GW
+Sbjct  541  HGFLVNMKLEAVDRRTPSFIRVASVEDVEDHRIKIHFDGWSHVYDFWIDADHPDIHPIGW  600
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAP  105
+            C KTGH L PP   KE   +  +   T   +  P
+Sbjct  601  CSKTGHPLQPPLRPKEPASSAHSGCPTLGCKNIP  634
+
+
+> sp|D3ZWK4|LMBL1_RAT Lethal(3)malignant brain tumor-like protein 
+1 OS=Rattus norvegicus OX=10116 GN=L3mbtl1 PE=3 SV=1
+Length=826
+
+ Score = 184 bits (466),  Expect = 2e-53, Method: Composition-based stats.
+ Identities = 82/117 (70%), Positives = 99/117 (85%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             +  +NKNGFK+GMKLEGVDP+H S+Y VLTVAEVCGYR++LHFDGYS+C+DFWVNA++ 
+Sbjct  303  QAVTHNKNGFKLGMKLEGVDPQHPSMYFVLTVAEVCGYRLRLHFDGYSECHDFWVNANSP  362
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHP GW EKTGHKL PPKGYKEEEF+W  YL++ KAQAAPK LF +Q+ +  P GF
+Sbjct  363  DIHPAGWFEKTGHKLQPPKGYKEEEFSWSQYLRSTKAQAAPKHLFVSQSHSPPPVGF  419
+
+
+ Score = 107 bits (267),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 46/111 (41%), Positives = 62/111 (56%), Gaps = 5/111 (5%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +A +  IHPVGWC
+Sbjct  418  GFQVGMKLEAVDRMNPSLVCVASVTDVVASRFLVHFDDWDDTYDYWCDASSPYIHPVGWC  477
+
+Query  73   EKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+            +K G  L PP+ Y   + F W+ YL+     A P   F+       P  F 
+Sbjct  478  QKQGKPLTPPQDYPDPDSFCWEKYLEETGTSAVPTWAFK----VRPPHSFL  524
+
+
+ Score = 102 bits (254),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 41/83 (49%), Positives = 52/83 (63%), Gaps = 0/83 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIKLHFDG+S  YDFW++AD  DIHP GW
+Sbjct  521  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKLHFDGWSHNYDFWIDADHPDIHPAGW  580
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQT  94
+            C KTGH L PP   +E       
+Sbjct  581  CSKTGHPLEPPLRPRESSSASPG  603
+
+
+> sp|Q9Y468|LMBL1_HUMAN Lethal(3)malignant brain tumor-like protein 
+1 OS=Homo sapiens OX=9606 GN=L3MBTL1 PE=1 SV=3
+Length=752
+
+ Score = 179 bits (454),  Expect = 4e-52, Method: Composition-based stats.
+ Identities = 79/117 (68%), Positives = 99/117 (85%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             +  +NKNGFK+GMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFWVNA++ 
+Sbjct  229  QAVTHNKNGFKLGMKLEGIDPQHPSMYFILTVAEVCGYRLRLHFDGYSECHDFWVNANSP  288
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHP GW EKTGHKL PPKGYKEEEF+W  YL++ +AQAAPK LF +Q+ +  P GF
+Sbjct  289  DIHPAGWFEKTGHKLQPPKGYKEEEFSWSQYLRSTRAQAAPKHLFVSQSHSPPPLGF  345
+
+
+ Score = 125 bits (314),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 46/111 (41%), Positives = 62/111 (56%), Gaps = 5/111 (5%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +  +  IHPVGWC
+Sbjct  344  GFQVGMKLEAVDRMNPSLVCVASVTDVVDSRFLVHFDNWDDTYDYWCDPSSPYIHPVGWC  403
+
+Query  73   EKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+            +K G  L PP+ Y   + F W+ YL+   A A P   F+       P  F 
+Sbjct  404  QKQGKPLTPPQDYPDPDNFCWEKYLEETGASAVPTWAFK----VRPPHSFL  450
+
+
+ Score = 102 bits (254),  Expect = 2e-24, Method: Composition-based stats.
+ Identities = 41/83 (49%), Positives = 53/83 (64%), Gaps = 0/83 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIK+HFDG+S  YDFW++AD  DIHP GW
+Sbjct  447  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKIHFDGWSHGYDFWIDADHPDIHPAGW  506
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQT  94
+            C KTGH L PP G +E       
+Sbjct  507  CSKTGHPLQPPLGPREPSSASPG  529
+
+
+> sp|A2A5N8|LMBL1_MOUSE Lethal(3)malignant brain tumor-like protein 
+1 OS=Mus musculus OX=10090 GN=L3mbtl1 PE=2 SV=1
+Length=826
+
+ Score = 178 bits (451),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 79/117 (68%), Positives = 98/117 (84%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             +  +NKNGFK+GMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFWVNA++ 
+Sbjct  303  QAVTHNKNGFKLGMKLEGIDPQHPSMYFILTVAEVCGYRLRLHFDGYSECHDFWVNANSP  362
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHP GW EKTGHKL  PKGYKEEEF+W  YL++ KAQAAPK LF +Q+ +  P GF
+Sbjct  363  DIHPAGWFEKTGHKLQLPKGYKEEEFSWSQYLRSTKAQAAPKHLFVSQSHSTPPVGF  419
+
+
+ Score = 125 bits (315),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 45/111 (41%), Positives = 61/111 (55%), Gaps = 5/111 (5%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +  +  IHPVGWC
+Sbjct  418  GFQVGMKLEAVDRMNPSLVCVASVTDVVDSRFLVHFDDWGDTYDYWCDPSSPYIHPVGWC  477
+
+Query  73   EKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+            +K G  L PP+ Y   + F W+ YL+     A P   F+       P  F 
+Sbjct  478  QKQGKPLTPPQDYPDPDSFCWEKYLEETGTSAVPNWAFK----VRPPHSFL  524
+
+
+ Score = 102 bits (253),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 41/79 (52%), Positives = 52/79 (66%), Gaps = 0/79 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIKLHFDG+S  YDFW++AD  DIHP GW
+Sbjct  521  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKLHFDGWSHNYDFWIDADHPDIHPAGW  580
+
+Query  72   CEKTGHKLHPPKGYKEEEF  90
+            C KTGH L PP   +E   
+Sbjct  581  CSKTGHPLEPPLRPRESSS  599
+
+
+> sp|Q9UHJ3|SMBT1_HUMAN Scm-like with four MBT domains protein 
+1 OS=Homo sapiens OX=9606 GN=SFMBT1 PE=1 SV=2
+Length=866
+
+ Score = 162 bits (410),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 38/120 (32%), Positives = 54/120 (45%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            +NGF  GMKLE         Y V TV   C   + L +DGY +    DFW +    D++P
+Sbjct  47   QNGFAPGMKLEVAVRTDPETYWVATVITTCEQLLLLRYDGYGEDRRADFWCDIRKADLYP  106
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAA--PKSLFENQNITVIPSGFSGPSS  126
+            +GWCE+    L  P+G +++  +W  +L+     A   P  L E       P     P S
+Sbjct  107  IGWCEQNKKTLEAPEGIRDKVSDWDEFLRQTLIGACSPPVPLLEGLRNGRNPLDLIAPGS  166
+
+
+ Score = 88.6 bits (218),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 38/103 (37%), Positives = 50/103 (49%), Gaps = 5/103 (5%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCG--YRIKLHFDGYSD---CYDFWVNADALDI  66
+            + F V MKLE VDP         TV +V    Y +    D   +      F  +AD+  I
+Sbjct  273  HTFSVNMKLEAVDPWSPFGISPATVVKVFDEKYFLVEMDDLRPENHARRSFVCHADSPGI  332
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+             PV W  K G  + PP GY  ++F+W  YLK C A+AAP+  F
+Sbjct  333  FPVQWSLKNGLHISPPPGYPSQDFDWADYLKQCGAEAAPQRCF  375
+
+
+ Score = 78.5 bits (192),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 32/113 (28%), Positives = 54/113 (48%), Gaps = 7/113 (6%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG--YSDCYDFWVNADALDIHPV  69
+            +    G +LE    +      ++TV E  G R+KL ++G   SD Y+ W+      +H V
+Sbjct  160  DLIAPGSRLECQAFQDSLSTWIVTVVENIGGRLKLRYEGLESSDNYEHWLYYLDPFLHHV  219
+
+Query  70   GWCEKTGHKLHPPKGYK--EEEFNWQTYL---KTCKAQAAPKSLFENQNITVI  117
+            GW  + G++L PP   +  + E  WQ  L   K  + +  P  LF+++ +  I
+Sbjct  220  GWAAQQGYELQPPSAIRHLKNEAEWQEILAKVKEEEEEPLPSYLFKDKQVIGI  272
+
+
+ Score = 71.2 bits (173),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 27/75 (36%), Positives = 40/75 (53%), Gaps = 1/75 (1%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDF-WVNADALDIHP  68
+            +++ FK  MKLE V+P      CV T+  V G  + L  +G         V+ +++DI P
+Sbjct  380  SEHEFKENMKLEAVNPILPEEVCVATITAVRGSYLWLQLEGSKKPIPECIVSVESMDIFP  439
+
+Query  69   VGWCEKTGHKLHPPK  83
+            +GWCE  GH L  P+
+Sbjct  440  LGWCETNGHPLSTPR  454
+
+
+> sp|Q9JMD1|SMBT1_MOUSE Scm-like with four MBT domains protein 
+1 OS=Mus musculus OX=10090 GN=Sfmbt1 PE=1 SV=1
+Length=863
+
+ Score = 158 bits (399),  Expect = 5e-44, Method: Composition-based stats.
+ Identities = 35/120 (29%), Positives = 54/120 (45%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            +NGF  GMKLE         Y V T+   C   + L ++GY +    DFW +     ++P
+Sbjct  47   QNGFAPGMKLEVALKNDPETYWVATIITACEQLLLLRYEGYGEDRKADFWCDIRKAGLYP  106
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAA--PKSLFENQNITVIPSGFSGPSS  126
+            +GWC++    L  P+G +++  +W  +L+     A   P SL E       P     P S
+Sbjct  107  IGWCQQNKKTLEAPEGIRDKVSDWNAFLQQTLIGACGPPVSLLEGLRNGRNPLDLIAPGS  166
+
+
+ Score = 89.3 bits (220),  Expect = 9e-20, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 54/103 (52%), Gaps = 5/103 (5%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCG--YRIKLHFDGYSDCY---DFWVNADALDI  66
+            + F + MKLE VDP         T+A+V    Y +    D   + +    F  +A++  I
+Sbjct  271  HEFSINMKLEAVDPWSPFGISPATIAKVFDDKYFLVEMDDLRPEDHTRRSFVCHANSPGI  330
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+             PV W  K G  ++PP G++ ++F+W  YLK C A+AAP+  F
+Sbjct  331  FPVQWSLKNGLHINPPPGFRSQDFDWADYLKQCGAEAAPQKCF  373
+
+
+ Score = 75.8 bits (185),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 30/110 (27%), Positives = 48/110 (44%), Gaps = 5/110 (5%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDF--WVNADALDIHPV  69
+            +    G KLE  D        ++TV E  G R+KL ++G      F  W+      +H +
+Sbjct  160  DLIAPGSKLECQDFRDSLSTWLVTVVENIGGRLKLRYEGLESRDGFEHWLYYLDPFLHHI  219
+
+Query  70   GWCEKTGHKLHPPKGYKEEEF--NWQTYL-KTCKAQAAPKSLFENQNITV  116
+            GW  + G  L PP   K  +   +WQ  L K  + +  P  LF+++ +  
+Sbjct  220  GWAAQQGCDLQPPLAIKHLKSEADWQEILAKVKEEEPLPSYLFKDKQVIG  269
+
+
+ Score = 71.2 bits (173),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 28/75 (37%), Positives = 43/75 (57%), Gaps = 1/75 (1%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY-DFWVNADALDIHP  68
+            +++ FK  MKLE V+P      C+ TV  V G  + L  +G      +F V+A++++I P
+Sbjct  378  SEHQFKENMKLEAVNPLFPEEVCIATVTAVRGSYLWLQLEGSKKPVPEFIVSAESMNIFP  437
+
+Query  69   VGWCEKTGHKLHPPK  83
+            +GWCE  GH L  P+
+Sbjct  438  LGWCETNGHPLSTPR  452
+
+
+> sp|Q9JMD2|SMBT1_RAT Scm-like with four MBT domains protein 1 
+OS=Rattus norvegicus OX=10116 GN=Sfmbt1 PE=1 SV=2
+Length=863
+
+ Score = 155 bits (393),  Expect = 3e-43, Method: Composition-based stats.
+ Identities = 34/120 (28%), Positives = 55/120 (46%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            ++GF  GMKLE    +    Y V TV   C   + L ++GY +    DFW +     ++P
+Sbjct  47   QSGFAPGMKLEVALRKDPETYWVATVITACEQLLLLRYEGYGEDRKADFWCDIRRAGLYP  106
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAA--PKSLFENQNITVIPSGFSGPSS  126
+            +GWC++    L  P+G +++  +W  +L+     A   P +L E       P     P S
+Sbjct  107  IGWCQQNKKTLEAPEGIRDKVSDWSAFLQRTLTGACGPPVALLEGLRNGRNPLDLIAPGS  166
+
+
+ Score = 88.6 bits (218),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 35/105 (33%), Positives = 54/105 (51%), Gaps = 5/105 (5%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCG--YRIKLHFDGYSDCY---DFWVNADAL  64
+              + F + MKLE VDP         T+A+V    Y +    D   + +    F  +A++ 
+Sbjct  269  RTHEFSINMKLEAVDPWSPFGISPATIAKVFDDKYFLVEIDDLRPEDHARRSFVCHANSP  328
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+             I PV W  K G  ++PP G++ ++F+W  YLK C A+AAP+  F
+Sbjct  329  GIFPVQWSLKNGLHINPPPGFRSQDFDWADYLKQCGAEAAPQKCF  373
+
+
+ Score = 78.2 bits (191),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 28/110 (25%), Positives = 53/110 (48%), Gaps = 5/110 (5%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYS--DCYDFWVNADALDIHPV  69
+            +    G +LE  D        ++TV E  G R+KL ++G    D ++ W+      +H +
+Sbjct  160  DLIAPGSRLECQDFRDSVSTWIVTVVENIGGRLKLQYEGLERHDGFEHWLYYLDPFLHHI  219
+
+Query  70   GWCEKTGHKLHPPKGYK--EEEFNWQTYL-KTCKAQAAPKSLFENQNITV  116
+            GW  + G++L PP   +  + E +WQ  L +  + +  P  LF+++ +  
+Sbjct  220  GWAAQQGYELQPPLAIRHLKNEADWQEILARVKEEEPLPSYLFKDKQVIR  269
+
+
+ Score = 67.0 bits (162),  Expect = 3e-12, Method: Composition-based stats.
+ Identities = 26/75 (35%), Positives = 41/75 (55%), Gaps = 1/75 (1%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY-DFWVNADALDIHP  68
+            +++ FK  MKLE V+P       + TV  V G  + L  +G      +F V+ ++++I P
+Sbjct  378  SEHQFKENMKLEAVNPLFPEEVSIATVTAVRGSYLWLQLEGSKKPVPEFIVSVESMNIFP  437
+
+Query  69   VGWCEKTGHKLHPPK  83
+            +GWCE  GH L  P+
+Sbjct  438  LGWCETNGHPLSTPR  452
+
+
+> sp|Q5DTW2|SMBT2_MOUSE Scm-like with four MBT domains protein 
+2 OS=Mus musculus OX=10090 GN=Sfmbt2 PE=1 SV=2
+Length=938
+
+ Score = 151 bits (381),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 36/120 (30%), Positives = 56/120 (47%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            ++ F+ GMKLE  +  +   Y V T+   CG  + L + GY +    DFW +    D+HP
+Sbjct  70   RSNFQPGMKLEVANKNNPDTYWVATIITTCGQLLLLRYCGYGEDRRADFWCDVIIADLHP  129
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNITVIPSGFSGPSS  126
+            VGWC +    L PP   K++  +W  +L  +   ++ AP +L E       P       S
+Sbjct  130  VGWCTQNNKVLRPPDAIKDKYSDWTDFLIRELTGSRTAPANLLEGPLRGKGPIDLITVDS  189
+
+
+ Score = 80.5 bits (197),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 33/95 (35%), Positives = 45/95 (47%), Gaps = 1/95 (1%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG-YSDCYDFWVNADALDIHPVGW  71
+            GF   MKLE V+P +    CV TV  V G  + LH +G  +   D  V+ D++DI PVGW
+Sbjct  405  GFSKNMKLEAVNPVNPGEVCVATVVSVKGRLLWLHLEGLETPMPDIIVDMDSMDIFPVGW  464
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPK  106
+            CE   + L  P     +      + K  K   +P 
+Sbjct  465  CEANSYPLTTPYKASSKSKRKTVHFKMEKQLLSPV  499
+
+
+ Score = 77.4 bits (189),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 36/107 (34%), Positives = 51/107 (48%), Gaps = 4/107 (4%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRI-KLHFDGYSDCYDFW---VNADAL  64
+               + F VGM+LE +           +V +V   +  ++  D      D      +AD+L
+Sbjct  294  LQSHFFTVGMRLETLHISDPFHIYPASVTKVFNSKFFQVAIDDLRPEADKPTMLCHADSL  353
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFEN  111
+             I PV WC K G  L PPKGY  ++FNW  Y K  +A+ AP   F+N
+Sbjct  354  GILPVQWCLKNGVNLAPPKGYSGQDFNWVDYHKQRQAEEAPHFCFKN  400
+
+
+ Score = 68.9 bits (167),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 26/100 (26%), Positives = 52/100 (52%), Gaps = 8/100 (8%)
+
+Query  20   LEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG--YSDCYDFWVNADALDIHPVGWCEKTGH  77
+            +E  D ++   Y +++V E  G R++L + G  +++ YD W+      + P+GWC++  +
+Sbjct  191  IELQDSQNPFQYWIVSVTENVGGRLRLRYVGLEHTESYDRWLFYLDYRLRPIGWCQENKY  250
+
+Query  78   KLHPPKG--YKEEEFNWQTYLKTCKAQAA----PKSLFEN  111
+            ++ PP    Y +  F W+  L+     AA    P  +F++
+Sbjct  251  RMDPPSDLYYLKLPFEWKCALEKALVLAAESPLPMEVFKD  290
+
+
+> sp|Q5VUG0|SMBT2_HUMAN Scm-like with four MBT domains protein 
+2 OS=Homo sapiens OX=9606 GN=SFMBT2 PE=1 SV=1
+Length=894
+
+ Score = 150 bits (379),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 37/120 (31%), Positives = 55/120 (46%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            ++ F+ GMKLE  +  +   Y V T+   CG  + L + GY +    DFW +    D+HP
+Sbjct  71   QSNFQPGMKLEVANKNNPDTYWVATIITTCGQLLLLRYCGYGEDRRADFWCDVVIADLHP  130
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNITVIPSGFSGPSS  126
+            VGWC +    L PP   KE+  +W  +L      ++ AP +L E       P       S
+Sbjct  131  VGWCTQNNKVLMPPDAIKEKYTDWTEFLIRDLTGSRTAPANLLEGPLRGKGPIDLITVGS  190
+
+
+ Score = 84.3 bits (207),  Expect = 5e-18, Method: Composition-based stats.
+ Identities = 36/112 (32%), Positives = 47/112 (42%), Gaps = 4/112 (4%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCG----YRIKLHFDGYSDCYDFWVNADAL  64
+               + F VGMKLE V+          +V +V                        +AD+L
+Sbjct  295  LRSHFFTVGMKLETVNMCEPFYISPASVTKVFNNHFFQVTIDDLRPEPSKLSMLCHADSL  354
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITV  116
+             I PV WC K G  L PPKGY  ++F+W  Y K   AQ AP   F N + + 
+Sbjct  355  GILPVQWCLKNGVSLTPPKGYSGQDFDWADYHKQHGAQEAPPFCFRNTSFSR  406
+
+
+ Score = 73.9 bits (180),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 27/80 (34%), Positives = 41/80 (51%), Gaps = 1/80 (1%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG-YSDCYDFWVNADALDIHPVGW  71
+            GF   MKLE V+P +    CV +V  V G  + LH +G  +   +  V+ +++DI PVGW
+Sbjct  407  GFTKNMKLEAVNPRNPGELCVASVVSVKGRLMWLHLEGLQTPVPEVIVDVESMDIFPVGW  466
+
+Query  72   CEKTGHKLHPPKGYKEEEFN  91
+            CE   + L  P     ++  
+Sbjct  467  CEANSYPLTAPHKTVSQKKR  486
+
+
+ Score = 71.2 bits (173),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 28/104 (27%), Positives = 50/104 (48%), Gaps = 8/104 (8%)
+
+Query  16   VGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSD--CYDFWVNADALDIHPVGWCE  73
+            VG  +E  D ++   Y +++V E  G R++L + G  D   YD W+      + PVGWC+
+Sbjct  188  VGSLIELQDSQNPFQYWIVSVIENVGGRLRLRYVGLEDTESYDQWLFYLDYRLRPVGWCQ  247
+
+Query  74   KTGHKLHPPKGYKEEE--FNWQTYLKTCKAQAA----PKSLFEN  111
+            +  +++ PP      +    W+  L+     AA    P  +F++
+Sbjct  248  ENKYRMDPPSEIYPLKMASEWKCTLEKSLIDAAKFPLPMEVFKD  291
+
+
+> sp|Q9UQR0|SCML2_HUMAN Sex comb on midleg-like protein 2 OS=Homo 
+sapiens OX=9606 GN=SCML2 PE=1 SV=1
+Length=700
+
+ Score = 143 bits (360),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 43/112 (38%), Positives = 60/112 (54%), Gaps = 2/112 (2%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FKVGMKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ DI PVG 
+Sbjct  61   NDFKVGMKLEARDPRNATSVCIATVIGITGARLRLRLDGSDNRNDFWRLVDSPDIQPVGT  120
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYLKTC--KAQAAPKSLFENQNITVIPSGF  121
+            CEK G  L PP GY+    +W  +L      ++ A  +LF+ +      + F
+Sbjct  121  CEKEGDLLQPPLGYQMNTSSWPMFLLKTLNGSEMASATLFKKEPPKPPLNNF  172
+
+
+ Score = 96.3 bits (238),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 32/71 (45%), Positives = 44/71 (62%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FKVGMKLE +D ++  + C  T+ +V G  + + FDG+S  +D+W   D+ DI P GW
+Sbjct  170  NNFKVGMKLEAIDKKNPYLICPATIGDVKGDEVHITFDGWSGAFDYWCKYDSRDIFPAGW  229
+
+Query  72   CEKTGHKLHPP  82
+            C  TG  L PP
+Sbjct  230  CRLTGDVLQPP  240
+
+
+> sp|Q96GD3|SCMH1_HUMAN Polycomb protein SCMH1 OS=Homo sapiens 
+OX=9606 GN=SCMH1 PE=1 SV=1
+Length=660
+
+ Score = 140 bits (354),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 39/110 (35%), Positives = 57/110 (52%), Gaps = 2/110 (2%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S     N FK+ MKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ 
+Sbjct  49   QSYTPPSNEFKISMKLEAQDPRNTTSTCIATVVGLTGARLRLRLDGSDNKNDFWRLVDSA  108
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTC--KAQAAPKSLFENQ  112
+            +I P+G CEK G  L PP G++    +W  +L      A+ AP  +F  +
+Sbjct  109  EIQPIGNCEKNGGMLQPPLGFRLNASSWPMFLLKTLNGAEMAPIRIFHKE  158
+
+
+ Score = 95.9 bits (237),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 33/73 (45%), Positives = 44/73 (60%), Gaps = 0/73 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+            + N FK+GMKLE VD ++    C  T+ EV G  + + FDG+   +D+W   D+ DI PV
+Sbjct  163  SHNFFKMGMKLEAVDRKNPHFICPATIGEVRGSEVLVTFDGWRGAFDYWCRFDSRDIFPV  222
+
+Query  70   GWCEKTGHKLHPP  82
+            GWC  TG  L PP
+Sbjct  223  GWCSLTGDNLQPP  235
+
+
+> sp|Q8K214|SCMH1_MOUSE Polycomb protein SCMH1 OS=Mus musculus 
+OX=10090 GN=Scmh1 PE=1 SV=1
+Length=706
+
+ Score = 139 bits (351),  Expect = 9e-38, Method: Composition-based stats.
+ Identities = 39/110 (35%), Positives = 57/110 (52%), Gaps = 2/110 (2%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S     N FK+ MKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ 
+Sbjct  49   QSYTPPSNEFKISMKLEAQDPRNTTSTCIATVVGLTGARLRLRLDGSDNKNDFWRLVDSS  108
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTC--KAQAAPKSLFENQ  112
+            +I P+G CEK G  L PP G++    +W  +L      A+ AP  +F  +
+Sbjct  109  EIQPIGNCEKNGGMLQPPLGFRLNASSWPMFLLKTLNGAEMAPIKIFHKE  158
+
+
+ Score = 95.9 bits (237),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 33/73 (45%), Positives = 44/73 (60%), Gaps = 0/73 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+            + N FK+GMKLE VD ++    C  T+ EV G  + + FDG+   +D+W   D+ DI PV
+Sbjct  163  SHNFFKMGMKLEAVDRKNPHFICPATIGEVRGAEVLVTFDGWRGAFDYWCRFDSRDIFPV  222
+
+Query  70   GWCEKTGHKLHPP  82
+            GWC  TG  L PP
+Sbjct  223  GWCSLTGDNLQPP  235
+
+
+> sp|P59178|LMBL2_MOUSE Lethal(3)malignant brain tumor-like protein 
+2 OS=Mus musculus OX=10090 GN=L3mbtl2 PE=1 SV=2
+Length=703
+
+ Score = 135 bits (340),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 37/78 (47%), Positives = 50/78 (64%), Gaps = 0/78 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+ + YD WV+ ++ DI+PVGW
+Sbjct  534  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDNEYDQWVDCESPDIYPVGW  593
+
+Query  72   CEKTGHKLHPPKGYKEEE  89
+            CE TG++L PP   +   
+Sbjct  594  CELTGYQLQPPVSAEPNT  611
+
+
+ Score = 99.3 bits (246),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 41/107 (38%), Positives = 59/107 (55%), Gaps = 5/107 (5%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADA  63
+            Y + G F+ GMKLE +DP +    CV T+ +V   GY +     G S     W   +A +
+Sbjct  422  YTEGGWFEEGMKLEAIDPLNLGSICVATICKVLLDGYLMICVDGGPSTDGSDWFCYHASS  481
+
+Query  64   LDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+              I P  +C+K   +L PPKGY+ + F W+TYL+  K++AAP  LF 
+Sbjct  482  HAIFPATFCQKNDIELTPPKGYETQPFAWETYLEKTKSKAAPARLFN  528
+
+
+ Score = 95.1 bits (235),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 30/99 (30%), Positives = 53/99 (54%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + TV +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIATVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W++YL  +   ++  P   
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKSYLMKRLVGSRTLPADF  311
+
+
+ Score = 68.1 bits (165),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  323  FRQGMRLEVVDKTQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  382
+
+Query  74   KTGH  77
+            + GH
+Sbjct  383  RVGH  386
+
+
+> sp|Q1JQD9|LMBL2_BOVIN Lethal(3)malignant brain tumor-like protein 
+2 OS=Bos taurus OX=9913 GN=L3MBTL2 PE=2 SV=1
+Length=706
+
+ Score = 135 bits (340),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 37/78 (47%), Positives = 49/78 (63%), Gaps = 0/78 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PVGW
+Sbjct  535  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPVGW  594
+
+Query  72   CEKTGHKLHPPKGYKEEE  89
+            CE TG++L PP   +   
+Sbjct  595  CELTGYQLQPPVATEPTT  612
+
+
+ Score = 99.0 bits (245),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 41/107 (38%), Positives = 58/107 (54%), Gaps = 5/107 (5%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADA  63
+            Y + G F+ GMKLE +DP +    CV T+ +V   GY +     G S     W   +A +
+Sbjct  423  YTEGGWFEEGMKLEAIDPLNLGNICVATICKVLLDGYLMICVDGGPSTDGSDWFCYHASS  482
+
+Query  64   LDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+              I P  +C+K   +L PPKGY+   F+W+ YL+  KA+AAP  LF 
+Sbjct  483  HAIFPANFCQKNDIELTPPKGYEAHTFSWEAYLEKTKAKAAPSRLFN  529
+
+
+ Score = 94.3 bits (233),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 52/99 (53%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  214  GMKVEVLNSDAVLPSRVYWIASVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  273
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W+ YL  +   ++  P   
+Sbjct  274  CAINSKILVPPRTIHAKFTDWKGYLMKRLVGSRTLPVDF  312
+
+
+ Score = 67.8 bits (164),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  324  FRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  383
+
+Query  74   KTGH  77
+            + GH
+Sbjct  384  RVGH  387
+
+
+> sp|Q3MIF2|LMBL2_RAT Lethal(3)malignant brain tumor-like protein 
+2 OS=Rattus norvegicus OX=10116 GN=L3mbtl2 PE=1 SV=1
+Length=703
+
+ Score = 135 bits (339),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 37/78 (47%), Positives = 50/78 (64%), Gaps = 0/78 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+ + YD WV+ ++ DI+PVGW
+Sbjct  534  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDNEYDQWVDCESPDIYPVGW  593
+
+Query  72   CEKTGHKLHPPKGYKEEE  89
+            CE TG++L PP   +   
+Sbjct  594  CELTGYQLQPPVSAEPNT  611
+
+
+ Score = 99.0 bits (245),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 40/107 (37%), Positives = 60/107 (56%), Gaps = 5/107 (5%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADA  63
+            Y + G F+ GMKLE +DP +    CV T+ +V   GY +     G S     W   +A +
+Sbjct  422  YTEGGWFEEGMKLEAIDPLNLGNICVATICKVLLDGYLMICVDGGPSTDGSDWFCYHASS  481
+
+Query  64   LDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+              I P  +C+K   +L PPKGY+ + F+W++YL+  K++AAP  LF 
+Sbjct  482  HAIFPATFCQKNDIELTPPKGYETQPFDWESYLEKTKSKAAPARLFN  528
+
+
+ Score = 94.7 bits (234),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 30/99 (30%), Positives = 53/99 (54%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + TV +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIATVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W++YL  +   ++  P   
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKSYLMKRLVGSRTLPADF  311
+
+
+ Score = 67.8 bits (164),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  323  FRQGMRLEVVDKTQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  382
+
+Query  74   KTGH  77
+            + GH
+Sbjct  383  RVGH  386
+
+
+> sp|Q05BQ5|MBTD1_HUMAN MBT domain-containing protein 1 OS=Homo 
+sapiens OX=9606 GN=MBTD1 PE=1 SV=2
+Length=628
+
+ Score = 134 bits (337),  Expect = 5e-36, Method: Composition-based stats.
+ Identities = 34/78 (44%), Positives = 51/78 (65%), Gaps = 0/78 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD     + CV TV  +    +++HFDG+ + YD WV+ ++ D++PVGW
+Sbjct  490  HGFRVGMKLEAVDLMEPRLICVATVTRIIHRLLRIHFDGWEEEYDQWVDCESPDLYPVGW  549
+
+Query  72   CEKTGHKLHPPKGYKEEE  89
+            C+ TG++L PP      E
+Sbjct  550  CQLTGYQLQPPASQSSRE  567
+
+
+ Score = 103 bits (257),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 39/112 (35%), Positives = 55/112 (49%), Gaps = 8/112 (7%)
+
+Query  4    GSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--V  59
+              SG +    FK GMKLE +DP + S  CV T+ +V   G+ +       +     W   
+Sbjct  378  DQSGEW----FKEGMKLEAIDPLNLSTICVATIRKVLADGFLMIGIDGSEAADGSDWFCY  433
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFEN  111
+            +A +  I PVG+CE    +L PP+GY +  F W  YL+   + AAP  LF  
+Sbjct  434  HATSPSIFPVGFCEINMIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNK  485
+
+
+ Score = 85.9 bits (211),  Expect = 9e-19, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 47/92 (51%), Gaps = 4/92 (4%)
+
+Query  29   SVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHPVGWCEKTGHKLHPPKGYK  86
+             V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGWC  +G  L PP+  +
+Sbjct  190  KVFWIAGIVKLAGYNALLRYEGFENDSGLDFWCNICGSDIHPVGWCAASGKPLVPPRTIQ  249
+
+Query  87   EEEFNWQTYL--KTCKAQAAPKSLFENQNITV  116
+             +  NW+ +L  +   A+  P    +  + ++
+Sbjct  250  HKYTNWKAFLVKRLTGAKTLPPDFSQKVSESM  281
+
+
+ Score = 60.4 bits (145),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 26/86 (30%), Positives = 39/86 (45%), Gaps = 3/86 (3%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC-YDFWVNADALDIHPVGWC  72
+            FK  M++E VD  H     V  V  V G R++L ++   D   DFW +  +  IH +GW 
+Sbjct  285  FKPCMRVEVVDKRHLCRTRVAVVESVIGGRLRLVYEESEDRTDDFWCHMHSPLIHHIGWS  344
+
+Query  73   EKTGHKLHPPKGYK--EEEFNWQTYL  96
+               GH+       K  +  F+   +L
+Sbjct  345  RSIGHRFKRSDITKKQDGHFDTPPHL  370
+
+
+> sp|Q969R5|LMBL2_HUMAN Lethal(3)malignant brain tumor-like protein 
+2 OS=Homo sapiens OX=9606 GN=L3MBTL2 PE=1 SV=1
+Length=705
+
+ Score = 134 bits (336),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 37/78 (47%), Positives = 49/78 (63%), Gaps = 0/78 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PVGW
+Sbjct  534  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPVGW  593
+
+Query  72   CEKTGHKLHPPKGYKEEE  89
+            CE TG++L PP   +   
+Sbjct  594  CELTGYQLQPPVAAEPAT  611
+
+
+ Score = 97.4 bits (241),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 42/107 (39%), Positives = 59/107 (55%), Gaps = 5/107 (5%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADA  63
+            Y + G F+ GMKLE +DP +    CV TV +V   GY +     G S     W   +A +
+Sbjct  422  YTEGGWFEEGMKLEAIDPLNLGNICVATVCKVLLDGYLMICVDGGPSTDGLDWFCYHASS  481
+
+Query  64   LDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+              I P  +C+K   +L PPKGY+ + FNW+ YL+  K++AAP  LF 
+Sbjct  482  HAIFPATFCQKNDIELTPPKGYEAQTFNWENYLEKTKSKAAPSRLFN  528
+
+
+ Score = 94.3 bits (233),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 52/99 (53%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIASVIQTAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W+ YL  +   ++  P   
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKGYLMKRLVGSRTLPVDF  311
+
+
+ Score = 67.8 bits (164),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  323  FRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  382
+
+Query  74   KTGH  77
+            + GH
+Sbjct  383  RVGH  386
+
+
+> sp|Q9VHA0|SCM_DROME Polycomb protein Scm OS=Drosophila melanogaster 
+OX=7227 GN=Scm PE=1 SV=2
+Length=877
+
+ Score = 134 bits (338),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 37/85 (44%), Positives = 50/85 (59%), Gaps = 0/85 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FK+GMKLE +DP + +  C+ TV  V G R++L  DG     DFW   D+ +IH +G 
+Sbjct  203  NDFKIGMKLEALDPRNVTSTCIATVVGVLGSRLRLRLDGSDSQNDFWRLVDSTEIHAIGH  262
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL  96
+            CEK G  L PP G++    +W  YL
+Sbjct  263  CEKNGGMLQPPLGFRMNASSWPGYL  287
+
+
+ Score = 88.9 bits (219),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 29/71 (41%), Positives = 42/71 (59%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FKVG KLE VD ++  + C  TV  +   +I + FDG+   +D+W N  + DI P GW
+Sbjct  312  NLFKVGQKLEAVDKKNPQLICCATVDAIKDDQIHVTFDGWRGAFDYWCNYRSRDIFPAGW  371
+
+Query  72   CEKTGHKLHPP  82
+            C ++ H + PP
+Sbjct  372  CARSCHPMQPP  382
+
+
+> sp|Q5R737|LMBL2_PONAB Lethal(3)malignant brain tumor-like protein 
+2 OS=Pongo abelii OX=9601 GN=L3MBTL2 PE=2 SV=1
+Length=705
+
+ Score = 134 bits (336),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 37/78 (47%), Positives = 49/78 (63%), Gaps = 0/78 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PVGW
+Sbjct  534  HGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPVGW  593
+
+Query  72   CEKTGHKLHPPKGYKEEE  89
+            CE TG++L PP   +   
+Sbjct  594  CELTGYQLQPPVAAEPAT  611
+
+
+ Score = 98.6 bits (244),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 42/107 (39%), Positives = 59/107 (55%), Gaps = 5/107 (5%)
+
+Query  9    YNKNG-FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADA  63
+            Y + G F+ GMKLE +DP +    CV TV +V   GY +     G S     W   +A +
+Sbjct  422  YTEGGWFEEGMKLEAIDPLNLGNICVATVCKVLLDGYLMVCVDGGPSTDGSDWFCYHASS  481
+
+Query  64   LDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+              I P  +C+K   +L PPKGY+ + FNW+ YL+  K++AAP  LF 
+Sbjct  482  HAIFPATFCQKNDIELTPPKGYEAQTFNWENYLEKTKSKAAPSRLFN  528
+
+
+ Score = 94.3 bits (233),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 52/99 (53%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIASVIQTAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W+ YL  +   ++  P   
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKGYLMKRLVGSRTLPVDF  311
+
+
+ Score = 67.8 bits (164),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  323  FRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  382
+
+Query  74   KTGH  77
+            + GH
+Sbjct  383  RVGH  386
+
+
+> sp|Q6P5G3|MBTD1_MOUSE MBT domain-containing protein 1 OS=Mus 
+musculus OX=10090 GN=Mbtd1 PE=1 SV=1
+Length=631
+
+ Score = 132 bits (333),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 33/71 (46%), Positives = 50/71 (70%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD     + CV TV  +    +++HFDG+ + YD WV+ ++ D++PVGW
+Sbjct  493  HGFRVGMKLEAVDLMEPRLICVATVTRIIHRLLRIHFDGWEEEYDQWVDCESPDLYPVGW  552
+
+Query  72   CEKTGHKLHPP  82
+            C+ TG++L PP
+Sbjct  553  CQLTGYQLQPP  563
+
+
+ Score = 103 bits (257),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 39/112 (35%), Positives = 55/112 (49%), Gaps = 8/112 (7%)
+
+Query  4    GSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--V  59
+              SG +    FK GMKLE +DP + S  CV T+ +V   G+ +       +     W   
+Sbjct  381  DQSGEW----FKEGMKLEAIDPLNLSTICVATIRKVLADGFLMIGIDGSEAADGSDWFCY  436
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFEN  111
+            +A +  I PVG+CE    +L PP+GY +  F W  YL+   + AAP  LF  
+Sbjct  437  HATSPSIFPVGFCEINMIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNK  488
+
+
+ Score = 85.1 bits (209),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 47/92 (51%), Gaps = 4/92 (4%)
+
+Query  29   SVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHPVGWCEKTGHKLHPPKGYK  86
+             V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGWC  +G  L PP+  +
+Sbjct  193  KVFWIAGIIKLAGYNALLRYEGFENDSSLDFWCNICGSDIHPVGWCAASGKPLVPPRTVQ  252
+
+Query  87   EEEFNWQTYL--KTCKAQAAPKSLFENQNITV  116
+             +  NW+ +L  +   A+  P    +  + ++
+Sbjct  253  HKYTNWKAFLVKRLTGAKTLPPDFSQKVSESM  284
+
+
+ Score = 60.4 bits (145),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 26/86 (30%), Positives = 39/86 (45%), Gaps = 3/86 (3%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC-YDFWVNADALDIHPVGWC  72
+            FK  M++E VD  H     V  V  V G R++L ++   D   DFW +  +  IH +GW 
+Sbjct  288  FKPCMRVEVVDKRHLCRTRVAVVESVIGGRLRLVYEESEDRTDDFWCHMHSPLIHHIGWS  347
+
+Query  73   EKTGHKLHPPKGYK--EEEFNWQTYL  96
+               GH+       K  +  F+   +L
+Sbjct  348  RSIGHRFKRSDITKKQDGHFDTPPHL  373
+
+
+> sp|Q32N90|MBTD1_XENLA MBT domain-containing protein 1 OS=Xenopus 
+laevis OX=8355 GN=mbtd1 PE=2 SV=1
+Length=621
+
+ Score = 132 bits (332),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 34/72 (47%), Positives = 50/72 (69%), Gaps = 0/72 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD     + CV TV  +    +++HFDG+ D YD WV+ ++ D++PVGW
+Sbjct  513  HGFRVGMKLEAVDLMEPRLVCVATVTRIIHRLLRIHFDGWEDEYDQWVDCESPDLYPVGW  572
+
+Query  72   CEKTGHKLHPPK  83
+            C+ TG++L PP 
+Sbjct  573  CQLTGYQLQPPA  584
+
+
+ Score = 103 bits (257),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 38/102 (37%), Positives = 52/102 (51%), Gaps = 4/102 (4%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADALDIHPV  69
+            FK GMKLE +DP + S  CV T+ +V   GY +       +     W   +A +  I PV
+Sbjct  407  FKEGMKLEAIDPLNLSAICVATIRKVLAEGYLMIGIDGSEAADGSDWFCYHASSPSIFPV  466
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFEN  111
+            G+CE    +L PP+GY +  F W  YL+   + AAP  LF  
+Sbjct  467  GFCEINKIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNK  508
+
+
+ Score = 86.2 bits (212),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 29/107 (27%), Positives = 53/107 (50%), Gaps = 7/107 (7%)
+
+Query  17   GMKLEG--VDPEHQS-VYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHPVGW  71
+            G+++E    D    + V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGW
+Sbjct  198  GVRIEVPNTDSNLPTKVFWISGIVKLAGYNALLRYEGFENDSSLDFWCNICGPDIHPVGW  257
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNITV  116
+            C  +G  L PP+  + +  NW+ +L  +   A+  P    +  +  +
+Sbjct  258  CATSGKPLVPPQSIQHKYTNWKAFLVKRLTGAKTLPPDFSQKVSENM  304
+
+
+ Score = 68.5 bits (166),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 31/99 (31%), Positives = 44/99 (44%), Gaps = 11/99 (11%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC-YDFWVNADALDIHPVGWC  72
+            FK  M++E VD  H     V  V  V G R++L ++   D   DFW +  +  IHP+GW 
+Sbjct  308  FKPSMRVEVVDKTHLCRTRVAVVESVIGGRLRLVYEESEDKTDDFWCHMYSPLIHPIGWS  367
+
+Query  73   EKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFEN  111
+               GH+       K++E N+           AP  LF  
+Sbjct  368  RSIGHRFKRTDILKKQESNYD----------APSHLFIK  396
+
+
+> sp|Q6DIN3|MBTD1_XENTR MBT domain-containing protein 1 OS=Xenopus 
+tropicalis OX=8364 GN=mbtd1 PE=2 SV=1
+Length=651
+
+ Score = 131 bits (329),  Expect = 7e-35, Method: Composition-based stats.
+ Identities = 34/72 (47%), Positives = 50/72 (69%), Gaps = 0/72 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+VGMKLE VD     + CV TV  +    +++HFDG+ D YD WV+ ++ D++PVGW
+Sbjct  513  HGFRVGMKLEAVDLMEPRLVCVATVTRIIHRLLRIHFDGWEDEYDQWVDCESSDLYPVGW  572
+
+Query  72   CEKTGHKLHPPK  83
+            C+ TG++L PP 
+Sbjct  573  CQLTGYQLQPPA  584
+
+
+ Score = 105 bits (262),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 41/112 (37%), Positives = 56/112 (50%), Gaps = 7/112 (6%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADALDIHPV  69
+            FK GMKLE +DP + S  CV T+ +V   GY +       +     W   +A +  I PV
+Sbjct  407  FKEGMKLEAIDPLNLSAICVATIRKVLADGYLMIGIDGSEAADGSDWFCYHASSPSIFPV  466
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            G+CE    +L PP+GY +  F W  YL+   + AAP  LF  +   V   GF
+Sbjct  467  GFCEINKIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNKE---VPNHGF  515
+
+
+ Score = 85.1 bits (209),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 27/107 (25%), Positives = 54/107 (50%), Gaps = 7/107 (7%)
+
+Query  17   GMKLEG--VDPEHQS-VYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHPVGW  71
+            G+++E    D    + V+ +  + ++ G+   L ++G+ +    DFW N    D+HPVGW
+Sbjct  198  GVRVEVPNTDSNLPTKVFWISGIVKLAGFNALLRYEGFENDSSLDFWCNICGPDVHPVGW  257
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNITV  116
+            C  +G  L PP+  + +  NW+ +L  +   A+  P    +  + ++
+Sbjct  258  CATSGKPLVPPQTIQHKYTNWKAFLVKRLTGAKTLPPDFSQKVSESM  304
+
+
+ Score = 69.3 bits (168),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 31/99 (31%), Positives = 44/99 (44%), Gaps = 11/99 (11%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC-YDFWVNADALDIHPVGWC  72
+            FK  M++E VD  H     V  V  V G R++L ++   D   DFW +  +  IHP+GW 
+Sbjct  308  FKPSMRVEVVDKTHLCRTRVAVVDSVIGGRLRLVYEESEDKTDDFWCHMYSPLIHPIGWS  367
+
+Query  73   EKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFEN  111
+               GH+       K++E N+           AP  LF  
+Sbjct  368  RSIGHRFKRTDILKKQESNYD----------APSHLFTK  396
+
+
+> sp|Q29L50|SMBT_DROPS Polycomb protein Sfmbt OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=Sfmbt PE=3 SV=2
+Length=1274
+
+ Score = 127 bits (319),  Expect = 6e-33, Method: Composition-based stats.
+ Identities = 36/74 (49%), Positives = 50/74 (68%), Gaps = 1/74 (1%)
+
+Query  11    KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVG  70
+             ++GF+ GM LE  D     + CV TVA V G  +K+HFDG++D YD W++ ++ DI+PVG
+Sbjct  932   EHGFETGMSLECADLMDPRLVCVATVARVVGRLLKVHFDGWTDEYDQWLDCESADIYPVG  991
+
+Query  71    WCEKTGHKLH-PPK  83
+             WC   GHKL  PP+
+Sbjct  992   WCILVGHKLEGPPR  1005
+
+
+ Score = 96.3 bits (238),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 31/118 (26%), Positives = 58/118 (49%), Gaps = 14/118 (12%)
+
+Query  12   NGFKVGMKLEGVDPE-----------HQSVYCVLTVAEVCGYRIKLHFDGYS-DCYDFWV  59
+            +   VGMK+E  + +             + + V T+ E+ GY+  + ++G+  D +DFWV
+Sbjct  593  DNLGVGMKVEVENTDCDNIEIIQPGQTPTSFWVATILEIKGYKALMSYEGFDTDSHDFWV  652
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNIT  115
+            N    ++H VGWC   G  L PP+  + +  +W+ +L  +   A+  P + +   N +
+Sbjct  653  NLCNAEVHSVGWCATRGKPLIPPRTIEHKYKDWKDFLVGRLSGARTLPSNFYNKINDS  710
+
+
+ Score = 96.3 bits (238),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 39/115 (34%), Positives = 50/115 (43%), Gaps = 8/115 (7%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGY-RIKLHFDGYSDCYD----FWVNADALDI  66
+            NGF  GMKLE VDP + S  C  TV  V  +  + +  D Y         F  +  +  I
+Sbjct  824  NGFIEGMKLEAVDPLNLSSICPATVMAVLKFGYMMIRIDSYQPDESGSDWFCYHEKSPCI  883
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             P G+C      + PP GY    F W+ YL+   A AA + LF      V   GF
+Sbjct  884  FPAGFCSANNISVTPPNGYDSRTFTWEVYLRNTGAVAANQHLFHRV---VPEHGF  935
+
+
+ Score = 78.5 bits (192),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 34/117 (29%), Positives = 53/117 (45%), Gaps = 3/117 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVG  70
+            ++ F++G+ LE VD +  S   + TV ++ G R+ L +  +     FW + D+  IHPVG
+Sbjct  712  QSRFRLGLNLECVDKDRISQVRLATVTKIVGKRLFLRY--FDTDDGFWCHEDSPIIHPVG  769
+
+Query  71   WCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFSGPSSG  127
+            W    GH L  P+ Y E     +  +       A   LF   N T       G ++G
+Sbjct  770  WATTVGHNLAAPQDYLERMLAGREAMIEVHEDDATIELF-KMNFTFDEYFLDGKTNG  825
+
+
+> sp|Q9VK33|SMBT_DROME Polycomb protein Sfmbt OS=Drosophila melanogaster 
+OX=7227 GN=Sfmbt PE=1 SV=2
+Length=1220
+
+ Score = 125 bits (315),  Expect = 2e-32, Method: Composition-based stats.
+ Identities = 36/74 (49%), Positives = 49/74 (66%), Gaps = 1/74 (1%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVG  70
+             +GF+VGM LE  D     + CV TVA V G  +K+HFDG++D YD W++ ++ DI+PVG
+Sbjct  904  DHGFEVGMSLECADLMDPRLVCVATVARVVGRLLKVHFDGWTDEYDQWLDCESADIYPVG  963
+
+Query  71   WCEKTGHKLH-PPK  83
+            WC    HKL  PP+
+Sbjct  964  WCVLVNHKLEGPPR  977
+
+
+ Score = 95.9 bits (237),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 31/118 (26%), Positives = 58/118 (49%), Gaps = 14/118 (12%)
+
+Query  12   NGFKVGMKLEGVDPE-----------HQSVYCVLTVAEVCGYRIKLHFDGYS-DCYDFWV  59
+            +   VGMK+E  + +             + + V T+ E+ GY+  + ++G+  D +DFWV
+Sbjct  565  DNLGVGMKVEVENTDCDSIEVIQPGQTPTSFWVATILEIKGYKALMSYEGFDTDSHDFWV  624
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNIT  115
+            N    ++H VGWC   G  L PP+  + +  +W+ +L  +   A+  P + +   N +
+Sbjct  625  NLCNAEVHSVGWCATRGKPLIPPRTIEHKYKDWKDFLVGRLSGARTLPSNFYNKINDS  682
+
+
+ Score = 91.6 bits (226),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 37/115 (32%), Positives = 49/115 (43%), Gaps = 8/115 (7%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGY-RIKLHFDGYSDCYD----FWVNADALDI  66
+            N F  GMKLE VDP + S  C  TV  V  +  + +  D Y         F  +  +  I
+Sbjct  796  NSFVEGMKLEAVDPLNLSSICPATVMAVLKFGYMMIRIDSYQPDASGSDWFCYHEKSPCI  855
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             P G+C      + PP GY    F W+ YL+   A AA + LF      +   GF
+Sbjct  856  FPAGFCSVNNISVTPPNGYDSRTFTWEGYLRDTGAVAAGQHLFHRI---IPDHGF  907
+
+
+ Score = 78.9 bits (193),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 30/100 (30%), Positives = 48/100 (48%), Gaps = 2/100 (2%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVG  70
+            ++ F++G+ LE VD +  S   + TV ++ G R+ L +  +     FW + D+  IHPVG
+Sbjct  684  QSRFRLGLNLECVDKDRISQVRLATVTKIVGKRLFLRY--FDSDDGFWCHEDSPIIHPVG  741
+
+Query  71   WCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+            W    GH L  P+ Y E     +  +       A   LF+
+Sbjct  742  WATTVGHNLAAPQDYLERMLAGREAMIEVHEDDATIELFK  781
+
+
+> sp|A0SQM0|MBTR1_CAEEL Malignant brain tumor repeat protein 1 
+OS=Caenorhabditis elegans OX=6239 GN=mbtr-1 PE=1 SV=1
+Length=564
+
+ Score = 116 bits (291),  Expect = 7e-30, Method: Composition-based stats.
+ Identities = 35/104 (34%), Positives = 54/104 (52%), Gaps = 5/104 (5%)
+
+Query  12   NGFKVGMKLEGVDP--EHQSVYCVLTVAEVC---GYRIKLHFDGYSDCYDFWVNADALDI  66
+            N  KVG K E +DP  + +  +CV T+ ++C   G+ I    +  SD   F ++ D   +
+Sbjct  367  NLLKVGQKFELLDPLSDLRQSFCVATIRKICKTPGFLIISPDETESDDESFPIHIDNHFM  426
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+            HPVG+ EK G KL    G +  +F W+ YLK  +A+  P  +  
+Sbjct  427  HPVGYAEKFGIKLDRLAGTEPGKFKWEGYLKEKQAEKIPDEMLR  470
+
+
+ Score = 70.8 bits (172),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 21/74 (28%), Positives = 32/74 (43%), Gaps = 0/74 (0%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHP  68
+              ++ F+ G  LE V           +V EV G  + + F G+   +    + D+ D+ P
+Sbjct  476  ERRHMFEFGRVLEAVGQNETYWISPASVEEVHGRTVLIEFQGWDSEFSELYDMDSHDLLP  535
+
+Query  69   VGWCEKTGHKLHPP  82
+             GWCE    KL  P
+Sbjct  536  AGWCEFFNFKLRHP  549
+
+
+ Score = 41.9 bits (97),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 15/94 (16%), Positives = 34/94 (36%), Gaps = 17/94 (18%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYD------------  56
+            +  + F++  ++E ++    +   V  +  + G R+ +         D            
+Sbjct  237  HRPSRFRLNQRVELLNYLEPTEIRVARILRILGRRLMVMVTAQDYPEDLPSVEAKDRQVQ  296
+
+Query  57   -----FWVNADALDIHPVGWCEKTGHKLHPPKGY  85
+                 FWV+  +  + PVG+    G +    +GY
+Sbjct  297  HENVEFWVDESSFFLFPVGFAMINGLRTKATEGY  330
+
+
+ Score = 40.4 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 30/122 (25%), Positives = 44/122 (36%), Gaps = 25/122 (20%)
+
+Query  9    YNKNGFKVGMKLEGV-----DP----EHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWV  59
+             N++  K G +LE V     DP    +   +     V  VCG+ + + F G  +    W 
+Sbjct  95   LNQH-LKPGFRLEVVVRPSLDPSITTKSPEIRWFGEVTAVCGFYVAIKFVGELNRRPCWF  153
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTY--LKTCKAQAAPKSLFENQNITVI  117
+            +  + DI  +G    +G K  P          W  Y  L   K    PK  F  +  T  
+Sbjct  154  HMLSEDIFDIG----SGLKQDP-------AMKWLQYRPLSLLKPMQCPK--FWRRGSTPA  200
+
+Query  118  PS  119
+            P 
+Sbjct  201  PP  202
+
+
+> sp|B2D6M2|LIN61_CAEEL Protein lin-61 OS=Caenorhabditis elegans 
+OX=6239 GN=lin-61 PE=1 SV=1
+Length=612
+
+ Score = 115 bits (289),  Expect = 2e-29, Method: Composition-based stats.
+ Identities = 30/77 (39%), Positives = 42/77 (55%), Gaps = 0/77 (0%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHP  68
+               + FKVG++LE  D       C  TV  V G  I ++FDG+ + +D   + D+ DI P
+Sbjct  534  ERLDKFKVGLRLEAADMCENQFICPATVKSVHGRLINVNFDGWDEEFDELYDVDSHDILP  593
+
+Query  69   VGWCEKTGHKLHPPKGY  85
+            +GWCE   + L PPK Y
+Sbjct  594  IGWCEAHSYVLQPPKKY  610
+
+
+ Score = 80.9 bits (198),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 35/115 (30%), Positives = 51/115 (44%), Gaps = 8/115 (7%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSV--YCVLTVAEVC---GYRIKLHFDGYSDCYD  56
+            +     P      KVG K E +DP  Q      V ++ + C   GY I +  DG     D
+Sbjct  416  AKDPIDPMIWRKVKVGQKFELIDPLAQQFNNLHVASILKFCKTEGYLI-VGMDGPDALED  474
+
+Query  57   -FWVNADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+             F ++ +   + PVG+ EK   +L PP  +K   F W  YL+   A+  P  LF+
+Sbjct  475  SFPIHINNTFMFPVGYAEKYNLELVPPDEFK-GTFRWDEYLEKESAETLPLDLFK  528
+
+
+ Score = 55.4 bits (132),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 24/93 (26%), Positives = 42/93 (45%), Gaps = 16/93 (17%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHF----------DGYSDCYDF-  57
+             +K+ FKVG +LE ++  + +   V  + E+CG R+ +            D   D   F 
+Sbjct  294  LSKHRFKVGQRLELLNYSNSTEIRVARIQEICGRRMNVSITKKDFPESLPDADDDRQVFS  353
+
+Query  58   -----WVNADALDIHPVGWCEKTGHKLHPPKGY  85
+                 W++  +  I PVG+    G++L+  K Y
+Sbjct  354  SGSQYWIDEGSFFIFPVGFAAVNGYQLNAKKEY  386
+
+
+> sp|Q11193|SOR3_CAEEL Sop-2-related protein 3 OS=Caenorhabditis 
+elegans OX=6239 GN=sor-3 PE=2 SV=3
+Length=531
+
+ Score = 40.4 bits (93),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 23/125 (18%), Positives = 43/125 (34%), Gaps = 15/125 (12%)
+
+Query  4    GSSGPYNKNGF----KVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWV  59
+              + PY + G     K G + E    +    Y + TV +     + + +      +  W+
+Sbjct  153  EKATPYFEQGLSALVKPGQQFELQLEDAPDFYVMATVVKNYRGFLLVEY----QNFKRWI  208
+
+Query  60   NADALDIHPVGWC--EKTGHKLHPPKGYKEEEFNWQTYLKTC---KAQAAPKSLFENQNI  114
+            +  +   H +GW   EK  +    P             +K     K  A P+ +F  +N 
+Sbjct  209  HMLSPYCHEIGWGKNEKQEYLKRGPYNRHMNVDLVAGLVKQSTNQKLGAVPEIVF--RNN  266
+
+Query  115  TVIPS  119
+              +P 
+Sbjct  267  CPVPH  271
+
+
+
+Lambda      K        H        a         alpha
+   0.308    0.136    0.409    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0413    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5027495986
+Results from round 3
+
+
+Query= 1WJS
+
+Length=127
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q96JM7|LMBL3_HUMAN Lethal(3)malignant brain tumor-like prote...  184     9e-54
+  sp|Q8BLB7|LMBL3_MOUSE Lethal(3)malignant brain tumor-like prote...  183     3e-53
+  sp|Q8NA19|LMBL4_HUMAN Lethal(3)malignant brain tumor-like prote...  181     4e-53
+  sp|B1B1A0|LMBL4_MOUSE Lethal(3)malignant brain tumor-like prote...  179     2e-52
+  sp|D3ZWK4|LMBL1_RAT Lethal(3)malignant brain tumor-like protein...  179     8e-52
+  sp|E1C2V1|LMBL1_CHICK Lethal(3)malignant brain tumor-like prote...  178     2e-51
+  sp|Q9Y468|LMBL1_HUMAN Lethal(3)malignant brain tumor-like prote...  174     3e-50
+  sp|A2A5N8|LMBL1_MOUSE Lethal(3)malignant brain tumor-like prote...  171     5e-49
+  sp|Q9UHJ3|SMBT1_HUMAN Scm-like with four MBT domains protein 1 ...  159     2e-44
+  sp|Q5DTW2|SMBT2_MOUSE Scm-like with four MBT domains protein 2 ...  153     3e-42
+  sp|Q9JMD1|SMBT1_MOUSE Scm-like with four MBT domains protein 1 ...  152     4e-42
+  sp|Q5VUG0|SMBT2_HUMAN Scm-like with four MBT domains protein 2 ...  150     3e-41
+  sp|Q9JMD2|SMBT1_RAT Scm-like with four MBT domains protein 1 OS...  150     4e-41
+  sp|Q9UQR0|SCML2_HUMAN Sex comb on midleg-like protein 2 OS=Homo...  148     5e-41
+  sp|Q96GD3|SCMH1_HUMAN Polycomb protein SCMH1 OS=Homo sapiens OX...  145     4e-40
+  sp|Q8K214|SCMH1_MOUSE Polycomb protein SCMH1 OS=Mus musculus OX...  144     1e-39
+  sp|P59178|LMBL2_MOUSE Lethal(3)malignant brain tumor-like prote...  135     4e-36
+  sp|Q3MIF2|LMBL2_RAT Lethal(3)malignant brain tumor-like protein...  134     7e-36
+  sp|Q1JQD9|LMBL2_BOVIN Lethal(3)malignant brain tumor-like prote...  134     1e-35
+  sp|Q05BQ5|MBTD1_HUMAN MBT domain-containing protein 1 OS=Homo s...  132     2e-35
+  sp|Q6P5G3|MBTD1_MOUSE MBT domain-containing protein 1 OS=Mus mu...  132     3e-35
+  sp|Q969R5|LMBL2_HUMAN Lethal(3)malignant brain tumor-like prote...  132     4e-35
+  sp|Q5R737|LMBL2_PONAB Lethal(3)malignant brain tumor-like prote...  132     4e-35
+  sp|Q32N90|MBTD1_XENLA MBT domain-containing protein 1 OS=Xenopu...  130     7e-35
+  sp|Q9VHA0|SCM_DROME Polycomb protein Scm OS=Drosophila melanoga...  132     8e-35
+  sp|Q6DIN3|MBTD1_XENTR MBT domain-containing protein 1 OS=Xenopu...  129     3e-34
+  sp|Q29L50|SMBT_DROPS Polycomb protein Sfmbt OS=Drosophila pseud...  124     8e-32
+  sp|Q9VK33|SMBT_DROME Polycomb protein Sfmbt OS=Drosophila melan...  123     1e-31
+  sp|Q11193|SOR3_CAEEL Sop-2-related protein 3 OS=Caenorhabditis ...  117     3e-30
+  sp|B2D6M2|LIN61_CAEEL Protein lin-61 OS=Caenorhabditis elegans ...  113     1e-28
+  sp|A0SQM0|MBTR1_CAEEL Malignant brain tumor repeat protein 1 OS...  112     2e-28
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|Q96JM7|LMBL3_HUMAN Lethal(3)malignant brain tumor-like protein 
+3 OS=Homo sapiens OX=9606 GN=L3MBTL3 PE=1 SV=2
+Length=780
+
+ Score = 184 bits (467),  Expect = 9e-54, Method: Composition-based stats.
+ Identities = 115/117 (98%), Positives = 115/117 (98%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S PYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL
+Sbjct  255  QSFPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  314
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF
+Sbjct  315  DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  371
+
+
+ Score = 121 bits (303),  Expect = 5e-31, Method: Composition-based stats.
+ Identities = 44/120 (37%), Positives = 63/120 (53%), Gaps = 5/120 (4%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNAD  62
+               +     +GF+VGMKLE VD ++ S  CV TV ++   R  +HFD + + YD+W  A 
+Sbjct  360  ENQNITVIPSGFRVGMKLEAVDKKNPSFICVATVTDMVDNRFLVHFDNWDESYDYWCEAS  419
+
+Query  63   ALDIHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            +  IHPVGWC++    L  P GY   + F+W  YL+   +  AP   F+       P GF
+Sbjct  420  SPHIHPVGWCKEHRRTLITPPGYPNVKHFSWDKYLEETNSLPAPARAFK----VKPPHGF  475
+
+
+ Score = 105 bits (263),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 39/73 (53%), Positives = 53/73 (73%), Gaps = 0/73 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+  MKLE VD  +     V TVA+   +R+K+HFDG+++CYD+W++AD+ DIHPVGW
+Sbjct  473  HGFQKKMKLEVVDKRNPMFIRVATVADTDDHRVKVHFDGWNNCYDYWIDADSPDIHPVGW  532
+
+Query  72   CEKTGHKLHPPKG  84
+            C KTGH L PP  
+Sbjct  533  CSKTGHPLQPPLS  545
+
+
+> sp|Q8BLB7|LMBL3_MOUSE Lethal(3)malignant brain tumor-like protein 
+3 OS=Mus musculus OX=10090 GN=L3mbtl3 PE=1 SV=1
+Length=883
+
+ Score = 183 bits (465),  Expect = 3e-53, Method: Composition-based stats.
+ Identities = 110/117 (94%), Positives = 114/117 (97%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S PYNKNGFKVGMKLEGVDP+HQ++YCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL
+Sbjct  255  QSFPYNKNGFKVGMKLEGVDPDHQAMYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  314
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHPVGWCEKTGHKL PPKGYKEEEFNWQ+YLKTCKAQAAPKSLFENQNITVIPSGF
+Sbjct  315  DIHPVGWCEKTGHKLRPPKGYKEEEFNWQSYLKTCKAQAAPKSLFENQNITVIPSGF  371
+
+
+ Score = 120 bits (300),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 43/120 (36%), Positives = 63/120 (53%), Gaps = 5/120 (4%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNAD  62
+               +     +GF+VGMKLE  D +  SV CV TV ++   R  +HFD + + YD+W  ++
+Sbjct  360  ENQNITVIPSGFRVGMKLEAADKKSPSVICVATVTDMVDNRFLVHFDNWDESYDYWCESN  419
+
+Query  63   ALDIHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            +  IHPVGWC++    L  P GY   + F+W  YL+   +  AP   F+       P GF
+Sbjct  420  SPHIHPVGWCKEHRRTLITPPGYSHVKHFSWDKYLEETNSLPAPARAFK----VKPPHGF  475
+
+
+ Score = 104 bits (258),  Expect = 6e-25, Method: Composition-based stats.
+ Identities = 40/73 (55%), Positives = 51/73 (70%), Gaps = 0/73 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF+  MKLE VD  +     V TVA+   +RIK+HFDG+S CYD+W++AD+ DIHPVGW
+Sbjct  473  HGFQKKMKLEAVDKRNPLFIRVATVADTDDHRIKVHFDGWSSCYDYWIDADSPDIHPVGW  532
+
+Query  72   CEKTGHKLHPPKG  84
+            C KTGH L  P  
+Sbjct  533  CSKTGHPLQAPLS  545
+
+
+> sp|Q8NA19|LMBL4_HUMAN Lethal(3)malignant brain tumor-like protein 
+4 OS=Homo sapiens OX=9606 GN=L3MBTL4 PE=1 SV=2
+Length=623
+
+ Score = 181 bits (459),  Expect = 4e-53, Method: Composition-based stats.
+ Identities = 72/116 (62%), Positives = 90/116 (78%), Gaps = 0/116 (0%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNA  61
+            S   S P ++NGF++GM+LEG+DP H SV+CVL+VAEVCGYR++LHFDGY  CYDFW NA
+Sbjct  72   SKDQSFPEHENGFQIGMRLEGIDPRHPSVFCVLSVAEVCGYRLRLHFDGYLSCYDFWTNA  131
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVI  117
+             + DIHPVGWCEKT H+LH PKGY++++F W  YLK CK Q APK LF N++    
+Sbjct  132  GSPDIHPVGWCEKTKHELHIPKGYRKDKFVWMDYLKACKLQNAPKKLFRNRSPNGP  187
+
+
+ Score = 134 bits (336),  Expect = 6e-36, Method: Composition-based stats.
+ Identities = 46/121 (38%), Positives = 72/121 (60%), Gaps = 6/121 (5%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNAD  62
+               +GP +K  F+VGMKLE VD ++ S+ CV T+A++   R+ +HFD + D YD+W + +
+Sbjct  182  RSPNGPMSKE-FQVGMKLEAVDRKNPSLVCVATIADIVEDRLLVHFDNWDDSYDYWCDVN  240
+
+Query  63   ALDIHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            +  + PVGWC++ G  L  P+GY   E F+W  YL+  +  A P  +F+ +     P GF
+Sbjct  241  SPYVQPVGWCQENGRTLIAPQGYPNPENFSWTEYLEATQTNAVPAKVFKMRL----PHGF  296
+
+Query  122  S  122
+             
+Sbjct  297  L  297
+
+
+ Score = 101 bits (251),  Expect = 4e-24, Method: Composition-based stats.
+ Identities = 35/76 (46%), Positives = 49/76 (64%), Gaps = 0/76 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF   MKLE VD  +  +  V T+ +V   R+K+HFDG+   YD+WV AD+ DIHP+GW
+Sbjct  294  HGFLPNMKLEVVDKRNPRLIRVATIVDVDDQRVKVHFDGWDHKYDYWVEADSPDIHPIGW  353
+
+Query  72   CEKTGHKLHPPKGYKE  87
+            C+ TGH L  P+   +
+Sbjct  354  CDVTGHPLEVPQRTND  369
+
+
+> sp|B1B1A0|LMBL4_MOUSE Lethal(3)malignant brain tumor-like protein 
+4 OS=Mus musculus OX=10090 GN=L3mbtl4 PE=2 SV=2
+Length=621
+
+ Score = 179 bits (454),  Expect = 2e-52, Method: Composition-based stats.
+ Identities = 69/121 (57%), Positives = 90/121 (74%), Gaps = 1/121 (1%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNA  61
+            S   S P ++NGF+VGM+LEG+D    SV+CVL+VAEVCGYR++LHFDGY  CYDFW NA
+Sbjct  72   SKDQSFPEHENGFQVGMRLEGIDARRPSVFCVLSVAEVCGYRLRLHFDGYLSCYDFWTNA  131
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQ-NITVIPSG  120
+             + DIHPVGWC+KT H+LH P+ Y++++F W  YLK C+ Q APK LF N+ +   +P  
+Sbjct  132  GSPDIHPVGWCQKTKHELHIPRDYRKDKFVWMDYLKACRLQNAPKKLFRNRSSNGPVPRE  191
+
+Query  121  F  121
+            F
+Sbjct  192  F  192
+
+
+ Score = 131 bits (329),  Expect = 5e-35, Method: Composition-based stats.
+ Identities = 41/110 (37%), Positives = 66/110 (60%), Gaps = 5/110 (5%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+VGMKLE VD  +  + CV T+A++   R+++HFD   D +D+W + ++  I PVGWC+
+Sbjct  192  FQVGMKLEAVDRRNPCLMCVATIADIVEDRVRVHFDSLDDSFDYWCDVNSPYIQPVGWCQ  251
+
+Query  74   KTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+            + G  L  P+GY   ++F+W  YL+  +++A P   F  +     P GF 
+Sbjct  252  ENGRTLVAPQGYPHPDKFSWTDYLRASQSKAVPAKAFGMRT----PHGFL  297
+
+
+ Score = 105 bits (262),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 39/76 (51%), Positives = 52/76 (68%), Gaps = 0/76 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF   MKLE VD  +  +  V T+A+V  YR+K+HFDG+   YD+WV+AD+ DIHP+GW
+Sbjct  294  HGFLPNMKLEAVDKRNPQLIRVATIADVDDYRVKIHFDGWDHKYDYWVDADSQDIHPIGW  353
+
+Query  72   CEKTGHKLHPPKGYKE  87
+            C+ TGH L  P G K 
+Sbjct  354  CDVTGHPLEVPYGSKH  369
+
+
+> sp|D3ZWK4|LMBL1_RAT Lethal(3)malignant brain tumor-like protein 
+1 OS=Rattus norvegicus OX=10116 GN=L3mbtl1 PE=3 SV=1
+Length=826
+
+ Score = 179 bits (454),  Expect = 8e-52, Method: Composition-based stats.
+ Identities = 82/117 (70%), Positives = 99/117 (85%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             +  +NKNGFK+GMKLEGVDP+H S+Y VLTVAEVCGYR++LHFDGYS+C+DFWVNA++ 
+Sbjct  303  QAVTHNKNGFKLGMKLEGVDPQHPSMYFVLTVAEVCGYRLRLHFDGYSECHDFWVNANSP  362
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHP GW EKTGHKL PPKGYKEEEF+W  YL++ KAQAAPK LF +Q+ +  P GF
+Sbjct  363  DIHPAGWFEKTGHKLQPPKGYKEEEFSWSQYLRSTKAQAAPKHLFVSQSHSPPPVGF  419
+
+
+ Score = 113 bits (282),  Expect = 4e-28, Method: Composition-based stats.
+ Identities = 47/119 (39%), Positives = 64/119 (54%), Gaps = 5/119 (4%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S      GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +A + 
+Sbjct  410  QSHSPPPVGFQVGMKLEAVDRMNPSLVCVASVTDVVASRFLVHFDDWDDTYDYWCDASSP  469
+
+Query  65   DIHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+             IHPVGWC+K G  L PP+ Y   + F W+ YL+     A P   F+ +     P  F 
+Sbjct  470  YIHPVGWCQKQGKPLTPPQDYPDPDSFCWEKYLEETGTSAVPTWAFKVR----PPHSFL  524
+
+
+ Score = 99.8 bits (247),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 41/83 (49%), Positives = 52/83 (63%), Gaps = 0/83 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIKLHFDG+S  YDFW++AD  DIHP GW
+Sbjct  521  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKLHFDGWSHNYDFWIDADHPDIHPAGW  580
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQT  94
+            C KTGH L PP   +E       
+Sbjct  581  CSKTGHPLEPPLRPRESSSASPG  603
+
+
+> sp|E1C2V1|LMBL1_CHICK Lethal(3)malignant brain tumor-like protein 
+1 OS=Gallus gallus OX=9031 GN=L3MBTL1 PE=3 SV=1
+Length=847
+
+ Score = 178 bits (451),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 80/117 (68%), Positives = 94/117 (80%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+                 +KNGFKVGMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFW+NAD+ 
+Sbjct  323  QVASQHKNGFKVGMKLEGIDPQHPSMYFILTVAEVCGYRMRLHFDGYSECHDFWLNADSP  382
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHP GW E+TGHKL PPKGYKEEEF+W  YLK  KAQAAPK LF  +N    P GF
+Sbjct  383  DIHPAGWFEETGHKLQPPKGYKEEEFSWTNYLKITKAQAAPKHLFVIRNTHEAPPGF  439
+
+
+ Score = 135 bits (340),  Expect = 5e-36, Method: Composition-based stats.
+ Identities = 48/111 (43%), Positives = 64/111 (58%), Gaps = 5/111 (5%)
+
+Query  13   GFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWC  72
+            GF+VGMKLE VD  + S+ CV TV +V   R  +HFD + D YD+W +  +  IHPVGWC
+Sbjct  438  GFEVGMKLEAVDRMNPSLICVATVTDVVDDRFLVHFDNWDDTYDYWCDPSSPYIHPVGWC  497
+
+Query  73   EKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+            ++ G  L PP+ Y   + F W+ YLK   A A P   F+ +     P GF 
+Sbjct  498  QEHGKPLTPPQDYPDPDNFIWEKYLKETGASAVPAWAFKVR----PPHGFL  544
+
+
+ Score = 103 bits (256),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 43/80 (54%), Positives = 53/80 (66%), Gaps = 0/80 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            +GF V MKLE VD    S   V +V +V  +RIK+HFDG+S  YDFW++AD  DIHP+GW
+Sbjct  541  HGFLVNMKLEAVDRRTPSFIRVASVEDVEDHRIKIHFDGWSHVYDFWIDADHPDIHPIGW  600
+
+Query  72   CEKTGHKLHPPKGYKEEEFN  91
+            C KTGH L PP   KE   +
+Sbjct  601  CSKTGHPLQPPLRPKEPASS  620
+
+
+> sp|Q9Y468|LMBL1_HUMAN Lethal(3)malignant brain tumor-like protein 
+1 OS=Homo sapiens OX=9606 GN=L3MBTL1 PE=1 SV=3
+Length=752
+
+ Score = 174 bits (441),  Expect = 3e-50, Method: Composition-based stats.
+ Identities = 79/117 (68%), Positives = 99/117 (85%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             +  +NKNGFK+GMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFWVNA++ 
+Sbjct  229  QAVTHNKNGFKLGMKLEGIDPQHPSMYFILTVAEVCGYRLRLHFDGYSECHDFWVNANSP  288
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHP GW EKTGHKL PPKGYKEEEF+W  YL++ +AQAAPK LF +Q+ +  P GF
+Sbjct  289  DIHPAGWFEKTGHKLQPPKGYKEEEFSWSQYLRSTRAQAAPKHLFVSQSHSPPPLGF  345
+
+
+ Score = 129 bits (325),  Expect = 4e-34, Method: Composition-based stats.
+ Identities = 47/119 (39%), Positives = 64/119 (54%), Gaps = 5/119 (4%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S      GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +  + 
+Sbjct  336  QSHSPPPLGFQVGMKLEAVDRMNPSLVCVASVTDVVDSRFLVHFDNWDDTYDYWCDPSSP  395
+
+Query  65   DIHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+             IHPVGWC+K G  L PP+ Y   + F W+ YL+   A A P   F+ +     P  F 
+Sbjct  396  YIHPVGWCQKQGKPLTPPQDYPDPDNFCWEKYLEETGASAVPTWAFKVR----PPHSFL  450
+
+
+ Score = 98.6 bits (244),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 41/83 (49%), Positives = 53/83 (64%), Gaps = 0/83 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIK+HFDG+S  YDFW++AD  DIHP GW
+Sbjct  447  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKIHFDGWSHGYDFWIDADHPDIHPAGW  506
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQT  94
+            C KTGH L PP G +E       
+Sbjct  507  CSKTGHPLQPPLGPREPSSASPG  529
+
+
+> sp|A2A5N8|LMBL1_MOUSE Lethal(3)malignant brain tumor-like protein 
+1 OS=Mus musculus OX=10090 GN=L3mbtl1 PE=2 SV=1
+Length=826
+
+ Score = 171 bits (434),  Expect = 5e-49, Method: Composition-based stats.
+ Identities = 79/117 (68%), Positives = 98/117 (84%), Gaps = 0/117 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             +  +NKNGFK+GMKLEG+DP+H S+Y +LTVAEVCGYR++LHFDGYS+C+DFWVNA++ 
+Sbjct  303  QAVTHNKNGFKLGMKLEGIDPQHPSMYFILTVAEVCGYRLRLHFDGYSECHDFWVNANSP  362
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            DIHP GW EKTGHKL  PKGYKEEEF+W  YL++ KAQAAPK LF +Q+ +  P GF
+Sbjct  363  DIHPAGWFEKTGHKLQLPKGYKEEEFSWSQYLRSTKAQAAPKHLFVSQSHSTPPVGF  419
+
+
+ Score = 129 bits (324),  Expect = 7e-34, Method: Composition-based stats.
+ Identities = 46/119 (39%), Positives = 63/119 (53%), Gaps = 5/119 (4%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S      GF+VGMKLE VD  + S+ CV +V +V   R  +HFD + D YD+W +  + 
+Sbjct  410  QSHSTPPVGFQVGMKLEAVDRMNPSLVCVASVTDVVDSRFLVHFDDWGDTYDYWCDPSSP  469
+
+Query  65   DIHPVGWCEKTGHKLHPPKGY-KEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFS  122
+             IHPVGWC+K G  L PP+ Y   + F W+ YL+     A P   F+ +     P  F 
+Sbjct  470  YIHPVGWCQKQGKPLTPPQDYPDPDSFCWEKYLEETGTSAVPNWAFKVR----PPHSFL  524
+
+
+ Score = 99.4 bits (246),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 41/83 (49%), Positives = 52/83 (63%), Gaps = 0/83 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            + F V MKLE VD  + ++  V +V +V  +RIKLHFDG+S  YDFW++AD  DIHP GW
+Sbjct  521  HSFLVNMKLEAVDRRNPALIRVASVEDVEDHRIKLHFDGWSHNYDFWIDADHPDIHPAGW  580
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQT  94
+            C KTGH L PP   +E       
+Sbjct  581  CSKTGHPLEPPLRPRESSSVSPG  603
+
+
+> sp|Q9UHJ3|SMBT1_HUMAN Scm-like with four MBT domains protein 
+1 OS=Homo sapiens OX=9606 GN=SFMBT1 PE=1 SV=2
+Length=866
+
+ Score = 159 bits (402),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 40/130 (31%), Positives = 56/130 (43%), Gaps = 4/130 (3%)
+
+Query  1    GSSGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFW  58
+            GS        +NGF  GMKLE         Y V TV   C   + L +DGY +    DFW
+Sbjct  37   GSFKHVDTRLQNGFAPGMKLEVAVRTDPETYWVATVITTCEQLLLLRYDGYGEDRRADFW  96
+
+Query  59   VNADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAA--PKSLFENQNITV  116
+             +    D++P+GWCE+    L  P+G +++  +W  +L+     A   P  L E      
+Sbjct  97   CDIRKADLYPIGWCEQNKKTLEAPEGIRDKVSDWDEFLRQTLIGACSPPVPLLEGLRNGR  156
+
+Query  117  IPSGFSGPSS  126
+             P     P S
+Sbjct  157  NPLDLIAPGS  166
+
+
+ Score = 85.5 bits (210),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 38/103 (37%), Positives = 51/103 (50%), Gaps = 5/103 (5%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCY---DFWVNADALDI  66
+            + F V MKLE VDP         TV +V    Y +    D   + +    F  +AD+  I
+Sbjct  273  HTFSVNMKLEAVDPWSPFGISPATVVKVFDEKYFLVEMDDLRPENHARRSFVCHADSPGI  332
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+             PV W  K G  + PP GY  ++F+W  YLK C A+AAP+  F
+Sbjct  333  FPVQWSLKNGLHISPPPGYPSQDFDWADYLKQCGAEAAPQRCF  375
+
+
+ Score = 81.3 bits (199),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 31/108 (29%), Positives = 49/108 (45%), Gaps = 7/108 (6%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG--YSDCYDFWVNADALDIH  67
+              +    G +LE    +      ++TV E  G R+KL ++G   SD Y+ W+      +H
+Sbjct  158  PLDLIAPGSRLECQAFQDSLSTWIVTVVENIGGRLKLRYEGLESSDNYEHWLYYLDPFLH  217
+
+Query  68   PVGWCEKTGHKLHPPKGYKE--EEFNWQTYL---KTCKAQAAPKSLFE  110
+             VGW  + G++L PP   +    E  WQ  L   K  + +  P  LF+
+Sbjct  218  HVGWAAQQGYELQPPSAIRHLKNEAEWQEILAKVKEEEEEPLPSYLFK  265
+
+
+ Score = 67.4 bits (163),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 27/78 (35%), Positives = 41/78 (53%), Gaps = 1/78 (1%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDF-WVNADALDIHP  68
+            +++ FK  MKLE V+P      CV T+  V G  + L  +G         V+ +++DI P
+Sbjct  380  SEHEFKENMKLEAVNPILPEEVCVATITAVRGSYLWLQLEGSKKPIPECIVSVESMDIFP  439
+
+Query  69   VGWCEKTGHKLHPPKGYK  86
+            +GWCE  GH L  P+  +
+Sbjct  440  LGWCETNGHPLSTPRRAR  457
+
+
+> sp|Q5DTW2|SMBT2_MOUSE Scm-like with four MBT domains protein 
+2 OS=Mus musculus OX=10090 GN=Sfmbt2 PE=1 SV=2
+Length=938
+
+ Score = 153 bits (387),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 36/120 (30%), Positives = 56/120 (47%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            ++ F+ GMKLE  +  +   Y V T+   CG  + L + GY +    DFW +    D+HP
+Sbjct  70   RSNFQPGMKLEVANKNNPDTYWVATIITTCGQLLLLRYCGYGEDRRADFWCDVIIADLHP  129
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNITVIPSGFSGPSS  126
+            VGWC +    L PP   K++  +W  +L  +   ++ AP +L E       P       S
+Sbjct  130  VGWCTQNNKVLRPPDAIKDKYSDWTDFLIRELTGSRTAPANLLEGPLRGKGPIDLITVDS  189
+
+
+ Score = 82.4 bits (202),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 35/117 (30%), Positives = 51/117 (44%), Gaps = 2/117 (2%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY-DFWVNADALDIHP  68
+               GF   MKLE V+P +    CV TV  V G  + LH +G      D  V+ D++DI P
+Sbjct  402  FSRGFSKNMKLEAVNPVNPGEVCVATVVSVKGRLLWLHLEGLETPMPDIIVDMDSMDIFP  461
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNI-TVIPSGFSGP  124
+            VGWCE   + L  P     +      + K  K   +P  + +  +   ++P     P
+Sbjct  462  VGWCEANSYPLTTPYKASSKSKRKTVHFKMEKQLLSPVPIEKIPHELCLLPPQMDSP  518
+
+
+ Score = 73.6 bits (179),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 26/99 (26%), Positives = 51/99 (52%), Gaps = 8/99 (8%)
+
+Query  20   LEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG--YSDCYDFWVNADALDIHPVGWCEKTGH  77
+            +E  D ++   Y +++V E  G R++L + G  +++ YD W+      + P+GWC++  +
+Sbjct  191  IELQDSQNPFQYWIVSVTENVGGRLRLRYVGLEHTESYDRWLFYLDYRLRPIGWCQENKY  250
+
+Query  78   KLHPPKG--YKEEEFNWQTYLKTCKAQAA----PKSLFE  110
+            ++ PP    Y +  F W+  L+     AA    P  +F+
+Sbjct  251  RMDPPSDLYYLKLPFEWKCALEKALVLAAESPLPMEVFK  289
+
+
+ Score = 72.8 bits (177),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 36/113 (32%), Positives = 51/113 (45%), Gaps = 5/113 (4%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCG-YRIKLHFDGYSDCYDFW---  58
+               +     + F VGM+LE +           +V +V      ++  D      D     
+Sbjct  289  KDHAD-LQSHFFTVGMRLETLHISDPFHIYPASVTKVFNSKFFQVAIDDLRPEADKPTML  347
+
+Query  59   VNADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFEN  111
+             +AD+L I PV WC K G  L PPKGY  ++FNW  Y K  +A+ AP   F+N
+Sbjct  348  CHADSLGILPVQWCLKNGVNLAPPKGYSGQDFNWVDYHKQRQAEEAPHFCFKN  400
+
+
+> sp|Q9JMD1|SMBT1_MOUSE Scm-like with four MBT domains protein 
+1 OS=Mus musculus OX=10090 GN=Sfmbt1 PE=1 SV=1
+Length=863
+
+ Score = 152 bits (385),  Expect = 4e-42, Method: Composition-based stats.
+ Identities = 35/120 (29%), Positives = 54/120 (45%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            +NGF  GMKLE         Y V T+   C   + L ++GY +    DFW +     ++P
+Sbjct  47   QNGFAPGMKLEVALKNDPETYWVATIITACEQLLLLRYEGYGEDRKADFWCDIRKAGLYP  106
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAA--PKSLFENQNITVIPSGFSGPSS  126
+            +GWC++    L  P+G +++  +W  +L+     A   P SL E       P     P S
+Sbjct  107  IGWCQQNKKTLEAPEGIRDKVSDWNAFLQQTLIGACGPPVSLLEGLRNGRNPLDLIAPGS  166
+
+
+ Score = 85.5 bits (210),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 35/103 (34%), Positives = 54/103 (52%), Gaps = 5/103 (5%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCY---DFWVNADALDI  66
+            + F + MKLE VDP         T+A+V    Y +    D   + +    F  +A++  I
+Sbjct  271  HEFSINMKLEAVDPWSPFGISPATIAKVFDDKYFLVEMDDLRPEDHTRRSFVCHANSPGI  330
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+             PV W  K G  ++PP G++ ++F+W  YLK C A+AAP+  F
+Sbjct  331  FPVQWSLKNGLHINPPPGFRSQDFDWADYLKQCGAEAAPQKCF  373
+
+
+ Score = 77.4 bits (189),  Expect = 9e-16, Method: Composition-based stats.
+ Identities = 30/106 (28%), Positives = 46/106 (43%), Gaps = 5/106 (5%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDG--YSDCYDFWVNADALDIH  67
+              +    G KLE  D        ++TV E  G R+KL ++G    D ++ W+      +H
+Sbjct  158  PLDLIAPGSKLECQDFRDSLSTWLVTVVENIGGRLKLRYEGLESRDGFEHWLYYLDPFLH  217
+
+Query  68   PVGWCEKTGHKLHPPKGYKEEEF--NWQTYLKTCKAQA-APKSLFE  110
+             +GW  + G  L PP   K  +   +WQ  L   K +   P  LF+
+Sbjct  218  HIGWAAQQGCDLQPPLAIKHLKSEADWQEILAKVKEEEPLPSYLFK  263
+
+
+ Score = 67.8 bits (164),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 29/89 (33%), Positives = 46/89 (52%), Gaps = 3/89 (3%)
+
+Query  1    GSSGSSGPYN--KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY-DF  57
+             +     P +  ++ FK  MKLE V+P      C+ TV  V G  + L  +G      +F
+Sbjct  367  AAPQKCFPQSISEHQFKENMKLEAVNPLFPEEVCIATVTAVRGSYLWLQLEGSKKPVPEF  426
+
+Query  58   WVNADALDIHPVGWCEKTGHKLHPPKGYK  86
+             V+A++++I P+GWCE  GH L  P+  +
+Sbjct  427  IVSAESMNIFPLGWCETNGHPLSTPRRAR  455
+
+
+> sp|Q5VUG0|SMBT2_HUMAN Scm-like with four MBT domains protein 
+2 OS=Homo sapiens OX=9606 GN=SFMBT2 PE=1 SV=1
+Length=894
+
+ Score = 150 bits (378),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 37/120 (31%), Positives = 55/120 (46%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            ++ F+ GMKLE  +  +   Y V T+   CG  + L + GY +    DFW +    D+HP
+Sbjct  71   QSNFQPGMKLEVANKNNPDTYWVATIITTCGQLLLLRYCGYGEDRRADFWCDVVIADLHP  130
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNITVIPSGFSGPSS  126
+            VGWC +    L PP   KE+  +W  +L      ++ AP +L E       P       S
+Sbjct  131  VGWCTQNNKVLMPPDAIKEKYTDWTEFLIRDLTGSRTAPANLLEGPLRGKGPIDLITVGS  190
+
+
+ Score = 79.0 bits (193),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 37/119 (31%), Positives = 52/119 (44%), Gaps = 5/119 (4%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCG-YRIKLHFDG---YSDCYDFW  58
+               +     + F VGMKLE V+          +V +V   +  ++  D            
+Sbjct  290  KDHAD-LRSHFFTVGMKLETVNMCEPFYISPASVTKVFNNHFFQVTIDDLRPEPSKLSML  348
+
+Query  59   VNADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVI  117
+             +AD+L I PV WC K G  L PPKGY  ++F+W  Y K   AQ AP   F N + +  
+Sbjct  349  CHADSLGILPVQWCLKNGVSLTPPKGYSGQDFDWADYHKQHGAQEAPPFCFRNTSFSRG  407
+
+
+ Score = 75.5 bits (184),  Expect = 4e-15, Method: Composition-based stats.
+ Identities = 27/103 (26%), Positives = 49/103 (48%), Gaps = 8/103 (8%)
+
+Query  16   VGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYS--DCYDFWVNADALDIHPVGWCE  73
+            VG  +E  D ++   Y +++V E  G R++L + G    + YD W+      + PVGWC+
+Sbjct  188  VGSLIELQDSQNPFQYWIVSVIENVGGRLRLRYVGLEDTESYDQWLFYLDYRLRPVGWCQ  247
+
+Query  74   KTGHKLHPPKGYKEEE--FNWQTYLKTCKAQAA----PKSLFE  110
+            +  +++ PP      +    W+  L+     AA    P  +F+
+Sbjct  248  ENKYRMDPPSEIYPLKMASEWKCTLEKSLIDAAKFPLPMEVFK  290
+
+
+ Score = 71.3 bits (173),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 27/76 (36%), Positives = 38/76 (50%), Gaps = 1/76 (1%)
+
+Query  8    PYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY-DFWVNADALDI  66
+                 GF   MKLE V+P +    CV +V  V G  + LH +G      +  V+ +++DI
+Sbjct  402  TSFSRGFTKNMKLEAVNPRNPGELCVASVVSVKGRLMWLHLEGLQTPVPEVIVDVESMDI  461
+
+Query  67   HPVGWCEKTGHKLHPP  82
+             PVGWCE   + L  P
+Sbjct  462  FPVGWCEANSYPLTAP  477
+
+
+> sp|Q9JMD2|SMBT1_RAT Scm-like with four MBT domains protein 1 
+OS=Rattus norvegicus OX=10116 GN=Sfmbt1 PE=1 SV=2
+Length=863
+
+ Score = 150 bits (378),  Expect = 4e-41, Method: Composition-based stats.
+ Identities = 34/120 (28%), Positives = 55/120 (46%), Gaps = 4/120 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHP  68
+            ++GF  GMKLE    +    Y V TV   C   + L ++GY +    DFW +     ++P
+Sbjct  47   QSGFAPGMKLEVALRKDPETYWVATVITACEQLLLLRYEGYGEDRKADFWCDIRRAGLYP  106
+
+Query  69   VGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAA--PKSLFENQNITVIPSGFSGPSS  126
+            +GWC++    L  P+G +++  +W  +L+     A   P +L E       P     P S
+Sbjct  107  IGWCQQNKKTLEAPEGIRDKVSDWSAFLQRTLTGACGPPVALLEGLRNGRNPLDLIAPGS  166
+
+
+ Score = 85.5 bits (210),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 35/105 (33%), Positives = 54/105 (51%), Gaps = 5/105 (5%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCY---DFWVNADAL  64
+              + F + MKLE VDP         T+A+V    Y +    D   + +    F  +A++ 
+Sbjct  269  RTHEFSINMKLEAVDPWSPFGISPATIAKVFDDKYFLVEIDDLRPEDHARRSFVCHANSP  328
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLF  109
+             I PV W  K G  ++PP G++ ++F+W  YLK C A+AAP+  F
+Sbjct  329  GIFPVQWSLKNGLHINPPPGFRSQDFDWADYLKQCGAEAAPQKCF  373
+
+
+ Score = 81.3 bits (199),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 28/106 (26%), Positives = 49/106 (46%), Gaps = 5/106 (5%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYS--DCYDFWVNADALDIH  67
+              +    G +LE  D        ++TV E  G R+KL ++G    D ++ W+      +H
+Sbjct  158  PLDLIAPGSRLECQDFRDSVSTWIVTVVENIGGRLKLQYEGLERHDGFEHWLYYLDPFLH  217
+
+Query  68   PVGWCEKTGHKLHPPKGYKE--EEFNWQTYL-KTCKAQAAPKSLFE  110
+             +GW  + G++L PP   +    E +WQ  L +  + +  P  LF+
+Sbjct  218  HIGWAAQQGYELQPPLAIRHLKNEADWQEILARVKEEEPLPSYLFK  263
+
+
+ Score = 64.0 bits (154),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 27/89 (30%), Positives = 44/89 (49%), Gaps = 3/89 (3%)
+
+Query  1    GSSGSSGPYN--KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCY-DF  57
+             +     P +  ++ FK  MKLE V+P       + TV  V G  + L  +G      +F
+Sbjct  367  AAPQKCFPQSVSEHQFKENMKLEAVNPLFPEEVSIATVTAVRGSYLWLQLEGSKKPVPEF  426
+
+Query  58   WVNADALDIHPVGWCEKTGHKLHPPKGYK  86
+             V+ ++++I P+GWCE  GH L  P+  +
+Sbjct  427  IVSVESMNIFPLGWCETNGHPLSTPRRAR  455
+
+
+> sp|Q9UQR0|SCML2_HUMAN Sex comb on midleg-like protein 2 OS=Homo 
+sapiens OX=9606 GN=SCML2 PE=1 SV=1
+Length=700
+
+ Score = 148 bits (374),  Expect = 5e-41, Method: Composition-based stats.
+ Identities = 44/119 (37%), Positives = 61/119 (51%), Gaps = 2/119 (2%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S     N FKVGMKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ 
+Sbjct  54   QSQIPPVNDFKVGMKLEARDPRNATSVCIATVIGITGARLRLRLDGSDNRNDFWRLVDSP  113
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTC--KAQAAPKSLFENQNITVIPSGF  121
+            DI PVG CEK G  L PP GY+    +W  +L      ++ A  +LF+ +      + F
+Sbjct  114  DIQPVGTCEKEGDLLQPPLGYQMNTSSWPMFLLKTLNGSEMASATLFKKEPPKPPLNNF  172
+
+
+ Score = 93.2 bits (230),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 32/80 (40%), Positives = 44/80 (55%), Gaps = 0/80 (0%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNAD  62
+                     N FKVGMKLE +D ++  + C  T+ +V G  + + FDG+S  +D+W   D
+Sbjct  161  KKEPPKPPLNNFKVGMKLEAIDKKNPYLICPATIGDVKGDEVHITFDGWSGAFDYWCKYD  220
+
+Query  63   ALDIHPVGWCEKTGHKLHPP  82
+            + DI P GWC  TG  L PP
+Sbjct  221  SRDIFPAGWCRLTGDVLQPP  240
+
+
+> sp|Q96GD3|SCMH1_HUMAN Polycomb protein SCMH1 OS=Homo sapiens 
+OX=9606 GN=SCMH1 PE=1 SV=1
+Length=660
+
+ Score = 145 bits (366),  Expect = 4e-40, Method: Composition-based stats.
+ Identities = 40/123 (33%), Positives = 59/123 (48%), Gaps = 3/123 (2%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S     N FK+ MKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ 
+Sbjct  49   QSYTPPSNEFKISMKLEAQDPRNTTSTCIATVVGLTGARLRLRLDGSDNKNDFWRLVDSA  108
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTC--KAQAAPKSLFENQNITVIPSGFS  122
+            +I P+G CEK G  L PP G++    +W  +L      A+ AP  +F  +  +     F 
+Sbjct  109  EIQPIGNCEKNGGMLQPPLGFRLNASSWPMFLLKTLNGAEMAPIRIFHKEPPSPS-HNFF  167
+
+Query  123  GPS  125
+               
+Sbjct  168  KMG  170
+
+
+ Score = 94.4 bits (233),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 34/80 (43%), Positives = 45/80 (56%), Gaps = 1/80 (1%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNAD  62
+                 P + N FK+GMKLE VD ++    C  T+ EV G  + + FDG+   +D+W   D
+Sbjct  157  KEPPSPSH-NFFKMGMKLEAVDRKNPHFICPATIGEVRGSEVLVTFDGWRGAFDYWCRFD  215
+
+Query  63   ALDIHPVGWCEKTGHKLHPP  82
+            + DI PVGWC  TG  L PP
+Sbjct  216  SRDIFPVGWCSLTGDNLQPP  235
+
+
+> sp|Q8K214|SCMH1_MOUSE Polycomb protein SCMH1 OS=Mus musculus 
+OX=10090 GN=Scmh1 PE=1 SV=1
+Length=706
+
+ Score = 144 bits (364),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 40/123 (33%), Positives = 59/123 (48%), Gaps = 3/123 (2%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             S     N FK+ MKLE  DP + +  C+ TV  + G R++L  DG  +  DFW   D+ 
+Sbjct  49   QSYTPPSNEFKISMKLEAQDPRNTTSTCIATVVGLTGARLRLRLDGSDNKNDFWRLVDSS  108
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTC--KAQAAPKSLFENQNITVIPSGFS  122
+            +I P+G CEK G  L PP G++    +W  +L      A+ AP  +F  +  +     F 
+Sbjct  109  EIQPIGNCEKNGGMLQPPLGFRLNASSWPMFLLKTLNGAEMAPIKIFHKEPPSPS-HNFF  167
+
+Query  123  GPS  125
+               
+Sbjct  168  KMG  170
+
+
+ Score = 94.4 bits (233),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 34/80 (43%), Positives = 45/80 (56%), Gaps = 1/80 (1%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNAD  62
+                 P + N FK+GMKLE VD ++    C  T+ EV G  + + FDG+   +D+W   D
+Sbjct  157  KEPPSPSH-NFFKMGMKLEAVDRKNPHFICPATIGEVRGAEVLVTFDGWRGAFDYWCRFD  215
+
+Query  63   ALDIHPVGWCEKTGHKLHPP  82
+            + DI PVGWC  TG  L PP
+Sbjct  216  SRDIFPVGWCSLTGDNLQPP  235
+
+
+> sp|P59178|LMBL2_MOUSE Lethal(3)malignant brain tumor-like protein 
+2 OS=Mus musculus OX=10090 GN=L3mbtl2 PE=1 SV=2
+Length=703
+
+ Score = 135 bits (339),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 37/80 (46%), Positives = 50/80 (63%), Gaps = 0/80 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GFKVGMKLE VD     + CV TV  V    + +HFDG+ + YD WV+ ++ DI+PV
+Sbjct  532  PNHGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDNEYDQWVDCESPDIYPV  591
+
+Query  70   GWCEKTGHKLHPPKGYKEEE  89
+            GWCE TG++L PP   +   
+Sbjct  592  GWCELTGYQLQPPVSAEPNT  611
+
+
+ Score = 94.4 bits (233),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 30/99 (30%), Positives = 53/99 (54%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + TV +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIATVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W++YL  +   ++  P   
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKSYLMKRLVGSRTLPADF  311
+
+
+ Score = 94.0 bits (232),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 42/112 (38%), Positives = 60/112 (54%), Gaps = 7/112 (6%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADALDIHPV  69
+            F+ GMKLE +DP +    CV T+ +V   GY +     G S     W   +A +  I P 
+Sbjct  428  FEEGMKLEAIDPLNLGSICVATICKVLLDGYLMICVDGGPSTDGSDWFCYHASSHAIFPA  487
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             +C+K   +L PPKGY+ + F W+TYL+  K++AAP  LF   N+     GF
+Sbjct  488  TFCQKNDIELTPPKGYETQPFAWETYLEKTKSKAAPARLF---NMDCPNHGF  536
+
+
+ Score = 70.9 bits (172),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  323  FRQGMRLEVVDKTQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  382
+
+Query  74   KTGH  77
+            + GH
+Sbjct  383  RVGH  386
+
+
+> sp|Q3MIF2|LMBL2_RAT Lethal(3)malignant brain tumor-like protein 
+2 OS=Rattus norvegicus OX=10116 GN=L3mbtl2 PE=1 SV=1
+Length=703
+
+ Score = 134 bits (337),  Expect = 7e-36, Method: Composition-based stats.
+ Identities = 37/80 (46%), Positives = 50/80 (63%), Gaps = 0/80 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GFKVGMKLE VD     + CV TV  V    + +HFDG+ + YD WV+ ++ DI+PV
+Sbjct  532  PNHGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDNEYDQWVDCESPDIYPV  591
+
+Query  70   GWCEKTGHKLHPPKGYKEEE  89
+            GWCE TG++L PP   +   
+Sbjct  592  GWCELTGYQLQPPVSAEPNT  611
+
+
+ Score = 93.6 bits (231),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 30/99 (30%), Positives = 53/99 (54%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + TV +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIATVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W++YL  +   ++  P   
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKSYLMKRLVGSRTLPADF  311
+
+
+ Score = 93.2 bits (230),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 41/112 (37%), Positives = 61/112 (54%), Gaps = 7/112 (6%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADALDIHPV  69
+            F+ GMKLE +DP +    CV T+ +V   GY +     G S     W   +A +  I P 
+Sbjct  428  FEEGMKLEAIDPLNLGNICVATICKVLLDGYLMICVDGGPSTDGSDWFCYHASSHAIFPA  487
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             +C+K   +L PPKGY+ + F+W++YL+  K++AAP  LF   N+     GF
+Sbjct  488  TFCQKNDIELTPPKGYETQPFDWESYLEKTKSKAAPARLF---NMDCPNHGF  536
+
+
+ Score = 70.5 bits (171),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  323  FRQGMRLEVVDKTQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  382
+
+Query  74   KTGH  77
+            + GH
+Sbjct  383  RVGH  386
+
+
+> sp|Q1JQD9|LMBL2_BOVIN Lethal(3)malignant brain tumor-like protein 
+2 OS=Bos taurus OX=9913 GN=L3MBTL2 PE=2 SV=1
+Length=706
+
+ Score = 134 bits (336),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 37/80 (46%), Positives = 49/80 (61%), Gaps = 0/80 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PV
+Sbjct  533  PNHGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPV  592
+
+Query  70   GWCEKTGHKLHPPKGYKEEE  89
+            GWCE TG++L PP   +   
+Sbjct  593  GWCELTGYQLQPPVATEPTT  612
+
+
+ Score = 94.0 bits (232),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 42/112 (38%), Positives = 59/112 (53%), Gaps = 7/112 (6%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADALDIHPV  69
+            F+ GMKLE +DP +    CV T+ +V   GY +     G S     W   +A +  I P 
+Sbjct  429  FEEGMKLEAIDPLNLGNICVATICKVLLDGYLMICVDGGPSTDGSDWFCYHASSHAIFPA  488
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             +C+K   +L PPKGY+   F+W+ YL+  KA+AAP  LF   N+     GF
+Sbjct  489  NFCQKNDIELTPPKGYEAHTFSWEAYLEKTKAKAAPSRLF---NMDCPNHGF  537
+
+
+ Score = 93.6 bits (231),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 52/99 (53%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  214  GMKVEVLNSDAVLPSRVYWIASVIQAAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  273
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W+ YL  +   ++  P   
+Sbjct  274  CAINSKILVPPRTIHAKFTDWKGYLMKRLVGSRTLPVDF  312
+
+
+ Score = 70.5 bits (171),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  324  FRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  383
+
+Query  74   KTGH  77
+            + GH
+Sbjct  384  RVGH  387
+
+
+> sp|Q05BQ5|MBTD1_HUMAN MBT domain-containing protein 1 OS=Homo 
+sapiens OX=9606 GN=MBTD1 PE=1 SV=2
+Length=628
+
+ Score = 132 bits (332),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 34/80 (43%), Positives = 51/80 (64%), Gaps = 0/80 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GF+VGMKLE VD     + CV TV  +    +++HFDG+ + YD WV+ ++ D++PV
+Sbjct  488  PNHGFRVGMKLEAVDLMEPRLICVATVTRIIHRLLRIHFDGWEEEYDQWVDCESPDLYPV  547
+
+Query  70   GWCEKTGHKLHPPKGYKEEE  89
+            GWC+ TG++L PP      E
+Sbjct  548  GWCQLTGYQLQPPASQSSRE  567
+
+
+ Score = 107 bits (267),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 43/122 (35%), Positives = 58/122 (48%), Gaps = 11/122 (9%)
+
+Query  4    GSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCG-YRIKLHFDGYSD-CYDFW--V  59
+              SG +    FK GMKLE +DP + S  CV T+ +V     + +  DG        W   
+Sbjct  378  DQSGEW----FKEGMKLEAIDPLNLSTICVATIRKVLADGFLMIGIDGSEAADGSDWFCY  433
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPS  119
+            +A +  I PVG+CE    +L PP+GY +  F W  YL+   + AAP  LF      V   
+Sbjct  434  HATSPSIFPVGFCEINMIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNK---DVPNH  490
+
+Query  120  GF  121
+            GF
+Sbjct  491  GF  492
+
+
+ Score = 84.0 bits (206),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 47/92 (51%), Gaps = 4/92 (4%)
+
+Query  29   SVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHPVGWCEKTGHKLHPPKGYK  86
+             V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGWC  +G  L PP+  +
+Sbjct  190  KVFWIAGIVKLAGYNALLRYEGFENDSGLDFWCNICGSDIHPVGWCAASGKPLVPPRTIQ  249
+
+Query  87   EEEFNWQTYL--KTCKAQAAPKSLFENQNITV  116
+             +  NW+ +L  +   A+  P    +  + ++
+Sbjct  250  HKYTNWKAFLVKRLTGAKTLPPDFSQKVSESM  281
+
+
+ Score = 62.0 bits (149),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 24/80 (30%), Positives = 35/80 (44%), Gaps = 1/80 (1%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC-YDFWVNA  61
+            S       +  FK  M++E VD  H     V  V  V G R++L ++   D   DFW + 
+Sbjct  274  SQKVSESMQYPFKPCMRVEVVDKRHLCRTRVAVVESVIGGRLRLVYEESEDRTDDFWCHM  333
+
+Query  62   DALDIHPVGWCEKTGHKLHP  81
+             +  IH +GW    GH+   
+Sbjct  334  HSPLIHHIGWSRSIGHRFKR  353
+
+
+> sp|Q6P5G3|MBTD1_MOUSE MBT domain-containing protein 1 OS=Mus 
+musculus OX=10090 GN=Mbtd1 PE=1 SV=1
+Length=631
+
+ Score = 132 bits (331),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 33/73 (45%), Positives = 50/73 (68%), Gaps = 0/73 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GF+VGMKLE VD     + CV TV  +    +++HFDG+ + YD WV+ ++ D++PV
+Sbjct  491  PNHGFRVGMKLEAVDLMEPRLICVATVTRIIHRLLRIHFDGWEEEYDQWVDCESPDLYPV  550
+
+Query  70   GWCEKTGHKLHPP  82
+            GWC+ TG++L PP
+Sbjct  551  GWCQLTGYQLQPP  563
+
+
+ Score = 107 bits (267),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 43/122 (35%), Positives = 58/122 (48%), Gaps = 11/122 (9%)
+
+Query  4    GSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCG-YRIKLHFDGYSD-CYDFW--V  59
+              SG +    FK GMKLE +DP + S  CV T+ +V     + +  DG        W   
+Sbjct  381  DQSGEW----FKEGMKLEAIDPLNLSTICVATIRKVLADGFLMIGIDGSEAADGSDWFCY  436
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPS  119
+            +A +  I PVG+CE    +L PP+GY +  F W  YL+   + AAP  LF      V   
+Sbjct  437  HATSPSIFPVGFCEINMIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNK---DVPNH  493
+
+Query  120  GF  121
+            GF
+Sbjct  494  GF  495
+
+
+ Score = 83.2 bits (204),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 26/92 (28%), Positives = 47/92 (51%), Gaps = 4/92 (4%)
+
+Query  29   SVYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHPVGWCEKTGHKLHPPKGYK  86
+             V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGWC  +G  L PP+  +
+Sbjct  193  KVFWIAGIIKLAGYNALLRYEGFENDSSLDFWCNICGSDIHPVGWCAASGKPLVPPRTVQ  252
+
+Query  87   EEEFNWQTYL--KTCKAQAAPKSLFENQNITV  116
+             +  NW+ +L  +   A+  P    +  + ++
+Sbjct  253  HKYTNWKAFLVKRLTGAKTLPPDFSQKVSESM  284
+
+
+ Score = 62.0 bits (149),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 24/80 (30%), Positives = 35/80 (44%), Gaps = 1/80 (1%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC-YDFWVNA  61
+            S       +  FK  M++E VD  H     V  V  V G R++L ++   D   DFW + 
+Sbjct  277  SQKVSESMQYPFKPCMRVEVVDKRHLCRTRVAVVESVIGGRLRLVYEESEDRTDDFWCHM  336
+
+Query  62   DALDIHPVGWCEKTGHKLHP  81
+             +  IH +GW    GH+   
+Sbjct  337  HSPLIHHIGWSRSIGHRFKR  356
+
+
+> sp|Q969R5|LMBL2_HUMAN Lethal(3)malignant brain tumor-like protein 
+2 OS=Homo sapiens OX=9606 GN=L3MBTL2 PE=1 SV=1
+Length=705
+
+ Score = 132 bits (332),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 37/80 (46%), Positives = 49/80 (61%), Gaps = 0/80 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PV
+Sbjct  532  PNHGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPV  591
+
+Query  70   GWCEKTGHKLHPPKGYKEEE  89
+            GWCE TG++L PP   +   
+Sbjct  592  GWCELTGYQLQPPVAAEPAT  611
+
+
+ Score = 93.6 bits (231),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 52/99 (53%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIASVIQTAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W+ YL  +   ++  P   
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKGYLMKRLVGSRTLPVDF  311
+
+
+ Score = 91.7 bits (226),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 43/112 (38%), Positives = 60/112 (54%), Gaps = 7/112 (6%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADALDIHPV  69
+            F+ GMKLE +DP +    CV TV +V   GY +     G S     W   +A +  I P 
+Sbjct  428  FEEGMKLEAIDPLNLGNICVATVCKVLLDGYLMICVDGGPSTDGLDWFCYHASSHAIFPA  487
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             +C+K   +L PPKGY+ + FNW+ YL+  K++AAP  LF   N+     GF
+Sbjct  488  TFCQKNDIELTPPKGYEAQTFNWENYLEKTKSKAAPSRLF---NMDCPNHGF  536
+
+
+ Score = 70.5 bits (171),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  323  FRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  382
+
+Query  74   KTGH  77
+            + GH
+Sbjct  383  RVGH  386
+
+
+> sp|Q5R737|LMBL2_PONAB Lethal(3)malignant brain tumor-like protein 
+2 OS=Pongo abelii OX=9601 GN=L3MBTL2 PE=2 SV=1
+Length=705
+
+ Score = 132 bits (332),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 37/80 (46%), Positives = 49/80 (61%), Gaps = 0/80 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GFKVGMKLE VD     + CV TV  V    + +HFDG+   YD WV+ ++ DI+PV
+Sbjct  532  PNHGFKVGMKLEAVDLMEPRLICVATVKRVVHRLLSIHFDGWDSEYDQWVDCESPDIYPV  591
+
+Query  70   GWCEKTGHKLHPPKGYKEEE  89
+            GWCE TG++L PP   +   
+Sbjct  592  GWCELTGYQLQPPVAAEPAT  611
+
+
+ Score = 93.6 bits (231),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 52/99 (53%), Gaps = 7/99 (7%)
+
+Query  17   GMKLEGVDPEH---QSVYCVLTVAEVCGYRIKLHFDGYSDC--YDFWVNADALDIHPVGW  71
+            GMK+E ++ +      VY + +V +  GYR+ L ++G+ +   +DFW N   +D+HP+GW
+Sbjct  213  GMKVEVLNSDAVLPSRVYWIASVIQTAGYRVLLRYEGFENDASHDFWCNLGTVDVHPIGW  272
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSL  108
+            C      L PP+    +  +W+ YL  +   ++  P   
+Sbjct  273  CAINSKILVPPRTIHAKFTDWKGYLMKRLVGSRTLPVDF  311
+
+
+ Score = 92.8 bits (229),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 43/112 (38%), Positives = 60/112 (54%), Gaps = 7/112 (6%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC--GYRIKLHFDGYSDCYDFW--VNADALDIHPV  69
+            F+ GMKLE +DP +    CV TV +V   GY +     G S     W   +A +  I P 
+Sbjct  428  FEEGMKLEAIDPLNLGNICVATVCKVLLDGYLMVCVDGGPSTDGSDWFCYHASSHAIFPA  487
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             +C+K   +L PPKGY+ + FNW+ YL+  K++AAP  LF   N+     GF
+Sbjct  488  TFCQKNDIELTPPKGYEAQTFNWENYLEKTKSKAAPSRLF---NMDCPNHGF  536
+
+
+ Score = 70.5 bits (171),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 24/64 (38%), Positives = 34/64 (53%), Gaps = 0/64 (0%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGWCE  73
+            F+ GM+LE VD    S   +  V  V G R++L ++      DFW +  +  IHPVGW  
+Sbjct  323  FRQGMRLEVVDKSQVSRTRMAVVDTVIGGRLRLLYEDGDSDDDFWCHMWSPLIHPVGWSR  382
+
+Query  74   KTGH  77
+            + GH
+Sbjct  383  RVGH  386
+
+
+> sp|Q32N90|MBTD1_XENLA MBT domain-containing protein 1 OS=Xenopus 
+laevis OX=8355 GN=mbtd1 PE=2 SV=1
+Length=621
+
+ Score = 130 bits (328),  Expect = 7e-35, Method: Composition-based stats.
+ Identities = 34/74 (46%), Positives = 50/74 (68%), Gaps = 0/74 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GF+VGMKLE VD     + CV TV  +    +++HFDG+ D YD WV+ ++ D++PV
+Sbjct  511  PNHGFRVGMKLEAVDLMEPRLVCVATVTRIIHRLLRIHFDGWEDEYDQWVDCESPDLYPV  570
+
+Query  70   GWCEKTGHKLHPPK  83
+            GWC+ TG++L PP 
+Sbjct  571  GWCQLTGYQLQPPA  584
+
+
+ Score = 103 bits (257),  Expect = 5e-25, Method: Composition-based stats.
+ Identities = 41/112 (37%), Positives = 55/112 (49%), Gaps = 7/112 (6%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVC-GYRIKLHFDGYSD-CYDFW--VNADALDIHPV  69
+            FK GMKLE +DP + S  CV T+ +V     + +  DG        W   +A +  I PV
+Sbjct  407  FKEGMKLEAIDPLNLSAICVATIRKVLAEGYLMIGIDGSEAADGSDWFCYHASSPSIFPV  466
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            G+CE    +L PP+GY +  F W  YL+   + AAP  LF      V   GF
+Sbjct  467  GFCEINKIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNK---DVPNHGF  515
+
+
+ Score = 84.4 bits (207),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 29/107 (27%), Positives = 53/107 (50%), Gaps = 7/107 (7%)
+
+Query  17   GMKLEG--VDPEHQS-VYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHPVGW  71
+            G+++E    D    + V+ +  + ++ GY   L ++G+ +    DFW N    DIHPVGW
+Sbjct  198  GVRIEVPNTDSNLPTKVFWISGIVKLAGYNALLRYEGFENDSSLDFWCNICGPDIHPVGW  257
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNITV  116
+            C  +G  L PP+  + +  NW+ +L  +   A+  P    +  +  +
+Sbjct  258  CATSGKPLVPPQSIQHKYTNWKAFLVKRLTGAKTLPPDFSQKVSENM  304
+
+
+ Score = 69.0 bits (167),  Expect = 7e-13, Method: Composition-based stats.
+ Identities = 32/113 (28%), Positives = 46/113 (41%), Gaps = 11/113 (10%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC-YDFWVNA  61
+            S       +  FK  M++E VD  H     V  V  V G R++L ++   D   DFW + 
+Sbjct  297  SQKVSENMQYPFKPSMRVEVVDKTHLCRTRVAVVESVIGGRLRLVYEESEDKTDDFWCHM  356
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNI  114
+             +  IHP+GW    GH+       K++E N+           AP  LF     
+Sbjct  357  YSPLIHPIGWSRSIGHRFKRTDILKKQESNYD----------APSHLFIKVKD  399
+
+
+> sp|Q9VHA0|SCM_DROME Polycomb protein Scm OS=Drosophila melanogaster 
+OX=7227 GN=Scm PE=1 SV=2
+Length=877
+
+ Score = 132 bits (331),  Expect = 8e-35, Method: Composition-based stats.
+ Identities = 37/92 (40%), Positives = 51/92 (55%), Gaps = 0/92 (0%)
+
+Query  5    SSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADAL  64
+             +     N FK+GMKLE +DP + +  C+ TV  V G R++L  DG     DFW   D+ 
+Sbjct  196  QAQNPPNNDFKIGMKLEALDPRNVTSTCIATVVGVLGSRLRLRLDGSDSQNDFWRLVDST  255
+
+Query  65   DIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYL  96
+            +IH +G CEK G  L PP G++    +W  YL
+Sbjct  256  EIHAIGHCEKNGGMLQPPLGFRMNASSWPGYL  287
+
+
+ Score = 86.7 bits (213),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 29/71 (41%), Positives = 42/71 (59%), Gaps = 0/71 (0%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVGW  71
+            N FKVG KLE VD ++  + C  TV  +   +I + FDG+   +D+W N  + DI P GW
+Sbjct  312  NLFKVGQKLEAVDKKNPQLICCATVDAIKDDQIHVTFDGWRGAFDYWCNYRSRDIFPAGW  371
+
+Query  72   CEKTGHKLHPP  82
+            C ++ H + PP
+Sbjct  372  CARSCHPMQPP  382
+
+
+> sp|Q6DIN3|MBTD1_XENTR MBT domain-containing protein 1 OS=Xenopus 
+tropicalis OX=8364 GN=mbtd1 PE=2 SV=1
+Length=651
+
+ Score = 129 bits (325),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 34/74 (46%), Positives = 50/74 (68%), Gaps = 0/74 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GF+VGMKLE VD     + CV TV  +    +++HFDG+ D YD WV+ ++ D++PV
+Sbjct  511  PNHGFRVGMKLEAVDLMEPRLVCVATVTRIIHRLLRIHFDGWEDEYDQWVDCESSDLYPV  570
+
+Query  70   GWCEKTGHKLHPPK  83
+            GWC+ TG++L PP 
+Sbjct  571  GWCQLTGYQLQPPA  584
+
+
+ Score = 105 bits (261),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 41/112 (37%), Positives = 56/112 (50%), Gaps = 7/112 (6%)
+
+Query  14   FKVGMKLEGVDPEHQSVYCVLTVAEVCG-YRIKLHFDGYSD-CYDFW--VNADALDIHPV  69
+            FK GMKLE +DP + S  CV T+ +V     + +  DG        W   +A +  I PV
+Sbjct  407  FKEGMKLEAIDPLNLSAICVATIRKVLADGYLMIGIDGSEAADGSDWFCYHASSPSIFPV  466
+
+Query  70   GWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+            G+CE    +L PP+GY +  F W  YL+   + AAP  LF  +   V   GF
+Sbjct  467  GFCEINKIELTPPRGYTKLPFKWFDYLRETGSIAAPVKLFNKE---VPNHGF  515
+
+
+ Score = 83.2 bits (204),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 27/107 (25%), Positives = 54/107 (50%), Gaps = 7/107 (7%)
+
+Query  17   GMKLEG--VDPEHQS-VYCVLTVAEVCGYRIKLHFDGYSDCY--DFWVNADALDIHPVGW  71
+            G+++E    D    + V+ +  + ++ G+   L ++G+ +    DFW N    D+HPVGW
+Sbjct  198  GVRVEVPNTDSNLPTKVFWISGIVKLAGFNALLRYEGFENDSSLDFWCNICGPDVHPVGW  257
+
+Query  72   CEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNITV  116
+            C  +G  L PP+  + +  NW+ +L  +   A+  P    +  + ++
+Sbjct  258  CATSGKPLVPPQTIQHKYTNWKAFLVKRLTGAKTLPPDFSQKVSESM  304
+
+
+ Score = 69.7 bits (169),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 32/113 (28%), Positives = 46/113 (41%), Gaps = 11/113 (10%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDC-YDFWVNA  61
+            S       +  FK  M++E VD  H     V  V  V G R++L ++   D   DFW + 
+Sbjct  297  SQKVSESMQYPFKPSMRVEVVDKTHLCRTRVAVVDSVIGGRLRLVYEESEDKTDDFWCHM  356
+
+Query  62   DALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNI  114
+             +  IHP+GW    GH+       K++E N+           AP  LF     
+Sbjct  357  YSPLIHPIGWSRSIGHRFKRTDILKKQESNYD----------APSHLFTKVKD  399
+
+
+> sp|Q29L50|SMBT_DROPS Polycomb protein Sfmbt OS=Drosophila pseudoobscura 
+pseudoobscura OX=46245 GN=Sfmbt PE=3 SV=2
+Length=1274
+
+ Score = 124 bits (311),  Expect = 8e-32, Method: Composition-based stats.
+ Identities = 35/73 (48%), Positives = 48/73 (66%), Gaps = 0/73 (0%)
+
+Query  10    NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              ++GF+ GM LE  D     + CV TVA V G  +K+HFDG++D YD W++ ++ DI+PV
+Sbjct  931   PEHGFETGMSLECADLMDPRLVCVATVARVVGRLLKVHFDGWTDEYDQWLDCESADIYPV  990
+
+Query  70    GWCEKTGHKLHPP  82
+             GWC   GHKL  P
+Sbjct  991   GWCILVGHKLEGP  1003
+
+
+ Score = 96.7 bits (239),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 31/118 (26%), Positives = 58/118 (49%), Gaps = 14/118 (12%)
+
+Query  12   NGFKVGMKLEGVDPE-----------HQSVYCVLTVAEVCGYRIKLHFDGYS-DCYDFWV  59
+            +   VGMK+E  + +             + + V T+ E+ GY+  + ++G+  D +DFWV
+Sbjct  593  DNLGVGMKVEVENTDCDNIEIIQPGQTPTSFWVATILEIKGYKALMSYEGFDTDSHDFWV  652
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNIT  115
+            N    ++H VGWC   G  L PP+  + +  +W+ +L  +   A+  P + +   N +
+Sbjct  653  NLCNAEVHSVGWCATRGKPLIPPRTIEHKYKDWKDFLVGRLSGARTLPSNFYNKINDS  710
+
+
+ Score = 89.8 bits (221),  Expect = 8e-20, Method: Composition-based stats.
+ Identities = 39/117 (33%), Positives = 50/117 (43%), Gaps = 8/117 (7%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGY-RIKLHFDGYSDCYD----FWVNADALDI  66
+            NGF  GMKLE VDP + S  C  TV  V  +  + +  D Y         F  +  +  I
+Sbjct  824  NGFIEGMKLEAVDPLNLSSICPATVMAVLKFGYMMIRIDSYQPDESGSDWFCYHEKSPCI  883
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFSG  123
+             P G+C      + PP GY    F W+ YL+   A AA + LF      V   GF  
+Sbjct  884  FPAGFCSANNISVTPPNGYDSRTFTWEVYLRNTGAVAANQHLFHRV---VPEHGFET  937
+
+
+ Score = 76.3 bits (186),  Expect = 3e-15, Method: Composition-based stats.
+ Identities = 34/117 (29%), Positives = 53/117 (45%), Gaps = 3/117 (3%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVG  70
+            ++ F++G+ LE VD +  S   + TV ++ G R+ L +  +     FW + D+  IHPVG
+Sbjct  712  QSRFRLGLNLECVDKDRISQVRLATVTKIVGKRLFLRY--FDTDDGFWCHEDSPIIHPVG  769
+
+Query  71   WCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGFSGPSSG  127
+            W    GH L  P+ Y E     +  +       A   LF   N T       G ++G
+Sbjct  770  WATTVGHNLAAPQDYLERMLAGREAMIEVHEDDATIELF-KMNFTFDEYFLDGKTNG  825
+
+
+> sp|Q9VK33|SMBT_DROME Polycomb protein Sfmbt OS=Drosophila melanogaster 
+OX=7227 GN=Sfmbt PE=1 SV=2
+Length=1220
+
+ Score = 123 bits (309),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 35/73 (48%), Positives = 47/73 (64%), Gaps = 0/73 (0%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPV  69
+              +GF+VGM LE  D     + CV TVA V G  +K+HFDG++D YD W++ ++ DI+PV
+Sbjct  903  PDHGFEVGMSLECADLMDPRLVCVATVARVVGRLLKVHFDGWTDEYDQWLDCESADIYPV  962
+
+Query  70   GWCEKTGHKLHPP  82
+            GWC    HKL  P
+Sbjct  963  GWCVLVNHKLEGP  975
+
+
+ Score = 96.7 bits (239),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 31/118 (26%), Positives = 58/118 (49%), Gaps = 14/118 (12%)
+
+Query  12   NGFKVGMKLEGVDPE-----------HQSVYCVLTVAEVCGYRIKLHFDGYS-DCYDFWV  59
+            +   VGMK+E  + +             + + V T+ E+ GY+  + ++G+  D +DFWV
+Sbjct  565  DNLGVGMKVEVENTDCDSIEVIQPGQTPTSFWVATILEIKGYKALMSYEGFDTDSHDFWV  624
+
+Query  60   NADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYL--KTCKAQAAPKSLFENQNIT  115
+            N    ++H VGWC   G  L PP+  + +  +W+ +L  +   A+  P + +   N +
+Sbjct  625  NLCNAEVHSVGWCATRGKPLIPPRTIEHKYKDWKDFLVGRLSGARTLPSNFYNKINDS  682
+
+
+ Score = 87.8 bits (216),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 37/115 (32%), Positives = 49/115 (43%), Gaps = 8/115 (7%)
+
+Query  12   NGFKVGMKLEGVDPEHQSVYCVLTVAEVCGY-RIKLHFDGYSDCYD----FWVNADALDI  66
+            N F  GMKLE VDP + S  C  TV  V  +  + +  D Y         F  +  +  I
+Sbjct  796  NSFVEGMKLEAVDPLNLSSICPATVMAVLKFGYMMIRIDSYQPDASGSDWFCYHEKSPCI  855
+
+Query  67   HPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPSGF  121
+             P G+C      + PP GY    F W+ YL+   A AA + LF      +   GF
+Sbjct  856  FPAGFCSVNNISVTPPNGYDSRTFTWEGYLRDTGAVAAGQHLFHRI---IPDHGF  907
+
+
+ Score = 75.9 bits (185),  Expect = 5e-15, Method: Composition-based stats.
+ Identities = 30/100 (30%), Positives = 48/100 (48%), Gaps = 2/100 (2%)
+
+Query  11   KNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHPVG  70
+            ++ F++G+ LE VD +  S   + TV ++ G R+ L +  +     FW + D+  IHPVG
+Sbjct  684  QSRFRLGLNLECVDKDRISQVRLATVTKIVGKRLFLRY--FDSDDGFWCHEDSPIIHPVG  741
+
+Query  71   WCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFE  110
+            W    GH L  P+ Y E     +  +       A   LF+
+Sbjct  742  WATTVGHNLAAPQDYLERMLAGREAMIEVHEDDATIELFK  781
+
+
+> sp|Q11193|SOR3_CAEEL Sop-2-related protein 3 OS=Caenorhabditis 
+elegans OX=6239 GN=sor-3 PE=2 SV=3
+Length=531
+
+ Score = 117 bits (292),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 23/125 (18%), Positives = 43/125 (34%), Gaps = 15/125 (12%)
+
+Query  4    GSSGPYNKNGF----KVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWV  59
+              + PY + G     K G + E    +    Y + TV +     + + +      +  W+
+Sbjct  153  EKATPYFEQGLSALVKPGQQFELQLEDAPDFYVMATVVKNYRGFLLVEY----QNFKRWI  208
+
+Query  60   NADALDIHPVGWC--EKTGHKLHPPKGYKEEEFNWQTYLKTC---KAQAAPKSLFENQNI  114
+            +  +   H +GW   EK  +    P             +K     K  A P+ +F  +N 
+Sbjct  209  HMLSPYCHEIGWGKNEKQEYLKRGPYNRHMNVDLVAGLVKQSTNQKLGAVPEIVF--RNN  266
+
+Query  115  TVIPS  119
+              +P 
+Sbjct  267  CPVPH  271
+
+
+> sp|B2D6M2|LIN61_CAEEL Protein lin-61 OS=Caenorhabditis elegans 
+OX=6239 GN=lin-61 PE=1 SV=1
+Length=612
+
+ Score = 113 bits (283),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 30/77 (39%), Positives = 42/77 (55%), Gaps = 0/77 (0%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHP  68
+               + FKVG++LE  D       C  TV  V G  I ++FDG+ + +D   + D+ DI P
+Sbjct  534  ERLDKFKVGLRLEAADMCENQFICPATVKSVHGRLINVNFDGWDEEFDELYDVDSHDILP  593
+
+Query  69   VGWCEKTGHKLHPPKGY  85
+            +GWCE   + L PPK Y
+Sbjct  594  IGWCEAHSYVLQPPKKY  610
+
+
+ Score = 85.1 bits (209),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 32/118 (27%), Positives = 49/118 (42%), Gaps = 6/118 (5%)
+
+Query  2    SSGSSGPYNKNGFKVGMKLEGVDPEHQSV--YCVLTVAEVC--GYRIKLHFDGYSDCYD-  56
+            +     P      KVG K E +DP  Q      V ++ + C     + +  DG     D 
+Sbjct  416  AKDPIDPMIWRKVKVGQKFELIDPLAQQFNNLHVASILKFCKTEGYLIVGMDGPDALEDS  475
+
+Query  57   FWVNADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNI  114
+            F ++ +   + PVG+ EK   +L PP  +K   F W  YL+   A+  P  LF+    
+Sbjct  476  FPIHINNTFMFPVGYAEKYNLELVPPDEFK-GTFRWDEYLEKESAETLPLDLFKPMPS  532
+
+
+ Score = 51.2 bits (121),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 26/104 (25%), Positives = 45/104 (43%), Gaps = 16/104 (15%)
+
+Query  10   NKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHF----------DGYSDCYDF--  57
+            +K+ FKVG +LE ++  + +   V  + E+CG R+ +            D   D   F  
+Sbjct  295  SKHRFKVGQRLELLNYSNSTEIRVARIQEICGRRMNVSITKKDFPESLPDADDDRQVFSS  354
+
+Query  58   ----WVNADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLK  97
+                W++  +  I PVG+    G++L+  K Y E        +K
+Sbjct  355  GSQYWIDEGSFFIFPVGFAAVNGYQLNAKKEYIEHTNKIAQAIK  398
+
+
+> sp|A0SQM0|MBTR1_CAEEL Malignant brain tumor repeat protein 1 
+OS=Caenorhabditis elegans OX=6239 GN=mbtr-1 PE=1 SV=1
+Length=564
+
+ Score = 112 bits (281),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 36/124 (29%), Positives = 55/124 (44%), Gaps = 5/124 (4%)
+
+Query  3    SGSSGPYNKNGFKVGMKLEGVDP--EHQSVYCVLTVAEVC---GYRIKLHFDGYSDCYDF  57
+                     N  KVG K E +DP  + +  +CV T+ ++C   G+ I    +  SD   F
+Sbjct  358  KPDISAEKLNLLKVGQKFELLDPLSDLRQSFCVATIRKICKTPGFLIISPDETESDDESF  417
+
+Query  58   WVNADALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVI  117
+             ++ D   +HPVG+ EK G KL    G +  +F W+ YLK  +A+  P  +         
+Sbjct  418  PIHIDNHFMHPVGYAEKFGIKLDRLAGTEPGKFKWEGYLKEKQAEKIPDEMLRPLPSKER  477
+
+Query  118  PSGF  121
+               F
+Sbjct  478  RHMF  481
+
+
+ Score = 71.7 bits (174),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 21/74 (28%), Positives = 32/74 (43%), Gaps = 0/74 (0%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNADALDIHP  68
+              ++ F+ G  LE V           +V EV G  + + F G+   +    + D+ D+ P
+Sbjct  476  ERRHMFEFGRVLEAVGQNETYWISPASVEEVHGRTVLIEFQGWDSEFSELYDMDSHDLLP  535
+
+Query  69   VGWCEKTGHKLHPP  82
+             GWCE    KL  P
+Sbjct  536  AGWCEFFNFKLRHP  549
+
+
+ Score = 47.4 bits (111),  Expect = 9e-06, Method: Composition-based stats.
+ Identities = 23/117 (20%), Positives = 35/117 (30%), Gaps = 20/117 (17%)
+
+Query  12   NGFKVGMKLEGV-----DP----EHQSVYCVLTVAEVCGYRIKLHFDGYSDCYDFWVNAD  62
+               K G +LE V     DP    +   +     V  VCG+ + + F G  +    W +  
+Sbjct  97   QHLKPGFRLEVVVRPSLDPSITTKSPEIRWFGEVTAVCGFYVAIKFVGELNRRPCWFHML  156
+
+Query  63   ALDIHPVGWCEKTGHKLHPPKGYKEEEFNWQTYLKTCKAQAAPKSLFENQNITVIPS  119
+            + DI  +G           P         W  Y      +      F  +  T  P 
+Sbjct  157  SEDIFDIG-----SGLKQDPA------MKWLQYRPLSLLKPMQCPKFWRRGSTPAPP  202
+
+
+ Score = 40.1 bits (92),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/94 (15%), Positives = 35/94 (37%), Gaps = 17/94 (18%)
+
+Query  9    YNKNGFKVGMKLEGVDPEHQSVYCVLTVAEVCGYRIKLHFDGYS----------------  52
+            +  + F++  ++E ++    +   V  +  + G R+ +                      
+Sbjct  237  HRPSRFRLNQRVELLNYLEPTEIRVARILRILGRRLMVMVTAQDYPEDLPSVEAKDRQVQ  296
+
+Query  53   -DCYDFWVNADALDIHPVGWCEKTGHKLHPPKGY  85
+             +  +FWV+  +  + PVG+    G +    +GY
+Sbjct  297  HENVEFWVDESSFFLFPVGFAMINGLRTKATEGY  330
+
+
+
+Lambda      K        H        a         alpha
+   0.307    0.132    0.380    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0409    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5027495986
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

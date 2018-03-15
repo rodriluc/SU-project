@@ -1,0 +1,2868 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= 1G3S
+
+Length=226
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|H2I233|DTXR_CORDW Diphtheria toxin repressor OS=Corynebacter...  450     2e-160
+  sp|P0DJL7|DTXR_CORDI Diphtheria toxin repressor OS=Corynebacter...  447     3e-159
+  sp|Q8NP95|DTXR_CORGL Diphtheria toxin repressor OS=Corynebacter...  329     9e-113
+  sp|Q8FPG6|DTXR_COREF Diphtheria toxin repressor OS=Corynebacter...  323     2e-110
+  sp|Q4JV96|DTXR_CORJK Diphtheria toxin repressor OS=Corynebacter...  252     2e-82 
+  sp|P9WMH1|IDER_MYCTU Iron-dependent repressor IdeR OS=Mycobacte...  240     7e-78 
+  sp|P9WMH0|IDER_MYCTO Iron-dependent repressor IdeR OS=Mycobacte...  240     7e-78 
+  sp|P0A673|IDER_MYCBO Iron-dependent repressor IdeR OS=Mycobacte...  240     7e-78 
+  sp|Q9CCB5|IDER_MYCLE Iron-dependent repressor IdeR OS=Mycobacte...  237     1e-76 
+  sp|Q65HG7|MNTR_BACLD Transcriptional regulator MntR OS=Bacillus...  54.3    3e-08 
+  sp|A8FF36|MNTR_BACP2 Transcriptional regulator MntR OS=Bacillus...  53.5    6e-08 
+  sp|Q57988|Y568_METJA Uncharacterized HTH-type transcriptional r...  48.9    2e-06 
+  sp|B1HYR5|MNTR_LYSSC Transcriptional regulator MntR OS=Lysiniba...  48.1    5e-06 
+  sp|A0AJY3|MNTR_LISW6 Transcriptional regulator MntR OS=Listeria...  46.6    2e-05 
+  sp|A4IQU0|MNTR_GEOTN Transcriptional regulator MntR OS=Geobacil...  46.2    2e-05 
+  sp|Q92AD1|MNTR_LISIN Transcriptional regulator MntR OS=Listeria...  46.2    3e-05 
+  sp|Q5KX85|MNTR_GEOKA Transcriptional regulator MntR OS=Geobacil...  46.2    3e-05 
+  sp|Q9K943|MNTR_BACHD Transcriptional regulator MntR OS=Bacillus...  45.8    3e-05 
+  sp|C1KWH7|MNTR_LISMC Transcriptional regulator MntR OS=Listeria...  45.8    4e-05 
+  sp|Q8Y623|MNTR_LISMO Transcriptional regulator MntR OS=Listeria...  45.4    4e-05 
+  sp|B8DDM5|MNTR_LISMH Transcriptional regulator MntR OS=Listeria...  45.4    4e-05 
+  sp|Q71YD8|MNTR_LISMF Transcriptional regulator MntR OS=Listeria...  45.4    4e-05 
+  sp|Q8EQ23|MNTR_OCEIH Transcriptional regulator MntR OS=Oceanoba...  45.4    5e-05 
+  sp|C5D492|MNTR_GEOSW Transcriptional regulator MntR OS=Geobacil...  44.7    7e-05 
+  sp|Q9PKX0|Y341_CHLMU Probable metal transport system membrane p...  46.6    8e-05 
+  sp|Q5WF38|MNTR_BACSK Transcriptional regulator MntR OS=Bacillus...  44.3    1e-04 
+  sp|O84072|Y069_CHLTR Probable metal transport system membrane p...  45.4    2e-04 
+  sp|Q9YFV8|Y142_AERPE Uncharacterized HTH-type transcriptional r...  42.0    0.001 
+  sp|Q9Z8J6|Y347_CHLPN Probable metal transport system membrane p...  42.4    0.002 
+
+
+> sp|H2I233|DTXR_CORDW Diphtheria toxin repressor OS=Corynebacterium 
+diphtheriae (strain PW8) OX=698964 GN=dtxR PE=3 SV=1
+Length=226
+
+ Score = 450 bits (1157),  Expect = 2e-160, Method: Compositional matrix adjust.
+ Identities = 225/226 (99%), Positives = 225/226 (99%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEA RWEHVMSDEVERRLVKVL
+Sbjct  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEACRWEHVMSDEVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+            KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT
+Sbjct  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL
+Sbjct  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+
+
+> sp|P0DJL7|DTXR_CORDI Diphtheria toxin repressor OS=Corynebacterium 
+diphtheriae (strain ATCC 700971 / NCTC 13129 / Biotype 
+gravis) OX=257309 GN=dtxR PE=1 SV=1
+Length=226
+
+ Score = 447 bits (1149),  Expect = 3e-159, Method: Compositional matrix adjust.
+ Identities = 223/226 (99%), Positives = 224/226 (99%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEA RWEHVMSDEVERRLVKVL
+Sbjct  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEACRWEHVMSDEVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+            KDVSRSPFGNPIPGLDELGVGNSDAA PGTRVIDAATSMPRKVRIVQINEIFQVETDQFT
+Sbjct  121  KDVSRSPFGNPIPGLDELGVGNSDAAVPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            QLLDADIRVGSEVEIVDRDGHITLSHNGKDVEL+DDLAHTIRIEEL
+Sbjct  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELIDDLAHTIRIEEL  226
+
+
+> sp|Q8NP95|DTXR_CORGL Diphtheria toxin repressor OS=Corynebacterium 
+glutamicum (strain ATCC 13032 / DSM 20300 / JCM 1318 / 
+LMG 3730 / NCIMB 10025) OX=196627 GN=dtxR PE=3 SV=1
+Length=228
+
+ Score = 329 bits (844),  Expect = 9e-113, Method: Compositional matrix adjust.
+ Identities = 161/226 (71%), Positives = 187/226 (83%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEG+ PLRARIAERLEQSGPTVSQTVARMERDGLV V+ DR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGIVPLRARIAERLEQSGPTVSQTVARMERDGLVHVSPDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+MTP GR+LA AVMRKHRLAERLLTDIIGLDI+KVHDEA RWEHVMSDEVERRLV+VL
+Sbjct  61   SLEMTPEGRSLAIAVMRKHRLAERLLTDIIGLDIHKVHDEACRWEHVMSDEVERRLVEVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+             DV RSPFGNPIPGL E+G+  +D    G R ID       K RIVQ+NEI QV+ +QF 
+Sbjct  121  DDVHRSPFGNPIPGLGEIGLDQADEPDSGVRAIDLPLGENLKARIVQLNEILQVDLEQFQ  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+             L DA + +G+EV+I++  G + ++HNG  VEL+DDLAH +R+E++
+Sbjct  181  ALTDAGVEIGTEVDIINEQGRVVITHNGSSVELIDDLAHAVRVEKV  226
+
+
+> sp|Q8FPG6|DTXR_COREF Diphtheria toxin repressor OS=Corynebacterium 
+efficiens (strain DSM 44549 / YS-314 / AJ 12310 / JCM 
+11189 / NBRC 100395) OX=196164 GN=dtxR PE=3 SV=2
+Length=230
+
+ Score = 323 bits (828),  Expect = 2e-110, Method: Compositional matrix adjust.
+ Identities = 160/226 (71%), Positives = 187/226 (83%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEG+ PLRARIAERLEQSGPTVSQTVARMERDGLV V+ DR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGIVPLRARIAERLEQSGPTVSQTVARMERDGLVHVSPDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+MTP GR LA AVMRKHRLAERLLTDIIGLDI+KVHDEA RWEHVMSDEVERRLV+VL
+Sbjct  61   SLEMTPEGRALAIAVMRKHRLAERLLTDIIGLDIHKVHDEACRWEHVMSDEVERRLVEVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+             DV+RSPFGNPIPGL ++G+        G R ID       +VRIVQ+NEI QV+ +QF+
+Sbjct  121  DDVTRSPFGNPIPGLADIGLDQDREPDSGIRAIDLPHGESLRVRIVQLNEILQVDQEQFS  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+             L  A IR+G+EV+I++  G + ++HNG  VEL+DDLAH +R+E++
+Sbjct  181  ILSSAGIRIGTEVDIINEQGRVVITHNGMMVELMDDLAHAVRVEKV  226
+
+
+> sp|Q4JV96|DTXR_CORJK Diphtheria toxin repressor OS=Corynebacterium 
+jeikeium (strain K411) OX=306537 GN=dtxR PE=3 SV=1
+Length=240
+
+ Score = 252 bits (644),  Expect = 2e-82, Method: Compositional matrix adjust.
+ Identities = 135/239 (56%), Positives = 168/239 (70%), Gaps = 13/239 (5%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M+DLVDTTEMYLRTIYELEEEG+ PLRARIAERL+QSGPTVSQTVARMERD L+ V  DR
+Sbjct  1    MRDLVDTTEMYLRTIYELEEEGIPPLRARIAERLDQSGPTVSQTVARMERDELLTVEKDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+++  GR LATAVMRKHRLAERLLTD+IGL   KVHDEA RWEHVM DEVE +LVKVL
+Sbjct  61   SLKLSAQGRALATAVMRKHRLAERLLTDVIGLPWEKVHDEACRWEHVMGDEVEVQLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDEL--GVGNSDAA-----------APGTRVIDAATSMPRKVRIVQ  167
+             + + SPFGNPIPGLDEL  G+ +S+ A               R  D     P +V+I+ 
+Sbjct  121  SEYATSPFGNPIPGLDELMEGIPDSERAELQQKIDNLQVVTSQRASDIEPPEPIQVKILS  180
+
+Query  168  INEIFQVETDQFTQLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            INEI QVE     +     +R GS V++V  +  +  S++   + + ++L H +R+E++
+Sbjct  181  INEIIQVEHKLMAKFHALGMRPGSVVDLVATEDGLEFSNDNGAMVVPEELGHAVRVEKV  239
+
+
+> sp|P9WMH1|IDER_MYCTU Iron-dependent repressor IdeR OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=ideR 
+PE=1 SV=1
+Length=230
+
+ Score = 240 bits (613),  Expect = 7e-78, Method: Compositional matrix adjust.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|P9WMH0|IDER_MYCTO Iron-dependent repressor IdeR OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=ideR 
+PE=3 SV=1
+Length=230
+
+ Score = 240 bits (613),  Expect = 7e-78, Method: Compositional matrix adjust.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|P0A673|IDER_MYCBO Iron-dependent repressor IdeR OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=ideR 
+PE=3 SV=1
+Length=230
+
+ Score = 240 bits (613),  Expect = 7e-78, Method: Compositional matrix adjust.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|Q9CCB5|IDER_MYCLE Iron-dependent repressor IdeR OS=Mycobacterium 
+leprae (strain TN) OX=272631 GN=ideR PE=3 SV=1
+Length=230
+
+ Score = 237 bits (604),  Expect = 1e-76, Method: Compositional matrix adjust.
+ Identities = 127/230 (55%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M DLVDTTEMYLRTIY+LEEEGVTPLRARIAERLEQSGPTVSQTV+RMERDGL+ VA +R
+Sbjct  1    MNDLVDTTEMYLRTIYDLEEEGVTPLRARIAERLEQSGPTVSQTVSRMERDGLLRVAGNR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR +A AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRL+KVL
+Sbjct  61   HLELTTKGRAMAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLIKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPG--TRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL +LG G   +AA     R+ +  +  P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLLDLGAGPDASAANAKLVRLTELPSGSPVAVVVRQLTEHVQDDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L D  +   + V +     G++ +   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDTGVVPNARVTVETSPAGNVIIIIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|Q65HG7|MNTR_BACLD Transcriptional regulator MntR OS=Bacillus 
+licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 
+12200 / NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 
+GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 54.3 bits (129),  Expect = 3e-08, Method: Compositional matrix adjust.
+ Identities = 37/122 (30%), Positives = 67/122 (55%), Gaps = 4/122 (3%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMS-DEVER--RLVKVLKDV  123
+             G+ +   ++ +H L E+ L  IIG+D  K++D+    EH +S + ++R   LV+  +D 
+Sbjct  65   KGKKIGKRLVYRHELLEQFLR-IIGVDEEKIYDDVEGIEHHLSWNSIDRIGDLVQYFEDD  123
+
+Query  124  SR  125
+            S+
+Sbjct  124  SK  125
+
+
+> sp|A8FF36|MNTR_BACP2 Transcriptional regulator MntR OS=Bacillus 
+pumilus (strain SAFR-032) OX=315750 GN=mntR PE=3 SV=1
+Length=144
+
+ Score = 53.5 bits (127),  Expect = 6e-08, Method: Compositional matrix adjust.
+ Identities = 32/103 (31%), Positives = 56/103 (54%), Gaps = 1/103 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMS  109
+             G+ +   ++ +H L E+ L  IIG+D  K++D+    EH +S
+Sbjct  65   KGKKIGKRLVYRHELLEQFLR-IIGVDEEKIYDDVEGIEHHLS  106
+
+
+> sp|Q57988|Y568_METJA Uncharacterized HTH-type transcriptional 
+regulator MJ0568 OS=Methanocaldococcus jannaschii (strain ATCC 
+43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=MJ0568 PE=4 SV=1
+Length=125
+
+ Score = 48.9 bits (115),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 31/111 (28%), Positives = 52/111 (47%), Gaps = 1/111 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRA-RIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMT  65
+            + E YL  IY   +E   P++   +A+ L      V+    ++ R G V       + +T
+Sbjct  4    SIEDYLERIYLFIKENNRPIKTTELAKLLNIKPSAVTNMAKKLHRLGYVNYEPYIGITLT  63
+
+Query  66   PTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRL  116
+              G   A  ++ KH+  +  L + +GLD     +EA + EH +SDE+  RL
+Sbjct  64   EKGIEEAKKILDKHKTIKIFLVEFLGLDEKTASEEACKLEHALSDEILERL  114
+
+
+> sp|B1HYR5|MNTR_LYSSC Transcriptional regulator MntR OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=mntR PE=3 SV=1
+Length=139
+
+ Score = 48.1 bits (113),  Expect = 5e-06, Method: Compositional matrix adjust.
+ Identities = 27/98 (28%), Positives = 55/98 (56%), Gaps = 1/98 (1%)
+
+Query  30   IAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTPTGRTLATAVMRKHRLAERLLTDI  89
+            IAE L     +V++ V ++++DG +V    R L +TP G  L   ++++H L E+ L  +
+Sbjct  28   IAEALSVLPSSVTKMVQKLDKDGYLVYEKYRGLTLTPKGEKLGKRLVQRHELLEQFLR-M  86
+
+Query  90   IGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRSP  127
+            IG+D  +++++    EH +S     R+  +++ +  +P
+Sbjct  87   IGVDEERIYNDVEGIEHHLSWNSIDRIADLVQVMEENP  124
+
+
+> sp|A0AJY3|MNTR_LISW6 Transcriptional regulator MntR OS=Listeria 
+welshimeri serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 46.6 bits (109),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 31/121 (26%), Positives = 59/121 (49%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L+ IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFLS-IIGVDSSHIYHDVEGIEHHLSWNSIDRIGNVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|A4IQU0|MNTR_GEOTN Transcriptional regulator MntR OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=mntR 
+PE=3 SV=1
+Length=141
+
+ Score = 46.2 bits (108),  Expect = 2e-05, Method: Compositional matrix adjust.
+ Identities = 29/103 (28%), Positives = 54/103 (52%), Gaps = 1/103 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +TP
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMS  109
+             G+ +   ++ +H L E+ L  +IG++   ++ +    EH +S
+Sbjct  65   KGKKIGQRLVYRHELLEQFLR-LIGVNEENIYHDVEGIEHHLS  106
+
+
+> sp|Q92AD1|MNTR_LISIN Transcriptional regulator MntR OS=Listeria 
+innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 46.2 bits (108),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 31/121 (26%), Positives = 59/121 (49%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L+ IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFLS-IIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|Q5KX85|MNTR_GEOKA Transcriptional regulator MntR OS=Geobacillus 
+kaustophilus (strain HTA426) OX=235909 GN=mntR PE=3 SV=1
+Length=141
+
+ Score = 46.2 bits (108),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 30/103 (29%), Positives = 53/103 (51%), Gaps = 1/103 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +TP
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMS  109
+             GR +   ++ +H L E+ L  +IG+    ++ +    EH +S
+Sbjct  65   KGRKIGQRLVYRHELLEQFLR-LIGVSEENIYRDVEGIEHHLS  106
+
+
+> sp|Q9K943|MNTR_BACHD Transcriptional regulator MntR OS=Bacillus 
+halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / 
+JCM 9153 / C-125) OX=272558 GN=mntR PE=3 SV=1
+Length=139
+
+ Score = 45.8 bits (107),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 32/109 (29%), Positives = 58/109 (53%), Gaps = 2/109 (2%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E YL  IY L EE      + IAE LE    +V++ V ++++   +V    R L +T 
+Sbjct  5    SMEDYLERIYLLIEEKGYARVSDIAEALEVHPSSVTKMVQKLDKSDYLVYERYRGLILTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMS-DEVER  114
+             G+ +   ++ +H L E  L  +IG+D + ++++    EH +S D ++R
+Sbjct  65   KGKKIGKRLVYRHDLLEDFLK-MIGVDSDHIYEDVEGIEHHLSWDAIDR  112
+
+
+> sp|C1KWH7|MNTR_LISMC Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4b (strain CLIP80459) OX=568819 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 45.8 bits (107),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 31/121 (26%), Positives = 59/121 (49%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L+ IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFLS-IIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|Q8Y623|MNTR_LISMO Transcriptional regulator MntR OS=Listeria 
+monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) 
+OX=169963 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 45.4 bits (106),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 31/121 (26%), Positives = 59/121 (49%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L+ IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFLS-IIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|B8DDM5|MNTR_LISMH Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4a (strain HCC23) OX=552536 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 45.4 bits (106),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 31/121 (26%), Positives = 59/121 (49%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L+ IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFLS-IIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|Q71YD8|MNTR_LISMF Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4b (strain F2365) OX=265669 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 45.4 bits (106),  Expect = 4e-05, Method: Compositional matrix adjust.
+ Identities = 31/121 (26%), Positives = 59/121 (49%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L+ IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFLS-IIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|Q8EQ23|MNTR_OCEIH Transcriptional regulator MntR OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 
+/ KCTC 3954 / HTE831) OX=221109 GN=mntR PE=3 SV=1
+Length=147
+
+ Score = 45.4 bits (106),  Expect = 5e-05, Method: Compositional matrix adjust.
+ Identities = 34/120 (28%), Positives = 63/120 (53%), Gaps = 6/120 (5%)
+
+Query  7    TTEMYLRTIYEL-EEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMT  65
+            + E Y+  IY L E +G   + A IAE L+    +V++ V ++++D  +     R   +T
+Sbjct  5    SMEDYIEIIYNLIESKGYARVSA-IAEALDVHPSSVTKMVQKLDKDQYLDYEKYRGFVLT  63
+
+Query  66   PTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMS-DEVER--RLVKVLKD  122
+              G+ +   ++ +H L E  L +IIG++   ++D+    EH +S + ++R   LV   KD
+Sbjct  64   SKGKKIGERLVFRHELLEEFL-EIIGVNDENIYDDVEGIEHHLSWNSIDRIGDLVNYFKD  122
+
+
+> sp|C5D492|MNTR_GEOSW Transcriptional regulator MntR OS=Geobacillus 
+sp. (strain WCH70) OX=471223 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 44.7 bits (104),  Expect = 7e-05, Method: Compositional matrix adjust.
+ Identities = 29/103 (28%), Positives = 53/103 (51%), Gaps = 1/103 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +T 
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMS  109
+             G+ +   ++ +H L E+ +  IIG+D   ++ +    EH +S
+Sbjct  65   KGKKIGKRLVYRHELLEQFMR-IIGVDEENIYHDVEGIEHHLS  106
+
+
+> sp|Q9PKX0|Y341_CHLMU Probable metal transport system membrane 
+protein TC_0341 OS=Chlamydia muridarum (strain MoPn / Nigg) 
+OX=243161 GN=TC_0341 PE=3 SV=1
+Length=447
+
+ Score = 46.6 bits (109),  Expect = 8e-05, Method: Compositional matrix adjust.
+ Identities = 35/130 (27%), Positives = 60/130 (46%), Gaps = 7/130 (5%)
+
+Query  12   LRTIYELEEEGVT------PLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMT  65
+            L+  + L+E+ +        +R+R  +    S       +  + + GLV    D    +T
+Sbjct  316  LKIFWYLQEQNIYRVSMWDFVRSRKLQEYFGSKAFSGFRMFWLCKKGLVS-CFDHQXFLT  374
+
+Query  66   PTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSR  125
+              G   A  ++R HRL E  L   +  + +KVH+ A   EHV++DE++  L K+L++   
+Sbjct  375  DKGEAKAAKLVRAHRLWESYLVSELDFNKSKVHNFAEEMEHVLTDELDTTLSKMLQNPDY  434
+
+Query  126  SPFGNPIPGL  135
+             P    IP L
+Sbjct  435  DPHKREIPKL  444
+
+
+> sp|Q5WF38|MNTR_BACSK Transcriptional regulator MntR OS=Bacillus 
+clausii (strain KSM-K16) OX=66692 GN=mntR PE=3 SV=1
+Length=143
+
+ Score = 44.3 bits (103),  Expect = 1e-04, Method: Compositional matrix adjust.
+ Identities = 32/109 (29%), Positives = 55/109 (50%), Gaps = 2/109 (2%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E YL  IY L EE      + IAE LE    +V++ V ++++   +V    R L +T 
+Sbjct  5    SMEDYLERIYMLIEEKGYARVSDIAEALEVHPSSVTKMVQKLDKSDYLVYERYRGLVLTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMS-DEVER  114
+             G  +   ++ +H L E  +  IIG+D   ++ +    EH +S D ++R
+Sbjct  65   KGNKIGKRLVYRHELLEDFMK-IIGVDDTHIYKDVEGIEHHISWDAIDR  112
+
+
+> sp|O84072|Y069_CHLTR Probable metal transport system membrane 
+protein CT_069 OS=Chlamydia trachomatis (strain D/UW-3/Cx) 
+OX=272561 GN=CT_069 PE=3 SV=1
+Length=451
+
+ Score = 45.4 bits (106),  Expect = 2e-04, Method: Compositional matrix adjust.
+ Identities = 28/86 (33%), Positives = 44/86 (51%), Gaps = 1/86 (1%)
+
+Query  48   MERDGLVVVASDRSLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHV  107
+            + + GLV   S+    +T  G   A  ++R HRL E  L   +  + N+VH  A   EHV
+Sbjct  358  LCKKGLVS-CSEHQWSLTDKGLARAAKLVRAHRLWESYLVSQLDFNKNEVHHFAEEMEHV  416
+
+Query  108  MSDEVERRLVKVLKDVSRSPFGNPIP  133
+            ++DE++  L ++L+D    P    IP
+Sbjct  417  LTDELDSTLSQMLQDPDYDPHQREIP  442
+
+
+> sp|Q9YFV8|Y142_AERPE Uncharacterized HTH-type transcriptional 
+regulator APE_0142 OS=Aeropyrum pernix (strain ATCC 700893 
+/ DSM 11879 / JCM 9820 / NBRC 100138 / K1) OX=272557 GN=APE_0142 
+PE=4 SV=1
+Length=180
+
+ Score = 42.0 bits (97),  Expect = 0.001, Method: Compositional matrix adjust.
+ Identities = 40/135 (30%), Positives = 59/135 (44%), Gaps = 3/135 (2%)
+
+Query  11   YLRTIYELE--EEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTPTG  68
+            YL  IY L     G      +IA  L+ S  TVS    R++  GLV +  +  +++T  G
+Sbjct  24   YLMAIYLLNGLPGGEYARFIKIARLLDVSPSTVSIMTRRLQMKGLVELIPNMGVRLTEQG  83
+
+Query  69   RTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRSPF  128
+              + +  + K  + E LL    G+DI+       R    +SDE    L KVL +    P 
+Sbjct  84   LKILSNYLWKSAILEVLLAR-AGVDIDNCRGMGLRMAEGLSDEDAWILYKVLGEPKYCPH  142
+
+Query  129  GNPIPGLDELGVGNS  143
+              PI   DE+   N+
+Sbjct  143  KKPIIPPDEINAENA  157
+
+
+> sp|Q9Z8J6|Y347_CHLPN Probable metal transport system membrane 
+protein CPn_0347/CP_0413/CPj0347/CpB0354 OS=Chlamydia pneumoniae 
+OX=83558 GN=CPn_0347 PE=3 SV=1
+Length=448
+
+ Score = 42.4 bits (98),  Expect = 0.002, Method: Compositional matrix adjust.
+ Identities = 23/71 (32%), Positives = 38/71 (54%), Gaps = 0/71 (0%)
+
+Query  63   QMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKD  122
+            ++T  GR+ A  ++R HRL E  L + +      VH+ A   EHV+++E++  L ++L D
+Sbjct  372  RLTKKGRSEALRLVRAHRLWESYLVNSLDFSKESVHELAEEIEHVLTEELDHTLTEILND  431
+
+Query  123  VSRSPFGNPIP  133
+                P    IP
+Sbjct  432  PCYDPHRQIIP  442
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.134    0.368    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 15251510848
+Results from round 2
+
+
+Query= 1G3S
+
+Length=226
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|H2I233|DTXR_CORDW Diphtheria toxin repressor OS=Corynebacter...  303     9e-103
+  sp|P0DJL7|DTXR_CORDI Diphtheria toxin repressor OS=Corynebacter...  302     4e-102
+  sp|Q8FPG6|DTXR_COREF Diphtheria toxin repressor OS=Corynebacter...  293     1e-98 
+  sp|Q8NP95|DTXR_CORGL Diphtheria toxin repressor OS=Corynebacter...  293     2e-98 
+  sp|P9WMH1|IDER_MYCTU Iron-dependent repressor IdeR OS=Mycobacte...  281     4e-94 
+  sp|P9WMH0|IDER_MYCTO Iron-dependent repressor IdeR OS=Mycobacte...  281     4e-94 
+  sp|P0A673|IDER_MYCBO Iron-dependent repressor IdeR OS=Mycobacte...  281     4e-94 
+  sp|Q9CCB5|IDER_MYCLE Iron-dependent repressor IdeR OS=Mycobacte...  281     9e-94 
+  sp|Q4JV96|DTXR_CORJK Diphtheria toxin repressor OS=Corynebacter...  263     1e-86 
+  sp|Q9YFV8|Y142_AERPE Uncharacterized HTH-type transcriptional r...  161     1e-47 
+  sp|A0AJY3|MNTR_LISW6 Transcriptional regulator MntR OS=Listeria...  150     6e-44 
+  sp|A8FF36|MNTR_BACP2 Transcriptional regulator MntR OS=Bacillus...  149     1e-43 
+  sp|C1KWH7|MNTR_LISMC Transcriptional regulator MntR OS=Listeria...  149     2e-43 
+  sp|Q8Y623|MNTR_LISMO Transcriptional regulator MntR OS=Listeria...  149     2e-43 
+  sp|B8DDM5|MNTR_LISMH Transcriptional regulator MntR OS=Listeria...  149     2e-43 
+  sp|Q71YD8|MNTR_LISMF Transcriptional regulator MntR OS=Listeria...  149     2e-43 
+  sp|Q92AD1|MNTR_LISIN Transcriptional regulator MntR OS=Listeria...  148     4e-43 
+  sp|C5D492|MNTR_GEOSW Transcriptional regulator MntR OS=Geobacil...  148     4e-43 
+  sp|Q65HG7|MNTR_BACLD Transcriptional regulator MntR OS=Bacillus...  147     9e-43 
+  sp|A4IQU0|MNTR_GEOTN Transcriptional regulator MntR OS=Geobacil...  146     2e-42 
+  sp|Q9K943|MNTR_BACHD Transcriptional regulator MntR OS=Bacillus...  145     3e-42 
+  sp|Q5KX85|MNTR_GEOKA Transcriptional regulator MntR OS=Geobacil...  142     5e-41 
+  sp|B1HYR5|MNTR_LYSSC Transcriptional regulator MntR OS=Lysiniba...  142     6e-41 
+  sp|Q5WF38|MNTR_BACSK Transcriptional regulator MntR OS=Bacillus...  141     2e-40 
+  sp|Q9PKX0|Y341_CHLMU Probable metal transport system membrane p...  147     6e-40 
+  sp|Q8EQ23|MNTR_OCEIH Transcriptional regulator MntR OS=Oceanoba...  140     7e-40 
+  sp|O84072|Y069_CHLTR Probable metal transport system membrane p...  135     2e-35 
+  sp|Q57988|Y568_METJA Uncharacterized HTH-type transcriptional r...  125     2e-34 
+
+Sequences not found previously or not previously below threshold:
+
+  sp|P54512|MNTR_BACSU Transcriptional regulator MntR OS=Bacillus...  147     1e-42
+  sp|A7GSM1|MNTR_BACCN Transcriptional regulator MntR OS=Bacillus...  146     2e-42
+  sp|A7Z6L9|MNTR_BACVZ Transcriptional regulator MntR OS=Bacillus...  146     2e-42
+  sp|A9VGY7|MNTR_BACWK Transcriptional regulator MntR OS=Bacillus...  144     1e-41
+  sp|B7HB75|MNTR_BACC4 Transcriptional regulator MntR OS=Bacillus...  143     2e-41
+  sp|Q818P5|MNTR_BACCR Transcriptional regulator MntR OS=Bacillus...  143     2e-41
+  sp|Q6HDW1|MNTR_BACHK Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|Q634Y0|MNTR_BACCZ Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|B9IXJ8|MNTR_BACCQ Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|B7HNW6|MNTR_BACC7 Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|C1ERS6|MNTR_BACC3 Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|Q730Y9|MNTR_BACC1 Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|B7JMS8|MNTR_BACC0 Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|Q81M27|MNTR_BACAN Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|C3LKN2|MNTR_BACAC Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|C3P8B4|MNTR_BACAA Transcriptional regulator MntR OS=Bacillus...  143     3e-41
+  sp|B7IXJ5|MNTR_BACC2 Transcriptional regulator MntR OS=Bacillus...  141     1e-40
+  sp|Q9Z8J6|Y347_CHLPN Probable metal transport system membrane p...  95.1    2e-21
+  sp|P67710|MNTR_SALTY Transcriptional regulator MntR OS=Salmonel...  80.9    1e-17
+  sp|P67711|MNTR_SALTI Transcriptional regulator MntR OS=Salmonel...  80.9    1e-17
+  sp|P0A9F1|MNTR_ECOLI Transcriptional regulator MntR OS=Escheric...  80.9    2e-17
+  sp|P0A9F2|MNTR_ECOL6 Transcriptional regulator MntR OS=Escheric...  80.9    2e-17
+  sp|Q8X7U4|MNTR_ECO57 Transcriptional regulator MntR OS=Escheric...  80.5    2e-17
+
+
+> sp|H2I233|DTXR_CORDW Diphtheria toxin repressor OS=Corynebacterium 
+diphtheriae (strain PW8) OX=698964 GN=dtxR PE=3 SV=1
+Length=226
+
+ Score = 303 bits (777),  Expect = 9e-103, Method: Composition-based stats.
+ Identities = 225/226 (99%), Positives = 225/226 (99%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEA RWEHVMSDEVERRLVKVL
+Sbjct  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEACRWEHVMSDEVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+            KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT
+Sbjct  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL
+Sbjct  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+
+
+> sp|P0DJL7|DTXR_CORDI Diphtheria toxin repressor OS=Corynebacterium 
+diphtheriae (strain ATCC 700971 / NCTC 13129 / Biotype 
+gravis) OX=257309 GN=dtxR PE=1 SV=1
+Length=226
+
+ Score = 302 bits (773),  Expect = 4e-102, Method: Composition-based stats.
+ Identities = 223/226 (99%), Positives = 224/226 (99%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEA RWEHVMSDEVERRLVKVL
+Sbjct  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEACRWEHVMSDEVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+            KDVSRSPFGNPIPGLDELGVGNSDAA PGTRVIDAATSMPRKVRIVQINEIFQVETDQFT
+Sbjct  121  KDVSRSPFGNPIPGLDELGVGNSDAAVPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            QLLDADIRVGSEVEIVDRDGHITLSHNGKDVEL+DDLAHTIRIEEL
+Sbjct  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELIDDLAHTIRIEEL  226
+
+
+> sp|Q8FPG6|DTXR_COREF Diphtheria toxin repressor OS=Corynebacterium 
+efficiens (strain DSM 44549 / YS-314 / AJ 12310 / JCM 
+11189 / NBRC 100395) OX=196164 GN=dtxR PE=3 SV=2
+Length=230
+
+ Score = 293 bits (750),  Expect = 1e-98, Method: Composition-based stats.
+ Identities = 160/226 (71%), Positives = 187/226 (83%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEG+ PLRARIAERLEQSGPTVSQTVARMERDGLV V+ DR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGIVPLRARIAERLEQSGPTVSQTVARMERDGLVHVSPDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+MTP GR LA AVMRKHRLAERLLTDIIGLDI+KVHDEA RWEHVMSDEVERRLV+VL
+Sbjct  61   SLEMTPEGRALAIAVMRKHRLAERLLTDIIGLDIHKVHDEACRWEHVMSDEVERRLVEVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+             DV+RSPFGNPIPGL ++G+        G R ID       +VRIVQ+NEI QV+ +QF+
+Sbjct  121  DDVTRSPFGNPIPGLADIGLDQDREPDSGIRAIDLPHGESLRVRIVQLNEILQVDQEQFS  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+             L  A IR+G+EV+I++  G + ++HNG  VEL+DDLAH +R+E++
+Sbjct  181  ILSSAGIRIGTEVDIINEQGRVVITHNGMMVELMDDLAHAVRVEKV  226
+
+
+> sp|Q8NP95|DTXR_CORGL Diphtheria toxin repressor OS=Corynebacterium 
+glutamicum (strain ATCC 13032 / DSM 20300 / JCM 1318 / 
+LMG 3730 / NCIMB 10025) OX=196627 GN=dtxR PE=3 SV=1
+Length=228
+
+ Score = 293 bits (749),  Expect = 2e-98, Method: Composition-based stats.
+ Identities = 161/226 (71%), Positives = 187/226 (83%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEG+ PLRARIAERLEQSGPTVSQTVARMERDGLV V+ DR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGIVPLRARIAERLEQSGPTVSQTVARMERDGLVHVSPDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+MTP GR+LA AVMRKHRLAERLLTDIIGLDI+KVHDEA RWEHVMSDEVERRLV+VL
+Sbjct  61   SLEMTPEGRSLAIAVMRKHRLAERLLTDIIGLDIHKVHDEACRWEHVMSDEVERRLVEVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+             DV RSPFGNPIPGL E+G+  +D    G R ID       K RIVQ+NEI QV+ +QF 
+Sbjct  121  DDVHRSPFGNPIPGLGEIGLDQADEPDSGVRAIDLPLGENLKARIVQLNEILQVDLEQFQ  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+             L DA + +G+EV+I++  G + ++HNG  VEL+DDLAH +R+E++
+Sbjct  181  ALTDAGVEIGTEVDIINEQGRVVITHNGSSVELIDDLAHAVRVEKV  226
+
+
+> sp|P9WMH1|IDER_MYCTU Iron-dependent repressor IdeR OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=ideR 
+PE=1 SV=1
+Length=230
+
+ Score = 281 bits (720),  Expect = 4e-94, Method: Composition-based stats.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|P9WMH0|IDER_MYCTO Iron-dependent repressor IdeR OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=ideR 
+PE=3 SV=1
+Length=230
+
+ Score = 281 bits (720),  Expect = 4e-94, Method: Composition-based stats.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|P0A673|IDER_MYCBO Iron-dependent repressor IdeR OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=ideR 
+PE=3 SV=1
+Length=230
+
+ Score = 281 bits (720),  Expect = 4e-94, Method: Composition-based stats.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|Q9CCB5|IDER_MYCLE Iron-dependent repressor IdeR OS=Mycobacterium 
+leprae (strain TN) OX=272631 GN=ideR PE=3 SV=1
+Length=230
+
+ Score = 281 bits (718),  Expect = 9e-94, Method: Composition-based stats.
+ Identities = 127/230 (55%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M DLVDTTEMYLRTIY+LEEEGVTPLRARIAERLEQSGPTVSQTV+RMERDGL+ VA +R
+Sbjct  1    MNDLVDTTEMYLRTIYDLEEEGVTPLRARIAERLEQSGPTVSQTVSRMERDGLLRVAGNR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR +A AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRL+KVL
+Sbjct  61   HLELTTKGRAMAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLIKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPG--TRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL +LG G   +AA     R+ +  +  P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLLDLGAGPDASAANAKLVRLTELPSGSPVAVVVRQLTEHVQDDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L D  +   + V +     G++ +   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDTGVVPNARVTVETSPAGNVIIIIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|Q4JV96|DTXR_CORJK Diphtheria toxin repressor OS=Corynebacterium 
+jeikeium (strain K411) OX=306537 GN=dtxR PE=3 SV=1
+Length=240
+
+ Score = 263 bits (672),  Expect = 1e-86, Method: Composition-based stats.
+ Identities = 135/239 (56%), Positives = 168/239 (70%), Gaps = 13/239 (5%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M+DLVDTTEMYLRTIYELEEEG+ PLRARIAERL+QSGPTVSQTVARMERD L+ V  DR
+Sbjct  1    MRDLVDTTEMYLRTIYELEEEGIPPLRARIAERLDQSGPTVSQTVARMERDELLTVEKDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+++  GR LATAVMRKHRLAERLLTD+IGL   KVHDEA RWEHVM DEVE +LVKVL
+Sbjct  61   SLKLSAQGRALATAVMRKHRLAERLLTDVIGLPWEKVHDEACRWEHVMGDEVEVQLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDEL--GVGNSDAA-----------APGTRVIDAATSMPRKVRIVQ  167
+             + + SPFGNPIPGLDEL  G+ +S+ A               R  D     P +V+I+ 
+Sbjct  121  SEYATSPFGNPIPGLDELMEGIPDSERAELQQKIDNLQVVTSQRASDIEPPEPIQVKILS  180
+
+Query  168  INEIFQVETDQFTQLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            INEI QVE     +     +R GS V++V  +  +  S++   + + ++L H +R+E++
+Sbjct  181  INEIIQVEHKLMAKFHALGMRPGSVVDLVATEDGLEFSNDNGAMVVPEELGHAVRVEKV  239
+
+
+> sp|Q9YFV8|Y142_AERPE Uncharacterized HTH-type transcriptional 
+regulator APE_0142 OS=Aeropyrum pernix (strain ATCC 700893 
+/ DSM 11879 / JCM 9820 / NBRC 100138 / K1) OX=272557 GN=APE_0142 
+PE=4 SV=1
+Length=180
+
+ Score = 161 bits (407),  Expect = 1e-47, Method: Composition-based stats.
+ Identities = 42/150 (28%), Positives = 63/150 (42%), Gaps = 5/150 (3%)
+
+Query  11   YLRTIYELE--EEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTPTG  68
+            YL  IY L     G      +IA  L+ S  TVS    R++  GLV +  +  +++T  G
+Sbjct  24   YLMAIYLLNGLPGGEYARFIKIARLLDVSPSTVSIMTRRLQMKGLVELIPNMGVRLTEQG  83
+
+Query  69   RTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRSPF  128
+              + +  + K  + E LL    G+DI+       R    +SDE    L KVL +    P 
+Sbjct  84   LKILSNYLWKSAILEVLLAR-AGVDIDNCRGMGLRMAEGLSDEDAWILYKVLGEPKYCPH  142
+
+Query  129  GNPIPGLDELGVGNSDAAA--PGTRVIDAA  156
+              PI   DE+   N+   A   G  ++   
+Sbjct  143  KKPIIPPDEINAENARQIALCCGISILQIP  172
+
+
+> sp|A0AJY3|MNTR_LISW6 Transcriptional regulator MntR OS=Listeria 
+welshimeri serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 150 bits (379),  Expect = 6e-44, Method: Composition-based stats.
+ Identities = 31/121 (26%), Positives = 58/121 (48%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDSSHIYHDVEGIEHHLSWNSIDRIGNVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|A8FF36|MNTR_BACP2 Transcriptional regulator MntR OS=Bacillus 
+pumilus (strain SAFR-032) OX=315750 GN=mntR PE=3 SV=1
+Length=144
+
+ Score = 149 bits (377),  Expect = 1e-43, Method: Composition-based stats.
+ Identities = 34/120 (28%), Positives = 62/120 (52%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  IIG+D  K++D+    EH +S     R+  +++    S
+Sbjct  65   KGKKIGKRLVYRHELLEQFL-RIIGVDEEKIYDDVEGIEHHLSWNSIDRIGDLVQFFEES  123
+
+
+> sp|C1KWH7|MNTR_LISMC Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4b (strain CLIP80459) OX=568819 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 149 bits (375),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 32/139 (23%), Positives = 60/139 (43%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+            P         E     +  
+Sbjct  124  PDALKTLKAMETNKPETKE  142
+
+
+> sp|Q8Y623|MNTR_LISMO Transcriptional regulator MntR OS=Listeria 
+monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) 
+OX=169963 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 149 bits (375),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 31/121 (26%), Positives = 58/121 (48%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|B8DDM5|MNTR_LISMH Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4a (strain HCC23) OX=552536 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 149 bits (375),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 31/121 (26%), Positives = 58/121 (48%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|Q71YD8|MNTR_LISMF Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4b (strain F2365) OX=265669 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 149 bits (375),  Expect = 2e-43, Method: Composition-based stats.
+ Identities = 31/121 (26%), Positives = 58/121 (48%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|Q92AD1|MNTR_LISIN Transcriptional regulator MntR OS=Listeria 
+innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 148 bits (373),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 31/121 (26%), Positives = 58/121 (48%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|C5D492|MNTR_GEOSW Transcriptional regulator MntR OS=Geobacillus 
+sp. (strain WCH70) OX=471223 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 148 bits (373),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 31/121 (26%), Positives = 59/121 (49%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +T 
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D   ++ +    EH +S     R+  +++     
+Sbjct  65   KGKKIGKRLVYRHELLEQFM-RIIGVDEENIYHDVEGIEHHLSWNAIDRIGDLVQYFQED  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|Q65HG7|MNTR_BACLD Transcriptional regulator MntR OS=Bacillus 
+licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 
+12200 / NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 
+GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 147 bits (371),  Expect = 9e-43, Method: Composition-based stats.
+ Identities = 33/120 (28%), Positives = 61/120 (51%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  IIG+D  K++D+    EH +S     R+  +++     
+Sbjct  65   KGKKIGKRLVYRHELLEQFL-RIIGVDEEKIYDDVEGIEHHLSWNSIDRIGDLVQYFEDD  123
+
+
+> sp|P54512|MNTR_BACSU Transcriptional regulator MntR OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=mntR PE=1 SV=2
+Length=142
+
+ Score = 147 bits (371),  Expect = 1e-42, Method: Composition-based stats.
+ Identities = 31/120 (26%), Positives = 60/120 (50%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  IIG+D  K++++    EH +S     R+  +++     
+Sbjct  65   KGKKIGKRLVYRHELLEQFL-RIIGVDEEKIYNDVEGIEHHLSWNSIDRIGDLVQYFEED  123
+
+
+> sp|A7GSM1|MNTR_BACCN Transcriptional regulator MntR OS=Bacillus 
+cytotoxicus (strain DSM 22905 / CIP 110041 / 391-98 / NVH 
+391-98) OX=315749 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 146 bits (369),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 31/123 (25%), Positives = 63/123 (51%), Gaps = 1/123 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++     
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEED  123
+
+Query  127  PFG  129
+             F 
+Sbjct  124  DFR  126
+
+
+> sp|A4IQU0|MNTR_GEOTN Transcriptional regulator MntR OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=mntR 
+PE=3 SV=1
+Length=141
+
+ Score = 146 bits (368),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 59/120 (49%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +TP
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  +IG++   ++ +    EH +S     R+  +++     
+Sbjct  65   KGKKIGQRLVYRHELLEQFL-RLIGVNEENIYHDVEGIEHHLSWNAIDRIGDLVQYFQED  123
+
+
+> sp|A7Z6L9|MNTR_BACVZ Transcriptional regulator MntR OS=Bacillus 
+velezensis (strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 
+GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 146 bits (368),  Expect = 2e-42, Method: Composition-based stats.
+ Identities = 31/120 (26%), Positives = 60/120 (50%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  IIG+D  K++++    EH +S     R+  +++     
+Sbjct  65   KGKKIGKRLVYRHELLEQFL-RIIGVDEEKIYNDVEGIEHHLSWNSIDRIGDLVQYFEDD  123
+
+
+> sp|Q9K943|MNTR_BACHD Transcriptional regulator MntR OS=Bacillus 
+halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / 
+JCM 9153 / C-125) OX=272558 GN=mntR PE=3 SV=1
+Length=139
+
+ Score = 145 bits (367),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 32/121 (26%), Positives = 61/121 (50%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E YL  IY L EE      + IAE LE    +V++ V ++++   +V    R L +T 
+Sbjct  5    SMEDYLERIYLLIEEKGYARVSDIAEALEVHPSSVTKMVQKLDKSDYLVYERYRGLILTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E  L  +IG+D + ++++    EH +S +   R+  +++     
+Sbjct  65   KGKKIGKRLVYRHDLLEDFLK-MIGVDSDHIYEDVEGIEHHLSWDAIDRIGDLVQYFQED  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|A9VGY7|MNTR_BACWK Transcriptional regulator MntR OS=Bacillus 
+weihenstephanensis (strain KBAB4) OX=315730 GN=mntR PE=3 
+SV=1
+Length=142
+
+ Score = 144 bits (364),  Expect = 1e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWESIDRIGDLVQYFEQD  123
+
+
+> sp|B7HB75|MNTR_BACC4 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain B4264) OX=405532 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTT  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHDLLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|Q818P5|MNTR_BACCR Transcriptional regulator MntR OS=Bacillus 
+cereus (strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 
+/ NCIMB 9373 / NRRL B-3711) OX=226900 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTT  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHDLLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|Q6HDW1|MNTR_BACHK Transcriptional regulator MntR OS=Bacillus 
+thuringiensis subsp. konkukian (strain 97-27) OX=281309 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|Q634Y0|MNTR_BACCZ Transcriptional regulator MntR OS=Bacillus 
+cereus (strain ZK / E33L) OX=288681 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|B9IXJ8|MNTR_BACCQ Transcriptional regulator MntR OS=Bacillus 
+cereus (strain Q1) OX=361100 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|B7HNW6|MNTR_BACC7 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain AH187) OX=405534 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|C1ERS6|MNTR_BACC3 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain 03BB102) OX=572264 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|Q730Y9|MNTR_BACC1 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain ATCC 10987 / NRS 248) OX=222523 GN=mntR PE=3 
+SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|B7JMS8|MNTR_BACC0 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain AH820) OX=405535 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|Q81M27|MNTR_BACAN Transcriptional regulator MntR OS=Bacillus 
+anthracis OX=1392 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|C3LKN2|MNTR_BACAC Transcriptional regulator MntR OS=Bacillus 
+anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|C3P8B4|MNTR_BACAA Transcriptional regulator MntR OS=Bacillus 
+anthracis (strain A0248) OX=592021 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 143 bits (361),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 63/120 (53%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+
+> sp|Q5KX85|MNTR_GEOKA Transcriptional regulator MntR OS=Geobacillus 
+kaustophilus (strain HTA426) OX=235909 GN=mntR PE=3 SV=1
+Length=141
+
+ Score = 142 bits (359),  Expect = 5e-41, Method: Composition-based stats.
+ Identities = 31/120 (26%), Positives = 58/120 (48%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +TP
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             GR +   ++ +H L E+ L  +IG+    ++ +    EH +S     R+  +++     
+Sbjct  65   KGRKIGQRLVYRHELLEQFL-RLIGVSEENIYRDVEGIEHHLSWNAIDRIGDLVQYFQED  123
+
+
+> sp|B1HYR5|MNTR_LYSSC Transcriptional regulator MntR OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=mntR PE=3 SV=1
+Length=139
+
+ Score = 142 bits (358),  Expect = 6e-41, Method: Composition-based stats.
+ Identities = 31/121 (26%), Positives = 63/121 (52%), Gaps = 1/121 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E ++  IY L         + IAE L     +V++ V ++++DG +V    R L +TP
+Sbjct  5    SMEDHIEQIYLLIANKGYARVSDIAEALSVLPSSVTKMVQKLDKDGYLVYEKYRGLTLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  L   ++++H L E+ L  +IG+D  +++++    EH +S     R+  +++ +  +
+Sbjct  65   KGEKLGKRLVQRHELLEQFL-RMIGVDEERIYNDVEGIEHHLSWNSIDRIADLVQVMEEN  123
+
+Query  127  P  127
+            P
+Sbjct  124  P  124
+
+
+> sp|B7IXJ5|MNTR_BACC2 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain G9842) OX=405531 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 141 bits (356),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 62/120 (52%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTT  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D  K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHDLLEQFM-RIIGVDEGKIYNDVEGIEHHLSWEAIDRIGDLVEYFEQD  123
+
+
+> sp|Q5WF38|MNTR_BACSK Transcriptional regulator MntR OS=Bacillus 
+clausii (strain KSM-K16) OX=66692 GN=mntR PE=3 SV=1
+Length=143
+
+ Score = 141 bits (355),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 31/120 (26%), Positives = 58/120 (48%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E YL  IY L EE      + IAE LE    +V++ V ++++   +V    R L +T 
+Sbjct  5    SMEDYLERIYMLIEEKGYARVSDIAEALEVHPSSVTKMVQKLDKSDYLVYERYRGLVLTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  +  IIG+D   ++ +    EH +S +   R+  +++    +
+Sbjct  65   KGNKIGKRLVYRHELLEDFMK-IIGVDDTHIYKDVEGIEHHISWDAIDRIGDLVQYFQEN  123
+
+
+> sp|Q9PKX0|Y341_CHLMU Probable metal transport system membrane 
+protein TC_0341 OS=Chlamydia muridarum (strain MoPn / Nigg) 
+OX=243161 GN=TC_0341 PE=3 SV=1
+Length=447
+
+ Score = 147 bits (371),  Expect = 6e-40, Method: Composition-based stats.
+ Identities = 36/133 (27%), Positives = 61/133 (46%), Gaps = 7/133 (5%)
+
+Query  9    EMYLRTIYELEEEGVT------PLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSL  62
+            E  L+  + L+E+ +        +R+R  +    S       +  + + GLV    D   
+Sbjct  313  EHLLKIFWYLQEQNIYRVSMWDFVRSRKLQEYFGSKAFSGFRMFWLCKKGLVS-CFDHQX  371
+
+Query  63   QMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKD  122
+             +T  G   A  ++R HRL E  L   +  + +KVH+ A   EHV++DE++  L K+L++
+Sbjct  372  FLTDKGEAKAAKLVRAHRLWESYLVSELDFNKSKVHNFAEEMEHVLTDELDTTLSKMLQN  431
+
+Query  123  VSRSPFGNPIPGL  135
+                P    IP L
+Sbjct  432  PDYDPHKREIPKL  444
+
+
+> sp|Q8EQ23|MNTR_OCEIH Transcriptional regulator MntR OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 
+/ KCTC 3954 / HTE831) OX=221109 GN=mntR PE=3 SV=1
+Length=147
+
+ Score = 140 bits (352),  Expect = 7e-40, Method: Composition-based stats.
+ Identities = 28/120 (23%), Positives = 56/120 (47%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IAE L+    +V++ V ++++D  +     R   +T 
+Sbjct  5    SMEDYIEIIYNLIESKGYARVSAIAEALDVHPSSVTKMVQKLDKDQYLDYEKYRGFVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E  L +IIG++   ++D+    EH +S     R+  ++      
+Sbjct  65   KGKKIGERLVFRHELLEEFL-EIIGVNDENIYDDVEGIEHHLSWNSIDRIGDLVNYFKDD  123
+
+
+> sp|O84072|Y069_CHLTR Probable metal transport system membrane 
+protein CT_069 OS=Chlamydia trachomatis (strain D/UW-3/Cx) 
+OX=272561 GN=CT_069 PE=3 SV=1
+Length=451
+
+ Score = 135 bits (339),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 34/132 (26%), Positives = 57/132 (43%), Gaps = 7/132 (5%)
+
+Query  9    EMYLRTIYELEEEGVT------PLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSL  62
+            E  L+  + L E+          +R+R  +            +  + + GLV   S+   
+Sbjct  313  EHLLKIFWYLREQNTYQVGMRDFVRSRKYQEYFGDKVFPRFRMFLLCKKGLVS-CSEHQW  371
+
+Query  63   QMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKD  122
+             +T  G   A  ++R HRL E  L   +  + N+VH  A   EHV++DE++  L ++L+D
+Sbjct  372  SLTDKGLARAAKLVRAHRLWESYLVSQLDFNKNEVHHFAEEMEHVLTDELDSTLSQMLQD  431
+
+Query  123  VSRSPFGNPIPG  134
+                P    IP 
+Sbjct  432  PDYDPHQREIPK  443
+
+
+> sp|Q57988|Y568_METJA Uncharacterized HTH-type transcriptional 
+regulator MJ0568 OS=Methanocaldococcus jannaschii (strain ATCC 
+43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=MJ0568 PE=4 SV=1
+Length=125
+
+ Score = 125 bits (313),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 31/111 (28%), Positives = 52/111 (47%), Gaps = 1/111 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRA-RIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMT  65
+            + E YL  IY   +E   P++   +A+ L      V+    ++ R G V       + +T
+Sbjct  4    SIEDYLERIYLFIKENNRPIKTTELAKLLNIKPSAVTNMAKKLHRLGYVNYEPYIGITLT  63
+
+Query  66   PTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRL  116
+              G   A  ++ KH+  +  L + +GLD     +EA + EH +SDE+  RL
+Sbjct  64   EKGIEEAKKILDKHKTIKIFLVEFLGLDEKTASEEACKLEHALSDEILERL  114
+
+
+> sp|Q9Z8J6|Y347_CHLPN Probable metal transport system membrane 
+protein CPn_0347/CP_0413/CPj0347/CpB0354 OS=Chlamydia pneumoniae 
+OX=83558 GN=CPn_0347 PE=3 SV=1
+Length=448
+
+ Score = 95.1 bits (235),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 29/109 (27%), Positives = 48/109 (44%), Gaps = 1/109 (1%)
+
+Query  25   PLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTPTGRTLATAVMRKHRLAER  84
+             + +   +      P     V  +E  G V    D   ++T  GR+ A  ++R HRL E 
+Sbjct  335  FVCSYKYQEYFGPKPFPRWRVQILEWRGYVKKEQDY-YRLTKKGRSEALRLVRAHRLWES  393
+
+Query  85   LLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRSPFGNPIP  133
+             L + +      VH+ A   EHV+++E++  L ++L D    P    IP
+Sbjct  394  YLVNSLDFSKESVHELAEEIEHVLTEELDHTLTEILNDPCYDPHRQIIP  442
+
+
+> sp|P67710|MNTR_SALTY Transcriptional regulator MntR OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=mntR PE=3 SV=1
+Length=157
+
+ Score = 80.9 bits (198),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 53/113 (47%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   G + +   R 
+Sbjct  35   RELID---DYVELISDLIIEVGEARQVDMAARLGVSQPTVAKMLKRLASLGFIQMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +TP G  LA     +H++ E  L  ++G+       +A   EH +S E   
+Sbjct  92   VFLTPEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSQETLD  143
+
+
+> sp|P67711|MNTR_SALTI Transcriptional regulator MntR OS=Salmonella 
+typhi OX=90370 GN=mntR PE=3 SV=1
+Length=157
+
+ Score = 80.9 bits (198),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 53/113 (47%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   G + +   R 
+Sbjct  35   RELID---DYVELISDLIIEVGEARQVDMAARLGVSQPTVAKMLKRLASLGFIQMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +TP G  LA     +H++ E  L  ++G+       +A   EH +S E   
+Sbjct  92   VFLTPEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSQETLD  143
+
+
+> sp|P0A9F1|MNTR_ECOLI Transcriptional regulator MntR OS=Escherichia 
+coli (strain K12) OX=83333 GN=mntR PE=1 SV=1
+Length=155
+
+ Score = 80.9 bits (198),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 54/113 (48%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   GL+ +   R 
+Sbjct  35   RELID---DYVELISDLIREVGEARQVDMAARLGVSQPTVAKMLKRLATMGLIEMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +T  G  LA     +H++ E  L  ++G+       +A   EH +S+E   
+Sbjct  92   VFLTAEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSEETLD  143
+
+
+> sp|P0A9F2|MNTR_ECOL6 Transcriptional regulator MntR OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 
+GN=mntR PE=3 SV=1
+Length=155
+
+ Score = 80.9 bits (198),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 54/113 (48%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   GL+ +   R 
+Sbjct  35   RELID---DYVELISDLIREVGEARQVDMAARLGVSQPTVAKMLKRLATMGLIEMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +T  G  LA     +H++ E  L  ++G+       +A   EH +S+E   
+Sbjct  92   VFLTAEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSEETLD  143
+
+
+> sp|Q8X7U4|MNTR_ECO57 Transcriptional regulator MntR OS=Escherichia 
+coli O157:H7 OX=83334 GN=mntR PE=3 SV=1
+Length=155
+
+ Score = 80.5 bits (197),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 54/113 (48%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   GL+ +   R 
+Sbjct  35   RELID---DYVELISDLIREVGEARQVDMAARLGVSQPTVAKMLKRLATMGLIEMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +T  G  LA     +H++ E  L  ++G+       +A   EH +S+E   
+Sbjct  92   VFLTAEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSEETLD  143
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.133    0.323    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0407    0.140     1.90     42.6     43.6 
+
+Effective search space used: 15251510848
+Results from round 3
+
+
+Query= 1G3S
+
+Length=226
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|H2I233|DTXR_CORDW Diphtheria toxin repressor OS=Corynebacter...  288     1e-96
+  sp|P0DJL7|DTXR_CORDI Diphtheria toxin repressor OS=Corynebacter...  286     8e-96
+  sp|Q8FPG6|DTXR_COREF Diphtheria toxin repressor OS=Corynebacter...  280     1e-93
+  sp|Q8NP95|DTXR_CORGL Diphtheria toxin repressor OS=Corynebacter...  279     5e-93
+  sp|P9WMH1|IDER_MYCTU Iron-dependent repressor IdeR OS=Mycobacte...  270     1e-89
+  sp|P9WMH0|IDER_MYCTO Iron-dependent repressor IdeR OS=Mycobacte...  270     1e-89
+  sp|P0A673|IDER_MYCBO Iron-dependent repressor IdeR OS=Mycobacte...  270     1e-89
+  sp|Q9CCB5|IDER_MYCLE Iron-dependent repressor IdeR OS=Mycobacte...  269     4e-89
+  sp|Q4JV96|DTXR_CORJK Diphtheria toxin repressor OS=Corynebacter...  249     3e-81
+  sp|C1KWH7|MNTR_LISMC Transcriptional regulator MntR OS=Listeria...  175     1e-53
+  sp|Q8Y623|MNTR_LISMO Transcriptional regulator MntR OS=Listeria...  173     9e-53
+  sp|B8DDM5|MNTR_LISMH Transcriptional regulator MntR OS=Listeria...  173     9e-53
+  sp|Q71YD8|MNTR_LISMF Transcriptional regulator MntR OS=Listeria...  173     9e-53
+  sp|A0AJY3|MNTR_LISW6 Transcriptional regulator MntR OS=Listeria...  170     2e-51
+  sp|Q92AD1|MNTR_LISIN Transcriptional regulator MntR OS=Listeria...  169     3e-51
+  sp|Q9YFV8|Y142_AERPE Uncharacterized HTH-type transcriptional r...  163     2e-48
+  sp|C5D492|MNTR_GEOSW Transcriptional regulator MntR OS=Geobacil...  162     2e-48
+  sp|A7GSM1|MNTR_BACCN Transcriptional regulator MntR OS=Bacillus...  161     3e-48
+  sp|A8FF36|MNTR_BACP2 Transcriptional regulator MntR OS=Bacillus...  160     9e-48
+  sp|P54512|MNTR_BACSU Transcriptional regulator MntR OS=Bacillus...  159     2e-47
+  sp|A7Z6L9|MNTR_BACVZ Transcriptional regulator MntR OS=Bacillus...  159     2e-47
+  sp|A4IQU0|MNTR_GEOTN Transcriptional regulator MntR OS=Geobacil...  158     6e-47
+  sp|Q65HG7|MNTR_BACLD Transcriptional regulator MntR OS=Bacillus...  157     9e-47
+  sp|Q5KX85|MNTR_GEOKA Transcriptional regulator MntR OS=Geobacil...  157     2e-46
+  sp|Q9K943|MNTR_BACHD Transcriptional regulator MntR OS=Bacillus...  156     2e-46
+  sp|A9VGY7|MNTR_BACWK Transcriptional regulator MntR OS=Bacillus...  155     6e-46
+  sp|B7HB75|MNTR_BACC4 Transcriptional regulator MntR OS=Bacillus...  155     7e-46
+  sp|Q818P5|MNTR_BACCR Transcriptional regulator MntR OS=Bacillus...  155     9e-46
+  sp|Q6HDW1|MNTR_BACHK Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|Q634Y0|MNTR_BACCZ Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|B9IXJ8|MNTR_BACCQ Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|B7HNW6|MNTR_BACC7 Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|C1ERS6|MNTR_BACC3 Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|Q730Y9|MNTR_BACC1 Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|B7JMS8|MNTR_BACC0 Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|Q81M27|MNTR_BACAN Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|C3LKN2|MNTR_BACAC Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|C3P8B4|MNTR_BACAA Transcriptional regulator MntR OS=Bacillus...  154     1e-45
+  sp|B7IXJ5|MNTR_BACC2 Transcriptional regulator MntR OS=Bacillus...  152     9e-45
+  sp|Q8EQ23|MNTR_OCEIH Transcriptional regulator MntR OS=Oceanoba...  152     2e-44
+  sp|B1HYR5|MNTR_LYSSC Transcriptional regulator MntR OS=Lysiniba...  150     3e-44
+  sp|Q5WF38|MNTR_BACSK Transcriptional regulator MntR OS=Bacillus...  150     4e-44
+  sp|Q9PKX0|Y341_CHLMU Probable metal transport system membrane p...  156     4e-43
+  sp|O84072|Y069_CHLTR Probable metal transport system membrane p...  153     3e-42
+  sp|Q9Z8J6|Y347_CHLPN Probable metal transport system membrane p...  140     3e-37
+  sp|Q57988|Y568_METJA Uncharacterized HTH-type transcriptional r...  123     1e-33
+  sp|P67710|MNTR_SALTY Transcriptional regulator MntR OS=Salmonel...  118     2e-31
+  sp|P67711|MNTR_SALTI Transcriptional regulator MntR OS=Salmonel...  118     2e-31
+  sp|P0A9F1|MNTR_ECOLI Transcriptional regulator MntR OS=Escheric...  117     6e-31
+  sp|P0A9F2|MNTR_ECOL6 Transcriptional regulator MntR OS=Escheric...  117     6e-31
+  sp|Q8X7U4|MNTR_ECO57 Transcriptional regulator MntR OS=Escheric...  116     1e-30
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|H2I233|DTXR_CORDW Diphtheria toxin repressor OS=Corynebacterium 
+diphtheriae (strain PW8) OX=698964 GN=dtxR PE=3 SV=1
+Length=226
+
+ Score = 288 bits (736),  Expect = 1e-96, Method: Composition-based stats.
+ Identities = 225/226 (99%), Positives = 225/226 (99%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEA RWEHVMSDEVERRLVKVL
+Sbjct  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEACRWEHVMSDEVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+            KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT
+Sbjct  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL
+Sbjct  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+
+
+> sp|P0DJL7|DTXR_CORDI Diphtheria toxin repressor OS=Corynebacterium 
+diphtheriae (strain ATCC 700971 / NCTC 13129 / Biotype 
+gravis) OX=257309 GN=dtxR PE=1 SV=1
+Length=226
+
+ Score = 286 bits (731),  Expect = 8e-96, Method: Composition-based stats.
+ Identities = 223/226 (99%), Positives = 224/226 (99%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEA RWEHVMSDEVERRLVKVL
+Sbjct  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEACRWEHVMSDEVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+            KDVSRSPFGNPIPGLDELGVGNSDAA PGTRVIDAATSMPRKVRIVQINEIFQVETDQFT
+Sbjct  121  KDVSRSPFGNPIPGLDELGVGNSDAAVPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            QLLDADIRVGSEVEIVDRDGHITLSHNGKDVEL+DDLAHTIRIEEL
+Sbjct  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELIDDLAHTIRIEEL  226
+
+
+> sp|Q8FPG6|DTXR_COREF Diphtheria toxin repressor OS=Corynebacterium 
+efficiens (strain DSM 44549 / YS-314 / AJ 12310 / JCM 
+11189 / NBRC 100395) OX=196164 GN=dtxR PE=3 SV=2
+Length=230
+
+ Score = 280 bits (717),  Expect = 1e-93, Method: Composition-based stats.
+ Identities = 160/226 (71%), Positives = 187/226 (83%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEG+ PLRARIAERLEQSGPTVSQTVARMERDGLV V+ DR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGIVPLRARIAERLEQSGPTVSQTVARMERDGLVHVSPDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+MTP GR LA AVMRKHRLAERLLTDIIGLDI+KVHDEA RWEHVMSDEVERRLV+VL
+Sbjct  61   SLEMTPEGRALAIAVMRKHRLAERLLTDIIGLDIHKVHDEACRWEHVMSDEVERRLVEVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+             DV+RSPFGNPIPGL ++G+        G R ID       +VRIVQ+NEI QV+ +QF+
+Sbjct  121  DDVTRSPFGNPIPGLADIGLDQDREPDSGIRAIDLPHGESLRVRIVQLNEILQVDQEQFS  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+             L  A IR+G+EV+I++  G + ++HNG  VEL+DDLAH +R+E++
+Sbjct  181  ILSSAGIRIGTEVDIINEQGRVVITHNGMMVELMDDLAHAVRVEKV  226
+
+
+> sp|Q8NP95|DTXR_CORGL Diphtheria toxin repressor OS=Corynebacterium 
+glutamicum (strain ATCC 13032 / DSM 20300 / JCM 1318 / 
+LMG 3730 / NCIMB 10025) OX=196627 GN=dtxR PE=3 SV=1
+Length=228
+
+ Score = 279 bits (713),  Expect = 5e-93, Method: Composition-based stats.
+ Identities = 161/226 (71%), Positives = 187/226 (83%), Gaps = 0/226 (0%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            MKDLVDTTEMYLRTIYELEEEG+ PLRARIAERLEQSGPTVSQTVARMERDGLV V+ DR
+Sbjct  1    MKDLVDTTEMYLRTIYELEEEGIVPLRARIAERLEQSGPTVSQTVARMERDGLVHVSPDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+MTP GR+LA AVMRKHRLAERLLTDIIGLDI+KVHDEA RWEHVMSDEVERRLV+VL
+Sbjct  61   SLEMTPEGRSLAIAVMRKHRLAERLLTDIIGLDIHKVHDEACRWEHVMSDEVERRLVEVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPGTRVIDAATSMPRKVRIVQINEIFQVETDQFT  180
+             DV RSPFGNPIPGL E+G+  +D    G R ID       K RIVQ+NEI QV+ +QF 
+Sbjct  121  DDVHRSPFGNPIPGLGEIGLDQADEPDSGVRAIDLPLGENLKARIVQLNEILQVDLEQFQ  180
+
+Query  181  QLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+             L DA + +G+EV+I++  G + ++HNG  VEL+DDLAH +R+E++
+Sbjct  181  ALTDAGVEIGTEVDIINEQGRVVITHNGSSVELIDDLAHAVRVEKV  226
+
+
+> sp|P9WMH1|IDER_MYCTU Iron-dependent repressor IdeR OS=Mycobacterium 
+tuberculosis (strain ATCC 25618 / H37Rv) OX=83332 GN=ideR 
+PE=1 SV=1
+Length=230
+
+ Score = 270 bits (690),  Expect = 1e-89, Method: Composition-based stats.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|P9WMH0|IDER_MYCTO Iron-dependent repressor IdeR OS=Mycobacterium 
+tuberculosis (strain CDC 1551 / Oshkosh) OX=83331 GN=ideR 
+PE=3 SV=1
+Length=230
+
+ Score = 270 bits (690),  Expect = 1e-89, Method: Composition-based stats.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|P0A673|IDER_MYCBO Iron-dependent repressor IdeR OS=Mycobacterium 
+bovis (strain ATCC BAA-935 / AF2122/97) OX=233413 GN=ideR 
+PE=3 SV=1
+Length=230
+
+ Score = 270 bits (690),  Expect = 1e-89, Method: Composition-based stats.
+ Identities = 132/230 (57%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M +LVDTTEMYLRTIY+LEEEGVTPLRARIAERL+QSGPTVSQTV+RMERDGL+ VA DR
+Sbjct  1    MNELVDTTEMYLRTIYDLEEEGVTPLRARIAERLDQSGPTVSQTVSRMERDGLLRVAGDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR LA AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRLVKVL
+Sbjct  61   HLELTEKGRALAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAA--APGTRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL ELGVG    A  A   R+ +     P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLVELGVGPEPGADDANLVRLTELPAGSPVAVVVRQLTEHVQGDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L DA +   + V +     G +T+   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDAGVVPNARVTVETTPGGGVTIVIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|Q9CCB5|IDER_MYCLE Iron-dependent repressor IdeR OS=Mycobacterium 
+leprae (strain TN) OX=272631 GN=ideR PE=3 SV=1
+Length=230
+
+ Score = 269 bits (688),  Expect = 4e-89, Method: Composition-based stats.
+ Identities = 127/230 (55%), Positives = 165/230 (72%), Gaps = 4/230 (2%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M DLVDTTEMYLRTIY+LEEEGVTPLRARIAERLEQSGPTVSQTV+RMERDGL+ VA +R
+Sbjct  1    MNDLVDTTEMYLRTIYDLEEEGVTPLRARIAERLEQSGPTVSQTVSRMERDGLLRVAGNR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+             L++T  GR +A AVMRKHRLAERLL D+IGL   +VH EA RWEHVMS++VERRL+KVL
+Sbjct  61   HLELTTKGRAMAIAVMRKHRLAERLLVDVIGLPWEEVHAEACRWEHVMSEDVERRLIKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDELGVGNSDAAAPG--TRVIDAATSMPRKVRIVQINEIFQVETDQ  178
+             + + SPFGNPIPGL +LG G   +AA     R+ +  +  P  V + Q+ E  Q + D 
+Sbjct  121  NNPTTSPFGNPIPGLLDLGAGPDASAANAKLVRLTELPSGSPVAVVVRQLTEHVQDDIDL  180
+
+Query  179  FTQLLDADIRVGSEVEI-VDRDGHITLSHNG-KDVELLDDLAHTIRIEEL  226
+             T+L D  +   + V +     G++ +   G ++V L  ++AH +++E++
+Sbjct  181  ITRLKDTGVVPNARVTVETSPAGNVIIIIPGHENVTLPHEMAHAVKVEKV  230
+
+
+> sp|Q4JV96|DTXR_CORJK Diphtheria toxin repressor OS=Corynebacterium 
+jeikeium (strain K411) OX=306537 GN=dtxR PE=3 SV=1
+Length=240
+
+ Score = 249 bits (636),  Expect = 3e-81, Method: Composition-based stats.
+ Identities = 135/239 (56%), Positives = 168/239 (70%), Gaps = 13/239 (5%)
+
+Query  1    MKDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDR  60
+            M+DLVDTTEMYLRTIYELEEEG+ PLRARIAERL+QSGPTVSQTVARMERD L+ V  DR
+Sbjct  1    MRDLVDTTEMYLRTIYELEEEGIPPLRARIAERLDQSGPTVSQTVARMERDELLTVEKDR  60
+
+Query  61   SLQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVL  120
+            SL+++  GR LATAVMRKHRLAERLLTD+IGL   KVHDEA RWEHVM DEVE +LVKVL
+Sbjct  61   SLKLSAQGRALATAVMRKHRLAERLLTDVIGLPWEKVHDEACRWEHVMGDEVEVQLVKVL  120
+
+Query  121  KDVSRSPFGNPIPGLDEL--GVGNSDAA-----------APGTRVIDAATSMPRKVRIVQ  167
+             + + SPFGNPIPGLDEL  G+ +S+ A               R  D     P +V+I+ 
+Sbjct  121  SEYATSPFGNPIPGLDELMEGIPDSERAELQQKIDNLQVVTSQRASDIEPPEPIQVKILS  180
+
+Query  168  INEIFQVETDQFTQLLDADIRVGSEVEIVDRDGHITLSHNGKDVELLDDLAHTIRIEEL  226
+            INEI QVE     +     +R GS V++V  +  +  S++   + + ++L H +R+E++
+Sbjct  181  INEIIQVEHKLMAKFHALGMRPGSVVDLVATEDGLEFSNDNGAMVVPEELGHAVRVEKV  239
+
+
+> sp|C1KWH7|MNTR_LISMC Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4b (strain CLIP80459) OX=568819 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 175 bits (444),  Expect = 1e-53, Method: Composition-based stats.
+ Identities = 32/139 (23%), Positives = 60/139 (43%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+            P         E     +  
+Sbjct  124  PDALKTLKAMETNKPETKE  142
+
+
+> sp|Q8Y623|MNTR_LISMO Transcriptional regulator MntR OS=Listeria 
+monocytogenes serovar 1/2a (strain ATCC BAA-679 / EGD-e) 
+OX=169963 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 173 bits (438),  Expect = 9e-53, Method: Composition-based stats.
+ Identities = 32/139 (23%), Positives = 60/139 (43%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+            P         E     +  
+Sbjct  124  PDALKTLKAMETTKPETKE  142
+
+
+> sp|B8DDM5|MNTR_LISMH Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4a (strain HCC23) OX=552536 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 173 bits (438),  Expect = 9e-53, Method: Composition-based stats.
+ Identities = 32/139 (23%), Positives = 60/139 (43%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+            P         E     +  
+Sbjct  124  PDALKTLKAMETTKPETKE  142
+
+
+> sp|Q71YD8|MNTR_LISMF Transcriptional regulator MntR OS=Listeria 
+monocytogenes serotype 4b (strain F2365) OX=265669 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 173 bits (438),  Expect = 9e-53, Method: Composition-based stats.
+ Identities = 32/139 (23%), Positives = 60/139 (43%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+            P         E     +  
+Sbjct  124  PDALKTLKAMETTKPETKE  142
+
+
+> sp|A0AJY3|MNTR_LISW6 Transcriptional regulator MntR OS=Listeria 
+welshimeri serovar 6b (strain ATCC 35897 / DSM 20650 / SLCC5334) 
+OX=386043 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 170 bits (430),  Expect = 2e-51, Method: Composition-based stats.
+ Identities = 32/139 (23%), Positives = 61/139 (44%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDSSHIYHDVEGIEHHLSWNSIDRIGNVVQFFENH  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+            P         E     ++ 
+Sbjct  124  PDALEALKAMETTKPETNE  142
+
+
+> sp|Q92AD1|MNTR_LISIN Transcriptional regulator MntR OS=Listeria 
+innocua serovar 6a (strain ATCC BAA-680 / CLIP 11262) OX=272626 
+GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 169 bits (427),  Expect = 3e-51, Method: Composition-based stats.
+ Identities = 31/139 (22%), Positives = 61/139 (44%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IA+ L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEKIYSLIETKGYARVSDIADELFVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  L  IIG+D + ++ +    EH +S     R+  V++     
+Sbjct  65   KGTQMGKRLLERHALLESFL-SIIGVDPSHIYHDVEGIEHHLSWNSIDRIGDVVQFFENH  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+            P         +    ++  
+Sbjct  124  PDALKTLKEMDPTKPDTKE  142
+
+
+> sp|Q9YFV8|Y142_AERPE Uncharacterized HTH-type transcriptional 
+regulator APE_0142 OS=Aeropyrum pernix (strain ATCC 700893 
+/ DSM 11879 / JCM 9820 / NBRC 100138 / K1) OX=272557 GN=APE_0142 
+PE=4 SV=1
+Length=180
+
+ Score = 163 bits (413),  Expect = 2e-48, Method: Composition-based stats.
+ Identities = 42/151 (28%), Positives = 63/151 (42%), Gaps = 5/151 (3%)
+
+Query  10   MYLRTIYELE--EEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTPT  67
+             YL  IY L     G      +IA  L+ S  TVS    R++  GLV +  +  +++T  
+Sbjct  23   HYLMAIYLLNGLPGGEYARFIKIARLLDVSPSTVSIMTRRLQMKGLVELIPNMGVRLTEQ  82
+
+Query  68   GRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRSP  127
+            G  + +  + K  + E LL    G+DI+       R    +SDE    L KVL +    P
+Sbjct  83   GLKILSNYLWKSAILEVLLAR-AGVDIDNCRGMGLRMAEGLSDEDAWILYKVLGEPKYCP  141
+
+Query  128  FGNPIPGLDELGVGNSDAAA--PGTRVIDAA  156
+               PI   DE+   N+   A   G  ++   
+Sbjct  142  HKKPIIPPDEINAENARQIALCCGISILQIP  172
+
+
+> sp|C5D492|MNTR_GEOSW Transcriptional regulator MntR OS=Geobacillus 
+sp. (strain WCH70) OX=471223 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 162 bits (409),  Expect = 2e-48, Method: Composition-based stats.
+ Identities = 31/139 (22%), Positives = 62/139 (45%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +T 
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D   ++ +    EH +S     R+  +++     
+Sbjct  65   KGKKIGKRLVYRHELLEQFM-RIIGVDEENIYHDVEGIEHHLSWNAIDRIGDLVQYFQED  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+            P         +     ++ 
+Sbjct  124  PKRIETLRNIQKRNEQAEE  142
+
+
+> sp|A7GSM1|MNTR_BACCN Transcriptional regulator MntR OS=Bacillus 
+cytotoxicus (strain DSM 22905 / CIP 110041 / 391-98 / NVH 
+391-98) OX=315749 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 161 bits (408),  Expect = 3e-48, Method: Composition-based stats.
+ Identities = 32/136 (24%), Positives = 65/136 (48%), Gaps = 1/136 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++     
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEED  123
+
+Query  127  PFGNPIPGLDELGVGN  142
+             F        +   G 
+Sbjct  124  DFRIETLRAVQKANGE  139
+
+
+> sp|A8FF36|MNTR_BACP2 Transcriptional regulator MntR OS=Bacillus 
+pumilus (strain SAFR-032) OX=315750 GN=mntR PE=3 SV=1
+Length=144
+
+ Score = 160 bits (404),  Expect = 9e-48, Method: Composition-based stats.
+ Identities = 34/139 (24%), Positives = 66/139 (47%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLILTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  IIG+D  K++D+    EH +S     R+  +++    S
+Sbjct  65   KGKKIGKRLVYRHELLEQFL-RIIGVDEEKIYDDVEGIEHHLSWNSIDRIGDLVQFFEES  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+               +      +     ++ 
+Sbjct  124  DERSVQLKAIQKKNEQTNQ  142
+
+
+> sp|P54512|MNTR_BACSU Transcriptional regulator MntR OS=Bacillus 
+subtilis (strain 168) OX=224308 GN=mntR PE=1 SV=2
+Length=142
+
+ Score = 159 bits (402),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 31/128 (24%), Positives = 60/128 (47%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  IIG+D  K++++    EH +S     R+  +++     
+Sbjct  65   KGKKIGKRLVYRHELLEQFL-RIIGVDEEKIYNDVEGIEHHLSWNSIDRIGDLVQYFEED  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  DARKKDLK  131
+
+
+> sp|A7Z6L9|MNTR_BACVZ Transcriptional regulator MntR OS=Bacillus 
+velezensis (strain DSM 23117 / BGSC 10A6 / FZB42) OX=326423 
+GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 159 bits (402),  Expect = 2e-47, Method: Composition-based stats.
+ Identities = 32/139 (23%), Positives = 62/139 (45%), Gaps = 1/139 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  IIG+D  K++++    EH +S     R+  +++     
+Sbjct  65   KGKKIGKRLVYRHELLEQFL-RIIGVDEEKIYNDVEGIEHHLSWNSIDRIGDLVQYFEDD  123
+
+Query  127  PFGNPIPGLDELGVGNSDA  145
+                      +    N   
+Sbjct  124  ESRKKELKSVQKKTENPGE  142
+
+
+> sp|A4IQU0|MNTR_GEOTN Transcriptional regulator MntR OS=Geobacillus 
+thermodenitrificans (strain NG80-2) OX=420246 GN=mntR 
+PE=3 SV=1
+Length=141
+
+ Score = 158 bits (399),  Expect = 6e-47, Method: Composition-based stats.
+ Identities = 30/120 (25%), Positives = 59/120 (49%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +TP
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  +IG++   ++ +    EH +S     R+  +++     
+Sbjct  65   KGKKIGQRLVYRHELLEQFL-RLIGVNEENIYHDVEGIEHHLSWNAIDRIGDLVQYFQED  123
+
+
+> sp|Q65HG7|MNTR_BACLD Transcriptional regulator MntR OS=Bacillus 
+licheniformis (strain ATCC 14580 / DSM 13 / JCM 2505 / NBRC 
+12200 / NCIMB 9375 / NRRL NRS-1264 / Gibson 46) OX=279010 
+GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 157 bits (398),  Expect = 9e-47, Method: Composition-based stats.
+ Identities = 33/120 (28%), Positives = 61/120 (51%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  ++    R L +TP
+Sbjct  5    SMEDYIEQIYMLIEEKGYARVSDIAEALAVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ L  IIG+D  K++D+    EH +S     R+  +++     
+Sbjct  65   KGKKIGKRLVYRHELLEQFL-RIIGVDEEKIYDDVEGIEHHLSWNSIDRIGDLVQYFEDD  123
+
+
+> sp|Q5KX85|MNTR_GEOKA Transcriptional regulator MntR OS=Geobacillus 
+kaustophilus (strain HTA426) OX=235909 GN=mntR PE=3 SV=1
+Length=141
+
+ Score = 157 bits (396),  Expect = 2e-46, Method: Composition-based stats.
+ Identities = 31/125 (25%), Positives = 58/125 (46%), Gaps = 1/125 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L EE      + IAE L     +V++ V ++++D  +V    R L +TP
+Sbjct  5    SMEDYIEQIYILIEEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLVYEKYRGLVLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             GR +   ++ +H L E+ L  +IG+    ++ +    EH +S     R+  +++     
+Sbjct  65   KGRKIGQRLVYRHELLEQFL-RLIGVSEENIYRDVEGIEHHLSWNAIDRIGDLVQYFQED  123
+
+Query  127  PFGNP  131
+                 
+Sbjct  124  ERRLE  128
+
+
+> sp|Q9K943|MNTR_BACHD Transcriptional regulator MntR OS=Bacillus 
+halodurans (strain ATCC BAA-125 / DSM 18197 / FERM 7344 / 
+JCM 9153 / C-125) OX=272558 GN=mntR PE=3 SV=1
+Length=139
+
+ Score = 156 bits (395),  Expect = 2e-46, Method: Composition-based stats.
+ Identities = 32/124 (26%), Positives = 61/124 (49%), Gaps = 1/124 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E YL  IY L EE      + IAE LE    +V++ V ++++   +V    R L +T 
+Sbjct  5    SMEDYLERIYLLIEEKGYARVSDIAEALEVHPSSVTKMVQKLDKSDYLVYERYRGLILTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E  L  +IG+D + ++++    EH +S +   R+  +++     
+Sbjct  65   KGKKIGKRLVYRHDLLEDFL-KMIGVDSDHIYEDVEGIEHHLSWDAIDRIGDLVQYFQED  123
+
+Query  127  PFGN  130
+            P   
+Sbjct  124  PSRL  127
+
+
+> sp|A9VGY7|MNTR_BACWK Transcriptional regulator MntR OS=Bacillus 
+weihenstephanensis (strain KBAB4) OX=315730 GN=mntR PE=3 
+SV=1
+Length=142
+
+ Score = 155 bits (392),  Expect = 6e-46, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWESIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVKTLR  131
+
+
+> sp|B7HB75|MNTR_BACC4 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain B4264) OX=405532 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 155 bits (392),  Expect = 7e-46, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTT  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHDLLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  AVRVETLR  131
+
+
+> sp|Q818P5|MNTR_BACCR Transcriptional regulator MntR OS=Bacillus 
+cereus (strain ATCC 14579 / DSM 31 / JCM 2152 / NBRC 15305 
+/ NCIMB 9373 / NRRL B-3711) OX=226900 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 155 bits (391),  Expect = 9e-46, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTT  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHDLLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  TVRVETLR  131
+
+
+> sp|Q6HDW1|MNTR_BACHK Transcriptional regulator MntR OS=Bacillus 
+thuringiensis subsp. konkukian (strain 97-27) OX=281309 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|Q634Y0|MNTR_BACCZ Transcriptional regulator MntR OS=Bacillus 
+cereus (strain ZK / E33L) OX=288681 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|B9IXJ8|MNTR_BACCQ Transcriptional regulator MntR OS=Bacillus 
+cereus (strain Q1) OX=361100 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|B7HNW6|MNTR_BACC7 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain AH187) OX=405534 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|C1ERS6|MNTR_BACC3 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain 03BB102) OX=572264 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|Q730Y9|MNTR_BACC1 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain ATCC 10987 / NRS 248) OX=222523 GN=mntR PE=3 
+SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|B7JMS8|MNTR_BACC0 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain AH820) OX=405535 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|Q81M27|MNTR_BACAN Transcriptional regulator MntR OS=Bacillus 
+anthracis OX=1392 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|C3LKN2|MNTR_BACAC Transcriptional regulator MntR OS=Bacillus 
+anthracis (strain CDC 684 / NRRL 3495) OX=568206 GN=mntR 
+PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|C3P8B4|MNTR_BACAA Transcriptional regulator MntR OS=Bacillus 
+anthracis (strain A0248) OX=592021 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 154 bits (390),  Expect = 1e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 63/128 (49%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D +K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHELLEQFM-RIIGVDESKIYNDVEGIEHHLSWEAIDRIGDLVQYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  EVRVETLR  131
+
+
+> sp|B7IXJ5|MNTR_BACC2 Transcriptional regulator MntR OS=Bacillus 
+cereus (strain G9842) OX=405531 GN=mntR PE=3 SV=1
+Length=142
+
+ Score = 152 bits (384),  Expect = 9e-45, Method: Composition-based stats.
+ Identities = 30/128 (23%), Positives = 62/128 (48%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L +E      + IAE L     +V++ V ++++D  ++    R L +T 
+Sbjct  5    SMEDYIEQIYLLIDEKGYARVSDIAEALSVHPSSVTKMVQKLDKDEYLIYEKYRGLVLTT  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E+ +  IIG+D  K++++    EH +S E   R+  +++   + 
+Sbjct  65   KGKKIGERLVYRHDLLEQFM-RIIGVDEGKIYNDVEGIEHHLSWEAIDRIGDLVEYFEQD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  AVRVETLR  131
+
+
+> sp|Q8EQ23|MNTR_OCEIH Transcriptional regulator MntR OS=Oceanobacillus 
+iheyensis (strain DSM 14371 / CIP 107618 / JCM 11309 
+/ KCTC 3954 / HTE831) OX=221109 GN=mntR PE=3 SV=1
+Length=147
+
+ Score = 152 bits (383),  Expect = 2e-44, Method: Composition-based stats.
+ Identities = 28/128 (22%), Positives = 56/128 (44%), Gaps = 1/128 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E Y+  IY L E       + IAE L+    +V++ V ++++D  +     R   +T 
+Sbjct  5    SMEDYIEIIYNLIESKGYARVSAIAEALDVHPSSVTKMVQKLDKDQYLDYEKYRGFVLTS  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G+ +   ++ +H L E  L +IIG++   ++D+    EH +S     R+  ++      
+Sbjct  65   KGKKIGERLVFRHELLEEFL-EIIGVNDENIYDDVEGIEHHLSWNSIDRIGDLVNYFKDD  123
+
+Query  127  PFGNPIPG  134
+                    
+Sbjct  124  DSRVKDLK  131
+
+
+> sp|B1HYR5|MNTR_LYSSC Transcriptional regulator MntR OS=Lysinibacillus 
+sphaericus (strain C3-41) OX=444177 GN=mntR PE=3 SV=1
+Length=139
+
+ Score = 150 bits (380),  Expect = 3e-44, Method: Composition-based stats.
+ Identities = 31/122 (25%), Positives = 63/122 (52%), Gaps = 1/122 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E ++  IY L         + IAE L     +V++ V ++++DG +V    R L +TP
+Sbjct  5    SMEDHIEQIYLLIANKGYARVSDIAEALSVLPSSVTKMVQKLDKDGYLVYEKYRGLTLTP  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  L   ++++H L E+ L  +IG+D  +++++    EH +S     R+  +++ +  +
+Sbjct  65   KGEKLGKRLVQRHELLEQFL-RMIGVDEERIYNDVEGIEHHLSWNSIDRIADLVQVMEEN  123
+
+Query  127  PF  128
+            P 
+Sbjct  124  PD  125
+
+
+> sp|Q5WF38|MNTR_BACSK Transcriptional regulator MntR OS=Bacillus 
+clausii (strain KSM-K16) OX=66692 GN=mntR PE=3 SV=1
+Length=143
+
+ Score = 150 bits (380),  Expect = 4e-44, Method: Composition-based stats.
+ Identities = 35/137 (26%), Positives = 63/137 (46%), Gaps = 3/137 (2%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMTP  66
+            + E YL  IY L EE      + IAE LE    +V++ V ++++   +V    R L +T 
+Sbjct  5    SMEDYLERIYMLIEEKGYARVSDIAEALEVHPSSVTKMVQKLDKSDYLVYERYRGLVLTA  64
+
+Query  67   TGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSRS  126
+             G  +   ++ +H L E  +  IIG+D   ++ +    EH +S +   R+  +++    +
+Sbjct  65   KGNKIGKRLVYRHELLEDFM-KIIGVDDTHIYKDVEGIEHHISWDAIDRIGDLVQYFQEN  123
+
+Query  127  PFGNPIPGLDELGVGNS  143
+                 I  L E+   N 
+Sbjct  124  --QTRIDDLREIQKRND  138
+
+
+> sp|Q9PKX0|Y341_CHLMU Probable metal transport system membrane 
+protein TC_0341 OS=Chlamydia muridarum (strain MoPn / Nigg) 
+OX=243161 GN=TC_0341 PE=3 SV=1
+Length=447
+
+ Score = 156 bits (394),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 36/133 (27%), Positives = 61/133 (46%), Gaps = 7/133 (5%)
+
+Query  9    EMYLRTIYELEEEGVT------PLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSL  62
+            E  L+  + L+E+ +        +R+R  +    S       +  + + GLV    D   
+Sbjct  313  EHLLKIFWYLQEQNIYRVSMWDFVRSRKLQEYFGSKAFSGFRMFWLCKKGLVS-CFDHQX  371
+
+Query  63   QMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKD  122
+             +T  G   A  ++R HRL E  L   +  + +KVH+ A   EHV++DE++  L K+L++
+Sbjct  372  FLTDKGEAKAAKLVRAHRLWESYLVSELDFNKSKVHNFAEEMEHVLTDELDTTLSKMLQN  431
+
+Query  123  VSRSPFGNPIPGL  135
+                P    IP L
+Sbjct  432  PDYDPHKREIPKL  444
+
+
+> sp|O84072|Y069_CHLTR Probable metal transport system membrane 
+protein CT_069 OS=Chlamydia trachomatis (strain D/UW-3/Cx) 
+OX=272561 GN=CT_069 PE=3 SV=1
+Length=451
+
+ Score = 153 bits (387),  Expect = 3e-42, Method: Composition-based stats.
+ Identities = 34/132 (26%), Positives = 57/132 (43%), Gaps = 7/132 (5%)
+
+Query  9    EMYLRTIYELEEEGVT------PLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSL  62
+            E  L+  + L E+          +R+R  +            +  + + GLV   S+   
+Sbjct  313  EHLLKIFWYLREQNTYQVGMRDFVRSRKYQEYFGDKVFPRFRMFLLCKKGLVS-CSEHQW  371
+
+Query  63   QMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKD  122
+             +T  G   A  ++R HRL E  L   +  + N+VH  A   EHV++DE++  L ++L+D
+Sbjct  372  SLTDKGLARAAKLVRAHRLWESYLVSQLDFNKNEVHHFAEEMEHVLTDELDSTLSQMLQD  431
+
+Query  123  VSRSPFGNPIPG  134
+                P    IP 
+Sbjct  432  PDYDPHQREIPK  443
+
+
+> sp|Q9Z8J6|Y347_CHLPN Probable metal transport system membrane 
+protein CPn_0347/CP_0413/CPj0347/CpB0354 OS=Chlamydia pneumoniae 
+OX=83558 GN=CPn_0347 PE=3 SV=1
+Length=448
+
+ Score = 140 bits (352),  Expect = 3e-37, Method: Composition-based stats.
+ Identities = 31/131 (24%), Positives = 54/131 (41%), Gaps = 7/131 (5%)
+
+Query  9    EMYLRTIYELEEEGVT------PLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRSL  62
+            E  L+  + +    +        + +   +      P     V  +E  G V    D   
+Sbjct  313  EHLLKVFWHISHNRLENISVRDFVCSYKYQEYFGPKPFPRWRVQILEWRGYVKKEQDY-Y  371
+
+Query  63   QMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKD  122
+            ++T  GR+ A  ++R HRL E  L + +      VH+ A   EHV+++E++  L ++L D
+Sbjct  372  RLTKKGRSEALRLVRAHRLWESYLVNSLDFSKESVHELAEEIEHVLTEELDHTLTEILND  431
+
+Query  123  VSRSPFGNPIP  133
+                P    IP
+Sbjct  432  PCYDPHRQIIP  442
+
+
+> sp|Q57988|Y568_METJA Uncharacterized HTH-type transcriptional 
+regulator MJ0568 OS=Methanocaldococcus jannaschii (strain ATCC 
+43067 / DSM 2661 / JAL-1 / JCM 10045 / NBRC 100440) OX=243232 
+GN=MJ0568 PE=4 SV=1
+Length=125
+
+ Score = 123 bits (308),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 31/120 (26%), Positives = 54/120 (45%), Gaps = 1/120 (1%)
+
+Query  7    TTEMYLRTIYELEEEGVTPLRA-RIAERLEQSGPTVSQTVARMERDGLVVVASDRSLQMT  65
+            + E YL  IY   +E   P++   +A+ L      V+    ++ R G V       + +T
+Sbjct  4    SIEDYLERIYLFIKENNRPIKTTELAKLLNIKPSAVTNMAKKLHRLGYVNYEPYIGITLT  63
+
+Query  66   PTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVERRLVKVLKDVSR  125
+              G   A  ++ KH+  +  L + +GLD     +EA + EH +SDE+  RL   ++    
+Sbjct  64   EKGIEEAKKILDKHKTIKIFLVEFLGLDEKTASEEACKLEHALSDEILERLKIFMEKFKD  123
+
+
+> sp|P67710|MNTR_SALTY Transcriptional regulator MntR OS=Salmonella 
+typhimurium (strain LT2 / SGSC1412 / ATCC 700720) OX=99287 
+GN=mntR PE=3 SV=1
+Length=157
+
+ Score = 118 bits (296),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 53/113 (47%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   G + +   R 
+Sbjct  35   RELID---DYVELISDLIIEVGEARQVDMAARLGVSQPTVAKMLKRLASLGFIQMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +TP G  LA     +H++ E  L  ++G+       +A   EH +S E   
+Sbjct  92   VFLTPEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSQETLD  143
+
+
+> sp|P67711|MNTR_SALTI Transcriptional regulator MntR OS=Salmonella 
+typhi OX=90370 GN=mntR PE=3 SV=1
+Length=157
+
+ Score = 118 bits (296),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 53/113 (47%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   G + +   R 
+Sbjct  35   RELID---DYVELISDLIIEVGEARQVDMAARLGVSQPTVAKMLKRLASLGFIQMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +TP G  LA     +H++ E  L  ++G+       +A   EH +S E   
+Sbjct  92   VFLTPEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSQETLD  143
+
+
+> sp|P0A9F1|MNTR_ECOLI Transcriptional regulator MntR OS=Escherichia 
+coli (strain K12) OX=83333 GN=mntR PE=1 SV=1
+Length=155
+
+ Score = 117 bits (292),  Expect = 6e-31, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 54/113 (48%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   GL+ +   R 
+Sbjct  35   RELID---DYVELISDLIREVGEARQVDMAARLGVSQPTVAKMLKRLATMGLIEMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +T  G  LA     +H++ E  L  ++G+       +A   EH +S+E   
+Sbjct  92   VFLTAEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSEETLD  143
+
+
+> sp|P0A9F2|MNTR_ECOL6 Transcriptional regulator MntR OS=Escherichia 
+coli O6:H1 (strain CFT073 / ATCC 700928 / UPEC) OX=199310 
+GN=mntR PE=3 SV=1
+Length=155
+
+ Score = 117 bits (292),  Expect = 6e-31, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 54/113 (48%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   GL+ +   R 
+Sbjct  35   RELID---DYVELISDLIREVGEARQVDMAARLGVSQPTVAKMLKRLATMGLIEMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +T  G  LA     +H++ E  L  ++G+       +A   EH +S+E   
+Sbjct  92   VFLTAEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSEETLD  143
+
+
+> sp|Q8X7U4|MNTR_ECO57 Transcriptional regulator MntR OS=Escherichia 
+coli O157:H7 OX=83334 GN=mntR PE=3 SV=1
+Length=155
+
+ Score = 116 bits (290),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 30/113 (27%), Positives = 54/113 (48%), Gaps = 4/113 (4%)
+
+Query  2    KDLVDTTEMYLRTIYELEEEGVTPLRARIAERLEQSGPTVSQTVARMERDGLVVVASDRS  61
+            ++L+D    Y+  I +L  E     +  +A RL  S PTV++ + R+   GL+ +   R 
+Sbjct  35   RELID---DYVELISDLIREVGEARQVDMAARLGVSQPTVAKMLKRLATMGLIEMIPWRG  91
+
+Query  62   LQMTPTGRTLATAVMRKHRLAERLLTDIIGLDINKVHDEASRWEHVMSDEVER  114
+            + +T  G  LA     +H++ E  L  ++G+       +A   EH +S+E   
+Sbjct  92   VFLTAEGEKLAQESRERHQIVENFLL-VLGVSPEIARRDAEGMEHHVSEETLD  143
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.133    0.319    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 15251510848
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

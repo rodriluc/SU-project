@@ -1,0 +1,1912 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= 1MHN
+
+Length=59
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|Q16637|SMN_HUMAN Survival motor neuron protein OS=Homo sapie...  130     4e-37
+  sp|Q5RE18|SMN_PONAB Survival motor neuron protein OS=Pongo abel...  130     5e-37
+  sp|Q4R4F8|SMN_MACFA Survival motor neuron protein OS=Macaca fas...  123     1e-34
+  sp|O02771|SMN_CANLF Survival motor neuron protein OS=Canis lupu...  123     2e-34
+  sp|P97801|SMN_MOUSE Survival motor neuron protein OS=Mus muscul...  123     2e-34
+  sp|Q8HYB8|SMN_FELCA Survival of motor neuron protein OS=Felis c...  119     7e-33
+  sp|O18870|SMN_BOVIN Survival motor neuron protein OS=Bos taurus...  118     1e-32
+  sp|O35876|SMN_RAT Survival motor neuron protein OS=Rattus norve...  116     6e-32
+  sp|Q9W6S8|SMN1_DANRE Survival motor neuron protein 1 OS=Danio r...  80.1    1e-18
+  sp|Q7ZV80|SPF30_DANRE Survival of motor neuron-related-splicing...  52.4    1e-08
+  sp|Q3T045|SPF30_BOVIN Survival of motor neuron-related-splicing...  48.9    3e-07
+  sp|Q5R591|SPF30_PONAB Survival of motor neuron-related-splicing...  48.5    3e-07
+  sp|O75940|SPF30_HUMAN Survival of motor neuron-related-splicing...  48.1    5e-07
+  sp|Q6DEY1|SPF30_XENTR Survival of motor neuron-related-splicing...  46.6    2e-06
+  sp|Q8BGT7|SPF30_MOUSE Survival of motor neuron-related-splicing...  44.7    1e-05
+  sp|Q4QQU6|SPF30_RAT Survival of motor neuron-related-splicing f...  44.7    1e-05
+  sp|Q6NYG6|TDRD3_DANRE Tudor domain-containing protein 3 OS=Dani...  44.7    2e-05
+  sp|Q66HC1|TDRD3_RAT Tudor domain-containing protein 3 OS=Rattus...  44.3    3e-05
+  sp|Q91W18|TDRD3_MOUSE Tudor domain-containing protein 3 OS=Mus ...  43.9    4e-05
+  sp|Q9H7E2|TDRD3_HUMAN Tudor domain-containing protein 3 OS=Homo...  42.0    2e-04
+  sp|Q2HJG4|TDRD3_BOVIN Tudor domain-containing protein 3 OS=Bos ...  42.0    2e-04
+  sp|Q5ZMS6|TDRD3_CHICK Tudor domain-containing protein 3 OS=Gall...  41.6    2e-04
+  sp|Q9VV74|SMN_DROME Survival motor neuron protein OS=Drosophila...  39.7    6e-04
+  sp|Q6NRP6|TDRD3_XENLA Tudor domain-containing protein 3 OS=Xeno...  40.0    7e-04
+  sp|Q6P1U3|TDRD3_XENTR Tudor domain-containing protein 3 OS=Xeno...  39.7    9e-04
+
+
+> sp|Q16637|SMN_HUMAN Survival motor neuron protein OS=Homo sapiens 
+OX=9606 GN=SMN1 PE=1 SV=1
+Length=294
+
+ Score = 130 bits (327),  Expect = 4e-37, Method: Composition-based stats.
+ Identities = 59/59 (100%), Positives = 59/59 (100%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE
+Sbjct  89   LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  147
+
+
+> sp|Q5RE18|SMN_PONAB Survival motor neuron protein OS=Pongo abelii 
+OX=9601 GN=SMN1 PE=2 SV=1
+Length=294
+
+ Score = 130 bits (326),  Expect = 5e-37, Method: Composition-based stats.
+ Identities = 59/59 (100%), Positives = 59/59 (100%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE
+Sbjct  89   LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  147
+
+
+> sp|Q4R4F8|SMN_MACFA Survival motor neuron protein OS=Macaca fascicularis 
+OX=9541 GN=SMN1 PE=2 SV=1
+Length=294
+
+ Score = 123 bits (309),  Expect = 1e-34, Method: Compositional matrix adjust.
+ Identities = 56/59 (95%), Positives = 58/59 (98%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSAIWSEDGCIYPATIAS+DFKRETCVVVYTGYGNREEQNLSDLLSPI E
+Sbjct  89   LKQWKVGDKCSAIWSEDGCIYPATIASVDFKRETCVVVYTGYGNREEQNLSDLLSPISE  147
+
+
+> sp|O02771|SMN_CANLF Survival motor neuron protein OS=Canis lupus 
+familiaris OX=9615 GN=SMN1 PE=2 SV=1
+Length=287
+
+ Score = 123 bits (309),  Expect = 2e-34, Method: Compositional matrix adjust.
+ Identities = 55/59 (93%), Positives = 58/59 (98%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSA+WSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQN+SDLLSP CE
+Sbjct  84   LKQWKVGDKCSAVWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNVSDLLSPACE  142
+
+
+> sp|P97801|SMN_MOUSE Survival motor neuron protein OS=Mus musculus 
+OX=10090 GN=Smn1 PE=1 SV=1
+Length=288
+
+ Score = 123 bits (308),  Expect = 2e-34, Method: Compositional matrix adjust.
+ Identities = 55/59 (93%), Positives = 57/59 (97%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSA+WSEDGCIYPATI SIDFKRETCVVVYTGYGNREEQNLSDLLSP CE
+Sbjct  86   LKQWKVGDKCSAVWSEDGCIYPATITSIDFKRETCVVVYTGYGNREEQNLSDLLSPTCE  144
+
+
+> sp|Q8HYB8|SMN_FELCA Survival of motor neuron protein OS=Felis 
+catus OX=9685 GN=SMN1 PE=2 SV=1
+Length=290
+
+ Score = 119 bits (297),  Expect = 7e-33, Method: Compositional matrix adjust.
+ Identities = 53/56 (95%), Positives = 56/56 (100%), Gaps = 0/56 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSP  56
+            L+QWKVGDKCSAIWSEDGC+YPATIASIDFKRETCVVVYTGYGNREEQN+SDLLSP
+Sbjct  86   LKQWKVGDKCSAIWSEDGCVYPATIASIDFKRETCVVVYTGYGNREEQNVSDLLSP  141
+
+
+> sp|O18870|SMN_BOVIN Survival motor neuron protein OS=Bos taurus 
+OX=9913 GN=SMN1 PE=2 SV=2
+Length=287
+
+ Score = 118 bits (295),  Expect = 1e-32, Method: Composition-based stats.
+ Identities = 53/58 (91%), Positives = 54/58 (93%), Gaps = 0/58 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            +QWKVGD C AIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSP  E
+Sbjct  85   KQWKVGDNCCAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPTSE  142
+
+
+> sp|O35876|SMN_RAT Survival motor neuron protein OS=Rattus norvegicus 
+OX=10116 GN=Smn1 PE=1 SV=1
+Length=289
+
+ Score = 116 bits (291),  Expect = 6e-32, Method: Compositional matrix adjust.
+ Identities = 50/59 (85%), Positives = 55/59 (93%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWK GDKCSA+WSEDGC+YPATI S+D KRETCVVVYTGYGN+EEQNLSDLLSP CE
+Sbjct  87   LKQWKAGDKCSAVWSEDGCVYPATITSVDLKRETCVVVYTGYGNKEEQNLSDLLSPTCE  145
+
+
+> sp|Q9W6S8|SMN1_DANRE Survival motor neuron protein 1 OS=Danio 
+rerio OX=7955 GN=smn1 PE=1 SV=1
+Length=281
+
+ Score = 80.1 bits (196),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 35/54 (65%), Positives = 43/54 (80%), Gaps = 0/54 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLS  55
+            ++W+VGD C A WSEDG +Y ATI S+D ++ TCVV YT YGN EEQNLSDLL+
+Sbjct  79   KEWQVGDSCYAFWSEDGNLYTATITSVDQEKGTCVVFYTDYGNEEEQNLSDLLT  132
+
+
+> sp|Q7ZV80|SPF30_DANRE Survival of motor neuron-related-splicing 
+factor 30 OS=Danio rerio OX=7955 GN=smndc1 PE=2 SV=1
+Length=237
+
+ Score = 52.4 bits (124),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 21/45 (47%), Positives = 27/45 (60%), Gaps = 0/45 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNRE  46
+              W+VGD C A WS+DG +Y A I  ID +  T  + + GYGN E
+Sbjct  71   HSWRVGDHCMATWSQDGQVYEAEIEEIDNENGTAAITFAGYGNAE  115
+
+
+> sp|Q3T045|SPF30_BOVIN Survival of motor neuron-related-splicing 
+factor 30 OS=Bos taurus OX=9913 GN=SMNDC1 PE=2 SV=1
+Length=238
+
+ Score = 48.9 bits (115),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 27/52 (52%), Positives = 31/52 (60%), Gaps = 0/52 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+              WKVGDKC AIWSEDG  Y A I  ID +  T  + + GYGN E   L +L
+Sbjct  71   HSWKVGDKCMAIWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLNL  122
+
+
+> sp|Q5R591|SPF30_PONAB Survival of motor neuron-related-splicing 
+factor 30 OS=Pongo abelii OX=9601 GN=SMNDC1 PE=2 SV=1
+Length=238
+
+ Score = 48.5 bits (114),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 27/52 (52%), Positives = 31/52 (60%), Gaps = 0/52 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+              WKVGDKC AIWSEDG  Y A I  ID +  T  + + GYGN E   L +L
+Sbjct  71   HSWKVGDKCMAIWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLNL  122
+
+
+> sp|O75940|SPF30_HUMAN Survival of motor neuron-related-splicing 
+factor 30 OS=Homo sapiens OX=9606 GN=SMNDC1 PE=1 SV=1
+Length=238
+
+ Score = 48.1 bits (113),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 26/52 (50%), Positives = 31/52 (60%), Gaps = 0/52 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + + GYGN E   L +L
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLNL  122
+
+
+> sp|Q6DEY1|SPF30_XENTR Survival of motor neuron-related-splicing 
+factor 30 OS=Xenopus tropicalis OX=8364 GN=smndc1 PE=2 SV=1
+Length=238
+
+ Score = 46.6 bits (109),  Expect = 2e-06, Method: Compositional matrix adjust.
+ Identities = 27/58 (47%), Positives = 36/58 (62%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            Q WKVG+KC A+WS+DG  Y A I  ID +  T  + + GYGN E  +L + L P+ E
+Sbjct  71   QSWKVGEKCMAVWSDDGQWYEAEIEEIDEENGTAAITFAGYGNAEVTSLLN-LRPVEE  127
+
+
+> sp|Q8BGT7|SPF30_MOUSE Survival of motor neuron-related-splicing 
+factor 30 OS=Mus musculus OX=10090 GN=Smndc1 PE=1 SV=1
+Length=238
+
+ Score = 44.7 bits (104),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 25/52 (48%), Positives = 30/52 (58%), Gaps = 0/52 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + +  YGN E   L +L
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAVYGNAEVTPLLNL  122
+
+
+> sp|Q4QQU6|SPF30_RAT Survival of motor neuron-related-splicing 
+factor 30 OS=Rattus norvegicus OX=10116 GN=Smndc1 PE=2 SV=1
+Length=238
+
+ Score = 44.7 bits (104),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 25/52 (48%), Positives = 30/52 (58%), Gaps = 0/52 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + +  YGN E   L +L
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAVYGNAEVTPLLNL  122
+
+
+> sp|Q6NYG6|TDRD3_DANRE Tudor domain-containing protein 3 OS=Danio 
+rerio OX=7955 GN=tdrd3 PE=2 SV=1
+Length=733
+
+ Score = 44.7 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 23/54 (43%), Positives = 32/54 (59%), Gaps = 1/54 (2%)
+
+Query  4    WKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            WK GD+C A++ ED   Y A I ++     T VVV++ YGN EE  L D + P+
+Sbjct  640  WKAGDQCLALYWEDNKFYRARIDAVHPSGSTAVVVFSDYGNCEEV-LLDSIKPL  692
+
+
+> sp|Q66HC1|TDRD3_RAT Tudor domain-containing protein 3 OS=Rattus 
+norvegicus OX=10116 GN=Tdrd3 PE=1 SV=1
+Length=651
+
+ Score = 44.3 bits (103),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 21/52 (40%), Positives = 31/52 (60%), Gaps = 0/52 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            + WK GD+C A++ ED   Y A + ++     T VV +T YGN EE  LS++
+Sbjct  554  KMWKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFTDYGNYEEVLLSNI  605
+
+
+> sp|Q91W18|TDRD3_MOUSE Tudor domain-containing protein 3 OS=Mus 
+musculus OX=10090 GN=Tdrd3 PE=1 SV=4
+Length=743
+
+ Score = 43.9 bits (102),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 30/50 (60%), Gaps = 0/50 (0%)
+
+Query  4    WKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            WK GD+C A++ ED   Y A + ++     T VV +T YGN EE  LS++
+Sbjct  648  WKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFTDYGNYEEVLLSNI  697
+
+
+> sp|Q9H7E2|TDRD3_HUMAN Tudor domain-containing protein 3 OS=Homo 
+sapiens OX=9606 GN=TDRD3 PE=1 SV=1
+Length=651
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 32/56 (57%), Gaps = 1/56 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            + WK GD+C A++ ED   Y A + ++     T VV +  YGN EE  LS+ + PI
+Sbjct  554  KMWKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFIDYGNYEEVLLSN-IKPI  608
+
+
+> sp|Q2HJG4|TDRD3_BOVIN Tudor domain-containing protein 3 OS=Bos 
+taurus OX=9913 GN=TDRD3 PE=2 SV=1
+Length=722
+
+ Score = 42.0 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 20/50 (40%), Positives = 29/50 (58%), Gaps = 0/50 (0%)
+
+Query  4    WKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            WK GD+C A++ ED   Y A + ++     T VV +  YGN EE  LS++
+Sbjct  627  WKSGDECLALYWEDNKFYRAEVEALHSSGMTAVVKFIDYGNYEEVLLSNI  676
+
+
+> sp|Q5ZMS6|TDRD3_CHICK Tudor domain-containing protein 3 OS=Gallus 
+gallus OX=9031 GN=TDRD3 PE=2 SV=1
+Length=741
+
+ Score = 41.6 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 19/52 (37%), Positives = 31/52 (60%), Gaps = 0/52 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            + W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  LS++
+Sbjct  643  KTWRPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFSDYGNYEEVLLSNI  694
+
+
+> sp|Q9VV74|SMN_DROME Survival motor neuron protein OS=Drosophila 
+melanogaster OX=7227 GN=Smn PE=1 SV=1
+Length=226
+
+ Score = 39.7 bits (91),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 22/51 (43%), Positives = 30/51 (59%), Gaps = 1/51 (2%)
+
+Query  4    WKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLL  54
+            +KVGD   A +  DG  Y   + SI+ ++ TCV+ Y GY N +E  L DLL
+Sbjct  70   FKVGDYARATYV-DGVDYEGAVVSINEEKGTCVLRYLGYENEQEVLLVDLL  119
+
+
+> sp|Q6NRP6|TDRD3_XENLA Tudor domain-containing protein 3 OS=Xenopus 
+laevis OX=8355 GN=tdrd3 PE=2 SV=1
+Length=650
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 29/50 (58%), Gaps = 0/50 (0%)
+
+Query  4    WKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  L ++
+Sbjct  555  WRSGDECLALYWEDNKYYRAEVEALHSSGTTAVVKFSDYGNYEEVLLENI  604
+
+
+> sp|Q6P1U3|TDRD3_XENTR Tudor domain-containing protein 3 OS=Xenopus 
+tropicalis OX=8364 GN=tdrd3 PE=2 SV=2
+Length=710
+
+ Score = 39.7 bits (91),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 18/50 (36%), Positives = 29/50 (58%), Gaps = 0/50 (0%)
+
+Query  4    WKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  L ++
+Sbjct  618  WRPGDECLALYWEDNKYYRAEVEALHSSGTTAVVKFSDYGNYEEVLLENI  667
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.136    0.442    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4909514058
+Results from round 2
+
+
+Query= 1MHN
+
+Length=59
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q16637|SMN_HUMAN Survival motor neuron protein OS=Homo sapie...  103     7e-27
+  sp|P97801|SMN_MOUSE Survival motor neuron protein OS=Mus muscul...  103     7e-27
+  sp|Q5RE18|SMN_PONAB Survival motor neuron protein OS=Pongo abel...  103     8e-27
+  sp|O02771|SMN_CANLF Survival motor neuron protein OS=Canis lupu...  102     2e-26
+  sp|O18870|SMN_BOVIN Survival motor neuron protein OS=Bos taurus...  102     2e-26
+  sp|Q4R4F8|SMN_MACFA Survival motor neuron protein OS=Macaca fas...  101     2e-26
+  sp|O35876|SMN_RAT Survival motor neuron protein OS=Rattus norve...  98.9    2e-25
+  sp|Q8HYB8|SMN_FELCA Survival of motor neuron protein OS=Felis c...  97.8    7e-25
+  sp|Q66HC1|TDRD3_RAT Tudor domain-containing protein 3 OS=Rattus...  92.0    7e-22
+  sp|Q9H7E2|TDRD3_HUMAN Tudor domain-containing protein 3 OS=Homo...  91.2    1e-21
+  sp|Q91W18|TDRD3_MOUSE Tudor domain-containing protein 3 OS=Mus ...  90.1    4e-21
+  sp|Q5ZMS6|TDRD3_CHICK Tudor domain-containing protein 3 OS=Gall...  89.7    5e-21
+  sp|Q2HJG4|TDRD3_BOVIN Tudor domain-containing protein 3 OS=Bos ...  88.5    1e-20
+  sp|Q9W6S8|SMN1_DANRE Survival motor neuron protein 1 OS=Danio r...  85.1    2e-20
+  sp|Q6P1U3|TDRD3_XENTR Tudor domain-containing protein 3 OS=Xeno...  85.5    2e-19
+  sp|Q6NRP6|TDRD3_XENLA Tudor domain-containing protein 3 OS=Xeno...  84.7    3e-19
+  sp|Q6NYG6|TDRD3_DANRE Tudor domain-containing protein 3 OS=Dani...  83.9    5e-19
+  sp|Q7ZV80|SPF30_DANRE Survival of motor neuron-related-splicing...  77.0    1e-17
+  sp|Q3T045|SPF30_BOVIN Survival of motor neuron-related-splicing...  71.6    1e-15
+  sp|Q5R591|SPF30_PONAB Survival of motor neuron-related-splicing...  71.6    1e-15
+  sp|O75940|SPF30_HUMAN Survival of motor neuron-related-splicing...  71.2    1e-15
+  sp|Q8BGT7|SPF30_MOUSE Survival of motor neuron-related-splicing...  68.1    2e-14
+  sp|Q4QQU6|SPF30_RAT Survival of motor neuron-related-splicing f...  68.1    2e-14
+  sp|Q6DEY1|SPF30_XENTR Survival of motor neuron-related-splicing...  67.3    4e-14
+  sp|Q9VV74|SMN_DROME Survival motor neuron protein OS=Drosophila...  66.2    9e-14
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q58EK5|TDRD1_DANRE Tudor domain-containing protein 1 OS=Dani...  51.9    8e-08
+  sp|A9CPT4|TDRD1_ORYLA Tudor domain-containing protein 1 OS=Oryz...  46.9    3e-06
+  sp|P25823|TUD_DROME Maternal protein tudor OS=Drosophila melano...  43.8    4e-05
+  sp|Q9BXT4|TDRD1_HUMAN Tudor domain-containing protein 1 OS=Homo...  43.1    8e-05
+  sp|Q99MV1|TDRD1_MOUSE Tudor domain-containing protein 1 OS=Mus ...  42.7    9e-05
+  sp|P61407|TDRD6_MOUSE Tudor domain-containing protein 6 OS=Mus ...  39.6    0.001
+  sp|B5MCY1|TDR15_HUMAN Tudor domain-containing protein 15 OS=Hom...  37.7    0.004
+  sp|Q9BXU1|STK31_HUMAN Serine/threonine-protein kinase 31 OS=Hom...  37.3    0.006
+
+
+> sp|Q16637|SMN_HUMAN Survival motor neuron protein OS=Homo sapiens 
+OX=9606 GN=SMN1 PE=1 SV=1
+Length=294
+
+ Score = 103 bits (256),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 59/59 (100%), Positives = 59/59 (100%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE
+Sbjct  89   LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  147
+
+
+> sp|P97801|SMN_MOUSE Survival motor neuron protein OS=Mus musculus 
+OX=10090 GN=Smn1 PE=1 SV=1
+Length=288
+
+ Score = 103 bits (256),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 55/59 (93%), Positives = 57/59 (97%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSA+WSEDGCIYPATI SIDFKRETCVVVYTGYGNREEQNLSDLLSP CE
+Sbjct  86   LKQWKVGDKCSAVWSEDGCIYPATITSIDFKRETCVVVYTGYGNREEQNLSDLLSPTCE  144
+
+
+> sp|Q5RE18|SMN_PONAB Survival motor neuron protein OS=Pongo abelii 
+OX=9601 GN=SMN1 PE=2 SV=1
+Length=294
+
+ Score = 103 bits (256),  Expect = 8e-27, Method: Composition-based stats.
+ Identities = 59/59 (100%), Positives = 59/59 (100%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE
+Sbjct  89   LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  147
+
+
+> sp|O02771|SMN_CANLF Survival motor neuron protein OS=Canis lupus 
+familiaris OX=9615 GN=SMN1 PE=2 SV=1
+Length=287
+
+ Score = 102 bits (253),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 55/59 (93%), Positives = 58/59 (98%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSA+WSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQN+SDLLSP CE
+Sbjct  84   LKQWKVGDKCSAVWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNVSDLLSPACE  142
+
+
+> sp|O18870|SMN_BOVIN Survival motor neuron protein OS=Bos taurus 
+OX=9913 GN=SMN1 PE=2 SV=2
+Length=287
+
+ Score = 102 bits (253),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 53/58 (91%), Positives = 54/58 (93%), Gaps = 0/58 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            +QWKVGD C AIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSP  E
+Sbjct  85   KQWKVGDNCCAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPTSE  142
+
+
+> sp|Q4R4F8|SMN_MACFA Survival motor neuron protein OS=Macaca fascicularis 
+OX=9541 GN=SMN1 PE=2 SV=1
+Length=294
+
+ Score = 101 bits (252),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 56/59 (95%), Positives = 58/59 (98%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSAIWSEDGCIYPATIAS+DFKRETCVVVYTGYGNREEQNLSDLLSPI E
+Sbjct  89   LKQWKVGDKCSAIWSEDGCIYPATIASVDFKRETCVVVYTGYGNREEQNLSDLLSPISE  147
+
+
+> sp|O35876|SMN_RAT Survival motor neuron protein OS=Rattus norvegicus 
+OX=10116 GN=Smn1 PE=1 SV=1
+Length=289
+
+ Score = 98.9 bits (245),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 50/59 (85%), Positives = 55/59 (93%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWK GDKCSA+WSEDGC+YPATI S+D KRETCVVVYTGYGN+EEQNLSDLLSP CE
+Sbjct  87   LKQWKAGDKCSAVWSEDGCVYPATITSVDLKRETCVVVYTGYGNKEEQNLSDLLSPTCE  145
+
+
+> sp|Q8HYB8|SMN_FELCA Survival of motor neuron protein OS=Felis 
+catus OX=9685 GN=SMN1 PE=2 SV=1
+Length=290
+
+ Score = 97.8 bits (242),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 53/58 (91%), Positives = 56/58 (97%), Gaps = 0/58 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            L+QWKVGDKCSAIWSEDGC+YPATIASIDFKRETCVVVYTGYGNREEQN+SDLLSP  
+Sbjct  86   LKQWKVGDKCSAIWSEDGCVYPATIASIDFKRETCVVVYTGYGNREEQNVSDLLSPAS  143
+
+
+> sp|Q66HC1|TDRD3_RAT Tudor domain-containing protein 3 OS=Rattus 
+norvegicus OX=10116 GN=Tdrd3 PE=1 SV=1
+Length=651
+
+ Score = 92.0 bits (227),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 33/56 (59%), Gaps = 1/56 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            + WK GD+C A++ ED   Y A + ++     T VV +T YGN EE  LS+ + P+
+Sbjct  554  KMWKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFTDYGNYEEVLLSN-IKPV  608
+
+
+> sp|Q9H7E2|TDRD3_HUMAN Tudor domain-containing protein 3 OS=Homo 
+sapiens OX=9606 GN=TDRD3 PE=1 SV=1
+Length=651
+
+ Score = 91.2 bits (225),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 32/56 (57%), Gaps = 1/56 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            + WK GD+C A++ ED   Y A + ++     T VV +  YGN EE  LS+ + PI
+Sbjct  554  KMWKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFIDYGNYEEVLLSN-IKPI  608
+
+
+> sp|Q91W18|TDRD3_MOUSE Tudor domain-containing protein 3 OS=Mus 
+musculus OX=10090 GN=Tdrd3 PE=1 SV=4
+Length=743
+
+ Score = 90.1 bits (222),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 33/56 (59%), Gaps = 1/56 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            + WK GD+C A++ ED   Y A + ++     T VV +T YGN EE  LS+ + P+
+Sbjct  646  KVWKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFTDYGNYEEVLLSN-IKPV  700
+
+
+> sp|Q5ZMS6|TDRD3_CHICK Tudor domain-containing protein 3 OS=Gallus 
+gallus OX=9031 GN=TDRD3 PE=2 SV=1
+Length=741
+
+ Score = 89.7 bits (221),  Expect = 5e-21, Method: Composition-based stats.
+ Identities = 21/56 (38%), Positives = 33/56 (59%), Gaps = 1/56 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            + W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  LS+ + PI
+Sbjct  643  KTWRPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFSDYGNYEEVLLSN-IRPI  697
+
+
+> sp|Q2HJG4|TDRD3_BOVIN Tudor domain-containing protein 3 OS=Bos 
+taurus OX=9913 GN=TDRD3 PE=2 SV=1
+Length=722
+
+ Score = 88.5 bits (218),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 22/56 (39%), Positives = 32/56 (57%), Gaps = 1/56 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            + WK GD+C A++ ED   Y A + ++     T VV +  YGN EE  LS+ + PI
+Sbjct  625  KLWKSGDECLALYWEDNKFYRAEVEALHSSGMTAVVKFIDYGNYEEVLLSN-IRPI  679
+
+
+> sp|Q9W6S8|SMN1_DANRE Survival motor neuron protein 1 OS=Danio 
+rerio OX=7955 GN=smn1 PE=1 SV=1
+Length=281
+
+ Score = 85.1 bits (209),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 35/54 (65%), Positives = 43/54 (80%), Gaps = 0/54 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLS  55
+            ++W+VGD C A WSEDG +Y ATI S+D ++ TCVV YT YGN EEQNLSDLL+
+Sbjct  79   KEWQVGDSCYAFWSEDGNLYTATITSVDQEKGTCVVFYTDYGNEEEQNLSDLLT  132
+
+
+> sp|Q6P1U3|TDRD3_XENTR Tudor domain-containing protein 3 OS=Xenopus 
+tropicalis OX=8364 GN=tdrd3 PE=2 SV=2
+Length=710
+
+ Score = 85.5 bits (210),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 31/55 (56%), Gaps = 1/55 (2%)
+
+Query  3    QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+             W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  L + + PI
+Sbjct  617  SWRPGDECLALYWEDNKYYRAEVEALHSSGTTAVVKFSDYGNYEEVLLEN-IRPI  670
+
+
+> sp|Q6NRP6|TDRD3_XENLA Tudor domain-containing protein 3 OS=Xenopus 
+laevis OX=8355 GN=tdrd3 PE=2 SV=1
+Length=650
+
+ Score = 84.7 bits (208),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 31/55 (56%), Gaps = 1/55 (2%)
+
+Query  3    QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+             W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  L + + PI
+Sbjct  554  SWRSGDECLALYWEDNKYYRAEVEALHSSGTTAVVKFSDYGNYEEVLLEN-IRPI  607
+
+
+> sp|Q6NYG6|TDRD3_DANRE Tudor domain-containing protein 3 OS=Danio 
+rerio OX=7955 GN=tdrd3 PE=2 SV=1
+Length=733
+
+ Score = 83.9 bits (206),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 23/54 (43%), Positives = 32/54 (59%), Gaps = 1/54 (2%)
+
+Query  4    WKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            WK GD+C A++ ED   Y A I ++     T VVV++ YGN EE  L D + P+
+Sbjct  640  WKAGDQCLALYWEDNKFYRARIDAVHPSGSTAVVVFSDYGNCEEVLL-DSIKPL  692
+
+
+> sp|Q7ZV80|SPF30_DANRE Survival of motor neuron-related-splicing 
+factor 30 OS=Danio rerio OX=7955 GN=smndc1 PE=2 SV=1
+Length=237
+
+ Score = 77.0 bits (188),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 24/58 (41%), Positives = 32/58 (55%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              W+VGD C A WS+DG +Y A I  ID +  T  + + GYGN E   L  +L  + E
+Sbjct  71   HSWRVGDHCMATWSQDGQVYEAEIEEIDNENGTAAITFAGYGNAEVMPL-HMLKKVEE  127
+
+
+> sp|Q3T045|SPF30_BOVIN Survival of motor neuron-related-splicing 
+factor 30 OS=Bos taurus OX=9913 GN=SMNDC1 PE=2 SV=1
+Length=238
+
+ Score = 71.6 bits (174),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 29/58 (50%), Positives = 34/58 (59%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC AIWSEDG  Y A I  ID +  T  + + GYGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAIWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|Q5R591|SPF30_PONAB Survival of motor neuron-related-splicing 
+factor 30 OS=Pongo abelii OX=9601 GN=SMNDC1 PE=2 SV=1
+Length=238
+
+ Score = 71.6 bits (174),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 29/58 (50%), Positives = 34/58 (59%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC AIWSEDG  Y A I  ID +  T  + + GYGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAIWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|O75940|SPF30_HUMAN Survival of motor neuron-related-splicing 
+factor 30 OS=Homo sapiens OX=9606 GN=SMNDC1 PE=1 SV=1
+Length=238
+
+ Score = 71.2 bits (173),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 28/58 (48%), Positives = 34/58 (59%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + + GYGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|Q8BGT7|SPF30_MOUSE Survival of motor neuron-related-splicing 
+factor 30 OS=Mus musculus OX=10090 GN=Smndc1 PE=1 SV=1
+Length=238
+
+ Score = 68.1 bits (165),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 27/58 (47%), Positives = 33/58 (57%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + +  YGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAVYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|Q4QQU6|SPF30_RAT Survival of motor neuron-related-splicing 
+factor 30 OS=Rattus norvegicus OX=10116 GN=Smndc1 PE=2 SV=1
+Length=238
+
+ Score = 68.1 bits (165),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 27/58 (47%), Positives = 33/58 (57%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + +  YGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAVYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|Q6DEY1|SPF30_XENTR Survival of motor neuron-related-splicing 
+factor 30 OS=Xenopus tropicalis OX=8364 GN=smndc1 PE=2 SV=1
+Length=238
+
+ Score = 67.3 bits (163),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 27/58 (47%), Positives = 36/58 (62%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            Q WKVG+KC A+WS+DG  Y A I  ID +  T  + + GYGN E  +L + L P+ E
+Sbjct  71   QSWKVGEKCMAVWSDDGQWYEAEIEEIDEENGTAAITFAGYGNAEVTSLLN-LRPVEE  127
+
+
+> sp|Q9VV74|SMN_DROME Survival motor neuron protein OS=Drosophila 
+melanogaster OX=7227 GN=Smn PE=1 SV=1
+Length=226
+
+ Score = 66.2 bits (160),  Expect = 9e-14, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 30/52 (58%), Gaps = 1/52 (2%)
+
+Query  3    QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLL  54
+             +KVGD   A +  DG  Y   + SI+ ++ TCV+ Y GY N +E  L DLL
+Sbjct  69   SFKVGDYARATYV-DGVDYEGAVVSINEEKGTCVLRYLGYENEQEVLLVDLL  119
+
+
+> sp|Q58EK5|TDRD1_DANRE Tudor domain-containing protein 1 OS=Danio 
+rerio OX=7955 GN=tdrd1 PE=1 SV=2
+Length=1175
+
+ Score = 51.9 bits (123),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 30/55 (55%), Gaps = 1/55 (2%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            +VG+ C+  +S D   Y A I ++D  R+T  V Y  +GN E   L D + P+ E
+Sbjct  224  EVGELCAVKFSLDQNWYRAEIQAVDVARKTAGVFYIDFGNEENVAL-DHIRPLSE  277
+
+
+ Score = 48.1 bits (113),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 18/54 (33%), Positives = 27/54 (50%), Gaps = 2/54 (4%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+             G  C +++SED   Y A + +   +   CV  Y  +GN EE  L + L PI +
+Sbjct  456  PGTVCCSLFSEDNQWYRAKVLAYSSEDRVCV-GYIDFGNSEEVEL-NRLRPISK  507
+
+
+ Score = 42.3 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/54 (33%), Positives = 24/54 (44%), Gaps = 2/54 (4%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+             G  C A +S D   Y A +  +  K     V+Y+ YGN E   LS +L    E
+Sbjct  928  PGASCCAQFSGDKNWYRAVVLEVTTKH--AHVIYSDYGNMETVPLSSILPITKE  979
+
+
+> sp|A9CPT4|TDRD1_ORYLA Tudor domain-containing protein 1 OS=Oryzias 
+latipes OX=8090 GN=tdrd1 PE=2 SV=1
+Length=1133
+
+ Score = 46.9 bits (110),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 19/53 (36%), Positives = 27/53 (51%), Gaps = 2/53 (4%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+             G  C A +SED   Y A + +   ++  CV  Y  +GN EE +L + L PI 
+Sbjct  438  PGTVCCAQFSEDKQWYRAQVLAYSTEKSVCV-GYIDFGNSEEVDL-NHLRPIS  488
+
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 16/52 (31%), Positives = 27/52 (52%), Gaps = 1/52 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            VG+ CS  +S D   Y   I ++   ++T  V+Y  YGN E   + + + P+
+Sbjct  207  VGEVCSVQFSXDLNWYRGLIQTLAADQKTAHVLYIDYGNAENVPV-ERIKPL  257
+
+
+ Score = 41.2 bits (95),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 17/49 (35%), Positives = 23/49 (47%), Gaps = 2/49 (4%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLL  54
+             G  C A +S D   Y A I  +     +  VVY  YGN E+  +S +L
+Sbjct  907  PGAACCAQFSVDKIWYRAIILEVGEAEMS--VVYADYGNSEKVPVSQIL  953
+
+
+> sp|P25823|TUD_DROME Maternal protein tudor OS=Drosophila melanogaster 
+OX=7227 GN=tud PE=1 SV=2
+Length=2515
+
+ Score = 43.8 bits (102),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 20/53 (38%), Positives = 26/53 (49%), Gaps = 1/53 (2%)
+
+Query  1     LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+             L+++ VG  C A+ S DG  Y A I+  D       V Y  YGN EE    D+
+Sbjct  1353  LKKFDVGQIC-AVRSSDGNWYRARISGKDSNAACFEVFYIDYGNTEEIKRDDI  1404
+
+
+ Score = 40.4 bits (93),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 20/51 (39%), Positives = 29/51 (57%), Gaps = 2/51 (4%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLS  55
+            ++G  C A +SEDG +Y A + ++  +R    VVY  YGN E  + SDL  
+Sbjct  457  ELGTACVARFSEDGHLYRAMVCAVYAQRYR--VVYVDYGNSELLSASDLFQ  505
+
+
+> sp|Q9BXT4|TDRD1_HUMAN Tudor domain-containing protein 1 OS=Homo 
+sapiens OX=9606 GN=TDRD1 PE=1 SV=2
+Length=1180
+
+ Score = 43.1 bits (100),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 18/48 (38%), Positives = 27/48 (56%), Gaps = 1/48 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            +GD C A +SED   Y A++ +   + E+ +V Y  YGN E  +L  L
+Sbjct  544  IGDICCAQFSEDDQWYRASVLAYASE-ESVLVGYVDYGNFEILSLMRL  590
+
+
+ Score = 39.2 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/49 (31%), Positives = 22/49 (45%), Gaps = 1/49 (2%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            ++G  C A ++ DG  Y A +  I        V +  YGN EE    +L
+Sbjct  764  EIGQPCCAFFAGDGSWYRALVKEI-LPNGHVKVHFVDYGNIEEVTADEL  811
+
+
+ Score = 38.5 bits (88),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/44 (32%), Positives = 23/44 (52%), Gaps = 0/44 (0%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNL  50
+            G+ C A ++ D     A I ++D +++   V+Y  YGN E   L
+Sbjct  316  GEVCIAKYTVDQTWNRAIIQNVDVQQKKAHVLYIDYGNEEIIPL  359
+
+
+ Score = 37.3 bits (85),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 14/46 (30%), Positives = 21/46 (46%), Gaps = 2/46 (4%)
+
+Query  5     KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNL  50
+             ++GD C A ++ D   Y A +  +        V+Y  YGN E   L
+Sbjct  992   RIGDACCAKYTSDDFWYRAVV--LGTSDTDVEVLYADYGNIETLPL  1035
+
+
+> sp|Q99MV1|TDRD1_MOUSE Tudor domain-containing protein 1 OS=Mus 
+musculus OX=10090 GN=Tdrd1 PE=1 SV=2
+Length=1172
+
+ Score = 42.7 bits (99),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 18/48 (38%), Positives = 27/48 (56%), Gaps = 1/48 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            +GD C A +SED   Y A++ +   + E+ +V Y  YGN E  +L  L
+Sbjct  539  IGDVCCAQFSEDDQWYRASVLAYASE-ESVLVGYVDYGNFEILSLKRL  585
+
+
+ Score = 40.8 bits (94),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 15/44 (34%), Positives = 20/44 (45%), Gaps = 1/44 (2%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQ  48
+            ++G  C A +S DG  Y A +  I        V +  YGN EE 
+Sbjct  758  EIGRPCCAFFSGDGNWYRALVKEILPS-GNVKVHFVDYGNVEEV  800
+
+
+ Score = 38.8 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 15/47 (32%), Positives = 22/47 (47%), Gaps = 2/47 (4%)
+
+Query  5     KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLS  51
+             + GD C A ++ D   Y A +  ++       V+Y  YGN E   LS
+Sbjct  984   RTGDACCAKYTNDDFWYRAIV--LETSESDVKVLYADYGNIETLPLS  1028
+
+
+ Score = 37.7 bits (86),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 14/52 (27%), Positives = 25/52 (48%), Gaps = 1/52 (2%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            G+ C A ++ D     A + ++D  +    V+Y  YGN E   + D + P+ 
+Sbjct  311  GEVCVAKYTVDQTWNRAIVQAVDVLQRKAHVLYIDYGNEEMIPI-DSVHPLS  361
+
+
+> sp|P61407|TDRD6_MOUSE Tudor domain-containing protein 6 OS=Mus 
+musculus OX=10090 GN=Tdrd6 PE=1 SV=1
+Length=2134
+
+ Score = 39.6 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 13/46 (28%), Positives = 18/46 (39%), Gaps = 1/46 (2%)
+
+Query  3     QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQ  48
+             QW+ GD   A++ ED   Y A +           V +  YGN    
+Sbjct  1358  QWQSGDVICAVFPEDNLWYRALVME-QQPNGLLSVQFIDYGNMSVV  1402
+
+
+ Score = 37.7 bits (86),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 15/43 (35%), Positives = 21/43 (49%), Gaps = 1/43 (2%)
+
+Query  5     KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREE  47
+             ++GD C   + EDG  Y A I +I    E   V    +GN E+
+Sbjct  1572  QIGDPCIVRYREDGHYYRALITNI-CDGELASVRLVDFGNAED  1613
+
+
+> sp|B5MCY1|TDR15_HUMAN Tudor domain-containing protein 15 OS=Homo 
+sapiens OX=9606 GN=TDRD15 PE=2 SV=1
+Length=1934
+
+ Score = 37.7 bits (86),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 19/62 (31%), Positives = 28/62 (45%), Gaps = 5/62 (8%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSD---LLSPI  57
+            L++ + G  C A +S+D   Y A I  I+  +    V +  YGN +     D   LL   
+Sbjct  529  LRKPEPGLFCCARYSKDRRFYRAVITEINGYKIN--VYFLDYGNTDSIPFFDVKILLPEF  586
+
+Query  58   CE  59
+            CE
+Sbjct  587  CE  588
+
+
+> sp|Q9BXU1|STK31_HUMAN Serine/threonine-protein kinase 31 OS=Homo 
+sapiens OX=9606 GN=STK31 PE=2 SV=2
+Length=1019
+
+ Score = 37.3 bits (85),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 17/43 (40%), Positives = 23/43 (53%), Gaps = 1/43 (2%)
+
+Query  13   IWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLS  55
+            ++SED C Y   +  I    E C+V Y  YGN E  N SD++ 
+Sbjct  88   LFSEDQCWYRCKVLKI-ISVEKCLVRYIDYGNTEILNRSDIVE  129
+
+
+
+Lambda      K        H        a         alpha
+   0.317    0.139    0.417    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0423    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4909514058
+Results from round 3
+
+
+Query= 1MHN
+
+Length=59
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|O18870|SMN_BOVIN Survival motor neuron protein OS=Bos taurus...  103     4e-27
+  sp|P97801|SMN_MOUSE Survival motor neuron protein OS=Mus muscul...  103     4e-27
+  sp|Q4R4F8|SMN_MACFA Survival motor neuron protein OS=Macaca fas...  102     9e-27
+  sp|Q16637|SMN_HUMAN Survival motor neuron protein OS=Homo sapie...  102     1e-26
+  sp|Q5RE18|SMN_PONAB Survival motor neuron protein OS=Pongo abel...  102     1e-26
+  sp|O02771|SMN_CANLF Survival motor neuron protein OS=Canis lupu...  101     3e-26
+  sp|O35876|SMN_RAT Survival motor neuron protein OS=Rattus norve...  99.3    1e-25
+  sp|Q8HYB8|SMN_FELCA Survival of motor neuron protein OS=Felis c...  97.4    7e-25
+  sp|Q9W6S8|SMN1_DANRE Survival motor neuron protein 1 OS=Danio r...  89.3    6e-22
+  sp|Q9H7E2|TDRD3_HUMAN Tudor domain-containing protein 3 OS=Homo...  91.2    1e-21
+  sp|Q66HC1|TDRD3_RAT Tudor domain-containing protein 3 OS=Rattus...  90.9    2e-21
+  sp|Q5ZMS6|TDRD3_CHICK Tudor domain-containing protein 3 OS=Gall...  90.1    3e-21
+  sp|Q2HJG4|TDRD3_BOVIN Tudor domain-containing protein 3 OS=Bos ...  90.1    4e-21
+  sp|Q91W18|TDRD3_MOUSE Tudor domain-containing protein 3 OS=Mus ...  89.7    4e-21
+  sp|Q6P1U3|TDRD3_XENTR Tudor domain-containing protein 3 OS=Xeno...  87.4    3e-20
+  sp|Q6NRP6|TDRD3_XENLA Tudor domain-containing protein 3 OS=Xeno...  86.2    6e-20
+  sp|Q7ZV80|SPF30_DANRE Survival of motor neuron-related-splicing...  82.8    1e-19
+  sp|Q6NYG6|TDRD3_DANRE Tudor domain-containing protein 3 OS=Dani...  83.5    8e-19
+  sp|Q58EK5|TDRD1_DANRE Tudor domain-containing protein 1 OS=Dani...  78.1    7e-17
+  sp|Q3T045|SPF30_BOVIN Survival of motor neuron-related-splicing...  74.7    1e-16
+  sp|O75940|SPF30_HUMAN Survival of motor neuron-related-splicing...  74.3    1e-16
+  sp|Q5R591|SPF30_PONAB Survival of motor neuron-related-splicing...  74.3    1e-16
+  sp|Q6DEY1|SPF30_XENTR Survival of motor neuron-related-splicing...  73.1    4e-16
+  sp|A9CPT4|TDRD1_ORYLA Tudor domain-containing protein 1 OS=Oryz...  76.2    4e-16
+  sp|Q4QQU6|SPF30_RAT Survival of motor neuron-related-splicing f...  71.2    1e-15
+  sp|Q8BGT7|SPF30_MOUSE Survival of motor neuron-related-splicing...  71.2    1e-15
+  sp|P25823|TUD_DROME Maternal protein tudor OS=Drosophila melano...  72.0    1e-14
+  sp|Q9VV74|SMN_DROME Survival motor neuron protein OS=Drosophila...  65.8    1e-13
+  sp|Q9BXT4|TDRD1_HUMAN Tudor domain-containing protein 1 OS=Homo...  68.9    1e-13
+  sp|Q99MV1|TDRD1_MOUSE Tudor domain-containing protein 1 OS=Mus ...  67.7    2e-13
+  sp|P61407|TDRD6_MOUSE Tudor domain-containing protein 6 OS=Mus ...  64.3    5e-12
+
+Sequences not found previously or not previously below threshold:
+
+  sp|O60522|TDRD6_HUMAN Tudor domain-containing protein 6 OS=Homo...  52.3    6e-08
+  sp|Q9FLT0|TSN2_ARATH Ribonuclease TUDOR 2 OS=Arabidopsis thalia...  51.6    1e-07
+  sp|Q8VZG7|TSN1_ARATH Ribonuclease TUDOR 1 OS=Arabidopsis thalia...  50.8    2e-07
+  sp|Q9BXU1|STK31_HUMAN Serine/threonine-protein kinase 31 OS=Hom...  49.6    5e-07
+  sp|Q7KZF4|SND1_HUMAN Staphylococcal nuclease domain-containing ...  49.3    5e-07
+  sp|Q7ZT42|SND1_DANRE Staphylococcal nuclease domain-containing ...  49.3    6e-07
+  sp|Q66X93|SND1_RAT Staphylococcal nuclease domain-containing pr...  49.3    7e-07
+  sp|Q78PY7|SND1_MOUSE Staphylococcal nuclease domain-containing ...  49.3    7e-07
+  sp|Q863B3|SND1_BOVIN Staphylococcal nuclease domain-containing ...  49.3    7e-07
+  sp|Q5REU4|SND1_PONAB Staphylococcal nuclease domain-containing ...  49.3    7e-07
+  sp|Q99MW1|STK31_MOUSE Serine/threonine-protein kinase 31 OS=Mus...  48.1    2e-06
+  sp|H9JD76|TDRKH_BOMMO Tudor and KH domain-containing protein ho...  46.9    3e-06
+  sp|B5MCY1|TDR15_HUMAN Tudor domain-containing protein 15 OS=Hom...  46.6    5e-06
+  sp|Q99MV7|RNF17_MOUSE RING finger protein 17 OS=Mus musculus OX...  42.3    1e-04
+  sp|Q8NAT2|TDRD5_HUMAN Tudor domain-containing protein 5 OS=Homo...  40.0    7e-04
+  sp|Q5VCS6|TDRD5_MOUSE Tudor domain-containing protein 5 OS=Mus ...  40.0    8e-04
+  sp|Q4R3G4|RNF17_MACFA RING finger protein 17 OS=Macaca fascicul...  40.0    9e-04
+  sp|Q9BXT8|RNF17_HUMAN RING finger protein 17 OS=Homo sapiens OX...  39.6    0.001
+  sp|B4F7C4|TDRD5_RAT Tudor domain-containing protein 5 OS=Rattus...  39.2    0.001
+  sp|P0CB22|ATX2_ARATH Histone-lysine N-methyltransferase ATX2 OS...  39.2    0.002
+  sp|A7SBN6|ZGPAT_NEMVE Zinc finger CCCH-type with G patch domain...  38.5    0.002
+  sp|Q6K431|TRX1_ORYSJ Histone-lysine N-methyltransferase TRX1 OS...  38.9    0.002
+  sp|Q80VL1|TDRKH_MOUSE Tudor and KH domain-containing protein OS...  38.5    0.002
+  sp|E1BPH3|TDRD5_BOVIN Tudor domain-containing protein 5 OS=Bos ...  38.5    0.003
+  sp|Q9Y2W6|TDRKH_HUMAN Tudor and KH domain-containing protein OS...  38.1    0.003
+
+
+> sp|O18870|SMN_BOVIN Survival motor neuron protein OS=Bos taurus 
+OX=9913 GN=SMN1 PE=2 SV=2
+Length=287
+
+ Score = 103 bits (257),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 53/58 (91%), Positives = 54/58 (93%), Gaps = 0/58 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            +QWKVGD C AIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSP  E
+Sbjct  85   KQWKVGDNCCAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPTSE  142
+
+
+> sp|P97801|SMN_MOUSE Survival motor neuron protein OS=Mus musculus 
+OX=10090 GN=Smn1 PE=1 SV=1
+Length=288
+
+ Score = 103 bits (257),  Expect = 4e-27, Method: Composition-based stats.
+ Identities = 55/59 (93%), Positives = 57/59 (97%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSA+WSEDGCIYPATI SIDFKRETCVVVYTGYGNREEQNLSDLLSP CE
+Sbjct  86   LKQWKVGDKCSAVWSEDGCIYPATITSIDFKRETCVVVYTGYGNREEQNLSDLLSPTCE  144
+
+
+> sp|Q4R4F8|SMN_MACFA Survival motor neuron protein OS=Macaca fascicularis 
+OX=9541 GN=SMN1 PE=2 SV=1
+Length=294
+
+ Score = 102 bits (255),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 56/59 (95%), Positives = 58/59 (98%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSAIWSEDGCIYPATIAS+DFKRETCVVVYTGYGNREEQNLSDLLSPI E
+Sbjct  89   LKQWKVGDKCSAIWSEDGCIYPATIASVDFKRETCVVVYTGYGNREEQNLSDLLSPISE  147
+
+
+> sp|Q16637|SMN_HUMAN Survival motor neuron protein OS=Homo sapiens 
+OX=9606 GN=SMN1 PE=1 SV=1
+Length=294
+
+ Score = 102 bits (255),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 59/59 (100%), Positives = 59/59 (100%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE
+Sbjct  89   LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  147
+
+
+> sp|Q5RE18|SMN_PONAB Survival motor neuron protein OS=Pongo abelii 
+OX=9601 GN=SMN1 PE=2 SV=1
+Length=294
+
+ Score = 102 bits (254),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 59/59 (100%), Positives = 59/59 (100%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE
+Sbjct  89   LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  147
+
+
+> sp|O02771|SMN_CANLF Survival motor neuron protein OS=Canis lupus 
+familiaris OX=9615 GN=SMN1 PE=2 SV=1
+Length=287
+
+ Score = 101 bits (251),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 55/59 (93%), Positives = 58/59 (98%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWKVGDKCSA+WSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQN+SDLLSP CE
+Sbjct  84   LKQWKVGDKCSAVWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNVSDLLSPACE  142
+
+
+> sp|O35876|SMN_RAT Survival motor neuron protein OS=Rattus norvegicus 
+OX=10116 GN=Smn1 PE=1 SV=1
+Length=289
+
+ Score = 99.3 bits (246),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 50/59 (85%), Positives = 55/59 (93%), Gaps = 0/59 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            L+QWK GDKCSA+WSEDGC+YPATI S+D KRETCVVVYTGYGN+EEQNLSDLLSP CE
+Sbjct  87   LKQWKAGDKCSAVWSEDGCVYPATITSVDLKRETCVVVYTGYGNKEEQNLSDLLSPTCE  145
+
+
+> sp|Q8HYB8|SMN_FELCA Survival of motor neuron protein OS=Felis 
+catus OX=9685 GN=SMN1 PE=2 SV=1
+Length=290
+
+ Score = 97.4 bits (241),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 53/58 (91%), Positives = 56/58 (97%), Gaps = 0/58 (0%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            L+QWKVGDKCSAIWSEDGC+YPATIASIDFKRETCVVVYTGYGNREEQN+SDLLSP  
+Sbjct  86   LKQWKVGDKCSAIWSEDGCVYPATIASIDFKRETCVVVYTGYGNREEQNVSDLLSPAS  143
+
+
+> sp|Q9W6S8|SMN1_DANRE Survival motor neuron protein 1 OS=Danio 
+rerio OX=7955 GN=smn1 PE=1 SV=1
+Length=281
+
+ Score = 89.3 bits (220),  Expect = 6e-22, Method: Composition-based stats.
+ Identities = 35/54 (65%), Positives = 43/54 (80%), Gaps = 0/54 (0%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLS  55
+            ++W+VGD C A WSEDG +Y ATI S+D ++ TCVV YT YGN EEQNLSDLL+
+Sbjct  79   KEWQVGDSCYAFWSEDGNLYTATITSVDQEKGTCVVFYTDYGNEEEQNLSDLLT  132
+
+
+> sp|Q9H7E2|TDRD3_HUMAN Tudor domain-containing protein 3 OS=Homo 
+sapiens OX=9606 GN=TDRD3 PE=1 SV=1
+Length=651
+
+ Score = 91.2 bits (225),  Expect = 1e-21, Method: Composition-based stats.
+ Identities = 22/57 (39%), Positives = 32/57 (56%), Gaps = 1/57 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            + WK GD+C A++ ED   Y A + ++     T VV +  YGN EE  LS+ + PI 
+Sbjct  554  KMWKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFIDYGNYEEVLLSN-IKPIQ  609
+
+
+> sp|Q66HC1|TDRD3_RAT Tudor domain-containing protein 3 OS=Rattus 
+norvegicus OX=10116 GN=Tdrd3 PE=1 SV=1
+Length=651
+
+ Score = 90.9 bits (224),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 22/57 (39%), Positives = 33/57 (58%), Gaps = 1/57 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            + WK GD+C A++ ED   Y A + ++     T VV +T YGN EE  LS+ + P+ 
+Sbjct  554  KMWKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFTDYGNYEEVLLSN-IKPVQ  609
+
+
+> sp|Q5ZMS6|TDRD3_CHICK Tudor domain-containing protein 3 OS=Gallus 
+gallus OX=9031 GN=TDRD3 PE=2 SV=1
+Length=741
+
+ Score = 90.1 bits (222),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 21/56 (38%), Positives = 33/56 (59%), Gaps = 1/56 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            + W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  LS+ + PI
+Sbjct  643  KTWRPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFSDYGNYEEVLLSN-IRPI  697
+
+
+> sp|Q2HJG4|TDRD3_BOVIN Tudor domain-containing protein 3 OS=Bos 
+taurus OX=9913 GN=TDRD3 PE=2 SV=1
+Length=722
+
+ Score = 90.1 bits (222),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 22/57 (39%), Positives = 32/57 (56%), Gaps = 1/57 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            + WK GD+C A++ ED   Y A + ++     T VV +  YGN EE  LS+ + PI 
+Sbjct  625  KLWKSGDECLALYWEDNKFYRAEVEALHSSGMTAVVKFIDYGNYEEVLLSN-IRPIQ  680
+
+
+> sp|Q91W18|TDRD3_MOUSE Tudor domain-containing protein 3 OS=Mus 
+musculus OX=10090 GN=Tdrd3 PE=1 SV=4
+Length=743
+
+ Score = 89.7 bits (221),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 22/57 (39%), Positives = 33/57 (58%), Gaps = 1/57 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            + WK GD+C A++ ED   Y A + ++     T VV +T YGN EE  LS+ + P+ 
+Sbjct  646  KVWKPGDECFALYWEDNKFYRAEVEALHSSGMTAVVKFTDYGNYEEVLLSN-IKPVQ  701
+
+
+> sp|Q6P1U3|TDRD3_XENTR Tudor domain-containing protein 3 OS=Xenopus 
+tropicalis OX=8364 GN=tdrd3 PE=2 SV=2
+Length=710
+
+ Score = 87.4 bits (215),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 20/56 (36%), Positives = 31/56 (55%), Gaps = 1/56 (2%)
+
+Query  3    QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+             W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  L + + PI 
+Sbjct  617  SWRPGDECLALYWEDNKYYRAEVEALHSSGTTAVVKFSDYGNYEEVLLEN-IRPIQ  671
+
+
+> sp|Q6NRP6|TDRD3_XENLA Tudor domain-containing protein 3 OS=Xenopus 
+laevis OX=8355 GN=tdrd3 PE=2 SV=1
+Length=650
+
+ Score = 86.2 bits (212),  Expect = 6e-20, Method: Composition-based stats.
+ Identities = 20/56 (36%), Positives = 31/56 (55%), Gaps = 1/56 (2%)
+
+Query  3    QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+             W+ GD+C A++ ED   Y A + ++     T VV ++ YGN EE  L + + PI 
+Sbjct  554  SWRSGDECLALYWEDNKYYRAEVEALHSSGTTAVVKFSDYGNYEEVLLEN-IRPIQ  608
+
+
+> sp|Q7ZV80|SPF30_DANRE Survival of motor neuron-related-splicing 
+factor 30 OS=Danio rerio OX=7955 GN=smndc1 PE=2 SV=1
+Length=237
+
+ Score = 82.8 bits (203),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 24/58 (41%), Positives = 32/58 (55%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              W+VGD C A WS+DG +Y A I  ID +  T  + + GYGN E   L  +L  + E
+Sbjct  71   HSWRVGDHCMATWSQDGQVYEAEIEEIDNENGTAAITFAGYGNAEVMPL-HMLKKVEE  127
+
+
+> sp|Q6NYG6|TDRD3_DANRE Tudor domain-containing protein 3 OS=Danio 
+rerio OX=7955 GN=tdrd3 PE=2 SV=1
+Length=733
+
+ Score = 83.5 bits (205),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 23/54 (43%), Positives = 32/54 (59%), Gaps = 1/54 (2%)
+
+Query  4    WKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            WK GD+C A++ ED   Y A I ++     T VVV++ YGN EE  L D + P+
+Sbjct  640  WKAGDQCLALYWEDNKFYRARIDAVHPSGSTAVVVFSDYGNCEEVLL-DSIKPL  692
+
+
+> sp|Q58EK5|TDRD1_DANRE Tudor domain-containing protein 1 OS=Danio 
+rerio OX=7955 GN=tdrd1 PE=1 SV=2
+Length=1175
+
+ Score = 78.1 bits (191),  Expect = 7e-17, Method: Composition-based stats.
+ Identities = 20/55 (36%), Positives = 30/55 (55%), Gaps = 1/55 (2%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            +VG+ C+  +S D   Y A I ++D  R+T  V Y  +GN E   L D + P+ E
+Sbjct  224  EVGELCAVKFSLDQNWYRAEIQAVDVARKTAGVFYIDFGNEENVAL-DHIRPLSE  277
+
+
+ Score = 70.8 bits (172),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 18/54 (33%), Positives = 27/54 (50%), Gaps = 2/54 (4%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+             G  C +++SED   Y A + +   +   C V Y  +GN EE  L + L PI +
+Sbjct  456  PGTVCCSLFSEDNQWYRAKVLAYSSEDRVC-VGYIDFGNSEEVEL-NRLRPISK  507
+
+
+ Score = 57.7 bits (138),  Expect = 9e-10, Method: Composition-based stats.
+ Identities = 18/54 (33%), Positives = 24/54 (44%), Gaps = 2/54 (4%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+             G  C A +S D   Y A +  +  K     V+Y+ YGN E   LS +L    E
+Sbjct  928  PGASCCAQFSGDKNWYRAVVLEVTTKH--AHVIYSDYGNMETVPLSSILPITKE  979
+
+
+ Score = 49.3 bits (116),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 13/48 (27%), Positives = 24/48 (50%), Gaps = 1/48 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            VG+ C A+++ D   Y A +  +  + +   V +  YGN  E + + L
+Sbjct  677  VGEPCCALFTGDARWYRAMVLEVCGEGK-ARVCFVDYGNSCEVDAAHL  723
+
+
+> sp|Q3T045|SPF30_BOVIN Survival of motor neuron-related-splicing 
+factor 30 OS=Bos taurus OX=9913 GN=SMNDC1 PE=2 SV=1
+Length=238
+
+ Score = 74.7 bits (182),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 29/58 (50%), Positives = 34/58 (59%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC AIWSEDG  Y A I  ID +  T  + + GYGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAIWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|O75940|SPF30_HUMAN Survival of motor neuron-related-splicing 
+factor 30 OS=Homo sapiens OX=9606 GN=SMNDC1 PE=1 SV=1
+Length=238
+
+ Score = 74.3 bits (181),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 28/58 (48%), Positives = 34/58 (59%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + + GYGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|Q5R591|SPF30_PONAB Survival of motor neuron-related-splicing 
+factor 30 OS=Pongo abelii OX=9601 GN=SMNDC1 PE=2 SV=1
+Length=238
+
+ Score = 74.3 bits (181),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 29/58 (50%), Positives = 34/58 (59%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC AIWSEDG  Y A I  ID +  T  + + GYGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAIWSEDGQCYEAEIEEIDEENGTAAITFAGYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|Q6DEY1|SPF30_XENTR Survival of motor neuron-related-splicing 
+factor 30 OS=Xenopus tropicalis OX=8364 GN=smndc1 PE=2 SV=1
+Length=238
+
+ Score = 73.1 bits (178),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 27/58 (47%), Positives = 36/58 (62%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+            Q WKVG+KC A+WS+DG  Y A I  ID +  T  + + GYGN E  +L + L P+ E
+Sbjct  71   QSWKVGEKCMAVWSDDGQWYEAEIEEIDEENGTAAITFAGYGNAEVTSLLN-LRPVEE  127
+
+
+> sp|A9CPT4|TDRD1_ORYLA Tudor domain-containing protein 1 OS=Oryzias 
+latipes OX=8090 GN=tdrd1 PE=2 SV=1
+Length=1133
+
+ Score = 76.2 bits (186),  Expect = 4e-16, Method: Composition-based stats.
+ Identities = 19/53 (36%), Positives = 27/53 (51%), Gaps = 2/53 (4%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+             G  C A +SED   Y A + +   ++  C V Y  +GN EE +L + L PI 
+Sbjct  438  PGTVCCAQFSEDKQWYRAQVLAYSTEKSVC-VGYIDFGNSEEVDL-NHLRPIS  488
+
+
+ Score = 58.5 bits (140),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 16/52 (31%), Positives = 26/52 (50%), Gaps = 1/52 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            VG+ CS  +S D   Y   I ++   ++T  V+Y  YGN E   +   + P+
+Sbjct  207  VGEVCSVQFSXDLNWYRGLIQTLAADQKTAHVLYIDYGNAENVPVER-IKPL  257
+
+
+ Score = 55.0 bits (131),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 17/49 (35%), Positives = 23/49 (47%), Gaps = 2/49 (4%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLL  54
+             G  C A +S D   Y A I  +     +  VVY  YGN E+  +S +L
+Sbjct  907  PGAACCAQFSVDKIWYRAIILEVGEAEMS--VVYADYGNSEKVPVSQIL  953
+
+
+ Score = 42.7 bits (99),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 11/39 (28%), Positives = 18/39 (46%), Gaps = 2/39 (5%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYG  43
+            KVG+ C   +S DG  Y A +  +    +   V +  +G
+Sbjct  658  KVGEPCCVKFSGDGKWYRAMVKEL--LGDVVKVNFVDFG  694
+
+
+> sp|Q4QQU6|SPF30_RAT Survival of motor neuron-related-splicing 
+factor 30 OS=Rattus norvegicus OX=10116 GN=Smndc1 PE=2 SV=1
+Length=238
+
+ Score = 71.2 bits (173),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 27/58 (47%), Positives = 33/58 (57%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + +  YGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAVYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|Q8BGT7|SPF30_MOUSE Survival of motor neuron-related-splicing 
+factor 30 OS=Mus musculus OX=10090 GN=Smndc1 PE=1 SV=1
+Length=238
+
+ Score = 71.2 bits (173),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 27/58 (47%), Positives = 33/58 (57%), Gaps = 1/58 (2%)
+
+Query  2    QQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPICE  59
+              WKVGDKC A+WSEDG  Y A I  ID +  T  + +  YGN E   L + L P+ E
+Sbjct  71   HSWKVGDKCMAVWSEDGQCYEAEIEEIDEENGTAAITFAVYGNAEVTPLLN-LKPVEE  127
+
+
+> sp|P25823|TUD_DROME Maternal protein tudor OS=Drosophila melanogaster 
+OX=7227 GN=tud PE=1 SV=2
+Length=2515
+
+ Score = 72.0 bits (175),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 20/53 (38%), Positives = 26/53 (49%), Gaps = 1/53 (2%)
+
+Query  1     LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+             L+++ VG  C A+ S DG  Y A I+  D       V Y  YGN EE    D+
+Sbjct  1353  LKKFDVGQIC-AVRSSDGNWYRARISGKDSNAACFEVFYIDYGNTEEIKRDDI  1404
+
+
+ Score = 50.4 bits (119),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 20/51 (39%), Positives = 29/51 (57%), Gaps = 2/51 (4%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLS  55
+            ++G  C A +SEDG +Y A + ++  +R    VVY  YGN E  + SDL  
+Sbjct  457  ELGTACVARFSEDGHLYRAMVCAVYAQR--YRVVYVDYGNSELLSASDLFQ  505
+
+
+ Score = 43.9 bits (102),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 13/40 (33%), Positives = 17/40 (43%), Gaps = 1/40 (3%)
+
+Query  5     KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGN  44
+             K G  C A + ED   Y A I  +      C V +  +GN
+Sbjct  2394  KEGALCVAQFPEDEVFYRAQIRKV-LDDGKCEVHFIDFGN  2432
+
+
+ Score = 41.9 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 13/43 (30%), Positives = 21/43 (49%), Gaps = 4/43 (9%)
+
+Query  7     GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQN  49
+             G  C +++S D C Y A I       E  V+++  YGN +  +
+Sbjct  1666  GADCVSMYSVDKCWYRAKII----DAELMVLLFIDYGNTDCVS  1704
+
+
+ Score = 38.5 bits (88),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 10/49 (20%), Positives = 22/49 (45%), Gaps = 1/49 (2%)
+
+Query  1     LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQN  49
+             L+ ++ G   +A++ +D   Y A +   +       V++  YGN    +
+Sbjct  1837  LEGFEKGLIVAALFEDDELWYRAQLQ-KELPDSRYEVLFIDYGNTSTTS  1884
+
+
+> sp|Q9VV74|SMN_DROME Survival motor neuron protein OS=Drosophila 
+melanogaster OX=7227 GN=Smn PE=1 SV=1
+Length=226
+
+ Score = 65.8 bits (159),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 30/52 (58%), Gaps = 1/52 (2%)
+
+Query  3    QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLL  54
+             +KVGD   A +  DG  Y   + SI+ ++ TCV+ Y GY N +E  L DLL
+Sbjct  69   SFKVGDYARATYV-DGVDYEGAVVSINEEKGTCVLRYLGYENEQEVLLVDLL  119
+
+
+> sp|Q9BXT4|TDRD1_HUMAN Tudor domain-containing protein 1 OS=Homo 
+sapiens OX=9606 GN=TDRD1 PE=1 SV=2
+Length=1180
+
+ Score = 68.9 bits (167),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 18/48 (38%), Positives = 27/48 (56%), Gaps = 1/48 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            +GD C A +SED   Y A++ +   + E+ +V Y  YGN E  +L  L
+Sbjct  544  IGDICCAQFSEDDQWYRASVLAYASE-ESVLVGYVDYGNFEILSLMRL  590
+
+
+ Score = 54.3 bits (129),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 17/54 (31%), Positives = 24/54 (44%), Gaps = 2/54 (4%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            ++G  C A ++ DG  Y A +  I        V +  YGN EE   +D L  I 
+Sbjct  764  EIGQPCCAFFAGDGSWYRALVKEI-LPNGHVKVHFVDYGNIEEVT-ADELRMIS  815
+
+
+ Score = 52.3 bits (124),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 14/47 (30%), Positives = 25/47 (53%), Gaps = 0/47 (0%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            G+ C A ++ D     A I ++D +++   V+Y  YGN E   L+ +
+Sbjct  316  GEVCIAKYTVDQTWNRAIIQNVDVQQKKAHVLYIDYGNEEIIPLNRI  362
+
+
+ Score = 51.9 bits (123),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 16/54 (30%), Positives = 23/54 (43%), Gaps = 3/54 (6%)
+
+Query  5     KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+             ++GD C A ++ D   Y A +           V+Y  YGN E   L   + PI 
+Sbjct  992   RIGDACCAKYTSDDFWYRAVVLG--TSDTDVEVLYADYGNIETLPLCR-VQPIT  1042
+
+
+> sp|Q99MV1|TDRD1_MOUSE Tudor domain-containing protein 1 OS=Mus 
+musculus OX=10090 GN=Tdrd1 PE=1 SV=2
+Length=1172
+
+ Score = 67.7 bits (164),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 18/48 (38%), Positives = 27/48 (56%), Gaps = 1/48 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            +GD C A +SED   Y A++ +   + E+ +V Y  YGN E  +L  L
+Sbjct  539  IGDVCCAQFSEDDQWYRASVLAYASE-ESVLVGYVDYGNFEILSLKRL  585
+
+
+ Score = 55.0 bits (131),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 16/49 (33%), Positives = 21/49 (43%), Gaps = 1/49 (2%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            ++G  C A +S DG  Y A +  I        V +  YGN EE     L
+Sbjct  758  EIGRPCCAFFSGDGNWYRALVKEI-LPSGNVKVHFVDYGNVEEVTTDQL  805
+
+
+ Score = 52.3 bits (124),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 17/53 (32%), Positives = 23/53 (43%), Gaps = 3/53 (6%)
+
+Query  5     KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+             + GD C A ++ D   Y A +           V+Y  YGN E   LS  + PI
+Sbjct  984   RTGDACCAKYTNDDFWYRAIVLETSESD--VKVLYADYGNIETLPLSR-VQPI  1033
+
+
+ Score = 50.8 bits (120),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 14/52 (27%), Positives = 25/52 (48%), Gaps = 1/52 (2%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+            G+ C A ++ D     A + ++D  +    V+Y  YGN E   + D + P+ 
+Sbjct  311  GEVCVAKYTVDQTWNRAIVQAVDVLQRKAHVLYIDYGNEEMIPI-DSVHPLS  361
+
+
+> sp|P61407|TDRD6_MOUSE Tudor domain-containing protein 6 OS=Mus 
+musculus OX=10090 GN=Tdrd6 PE=1 SV=1
+Length=2134
+
+ Score = 64.3 bits (155),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 16/57 (28%), Positives = 23/57 (40%), Gaps = 3/57 (5%)
+
+Query  3     QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQ--NLSDLLSPI  57
+             QW+ GD   A++ ED   Y A +           V +  YGN      N +  L P+
+Sbjct  1358  QWQSGDVICAVFPEDNLWYRALVME-QQPNGLLSVQFIDYGNMSVVHTNRTGRLGPV  1413
+
+
+ Score = 43.9 bits (102),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 15/43 (35%), Positives = 21/43 (49%), Gaps = 1/43 (2%)
+
+Query  5     KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREE  47
+             ++GD C   + EDG  Y A I +I    E   V    +GN E+
+Sbjct  1572  QIGDPCIVRYREDGHYYRALITNI-CDGELASVRLVDFGNAED  1613
+
+
+ Score = 42.3 bits (98),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 14/52 (27%), Positives = 20/52 (38%), Gaps = 7/52 (13%)
+
+Query  6     VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+              G  C A ++ DG  Y   I   +  +    V +  +GN       D L PI
+Sbjct  1041  PGTLCLARYT-DGNWYRGIIIEKEPSK----VFFVDFGNTYIA--VDHLLPI  1085
+
+
+ Score = 41.2 bits (95),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 15/49 (31%), Positives = 22/49 (45%), Gaps = 3/49 (6%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            +  D C   W E+G  Y AT+  +D K  +  V     GN E  +  D+
+Sbjct  544  EPDDLCCVKWKENG-YYRATVTRLDSK--SVDVFLVDRGNSENVDWCDV  589
+
+
+ Score = 39.2 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 14/49 (29%), Positives = 20/49 (41%), Gaps = 1/49 (2%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            K G  C A    DG  Y A +      +    V++  YG +E  + S L
+Sbjct  311  KPGSPC-ASCGLDGQWYRALLLETFRPQRCAQVLHVDYGRKELVSCSSL  358
+
+
+> sp|O60522|TDRD6_HUMAN Tudor domain-containing protein 6 OS=Homo 
+sapiens OX=9606 GN=TDRD6 PE=2 SV=2
+Length=2096
+
+ Score = 52.3 bits (124),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 12/42 (29%), Positives = 16/42 (38%), Gaps = 1/42 (2%)
+
+Query  7     GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQ  48
+             GD   A++ ED   Y A I       +   V +  YGN    
+Sbjct  1356  GDMICAVFPEDNLWYRAVIKE-QQPNDLLSVQFIDYGNVSVV  1396
+
+
+ Score = 43.9 bits (102),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 13/49 (27%), Positives = 20/49 (41%), Gaps = 5/49 (10%)
+
+Query  6     VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLL  54
+              G  C A ++ DG  Y   +   + K+    V +  +GN       DLL
+Sbjct  1036  PGTLCLAKYT-DGNWYRGIVIEKEPKK----VFFVDFGNIYVVTSDDLL  1079
+
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/42 (33%), Positives = 20/42 (48%), Gaps = 1/42 (2%)
+
+Query  6     VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREE  47
+             +GD C   + EDG  Y A I +I  +     V    +GN E+
+Sbjct  1570  IGDPCIVRYREDGHYYRALITNI-CEDYLVSVRLVDFGNIED  1610
+
+
+> sp|Q9FLT0|TSN2_ARATH Ribonuclease TUDOR 2 OS=Arabidopsis thaliana 
+OX=3702 GN=TSN2 PE=1 SV=1
+Length=985
+
+ Score = 51.6 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 17/58 (29%), Positives = 23/58 (40%), Gaps = 6/58 (10%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIA-----SIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            K GD   A +S D     A I      ++    E   V Y  YGN+E    S  + P+
+Sbjct  780  KKGDIVLAQFSLDNSWNRAMIVNGPRGAVQSPEEEFEVFYIDYGNQEIVPYS-AIRPV  836
+
+
+> sp|Q8VZG7|TSN1_ARATH Ribonuclease TUDOR 1 OS=Arabidopsis thaliana 
+OX=3702 GN=TSN1 PE=1 SV=1
+Length=991
+
+ Score = 50.8 bits (120),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 19/58 (33%), Positives = 24/58 (41%), Gaps = 6/58 (10%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATI-----ASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+            K GD   A +S D     A I     A++    E   V Y  YGN+E    S  + PI
+Sbjct  784  KRGDIVLAQFSLDNSWNRAMIVTAPRAAVQSPDEKFEVFYIDYGNQETVPYS-AIRPI  840
+
+
+> sp|Q9BXU1|STK31_HUMAN Serine/threonine-protein kinase 31 OS=Homo 
+sapiens OX=9606 GN=STK31 PE=2 SV=2
+Length=1019
+
+ Score = 49.6 bits (117),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 18/47 (38%), Positives = 25/47 (53%), Gaps = 2/47 (4%)
+
+Query  13   IWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLS-PIC  58
+            ++SED C Y   +  I    E C+V Y  YGN E  N SD++  P+ 
+Sbjct  88   LFSEDQCWYRCKVLKI-ISVEKCLVRYIDYGNTEILNRSDIVEIPLE  133
+
+
+> sp|Q7KZF4|SND1_HUMAN Staphylococcal nuclease domain-containing 
+protein 1 OS=Homo sapiens OX=9606 GN=SND1 PE=1 SV=1
+Length=910
+
+ Score = 49.3 bits (116),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 18/52 (35%), Positives = 25/52 (48%), Gaps = 4/52 (8%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL--LSP  56
+            G+ C A +  DG  Y A +  ++   +   V Y  YGNRE    + L  LSP
+Sbjct  733  GEFCIAKFV-DGEWYRARVEKVESPAKI-HVFYIDYGNREVLPSTRLGTLSP  782
+
+
+> sp|Q7ZT42|SND1_DANRE Staphylococcal nuclease domain-containing 
+protein 1 OS=Danio rerio OX=7955 GN=snd1 PE=2 SV=1
+Length=897
+
+ Score = 49.3 bits (116),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 15/47 (32%), Positives = 24/47 (51%), Gaps = 2/47 (4%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            G+ C A ++ DG  Y A +  ++   +   V Y  YGNRE  + + L
+Sbjct  736  GEFCIAKFA-DGEWYRARVEKVESPAKV-HVFYIDYGNREVLSSTRL  780
+
+
+> sp|Q66X93|SND1_RAT Staphylococcal nuclease domain-containing 
+protein 1 OS=Rattus norvegicus OX=10116 GN=Snd1 PE=1 SV=1
+Length=909
+
+ Score = 49.3 bits (116),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 15/47 (32%), Positives = 22/47 (47%), Gaps = 2/47 (4%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            G+ C A +  DG  Y A +  ++   +   V Y  YGNRE    + L
+Sbjct  732  GEFCIAKFV-DGEWYRARVEKVESPAKV-HVFYIDYGNREILPSTRL  776
+
+
+> sp|Q78PY7|SND1_MOUSE Staphylococcal nuclease domain-containing 
+protein 1 OS=Mus musculus OX=10090 GN=Snd1 PE=1 SV=1
+Length=910
+
+ Score = 49.3 bits (116),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 15/47 (32%), Positives = 22/47 (47%), Gaps = 2/47 (4%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            G+ C A +  DG  Y A +  ++   +   V Y  YGNRE    + L
+Sbjct  733  GEFCIAKFV-DGEWYRARVEKVESPAKV-HVFYIDYGNREILPSTRL  777
+
+
+> sp|Q863B3|SND1_BOVIN Staphylococcal nuclease domain-containing 
+protein 1 OS=Bos taurus OX=9913 GN=SND1 PE=1 SV=1
+Length=910
+
+ Score = 49.3 bits (116),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 15/47 (32%), Positives = 22/47 (47%), Gaps = 2/47 (4%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            G+ C A +  DG  Y A +  ++   +   V Y  YGNRE    + L
+Sbjct  733  GEFCIAKFV-DGEWYRARVEKVESPAKV-HVFYIDYGNREILPSTRL  777
+
+
+> sp|Q5REU4|SND1_PONAB Staphylococcal nuclease domain-containing 
+protein 1 OS=Pongo abelii OX=9601 GN=SND1 PE=2 SV=1
+Length=910
+
+ Score = 49.3 bits (116),  Expect = 7e-07, Method: Composition-based stats.
+ Identities = 15/47 (32%), Positives = 22/47 (47%), Gaps = 2/47 (4%)
+
+Query  7    GDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            G+ C A +  DG  Y A +  ++   +   V Y  YGNRE    + L
+Sbjct  733  GEFCIAKFV-DGEWYRARVEKVESPAKI-HVFYIDYGNREVLPSTRL  777
+
+
+> sp|Q99MW1|STK31_MOUSE Serine/threonine-protein kinase 31 OS=Mus 
+musculus OX=10090 GN=Stk31 PE=1 SV=2
+Length=1018
+
+ Score = 48.1 bits (113),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 15/43 (35%), Positives = 22/43 (51%), Gaps = 1/43 (2%)
+
+Query  13   IWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLS  55
+            ++SED C Y   +       + C+V Y  YGN E  N SD++ 
+Sbjct  88   LFSEDKCWYRCKVLKTISDDK-CLVRYIDYGNTEILNRSDIVE  129
+
+
+> sp|H9JD76|TDRKH_BOMMO Tudor and KH domain-containing protein 
+homolog OS=Bombyx mori OX=7091 GN=PAPI PE=1 SV=2
+Length=629
+
+ Score = 46.9 bits (110),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 17/67 (25%), Positives = 26/67 (39%), Gaps = 12/67 (18%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATI-----ASIDFKRETCVVVYTGYGNREEQ-------  48
+            L+   VG   +A++  DG  Y A +        D  ++   V Y  YG+ E         
+Sbjct  295  LRHVSVGQVVAAVFRHDGRWYRARVHDIRPNEFDSSQQVADVFYLDYGDSEYVATHELCE  354
+
+Query  49   NLSDLLS  55
+              +DLL 
+Sbjct  355  LRADLLR  361
+
+
+> sp|B5MCY1|TDR15_HUMAN Tudor domain-containing protein 15 OS=Homo 
+sapiens OX=9606 GN=TDRD15 PE=2 SV=1
+Length=1934
+
+ Score = 46.6 bits (109),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 15/53 (28%), Positives = 25/53 (47%), Gaps = 2/53 (4%)
+
+Query  1    LQQWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            L++ + G  C A +S+D   Y A I  I+  +    V +  YGN +     D+
+Sbjct  529  LRKPEPGLFCCARYSKDRRFYRAVITEINGYK--INVYFLDYGNTDSIPFFDV  579
+
+
+ Score = 43.5 bits (101),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 17/48 (35%), Positives = 21/48 (44%), Gaps = 1/48 (2%)
+
+Query  6     VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+             VGD   A +S D  IY A I  I     +  V +  YGN    N S +
+Sbjct  1345  VGDLVVAEYSGDNAIYRAVIKKI-LPGNSFEVEFIDYGNSAIVNTSKI  1391
+
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 13/50 (26%), Positives = 21/50 (42%), Gaps = 2/50 (4%)
+
+Query  9     KCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPIC  58
+              C + + EDG  Y A     D   E   V +  +GN++     ++L  I 
+Sbjct  1017  VCISKYVEDGLSYRALAIPTDSSSE-FQVYFVDFGNKQLVG-ENMLRAIS  1064
+
+
+> sp|Q99MV7|RNF17_MOUSE RING finger protein 17 OS=Mus musculus 
+OX=10090 GN=Rnf17 PE=1 SV=2
+Length=1640
+
+ Score = 42.3 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 15/46 (33%), Positives = 21/46 (46%), Gaps = 2/46 (4%)
+
+Query  8    DKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+              C A + EDG  Y A +  +   RE   V Y  +GN  +  L D+
+Sbjct  756  QACVAKF-EDGIWYRAKVIGLPGHREV-EVKYVDFGNTAKITLKDM  799
+
+
+ Score = 40.8 bits (94),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 15/55 (27%), Positives = 21/55 (38%), Gaps = 4/55 (7%)
+
+Query  3     QWKVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDLLSPI  57
+              WK G+ C A+   D   Y   +  +     T  V Y  +G  E+      L PI
+Sbjct  1246  SWKKGEPC-AVRGSDTLWYRGKVMEV--VGGTIRVQYLDHGFTEKIPQC-HLYPI  1296
+
+
+> sp|Q8NAT2|TDRD5_HUMAN Tudor domain-containing protein 5 OS=Homo 
+sapiens OX=9606 GN=TDRD5 PE=1 SV=3
+Length=981
+
+ Score = 40.0 bits (92),  Expect = 7e-04, Method: Composition-based stats.
+ Identities = 13/49 (27%), Positives = 19/49 (39%), Gaps = 1/49 (2%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            + G  C    SED   Y   I  +  +++   V Y  +GN      S L
+Sbjct  527  QPGHLCCVRISEDKWWYRVIIHRV-LEKQEVEVFYPDFGNIGIVQKSSL  574
+
+
+> sp|Q5VCS6|TDRD5_MOUSE Tudor domain-containing protein 5 OS=Mus 
+musculus OX=10090 GN=Tdrd5 PE=1 SV=3
+Length=1040
+
+ Score = 40.0 bits (92),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 14/40 (35%), Positives = 17/40 (43%), Gaps = 1/40 (3%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGN  44
+            + G  C    SED   Y   I  I  K+E   V Y  +GN
+Sbjct  535  QPGHLCCVKISEDKWWYRVIIHRILGKKEV-EVFYPDFGN  573
+
+
+> sp|Q4R3G4|RNF17_MACFA RING finger protein 17 OS=Macaca fascicularis 
+OX=9541 GN=RNF17 PE=2 SV=2
+Length=1534
+
+ Score = 40.0 bits (92),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 13/46 (28%), Positives = 21/46 (46%), Gaps = 2/46 (4%)
+
+Query  8    DKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+              C A + EDG  Y A +  +   +E   V Y  +GN  +  + D+
+Sbjct  642  QVCVAKF-EDGIWYRAKVIGLPGHQEV-EVKYVDFGNTAKITIKDV  685
+
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 15/47 (32%), Positives = 24/47 (51%), Gaps = 2/47 (4%)
+
+Query  10    CSAIWSEDGCIYPATIASI-DFKRETCVVVYTGYGNREEQNLSDLLS  55
+             C A + +DG  Y A I SI +F   + +V +  YG+  +  L+ L  
+Sbjct  1397  CLAEY-DDGLWYRAKIVSIKEFNPLSILVQFVDYGSTAKLTLNRLCQ  1442
+
+
+> sp|Q9BXT8|RNF17_HUMAN RING finger protein 17 OS=Homo sapiens 
+OX=9606 GN=RNF17 PE=1 SV=3
+Length=1623
+
+ Score = 39.6 bits (91),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 13/48 (27%), Positives = 21/48 (44%), Gaps = 1/48 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            V D+      EDG  Y A +  +   +E   V Y  +GN  +  + D+
+Sbjct  728  VQDQACVAKFEDGIWYRAKVIGLPGHQEV-EVKYVDFGNTAKITIKDV  774
+
+
+ Score = 39.2 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/47 (30%), Positives = 24/47 (51%), Gaps = 2/47 (4%)
+
+Query  10    CSAIWSEDGCIYPATIASI-DFKRETCVVVYTGYGNREEQNLSDLLS  55
+             C A + +DG  Y A I +I +F   + +V +  YG+  +  L+ L  
+Sbjct  1486  CLAEY-DDGLWYRAKIVAIKEFNPLSILVQFVDYGSTAKLTLNRLCQ  1531
+
+
+> sp|B4F7C4|TDRD5_RAT Tudor domain-containing protein 5 OS=Rattus 
+norvegicus OX=10116 GN=Tdrd5 PE=2 SV=1
+Length=995
+
+ Score = 39.2 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 14/40 (35%), Positives = 17/40 (43%), Gaps = 1/40 (3%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGN  44
+            + G  C    SED   Y   I  I  K+E   V Y  +GN
+Sbjct  535  QPGHLCCVRISEDKWWYRVIIHRILGKKEV-EVFYPDFGN  573
+
+
+> sp|P0CB22|ATX2_ARATH Histone-lysine N-methyltransferase ATX2 
+OS=Arabidopsis thaliana OX=3702 GN=ATX2 PE=2 SV=1
+Length=1083
+
+ Score = 39.2 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 13/45 (29%), Positives = 21/45 (47%), Gaps = 1/45 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNL  50
+            +G +C   W  D   YP +I   + + +  +V Y   G+ EE  L
+Sbjct  221  IGLQCKVFWPLDAVWYPGSIVGYNVETKHHIVKYGD-GDGEELAL  264
+
+
+> sp|A7SBN6|ZGPAT_NEMVE Zinc finger CCCH-type with G patch domain-containing 
+protein OS=Nematostella vectensis OX=45351 GN=v1g244155 
+PE=3 SV=1
+Length=508
+
+ Score = 38.5 bits (88),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 16/49 (33%), Positives = 23/49 (47%), Gaps = 1/49 (2%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            K G +C A +S DG  Y +TI SI  +    ++ Y  Y       L D+
+Sbjct  206  KAGQRCLARYS-DGVWYNSTIKSIKHESHEFLIHYETYNTDATLPLDDI  253
+
+
+> sp|Q6K431|TRX1_ORYSJ Histone-lysine N-methyltransferase TRX1 
+OS=Oryza sativa subsp. japonica OX=39947 GN=TRX1 PE=1 SV=1
+Length=1022
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 14/47 (30%), Positives = 19/47 (40%), Gaps = 1/47 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSD  52
+            VG  C   W  D   Y  +I   +   +   V Y   G  E+ NL+D
+Sbjct  172  VGLGCKVFWPLDEDWYKGSITGYNEATKKHSVKYDD-GESEDLNLAD  217
+
+
+> sp|Q80VL1|TDRKH_MOUSE Tudor and KH domain-containing protein 
+OS=Mus musculus OX=10090 GN=Tdrkh PE=1 SV=1
+Length=560
+
+ Score = 38.5 bits (88),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 12/48 (25%), Positives = 21/48 (44%), Gaps = 1/48 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            VGD  +A  S +G  Y A +     +     + +  +G+  +  L DL
+Sbjct  356  VGDIVAAPLSTNGSWYRARVLGT-LENGNLDLYFVDFGDNGDCALKDL  402
+
+
+> sp|E1BPH3|TDRD5_BOVIN Tudor domain-containing protein 5 OS=Bos 
+taurus OX=9913 GN=TDRD5 PE=3 SV=1
+Length=975
+
+ Score = 38.5 bits (88),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 14/40 (35%), Positives = 17/40 (43%), Gaps = 1/40 (3%)
+
+Query  5    KVGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGN  44
+            + G  C    SED   Y   I  I  K+E   V Y  +GN
+Sbjct  531  QPGHLCCVRISEDKWWYRVIIHRILGKQEV-EVFYPDFGN  569
+
+
+> sp|Q9Y2W6|TDRKH_HUMAN Tudor and KH domain-containing protein 
+OS=Homo sapiens OX=9606 GN=TDRKH PE=1 SV=2
+Length=561
+
+ Score = 38.1 bits (87),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 11/48 (23%), Positives = 20/48 (42%), Gaps = 1/48 (2%)
+
+Query  6    VGDKCSAIWSEDGCIYPATIASIDFKRETCVVVYTGYGNREEQNLSDL  53
+            VGD  +A    +G  Y A +     +     + +  +G+  +  L DL
+Sbjct  356  VGDIVAAPLPTNGSWYRARVLGT-LENGNLDLYFVDFGDNGDCPLKDL  402
+
+
+
+Lambda      K        H        a         alpha
+   0.309    0.138    0.420    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0424    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4909514058
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

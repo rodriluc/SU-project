@@ -1,0 +1,341 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= 1WFW
+
+Length=74
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|A2CG49|KALRN_MOUSE Kalirin OS=Mus musculus OX=10090 GN=Kalrn...  132     3e-35
+  sp|P97924|KALRN_RAT Kalirin OS=Rattus norvegicus OX=10116 GN=Ka...  130     1e-34
+  sp|O60229|KALRN_HUMAN Kalirin OS=Homo sapiens OX=9606 GN=KALRN ...  129     3e-34
+  sp|Q1LUA6|TRIO_DANRE Triple functional domain protein OS=Danio ...  82.8    4e-18
+  sp|Q0KL02|TRIO_MOUSE Triple functional domain protein OS=Mus mu...  81.6    1e-17
+  sp|O75962|TRIO_HUMAN Triple functional domain protein OS=Homo s...  81.3    1e-17
+  sp|F1M0Z1|TRIO_RAT Triple functional domain protein OS=Rattus n...  79.7    4e-17
+
+
+> sp|A2CG49|KALRN_MOUSE Kalirin OS=Mus musculus OX=10090 GN=Kalrn 
+PE=1 SV=1
+Length=2964
+
+ Score = 132 bits (331),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 62/74 (84%), Positives = 67/74 (91%), Gaps = 2/74 (3%)
+
+Query  1     GSSGSSGSTMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  60
+             G +G+S  TMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV
+Sbjct  2290  GCNGTS--TMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  2347
+
+Query  61    PGSILAPFSGPSSG  74
+             PGSILAP +  ++ 
+Sbjct  2348  PGSILAPLAKATAA  2361
+
+
+> sp|P97924|KALRN_RAT Kalirin OS=Rattus norvegicus OX=10116 GN=Kalrn 
+PE=1 SV=3
+Length=2959
+
+ Score = 130 bits (326),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 61/73 (84%), Positives = 66/73 (90%), Gaps = 2/73 (3%)
+
+Query  1     GSSGSSGSTMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  60
+             G +G+S  TM VIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV
+Sbjct  2291  GCNGTS--TMAVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  2348
+
+Query  61    PGSILAPFSGPSS  73
+             PGSILAP +  ++
+Sbjct  2349  PGSILAPLTKATA  2361
+
+
+> sp|O60229|KALRN_HUMAN Kalirin OS=Homo sapiens OX=9606 GN=KALRN 
+PE=1 SV=2
+Length=2985
+
+ Score = 129 bits (324),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 60/74 (81%), Positives = 66/74 (89%), Gaps = 2/74 (3%)
+
+Query  1     GSSGSSGSTMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  60
+             G +G+S  +M VIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV
+Sbjct  2318  GCNGTS--SMAVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  2375
+
+Query  61    PGSILAPFSGPSSG  74
+             PGSILAP +  ++ 
+Sbjct  2376  PGSILAPLTKATAA  2389
+
+
+> sp|Q1LUA6|TRIO_DANRE Triple functional domain protein OS=Danio 
+rerio OX=7955 GN=trio PE=3 SV=1
+Length=3028
+
+ Score = 82.8 bits (203),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 37/58 (64%), Positives = 46/58 (79%), Gaps = 0/58 (0%)
+
+Query  9     TMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWVPGSILA  66
+             TM V +DY ALKE+EI V QGEVVQ+LA NQQNM LV++ A++  PAAEGW+PG +L 
+Sbjct  2484  TMLVTQDYVALKEDEINVGQGEVVQILASNQQNMFLVFRAATEQCPAAEGWIPGYVLG  2541
+
+
+> sp|Q0KL02|TRIO_MOUSE Triple functional domain protein OS=Mus 
+musculus OX=10090 GN=Trio PE=1 SV=3
+Length=3102
+
+ Score = 81.6 bits (200),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 37/59 (63%), Positives = 46/59 (78%), Gaps = 0/59 (0%)
+
+Query  8     STMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWVPGSILA  66
+             STM V  +Y A+KE+EI V QGEVVQ+LA NQQNM LV++ A+D  PAAEGW+PG +L 
+Sbjct  2557  STMLVTHEYTAVKEDEINVYQGEVVQILASNQQNMFLVFRAATDQCPAAEGWIPGFVLG  2615
+
+
+ Score = 41.2 bits (95),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 25/60 (42%), Positives = 36/60 (60%), Gaps = 5/60 (8%)
+
+Query  5     SSGSTMTV-IKDYYALKENEICVSQGEVVQVLAV--NQQNMCLVYQPASDHSPAAEGWVP  61
+             S G  +TV I D+ A   NE+ + +G+ V+VL    ++ + CLV    +D SPAAEG VP
+Sbjct  1655  SGGCELTVVIHDFTACNSNELTIRRGQTVEVLERPHDKPDWCLVR--TTDRSPAAEGLVP  1712
+
+
+> sp|O75962|TRIO_HUMAN Triple functional domain protein OS=Homo 
+sapiens OX=9606 GN=TRIO PE=1 SV=2
+Length=3097
+
+ Score = 81.3 bits (199),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 37/58 (64%), Positives = 45/58 (78%), Gaps = 0/58 (0%)
+
+Query  9     TMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWVPGSILA  66
+             TM V  DY A+KE+EI V QGEVVQ+LA NQQNM LV++ A+D  PAAEGW+PG +L 
+Sbjct  2555  TMLVTHDYTAVKEDEINVYQGEVVQILASNQQNMFLVFRAATDQCPAAEGWIPGFVLG  2612
+
+
+ Score = 41.2 bits (95),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 25/60 (42%), Positives = 36/60 (60%), Gaps = 5/60 (8%)
+
+Query  5     SSGSTMTV-IKDYYALKENEICVSQGEVVQVLAV--NQQNMCLVYQPASDHSPAAEGWVP  61
+             S G  +TV I D+ A   NE+ + +G+ V+VL    ++ + CLV    +D SPAAEG VP
+Sbjct  1655  SGGCELTVVIHDFTACNSNELTIRRGQTVEVLERPHDKPDWCLVR--TTDRSPAAEGLVP  1712
+
+
+> sp|F1M0Z1|TRIO_RAT Triple functional domain protein OS=Rattus 
+norvegicus OX=10116 GN=Trio PE=1 SV=4
+Length=3100
+
+ Score = 79.7 bits (195),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 36/58 (62%), Positives = 45/58 (78%), Gaps = 0/58 (0%)
+
+Query  9     TMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWVPGSILA  66
+             TM V  +Y A+KE+EI V QGEVVQ+LA NQQNM LV++ A+D  PAAEGW+PG +L 
+Sbjct  2560  TMLVTHEYTAVKEDEINVYQGEVVQILASNQQNMFLVFRAATDQCPAAEGWIPGFVLG  2617
+
+
+ Score = 41.2 bits (95),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 25/60 (42%), Positives = 36/60 (60%), Gaps = 5/60 (8%)
+
+Query  5     SSGSTMTV-IKDYYALKENEICVSQGEVVQVLAV--NQQNMCLVYQPASDHSPAAEGWVP  61
+             S G  +TV I D+ A   NE+ + +G+ V+VL    ++ + CLV    +D SPAAEG VP
+Sbjct  1655  SGGCELTVVIHDFTACNSNELTIRRGQTVEVLERPHDKPDWCLVR--TTDRSPAAEGLVP  1712
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.126    0.371    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4873072512
+Results from round 2
+
+
+Query= 1WFW
+
+Length=74
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P97924|KALRN_RAT Kalirin OS=Rattus norvegicus OX=10116 GN=Ka...  135     2e-36
+  sp|O60229|KALRN_HUMAN Kalirin OS=Homo sapiens OX=9606 GN=KALRN ...  135     3e-36
+  sp|A2CG49|KALRN_MOUSE Kalirin OS=Mus musculus OX=10090 GN=Kalrn...  125     4e-33
+  sp|Q0KL02|TRIO_MOUSE Triple functional domain protein OS=Mus mu...  119     1e-30
+  sp|O75962|TRIO_HUMAN Triple functional domain protein OS=Homo s...  118     2e-30
+  sp|F1M0Z1|TRIO_RAT Triple functional domain protein OS=Rattus n...  117     3e-30
+  sp|Q1LUA6|TRIO_DANRE Triple functional domain protein OS=Danio ...  117     5e-30
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|P97924|KALRN_RAT Kalirin OS=Rattus norvegicus OX=10116 GN=Kalrn 
+PE=1 SV=3
+Length=2959
+
+ Score = 135 bits (339),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 61/73 (84%), Positives = 66/73 (90%), Gaps = 2/73 (3%)
+
+Query  1     GSSGSSGSTMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  60
+             G +G+  STM VIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV
+Sbjct  2291  GCNGT--STMAVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  2348
+
+Query  61    PGSILAPFSGPSS  73
+             PGSILAP +  ++
+Sbjct  2349  PGSILAPLTKATA  2361
+
+
+> sp|O60229|KALRN_HUMAN Kalirin OS=Homo sapiens OX=9606 GN=KALRN 
+PE=1 SV=2
+Length=2985
+
+ Score = 135 bits (339),  Expect = 3e-36, Method: Composition-based stats.
+ Identities = 60/74 (81%), Positives = 66/74 (89%), Gaps = 2/74 (3%)
+
+Query  1     GSSGSSGSTMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  60
+             G +G+  S+M VIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV
+Sbjct  2318  GCNGT--SSMAVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  2375
+
+Query  61    PGSILAPFSGPSSG  74
+             PGSILAP +  ++ 
+Sbjct  2376  PGSILAPLTKATAA  2389
+
+
+> sp|A2CG49|KALRN_MOUSE Kalirin OS=Mus musculus OX=10090 GN=Kalrn 
+PE=1 SV=1
+Length=2964
+
+ Score = 125 bits (315),  Expect = 4e-33, Method: Composition-based stats.
+ Identities = 60/65 (92%), Positives = 62/65 (95%), Gaps = 2/65 (3%)
+
+Query  1     GSSGSSGSTMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  60
+             G +G+  STMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV
+Sbjct  2290  GCNGT--STMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWV  2347
+
+Query  61    PGSIL  65
+             PGSIL
+Sbjct  2348  PGSIL  2352
+
+
+> sp|Q0KL02|TRIO_MOUSE Triple functional domain protein OS=Mus 
+musculus OX=10090 GN=Trio PE=1 SV=3
+Length=3102
+
+ Score = 119 bits (297),  Expect = 1e-30, Method: Composition-based stats.
+ Identities = 37/59 (63%), Positives = 46/59 (78%), Gaps = 0/59 (0%)
+
+Query  8     STMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWVPGSILA  66
+             STM V  +Y A+KE+EI V QGEVVQ+LA NQQNM LV++ A+D  PAAEGW+PG +L 
+Sbjct  2557  STMLVTHEYTAVKEDEINVYQGEVVQILASNQQNMFLVFRAATDQCPAAEGWIPGFVLG  2615
+
+
+ Score = 45.5 bits (106),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/60 (42%), Positives = 36/60 (60%), Gaps = 5/60 (8%)
+
+Query  5     SSGSTMTV-IKDYYALKENEICVSQGEVVQVLAV--NQQNMCLVYQPASDHSPAAEGWVP  61
+             S G  +TV I D+ A   NE+ + +G+ V+VL    ++ + CLV    +D SPAAEG VP
+Sbjct  1655  SGGCELTVVIHDFTACNSNELTIRRGQTVEVLERPHDKPDWCLV--RTTDRSPAAEGLVP  1712
+
+
+> sp|O75962|TRIO_HUMAN Triple functional domain protein OS=Homo 
+sapiens OX=9606 GN=TRIO PE=1 SV=2
+Length=3097
+
+ Score = 118 bits (296),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 37/58 (64%), Positives = 45/58 (78%), Gaps = 0/58 (0%)
+
+Query  9     TMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWVPGSILA  66
+             TM V  DY A+KE+EI V QGEVVQ+LA NQQNM LV++ A+D  PAAEGW+PG +L 
+Sbjct  2555  TMLVTHDYTAVKEDEINVYQGEVVQILASNQQNMFLVFRAATDQCPAAEGWIPGFVLG  2612
+
+
+ Score = 45.5 bits (106),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/60 (42%), Positives = 36/60 (60%), Gaps = 5/60 (8%)
+
+Query  5     SSGSTMTV-IKDYYALKENEICVSQGEVVQVLAV--NQQNMCLVYQPASDHSPAAEGWVP  61
+             S G  +TV I D+ A   NE+ + +G+ V+VL    ++ + CLV    +D SPAAEG VP
+Sbjct  1655  SGGCELTVVIHDFTACNSNELTIRRGQTVEVLERPHDKPDWCLV--RTTDRSPAAEGLVP  1712
+
+
+> sp|F1M0Z1|TRIO_RAT Triple functional domain protein OS=Rattus 
+norvegicus OX=10116 GN=Trio PE=1 SV=4
+Length=3100
+
+ Score = 117 bits (293),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 36/58 (62%), Positives = 45/58 (78%), Gaps = 0/58 (0%)
+
+Query  9     TMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWVPGSILA  66
+             TM V  +Y A+KE+EI V QGEVVQ+LA NQQNM LV++ A+D  PAAEGW+PG +L 
+Sbjct  2560  TMLVTHEYTAVKEDEINVYQGEVVQILASNQQNMFLVFRAATDQCPAAEGWIPGFVLG  2617
+
+
+ Score = 45.5 bits (106),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/60 (42%), Positives = 36/60 (60%), Gaps = 5/60 (8%)
+
+Query  5     SSGSTMTV-IKDYYALKENEICVSQGEVVQVLAV--NQQNMCLVYQPASDHSPAAEGWVP  61
+             S G  +TV I D+ A   NE+ + +G+ V+VL    ++ + CLV    +D SPAAEG VP
+Sbjct  1655  SGGCELTVVIHDFTACNSNELTIRRGQTVEVLERPHDKPDWCLV--RTTDRSPAAEGLVP  1712
+
+
+> sp|Q1LUA6|TRIO_DANRE Triple functional domain protein OS=Danio 
+rerio OX=7955 GN=trio PE=3 SV=1
+Length=3028
+
+ Score = 117 bits (292),  Expect = 5e-30, Method: Composition-based stats.
+ Identities = 37/58 (64%), Positives = 46/58 (79%), Gaps = 0/58 (0%)
+
+Query  9     TMTVIKDYYALKENEICVSQGEVVQVLAVNQQNMCLVYQPASDHSPAAEGWVPGSILA  66
+             TM V +DY ALKE+EI V QGEVVQ+LA NQQNM LV++ A++  PAAEGW+PG +L 
+Sbjct  2484  TMLVTQDYVALKEDEINVGQGEVVQILASNQQNMFLVFRAATEQCPAAEGWIPGYVLG  2541
+
+
+
+Lambda      K        H        a         alpha
+   0.306    0.131    0.370    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0389    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4873072512
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

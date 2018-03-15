@@ -1,0 +1,1604 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= 1Q38
+
+Length=89
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P02751|FINC_HUMAN Fibronectin OS=Homo sapiens OX=9606 GN=FN1...  159     2e-44
+  sp|P04937|FINC_RAT Fibronectin OS=Rattus norvegicus OX=10116 GN...  142     1e-38
+  sp|P11276|FINC_MOUSE Fibronectin OS=Mus musculus OX=10090 GN=Fn...  140     5e-38
+  sp|P07589|FINC_BOVIN Fibronectin OS=Bos taurus OX=9913 GN=FN1 P...  134     1e-35
+  sp|Q91740|FINC_XENLA Fibronectin OS=Xenopus laevis OX=8355 GN=f...  105     1e-25
+  sp|B4LRN7|IHOG_DROVI Interference hedgehog OS=Drosophila virili...  38.1    0.006
+  sp|B4JEF2|IHOG_DROGR Interference hedgehog OS=Drosophila grimsh...  37.7    0.006
+
+
+> sp|P02751|FINC_HUMAN Fibronectin OS=Homo sapiens OX=9606 GN=FN1 
+PE=1 SV=4
+Length=2386
+
+ Score = 159 bits (402),  Expect = 2e-44, Method: Compositional matrix adjust.
+ Identities = 75/75 (100%), Positives = 75/75 (100%), Gaps = 0/75 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ
+Sbjct  631  NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  690
+
+Query  65   EVTRFDFTTTSTSTP  79
+            EVTRFDFTTTSTSTP
+Sbjct  691  EVTRFDFTTTSTSTP  705
+
+
+> sp|P04937|FINC_RAT Fibronectin OS=Rattus norvegicus OX=10116 
+GN=Fn1 PE=1 SV=2
+Length=2477
+
+ Score = 142 bits (358),  Expect = 1e-38, Method: Compositional matrix adjust.
+ Identities = 67/75 (89%), Positives = 70/75 (93%), Gaps = 1/75 (1%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAP+PSHI+KYILRWRPK S GRWKEATIPGHLNSYTIKGL PGV+YEGQLISIQQYGHQ
+Sbjct  631  NAPEPSHITKYILRWRPKTSTGRWKEATIPGHLNSYTIKGLTPGVIYEGQLISIQQYGHQ  690
+
+Query  65   EVTRFDFTTTSTSTP  79
+            EVTRFDF TTS STP
+Sbjct  691  EVTRFDF-TTSASTP  704
+
+
+> sp|P11276|FINC_MOUSE Fibronectin OS=Mus musculus OX=10090 GN=Fn1 
+PE=1 SV=4
+Length=2477
+
+ Score = 140 bits (354),  Expect = 5e-38, Method: Compositional matrix adjust.
+ Identities = 66/75 (88%), Positives = 70/75 (93%), Gaps = 1/75 (1%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAP+PSHI+KYILRWRPK S GRWKEATIPGHLNSYTIKGL PGV+YEGQLISIQQYGH+
+Sbjct  631  NAPEPSHITKYILRWRPKTSTGRWKEATIPGHLNSYTIKGLTPGVIYEGQLISIQQYGHR  690
+
+Query  65   EVTRFDFTTTSTSTP  79
+            EVTRFDF TTS STP
+Sbjct  691  EVTRFDF-TTSASTP  704
+
+
+> sp|P07589|FINC_BOVIN Fibronectin OS=Bos taurus OX=9913 GN=FN1 
+PE=1 SV=4
+Length=2478
+
+ Score = 134 bits (336),  Expect = 1e-35, Method: Compositional matrix adjust.
+ Identities = 62/73 (85%), Positives = 68/73 (93%), Gaps = 0/73 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            +AP+ SHISKYILRW+PKNS  RWKEATIPGHLNSYTIKGL+PGVVYEGQLIS+Q YG +
+Sbjct  632  SAPESSHISKYILRWKPKNSPDRWKEATIPGHLNSYTIKGLRPGVVYEGQLISVQHYGQR  691
+
+Query  65   EVTRFDFTTTSTS  77
+            EVTRFDFTTTSTS
+Sbjct  692  EVTRFDFTTTSTS  704
+
+
+> sp|Q91740|FINC_XENLA Fibronectin OS=Xenopus laevis OX=8355 GN=fn1 
+PE=2 SV=1
+Length=2481
+
+ Score = 105 bits (261),  Expect = 1e-25, Method: Compositional matrix adjust.
+ Identities = 47/62 (76%), Positives = 53/62 (85%), Gaps = 0/62 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAPQ SHI  YILRW+PK   G WK+ATIPGHLNSYTI GLKPG++YEGQLISI QYG++
+Sbjct  632  NAPQASHIKNYILRWKPKLKAGPWKQATIPGHLNSYTISGLKPGILYEGQLISILQYGNR  691
+
+Query  65   EV  66
+            EV
+Sbjct  692  EV  693
+
+
+> sp|B4LRN7|IHOG_DROVI Interference hedgehog OS=Drosophila virilis 
+OX=7244 GN=iHog PE=3 SV=1
+Length=907
+
+ Score = 38.1 bits (87),  Expect = 0.006, Method: Compositional matrix adjust.
+ Identities = 21/59 (36%), Positives = 30/59 (51%), Gaps = 1/59 (2%)
+
+Query  12   ISKYILRWRPKNSVGRWKEATIPGHLN-SYTIKGLKPGVVYEGQLISIQQYGHQEVTRF  69
+            IS Y   +RP  S G + +ATI G  + S+ I  L+PG +YE +L S       E +  
+Sbjct  615  ISGYYAYYRPSASAGEYLKATIDGAKSRSFQISALEPGTIYEFKLQSFSAVAASEFSAL  673
+
+
+> sp|B4JEF2|IHOG_DROGR Interference hedgehog OS=Drosophila grimshawi 
+OX=7222 GN=iHog PE=3 SV=1
+Length=888
+
+ Score = 37.7 bits (86),  Expect = 0.006, Method: Compositional matrix adjust.
+ Identities = 21/59 (36%), Positives = 30/59 (51%), Gaps = 1/59 (2%)
+
+Query  12   ISKYILRWRPKNSVGRWKEATIPGHLN-SYTIKGLKPGVVYEGQLISIQQYGHQEVTRF  69
+            IS Y   +RP  S G + +ATI G  + S+ I  L+PG +YE +L S       E +  
+Sbjct  594  ISGYYAYYRPSASAGEYLKATIDGAKSRSFQISALEPGTIYEFKLQSFSAVAASEFSAL  652
+
+
+
+Lambda      K        H        a         alpha
+   0.316    0.131    0.419    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5003987370
+Results from round 2
+
+
+Query= 1Q38
+
+Length=89
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P02751|FINC_HUMAN Fibronectin OS=Homo sapiens OX=9606 GN=FN1...  155     4e-43
+  sp|P11276|FINC_MOUSE Fibronectin OS=Mus musculus OX=10090 GN=Fn...  148     1e-40
+  sp|P04937|FINC_RAT Fibronectin OS=Rattus norvegicus OX=10116 GN...  147     2e-40
+  sp|P07589|FINC_BOVIN Fibronectin OS=Bos taurus OX=9913 GN=FN1 P...  147     3e-40
+  sp|Q91740|FINC_XENLA Fibronectin OS=Xenopus laevis OX=8355 GN=f...  122     9e-32
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q64487|PTPRD_MOUSE Receptor-type tyrosine-protein phosphatas...  42.8    2e-04
+  sp|P32018|COEA1_CHICK Collagen alpha-1(XIV) chain OS=Gallus gal...  39.3    0.003
+  sp|P23468|PTPRD_HUMAN Receptor-type tyrosine-protein phosphatas...  38.9    0.003
+  sp|Q63870|CO7A1_MOUSE Collagen alpha-1(VII) chain OS=Mus muscul...  38.9    0.003
+  sp|B4LRN7|IHOG_DROVI Interference hedgehog OS=Drosophila virili...  38.5    0.004
+
+
+> sp|P02751|FINC_HUMAN Fibronectin OS=Homo sapiens OX=9606 GN=FN1 
+PE=1 SV=4
+Length=2386
+
+ Score = 155 bits (392),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 75/75 (100%), Positives = 75/75 (100%), Gaps = 0/75 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ
+Sbjct  631  NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  690
+
+Query  65   EVTRFDFTTTSTSTP  79
+            EVTRFDFTTTSTSTP
+Sbjct  691  EVTRFDFTTTSTSTP  705
+
+
+> sp|P11276|FINC_MOUSE Fibronectin OS=Mus musculus OX=10090 GN=Fn1 
+PE=1 SV=4
+Length=2477
+
+ Score = 148 bits (373),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 66/75 (88%), Positives = 70/75 (93%), Gaps = 1/75 (1%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAP+PSHI+KYILRWRPK S GRWKEATIPGHLNSYTIKGL PGV+YEGQLISIQQYGH+
+Sbjct  631  NAPEPSHITKYILRWRPKTSTGRWKEATIPGHLNSYTIKGLTPGVIYEGQLISIQQYGHR  690
+
+Query  65   EVTRFDFTTTSTSTP  79
+            EVTRFDF TTS STP
+Sbjct  691  EVTRFDF-TTSASTP  704
+
+
+> sp|P04937|FINC_RAT Fibronectin OS=Rattus norvegicus OX=10116 
+GN=Fn1 PE=1 SV=2
+Length=2477
+
+ Score = 147 bits (371),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 67/75 (89%), Positives = 70/75 (93%), Gaps = 1/75 (1%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAP+PSHI+KYILRWRPK S GRWKEATIPGHLNSYTIKGL PGV+YEGQLISIQQYGHQ
+Sbjct  631  NAPEPSHITKYILRWRPKTSTGRWKEATIPGHLNSYTIKGLTPGVIYEGQLISIQQYGHQ  690
+
+Query  65   EVTRFDFTTTSTSTP  79
+            EVTRFDF TTS STP
+Sbjct  691  EVTRFDF-TTSASTP  704
+
+
+> sp|P07589|FINC_BOVIN Fibronectin OS=Bos taurus OX=9913 GN=FN1 
+PE=1 SV=4
+Length=2478
+
+ Score = 147 bits (370),  Expect = 3e-40, Method: Composition-based stats.
+ Identities = 62/73 (85%), Positives = 68/73 (93%), Gaps = 0/73 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            +AP+ SHISKYILRW+PKNS  RWKEATIPGHLNSYTIKGL+PGVVYEGQLIS+Q YG +
+Sbjct  632  SAPESSHISKYILRWKPKNSPDRWKEATIPGHLNSYTIKGLRPGVVYEGQLISVQHYGQR  691
+
+Query  65   EVTRFDFTTTSTS  77
+            EVTRFDFTTTSTS
+Sbjct  692  EVTRFDFTTTSTS  704
+
+
+> sp|Q91740|FINC_XENLA Fibronectin OS=Xenopus laevis OX=8355 GN=fn1 
+PE=2 SV=1
+Length=2481
+
+ Score = 122 bits (307),  Expect = 9e-32, Method: Composition-based stats.
+ Identities = 47/62 (76%), Positives = 53/62 (85%), Gaps = 0/62 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAPQ SHI  YILRW+PK   G WK+ATIPGHLNSYTI GLKPG++YEGQLISI QYG++
+Sbjct  632  NAPQASHIKNYILRWKPKLKAGPWKQATIPGHLNSYTISGLKPGILYEGQLISILQYGNR  691
+
+Query  65   EV  66
+            EV
+Sbjct  692  EV  693
+
+
+> sp|Q64487|PTPRD_MOUSE Receptor-type tyrosine-protein phosphatase 
+delta OS=Mus musculus OX=10090 GN=Ptprd PE=1 SV=3
+Length=1912
+
+ Score = 42.8 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 26/79 (33%), Positives = 41/79 (52%), Gaps = 5/79 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S  P+P  +S YI++ +PKNS   +KE  I G   + Y++ GL P   YE +++++   G
+Sbjct  345  SGNPEP--VSYYIIQHKPKNSEEPYKE--IDGIATTRYSVAGLSPYSDYEFRVVAVNNIG  400
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +    T TS   P S
+Sbjct  401  RGPASEPVLTQTSEQAPSS  419
+
+
+> sp|P32018|COEA1_CHICK Collagen alpha-1(XIV) chain OS=Gallus gallus 
+OX=9031 GN=COL14A1 PE=1 SV=2
+Length=1888
+
+ Score = 39.3 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 21/57 (37%), Positives = 29/57 (51%), Gaps = 1/57 (2%)
+
+Query  2    RGSNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISI  58
+            R S  P  S I+ Y L W P    G  +E  + G  +SY I+GL P   YE  L+++
+Sbjct  641  RVSWKPTSSDIAFYRLAWIP-LDGGESEEVVLSGDADSYVIEGLLPNTEYEVSLLAV  696
+
+
+> sp|P23468|PTPRD_HUMAN Receptor-type tyrosine-protein phosphatase 
+delta OS=Homo sapiens OX=9606 GN=PTPRD PE=1 SV=2
+Length=1912
+
+ Score = 38.9 bits (89),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 26/79 (33%), Positives = 41/79 (52%), Gaps = 5/79 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S  P+P  +S YI++ +PKNS   +KE  I G   + Y++ GL P   YE +++++   G
+Sbjct  345  SGNPEP--VSYYIIQHKPKNSEELYKE--IDGVATTRYSVAGLSPYSDYEFRVVAVNNIG  400
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +    T TS   P S
+Sbjct  401  RGPPSEPVLTQTSEQAPSS  419
+
+
+> sp|Q63870|CO7A1_MOUSE Collagen alpha-1(VII) chain OS=Mus musculus 
+OX=10090 GN=Col7a1 PE=1 SV=3
+Length=2944
+
+ Score = 38.9 bits (89),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 21/53 (40%), Positives = 27/53 (51%), Gaps = 3/53 (6%)
+
+Query  10    SHISKYILRWRPKNSVG---RWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQ  59
+             S  S YIL WRP    G        T+PG  +S+ + GL+PG+ Y   L  IQ
+Sbjct  981   SGASSYILSWRPLRGTGQEVPRAPQTLPGTSSSHRVTGLEPGISYVFSLTPIQ  1033
+
+
+> sp|B4LRN7|IHOG_DROVI Interference hedgehog OS=Drosophila virilis 
+OX=7244 GN=iHog PE=3 SV=1
+Length=907
+
+ Score = 38.5 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 27/83 (33%), Positives = 39/83 (47%), Gaps = 5/83 (6%)
+
+Query  2    RGSNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLN-SYTIKGLKPGVVYEGQLISIQQ  60
+            R S+      IS Y   +RP  S G + +ATI G  + S+ I  L+PG +YE +L S   
+Sbjct  605  RLSSDADEQLISGYYAYYRPSASAGEYLKATIDGAKSRSFQISALEPGTIYEFKLQSFSA  664
+
+Query  61   YGHQEVTRFDFTTT----STSTP  79
+                E +      T    ++STP
+Sbjct  665  VAASEFSALKQGRTQRPRASSTP  687
+
+
+
+Lambda      K        H        a         alpha
+   0.308    0.131    0.424    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0395    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5003987370
+Results from round 3
+
+
+Query= 1Q38
+
+Length=89
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|P07589|FINC_BOVIN Fibronectin OS=Bos taurus OX=9913 GN=FN1 P...  129     5e-34
+  sp|P11276|FINC_MOUSE Fibronectin OS=Mus musculus OX=10090 GN=Fn...  129     6e-34
+  sp|P04937|FINC_RAT Fibronectin OS=Rattus norvegicus OX=10116 GN...  127     2e-33
+  sp|P02751|FINC_HUMAN Fibronectin OS=Homo sapiens OX=9606 GN=FN1...  123     7e-32
+  sp|Q91740|FINC_XENLA Fibronectin OS=Xenopus laevis OX=8355 GN=f...  107     1e-26
+  sp|Q64487|PTPRD_MOUSE Receptor-type tyrosine-protein phosphatas...  104     2e-25
+
+Sequences not found previously or not previously below threshold:
+
+  sp|P23468|PTPRD_HUMAN Receptor-type tyrosine-protein phosphatas...  98.3    2e-23
+  sp|A4IFW2|PTPRF_DANRE Receptor-type tyrosine-protein phosphatas...  79.4    1e-16
+  sp|A7MBJ4|PTPRF_BOVIN Receptor-type tyrosine-protein phosphatas...  68.6    5e-13
+  sp|P10586|PTPRF_HUMAN Receptor-type tyrosine-protein phosphatas...  64.4    1e-11
+  sp|F1NWE3|PTPRS_CHICK Receptor-type tyrosine-protein phosphatas...  64.0    2e-11
+  sp|B0V2N1|PTPRS_MOUSE Receptor-type tyrosine-protein phosphatas...  63.2    3e-11
+  sp|Q64605|PTPRS_RAT Receptor-type tyrosine-protein phosphatase ...  62.9    4e-11
+  sp|Q13332|PTPRS_HUMAN Receptor-type tyrosine-protein phosphatas...  62.5    5e-11
+  sp|Q64604|PTPRF_RAT Receptor-type tyrosine-protein phosphatase ...  62.1    8e-11
+  sp|A2A8L5|PTPRF_MOUSE Receptor-type tyrosine-protein phosphatas...  61.7    1e-10
+  sp|P16621|LAR_DROME Tyrosine-protein phosphatase Lar OS=Drosoph...  57.8    2e-09
+  sp|Q9JMB8|CNTN6_MOUSE Contactin-6 OS=Mus musculus OX=10090 GN=C...  45.5    2e-05
+  sp|Q6V4S5|SDK2_MOUSE Protein sidekick-2 OS=Mus musculus OX=1009...  45.5    2e-05
+  sp|Q02246|CNTN2_HUMAN Contactin-2 OS=Homo sapiens OX=9606 GN=CN...  45.1    3e-05
+  sp|O00533|NCHL1_HUMAN Neural cell adhesion molecule L1-like pro...  45.1    3e-05
+  sp|P97528|CNTN6_RAT Contactin-6 OS=Rattus norvegicus OX=10116 G...  44.8    4e-05
+  sp|Q58EX2|SDK2_HUMAN Protein sidekick-2 OS=Homo sapiens OX=9606...  45.1    4e-05
+  sp|Q9UQ52|CNTN6_HUMAN Contactin-6 OS=Homo sapiens OX=9606 GN=CN...  44.8    5e-05
+  sp|Q8AXZ4|CNT1A_DANRE Contactin-1a OS=Danio rerio OX=7955 GN=cn...  43.2    1e-04
+  sp|Q8WZ42|TITIN_HUMAN Titin OS=Homo sapiens OX=9606 GN=TTN PE=1...  42.8    2e-04
+  sp|Q8IWV2|CNTN4_HUMAN Contactin-4 OS=Homo sapiens OX=9606 GN=CN...  42.4    2e-04
+  sp|B4LRN7|IHOG_DROVI Interference hedgehog OS=Drosophila virili...  42.4    2e-04
+  sp|Q8AV58|SDK1_CHICK Protein sidekick-1 OS=Gallus gallus OX=903...  42.4    2e-04
+  sp|B4JEF2|IHOG_DROGR Interference hedgehog OS=Drosophila grimsh...  42.1    3e-04
+  sp|Q80W87|ROBO4_RAT Roundabout homolog 4 OS=Rattus norvegicus O...  42.1    3e-04
+  sp|Q62845|CNTN4_RAT Contactin-4 OS=Rattus norvegicus OX=10116 G...  42.1    3e-04
+  sp|Q8AV57|SDK2_CHICK Protein sidekick-2 OS=Gallus gallus OX=903...  42.1    4e-04
+  sp|Q12860|CNTN1_HUMAN Contactin-1 OS=Homo sapiens OX=9606 GN=CN...  41.7    4e-04
+  sp|Q69Z26|CNTN4_MOUSE Contactin-4 OS=Mus musculus OX=10090 GN=C...  41.3    5e-04
+  sp|P11722|FINC_CHICK Fibronectin (Fragments) OS=Gallus gallus O...  40.9    6e-04
+  sp|Q2QI47|USH2A_MOUSE Usherin OS=Mus musculus OX=10090 GN=Ush2A...  40.9    8e-04
+  sp|Q3UH53|SDK1_MOUSE Protein sidekick-1 OS=Mus musculus OX=1009...  40.9    9e-04
+  sp|Q63870|CO7A1_MOUSE Collagen alpha-1(VII) chain OS=Mus muscul...  40.5    0.001
+  sp|Q61330|CNTN2_MOUSE Contactin-2 OS=Mus musculus OX=10090 GN=C...  40.1    0.001
+  sp|B4KJW1|IHOG_DROMO Interference hedgehog OS=Drosophila mojave...  40.1    0.001
+  sp|Q02388|CO7A1_HUMAN Collagen alpha-1(VII) chain OS=Homo sapie...  40.1    0.001
+  sp|A2ASS6|TITIN_MOUSE Titin OS=Mus musculus OX=10090 GN=Ttn PE=...  40.1    0.001
+  sp|Q7Z5N4|SDK1_HUMAN Protein sidekick-1 OS=Homo sapiens OX=9606...  40.1    0.001
+  sp|P22063|CNTN2_RAT Contactin-2 OS=Rattus norvegicus OX=10116 G...  40.1    0.001
+  sp|P35331|NRCAM_CHICK Neuronal cell adhesion molecule OS=Gallus...  39.7    0.002
+  sp|P70232|NCHL1_MOUSE Neural cell adhesion molecule L1-like pro...  39.4    0.002
+  sp|B8VIW9|FP_ACRMI Fibronectin type III domain-containing prote...  39.4    0.003
+  sp|Q23551|UNC22_CAEEL Twitchin OS=Caenorhabditis elegans OX=623...  39.4    0.003
+  sp|Q53EP0|FND3B_HUMAN Fibronectin type III domain-containing pr...  38.6    0.004
+  sp|Q9N3X8|SDK_CAEEL Protein sidekick homolog OS=Caenorhabditis ...  38.6    0.004
+  sp|P32004|L1CAM_HUMAN Neural cell adhesion molecule L1 OS=Homo ...  38.6    0.004
+  sp|Q5ZJP5|FND3A_CHICK Fibronectin type-III domain-containing pr...  38.6    0.004
+  sp|P97798|NEO1_MOUSE Neogenin OS=Mus musculus OX=10090 GN=Neo1 ...  38.6    0.004
+  sp|Q2Q0I9|FNDC1_RAT Fibronectin type III domain-containing prot...  38.6    0.004
+  sp|P97603|NEO1_RAT Neogenin (Fragment) OS=Rattus norvegicus OX=...  38.2    0.005
+  sp|P97685|NFASC_RAT Neurofascin OS=Rattus norvegicus OX=10116 G...  38.2    0.005
+  sp|P13590|NCAM1_CHICK Neural cell adhesion molecule 1 OS=Gallus...  38.2    0.006
+  sp|Q6AZB0|BOC_MOUSE Brother of CDO OS=Mus musculus OX=10090 GN=...  37.8    0.006
+  sp|Q91289|FINC_PLEWA Fibronectin (Fragment) OS=Pleurodeles walt...  37.4    0.009
+  sp|Q9BWV1|BOC_HUMAN Brother of CDO OS=Homo sapiens OX=9606 GN=B...  37.4    0.009
+  sp|Q8C310|ROBO4_MOUSE Roundabout homolog 4 OS=Mus musculus OX=1...  37.4    0.010
+
+
+> sp|P07589|FINC_BOVIN Fibronectin OS=Bos taurus OX=9913 GN=FN1 
+PE=1 SV=4
+Length=2478
+
+ Score = 129 bits (324),  Expect = 5e-34, Method: Composition-based stats.
+ Identities = 62/73 (85%), Positives = 68/73 (93%), Gaps = 0/73 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            +AP+ SHISKYILRW+PKNS  RWKEATIPGHLNSYTIKGL+PGVVYEGQLIS+Q YG +
+Sbjct  632  SAPESSHISKYILRWKPKNSPDRWKEATIPGHLNSYTIKGLRPGVVYEGQLISVQHYGQR  691
+
+Query  65   EVTRFDFTTTSTS  77
+            EVTRFDFTTTSTS
+Sbjct  692  EVTRFDFTTTSTS  704
+
+
+ Score = 41.3 bits (95),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 15/56 (27%), Positives = 26/56 (46%), Gaps = 0/56 (0%)
+
+Query  12    ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVT  67
+             +  Y + +         +E T+PG  ++ TI GLKPGV Y   + ++   G    +
+Sbjct  1567  VRYYRITYGETGGSSPVQEFTVPGSKSTATISGLKPGVDYTITVYAVTGRGDSPAS  1622
+
+
+ Score = 39.0 bits (89),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 24/77 (31%), Positives = 37/77 (48%), Gaps = 4/77 (5%)
+
+Query  6     APQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQE  65
+             AP+ + I+ Y +R  P+N  GR +E  +P   NS T+  L PG  Y   ++SI     +E
+Sbjct  1472  APRAT-ITGYRIRHHPENMGGRPREDRVPPSRNSITLTNLNPGTEY---VVSIVALNSKE  1527
+
+Query  66    VTRFDFTTTSTSTPGSR  82
+              +       ST +   R
+Sbjct  1528  ESLPLVGQQSTVSDVPR  1544
+
+
+ Score = 37.8 bits (86),  Expect = 0.008, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 27/59 (46%), Gaps = 0/59 (0%)
+
+Query  7     PQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQE  65
+             P  S ++ Y +   PKN  G  K  T+       TI+GL+P V Y   + +  Q G  +
+Sbjct  1656  PSSSPVTGYRVTTAPKNGPGPSKTKTVGPDQTEMTIEGLQPTVEYVVSVYAQNQNGESQ  1714
+
+
+> sp|P11276|FINC_MOUSE Fibronectin OS=Mus musculus OX=10090 GN=Fn1 
+PE=1 SV=4
+Length=2477
+
+ Score = 129 bits (323),  Expect = 6e-34, Method: Composition-based stats.
+ Identities = 66/75 (88%), Positives = 70/75 (93%), Gaps = 1/75 (1%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAP+PSHI+KYILRWRPK S GRWKEATIPGHLNSYTIKGL PGV+YEGQLISIQQYGH+
+Sbjct  631  NAPEPSHITKYILRWRPKTSTGRWKEATIPGHLNSYTIKGLTPGVIYEGQLISIQQYGHR  690
+
+Query  65   EVTRFDFTTTSTSTP  79
+            EVTRFDFT TS STP
+Sbjct  691  EVTRFDFT-TSASTP  704
+
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 19/65 (29%), Positives = 33/65 (51%), Gaps = 3/65 (5%)
+
+Query  12    ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFDF  71
+             I+ YI+R   ++SVGR ++  +P   NS T+  L PG  Y   +I++     +E +    
+Sbjct  1475  ITGYIIRHHAEHSVGRPRQDRVPPSRNSITLTNLNPGTEYVVSIIAVNG---REESPPLI  1531
+
+Query  72    TTTST  76
+                +T
+Sbjct  1532  GQQAT  1536
+
+
+ Score = 38.2 bits (87),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 15/64 (23%), Positives = 26/64 (41%), Gaps = 0/64 (0%)
+
+Query  4     SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGH  63
+             S  P    +  Y + +         +E T+PG  ++ TI  +KPG  Y   L ++   G 
+Sbjct  1557  SWEPPAVSVRYYRITYGETGGNSPVQEFTVPGSKSTATINNIKPGADYTITLYAVTGRGD  1616
+
+Query  64    QEVT  67
+                +
+Sbjct  1617  SPAS  1620
+
+
+> sp|P04937|FINC_RAT Fibronectin OS=Rattus norvegicus OX=10116 
+GN=Fn1 PE=1 SV=2
+Length=2477
+
+ Score = 127 bits (320),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 67/75 (89%), Positives = 70/75 (93%), Gaps = 1/75 (1%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAP+PSHI+KYILRWRPK S GRWKEATIPGHLNSYTIKGL PGV+YEGQLISIQQYGHQ
+Sbjct  631  NAPEPSHITKYILRWRPKTSTGRWKEATIPGHLNSYTIKGLTPGVIYEGQLISIQQYGHQ  690
+
+Query  65   EVTRFDFTTTSTSTP  79
+            EVTRFDFT TS STP
+Sbjct  691  EVTRFDFT-TSASTP  704
+
+
+ Score = 39.4 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 20/71 (28%), Positives = 34/71 (48%), Gaps = 3/71 (4%)
+
+Query  12    ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFDF  71
+             I+ YI+R   ++S GR ++  +P   NS T+  L PG  Y   +I++     +E +    
+Sbjct  1475  ITGYIIRHHAEHSAGRPRQDRVPPSRNSITLTNLNPGTEYIVTIIAVNG---REESPPLI  1531
+
+Query  72    TTTSTSTPGSR  82
+                ST +   R
+Sbjct  1532  GQQSTVSDVPR  1542
+
+
+ Score = 38.2 bits (87),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 15/64 (23%), Positives = 26/64 (41%), Gaps = 0/64 (0%)
+
+Query  4     SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGH  63
+             S  P    +  Y + +         +E T+PG  ++ TI  +KPG  Y   L ++   G 
+Sbjct  1557  SWEPPAVSVRYYRITYGETGGNSPVQEFTVPGSKSTATINNIKPGADYTITLYAVTGRGD  1616
+
+Query  64    QEVT  67
+                +
+Sbjct  1617  SPAS  1620
+
+
+> sp|P02751|FINC_HUMAN Fibronectin OS=Homo sapiens OX=9606 GN=FN1 
+PE=1 SV=4
+Length=2386
+
+ Score = 123 bits (308),  Expect = 7e-32, Method: Composition-based stats.
+ Identities = 67/67 (100%), Positives = 67/67 (100%), Gaps = 0/67 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ
+Sbjct  631  NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  690
+
+Query  65   EVTRFDF  71
+            EVTRFDF
+Sbjct  691  EVTRFDF  697
+
+
+ Score = 40.5 bits (93),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 15/56 (27%), Positives = 26/56 (46%), Gaps = 0/56 (0%)
+
+Query  12    ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVT  67
+             +  Y + +         +E T+PG  ++ TI GLKPGV Y   + ++   G    +
+Sbjct  1475  VRYYRITYGETGGNSPVQEFTVPGSKSTATISGLKPGVDYTITVYAVTGRGDSPAS  1530
+
+
+> sp|Q91740|FINC_XENLA Fibronectin OS=Xenopus laevis OX=8355 GN=fn1 
+PE=2 SV=1
+Length=2481
+
+ Score = 107 bits (268),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 47/62 (76%), Positives = 53/62 (85%), Gaps = 0/62 (0%)
+
+Query  5    NAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            NAPQ SHI  YILRW+PK   G WK+ATIPGHLNSYTI GLKPG++YEGQLISI QYG++
+Sbjct  632  NAPQASHIKNYILRWKPKLKAGPWKQATIPGHLNSYTISGLKPGILYEGQLISILQYGNR  691
+
+Query  65   EV  66
+            EV
+Sbjct  692  EV  693
+
+
+ Score = 44.0 bits (102),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 18/61 (30%), Positives = 28/61 (46%), Gaps = 0/61 (0%)
+
+Query  12    ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFDF  71
+             +  Y + +      G  KE T+PG  N+ TI+GL PGV Y   + ++   G    +    
+Sbjct  1566  VRYYRITYSQTGGHGPEKEFTVPGTSNTATIRGLNPGVSYTITVYAVTGRGDSPASSKPL  1625
+
+Query  72    T  72
+             T
+Sbjct  1626  T  1626
+
+
+> sp|Q64487|PTPRD_MOUSE Receptor-type tyrosine-protein phosphatase 
+delta OS=Mus musculus OX=10090 GN=Ptprd PE=1 SV=3
+Length=1912
+
+ Score = 104 bits (259),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 26/79 (33%), Positives = 41/79 (52%), Gaps = 5/79 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S  P+P  +S YI++ +PKNS   +KE  I G   + Y++ GL P   YE +++++   G
+Sbjct  345  SGNPEP--VSYYIIQHKPKNSEEPYKE--IDGIATTRYSVAGLSPYSDYEFRVVAVNNIG  400
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +    T TS   P S
+Sbjct  401  RGPASEPVLTQTSEQAPSS  419
+
+
+> sp|P23468|PTPRD_HUMAN Receptor-type tyrosine-protein phosphatase 
+delta OS=Homo sapiens OX=9606 GN=PTPRD PE=1 SV=2
+Length=1912
+
+ Score = 98.3 bits (243),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 26/79 (33%), Positives = 41/79 (52%), Gaps = 5/79 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S  P+P  +S YI++ +PKNS   +KE  I G   + Y++ GL P   YE +++++   G
+Sbjct  345  SGNPEP--VSYYIIQHKPKNSEELYKE--IDGVATTRYSVAGLSPYSDYEFRVVAVNNIG  400
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +    T TS   P S
+Sbjct  401  RGPPSEPVLTQTSEQAPSS  419
+
+
+> sp|A4IFW2|PTPRF_DANRE Receptor-type tyrosine-protein phosphatase 
+F OS=Danio rerio OX=7955 GN=ptprf PE=2 SV=1
+Length=1909
+
+ Score = 79.4 bits (194),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 24/83 (29%), Positives = 40/83 (48%), Gaps = 5/83 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S  P+P  +S YI+++R K S   ++E  + G   + Y+I GL P   YE +++++   G
+Sbjct  342  SGNPEP--VSYYIIQYRAKTSDTNFQE--VDGVATTRYSIGGLSPYSEYEFRVMAVNNIG  397
+
+Query  63   HQEVTRFDFTTTSTSTPGSRSHH  85
+                +    T T    P S   H
+Sbjct  398  RGPPSEPVETRTGEQAPSSPPLH  420
+
+
+ Score = 39.4 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 21/81 (26%), Positives = 33/81 (41%), Gaps = 2/81 (2%)
+
+Query  7    PQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEV  66
+            P    I KY L++   +S  +      P    SY ++GLKP  +Y+  L +  + G    
+Sbjct  536  PVQDPIIKYELQYWEADSDNKIHVTFDP--AGSYAVEGLKPDTLYKFSLAARSEMGQGVF  593
+
+Query  67   TRFDFTTTSTSTPGSRSHHHH  87
+            T      T+ S P +     H
+Sbjct  594  THPIEARTAQSAPSAPPQDVH  614
+
+
+> sp|A7MBJ4|PTPRF_BOVIN Receptor-type tyrosine-protein phosphatase 
+F OS=Bos taurus OX=9913 GN=PTPRF PE=2 SV=1
+Length=1898
+
+ Score = 68.6 bits (166),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 19/79 (24%), Positives = 36/79 (46%), Gaps = 5/79 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S   +P  +S Y +++RP  + G ++E  + G   + Y+I GL P   Y  +++++   G
+Sbjct  341  SGNSEP--VSYYGIQYRPAGAEGPFQE--VDGVATTRYSIGGLSPFSEYAFRVLAVNSIG  396
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +      T    P S
+Sbjct  397  RGPPSEAVRARTGEQAPSS  415
+
+
+ Score = 39.0 bits (89),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 20/75 (27%), Positives = 34/75 (45%), Gaps = 2/75 (3%)
+
+Query  7    PQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEV  66
+            PQ   +   ++ W  ++   + K    P   +SYT++ LKP  +Y  QL +  + G    
+Sbjct  536  PQERIVKYELVYWAAEDEGQQHKVTFDP--TSSYTVEDLKPDTLYRFQLAARSELGVGVF  593
+
+Query  67   TRFDFTTTSTSTPGS  81
+            T      T+ STP +
+Sbjct  594  TPTIEARTAQSTPSA  608
+
+
+> sp|P10586|PTPRF_HUMAN Receptor-type tyrosine-protein phosphatase 
+F OS=Homo sapiens OX=9606 GN=PTPRF PE=1 SV=2
+Length=1907
+
+ Score = 64.4 bits (155),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 17/79 (22%), Positives = 35/79 (44%), Gaps = 5/79 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S   +P  ++ Y +++R   + G ++E  + G   + Y+I GL P   Y  +++++   G
+Sbjct  341  SGNSEP--VTYYGIQYRAAGTEGPFQE--VDGVATTRYSIGGLSPFSEYAFRVLAVNSIG  396
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +      T    P S
+Sbjct  397  RGPPSEAVRARTGEQAPSS  415
+
+
+> sp|F1NWE3|PTPRS_CHICK Receptor-type tyrosine-protein phosphatase 
+S OS=Gallus gallus OX=9031 GN=PTPRS PE=1 SV=3
+Length=1516
+
+ Score = 64.0 bits (154),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 19/78 (24%), Positives = 32/78 (41%), Gaps = 3/78 (4%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGH  63
+            S  P P  +S Y++ ++ K+  G + +         Y+I GL P   YE  + ++   G 
+Sbjct  344  SGNPDP--VSYYVIEYKSKSQDGPY-QIKEDITTTRYSIGGLSPNSEYEIWVSAVNSIGQ  400
+
+Query  64   QEVTRFDFTTTSTSTPGS  81
+               +    T T    P S
+Sbjct  401  GPPSESVVTRTGEQAPAS  418
+
+
+> sp|B0V2N1|PTPRS_MOUSE Receptor-type tyrosine-protein phosphatase 
+S OS=Mus musculus OX=10090 GN=Ptprs PE=1 SV=1
+Length=1907
+
+ Score = 63.2 bits (152),  Expect = 3e-11, Method: Composition-based stats.
+ Identities = 19/78 (24%), Positives = 32/78 (41%), Gaps = 3/78 (4%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGH  63
+            S  P P  +S Y++ ++ K+  G + +         Y+I GL P   YE  + ++   G 
+Sbjct  341  SGNPDP--VSYYVIEYKSKSQDGPY-QIKEDITTTRYSIGGLSPNSEYEIWVSAVNSIGQ  397
+
+Query  64   QEVTRFDFTTTSTSTPGS  81
+               +    T T    P S
+Sbjct  398  GPPSESVVTRTGEQAPAS  415
+
+
+> sp|Q64605|PTPRS_RAT Receptor-type tyrosine-protein phosphatase 
+S OS=Rattus norvegicus OX=10116 GN=Ptprs PE=1 SV=2
+Length=1907
+
+ Score = 62.9 bits (151),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 19/78 (24%), Positives = 32/78 (41%), Gaps = 3/78 (4%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGH  63
+            S  P P  +S Y++ ++ K+  G + +         Y+I GL P   YE  + ++   G 
+Sbjct  341  SGNPDP--VSYYVIEYKSKSQDGPY-QIKEDITTTRYSIGGLSPNSEYEIWVSAVNSIGQ  397
+
+Query  64   QEVTRFDFTTTSTSTPGS  81
+               +    T T    P S
+Sbjct  398  GPPSESVVTRTGEQAPAS  415
+
+
+> sp|Q13332|PTPRS_HUMAN Receptor-type tyrosine-protein phosphatase 
+S OS=Homo sapiens OX=9606 GN=PTPRS PE=1 SV=3
+Length=1948
+
+ Score = 62.5 bits (150),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 19/78 (24%), Positives = 32/78 (41%), Gaps = 3/78 (4%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGH  63
+            S  P P  +S Y++ ++ K+  G + +         Y+I GL P   YE  + ++   G 
+Sbjct  354  SGNPDP--VSYYVIEYKSKSQDGPY-QIKEDITTTRYSIGGLSPNSEYEIWVSAVNSIGQ  410
+
+Query  64   QEVTRFDFTTTSTSTPGS  81
+               +    T T    P S
+Sbjct  411  GPPSESVVTRTGEQAPAS  428
+
+
+> sp|Q64604|PTPRF_RAT Receptor-type tyrosine-protein phosphatase 
+F OS=Rattus norvegicus OX=10116 GN=Ptprf PE=2 SV=1
+Length=1898
+
+ Score = 62.1 bits (149),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 18/79 (23%), Positives = 36/79 (46%), Gaps = 5/79 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S   +P  +S Y +++R   + G ++E  + G  ++ Y+I GL P   Y  +++++   G
+Sbjct  341  SGNTEP--VSFYGIQYRAAGTDGPFQE--VDGVASTRYSIGGLSPFSEYAFRVLAVNSIG  396
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +      T    P S
+Sbjct  397  RGPPSEAVRARTGEQAPSS  415
+
+
+> sp|A2A8L5|PTPRF_MOUSE Receptor-type tyrosine-protein phosphatase 
+F OS=Mus musculus OX=10090 GN=Ptprf PE=1 SV=1
+Length=1898
+
+ Score = 61.7 bits (148),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 18/79 (23%), Positives = 36/79 (46%), Gaps = 5/79 (6%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNS-YTIKGLKPGVVYEGQLISIQQYG  62
+            S   +P  +S Y +++R   + G ++E  + G  ++ Y+I GL P   Y  +++++   G
+Sbjct  341  SGNTEP--VSFYGIQYRAAGTDGPFQE--VDGVASTRYSIGGLSPFSEYAFRVLAVNSIG  396
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +      T    P S
+Sbjct  397  RGPPSEAVRARTGEQAPSS  415
+
+
+> sp|P16621|LAR_DROME Tyrosine-protein phosphatase Lar OS=Drosophila 
+melanogaster OX=7227 GN=Lar PE=1 SV=2
+Length=2029
+
+ Score = 57.8 bits (138),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 17/70 (24%), Positives = 33/70 (47%), Gaps = 3/70 (4%)
+
+Query  9    PSHISKYILRWRPKNSVGRWKEATIPGHLNSY-TIKGLKPGVVYEGQLISIQQYGHQEVT  67
+            P  +  Y+++++PKN+   + E  I G +  Y  ++ L P   YE  +I++   G    +
+Sbjct  347  PEDLQYYVIQYKPKNANQAFSE--ISGIITMYYVVRALSPYTEYEFYVIAVNNIGRGPPS  404
+
+Query  68   RFDFTTTSTS  77
+                 TT  +
+Sbjct  405  APATCTTGET  414
+
+
+> sp|Q9JMB8|CNTN6_MOUSE Contactin-6 OS=Mus musculus OX=10090 GN=Cntn6 
+PE=1 SV=2
+Length=1028
+
+ Score = 45.5 bits (106),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 24/76 (32%), Positives = 37/76 (49%), Gaps = 5/76 (7%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIPGHLN--SY--TIKGLKPGVVYEGQLISIQQYGHQE  65
+            S I  + ++ R   SVG    AT+P  LN  +Y  T+ GL P V YE ++++    G  E
+Sbjct  626  SPIQIFTIQTRTPFSVGWQAVATVPEILNGQTYNATVVGLSPWVEYEFRVVAGNNIGIGE  685
+
+Query  66   VTRF-DFTTTSTSTPG  80
+             ++  +   T  S P 
+Sbjct  686  PSKPSELLRTKASVPN  701
+
+
+> sp|Q6V4S5|SDK2_MOUSE Protein sidekick-2 OS=Mus musculus OX=10090 
+GN=Sdk2 PE=1 SV=1
+Length=2176
+
+ Score = 45.5 bits (106),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 25/84 (30%), Positives = 39/84 (46%), Gaps = 10/84 (12%)
+
+Query  4     SNAPQPSHISKYILRWRPKNSVGRWKE--ATIPGHLNSYTIKG--LKPGVVYEGQLISIQ  59
+             S  P    I++Y++  RP +  G W      IP  + SYT     LKPGV Y+ ++I++ 
+Sbjct  1850  SGDPGKGPITRYVIEARPSD-EGLWDILIKDIPKEVTSYTFSMDILKPGVSYDFRVIAVN  1908
+
+Query  60    QYGHQEVTRFDFTTTSTSTPGSRS  83
+              YG    +       S S P  ++
+Sbjct  1909  DYGFGTPSSP-----SQSVPAQKA  1927
+
+
+> sp|Q02246|CNTN2_HUMAN Contactin-2 OS=Homo sapiens OX=9606 GN=CNTN2 
+PE=1 SV=1
+Length=1040
+
+ Score = 45.1 bits (105),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 24/85 (28%), Positives = 38/85 (45%), Gaps = 9/85 (11%)
+
+Query  2    RGSNAPQPSHISKYILRWRPKNSVGRWKE-----ATIPGHLNSYTIKGLKPGVVYEGQLI  56
+            RG +   P  I+KY L+ R     G+WK+     A I G+  +  + GL P + YE ++I
+Sbjct  630  RGFDNHSP--IAKYTLQARTP-PAGKWKQVRTNPANIEGNAETAQVLGLTPWMDYEFRVI  686
+
+Query  57   SIQQYGHQEVTRFDFT-TTSTSTPG  80
+            +    G  E +       T  + P 
+Sbjct  687  ASNILGTGEPSGPSSKIRTREAAPS  711
+
+
+> sp|O00533|NCHL1_HUMAN Neural cell adhesion molecule L1-like protein 
+OS=Homo sapiens OX=9606 GN=CHL1 PE=1 SV=4
+Length=1208
+
+ Score = 45.1 bits (105),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 22/78 (28%), Positives = 39/78 (50%), Gaps = 2/78 (3%)
+
+Query  4    SNAPQPSHISKYILRWR-PKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYG  62
+            + A   S+IS+YI+ +   K   GRW+E T      +  I  L P V Y+ ++I++ + G
+Sbjct  634  AGADHNSNISEYIVEFEGNKEEPGRWEELTRVQGKKTTVILPLAPFVRYQFRVIAVNEVG  693
+
+Query  63   HQEVTRF-DFTTTSTSTP  79
+              + ++  D   T  + P
+Sbjct  694  RSQPSQPSDHHETPPAAP  711
+
+
+> sp|P97528|CNTN6_RAT Contactin-6 OS=Rattus norvegicus OX=10116 
+GN=Cntn6 PE=1 SV=1
+Length=1028
+
+ Score = 44.8 bits (104),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 24/76 (32%), Positives = 37/76 (49%), Gaps = 5/76 (7%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIPGHLN--SY--TIKGLKPGVVYEGQLISIQQYGHQE  65
+            S I  + ++ R   SVG    AT+P  LN  +Y  T+ GL P V YE ++++    G  E
+Sbjct  626  SPIQIFTIQTRTPFSVGWQAVATVPEILNGQTYNATVIGLSPWVEYEFRVVAGNNIGIGE  685
+
+Query  66   VTRF-DFTTTSTSTPG  80
+             ++  +   T  S P 
+Sbjct  686  PSKPSELLRTKASIPN  701
+
+
+> sp|Q58EX2|SDK2_HUMAN Protein sidekick-2 OS=Homo sapiens OX=9606 
+GN=SDK2 PE=1 SV=3
+Length=2172
+
+ Score = 45.1 bits (105),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 25/85 (29%), Positives = 41/85 (48%), Gaps = 10/85 (12%)
+
+Query  4     SNAPQPSHISKYILRWRPKNSVGRWKE--ATIPGHLNSYTIKG--LKPGVVYEGQLISIQ  59
+             S  P    I++Y++  RP +  G W      IP  ++SYT     LKPGV Y+ ++I++ 
+Sbjct  1846  SGDPGKGPITRYVIEARPSD-EGLWDILIKDIPKEVSSYTFSMDILKPGVSYDFRVIAVN  1904
+
+Query  60    QYGHQEVTRFDFTTTSTSTPGSRSH  84
+              YG    +       S S P  +++
+Sbjct  1905  DYGFGTPSSP-----SQSVPAQKAN  1924
+
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 15/59 (25%), Positives = 28/59 (47%), Gaps = 0/59 (0%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTR  68
+            S + +YIL     N+      A++     S T+KGL P   Y+ +L ++   G  + ++
+Sbjct  620  SPLIRYILEMSENNAPWTVLLASVDPKATSVTVKGLVPARSYQFRLCAVNDVGKGQFSK  678
+
+
+> sp|Q9UQ52|CNTN6_HUMAN Contactin-6 OS=Homo sapiens OX=9606 GN=CNTN6 
+PE=1 SV=1
+Length=1028
+
+ Score = 44.8 bits (104),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 24/75 (32%), Positives = 36/75 (48%), Gaps = 5/75 (7%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIPGHLN--SY--TIKGLKPGVVYEGQLISIQQYGHQE  65
+            S I  + ++ R   SVG    AT+P  LN  +Y  T+ GL P V YE ++++    G  E
+Sbjct  626  SPIQIFTIQTRTPFSVGWQAVATVPEILNGKTYNATVVGLSPWVEYEFRVVAGNSIGIGE  685
+
+Query  66   VTRF-DFTTTSTSTP  79
+             +   +   T  S P
+Sbjct  686  PSEPSELLRTKASVP  700
+
+
+> sp|Q8AXZ4|CNT1A_DANRE Contactin-1a OS=Danio rerio OX=7955 GN=cntn1a 
+PE=2 SV=1
+Length=1032
+
+ Score = 43.2 bits (100),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 17/74 (23%), Positives = 31/74 (42%), Gaps = 5/74 (7%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEAT-----IPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            S IS+Y ++ R   +   W++A      + G+    T+  L P   YE ++I+    G  
+Sbjct  645  SPISRYTVQLRESAAQQDWRDAATSPVNVEGNAEMATVVNLLPWTEYEFRVIATNTLGTG  704
+
+Query  65   EVTRFDFTTTSTST  78
+              +     TT+   
+Sbjct  705  PPSEPSPKTTTREA  718
+
+
+> sp|Q8WZ42|TITIN_HUMAN Titin OS=Homo sapiens OX=9606 GN=TTN PE=1 
+SV=4
+Length=34350
+
+ Score = 42.8 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 18/71 (25%), Positives = 30/71 (42%), Gaps = 1/71 (1%)
+
+Query  10     SHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRF  69
+              S I+ YI+  R       +  AT   H  +Y + GL  G  Y  ++++  +YG  E T  
+Sbjct  21824  SRITNYIVEKREATRKS-YSTATTKCHKCTYKVTGLSEGCEYFFRVMAENEYGIGEPTET  21882
+
+Query  70     DFTTTSTSTPG  80
+                   ++  P 
+Sbjct  21883  TEPVKASEAPS  21893
+
+
+> sp|Q8IWV2|CNTN4_HUMAN Contactin-4 OS=Homo sapiens OX=9606 GN=CNTN4 
+PE=1 SV=1
+Length=1026
+
+ Score = 42.4 bits (98),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 20/74 (27%), Positives = 33/74 (45%), Gaps = 6/74 (8%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEAT-----IPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            S I+ Y+++ R   SVG W+  +     I G   + T+ GL P V YE + ++    G  
+Sbjct  625  SPITMYVIQARTPFSVG-WQAVSTVPELIDGKTFTATVVGLNPWVEYEFRTVAANVIGIG  683
+
+Query  65   EVTRFDFTTTSTST  78
+            E +R      +   
+Sbjct  684  EPSRPSEKRRTEEA  697
+
+
+> sp|B4LRN7|IHOG_DROVI Interference hedgehog OS=Drosophila virilis 
+OX=7244 GN=iHog PE=3 SV=1
+Length=907
+
+ Score = 42.4 bits (98),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 26/83 (31%), Positives = 37/83 (45%), Gaps = 3/83 (4%)
+
+Query  2    RGSNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLN-SYTIKGLKPGVVYEGQLISIQQ  60
+            R S+      IS Y   +RP  S G + +ATI G  + S+ I  L+PG +YE +L S   
+Sbjct  605  RLSSDADEQLISGYYAYYRPSASAGEYLKATIDGAKSRSFQISALEPGTIYEFKLQSFSA  664
+
+Query  61   YGHQEVTRFDFTTTSTSTPGSRS  83
+                E +        T  P + S
+Sbjct  665  VAASEFS--ALKQGRTQRPRASS  685
+
+
+> sp|Q8AV58|SDK1_CHICK Protein sidekick-1 OS=Gallus gallus OX=9031 
+GN=SDK1 PE=1 SV=1
+Length=2169
+
+ Score = 42.4 bits (98),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 16/74 (22%), Positives = 30/74 (41%), Gaps = 4/74 (5%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ----E  65
+            S +  Y++     NS  +   + +   + S T+ GL P   Y+ ++ ++ Q G      E
+Sbjct  650  SPVLYYMVELSENNSPWKVHLSNLDPKMTSVTVSGLTPARTYQFRVCAVNQVGKGQYSSE  709
+
+Query  66   VTRFDFTTTSTSTP  79
+             +R        S P
+Sbjct  710  TSRLMLPEEPPSAP  723
+
+
+> sp|B4JEF2|IHOG_DROGR Interference hedgehog OS=Drosophila grimshawi 
+OX=7222 GN=iHog PE=3 SV=1
+Length=888
+
+ Score = 42.1 bits (97),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 23/76 (30%), Positives = 33/76 (43%), Gaps = 9/76 (12%)
+
+Query  12   ISKYILRWRPKNSVGRWKEATIPGHLN-SYTIKGLKPGVVYEGQLISIQQYG--------  62
+            IS Y   +RP  S G + +ATI G  + S+ I  L+PG +YE +L S             
+Sbjct  594  ISGYYAYYRPSASAGEYLKATIDGAKSRSFQISALEPGTIYEFKLQSFSAVAASEFSALK  653
+
+Query  63   HQEVTRFDFTTTSTST  78
+                 R   +TT+   
+Sbjct  654  QGRTQRPRVSTTTEPA  669
+
+
+> sp|Q80W87|ROBO4_RAT Roundabout homolog 4 OS=Rattus norvegicus 
+OX=10116 GN=Robo4 PE=2 SV=1
+Length=961
+
+ Score = 42.1 bits (97),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 16/79 (20%), Positives = 30/79 (38%), Gaps = 1/79 (1%)
+
+Query  3    GSNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYG  62
+            G  AP  S+ + +  +  P++    W E  + G LN+  + GL+ G  YE ++       
+Sbjct  283  GPAAPAQSYTALFRAQRDPRDQGSPWTEVLLDGLLNA-KLGGLRWGQDYEFKVRPSSGRA  341
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +           P +
+Sbjct  342  RGPDSNVLLLRLPEQVPSA  360
+
+
+> sp|Q62845|CNTN4_RAT Contactin-4 OS=Rattus norvegicus OX=10116 
+GN=Cntn4 PE=1 SV=1
+Length=1026
+
+ Score = 42.1 bits (97),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 20/73 (27%), Positives = 33/73 (45%), Gaps = 4/73 (5%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIP----GHLNSYTIKGLKPGVVYEGQLISIQQYGHQE  65
+            S I+ Y+++ R   SVG    +T+P    G   + T+ GL P V YE + ++    G  E
+Sbjct  625  SPITMYVIQARTPFSVGWQAVSTVPELVDGKTFTATVVGLNPWVEYEFRTVAANVIGIGE  684
+
+Query  66   VTRFDFTTTSTST  78
+             +R      +   
+Sbjct  685  PSRPSEKRRTEEA  697
+
+
+> sp|Q8AV57|SDK2_CHICK Protein sidekick-2 OS=Gallus gallus OX=9031 
+GN=SDK2 PE=1 SV=2
+Length=2177
+
+ Score = 42.1 bits (97),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 21/79 (27%), Positives = 37/79 (47%), Gaps = 5/79 (6%)
+
+Query  4     SNAPQPSHISKYILRWRPKNSVGRWKE--ATIPGHLNSYTIKG--LKPGVVYEGQLISIQ  59
+             S  P    I++Y++  RP +  G W      IP  + SYT     LK GV Y+ ++I++ 
+Sbjct  1851  SGDPGQGPITRYVIEARPSD-EGLWDILIKDIPKEVTSYTFSMDILKQGVSYDFRVIAVN  1909
+
+Query  60    QYGHQEVTRFDFTTTSTST  78
+              YG+   +    + ++   
+Sbjct  1910  DYGYGTPSTPSPSVSAQKA  1928
+
+
+> sp|Q12860|CNTN1_HUMAN Contactin-1 OS=Homo sapiens OX=9606 GN=CNTN1 
+PE=1 SV=1
+Length=1018
+
+ Score = 41.7 bits (96),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 20/73 (27%), Positives = 34/73 (47%), Gaps = 8/73 (11%)
+
+Query  2    RGSNAPQPSHISKYILRWRPKNSVGRWKEAT-----IPGHLNSYTIKGLKPGVVYEGQLI  56
+            RGS+   P  ISKY ++ +   S   WK+A      I G++ +     L P + YE +++
+Sbjct  626  RGSDNHSP--ISKYTIQTKTILSDD-WKDAKTDPPIIEGNMEAARAVDLIPWMEYEFRVV  682
+
+Query  57   SIQQYGHQEVTRF  69
+            +    G  E +  
+Sbjct  683  ATNTLGRGEPSIP  695
+
+
+> sp|Q69Z26|CNTN4_MOUSE Contactin-4 OS=Mus musculus OX=10090 GN=Cntn4 
+PE=1 SV=2
+Length=1026
+
+ Score = 41.3 bits (95),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 20/73 (27%), Positives = 32/73 (44%), Gaps = 4/73 (5%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIP----GHLNSYTIKGLKPGVVYEGQLISIQQYGHQE  65
+            S I+ Y+++ R   SVG     T+P    G   + T+ GL P V YE + ++    G  E
+Sbjct  625  SPITMYVIQARTPFSVGWQAVNTVPDLVDGKTFTATVVGLNPWVEYEFRTVAANVIGIGE  684
+
+Query  66   VTRFDFTTTSTST  78
+             +R      +   
+Sbjct  685  PSRPSEKRRTEEA  697
+
+
+> sp|P11722|FINC_CHICK Fibronectin (Fragments) OS=Gallus gallus 
+OX=9031 GN=FN1 PE=2 SV=3
+Length=1256
+
+ Score = 40.9 bits (94),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 17/63 (27%), Positives = 28/63 (44%), Gaps = 0/63 (0%)
+
+Query  12   ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFDF  71
+            +  Y + +         +E T+PG ++  TI GLKPGV Y   + ++   G    +    
+Sbjct  444  VRYYRITYGETGGSSPVQEFTVPGTMSRATITGLKPGVDYTITVYAVTGRGDSPASSKPV  503
+
+Query  72   TTT  74
+            T T
+Sbjct  504  TVT  506
+
+
+ Score = 40.1 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 24/72 (33%), Positives = 37/72 (51%), Gaps = 3/72 (4%)
+
+Query  6    APQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQE  65
+            AP+ + I+ Y +R  P++ VGR KE  +P   NS T+  L PG  Y   +I++   G +E
+Sbjct  349  APRAT-ITGYKIRHHPEHGVGRPKEDRVPPSRNSITLTNLLPGTEYVVSIIAVN--GREE  405
+
+Query  66   VTRFDFTTTSTS  77
+                    T+ S
+Sbjct  406  SVPLVGQQTTVS  417
+
+
+> sp|Q2QI47|USH2A_MOUSE Usherin OS=Mus musculus OX=10090 GN=Ush2A 
+PE=1 SV=2
+Length=5193
+
+ Score = 40.9 bits (94),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 25/78 (32%), Positives = 35/78 (45%), Gaps = 5/78 (6%)
+
+Query  4     SNAPQPSHISKYILRWRPKNSV-GRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYG  62
+             +NAP      +Y L+ RP  S  GR +   IP    SY + GL+P  VYE +L++   +G
+Sbjct  2452  NNAPGSP---RYQLQMRPGPSTHGRLELFPIPSASLSYEVTGLQPFTVYEFRLVATNGFG  2508
+
+Query  63    HQ-EVTRFDFTTTSTSTP  79
+                       TT     P
+Sbjct  2509  TAYSAWTPLMTTEDKPGP  2526
+
+
+> sp|Q3UH53|SDK1_MOUSE Protein sidekick-1 OS=Mus musculus OX=10090 
+GN=Sdk1 PE=1 SV=1
+Length=2193
+
+ Score = 40.9 bits (94),  Expect = 9e-04, Method: Composition-based stats.
+ Identities = 16/74 (22%), Positives = 30/74 (41%), Gaps = 4/74 (5%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ----E  65
+            S +  YI++    NS  +   + +   +   T+ GL P   Y+ ++ ++ Q G      E
+Sbjct  680  SPVLYYIVQVSENNSPWKVHLSNVGPEMTGVTVSGLTPARTYQFRVCAVNQVGKGQYSTE  739
+
+Query  66   VTRFDFTTTSTSTP  79
+             +R        S P
+Sbjct  740  TSRLMLPEEPPSAP  753
+
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 18/77 (23%), Positives = 35/77 (45%), Gaps = 5/77 (6%)
+
+Query  5     NAPQPSHISKYILRWRPKNSVGRWK--EATIPGHLNSYTIK--GLKPGVVYEGQLISIQQ  60
+                  +  + Y++  RP +  G W      IP    SYT+    L+ GV YE +++++ +
+Sbjct  1907  GNAGTTPTTGYVIEARPSD-EGLWDMFAKDIPRSATSYTVDLDKLRQGVTYEFRVVAVNK  1965
+
+Query  61    YGHQEVTRFDFTTTSTS  77
+              G  E +R     ++ +
+Sbjct  1966  AGFGEPSRPSIAVSAQA  1982
+
+
+> sp|Q63870|CO7A1_MOUSE Collagen alpha-1(VII) chain OS=Mus musculus 
+OX=10090 GN=Col7a1 PE=1 SV=3
+Length=2944
+
+ Score = 40.5 bits (93),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 24/74 (32%), Positives = 32/74 (43%), Gaps = 5/74 (7%)
+
+Query  10    SHISKYILRWRPKNSVG---RWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEV  66
+             S  S YIL WRP    G        T+PG  +S+ + GL+PG+ Y   L  IQ       
+Sbjct  981   SGASSYILSWRPLRGTGQEVPRAPQTLPGTSSSHRVTGLEPGISYVFSLTPIQSGVRG--  1038
+
+Query  67    TRFDFTTTSTSTPG  80
+             +    T T   + G
+Sbjct  1039  SEISVTQTPACSHG  1052
+
+
+> sp|Q61330|CNTN2_MOUSE Contactin-2 OS=Mus musculus OX=10090 GN=Cntn2 
+PE=1 SV=2
+Length=1040
+
+ Score = 40.1 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 23/85 (27%), Positives = 37/85 (44%), Gaps = 9/85 (11%)
+
+Query  2    RGSNAPQPSHISKYILRWRPKNSVGRWKEA-----TIPGHLNSYTIKGLKPGVVYEGQLI  56
+            RG +   P  I+KY L+ R   S G+WK+       I G+  +  + GL P + YE ++ 
+Sbjct  632  RGFDNHSP--IAKYTLQARTPPS-GKWKQVRTNPVNIEGNAETAQVLGLMPWMDYEFRVS  688
+
+Query  57   SIQQYGHQEVTRFDF-TTTSTSTPG  80
+            +    G  E +       T  + P 
+Sbjct  689  ASNILGTGEPSGPSSRIRTKEAVPS  713
+
+
+> sp|B4KJW1|IHOG_DROMO Interference hedgehog OS=Drosophila mojavensis 
+OX=7230 GN=iHog PE=3 SV=1
+Length=897
+
+ Score = 40.1 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 24/73 (33%), Positives = 32/73 (44%), Gaps = 3/73 (4%)
+
+Query  12   ISKYILRWRPKNSVGRWKEATIPG-HLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFD  70
+            IS Y   +RP  S G + +ATI G    S  I  L+PG +YE +L S       E +   
+Sbjct  608  ISGYYAYYRPSASAGEYLKATIDGAKARSALISALEPGTIYEFKLQSFSAMAASEFSS--  665
+
+Query  71   FTTTSTSTPGSRS  83
+                 T  P S +
+Sbjct  666  LKQGRTQRPRSST  678
+
+
+> sp|Q02388|CO7A1_HUMAN Collagen alpha-1(VII) chain OS=Homo sapiens 
+OX=9606 GN=COL7A1 PE=1 SV=2
+Length=2944
+
+ Score = 40.1 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 20/59 (34%), Positives = 25/59 (42%), Gaps = 3/59 (5%)
+
+Query  10    SHISKYILRWRPKNSVG---RWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQE  65
+             S  S YIL WRP    G        T+PG  +S  + GL+PGV Y   L  +       
+Sbjct  980   SRASSYILSWRPLRGPGQEVPGSPQTLPGISSSQRVTGLEPGVSYIFSLTPVLDGVRGP  1038
+
+
+> sp|A2ASS6|TITIN_MOUSE Titin OS=Mus musculus OX=10090 GN=Ttn PE=1 
+SV=1
+Length=35213
+
+ Score = 40.1 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 17/70 (24%), Positives = 29/70 (41%), Gaps = 1/70 (1%)
+
+Query  10     SHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRF  69
+              S I+ YI+  R       +   T   H  +Y + GL  G  Y  ++++  +YG  E T  
+Sbjct  22686  SRITNYIVEKREATRKS-YSTVTTKCHKCTYKVTGLTEGCEYFFRVMAENEYGVGEPTET  22744
+
+Query  70     DFTTTSTSTP  79
+                   ++  P
+Sbjct  22745  TEPVRASEAP  22754
+
+
+ Score = 40.1 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 17/76 (22%), Positives = 32/76 (42%), Gaps = 3/76 (4%)
+
+Query  10     SHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEV--T  67
+              + IS YI+  + + S   W + +      +Y +  L PG  Y  +++++ +YG  E   +
+Sbjct  26621  ASISHYIIE-KRETSRLSWTQVSNEVQALNYKVTKLLPGNEYIFRVMAVNKYGIGEALES  26679
+
+Query  68     RFDFTTTSTSTPGSRS  83
+                         PG  S
+Sbjct  26680  EPVIACNPYKRPGPPS  26695
+
+
+> sp|Q7Z5N4|SDK1_HUMAN Protein sidekick-1 OS=Homo sapiens OX=9606 
+GN=SDK1 PE=2 SV=3
+Length=2213
+
+ Score = 40.1 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 16/74 (22%), Positives = 29/74 (39%), Gaps = 4/74 (5%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ----E  65
+            S I  YI+     NS  +   + +   +   T+ GL P   Y+ ++ ++ + G      E
+Sbjct  698  SPILYYIVELSENNSPWKVHLSNVGPEMTGVTVSGLTPARTYQFRVCAVNEVGRGQYSAE  757
+
+Query  66   VTRFDFTTTSTSTP  79
+             +R        S P
+Sbjct  758  TSRLMLPEEPPSAP  771
+
+
+> sp|P22063|CNTN2_RAT Contactin-2 OS=Rattus norvegicus OX=10116 
+GN=Cntn2 PE=1 SV=1
+Length=1040
+
+ Score = 40.1 bits (92),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 23/85 (27%), Positives = 37/85 (44%), Gaps = 9/85 (11%)
+
+Query  2    RGSNAPQPSHISKYILRWRPKNSVGRWKEA-----TIPGHLNSYTIKGLKPGVVYEGQLI  56
+            RG +   P  I+KY L+ R   S G+WK+       I G+  +  + GL P + YE ++ 
+Sbjct  632  RGFDNHSP--IAKYTLQARTPPS-GKWKQVRTNPVNIEGNAETAQVLGLMPWMDYEFRVS  688
+
+Query  57   SIQQYGHQEVTRFDFT-TTSTSTPG  80
+            +    G  E +       T  + P 
+Sbjct  689  ASNILGTGEPSGPSSKIRTKEAVPS  713
+
+
+> sp|P35331|NRCAM_CHICK Neuronal cell adhesion molecule OS=Gallus 
+gallus OX=9031 PE=1 SV=1
+Length=1284
+
+ Score = 39.7 bits (91),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 13/62 (21%), Positives = 29/62 (47%), Gaps = 3/62 (5%)
+
+Query  10   SHISKYILRWRPKN-SVGRWK-EATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVT  67
+            S I+ +++ +       G W  +  +PG   +  +K L P V Y  ++I++ + G  + +
+Sbjct  651  SPITNFVIEYEDGLHEPGVWHYQTEVPGSHTTVQLK-LSPYVNYSFRVIAVNEIGRSQPS  709
+
+Query  68   RF  69
+              
+Sbjct  710  EP  711
+
+
+> sp|P70232|NCHL1_MOUSE Neural cell adhesion molecule L1-like protein 
+OS=Mus musculus OX=10090 GN=Chl1 PE=1 SV=2
+Length=1209
+
+ Score = 39.4 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 17/78 (22%), Positives = 34/78 (44%), Gaps = 2/78 (3%)
+
+Query  4    SNAPQPSHISKYILRWR-PKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYG  62
+            +     S IS+YI+ +   +   G+W+E T      +  +  L P V Y+ ++ ++ + G
+Sbjct  634  AGDDHNSKISEYIVEFEGNREEPGKWEELTRVQGEETDVVLSLAPYVRYQFRVTAVNEVG  693
+
+Query  63   HQEVTRF-DFTTTSTSTP  79
+                +   D   T  + P
+Sbjct  694  RSHASLPSDHHETPPAAP  711
+
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 13/69 (19%), Positives = 29/69 (42%), Gaps = 6/69 (9%)
+
+Query  15   YILRWRPKNSVGRWKEATIPGHLNSYTIKGLKP--GVVYEGQLISIQQYGHQEVTRFDFT  72
+            Y + W+P+ +   W+E  +  H    T++ + P     Y+ ++ +I Q G     +    
+Sbjct  747  YKVSWKPQGAPEEWEEEIVTNH----TLRVMTPTVYAPYDVKVQAINQLGSSPDPQPVTL  802
+
+Query  73   TTSTSTPGS  81
+             +    P +
+Sbjct  803  YSGEDYPST  811
+
+
+> sp|B8VIW9|FP_ACRMI Fibronectin type III domain-containing protein 
+OS=Acropora millepora OX=45264 PE=1 SV=1
+Length=1280
+
+ Score = 39.4 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 17/80 (21%), Positives = 28/80 (35%), Gaps = 10/80 (13%)
+
+Query  14   KYILRWRPKNSVGRWKEATIPGHLN----------SYTIKGLKPGVVYEGQLISIQQYGH  63
+              I  W       + +   IPG+ +           YT+ GLKP   Y+  + +    G+
+Sbjct  864  YRIYFWGESRVSAKRRRRAIPGYASVTNVTGVNTERYTVTGLKPYTNYKFVITAYNSGGN  923
+
+Query  64   QEVTRFDFTTTSTSTPGSRS  83
+               +      T  + PG  S
+Sbjct  924  GPESDQVAADTDEAEPGPPS  943
+
+
+> sp|Q23551|UNC22_CAEEL Twitchin OS=Caenorhabditis elegans OX=6239 
+GN=unc-22 PE=1 SV=3
+Length=7158
+
+ Score = 39.4 bits (90),  Expect = 0.003, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 31/59 (53%), Gaps = 4/59 (7%)
+
+Query  12    ISKYILRWRPKNSVGRWKEA-TIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRF  69
+             ++ YI+  + K S   W EA   PG   +++   LKPGV YE ++I++   G  + +  
+Sbjct  4082  VTGYIVEKKEKGSA-IWTEAGKTPG--TTFSADNLKPGVEYEFRVIAVNAAGPSDPSDP  4137
+
+
+> sp|Q53EP0|FND3B_HUMAN Fibronectin type III domain-containing 
+protein 3B OS=Homo sapiens OX=9606 GN=FNDC3B PE=1 SV=2
+Length=1204
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 22/71 (31%), Positives = 29/71 (41%), Gaps = 0/71 (0%)
+
+Query  10   SHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRF  69
+            S I KY+L     NS     E    G    YT   LKPG +Y+ +   I   GH + +  
+Sbjct  602  SEILKYLLEITDGNSEANQWEVAYSGSATEYTFTHLKPGTLYKLRACCISTGGHSQCSES  661
+
+Query  70   DFTTTSTSTPG  80
+                T +  PG
+Sbjct  662  LPVRTLSIAPG  672
+
+
+> sp|Q9N3X8|SDK_CAEEL Protein sidekick homolog OS=Caenorhabditis 
+elegans OX=6239 GN=rig-4 PE=1 SV=2
+Length=2325
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 17/71 (24%), Positives = 32/71 (45%), Gaps = 2/71 (3%)
+
+Query  5     NAP--QPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYG  62
+             N+P  Q   ++KY +R    +S     +  + G   ++TI GL+P   Y   +++  + G
+Sbjct  980   NSPLKQNGIVTKYTIRHWAASSPDVKTKHEVDGSTTNFTIDGLQPSTRYGVDVMASTRKG  1039
+
+Query  63    HQEVTRFDFTT  73
+                V    F +
+Sbjct  1040  DGPVEETKFES  1050
+
+
+> sp|P32004|L1CAM_HUMAN Neural cell adhesion molecule L1 OS=Homo 
+sapiens OX=9606 GN=L1CAM PE=1 SV=2
+Length=1257
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 25/85 (29%), Positives = 40/85 (47%), Gaps = 7/85 (8%)
+
+Query  1    MRGSNAPQPSH---ISKYILRWRPK-NSVGRWKE-ATIPGHLNSYTIKGLKPGVVYEGQL  55
+            +R S +P   H   I KY + +  K  +  +W     +PG+  S T+K L P V Y  ++
+Sbjct  631  VRVSWSPAEDHNAPIEKYDIEFEDKEMAPEKWYSLGKVPGNQTSTTLK-LSPYVHYTFRV  689
+
+Query  56   ISIQQYGHQEVTRFDFT-TTSTSTP  79
+             +I +YG  E +    T  T  + P
+Sbjct  690  TAINKYGPGEPSPVSETVVTPEAAP  714
+
+
+> sp|Q5ZJP5|FND3A_CHICK Fibronectin type-III domain-containing 
+protein 3a OS=Gallus gallus OX=9031 GN=FNDC3A PE=2 SV=2
+Length=1198
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 23/80 (29%), Positives = 34/80 (43%), Gaps = 2/80 (3%)
+
+Query  4    SNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGH  63
+            S  P    IS YIL    +NS   +K     G   +YT+K L+    Y+ ++I+    G 
+Sbjct  492  SGTPSDEGIS-YILEMEDENSGYGFK-PKYDGDDLTYTVKNLRRSTKYKFRVIAYNSEGK  549
+
+Query  64   QEVTRFDFTTTSTSTPGSRS  83
+               +     TT    PG+ S
+Sbjct  550  SSPSETVDYTTCPDKPGAPS  569
+
+
+> sp|P97798|NEO1_MOUSE Neogenin OS=Mus musculus OX=10090 GN=Neo1 
+PE=1 SV=1
+Length=1493
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 19/70 (27%), Positives = 31/70 (44%), Gaps = 3/70 (4%)
+
+Query  12   ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFDF  71
+            I  Y L +  K +    KE  I    +SYTI GLK    Y  ++++  ++G    T+   
+Sbjct  600  IQNYKLYYMEKGTD---KEQDIDVSSHSYTINGLKKYTEYSFRVVAYNKHGPGVSTQDVA  656
+
+Query  72   TTTSTSTPGS  81
+              T +  P +
+Sbjct  657  VRTLSDVPSA  666
+
+
+> sp|Q2Q0I9|FNDC1_RAT Fibronectin type III domain-containing protein 
+1 OS=Rattus norvegicus OX=10116 GN=Fndc1 PE=1 SV=2
+Length=1779
+
+ Score = 38.6 bits (88),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 17/72 (24%), Positives = 30/72 (42%), Gaps = 0/72 (0%)
+
+Query  12   ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFDF  71
+            + +YIL + P       K  T  GH  S  + GL+PG  Y  ++ +  + G    ++   
+Sbjct  337  VKEYILSYAPALKPFGAKSLTFSGHTTSALVDGLQPGERYLFKIRATNRRGQGPHSKAFI  396
+
+Query  72   TTTSTSTPGSRS  83
+                T++    S
+Sbjct  397  VAIPTTSSTEAS  408
+
+
+> sp|P97603|NEO1_RAT Neogenin (Fragment) OS=Rattus norvegicus OX=10116 
+GN=Neo1 PE=1 SV=1
+Length=1377
+
+ Score = 38.2 bits (87),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 18/70 (26%), Positives = 31/70 (44%), Gaps = 3/70 (4%)
+
+Query  12   ISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFDF  71
+            I  Y L +  K +    KE  +    +SYTI GLK    Y  ++++  ++G    T+   
+Sbjct  538  IQNYKLYYMEKGTD---KEQDVDVSSHSYTINGLKKYTEYSFRVVAYNKHGPGVSTQDVA  594
+
+Query  72   TTTSTSTPGS  81
+              T +  P +
+Sbjct  595  VRTLSDVPSA  604
+
+
+> sp|P97685|NFASC_RAT Neurofascin OS=Rattus norvegicus OX=10116 
+GN=Nfasc PE=1 SV=2
+Length=1240
+
+ Score = 38.2 bits (87),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 13/68 (19%), Positives = 27/68 (40%), Gaps = 2/68 (3%)
+
+Query  14   KYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFDFTT  73
+            +YI++WR + +   W   T+ G  + Y +      V YE ++ +   +G           
+Sbjct  762  RYIVKWRRRETRETWNNVTVWG--SRYVVGQTPVYVPYEIRVQAENDFGKGPEPETVIGY  819
+
+Query  74   TSTSTPGS  81
+            +    P +
+Sbjct  820  SGEDLPSA  827
+
+
+> sp|P13590|NCAM1_CHICK Neural cell adhesion molecule 1 OS=Gallus 
+gallus OX=9031 GN=NCAM1 PE=1 SV=3
+Length=1091
+
+ Score = 38.2 bits (87),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 25/78 (32%), Positives = 33/78 (42%), Gaps = 12/78 (15%)
+
+Query  12   ISKYILRWRPKNSVGRW-------KEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQ  64
+            I KY   WR     G W       KEA + G   + TI GLKP   Y  +L ++   G  
+Sbjct  530  ILKYKAEWR-ALGEGEWHSRLYDAKEANVEG---TITISGLKPETTYSVRLSAVNGKGVG  585
+
+Query  65   EVTRF-DFTTTSTSTPGS  81
+            E++   DF T     P +
+Sbjct  586  EISLPSDFKTQPVREPSA  603
+
+
+> sp|Q6AZB0|BOC_MOUSE Brother of CDO OS=Mus musculus OX=10090 GN=Boc 
+PE=1 SV=2
+Length=1110
+
+ Score = 37.8 bits (86),  Expect = 0.006, Method: Composition-based stats.
+ Identities = 18/69 (26%), Positives = 30/69 (43%), Gaps = 1/69 (1%)
+
+Query  12   ISKYILRWRP-KNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFD  70
+            I  Y+++ R   NS   W  + IP + +  T+  L PG +YE ++ +    G  +     
+Sbjct  500  ILYYVVKHRKVTNSSDDWTISGIPANQHRLTLTRLDPGSLYEVEMAAYNCAGEGQTAMVT  559
+
+Query  71   FTTTSTSTP  79
+            F T     P
+Sbjct  560  FRTGRRPKP  568
+
+
+> sp|Q91289|FINC_PLEWA Fibronectin (Fragment) OS=Pleurodeles waltl 
+OX=8319 PE=2 SV=1
+Length=1328
+
+ Score = 37.4 bits (85),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 16/66 (24%), Positives = 27/66 (41%), Gaps = 0/66 (0%)
+
+Query  9    PSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTR  68
+            P  +  Y + +         +E T+PG  +   I+GLKPG  Y   + ++   G    + 
+Sbjct  409  PVGVRYYRITYTETGGETPVQEFTVPGDRSDAPIRGLKPGAEYIITVYAVTGRGDSPASS  468
+
+Query  69   FDFTTT  74
+               T T
+Sbjct  469  KPVTVT  474
+
+
+> sp|Q9BWV1|BOC_HUMAN Brother of CDO OS=Homo sapiens OX=9606 GN=BOC 
+PE=1 SV=1
+Length=1114
+
+ Score = 37.4 bits (85),  Expect = 0.009, Method: Composition-based stats.
+ Identities = 18/69 (26%), Positives = 30/69 (43%), Gaps = 1/69 (1%)
+
+Query  12   ISKYILRWRP-KNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYGHQEVTRFD  70
+            I  Y+++ R   NS   W  + IP + +  T+  L PG +YE ++ +    G  +     
+Sbjct  505  ILYYVVKHRKVTNSSDDWTISGIPANQHRLTLTRLDPGSLYEVEMAAYNCAGEGQTAMVT  564
+
+Query  71   FTTTSTSTP  79
+            F T     P
+Sbjct  565  FRTGRRPKP  573
+
+
+> sp|Q8C310|ROBO4_MOUSE Roundabout homolog 4 OS=Mus musculus OX=10090 
+GN=Robo4 PE=1 SV=2
+Length=1012
+
+ Score = 37.4 bits (85),  Expect = 0.010, Method: Composition-based stats.
+ Identities = 16/79 (20%), Positives = 28/79 (35%), Gaps = 1/79 (1%)
+
+Query  3    GSNAPQPSHISKYILRWRPKNSVGRWKEATIPGHLNSYTIKGLKPGVVYEGQLISIQQYG  62
+            G  AP  S+ + +  +  P++    W E  + G L S  + GL  G  YE ++       
+Sbjct  273  GPAAPAESYTALFRTQRSPRDQGSPWTEVLLRG-LQSAKLGGLHWGQDYEFKVRPSSGRA  331
+
+Query  63   HQEVTRFDFTTTSTSTPGS  81
+                +           P +
+Sbjct  332  RGPDSNVLLLRLPEQVPSA  350
+
+
+
+Lambda      K        H        a         alpha
+   0.308    0.126    0.365    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0378    0.140     1.90     42.6     43.6 
+
+Effective search space used: 5003987370
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

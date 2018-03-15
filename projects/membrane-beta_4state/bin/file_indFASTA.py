@@ -1,5 +1,5 @@
 
-testfile = "../datasets/membrane-beta_4state.3line.txt"
+testfile = "../datasets/50unique.3line.txt"
 
 listID = []
 listaa = []

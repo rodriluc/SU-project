@@ -1,0 +1,2169 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= 1NE3
+
+Length=68
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|O26356|RS28_METTH 30S ribosomal protein S28e OS=Methanotherm...  133     1e-40
+  sp|Q8TVE7|RS28_METKA 30S ribosomal protein S28e OS=Methanopyrus...  92.4    2e-24
+  sp|Q97BK7|RS28_THEVO 30S ribosomal protein S28e OS=Thermoplasma...  92.0    2e-24
+  sp|A1RXH2|RS28_THEPD 30S ribosomal protein S28e OS=Thermofilum ...  91.3    5e-24
+  sp|P57711|RS28_THEAC 30S ribosomal protein S28e OS=Thermoplasma...  90.9    5e-24
+  sp|Q6KZI6|RS28_PICTO 30S ribosomal protein S28e OS=Picrophilus ...  88.6    4e-23
+  sp|Q980Q5|RS28_SULSO 30S ribosomal protein S28e OS=Sulfolobus s...  88.2    9e-23
+  sp|P61030|RS28_PYRHO 30S ribosomal protein S28e OS=Pyrococcus h...  87.4    1e-22
+  sp|P61029|RS28_PYRAB 30S ribosomal protein S28e OS=Pyrococcus a...  87.4    1e-22
+  sp|Q4JAV1|RS28_SULAC 30S ribosomal protein S28e OS=Sulfolobus a...  87.8    1e-22
+  sp|P57710|RS28_HALSA 30S ribosomal protein S28e OS=Halobacteriu...  87.4    2e-22
+  sp|B0R500|RS28_HALS3 30S ribosomal protein S28e OS=Halobacteriu...  87.4    2e-22
+  sp|Q8U159|RS28_PYRFU 30S ribosomal protein S28e OS=Pyrococcus f...  87.0    2e-22
+  sp|Q975Z8|RS28_SULTO 30S ribosomal protein S28e OS=Sulfolobus t...  87.0    2e-22
+  sp|Q18GA9|RS28_HALWD 30S ribosomal protein S28e OS=Haloquadratu...  86.3    5e-22
+  sp|Q8PU75|RS28_METMA 30S ribosomal protein S28e OS=Methanosarci...  85.9    6e-22
+  sp|Q8TQL8|RS28_METAC 30S ribosomal protein S28e OS=Methanosarci...  85.5    7e-22
+  sp|Q9Y9A6|RS28_AERPE 30S ribosomal protein S28e OS=Aeropyrum pe...  85.5    1e-21
+  sp|Q3IPM8|RS28_NATPD 30S ribosomal protein S28e OS=Natronomonas...  84.7    2e-21
+  sp|A4YCQ2|RS28_METS5 30S ribosomal protein S28e OS=Metallosphae...  84.3    2e-21
+  sp|B9LPY3|RS28_HALLT 30S ribosomal protein S28e OS=Halorubrum l...  83.6    4e-21
+  sp|A1RS33|RS28_PYRIL 30S ribosomal protein S28e OS=Pyrobaculum ...  83.6    6e-21
+  sp|A6USH4|RS28_METVS 30S ribosomal protein S28e OS=Methanococcu...  82.4    1e-20
+  sp|Q6LZI8|RS28_METMP 30S ribosomal protein S28e OS=Methanococcu...  81.6    3e-20
+  sp|O29493|RS28_ARCFU 30S ribosomal protein S28e OS=Archaeoglobu...  81.3    3e-20
+  sp|A4FYI6|RS28_METM5 30S ribosomal protein S28e OS=Methanococcu...  80.9    4e-20
+  sp|A6VJU6|RS28_METM7 30S ribosomal protein S28e OS=Methanococcu...  80.9    5e-20
+  sp|A9A7E6|RS28_METM6 30S ribosomal protein S28e OS=Methanococcu...  80.9    5e-20
+  sp|B1L5N5|RS28_KORCO 30S ribosomal protein S28e OS=Korarchaeum ...  80.9    5e-20
+  sp|A4WLP1|RS28_PYRAR 30S ribosomal protein S28e OS=Pyrobaculum ...  80.9    5e-20
+  sp|Q8ZTA7|RS28_PYRAE 30S ribosomal protein S28e OS=Pyrobaculum ...  80.9    6e-20
+  sp|A6UT50|RS28_META3 30S ribosomal protein S28e OS=Methanococcu...  80.5    6e-20
+  sp|B1Y9V2|RS28_PYRNV 30S ribosomal protein S28e OS=Pyrobaculum ...  80.1    1e-19
+  sp|A2BK95|RS28_HYPBU 30S ribosomal protein S28e OS=Hyperthermus...  77.0    1e-18
+  sp|P54065|RS28_METJA 30S ribosomal protein S28e OS=Methanocaldo...  77.0    2e-18
+  sp|Q5JGR4|RS28_THEKO 30S ribosomal protein S28e OS=Thermococcus...  74.7    1e-17
+  sp|P61031|RS28_NANEQ 30S ribosomal protein S28e OS=Nanoarchaeum...  70.1    9e-16
+  sp|Q74ZD8|RS28_ASHGO 40S ribosomal protein S28 OS=Ashbya gossyp...  61.6    1e-12
+  sp|P33286|RS28_KLUMA 40S ribosomal protein S28 OS=Kluyveromyces...  61.2    1e-12
+  sp|P33285|RS28_KLULA 40S ribosomal protein S28 OS=Kluyveromyces...  60.8    2e-12
+  sp|Q3E7X9|RS28A_YEAST 40S ribosomal protein S28-A OS=Saccharomy...  60.5    3e-12
+  sp|Q6FLC3|RS28_CANGA 40S ribosomal protein S28 OS=Candida glabr...  60.1    4e-12
+  sp|P0C0X0|RS28B_YEAST 40S ribosomal protein S28-B OS=Saccharomy...  60.1    4e-12
+  sp|P46302|RS28_MAIZE 40S ribosomal protein S28 OS=Zea mays OX=4...  57.8    3e-11
+  sp|Q95Y04|RS28_CAEEL 40S ribosomal protein S28 OS=Caenorhabditi...  57.4    4e-11
+  sp|Q90YP3|RS28_ICTPU 40S ribosomal protein S28 OS=Ictalurus pun...  57.0    6e-11
+  sp|Q6PBK3|RS28_DANRE 40S ribosomal protein S28 OS=Danio rerio O...  57.0    6e-11
+  sp|P62859|RS28_RAT 40S ribosomal protein S28 OS=Rattus norvegic...  56.6    9e-11
+  sp|Q6QAT1|RS28_PIG 40S ribosomal protein S28 OS=Sus scrofa OX=9...  56.6    9e-11
+  sp|P62858|RS28_MOUSE 40S ribosomal protein S28 OS=Mus musculus ...  56.6    9e-11
+  sp|P62857|RS28_HUMAN 40S ribosomal protein S28 OS=Homo sapiens ...  56.6    9e-11
+  sp|Q56JX6|RS28_BOVIN 40S ribosomal protein S28 OS=Bos taurus OX...  56.6    9e-11
+  sp|P0CT80|RS28B_SCHPO 40S ribosomal protein S28-B OS=Schizosacc...  56.6    1e-10
+  sp|P0CT79|RS28A_SCHPO 40S ribosomal protein S28-A OS=Schizosacc...  56.6    1e-10
+  sp|Q9SR73|RS281_ARATH 40S ribosomal protein S28-1 OS=Arabidopsi...  55.8    1e-10
+  sp|P34789|RS282_ARATH 40S ribosomal protein S28-2 OS=Arabidopsi...  55.8    2e-10
+  sp|Q9W334|RS28_DROME 40S ribosomal protein S28 OS=Drosophila me...  55.8    2e-10
+  sp|O61590|RS28_OSTOS 40S ribosomal protein S28 OS=Ostertagia os...  55.5    2e-10
+  sp|Q54MZ5|RS28_DICDI 40S ribosomal protein S28 OS=Dictyostelium...  54.3    7e-10
+  sp|Q962Q2|RS28_SPOFR 40S ribosomal protein S28 OS=Spodoptera fr...  52.8    2e-09
+  sp|Q6EV21|RS28_PAPDA 40S ribosomal protein S28 OS=Papilio darda...  52.8    2e-09
+  sp|Q6PS50|RS28_BOMMO 40S ribosomal protein S28 OS=Bombyx mori O...  52.8    2e-09
+  sp|Q7S6W5|RS28_NEUCR 40S ribosomal protein S28 OS=Neurospora cr...  52.4    3e-09
+
+
+> sp|O26356|RS28_METTH 30S ribosomal protein S28e OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / 
+JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=rps28e PE=1 
+SV=1
+Length=68
+
+ Score = 133 bits (334),  Expect = 1e-40, Method: Compositional matrix adjust.
+ Identities = 68/68 (100%), Positives = 68/68 (100%), Gaps = 0/68 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+           MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR
+Sbjct  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+
+Query  61  EAKEIRTP  68
+           EAKEIRTP
+Sbjct  61  EAKEIRTP  68
+
+
+> sp|Q8TVE7|RS28_METKA 30S ribosomal protein S28e OS=Methanopyrus 
+kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) 
+OX=190192 GN=rps28e PE=3 SV=1
+Length=74
+
+ Score = 92.4 bits (228),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 46/64 (72%), Positives = 55/64 (86%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           +DATPAEV+E+L RTGM GEV QVK RIL+G DKGRI+TRNV GP+REGDIL+L +T RE
+Sbjct  10  EDATPAEVVEILGRTGMAGEVTQVKVRILEGPDKGRIITRNVKGPVREGDILLLRETERE  69
+
+Query  62  AKEI  65
+           A+ I
+Sbjct  70  ARPI  73
+
+
+> sp|Q97BK7|RS28_THEVO 30S ribosomal protein S28e OS=Thermoplasma 
+volcanium (strain ATCC 51530 / DSM 4299 / JCM 9571 / NBRC 
+15438 / GSS1) OX=273116 GN=rps28e PE=3 SV=1
+Length=69
+
+ Score = 92.0 bits (227),  Expect = 2e-24, Method: Compositional matrix adjust.
+ Identities = 42/64 (66%), Positives = 55/64 (86%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           ++ATPAEV+E++ RTGMTGE   VK RIL GRD+GRI+ RNV+GP+R GDILML++T RE
+Sbjct  3   NEATPAEVVEIIGRTGMTGEATTVKVRILSGRDQGRIIARNVLGPVRVGDILMLMETARE  62
+
+Query  62  AKEI  65
+           AK++
+Sbjct  63  AKKL  66
+
+
+> sp|A1RXH2|RS28_THEPD 30S ribosomal protein S28e OS=Thermofilum 
+pendens (strain DSM 2475 / Hrk 5) OX=368408 GN=rps28e PE=3 
+SV=1
+Length=77
+
+ Score = 91.3 bits (225),  Expect = 5e-24, Method: Compositional matrix adjust.
+ Identities = 43/67 (64%), Positives = 56/67 (84%), Gaps = 0/67 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             DA PAEV++++ RTG+TGEV QV+ R+L+GRDKGRILTRNV GP+R GDI+ML +T R
+Sbjct  10  FSDAVPAEVVQIIGRTGITGEVTQVRVRVLEGRDKGRILTRNVRGPVRVGDIVMLRETER  69
+
+Query  61  EAKEIRT  67
+           EA++I T
+Sbjct  70  EARKIAT  76
+
+
+> sp|P57711|RS28_THEAC 30S ribosomal protein S28e OS=Thermoplasma 
+acidophilum (strain ATCC 25905 / DSM 1728 / JCM 9062 / NBRC 
+15155 / AMRC-C165) OX=273075 GN=rps28e PE=3 SV=1
+Length=69
+
+ Score = 90.9 bits (224),  Expect = 5e-24, Method: Compositional matrix adjust.
+ Identities = 41/64 (64%), Positives = 55/64 (86%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           ++ATPAEV+E++ RTGMTGE   VK R+L GRD+GRI+ RNV+GP+R GDILML++T RE
+Sbjct  3   NEATPAEVVEIIGRTGMTGEATTVKVRVLAGRDQGRIIARNVLGPVRVGDILMLMETARE  62
+
+Query  62  AKEI  65
+           AK++
+Sbjct  63  AKKL  66
+
+
+> sp|Q6KZI6|RS28_PICTO 30S ribosomal protein S28e OS=Picrophilus 
+torridus (strain ATCC 700027 / DSM 9790 / JCM 10055 / NBRC 
+100828) OX=263820 GN=rps28e PE=3 SV=1
+Length=69
+
+ Score = 88.6 bits (218),  Expect = 4e-23, Method: Compositional matrix adjust.
+ Identities = 39/64 (61%), Positives = 54/64 (84%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           DDATPAEV+E++ RTGMTGE   VK R+L G+D+GRI+ RNV+GP++ GD+LML +T RE
+Sbjct  3   DDATPAEVVEIMGRTGMTGEATTVKVRVLSGKDQGRIIARNVLGPVKVGDVLMLRETARE  62
+
+Query  62  AKEI  65
+           A+++
+Sbjct  63  ARKL  66
+
+
+> sp|Q980Q5|RS28_SULSO 30S ribosomal protein S28e OS=Sulfolobus 
+solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / P2) 
+OX=273057 GN=rps28e PE=3 SV=2
+Length=83
+
+ Score = 88.2 bits (217),  Expect = 9e-23, Method: Compositional matrix adjust.
+ Identities = 43/62 (69%), Positives = 54/62 (87%), Gaps = 0/62 (0%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+           PAEVI++L RTG+TGEV QV+ R+L+GRDKGRILTRNV GP+R GDIL+L +T REA++I
+Sbjct  20  PAEVIQILDRTGVTGEVTQVRVRVLEGRDKGRILTRNVKGPVRVGDILILRETEREARKI  79
+
+Query  66  RT  67
+            T
+Sbjct  80  TT  81
+
+
+> sp|P61030|RS28_PYRHO 30S ribosomal protein S28e OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 
+100139 / OT-3) OX=70601 GN=rps28e PE=1 SV=1
+Length=71
+
+ Score = 87.4 bits (215),  Expect = 1e-22, Method: Compositional matrix adjust.
+ Identities = 42/66 (64%), Positives = 55/66 (83%), Gaps = 0/66 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           D+  PAEVIE++ RTG TG+V QVK RIL+GRDKGR++ RNV GP+R GDIL+L +T RE
+Sbjct  4   DEGYPAEVIEIIGRTGTTGDVTQVKVRILEGRDKGRVIRRNVRGPVRVGDILILRETERE  63
+
+Query  62  AKEIRT  67
+           A+EI++
+Sbjct  64  AREIKS  69
+
+
+> sp|P61029|RS28_PYRAB 30S ribosomal protein S28e OS=Pyrococcus 
+abyssi (strain GE5 / Orsay) OX=272844 GN=rps28e PE=3 SV=1
+Length=71
+
+ Score = 87.4 bits (215),  Expect = 1e-22, Method: Compositional matrix adjust.
+ Identities = 42/66 (64%), Positives = 55/66 (83%), Gaps = 0/66 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           D+  PAEVIE++ RTG TG+V QVK RIL+GRDKGR++ RNV GP+R GDIL+L +T RE
+Sbjct  4   DEGYPAEVIEIIGRTGTTGDVTQVKVRILEGRDKGRVIRRNVRGPVRVGDILILRETERE  63
+
+Query  62  AKEIRT  67
+           A+EI++
+Sbjct  64  AREIKS  69
+
+
+> sp|Q4JAV1|RS28_SULAC 30S ribosomal protein S28e OS=Sulfolobus 
+acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 / NBRC 
+15157 / NCIMB 11770) OX=330779 GN=rps28e PE=3 SV=1
+Length=84
+
+ Score = 87.8 bits (216),  Expect = 1e-22, Method: Compositional matrix adjust.
+ Identities = 42/62 (68%), Positives = 54/62 (87%), Gaps = 0/62 (0%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+           PAEVI++L RTG+TGEV QV+ R+L+GRDKGRILTRNV GP+R GDIL+L +T REA+++
+Sbjct  21  PAEVIQILDRTGVTGEVTQVRVRVLEGRDKGRILTRNVKGPVRLGDILILRETEREARKL  80
+
+Query  66  RT  67
+            T
+Sbjct  81  ST  82
+
+
+> sp|P57710|RS28_HALSA 30S ribosomal protein S28e OS=Halobacterium 
+salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 
+GN=rps28e PE=3 SV=1
+Length=74
+
+ Score = 87.4 bits (215),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 40/64 (63%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           + ATPAEVIEV+ +TGM GE MQVKCRI +G ++GRI+TRNV+GP+R GD++ L +T RE
+Sbjct  8   EGATPAEVIEVVGKTGMHGEAMQVKCRIQEGGNQGRIITRNVLGPVRVGDVIQLKETARE  67
+
+Query  62  AKEI  65
+           A  I
+Sbjct  68  ADSI  71
+
+
+> sp|B0R500|RS28_HALS3 30S ribosomal protein S28e OS=Halobacterium 
+salinarum (strain ATCC 29341 / DSM 671 / R1) OX=478009 GN=rps28e 
+PE=3 SV=1
+Length=74
+
+ Score = 87.4 bits (215),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 40/64 (63%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           + ATPAEVIEV+ +TGM GE MQVKCRI +G ++GRI+TRNV+GP+R GD++ L +T RE
+Sbjct  8   EGATPAEVIEVVGKTGMHGEAMQVKCRIQEGGNQGRIITRNVLGPVRVGDVIQLKETARE  67
+
+Query  62  AKEI  65
+           A  I
+Sbjct  68  ADSI  71
+
+
+> sp|Q8U159|RS28_PYRFU 30S ribosomal protein S28e OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=rps28e PE=1 SV=1
+Length=71
+
+ Score = 87.0 bits (214),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 42/66 (64%), Positives = 55/66 (83%), Gaps = 0/66 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           D+  PAEVIE++ RTG TG+V QVK RIL+GRDKGR++ RNV GP+R GDIL+L +T RE
+Sbjct  4   DEGYPAEVIEIIGRTGTTGDVTQVKVRILEGRDKGRVIRRNVRGPVRIGDILILRETERE  63
+
+Query  62  AKEIRT  67
+           A+EI++
+Sbjct  64  AREIKS  69
+
+
+> sp|Q975Z8|RS28_SULTO 30S ribosomal protein S28e OS=Sulfolobus 
+tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 / 7) OX=273063 
+GN=rps28e PE=3 SV=1
+Length=83
+
+ Score = 87.0 bits (214),  Expect = 2e-22, Method: Compositional matrix adjust.
+ Identities = 42/62 (68%), Positives = 54/62 (87%), Gaps = 0/62 (0%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+           PAEVI++L RTG+TGEV QV+ R+L+GRDKGRILTRNV GP+R GDIL+L +T REA+++
+Sbjct  20  PAEVIQILDRTGVTGEVTQVRVRVLEGRDKGRILTRNVKGPVRLGDILILRETEREARKL  79
+
+Query  66  RT  67
+            T
+Sbjct  80  TT  81
+
+
+> sp|Q18GA9|RS28_HALWD 30S ribosomal protein S28e OS=Haloquadratum 
+walsbyi (strain DSM 16790 / HBSQ001) OX=362976 GN=rps28e 
+PE=3 SV=1
+Length=74
+
+ Score = 86.3 bits (212),  Expect = 5e-22, Method: Compositional matrix adjust.
+ Identities = 38/64 (59%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+            D+T AE+IE++ +TGM GE MQVKCRI +G ++GRI+TRNV+GP+REGD+L L +T R+
+Sbjct  8   SDSTSAEIIEIVGKTGMHGEAMQVKCRIREGSNQGRIITRNVLGPVREGDVLQLRETQRD  67
+
+Query  62  AKEI  65
+           A  I
+Sbjct  68  ADSI  71
+
+
+> sp|Q8PU75|RS28_METMA 30S ribosomal protein S28e OS=Methanosarcina 
+mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 / Go1 / JCM 
+11833 / OCM 88) OX=192952 GN=rps28e PE=3 SV=1
+Length=73
+
+ Score = 85.9 bits (211),  Expect = 6e-22, Method: Compositional matrix adjust.
+ Identities = 39/62 (63%), Positives = 52/62 (84%), Gaps = 0/62 (0%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+            AEVI+V+  TGM GE  Q++CR+L+GRDKGR++TRN +GP+R GDILMLL+T REAK++
+Sbjct  11  AAEVIDVIGNTGMHGEASQIQCRVLEGRDKGRVITRNCVGPVRIGDILMLLETSREAKKL  70
+
+Query  66  RT  67
+            T
+Sbjct  71  TT  72
+
+
+> sp|Q8TQL8|RS28_METAC 30S ribosomal protein S28e OS=Methanosarcina 
+acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 / 
+C2A) OX=188937 GN=rps28e PE=3 SV=1
+Length=76
+
+ Score = 85.5 bits (210),  Expect = 7e-22, Method: Compositional matrix adjust.
+ Identities = 39/62 (63%), Positives = 52/62 (84%), Gaps = 0/62 (0%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+            AEVI+V+  TGM GE  Q++CR+L+GRDKGR++TRN +GP+R GDILMLL+T REAK++
+Sbjct  14  AAEVIDVIGNTGMHGEASQIQCRVLEGRDKGRVITRNCVGPVRIGDILMLLETSREAKKL  73
+
+Query  66  RT  67
+            T
+Sbjct  74  TT  75
+
+
+> sp|Q9Y9A6|RS28_AERPE 30S ribosomal protein S28e OS=Aeropyrum 
+pernix (strain ATCC 700893 / DSM 11879 / JCM 9820 / NBRC 100138 
+/ K1) OX=272557 GN=rps28e PE=3 SV=3
+Length=82
+
+ Score = 85.5 bits (210),  Expect = 1e-21, Method: Compositional matrix adjust.
+ Identities = 41/60 (68%), Positives = 54/60 (90%), Gaps = 0/60 (0%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+           PAEVI+++ RTG+TGEV QV+ RIL+GRDKGRILTRNV+GP+R GDIL+L +T REA+++
+Sbjct  19  PAEVIQIIGRTGVTGEVTQVRVRILEGRDKGRILTRNVIGPVRIGDILILRETEREARKL  78
+
+
+> sp|Q3IPM8|RS28_NATPD 30S ribosomal protein S28e OS=Natronomonas 
+pharaonis (strain ATCC 35678 / DSM 2160 / CIP 103997 / NBRC 
+14720 / NCIMB 2260 / Gabara) OX=348780 GN=rps28e PE=3 SV=1
+Length=75
+
+ Score = 84.7 bits (208),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 39/62 (63%), Positives = 49/62 (79%), Gaps = 0/62 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+           ATPAEVIEV+  TGM GE MQVKCRI +G ++GRI+ RNV+GP+R GD++ L +T REA 
+Sbjct  11  ATPAEVIEVVGETGMHGEAMQVKCRIQEGENQGRIIARNVLGPVRVGDVIQLRETAREAD  70
+
+Query  64  EI  65
+            I
+Sbjct  71  SI  72
+
+
+> sp|A4YCQ2|RS28_METS5 30S ribosomal protein S28e OS=Metallosphaera 
+sedula (strain ATCC 51363 / DSM 5348 / JCM 9185 / NBRC 
+15509 / TH2) OX=399549 GN=rps28e PE=3 SV=1
+Length=80
+
+ Score = 84.3 bits (207),  Expect = 2e-21, Method: Compositional matrix adjust.
+ Identities = 40/62 (65%), Positives = 54/62 (87%), Gaps = 0/62 (0%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+           PAEVI++L RTG+TGEV QV+ R+L+GRDKGRILTRN+ GP+R GDI++L +T REA+++
+Sbjct  17  PAEVIQLLDRTGVTGEVTQVRVRVLEGRDKGRILTRNIKGPVRLGDIVILRETEREARKL  76
+
+Query  66  RT  67
+            T
+Sbjct  77  TT  78
+
+
+> sp|B9LPY3|RS28_HALLT 30S ribosomal protein S28e OS=Halorubrum 
+lacusprofundi (strain ATCC 49239 / DSM 5036 / JCM 8891 / ACAM 
+34) OX=416348 GN=rps28e PE=3 SV=1
+Length=74
+
+ Score = 83.6 bits (205),  Expect = 4e-21, Method: Compositional matrix adjust.
+ Identities = 39/63 (62%), Positives = 51/63 (81%), Gaps = 0/63 (0%)
+
+Query  3   DATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREA  62
+           D+T AEVIEV+ +TGM GE MQVKCRI +G ++GRI+TRNV+GP+R GD+L L +T R+A
+Sbjct  9   DSTTAEVIEVVGKTGMHGEAMQVKCRIQEGSNQGRIITRNVLGPVRMGDVLQLRETQRDA  68
+
+Query  63  KEI  65
+             I
+Sbjct  69  DSI  71
+
+
+> sp|A1RS33|RS28_PYRIL 30S ribosomal protein S28e OS=Pyrobaculum 
+islandicum (strain DSM 4184 / JCM 9189 / GEO3) OX=384616 GN=rps28e 
+PE=3 SV=1
+Length=77
+
+ Score = 83.6 bits (205),  Expect = 6e-21, Method: Compositional matrix adjust.
+ Identities = 41/65 (63%), Positives = 52/65 (80%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+            +DA  A VI++L RTG+ GEV QVK +IL+GRDKGRILTRN+ GP+R GDI+ML +T R
+Sbjct  10  YEDAVAALVIQILGRTGVAGEVTQVKVKILEGRDKGRILTRNIKGPVRLGDIVMLRETER  69
+
+Query  61  EAKEI  65
+           EA+ I
+Sbjct  70  EARRI  74
+
+
+> sp|A6USH4|RS28_METVS 30S ribosomal protein S28e OS=Methanococcus 
+vannielii (strain ATCC 35089 / DSM 1224 / JCM 13029 / OCM 
+148 / SB) OX=406327 GN=rps28e PE=3 SV=1
+Length=76
+
+ Score = 82.4 bits (202),  Expect = 1e-20, Method: Compositional matrix adjust.
+ Identities = 38/65 (58%), Positives = 52/65 (80%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI+V  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD++ML +T R
+Sbjct  7   YQEAVAAEVIQVSGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKVGDLIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|Q6LZI8|RS28_METMP 30S ribosomal protein S28e OS=Methanococcus 
+maripaludis (strain S2 / LL) OX=267377 GN=rps28e PE=3 SV=1
+Length=76
+
+ Score = 81.6 bits (200),  Expect = 3e-20, Method: Compositional matrix adjust.
+ Identities = 38/65 (58%), Positives = 52/65 (80%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI+V  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD++ML +T R
+Sbjct  7   YQEAVAAEVIQVNGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKLGDLIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|O29493|RS28_ARCFU 30S ribosomal protein S28e OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=rps28e PE=3 SV=1
+Length=71
+
+ Score = 81.3 bits (199),  Expect = 3e-20, Method: Compositional matrix adjust.
+ Identities = 36/64 (56%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           +D  PAEV+E++ RTGM GEV QVK R+L G +KGR++TRNV GP++ GDI+M+ +T RE
+Sbjct  5   EDIQPAEVVELVGRTGMHGEVTQVKVRVLAGENKGRVITRNVFGPVKVGDIIMIKETARE  64
+
+Query  62  AKEI  65
+           A+++
+Sbjct  65  ARKL  68
+
+
+> sp|A4FYI6|RS28_METM5 30S ribosomal protein S28e OS=Methanococcus 
+maripaludis (strain C5 / ATCC BAA-1333) OX=402880 GN=rps28e 
+PE=3 SV=1
+Length=76
+
+ Score = 80.9 bits (198),  Expect = 4e-20, Method: Compositional matrix adjust.
+ Identities = 37/65 (57%), Positives = 52/65 (80%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI++  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD++ML +T R
+Sbjct  7   YQEAVAAEVIQINGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKLGDLIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|A6VJU6|RS28_METM7 30S ribosomal protein S28e OS=Methanococcus 
+maripaludis (strain C7 / ATCC BAA-1331) OX=426368 GN=rps28e 
+PE=3 SV=1
+Length=76
+
+ Score = 80.9 bits (198),  Expect = 5e-20, Method: Compositional matrix adjust.
+ Identities = 37/65 (57%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI++  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD +ML +T R
+Sbjct  7   YQEAVAAEVIQINGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKLGDFIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|A9A7E6|RS28_METM6 30S ribosomal protein S28e OS=Methanococcus 
+maripaludis (strain C6 / ATCC BAA-1332) OX=444158 GN=rps28e 
+PE=3 SV=1
+Length=76
+
+ Score = 80.9 bits (198),  Expect = 5e-20, Method: Compositional matrix adjust.
+ Identities = 37/65 (57%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI++  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD +ML +T R
+Sbjct  7   YQEAVAAEVIQINGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKLGDFIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|B1L5N5|RS28_KORCO 30S ribosomal protein S28e OS=Korarchaeum 
+cryptofilum (strain OPF8) OX=374847 GN=rps28e PE=3 SV=1
+Length=71
+
+ Score = 80.9 bits (198),  Expect = 5e-20, Method: Compositional matrix adjust.
+ Identities = 38/65 (58%), Positives = 53/65 (82%), Gaps = 0/65 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           D   PAEV+E++ RTG+ GEV+QV+ +IL GRDKGR+LTRNV GP+R GDIL+L +T  E
+Sbjct  5   DKGFPAEVVEIIGRTGVAGEVIQVRAKILAGRDKGRVLTRNVKGPVRVGDILILRETEIE  64
+
+Query  62  AKEIR  66
+           A++++
+Sbjct  65  ARKLK  69
+
+
+> sp|A4WLP1|RS28_PYRAR 30S ribosomal protein S28e OS=Pyrobaculum 
+arsenaticum (strain DSM 13514 / JCM 11321) OX=340102 GN=rps28e 
+PE=3 SV=1
+Length=77
+
+ Score = 80.9 bits (198),  Expect = 5e-20, Method: Compositional matrix adjust.
+ Identities = 39/65 (60%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+            +DA    VI++L RTG+ GEV QVK +IL+GRDKGR+LTRN+ GP+R GDI+ML +T R
+Sbjct  10  YEDAVAGIVIQILGRTGIAGEVTQVKVKILEGRDKGRVLTRNIKGPVRLGDIVMLRETER  69
+
+Query  61  EAKEI  65
+           EA+ I
+Sbjct  70  EARRI  74
+
+
+> sp|Q8ZTA7|RS28_PYRAE 30S ribosomal protein S28e OS=Pyrobaculum 
+aerophilum (strain ATCC 51768 / IM2 / DSM 7523 / JCM 9630 
+/ NBRC 100827) OX=178306 GN=rps28e PE=3 SV=1
+Length=77
+
+ Score = 80.9 bits (198),  Expect = 6e-20, Method: Compositional matrix adjust.
+ Identities = 39/65 (60%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+            +DA    V+++L RTG+ GEV QVK +IL+GRDKGR+LTRNV GP+R GDI+ML +T R
+Sbjct  10  YEDAVAGLVVQILGRTGIAGEVTQVKIKILEGRDKGRVLTRNVKGPVRLGDIVMLRETER  69
+
+Query  61  EAKEI  65
+           EA+ I
+Sbjct  70  EARRI  74
+
+
+> sp|A6UT50|RS28_META3 30S ribosomal protein S28e OS=Methanococcus 
+aeolicus (strain ATCC BAA-1280 / DSM 17508 / OCM 812 / Nankai-3) 
+OX=419665 GN=rps28e PE=3 SV=1
+Length=75
+
+ Score = 80.5 bits (197),  Expect = 6e-20, Method: Compositional matrix adjust.
+ Identities = 38/63 (60%), Positives = 51/63 (81%), Gaps = 0/63 (0%)
+
+Query  3   DATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREA  62
+           +A  AEV++V  RTG+TGE+ QV+C+IL G+D GRILTRN+ GPI+ GDI+ML +T REA
+Sbjct  9   EAIAAEVLQVTGRTGVTGEIFQVRCKILGGKDTGRILTRNIKGPIKVGDIIMLRETEREA  68
+
+Query  63  KEI  65
+           K +
+Sbjct  69  KAL  71
+
+
+> sp|B1Y9V2|RS28_PYRNV 30S ribosomal protein S28e OS=Pyrobaculum 
+neutrophilum (strain DSM 2338 / JCM 9278 / V24Sta) OX=444157 
+GN=rps28e PE=3 SV=1
+Length=77
+
+ Score = 80.1 bits (196),  Expect = 1e-19, Method: Compositional matrix adjust.
+ Identities = 38/65 (58%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+            +DA    V+++L RTG+ GEV QVK ++L+GRDKGR+LTRNV GP+R GDI+ML +T R
+Sbjct  10  YEDAVAGLVVQILGRTGVAGEVTQVKIKVLEGRDKGRVLTRNVKGPVRLGDIVMLRETER  69
+
+Query  61  EAKEI  65
+           EA+ I
+Sbjct  70  EARRI  74
+
+
+> sp|A2BK95|RS28_HYPBU 30S ribosomal protein S28e OS=Hyperthermus 
+butylicus (strain DSM 5456 / JCM 9403 / PLM1-5) OX=415426 
+GN=rps28e PE=3 SV=1
+Length=81
+
+ Score = 77.0 bits (188),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 34/55 (62%), Positives = 48/55 (87%), Gaps = 0/55 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDT  58
+             PAEVI+++ RTG+ GEV+QV+ R+L+GRDKGR+LTRNV+GP+R GDI++L +T
+Sbjct  16  GYPAEVIQIIGRTGVHGEVIQVRVRVLEGRDKGRVLTRNVLGPVRLGDIVILRET  70
+
+
+> sp|P54065|RS28_METJA 30S ribosomal protein S28e OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=rps28e PE=3 SV=2
+Length=75
+
+ Score = 77.0 bits (188),  Expect = 2e-18, Method: Compositional matrix adjust.
+ Identities = 36/61 (59%), Positives = 50/61 (82%), Gaps = 0/61 (0%)
+
+Query  3   DATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREA  62
+           +A  AEVIEV+ RTG+TG ++QV+C+IL G+D GR+L RNV GP++ GDI+ML +T REA
+Sbjct  9   EAVAAEVIEVIGRTGVTGGIIQVRCKILGGKDTGRVLVRNVKGPVKVGDIIMLRETEREA  68
+
+Query  63  K  63
+           +
+Sbjct  69  R  69
+
+
+> sp|Q5JGR4|RS28_THEKO 30S ribosomal protein S28e OS=Thermococcus 
+kodakarensis (strain ATCC BAA-918 / JCM 12380 / KOD1) OX=69014 
+GN=rps28e PE=3 SV=1
+Length=70
+
+ Score = 74.7 bits (182),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 35/54 (65%), Positives = 45/54 (83%), Gaps = 0/54 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILML  55
+           D+  PAEVIE++ RTG+TG V QVK RIL+GRDKGR++ RNV GP+R GDI++L
+Sbjct  3   DEGYPAEVIEIVGRTGVTGGVTQVKVRILEGRDKGRVIRRNVKGPVRVGDIVIL  56
+
+
+> sp|P61031|RS28_NANEQ 30S ribosomal protein S28e OS=Nanoarchaeum 
+equitans (strain Kin4-M) OX=228908 GN=rps28e PE=3 SV=1
+Length=88
+
+ Score = 70.1 bits (170),  Expect = 9e-16, Method: Compositional matrix adjust.
+ Identities = 35/63 (56%), Positives = 45/63 (71%), Gaps = 0/63 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+              A PA V+E++ RTG TGEV QV   IL+G+D GR++ RNV GP+R GDILML +T  
+Sbjct  20  WSKAYPARVVEIVGRTGTTGEVTQVIVEILEGKDAGRLIRRNVKGPVRVGDILMLRETEI  79
+
+Query  61  EAK  63
+           EA+
+Sbjct  80  EAR  82
+
+
+> sp|Q74ZD8|RS28_ASHGO 40S ribosomal protein S28 OS=Ashbya gossypii 
+(strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) 
+OX=284811 GN=RPS28A PE=3 SV=1
+Length=67
+
+ Score = 61.6 bits (148),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 35/69 (51%), Positives = 46/69 (67%), Gaps = 5/69 (7%)
+
+Query  1   MDDATP---AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLD  57
+           MD  TP   A+VI+VL RTG  G V QV+   LD  D  R + RNV GP+RE DIL+L++
+Sbjct  1   MDSKTPVTLAKVIKVLGRTGSRGGVTQVRVEFLD--DTSRTIVRNVKGPVRENDILVLME  58
+
+Query  58  TIREAKEIR  66
+           + REA+ +R
+Sbjct  59  SEREARRLR  67
+
+
+> sp|P33286|RS28_KLUMA 40S ribosomal protein S28 OS=Kluyveromyces 
+marxianus OX=4911 GN=RPS28 PE=3 SV=1
+Length=67
+
+ Score = 61.2 bits (147),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 35/69 (51%), Positives = 47/69 (68%), Gaps = 5/69 (7%)
+
+Query  1   MDDATP---AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLD  57
+           MD  TP   A+VI+VL RTG  G V QV+   L+  D  R + RNV GP+REGDIL+L++
+Sbjct  1   MDSKTPVTLAKVIKVLGRTGSRGGVTQVRVEFLE--DTTRTIVRNVKGPVREGDILVLME  58
+
+Query  58  TIREAKEIR  66
+           + REA+ +R
+Sbjct  59  SEREARRLR  67
+
+
+> sp|P33285|RS28_KLULA 40S ribosomal protein S28 OS=Kluyveromyces 
+lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 
+/ NRRL Y-1140 / WM37) OX=284590 GN=RPS28 PE=1 SV=1
+Length=67
+
+ Score = 60.8 bits (146),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 35/69 (51%), Positives = 47/69 (68%), Gaps = 5/69 (7%)
+
+Query  1   MDDATP---AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLD  57
+           MD  TP   A+VI+VL RTG  G V QV+   L+  D  R + RNV GP+REGDIL+L++
+Sbjct  1   MDTKTPVTLAKVIKVLGRTGSRGGVTQVRVEFLE--DTTRTIVRNVKGPVREGDILVLME  58
+
+Query  58  TIREAKEIR  66
+           + REA+ +R
+Sbjct  59  SEREARRLR  67
+
+
+> sp|Q3E7X9|RS28A_YEAST 40S ribosomal protein S28-A OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS28A 
+PE=1 SV=1
+Length=67
+
+ Score = 60.5 bits (145),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 34/69 (49%), Positives = 47/69 (68%), Gaps = 5/69 (7%)
+
+Query  1   MDDATP---AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLD  57
+           MD+ TP   A+VI+VL RTG  G V QV+   L+  D  R + RNV GP+RE DIL+L++
+Sbjct  1   MDNKTPVTLAKVIKVLGRTGSRGGVTQVRVEFLE--DTSRTIVRNVKGPVRENDILVLME  58
+
+Query  58  TIREAKEIR  66
+           + REA+ +R
+Sbjct  59  SEREARRLR  67
+
+
+> sp|Q6FLC3|RS28_CANGA 40S ribosomal protein S28 OS=Candida glabrata 
+(strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL 
+Y-65) OX=284593 GN=RPS28A PE=3 SV=1
+Length=67
+
+ Score = 60.1 bits (144),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 34/69 (49%), Positives = 46/69 (67%), Gaps = 5/69 (7%)
+
+Query  1   MDDATP---AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLD  57
+           MD+ TP   A VI+VL RTG  G V QV+   L+  D  R + RNV GP+RE DIL+L++
+Sbjct  1   MDNKTPVTLARVIKVLGRTGSRGGVTQVRVEFLE--DTSRTIVRNVKGPVRENDILVLME  58
+
+Query  58  TIREAKEIR  66
+           + REA+ +R
+Sbjct  59  SEREARRLR  67
+
+
+> sp|P0C0X0|RS28B_YEAST 40S ribosomal protein S28-B OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS28B 
+PE=1 SV=1
+Length=67
+
+ Score = 60.1 bits (144),  Expect = 4e-12, Method: Compositional matrix adjust.
+ Identities = 34/69 (49%), Positives = 46/69 (67%), Gaps = 5/69 (7%)
+
+Query  1   MDDATP---AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLD  57
+           MD  TP   A+VI+VL RTG  G V QV+   L+  D  R + RNV GP+RE DIL+L++
+Sbjct  1   MDSKTPVTLAKVIKVLGRTGSRGGVTQVRVEFLE--DTSRTIVRNVKGPVRENDILVLME  58
+
+Query  58  TIREAKEIR  66
+           + REA+ +R
+Sbjct  59  SEREARRLR  67
+
+
+> sp|P46302|RS28_MAIZE 40S ribosomal protein S28 OS=Zea mays OX=4577 
+GN=RPS28 PE=3 SV=1
+Length=65
+
+ Score = 57.8 bits (138),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 30/60 (50%), Positives = 44/60 (73%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++V+ RTG  G+V QV+ + LD  D+ R++ RNV GP+ EGDIL LL++ REA+ +R
+Sbjct  8   AVVVKVMGRTGSRGQVTQVRVKFLD--DQNRLIMRNVKGPVCEGDILTLLESEREARRLR  65
+
+
+> sp|Q95Y04|RS28_CAEEL 40S ribosomal protein S28 OS=Caenorhabditis 
+elegans OX=6239 GN=rps-28 PE=3 SV=1
+Length=65
+
+ Score = 57.4 bits (137),  Expect = 4e-11, Method: Compositional matrix adjust.
+ Identities = 30/66 (45%), Positives = 44/66 (67%), Gaps = 1/66 (2%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+           MD  T A V +V+ RTG  G+  QV+   ++ ++  R + RNV GP+REGDIL LL++ R
+Sbjct  1   MDKLTLARVTKVIGRTGSQGQCTQVRVEFINDQN-NRSIIRNVKGPVREGDILTLLESER  59
+
+Query  61  EAKEIR  66
+           EA+ +R
+Sbjct  60  EARRLR  65
+
+
+> sp|Q90YP3|RS28_ICTPU 40S ribosomal protein S28 OS=Ictalurus punctatus 
+OX=7998 GN=rps28 PE=3 SV=1
+Length=69
+
+ Score = 57.0 bits (136),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DSNRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|Q6PBK3|RS28_DANRE 40S ribosomal protein S28 OS=Danio rerio 
+OX=7955 GN=rps28 PE=3 SV=1
+Length=69
+
+ Score = 57.0 bits (136),  Expect = 6e-11, Method: Compositional matrix adjust.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DSNRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|P62859|RS28_RAT 40S ribosomal protein S28 OS=Rattus norvegicus 
+OX=10116 GN=Rps28 PE=1 SV=1
+Length=69
+
+ Score = 56.6 bits (135),  Expect = 9e-11, Method: Compositional matrix adjust.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|Q6QAT1|RS28_PIG 40S ribosomal protein S28 OS=Sus scrofa OX=9823 
+GN=RPS28 PE=1 SV=2
+Length=69
+
+ Score = 56.6 bits (135),  Expect = 9e-11, Method: Compositional matrix adjust.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|P62858|RS28_MOUSE 40S ribosomal protein S28 OS=Mus musculus 
+OX=10090 GN=Rps28 PE=1 SV=1
+Length=69
+
+ Score = 56.6 bits (135),  Expect = 9e-11, Method: Compositional matrix adjust.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|P62857|RS28_HUMAN 40S ribosomal protein S28 OS=Homo sapiens 
+OX=9606 GN=RPS28 PE=1 SV=1
+Length=69
+
+ Score = 56.6 bits (135),  Expect = 9e-11, Method: Compositional matrix adjust.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|Q56JX6|RS28_BOVIN 40S ribosomal protein S28 OS=Bos taurus 
+OX=9913 GN=RPS28 PE=3 SV=1
+Length=69
+
+ Score = 56.6 bits (135),  Expect = 9e-11, Method: Compositional matrix adjust.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|P0CT80|RS28B_SCHPO 40S ribosomal protein S28-B OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=rps2802 
+PE=3 SV=1
+Length=68
+
+ Score = 56.6 bits (135),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 31/60 (52%), Positives = 42/60 (70%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A+VI+VL RTG  G V QV+   +D  D  R + RNV GP+RE DIL+LL++ REA+ +R
+Sbjct  11  AKVIKVLGRTGSRGGVTQVRVEFMD--DTSRSIIRNVKGPVREDDILVLLESEREARRLR  68
+
+
+> sp|P0CT79|RS28A_SCHPO 40S ribosomal protein S28-A OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=rps2801 
+PE=3 SV=1
+Length=68
+
+ Score = 56.6 bits (135),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 31/60 (52%), Positives = 42/60 (70%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A+VI+VL RTG  G V QV+   +D  D  R + RNV GP+RE DIL+LL++ REA+ +R
+Sbjct  11  AKVIKVLGRTGSRGGVTQVRVEFMD--DTSRSIIRNVKGPVREDDILVLLESEREARRLR  68
+
+
+> sp|Q9SR73|RS281_ARATH 40S ribosomal protein S28-1 OS=Arabidopsis 
+thaliana OX=3702 GN=RPS28A PE=3 SV=1
+Length=64
+
+ Score = 55.8 bits (133),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 29/60 (48%), Positives = 41/60 (68%), Gaps = 3/60 (5%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++V+ RTG  G+V QV+ +  D     R + RNV GP+REGDIL LL++ REA+ +R
+Sbjct  8   AVVVKVMGRTGSRGQVTQVRVKFTDS---DRYIMRNVKGPVREGDILTLLESEREARRLR  64
+
+
+> sp|P34789|RS282_ARATH 40S ribosomal protein S28-2 OS=Arabidopsis 
+thaliana OX=3702 GN=RPS28C PE=3 SV=1
+Length=64
+
+ Score = 55.8 bits (133),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 28/60 (47%), Positives = 41/60 (68%), Gaps = 3/60 (5%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++V+ RTG  G+V QV+ +  D     R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  8   AVVVKVMGRTGSRGQVTQVRVKFTDS---DRFIMRNVKGPVREGDVLTLLESEREARRLR  64
+
+
+> sp|Q9W334|RS28_DROME 40S ribosomal protein S28 OS=Drosophila 
+melanogaster OX=7227 GN=RpS28b PE=1 SV=2
+Length=65
+
+ Score = 55.8 bits (133),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 30/60 (50%), Positives = 41/60 (68%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++VL RTG  G+  QVK   L   ++ R + RNV GP+REGDIL LL++ REA+ +R
+Sbjct  8   ARVMKVLGRTGSQGQCTQVKVEFLG--EQNRQIIRNVKGPVREGDILTLLESEREARRLR  65
+
+
+> sp|O61590|RS28_OSTOS 40S ribosomal protein S28 OS=Ostertagia 
+ostertagi OX=6317 GN=rps-28 PE=3 SV=1
+Length=66
+
+ Score = 55.5 bits (132),  Expect = 2e-10, Method: Compositional matrix adjust.
+ Identities = 30/62 (48%), Positives = 40/62 (65%), Gaps = 3/62 (5%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKG-RILTRNVMGPIREGDILMLLDTIREAKE  64
+           PA V + + RTG  G+  QV+   +D  D G R + RNV GP+REGDIL LL+  REA+ 
+Sbjct  7   PAXVTKNIGRTGSQGQCTQVRVEFMD--DNGNRTINRNVKGPVREGDILTLLEAEREARR  64
+
+Query  65  IR  66
+           +R
+Sbjct  65  LR  66
+
+
+> sp|Q54MZ5|RS28_DICDI 40S ribosomal protein S28 OS=Dictyostelium 
+discoideum OX=44689 GN=rps28 PE=3 SV=1
+Length=72
+
+ Score = 54.3 bits (129),  Expect = 7e-10, Method: Compositional matrix adjust.
+ Identities = 32/61 (52%), Positives = 40/61 (66%), Gaps = 1/61 (2%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRIL-DGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+           A+V EVL RTG  G V QV+   L   + K R L RNV GP+R+ DIL LL+T REA+ +
+Sbjct  12  AKVTEVLCRTGSRGAVTQVRVEFLGTAQGKERTLLRNVKGPVRKDDILCLLETEREARRL  71
+
+Query  66  R  66
+           R
+Sbjct  72  R  72
+
+
+> sp|Q962Q2|RS28_SPOFR 40S ribosomal protein S28 OS=Spodoptera 
+frugiperda OX=7108 GN=RpS28 PE=3 SV=1
+Length=65
+
+ Score = 52.8 bits (125),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 28/60 (47%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++VL RTG  G+  QVK   +   +  R + RNV GP+R+GDIL LL++ REA+ +R
+Sbjct  8   ARVVKVLGRTGSQGQCTQVKVEFIG--ETSRQIIRNVKGPVRDGDILTLLESEREARRLR  65
+
+
+> sp|Q6EV21|RS28_PAPDA 40S ribosomal protein S28 OS=Papilio dardanus 
+OX=77259 GN=RpS28 PE=3 SV=1
+Length=65
+
+ Score = 52.8 bits (125),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 28/60 (47%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++VL RTG  G+  QVK   +   +  R + RNV GP+R+GDIL LL++ REA+ +R
+Sbjct  8   ARVVKVLGRTGSQGQCTQVKVEFIG--ETSRQIIRNVKGPVRDGDILTLLESEREARRLR  65
+
+
+> sp|Q6PS50|RS28_BOMMO 40S ribosomal protein S28 OS=Bombyx mori 
+OX=7091 GN=RpS28 PE=3 SV=1
+Length=65
+
+ Score = 52.8 bits (125),  Expect = 2e-09, Method: Compositional matrix adjust.
+ Identities = 28/60 (47%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++VL RTG  G+  QVK   +   +  R + RNV GP+R+GDIL LL++ REA+ +R
+Sbjct  8   ARVVKVLGRTGSQGQCTQVKVEFIG--ETSRQIIRNVKGPVRDGDILTLLESEREARRLR  65
+
+
+> sp|Q7S6W5|RS28_NEUCR 40S ribosomal protein S28 OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 
+/ FGSC 987) OX=367110 GN=rps-28 PE=3 SV=1
+Length=68
+
+ Score = 52.4 bits (124),  Expect = 3e-09, Method: Compositional matrix adjust.
+ Identities = 29/59 (49%), Positives = 40/59 (68%), Gaps = 2/59 (3%)
+
+Query  8   EVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           +V  VL RTG  G V QV+   +D  D+ R + RNV GP+RE DIL+LL++ REA+ +R
+Sbjct  12  KVTRVLGRTGSRGGVTQVRVEFMD--DQTRSIIRNVKGPVREDDILVLLESEREARRLR  68
+
+
+
+Lambda      K        H        a         alpha
+   0.321    0.141    0.394    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4966619112
+Results from round 2
+
+
+Query= 1NE3
+
+Length=68
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|O26356|RS28_METTH 30S ribosomal protein S28e OS=Methanotherm...  97.7    1e-26
+  sp|Q8TVE7|RS28_METKA 30S ribosomal protein S28e OS=Methanopyrus...  95.7    7e-26
+  sp|A1RS33|RS28_PYRIL 30S ribosomal protein S28e OS=Pyrobaculum ...  92.6    1e-24
+  sp|Q8TQL8|RS28_METAC 30S ribosomal protein S28e OS=Methanosarci...  91.5    3e-24
+  sp|A1RXH2|RS28_THEPD 30S ribosomal protein S28e OS=Thermofilum ...  91.1    5e-24
+  sp|Q8PU75|RS28_METMA 30S ribosomal protein S28e OS=Methanosarci...  90.7    7e-24
+  sp|A6VJU6|RS28_METM7 30S ribosomal protein S28e OS=Methanococcu...  90.0    1e-23
+  sp|A9A7E6|RS28_METM6 30S ribosomal protein S28e OS=Methanococcu...  90.0    1e-23
+  sp|A4WLP1|RS28_PYRAR 30S ribosomal protein S28e OS=Pyrobaculum ...  89.6    2e-23
+  sp|A4FYI6|RS28_METM5 30S ribosomal protein S28e OS=Methanococcu...  89.6    2e-23
+  sp|A6USH4|RS28_METVS 30S ribosomal protein S28e OS=Methanococcu...  89.6    2e-23
+  sp|Q6LZI8|RS28_METMP 30S ribosomal protein S28e OS=Methanococcu...  89.6    2e-23
+  sp|Q8ZTA7|RS28_PYRAE 30S ribosomal protein S28e OS=Pyrobaculum ...  89.6    3e-23
+  sp|Q4JAV1|RS28_SULAC 30S ribosomal protein S28e OS=Sulfolobus a...  89.6    3e-23
+  sp|P61031|RS28_NANEQ 30S ribosomal protein S28e OS=Nanoarchaeum...  89.6    3e-23
+  sp|Q97BK7|RS28_THEVO 30S ribosomal protein S28e OS=Thermoplasma...  88.8    3e-23
+  sp|P57710|RS28_HALSA 30S ribosomal protein S28e OS=Halobacteriu...  88.8    4e-23
+  sp|B0R500|RS28_HALS3 30S ribosomal protein S28e OS=Halobacteriu...  88.8    4e-23
+  sp|Q975Z8|RS28_SULTO 30S ribosomal protein S28e OS=Sulfolobus t...  89.2    4e-23
+  sp|B1Y9V2|RS28_PYRNV 30S ribosomal protein S28e OS=Pyrobaculum ...  88.4    5e-23
+  sp|Q980Q5|RS28_SULSO 30S ribosomal protein S28e OS=Sulfolobus s...  88.4    7e-23
+  sp|P57711|RS28_THEAC 30S ribosomal protein S28e OS=Thermoplasma...  88.0    8e-23
+  sp|Q6KZI6|RS28_PICTO 30S ribosomal protein S28e OS=Picrophilus ...  88.0    8e-23
+  sp|A6UT50|RS28_META3 30S ribosomal protein S28e OS=Methanococcu...  87.6    1e-22
+  sp|Q18GA9|RS28_HALWD 30S ribosomal protein S28e OS=Haloquadratu...  87.6    1e-22
+  sp|A4YCQ2|RS28_METS5 30S ribosomal protein S28e OS=Metallosphae...  87.3    2e-22
+  sp|B1L5N5|RS28_KORCO 30S ribosomal protein S28e OS=Korarchaeum ...  86.5    2e-22
+  sp|O29493|RS28_ARCFU 30S ribosomal protein S28e OS=Archaeoglobu...  86.5    3e-22
+  sp|Q3IPM8|RS28_NATPD 30S ribosomal protein S28e OS=Natronomonas...  86.5    4e-22
+  sp|P54065|RS28_METJA 30S ribosomal protein S28e OS=Methanocaldo...  86.5    4e-22
+  sp|B9LPY3|RS28_HALLT 30S ribosomal protein S28e OS=Halorubrum l...  86.1    5e-22
+  sp|Q9Y9A6|RS28_AERPE 30S ribosomal protein S28e OS=Aeropyrum pe...  85.7    8e-22
+  sp|P61030|RS28_PYRHO 30S ribosomal protein S28e OS=Pyrococcus h...  84.6    2e-21
+  sp|P61029|RS28_PYRAB 30S ribosomal protein S28e OS=Pyrococcus a...  84.6    2e-21
+  sp|Q8U159|RS28_PYRFU 30S ribosomal protein S28e OS=Pyrococcus f...  84.6    2e-21
+  sp|Q95Y04|RS28_CAEEL 40S ribosomal protein S28 OS=Caenorhabditi...  81.5    2e-20
+  sp|A2BK95|RS28_HYPBU 30S ribosomal protein S28e OS=Hyperthermus...  79.9    1e-19
+  sp|Q9W334|RS28_DROME 40S ribosomal protein S28 OS=Drosophila me...  79.2    2e-19
+  sp|O61590|RS28_OSTOS 40S ribosomal protein S28 OS=Ostertagia os...  78.8    3e-19
+  sp|Q90YP3|RS28_ICTPU 40S ribosomal protein S28 OS=Ictalurus pun...  78.0    5e-19
+  sp|Q6PBK3|RS28_DANRE 40S ribosomal protein S28 OS=Danio rerio O...  78.0    5e-19
+  sp|P46302|RS28_MAIZE 40S ribosomal protein S28 OS=Zea mays OX=4...  77.6    7e-19
+  sp|P62859|RS28_RAT 40S ribosomal protein S28 OS=Rattus norvegic...  76.5    2e-18
+  sp|Q6QAT1|RS28_PIG 40S ribosomal protein S28 OS=Sus scrofa OX=9...  76.5    2e-18
+  sp|P62858|RS28_MOUSE 40S ribosomal protein S28 OS=Mus musculus ...  76.5    2e-18
+  sp|P62857|RS28_HUMAN 40S ribosomal protein S28 OS=Homo sapiens ...  76.5    2e-18
+  sp|Q56JX6|RS28_BOVIN 40S ribosomal protein S28 OS=Bos taurus OX...  76.5    2e-18
+  sp|P0CT80|RS28B_SCHPO 40S ribosomal protein S28-B OS=Schizosacc...  76.5    2e-18
+  sp|P0CT79|RS28A_SCHPO 40S ribosomal protein S28-A OS=Schizosacc...  76.5    2e-18
+  sp|Q962Q2|RS28_SPOFR 40S ribosomal protein S28 OS=Spodoptera fr...  76.1    3e-18
+  sp|Q6EV21|RS28_PAPDA 40S ribosomal protein S28 OS=Papilio darda...  76.1    3e-18
+  sp|Q6PS50|RS28_BOMMO 40S ribosomal protein S28 OS=Bombyx mori O...  76.1    3e-18
+  sp|Q74ZD8|RS28_ASHGO 40S ribosomal protein S28 OS=Ashbya gossyp...  75.7    4e-18
+  sp|P33286|RS28_KLUMA 40S ribosomal protein S28 OS=Kluyveromyces...  75.3    6e-18
+  sp|Q3E7X9|RS28A_YEAST 40S ribosomal protein S28-A OS=Saccharomy...  75.3    6e-18
+  sp|P0C0X0|RS28B_YEAST 40S ribosomal protein S28-B OS=Saccharomy...  74.9    7e-18
+  sp|Q5JGR4|RS28_THEKO 30S ribosomal protein S28e OS=Thermococcus...  74.9    1e-17
+  sp|Q9SR73|RS281_ARATH 40S ribosomal protein S28-1 OS=Arabidopsi...  74.5    1e-17
+  sp|P33285|RS28_KLULA 40S ribosomal protein S28 OS=Kluyveromyces...  74.5    1e-17
+  sp|Q6FLC3|RS28_CANGA 40S ribosomal protein S28 OS=Candida glabr...  74.2    1e-17
+  sp|P34789|RS282_ARATH 40S ribosomal protein S28-2 OS=Arabidopsi...  73.4    3e-17
+  sp|Q54MZ5|RS28_DICDI 40S ribosomal protein S28 OS=Dictyostelium...  73.4    3e-17
+  sp|Q7S6W5|RS28_NEUCR 40S ribosomal protein S28 OS=Neurospora cr...  71.8    1e-16
+
+Sequences not found previously or not previously below threshold:
+
+
+
+> sp|O26356|RS28_METTH 30S ribosomal protein S28e OS=Methanothermobacter 
+thermautotrophicus (strain ATCC 29096 / DSM 1053 / 
+JCM 10044 / NBRC 100330 / Delta H) OX=187420 GN=rps28e PE=1 
+SV=1
+Length=68
+
+ Score = 97.7 bits (242),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 68/68 (100%), Positives = 68/68 (100%), Gaps = 0/68 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+           MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR
+Sbjct  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+
+Query  61  EAKEIRTP  68
+           EAKEIRTP
+Sbjct  61  EAKEIRTP  68
+
+
+> sp|Q8TVE7|RS28_METKA 30S ribosomal protein S28e OS=Methanopyrus 
+kandleri (strain AV19 / DSM 6324 / JCM 9639 / NBRC 100938) 
+OX=190192 GN=rps28e PE=3 SV=1
+Length=74
+
+ Score = 95.7 bits (237),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 46/64 (72%), Positives = 55/64 (86%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           +DATPAEV+E+L RTGM GEV QVK RIL+G DKGRI+TRNV GP+REGDIL+L +T RE
+Sbjct  10  EDATPAEVVEILGRTGMAGEVTQVKVRILEGPDKGRIITRNVKGPVREGDILLLRETERE  69
+
+Query  62  AKEI  65
+           A+ I
+Sbjct  70  ARPI  73
+
+
+> sp|A1RS33|RS28_PYRIL 30S ribosomal protein S28e OS=Pyrobaculum 
+islandicum (strain DSM 4184 / JCM 9189 / GEO3) OX=384616 GN=rps28e 
+PE=3 SV=1
+Length=77
+
+ Score = 92.6 bits (229),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 41/67 (61%), Positives = 52/67 (78%), Gaps = 0/67 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+            +DA  A VI++L RTG+ GEV QVK +IL+GRDKGRILTRN+ GP+R GDI+ML +T R
+Sbjct  10  YEDAVAALVIQILGRTGVAGEVTQVKVKILEGRDKGRILTRNIKGPVRLGDIVMLRETER  69
+
+Query  61  EAKEIRT  67
+           EA+ I  
+Sbjct  70  EARRITA  76
+
+
+> sp|Q8TQL8|RS28_METAC 30S ribosomal protein S28e OS=Methanosarcina 
+acetivorans (strain ATCC 35395 / DSM 2834 / JCM 12185 / 
+C2A) OX=188937 GN=rps28e PE=3 SV=1
+Length=76
+
+ Score = 91.5 bits (226),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 39/64 (61%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+              AEVI+V+  TGM GE  Q++CR+L+GRDKGR++TRN +GP+R GDILMLL+T REAK
+Sbjct  12  GFAAEVIDVIGNTGMHGEASQIQCRVLEGRDKGRVITRNCVGPVRIGDILMLLETSREAK  71
+
+Query  64  EIRT  67
+           ++ T
+Sbjct  72  KLTT  75
+
+
+> sp|A1RXH2|RS28_THEPD 30S ribosomal protein S28e OS=Thermofilum 
+pendens (strain DSM 2475 / Hrk 5) OX=368408 GN=rps28e PE=3 
+SV=1
+Length=77
+
+ Score = 91.1 bits (225),  Expect = 5e-24, Method: Composition-based stats.
+ Identities = 43/67 (64%), Positives = 56/67 (84%), Gaps = 0/67 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             DA PAEV++++ RTG+TGEV QV+ R+L+GRDKGRILTRNV GP+R GDI+ML +T R
+Sbjct  10  FSDAVPAEVVQIIGRTGITGEVTQVRVRVLEGRDKGRILTRNVRGPVRVGDIVMLRETER  69
+
+Query  61  EAKEIRT  67
+           EA++I T
+Sbjct  70  EARKIAT  76
+
+
+> sp|Q8PU75|RS28_METMA 30S ribosomal protein S28e OS=Methanosarcina 
+mazei (strain ATCC BAA-159 / DSM 3647 / Goe1 / Go1 / JCM 
+11833 / OCM 88) OX=192952 GN=rps28e PE=3 SV=1
+Length=73
+
+ Score = 90.7 bits (224),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 39/64 (61%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+              AEVI+V+  TGM GE  Q++CR+L+GRDKGR++TRN +GP+R GDILMLL+T REAK
+Sbjct  9   GFAAEVIDVIGNTGMHGEASQIQCRVLEGRDKGRVITRNCVGPVRIGDILMLLETSREAK  68
+
+Query  64  EIRT  67
+           ++ T
+Sbjct  69  KLTT  72
+
+
+> sp|A6VJU6|RS28_METM7 30S ribosomal protein S28e OS=Methanococcus 
+maripaludis (strain C7 / ATCC BAA-1331) OX=426368 GN=rps28e 
+PE=3 SV=1
+Length=76
+
+ Score = 90.0 bits (222),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 37/65 (57%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI++  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD +ML +T R
+Sbjct  7   YQEAVAAEVIQINGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKLGDFIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|A9A7E6|RS28_METM6 30S ribosomal protein S28e OS=Methanococcus 
+maripaludis (strain C6 / ATCC BAA-1332) OX=444158 GN=rps28e 
+PE=3 SV=1
+Length=76
+
+ Score = 90.0 bits (222),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 37/65 (57%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI++  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD +ML +T R
+Sbjct  7   YQEAVAAEVIQINGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKLGDFIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|A4WLP1|RS28_PYRAR 30S ribosomal protein S28e OS=Pyrobaculum 
+arsenaticum (strain DSM 13514 / JCM 11321) OX=340102 GN=rps28e 
+PE=3 SV=1
+Length=77
+
+ Score = 89.6 bits (221),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 39/65 (60%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+            +DA    VI++L RTG+ GEV QVK +IL+GRDKGR+LTRN+ GP+R GDI+ML +T R
+Sbjct  10  YEDAVAGIVIQILGRTGIAGEVTQVKVKILEGRDKGRVLTRNIKGPVRLGDIVMLRETER  69
+
+Query  61  EAKEI  65
+           EA+ I
+Sbjct  70  EARRI  74
+
+
+> sp|A4FYI6|RS28_METM5 30S ribosomal protein S28e OS=Methanococcus 
+maripaludis (strain C5 / ATCC BAA-1333) OX=402880 GN=rps28e 
+PE=3 SV=1
+Length=76
+
+ Score = 89.6 bits (221),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 37/65 (57%), Positives = 52/65 (80%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI++  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD++ML +T R
+Sbjct  7   YQEAVAAEVIQINGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKLGDLIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|A6USH4|RS28_METVS 30S ribosomal protein S28e OS=Methanococcus 
+vannielii (strain ATCC 35089 / DSM 1224 / JCM 13029 / OCM 
+148 / SB) OX=406327 GN=rps28e PE=3 SV=1
+Length=76
+
+ Score = 89.6 bits (221),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 38/65 (58%), Positives = 52/65 (80%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI+V  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD++ML +T R
+Sbjct  7   YQEAVAAEVIQVSGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKVGDLIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|Q6LZI8|RS28_METMP 30S ribosomal protein S28e OS=Methanococcus 
+maripaludis (strain S2 / LL) OX=267377 GN=rps28e PE=3 SV=1
+Length=76
+
+ Score = 89.6 bits (221),  Expect = 2e-23, Method: Composition-based stats.
+ Identities = 38/65 (58%), Positives = 52/65 (80%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVI+V  RTG+TGE+ QV+C+IL G+D GRILTRNV GP++ GD++ML +T R
+Sbjct  7   YQEAVAAEVIQVNGRTGVTGEIFQVRCKILGGKDTGRILTRNVKGPVKLGDLIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK++
+Sbjct  67  EAKQL  71
+
+
+> sp|Q8ZTA7|RS28_PYRAE 30S ribosomal protein S28e OS=Pyrobaculum 
+aerophilum (strain ATCC 51768 / IM2 / DSM 7523 / JCM 9630 
+/ NBRC 100827) OX=178306 GN=rps28e PE=3 SV=1
+Length=77
+
+ Score = 89.6 bits (221),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 39/67 (58%), Positives = 51/67 (76%), Gaps = 0/67 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+            +DA    V+++L RTG+ GEV QVK +IL+GRDKGR+LTRNV GP+R GDI+ML +T R
+Sbjct  10  YEDAVAGLVVQILGRTGIAGEVTQVKIKILEGRDKGRVLTRNVKGPVRLGDIVMLRETER  69
+
+Query  61  EAKEIRT  67
+           EA+ I  
+Sbjct  70  EARRITA  76
+
+
+> sp|Q4JAV1|RS28_SULAC 30S ribosomal protein S28e OS=Sulfolobus 
+acidocaldarius (strain ATCC 33909 / DSM 639 / JCM 8929 / NBRC 
+15157 / NCIMB 11770) OX=330779 GN=rps28e PE=3 SV=1
+Length=84
+
+ Score = 89.6 bits (221),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 42/64 (66%), Positives = 54/64 (84%), Gaps = 0/64 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+             PAEVI++L RTG+TGEV QV+ R+L+GRDKGRILTRNV GP+R GDIL+L +T REA+
+Sbjct  19  GFPAEVIQILDRTGVTGEVTQVRVRVLEGRDKGRILTRNVKGPVRLGDILILRETEREAR  78
+
+Query  64  EIRT  67
+           ++ T
+Sbjct  79  KLST  82
+
+
+> sp|P61031|RS28_NANEQ 30S ribosomal protein S28e OS=Nanoarchaeum 
+equitans (strain Kin4-M) OX=228908 GN=rps28e PE=3 SV=1
+Length=88
+
+ Score = 89.6 bits (221),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 35/65 (54%), Positives = 46/65 (71%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+              A PA V+E++ RTG TGEV QV   IL+G+D GR++ RNV GP+R GDILML +T  
+Sbjct  20  WSKAYPARVVEIVGRTGTTGEVTQVIVEILEGKDAGRLIRRNVKGPVRVGDILMLRETEI  79
+
+Query  61  EAKEI  65
+           EA+ +
+Sbjct  80  EARPL  84
+
+
+> sp|Q97BK7|RS28_THEVO 30S ribosomal protein S28e OS=Thermoplasma 
+volcanium (strain ATCC 51530 / DSM 4299 / JCM 9571 / NBRC 
+15438 / GSS1) OX=273116 GN=rps28e PE=3 SV=1
+Length=69
+
+ Score = 88.8 bits (219),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 42/64 (66%), Positives = 55/64 (86%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           ++ATPAEV+E++ RTGMTGE   VK RIL GRD+GRI+ RNV+GP+R GDILML++T RE
+Sbjct  3   NEATPAEVVEIIGRTGMTGEATTVKVRILSGRDQGRIIARNVLGPVRVGDILMLMETARE  62
+
+Query  62  AKEI  65
+           AK++
+Sbjct  63  AKKL  66
+
+
+> sp|P57710|RS28_HALSA 30S ribosomal protein S28e OS=Halobacterium 
+salinarum (strain ATCC 700922 / JCM 11081 / NRC-1) OX=64091 
+GN=rps28e PE=3 SV=1
+Length=74
+
+ Score = 88.8 bits (219),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 40/64 (63%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           + ATPAEVIEV+ +TGM GE MQVKCRI +G ++GRI+TRNV+GP+R GD++ L +T RE
+Sbjct  8   EGATPAEVIEVVGKTGMHGEAMQVKCRIQEGGNQGRIITRNVLGPVRVGDVIQLKETARE  67
+
+Query  62  AKEI  65
+           A  I
+Sbjct  68  ADSI  71
+
+
+> sp|B0R500|RS28_HALS3 30S ribosomal protein S28e OS=Halobacterium 
+salinarum (strain ATCC 29341 / DSM 671 / R1) OX=478009 GN=rps28e 
+PE=3 SV=1
+Length=74
+
+ Score = 88.8 bits (219),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 40/64 (63%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           + ATPAEVIEV+ +TGM GE MQVKCRI +G ++GRI+TRNV+GP+R GD++ L +T RE
+Sbjct  8   EGATPAEVIEVVGKTGMHGEAMQVKCRIQEGGNQGRIITRNVLGPVRVGDVIQLKETARE  67
+
+Query  62  AKEI  65
+           A  I
+Sbjct  68  ADSI  71
+
+
+> sp|Q975Z8|RS28_SULTO 30S ribosomal protein S28e OS=Sulfolobus 
+tokodaii (strain DSM 16993 / JCM 10545 / NBRC 100140 / 7) OX=273063 
+GN=rps28e PE=3 SV=1
+Length=83
+
+ Score = 89.2 bits (220),  Expect = 4e-23, Method: Composition-based stats.
+ Identities = 42/64 (66%), Positives = 54/64 (84%), Gaps = 0/64 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+             PAEVI++L RTG+TGEV QV+ R+L+GRDKGRILTRNV GP+R GDIL+L +T REA+
+Sbjct  18  GFPAEVIQILDRTGVTGEVTQVRVRVLEGRDKGRILTRNVKGPVRLGDILILRETEREAR  77
+
+Query  64  EIRT  67
+           ++ T
+Sbjct  78  KLTT  81
+
+
+> sp|B1Y9V2|RS28_PYRNV 30S ribosomal protein S28e OS=Pyrobaculum 
+neutrophilum (strain DSM 2338 / JCM 9278 / V24Sta) OX=444157 
+GN=rps28e PE=3 SV=1
+Length=77
+
+ Score = 88.4 bits (218),  Expect = 5e-23, Method: Composition-based stats.
+ Identities = 38/67 (57%), Positives = 51/67 (76%), Gaps = 0/67 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+            +DA    V+++L RTG+ GEV QVK ++L+GRDKGR+LTRNV GP+R GDI+ML +T R
+Sbjct  10  YEDAVAGLVVQILGRTGVAGEVTQVKIKVLEGRDKGRVLTRNVKGPVRLGDIVMLRETER  69
+
+Query  61  EAKEIRT  67
+           EA+ I  
+Sbjct  70  EARRITA  76
+
+
+> sp|Q980Q5|RS28_SULSO 30S ribosomal protein S28e OS=Sulfolobus 
+solfataricus (strain ATCC 35092 / DSM 1617 / JCM 11322 / P2) 
+OX=273057 GN=rps28e PE=3 SV=2
+Length=83
+
+ Score = 88.4 bits (218),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 43/64 (67%), Positives = 54/64 (84%), Gaps = 0/64 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+             PAEVI++L RTG+TGEV QV+ R+L+GRDKGRILTRNV GP+R GDIL+L +T REA+
+Sbjct  18  GFPAEVIQILDRTGVTGEVTQVRVRVLEGRDKGRILTRNVKGPVRVGDILILRETEREAR  77
+
+Query  64  EIRT  67
+           +I T
+Sbjct  78  KITT  81
+
+
+> sp|P57711|RS28_THEAC 30S ribosomal protein S28e OS=Thermoplasma 
+acidophilum (strain ATCC 25905 / DSM 1728 / JCM 9062 / NBRC 
+15155 / AMRC-C165) OX=273075 GN=rps28e PE=3 SV=1
+Length=69
+
+ Score = 88.0 bits (217),  Expect = 8e-23, Method: Composition-based stats.
+ Identities = 41/64 (64%), Positives = 55/64 (86%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           ++ATPAEV+E++ RTGMTGE   VK R+L GRD+GRI+ RNV+GP+R GDILML++T RE
+Sbjct  3   NEATPAEVVEIIGRTGMTGEATTVKVRVLAGRDQGRIIARNVLGPVRVGDILMLMETARE  62
+
+Query  62  AKEI  65
+           AK++
+Sbjct  63  AKKL  66
+
+
+> sp|Q6KZI6|RS28_PICTO 30S ribosomal protein S28e OS=Picrophilus 
+torridus (strain ATCC 700027 / DSM 9790 / JCM 10055 / NBRC 
+100828) OX=263820 GN=rps28e PE=3 SV=1
+Length=69
+
+ Score = 88.0 bits (217),  Expect = 8e-23, Method: Composition-based stats.
+ Identities = 39/64 (61%), Positives = 54/64 (84%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           DDATPAEV+E++ RTGMTGE   VK R+L G+D+GRI+ RNV+GP++ GD+LML +T RE
+Sbjct  3   DDATPAEVVEIMGRTGMTGEATTVKVRVLSGKDQGRIIARNVLGPVKVGDVLMLRETARE  62
+
+Query  62  AKEI  65
+           A+++
+Sbjct  63  ARKL  66
+
+
+> sp|A6UT50|RS28_META3 30S ribosomal protein S28e OS=Methanococcus 
+aeolicus (strain ATCC BAA-1280 / DSM 17508 / OCM 812 / Nankai-3) 
+OX=419665 GN=rps28e PE=3 SV=1
+Length=75
+
+ Score = 87.6 bits (216),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 38/65 (58%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEV++V  RTG+TGE+ QV+C+IL G+D GRILTRN+ GPI+ GDI+ML +T R
+Sbjct  7   YKEAIAAEVLQVTGRTGVTGEIFQVRCKILGGKDTGRILTRNIKGPIKVGDIIMLRETER  66
+
+Query  61  EAKEI  65
+           EAK +
+Sbjct  67  EAKAL  71
+
+
+> sp|Q18GA9|RS28_HALWD 30S ribosomal protein S28e OS=Haloquadratum 
+walsbyi (strain DSM 16790 / HBSQ001) OX=362976 GN=rps28e 
+PE=3 SV=1
+Length=74
+
+ Score = 87.6 bits (216),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 38/64 (59%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+            D+T AE+IE++ +TGM GE MQVKCRI +G ++GRI+TRNV+GP+REGD+L L +T R+
+Sbjct  8   SDSTSAEIIEIVGKTGMHGEAMQVKCRIREGSNQGRIITRNVLGPVREGDVLQLRETQRD  67
+
+Query  62  AKEI  65
+           A  I
+Sbjct  68  ADSI  71
+
+
+> sp|A4YCQ2|RS28_METS5 30S ribosomal protein S28e OS=Metallosphaera 
+sedula (strain ATCC 51363 / DSM 5348 / JCM 9185 / NBRC 
+15509 / TH2) OX=399549 GN=rps28e PE=3 SV=1
+Length=80
+
+ Score = 87.3 bits (215),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 40/64 (63%), Positives = 54/64 (84%), Gaps = 0/64 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+             PAEVI++L RTG+TGEV QV+ R+L+GRDKGRILTRN+ GP+R GDI++L +T REA+
+Sbjct  15  GFPAEVIQLLDRTGVTGEVTQVRVRVLEGRDKGRILTRNIKGPVRLGDIVILRETEREAR  74
+
+Query  64  EIRT  67
+           ++ T
+Sbjct  75  KLTT  78
+
+
+> sp|B1L5N5|RS28_KORCO 30S ribosomal protein S28e OS=Korarchaeum 
+cryptofilum (strain OPF8) OX=374847 GN=rps28e PE=3 SV=1
+Length=71
+
+ Score = 86.5 bits (213),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 38/65 (58%), Positives = 53/65 (82%), Gaps = 0/65 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           D   PAEV+E++ RTG+ GEV+QV+ +IL GRDKGR+LTRNV GP+R GDIL+L +T  E
+Sbjct  5   DKGFPAEVVEIIGRTGVAGEVIQVRAKILAGRDKGRVLTRNVKGPVRVGDILILRETEIE  64
+
+Query  62  AKEIR  66
+           A++++
+Sbjct  65  ARKLK  69
+
+
+> sp|O29493|RS28_ARCFU 30S ribosomal protein S28e OS=Archaeoglobus 
+fulgidus (strain ATCC 49558 / VC-16 / DSM 4304 / JCM 9628 
+/ NBRC 100126) OX=224325 GN=rps28e PE=3 SV=1
+Length=71
+
+ Score = 86.5 bits (213),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 36/64 (56%), Positives = 52/64 (81%), Gaps = 0/64 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           +D  PAEV+E++ RTGM GEV QVK R+L G +KGR++TRNV GP++ GDI+M+ +T RE
+Sbjct  5   EDIQPAEVVELVGRTGMHGEVTQVKVRVLAGENKGRVITRNVFGPVKVGDIIMIKETARE  64
+
+Query  62  AKEI  65
+           A+++
+Sbjct  65  ARKL  68
+
+
+> sp|Q3IPM8|RS28_NATPD 30S ribosomal protein S28e OS=Natronomonas 
+pharaonis (strain ATCC 35678 / DSM 2160 / CIP 103997 / NBRC 
+14720 / NCIMB 2260 / Gabara) OX=348780 GN=rps28e PE=3 SV=1
+Length=75
+
+ Score = 86.5 bits (213),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 39/62 (63%), Positives = 49/62 (79%), Gaps = 0/62 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+           ATPAEVIEV+  TGM GE MQVKCRI +G ++GRI+ RNV+GP+R GD++ L +T REA 
+Sbjct  11  ATPAEVIEVVGETGMHGEAMQVKCRIQEGENQGRIIARNVLGPVRVGDVIQLRETAREAD  70
+
+Query  64  EI  65
+            I
+Sbjct  71  SI  72
+
+
+> sp|P54065|RS28_METJA 30S ribosomal protein S28e OS=Methanocaldococcus 
+jannaschii (strain ATCC 43067 / DSM 2661 / JAL-1 / 
+JCM 10045 / NBRC 100440) OX=243232 GN=rps28e PE=3 SV=2
+Length=75
+
+ Score = 86.5 bits (213),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 36/65 (55%), Positives = 51/65 (78%), Gaps = 0/65 (0%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+             +A  AEVIEV+ RTG+TG ++QV+C+IL G+D GR+L RNV GP++ GDI+ML +T R
+Sbjct  7   YKEAVAAEVIEVIGRTGVTGGIIQVRCKILGGKDTGRVLVRNVKGPVKVGDIIMLRETER  66
+
+Query  61  EAKEI  65
+           EA+ +
+Sbjct  67  EARPL  71
+
+
+> sp|B9LPY3|RS28_HALLT 30S ribosomal protein S28e OS=Halorubrum 
+lacusprofundi (strain ATCC 49239 / DSM 5036 / JCM 8891 / ACAM 
+34) OX=416348 GN=rps28e PE=3 SV=1
+Length=74
+
+ Score = 86.1 bits (212),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 39/63 (62%), Positives = 51/63 (81%), Gaps = 0/63 (0%)
+
+Query  3   DATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREA  62
+           D+T AEVIEV+ +TGM GE MQVKCRI +G ++GRI+TRNV+GP+R GD+L L +T R+A
+Sbjct  9   DSTTAEVIEVVGKTGMHGEAMQVKCRIQEGSNQGRIITRNVLGPVRMGDVLQLRETQRDA  68
+
+Query  63  KEI  65
+             I
+Sbjct  69  DSI  71
+
+
+> sp|Q9Y9A6|RS28_AERPE 30S ribosomal protein S28e OS=Aeropyrum 
+pernix (strain ATCC 700893 / DSM 11879 / JCM 9820 / NBRC 100138 
+/ K1) OX=272557 GN=rps28e PE=3 SV=3
+Length=82
+
+ Score = 85.7 bits (211),  Expect = 8e-22, Method: Composition-based stats.
+ Identities = 41/62 (66%), Positives = 54/62 (87%), Gaps = 0/62 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAK  63
+             PAEVI+++ RTG+TGEV QV+ RIL+GRDKGRILTRNV+GP+R GDIL+L +T REA+
+Sbjct  17  GFPAEVIQIIGRTGVTGEVTQVRVRILEGRDKGRILTRNVIGPVRIGDILILRETEREAR  76
+
+Query  64  EI  65
+           ++
+Sbjct  77  KL  78
+
+
+> sp|P61030|RS28_PYRHO 30S ribosomal protein S28e OS=Pyrococcus 
+horikoshii (strain ATCC 700860 / DSM 12428 / JCM 9974 / NBRC 
+100139 / OT-3) OX=70601 GN=rps28e PE=1 SV=1
+Length=71
+
+ Score = 84.6 bits (208),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 42/66 (64%), Positives = 55/66 (83%), Gaps = 0/66 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           D+  PAEVIE++ RTG TG+V QVK RIL+GRDKGR++ RNV GP+R GDIL+L +T RE
+Sbjct  4   DEGYPAEVIEIIGRTGTTGDVTQVKVRILEGRDKGRVIRRNVRGPVRVGDILILRETERE  63
+
+Query  62  AKEIRT  67
+           A+EI++
+Sbjct  64  AREIKS  69
+
+
+> sp|P61029|RS28_PYRAB 30S ribosomal protein S28e OS=Pyrococcus 
+abyssi (strain GE5 / Orsay) OX=272844 GN=rps28e PE=3 SV=1
+Length=71
+
+ Score = 84.6 bits (208),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 42/66 (64%), Positives = 55/66 (83%), Gaps = 0/66 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           D+  PAEVIE++ RTG TG+V QVK RIL+GRDKGR++ RNV GP+R GDIL+L +T RE
+Sbjct  4   DEGYPAEVIEIIGRTGTTGDVTQVKVRILEGRDKGRVIRRNVRGPVRVGDILILRETERE  63
+
+Query  62  AKEIRT  67
+           A+EI++
+Sbjct  64  AREIKS  69
+
+
+> sp|Q8U159|RS28_PYRFU 30S ribosomal protein S28e OS=Pyrococcus 
+furiosus (strain ATCC 43587 / DSM 3638 / JCM 8422 / Vc1) OX=186497 
+GN=rps28e PE=1 SV=1
+Length=71
+
+ Score = 84.6 bits (208),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 42/66 (64%), Positives = 55/66 (83%), Gaps = 0/66 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIRE  61
+           D+  PAEVIE++ RTG TG+V QVK RIL+GRDKGR++ RNV GP+R GDIL+L +T RE
+Sbjct  4   DEGYPAEVIEIIGRTGTTGDVTQVKVRILEGRDKGRVIRRNVRGPVRIGDILILRETERE  63
+
+Query  62  AKEIRT  67
+           A+EI++
+Sbjct  64  AREIKS  69
+
+
+> sp|Q95Y04|RS28_CAEEL 40S ribosomal protein S28 OS=Caenorhabditis 
+elegans OX=6239 GN=rps-28 PE=3 SV=1
+Length=65
+
+ Score = 81.5 bits (200),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 30/66 (45%), Positives = 44/66 (67%), Gaps = 1/66 (2%)
+
+Query  1   MDDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIR  60
+           MD  T A V +V+ RTG  G+  QV+   ++ ++  R + RNV GP+REGDIL LL++ R
+Sbjct  1   MDKLTLARVTKVIGRTGSQGQCTQVRVEFINDQN-NRSIIRNVKGPVREGDILTLLESER  59
+
+Query  61  EAKEIR  66
+           EA+ +R
+Sbjct  60  EARRLR  65
+
+
+> sp|A2BK95|RS28_HYPBU 30S ribosomal protein S28e OS=Hyperthermus 
+butylicus (strain DSM 5456 / JCM 9403 / PLM1-5) OX=415426 
+GN=rps28e PE=3 SV=1
+Length=81
+
+ Score = 79.9 bits (196),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 34/56 (61%), Positives = 48/56 (86%), Gaps = 0/56 (0%)
+
+Query  4   ATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTI  59
+             PAEVI+++ RTG+ GEV+QV+ R+L+GRDKGR+LTRNV+GP+R GDI++L +T 
+Sbjct  16  GYPAEVIQIIGRTGVHGEVIQVRVRVLEGRDKGRVLTRNVLGPVRLGDIVILRETE  71
+
+
+> sp|Q9W334|RS28_DROME 40S ribosomal protein S28 OS=Drosophila 
+melanogaster OX=7227 GN=RpS28b PE=1 SV=2
+Length=65
+
+ Score = 79.2 bits (194),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 30/60 (50%), Positives = 41/60 (68%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++VL RTG  G+  QVK   L   ++ R + RNV GP+REGDIL LL++ REA+ +R
+Sbjct  8   ARVMKVLGRTGSQGQCTQVKVEFLG--EQNRQIIRNVKGPVREGDILTLLESEREARRLR  65
+
+
+> sp|O61590|RS28_OSTOS 40S ribosomal protein S28 OS=Ostertagia 
+ostertagi OX=6317 GN=rps-28 PE=3 SV=1
+Length=66
+
+ Score = 78.8 bits (193),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 28/61 (46%), Positives = 39/61 (64%), Gaps = 1/61 (2%)
+
+Query  6   PAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEI  65
+           PA V + + RTG  G+  QV+   +D  +  R + RNV GP+REGDIL LL+  REA+ +
+Sbjct  7   PAXVTKNIGRTGSQGQCTQVRVEFMDD-NGNRTINRNVKGPVREGDILTLLEAEREARRL  65
+
+Query  66  R  66
+           R
+Sbjct  66  R  66
+
+
+> sp|Q90YP3|RS28_ICTPU 40S ribosomal protein S28 OS=Ictalurus punctatus 
+OX=7998 GN=rps28 PE=3 SV=1
+Length=69
+
+ Score = 78.0 bits (191),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DSNRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|Q6PBK3|RS28_DANRE 40S ribosomal protein S28 OS=Danio rerio 
+OX=7955 GN=rps28 PE=3 SV=1
+Length=69
+
+ Score = 78.0 bits (191),  Expect = 5e-19, Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DSNRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|P46302|RS28_MAIZE 40S ribosomal protein S28 OS=Zea mays OX=4577 
+GN=RPS28 PE=3 SV=1
+Length=65
+
+ Score = 77.6 bits (190),  Expect = 7e-19, Method: Composition-based stats.
+ Identities = 30/60 (50%), Positives = 44/60 (73%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++V+ RTG  G+V QV+ + LD  D+ R++ RNV GP+ EGDIL LL++ REA+ +R
+Sbjct  8   AVVVKVMGRTGSRGQVTQVRVKFLD--DQNRLIMRNVKGPVCEGDILTLLESEREARRLR  65
+
+
+> sp|P62859|RS28_RAT 40S ribosomal protein S28 OS=Rattus norvegicus 
+OX=10116 GN=Rps28 PE=1 SV=1
+Length=69
+
+ Score = 76.5 bits (187),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|Q6QAT1|RS28_PIG 40S ribosomal protein S28 OS=Sus scrofa OX=9823 
+GN=RPS28 PE=1 SV=2
+Length=69
+
+ Score = 76.5 bits (187),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|P62858|RS28_MOUSE 40S ribosomal protein S28 OS=Mus musculus 
+OX=10090 GN=Rps28 PE=1 SV=1
+Length=69
+
+ Score = 76.5 bits (187),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|P62857|RS28_HUMAN 40S ribosomal protein S28 OS=Homo sapiens 
+OX=9606 GN=RPS28 PE=1 SV=1
+Length=69
+
+ Score = 76.5 bits (187),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|Q56JX6|RS28_BOVIN 40S ribosomal protein S28 OS=Bos taurus 
+OX=9913 GN=RPS28 PE=3 SV=1
+Length=69
+
+ Score = 76.5 bits (187),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 40/60 (67%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V +VL RTG  G+  QV+   +D  D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  12  ARVTKVLGRTGSQGQCTQVRVEFMD--DTSRSIIRNVKGPVREGDVLTLLESEREARRLR  69
+
+
+> sp|P0CT80|RS28B_SCHPO 40S ribosomal protein S28-B OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=rps2802 
+PE=3 SV=1
+Length=68
+
+ Score = 76.5 bits (187),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 31/60 (52%), Positives = 42/60 (70%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A+VI+VL RTG  G V QV+   +D  D  R + RNV GP+RE DIL+LL++ REA+ +R
+Sbjct  11  AKVIKVLGRTGSRGGVTQVRVEFMD--DTSRSIIRNVKGPVREDDILVLLESEREARRLR  68
+
+
+> sp|P0CT79|RS28A_SCHPO 40S ribosomal protein S28-A OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=rps2801 
+PE=3 SV=1
+Length=68
+
+ Score = 76.5 bits (187),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 31/60 (52%), Positives = 42/60 (70%), Gaps = 2/60 (3%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A+VI+VL RTG  G V QV+   +D  D  R + RNV GP+RE DIL+LL++ REA+ +R
+Sbjct  11  AKVIKVLGRTGSRGGVTQVRVEFMD--DTSRSIIRNVKGPVREDDILVLLESEREARRLR  68
+
+
+> sp|Q962Q2|RS28_SPOFR 40S ribosomal protein S28 OS=Spodoptera 
+frugiperda OX=7108 GN=RpS28 PE=3 SV=1
+Length=65
+
+ Score = 76.1 bits (186),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 28/62 (45%), Positives = 40/62 (65%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+             A V++VL RTG  G+  QVK   +   +  R + RNV GP+R+GDIL LL++ REA+ 
+Sbjct  6   VLARVVKVLGRTGSQGQCTQVKVEFIG--ETSRQIIRNVKGPVRDGDILTLLESEREARR  63
+
+Query  65  IR  66
+           +R
+Sbjct  64  LR  65
+
+
+> sp|Q6EV21|RS28_PAPDA 40S ribosomal protein S28 OS=Papilio dardanus 
+OX=77259 GN=RpS28 PE=3 SV=1
+Length=65
+
+ Score = 76.1 bits (186),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 28/62 (45%), Positives = 40/62 (65%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+             A V++VL RTG  G+  QVK   +   +  R + RNV GP+R+GDIL LL++ REA+ 
+Sbjct  6   VLARVVKVLGRTGSQGQCTQVKVEFIG--ETSRQIIRNVKGPVRDGDILTLLESEREARR  63
+
+Query  65  IR  66
+           +R
+Sbjct  64  LR  65
+
+
+> sp|Q6PS50|RS28_BOMMO 40S ribosomal protein S28 OS=Bombyx mori 
+OX=7091 GN=RpS28 PE=3 SV=1
+Length=65
+
+ Score = 76.1 bits (186),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 28/62 (45%), Positives = 40/62 (65%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+             A V++VL RTG  G+  QVK   +   +  R + RNV GP+R+GDIL LL++ REA+ 
+Sbjct  6   VLARVVKVLGRTGSQGQCTQVKVEFIG--ETSRQIIRNVKGPVRDGDILTLLESEREARR  63
+
+Query  65  IR  66
+           +R
+Sbjct  64  LR  65
+
+
+> sp|Q74ZD8|RS28_ASHGO 40S ribosomal protein S28 OS=Ashbya gossypii 
+(strain ATCC 10895 / CBS 109.51 / FGSC 9923 / NRRL Y-1056) 
+OX=284811 GN=RPS28A PE=3 SV=1
+Length=67
+
+ Score = 75.7 bits (185),  Expect = 4e-18, Method: Composition-based stats.
+ Identities = 32/62 (52%), Positives = 43/62 (69%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+           T A+VI+VL RTG  G V QV+   LD  D  R + RNV GP+RE DIL+L+++ REA+ 
+Sbjct  8   TLAKVIKVLGRTGSRGGVTQVRVEFLD--DTSRTIVRNVKGPVRENDILVLMESEREARR  65
+
+Query  65  IR  66
+           +R
+Sbjct  66  LR  67
+
+
+> sp|P33286|RS28_KLUMA 40S ribosomal protein S28 OS=Kluyveromyces 
+marxianus OX=4911 GN=RPS28 PE=3 SV=1
+Length=67
+
+ Score = 75.3 bits (184),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 32/62 (52%), Positives = 44/62 (71%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+           T A+VI+VL RTG  G V QV+   L+  D  R + RNV GP+REGDIL+L+++ REA+ 
+Sbjct  8   TLAKVIKVLGRTGSRGGVTQVRVEFLE--DTTRTIVRNVKGPVREGDILVLMESEREARR  65
+
+Query  65  IR  66
+           +R
+Sbjct  66  LR  67
+
+
+> sp|Q3E7X9|RS28A_YEAST 40S ribosomal protein S28-A OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS28A 
+PE=1 SV=1
+Length=67
+
+ Score = 75.3 bits (184),  Expect = 6e-18, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 43/62 (69%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+           T A+VI+VL RTG  G V QV+   L+  D  R + RNV GP+RE DIL+L+++ REA+ 
+Sbjct  8   TLAKVIKVLGRTGSRGGVTQVRVEFLE--DTSRTIVRNVKGPVRENDILVLMESEREARR  65
+
+Query  65  IR  66
+           +R
+Sbjct  66  LR  67
+
+
+> sp|P0C0X0|RS28B_YEAST 40S ribosomal protein S28-B OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=RPS28B 
+PE=1 SV=1
+Length=67
+
+ Score = 74.9 bits (183),  Expect = 7e-18, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 43/62 (69%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+           T A+VI+VL RTG  G V QV+   L+  D  R + RNV GP+RE DIL+L+++ REA+ 
+Sbjct  8   TLAKVIKVLGRTGSRGGVTQVRVEFLE--DTSRTIVRNVKGPVRENDILVLMESEREARR  65
+
+Query  65  IR  66
+           +R
+Sbjct  66  LR  67
+
+
+> sp|Q5JGR4|RS28_THEKO 30S ribosomal protein S28e OS=Thermococcus 
+kodakarensis (strain ATCC BAA-918 / JCM 12380 / KOD1) OX=69014 
+GN=rps28e PE=3 SV=1
+Length=70
+
+ Score = 74.9 bits (183),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 35/54 (65%), Positives = 45/54 (83%), Gaps = 0/54 (0%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILML  55
+           D+  PAEVIE++ RTG+TG V QVK RIL+GRDKGR++ RNV GP+R GDI++L
+Sbjct  3   DEGYPAEVIEIVGRTGVTGGVTQVKVRILEGRDKGRVIRRNVKGPVRVGDIVIL  56
+
+
+> sp|Q9SR73|RS281_ARATH 40S ribosomal protein S28-1 OS=Arabidopsis 
+thaliana OX=3702 GN=RPS28A PE=3 SV=1
+Length=64
+
+ Score = 74.5 bits (182),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 29/60 (48%), Positives = 41/60 (68%), Gaps = 3/60 (5%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++V+ RTG  G+V QV+ +     D  R + RNV GP+REGDIL LL++ REA+ +R
+Sbjct  8   AVVVKVMGRTGSRGQVTQVRVKFT---DSDRYIMRNVKGPVREGDILTLLESEREARRLR  64
+
+
+> sp|P33285|RS28_KLULA 40S ribosomal protein S28 OS=Kluyveromyces 
+lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 
+/ NRRL Y-1140 / WM37) OX=284590 GN=RPS28 PE=1 SV=1
+Length=67
+
+ Score = 74.5 bits (182),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 32/62 (52%), Positives = 44/62 (71%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+           T A+VI+VL RTG  G V QV+   L+  D  R + RNV GP+REGDIL+L+++ REA+ 
+Sbjct  8   TLAKVIKVLGRTGSRGGVTQVRVEFLE--DTTRTIVRNVKGPVREGDILVLMESEREARR  65
+
+Query  65  IR  66
+           +R
+Sbjct  66  LR  67
+
+
+> sp|Q6FLC3|RS28_CANGA 40S ribosomal protein S28 OS=Candida glabrata 
+(strain ATCC 2001 / CBS 138 / JCM 3761 / NBRC 0622 / NRRL 
+Y-65) OX=284593 GN=RPS28A PE=3 SV=1
+Length=67
+
+ Score = 74.2 bits (181),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 31/62 (50%), Positives = 42/62 (68%), Gaps = 2/62 (3%)
+
+Query  5   TPAEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKE  64
+           T A VI+VL RTG  G V QV+   L+  D  R + RNV GP+RE DIL+L+++ REA+ 
+Sbjct  8   TLARVIKVLGRTGSRGGVTQVRVEFLE--DTSRTIVRNVKGPVRENDILVLMESEREARR  65
+
+Query  65  IR  66
+           +R
+Sbjct  66  LR  67
+
+
+> sp|P34789|RS282_ARATH 40S ribosomal protein S28-2 OS=Arabidopsis 
+thaliana OX=3702 GN=RPS28C PE=3 SV=1
+Length=64
+
+ Score = 73.4 bits (179),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 28/60 (47%), Positives = 41/60 (68%), Gaps = 3/60 (5%)
+
+Query  7   AEVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           A V++V+ RTG  G+V QV+ +     D  R + RNV GP+REGD+L LL++ REA+ +R
+Sbjct  8   AVVVKVMGRTGSRGQVTQVRVKFT---DSDRFIMRNVKGPVREGDVLTLLESEREARRLR  64
+
+
+> sp|Q54MZ5|RS28_DICDI 40S ribosomal protein S28 OS=Dictyostelium 
+discoideum OX=44689 GN=rps28 PE=3 SV=1
+Length=72
+
+ Score = 73.4 bits (179),  Expect = 3e-17, Method: Composition-based stats.
+ Identities = 32/66 (48%), Positives = 41/66 (62%), Gaps = 1/66 (2%)
+
+Query  2   DDATPAEVIEVLKRTGMTGEVMQVKCRILD-GRDKGRILTRNVMGPIREGDILMLLDTIR  60
+           +    A+V EVL RTG  G V QV+   L   + K R L RNV GP+R+ DIL LL+T R
+Sbjct  7   ETVQLAKVTEVLCRTGSRGAVTQVRVEFLGTAQGKERTLLRNVKGPVRKDDILCLLETER  66
+
+Query  61  EAKEIR  66
+           EA+ +R
+Sbjct  67  EARRLR  72
+
+
+> sp|Q7S6W5|RS28_NEUCR 40S ribosomal protein S28 OS=Neurospora 
+crassa (strain ATCC 24698 / 74-OR23-1A / CBS 708.71 / DSM 1257 
+/ FGSC 987) OX=367110 GN=rps-28 PE=3 SV=1
+Length=68
+
+ Score = 71.8 bits (175),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 29/59 (49%), Positives = 40/59 (68%), Gaps = 2/59 (3%)
+
+Query  8   EVIEVLKRTGMTGEVMQVKCRILDGRDKGRILTRNVMGPIREGDILMLLDTIREAKEIR  66
+           +V  VL RTG  G V QV+   +D  D+ R + RNV GP+RE DIL+LL++ REA+ +R
+Sbjct  12  KVTRVLGRTGSRGGVTQVRVEFMD--DQTRSIIRNVKGPVREDDILVLLESEREARRLR  68
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.151    0.438    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0468    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4966619112
+
+Search has CONVERGED!
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

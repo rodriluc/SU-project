@@ -1,0 +1,2844 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= 1PFB
+
+Length=55
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P26017|PC_DROME Polycomb group protein Pc OS=Drosophila mela...  116     2e-31
+  sp|Q9DBY5|CBX6_MOUSE Chromobox protein homolog 6 OS=Mus musculu...  79.3    8e-18
+  sp|Q9QXV1|CBX8_MOUSE Chromobox protein homolog 8 OS=Mus musculu...  75.9    8e-17
+  sp|O95503|CBX6_HUMAN Chromobox protein homolog 6 OS=Homo sapien...  76.3    8e-17
+  sp|Q9HC52|CBX8_HUMAN Chromobox protein homolog 8 OS=Homo sapien...  75.1    2e-16
+  sp|O95931|CBX7_HUMAN Chromobox protein homolog 7 OS=Homo sapien...  68.9    1e-14
+  sp|P60889|CBX7_RAT Chromobox protein homolog 7 OS=Rattus norveg...  68.2    1e-14
+  sp|Q8VDS3|CBX7_MOUSE Chromobox protein homolog 7 OS=Mus musculu...  67.8    1e-14
+  sp|O55187|CBX4_MOUSE E3 SUMO-protein ligase CBX4 OS=Mus musculu...  70.5    2e-14
+  sp|O00257|CBX4_HUMAN E3 SUMO-protein ligase CBX4 OS=Homo sapien...  70.1    2e-14
+  sp|P30658|CBX2_MOUSE Chromobox protein homolog 2 OS=Mus musculu...  69.7    3e-14
+  sp|Q14781|CBX2_HUMAN Chromobox protein homolog 2 OS=Homo sapien...  69.7    3e-14
+  sp|P05205|HP1_DROME Heterochromatin protein 1 OS=Drosophila mel...  58.5    4e-11
+  sp|P29227|HP1_DROVI Heterochromatin protein 1 OS=Drosophila vir...  57.0    1e-10
+  sp|P45973|CBX5_HUMAN Chromobox protein homolog 5 OS=Homo sapien...  52.0    7e-09
+  sp|Q61686|CBX5_MOUSE Chromobox protein homolog 5 OS=Mus musculu...  51.2    2e-08
+  sp|P34618|CEC1_CAEEL Chromo domain-containing protein cec-1 OS=...  50.8    7e-08
+  sp|Q944N1|LHP1_SOLLC Chromo domain protein LHP1 OS=Solanum lyco...  50.1    2e-07
+  sp|Q5R6X7|CBX3_PONAB Chromobox protein homolog 3 OS=Pongo abeli...  45.1    3e-06
+  sp|Q13185|CBX3_HUMAN Chromobox protein homolog 3 OS=Homo sapien...  45.1    3e-06
+  sp|Q946J8|LHP1_ARATH Chromo domain-containing protein LHP1 OS=A...  46.6    3e-06
+  sp|P23198|CBX3_MOUSE Chromobox protein homolog 3 OS=Mus musculu...  44.3    5e-06
+  sp|Q28CQ7|SUV92_XENTR Histone-lysine N-methyltransferase SUV39H...  45.4    8e-06
+  sp|Q10103|CHP1_SCHPO Chromo domain-containing protein 1 OS=Schi...  43.9    4e-05
+  sp|Q8N8U2|CDYL2_HUMAN Chromodomain Y-like protein 2 OS=Homo sap...  43.5    4e-05
+  sp|P83917|CBX1_MOUSE Chromobox protein homolog 1 OS=Mus musculu...  42.0    4e-05
+  sp|P83916|CBX1_HUMAN Chromobox protein homolog 1 OS=Homo sapien...  42.0    4e-05
+  sp|Q9D5D8|CDYL2_MOUSE Chromodomain Y-like protein 2 OS=Mus musc...  43.1    5e-05
+  sp|Q9EQQ0|SUV92_MOUSE Histone-lysine N-methyltransferase SUV39H...  43.1    6e-05
+  sp|Q339W7|LHP1_ORYSJ Probable chromo domain-containing protein ...  42.0    1e-04
+  sp|Q9Y232|CDYL_HUMAN Chromodomain Y-like protein OS=Homo sapien...  42.0    1e-04
+  sp|Q9WTK2|CDYL_MOUSE Chromodomain Y-like protein OS=Mus musculu...  42.0    1e-04
+  sp|Q6AYK9|CDYL_RAT Chromodomain Y-like protein OS=Rattus norveg...  42.0    1e-04
+  sp|Q99549|MPP8_HUMAN M-phase phosphoprotein 8 OS=Homo sapiens O...  42.0    1e-04
+  sp|Q5F3W5|SUV92_CHICK Histone-lysine N-methyltransferase SUV39H...  40.4    4e-04
+  sp|Q9Y6F7|CDY2_HUMAN Testis-specific chromodomain protein Y 2 O...  40.0    6e-04
+  sp|Q9Y6F8|CDY1_HUMAN Testis-specific chromodomain protein Y 1 O...  39.7    8e-04
+  sp|Q3TYA6|MPP8_MOUSE M-phase phosphoprotein 8 OS=Mus musculus O...  39.3    0.001
+  sp|G3V8T1|MPP8_RAT M-phase phosphoprotein 8 OS=Rattus norvegicu...  38.9    0.002
+
+
+> sp|P26017|PC_DROME Polycomb group protein Pc OS=Drosophila melanogaster 
+OX=7227 GN=Pc PE=1 SV=1
+Length=390
+
+ Score = 116 bits (290),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 55/55 (100%), Positives = 55/55 (100%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK
+Sbjct  23  DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  77
+
+
+> sp|Q9DBY5|CBX6_MOUSE Chromobox protein homolog 6 OS=Mus musculus 
+OX=10090 GN=Cbx6 PE=1 SV=2
+Length=414
+
+ Score = 79.3 bits (194),  Expect = 8e-18, Method: Composition-based stats.
+ Identities = 32/53 (60%), Positives = 42/53 (79%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+AAE II++R++KG +EY VKWKGW  +Y+TWEPE NILD RLI  +EQ  +
+Sbjct  10  VFAAESIIKRRIRKGRIEYLVKWKGWAIKYSTWEPEENILDSRLIAAFEQKER  62
+
+
+> sp|Q9QXV1|CBX8_MOUSE Chromobox protein homolog 8 OS=Mus musculus 
+OX=10090 GN=Cbx8 PE=1 SV=1
+Length=362
+
+ Score = 75.9 bits (185),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 29/53 (55%), Positives = 44/53 (83%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+AAE ++++R++KG +EY VKWKGW+Q+Y+TWEPE NILD RL+  +E+  +
+Sbjct  10  VFAAEALLKRRIRKGRMEYLVKWKGWSQKYSTWEPEENILDARLLAAFEERER  62
+
+
+> sp|O95503|CBX6_HUMAN Chromobox protein homolog 6 OS=Homo sapiens 
+OX=9606 GN=CBX6 PE=1 SV=1
+Length=412
+
+ Score = 76.3 bits (186),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 32/53 (60%), Positives = 42/53 (79%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+AAE II++R++KG +EY VKWKGW  +Y+TWEPE NILD RLI  +EQ  +
+Sbjct  10  VFAAESIIKRRIRKGRIEYLVKWKGWAIKYSTWEPEENILDSRLIAAFEQKER  62
+
+
+> sp|Q9HC52|CBX8_HUMAN Chromobox protein homolog 8 OS=Homo sapiens 
+OX=9606 GN=CBX8 PE=1 SV=3
+Length=389
+
+ Score = 75.1 bits (183),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 29/53 (55%), Positives = 44/53 (83%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+AAE ++++R++KG +EY VKWKGW+Q+Y+TWEPE NILD RL+  +E+  +
+Sbjct  10  VFAAEALLKRRIRKGRMEYLVKWKGWSQKYSTWEPEENILDARLLAAFEERER  62
+
+
+> sp|O95931|CBX7_HUMAN Chromobox protein homolog 7 OS=Homo sapiens 
+OX=9606 GN=CBX7 PE=1 SV=1
+Length=251
+
+ Score = 68.9 bits (167),  Expect = 1e-14, Method: Composition-based stats.
+ Identities = 31/50 (62%), Positives = 39/50 (78%), Gaps = 0/50 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+
+Sbjct  10  VFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEE  59
+
+
+> sp|P60889|CBX7_RAT Chromobox protein homolog 7 OS=Rattus norvegicus 
+OX=10116 GN=Cbx7 PE=2 SV=1
+Length=158
+
+ Score = 68.2 bits (165),  Expect = 1e-14, Method: Compositional matrix adjust.
+ Identities = 31/50 (62%), Positives = 39/50 (78%), Gaps = 0/50 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+
+Sbjct  10  VFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEE  59
+
+
+> sp|Q8VDS3|CBX7_MOUSE Chromobox protein homolog 7 OS=Mus musculus 
+OX=10090 GN=Cbx7 PE=1 SV=1
+Length=158
+
+ Score = 67.8 bits (164),  Expect = 1e-14, Method: Compositional matrix adjust.
+ Identities = 31/50 (62%), Positives = 39/50 (78%), Gaps = 0/50 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+
+Sbjct  10  VFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEE  59
+
+
+> sp|O55187|CBX4_MOUSE E3 SUMO-protein ligase CBX4 OS=Mus musculus 
+OX=10090 GN=Cbx4 PE=1 SV=2
+Length=551
+
+ Score = 70.5 bits (171),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 29/53 (55%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+A E I +KR++KG VEY VKW+GW+ +YNTWEPE NILD RL+  ++   +
+Sbjct  10  VFAVESIEKKRIRKGRVEYLVKWRGWSPKYNTWEPEENILDPRLLIAFQNRER  62
+
+
+> sp|O00257|CBX4_HUMAN E3 SUMO-protein ligase CBX4 OS=Homo sapiens 
+OX=9606 GN=CBX4 PE=1 SV=3
+Length=560
+
+ Score = 70.1 bits (170),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 29/53 (55%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+A E I +KR++KG VEY VKW+GW+ +YNTWEPE NILD RL+  ++   +
+Sbjct  10  VFAVESIEKKRIRKGRVEYLVKWRGWSPKYNTWEPEENILDPRLLIAFQNRER  62
+
+
+> sp|P30658|CBX2_MOUSE Chromobox protein homolog 2 OS=Mus musculus 
+OX=10090 GN=Cbx2 PE=1 SV=2
+Length=519
+
+ Score = 69.7 bits (169),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 27/50 (54%), Positives = 41/50 (82%), Gaps = 0/50 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           V+AAE I+ KR++KG +EY VKW+GW+ ++N+WEPE NILD RL+  +++
+Sbjct  11  VFAAECILSKRLRKGKLEYLVKWRGWSSKHNSWEPEENILDPRLLLAFQK  60
+
+
+> sp|Q14781|CBX2_HUMAN Chromobox protein homolog 2 OS=Homo sapiens 
+OX=9606 GN=CBX2 PE=1 SV=2
+Length=532
+
+ Score = 69.7 bits (169),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 27/50 (54%), Positives = 41/50 (82%), Gaps = 0/50 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           V+AAE I+ KR++KG +EY VKW+GW+ ++N+WEPE NILD RL+  +++
+Sbjct  11  VFAAECILSKRLRKGKLEYLVKWRGWSSKHNSWEPEENILDPRLLLAFQK  60
+
+
+> sp|P05205|HP1_DROME Heterochromatin protein 1 OS=Drosophila melanogaster 
+OX=7227 GN=Su(var)205 PE=1 SV=2
+Length=206
+
+ Score = 58.5 bits (140),  Expect = 4e-11, Method: Compositional matrix adjust.
+ Identities = 29/52 (56%), Positives = 37/52 (71%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           YA EKII +RV+KG VEY +KWKG+ +  NTWEPE N+  + LI  YE + K
+Sbjct  24  YAVEKIIDRRVRKGKVEYYLKWKGYPETENTWEPENNLDCQDLIQQYEASRK  75
+
+
+> sp|P29227|HP1_DROVI Heterochromatin protein 1 OS=Drosophila virilis 
+OX=7244 GN=HP1A PE=3 SV=1
+Length=213
+
+ Score = 57.0 bits (136),  Expect = 1e-10, Method: Compositional matrix adjust.
+ Identities = 28/52 (54%), Positives = 37/52 (71%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           YA EKI+ +RV+KG VEY +KWKG+ +  NTWEPE N+  + LI  YE + K
+Sbjct  24  YAVEKILDRRVRKGKVEYYLKWKGYAETENTWEPEGNLDCQDLIQQYELSRK  75
+
+
+> sp|P45973|CBX5_HUMAN Chromobox protein homolog 5 OS=Homo sapiens 
+OX=9606 GN=CBX5 PE=1 SV=1
+Length=191
+
+ Score = 52.0 bits (123),  Expect = 7e-09, Method: Compositional matrix adjust.
+ Identities = 23/47 (49%), Positives = 33/47 (70%), Gaps = 0/47 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+           Y  EK++ +RV KG VEY +KWKG+++ +NTWEPE N+    LI  +
+Sbjct  20  YVVEKVLDRRVVKGQVEYLLKWKGFSEEHNTWEPEKNLDCPELISEF  66
+
+
+> sp|Q61686|CBX5_MOUSE Chromobox protein homolog 5 OS=Mus musculus 
+OX=10090 GN=Cbx5 PE=1 SV=1
+Length=191
+
+ Score = 51.2 bits (121),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 22/47 (47%), Positives = 33/47 (70%), Gaps = 0/47 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+           Y  EK++ +R+ KG VEY +KWKG+++ +NTWEPE N+    LI  +
+Sbjct  20  YVVEKVLDRRMVKGQVEYLLKWKGFSEEHNTWEPEKNLDCPELISEF  66
+
+
+> sp|P34618|CEC1_CAEEL Chromo domain-containing protein cec-1 OS=Caenorhabditis 
+elegans OX=6239 GN=cec-1 PE=2 SV=1
+Length=304
+
+ Score = 50.8 bits (120),  Expect = 7e-08, Method: Compositional matrix adjust.
+ Identities = 20/48 (42%), Positives = 33/48 (69%), Gaps = 0/48 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+           +Y  E I++ R KKG  E+ +KW G++  +N+WEP+ NI+D  LI+ +
+Sbjct  7   LYTVESILEHRKKKGKSEFYIKWLGYDHTHNSWEPKENIVDPTLIEAF  54
+
+
+> sp|Q944N1|LHP1_SOLLC Chromo domain protein LHP1 OS=Solanum lycopersicum 
+OX=4081 GN=LHP1 PE=1 SV=2
+Length=399
+
+ Score = 50.1 bits (118),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 33/53 (62%), Gaps = 1/53 (2%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD-RRLIDIYEQTNK  55
+            Y  E + ++R  KG V Y +KW+GW +  NTWEPE N+     +ID YE++ K
+Sbjct  93   YEIETVRRRRTVKGKVYYLIKWRGWPESANTWEPETNLSSCTDIIDAYEESLK  145
+
+
+> sp|Q5R6X7|CBX3_PONAB Chromobox protein homolog 3 OS=Pongo abelii 
+OX=9601 GN=CBX3 PE=2 SV=1
+Length=183
+
+ Score = 45.1 bits (105),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (62%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  30  FVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEAFLNSQK  81
+
+
+> sp|Q13185|CBX3_HUMAN Chromobox protein homolog 3 OS=Homo sapiens 
+OX=9606 GN=CBX3 PE=1 SV=4
+Length=183
+
+ Score = 45.1 bits (105),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (62%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  30  FVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEAFLNSQK  81
+
+
+> sp|Q946J8|LHP1_ARATH Chromo domain-containing protein LHP1 OS=Arabidopsis 
+thaliana OX=3702 GN=LHP1 PE=1 SV=2
+Length=445
+
+ Score = 46.6 bits (109),  Expect = 3e-06, Method: Compositional matrix adjust.
+ Identities = 23/51 (45%), Positives = 33/51 (65%), Gaps = 1/51 (2%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD-RRLIDIYEQT  53
+            Y  E I +KRV+KG V+Y +KW+GW +  NTWEP  N+     +ID +E +
+Sbjct  108  YEIEAIRRKRVRKGKVQYLIKWRGWPETANTWEPLENLQSIADVIDAFEGS  158
+
+
+> sp|P23198|CBX3_MOUSE Chromobox protein homolog 3 OS=Mus musculus 
+OX=10090 GN=Cbx3 PE=1 SV=2
+Length=183
+
+ Score = 44.3 bits (103),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (62%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  30  FVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEDFLNSQK  81
+
+
+> sp|Q28CQ7|SUV92_XENTR Histone-lysine N-methyltransferase SUV39H2 
+OS=Xenopus tropicalis OX=8364 GN=suv39h2 PE=2 SV=2
+Length=406
+
+ Score = 45.4 bits (106),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 18/38 (47%), Positives = 25/38 (66%), Gaps = 0/38 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI  41
+           Y  E +   R++KGV ++ VKWKGW +  NTWEP  N+
+Sbjct  43  YEVEYLCDYRIEKGVEKFFVKWKGWPESCNTWEPTRNL  80
+
+
+> sp|Q10103|CHP1_SCHPO Chromo domain-containing protein 1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=chp1 PE=1 SV=1
+Length=960
+
+ Score = 43.9 bits (102),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 20/41 (49%), Positives = 26/41 (63%), Gaps = 1/41 (2%)
+
+Query  3   VYAAEKIIQKRVKK-GVVEYRVKWKGWNQRYNTWEPEVNIL  42
+           VY  E I+  RV K G+ EY +KW G++   NTWEPE N+ 
+Sbjct  21  VYEVEDILADRVNKNGINEYYIKWAGYDWYDNTWEPEQNLF  61
+
+
+> sp|Q8N8U2|CDYL2_HUMAN Chromodomain Y-like protein 2 OS=Homo sapiens 
+OX=9606 GN=CDYL2 PE=1 SV=2
+Length=506
+
+ Score = 43.5 bits (101),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 19/41 (46%), Positives = 28/41 (68%), Gaps = 1/41 (2%)
+
+Query  3   VYAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL  42
+           +Y  E+I+ KR  KKG  EY ++WKG+    +TWEPE ++L
+Sbjct  6   LYEVERIVDKRKNKKGKWEYLIRWKGYGSTEDTWEPEHHLL  46
+
+
+> sp|P83917|CBX1_MOUSE Chromobox protein homolog 1 OS=Mus musculus 
+OX=10090 GN=Cbx1 PE=1 SV=1
+Length=185
+
+ Score = 42.0 bits (97),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 30/46 (65%), Gaps = 0/46 (0%)
+
+Query  10  IQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + +RV KG VEY +KWKG++   NTWEPE N+    LI  + Q+ K
+Sbjct  27  LDRRVVKGKVEYLLKWKGFSDEDNTWEPEENLDCPDLIAEFLQSQK  72
+
+
+> sp|P83916|CBX1_HUMAN Chromobox protein homolog 1 OS=Homo sapiens 
+OX=9606 GN=CBX1 PE=1 SV=1
+Length=185
+
+ Score = 42.0 bits (97),  Expect = 4e-05, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 30/46 (65%), Gaps = 0/46 (0%)
+
+Query  10  IQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + +RV KG VEY +KWKG++   NTWEPE N+    LI  + Q+ K
+Sbjct  27  LDRRVVKGKVEYLLKWKGFSDEDNTWEPEENLDCPDLIAEFLQSQK  72
+
+
+> sp|Q9D5D8|CDYL2_MOUSE Chromodomain Y-like protein 2 OS=Mus musculus 
+OX=10090 GN=Cdyl2 PE=1 SV=1
+Length=503
+
+ Score = 43.1 bits (100),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 19/41 (46%), Positives = 28/41 (68%), Gaps = 1/41 (2%)
+
+Query  3   VYAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL  42
+           +Y  E+I+ KR  KKG  EY ++WKG+    +TWEPE ++L
+Sbjct  6   LYEVERIVDKRKNKKGKWEYLIRWKGYGSTEDTWEPEHHLL  46
+
+
+> sp|Q9EQQ0|SUV92_MOUSE Histone-lysine N-methyltransferase SUV39H2 
+OS=Mus musculus OX=10090 GN=Suv39h2 PE=1 SV=1
+Length=477
+
+ Score = 43.1 bits (100),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 19/38 (50%), Positives = 22/38 (58%), Gaps = 0/38 (0%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI  41
+            Y  E +   +V KGV  Y VKWKGW    NTWEP  N+
+Sbjct  118  YEVEYLCDYKVAKGVEYYLVKWKGWPDSTNTWEPLRNL  155
+
+
+> sp|Q339W7|LHP1_ORYSJ Probable chromo domain-containing protein 
+LHP1 OS=Oryza sativa subsp. japonica OX=39947 GN=LHP1 PE=2 
+SV=1
+Length=415
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/38 (47%), Positives = 27/38 (71%), Gaps = 0/38 (0%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI  41
+            Y  E I ++R++KG ++Y VKW+GW +  NTWEP  N+
+Sbjct  107  YEIEDIRRRRLRKGKLQYLVKWRGWPESANTWEPLENL  144
+
+
+> sp|Q9Y232|CDYL_HUMAN Chromodomain Y-like protein OS=Homo sapiens 
+OX=9606 GN=CDYL PE=1 SV=2
+Length=598
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/38 (47%), Positives = 28/38 (74%), Gaps = 1/38 (3%)
+
+Query  7    EKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNILD  43
+            E+I+ KR  KKG  EY V+WKG++   +TWEPE ++++
+Sbjct  64   ERIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVN  101
+
+
+> sp|Q9WTK2|CDYL_MOUSE Chromodomain Y-like protein OS=Mus musculus 
+OX=10090 GN=Cdyl PE=1 SV=1
+Length=593
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/38 (47%), Positives = 27/38 (71%), Gaps = 1/38 (3%)
+
+Query  7   EKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNILD  43
+           E I+ KR  KKG  EY V+WKG++   +TWEPE ++++
+Sbjct  59  ESIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVN  96
+
+
+> sp|Q6AYK9|CDYL_RAT Chromodomain Y-like protein OS=Rattus norvegicus 
+OX=10116 GN=Cdyl PE=1 SV=1
+Length=589
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 18/38 (47%), Positives = 27/38 (71%), Gaps = 1/38 (3%)
+
+Query  7   EKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNILD  43
+           E I+ KR  KKG  EY V+WKG++   +TWEPE ++++
+Sbjct  58  ESIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVN  95
+
+
+> sp|Q99549|MPP8_HUMAN M-phase phosphoprotein 8 OS=Homo sapiens 
+OX=9606 GN=MPHOSPH8 PE=1 SV=2
+Length=860
+
+ Score = 42.0 bits (97),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 17/41 (41%), Positives = 28/41 (68%), Gaps = 0/41 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD  43
+           V+  EKI+  + + G V Y+V+WKG+    +TWEPE+++ D
+Sbjct  58  VFEVEKILDMKTEGGKVLYKVRWKGYTSDDDTWEPEIHLED  98
+
+
+> sp|Q5F3W5|SUV92_CHICK Histone-lysine N-methyltransferase SUV39H2 
+OS=Gallus gallus OX=9031 GN=SUV39H2 PE=2 SV=1
+Length=407
+
+ Score = 40.4 bits (93),  Expect = 4e-04, Method: Compositional matrix adjust.
+ Identities = 18/47 (38%), Positives = 29/47 (62%), Gaps = 0/47 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+           Y  E +   +V++G   Y VKWKGW +  NTWEP+ N+   +L++ +
+Sbjct  43  YEVEYLCDYKVEEGKEYYLVKWKGWPESSNTWEPQKNLKCPKLLENF  89
+
+
+> sp|Q9Y6F7|CDY2_HUMAN Testis-specific chromodomain protein Y 2 
+OS=Homo sapiens OX=9606 GN=CDY2A PE=1 SV=1
+Length=541
+
+ Score = 40.0 bits (92),  Expect = 6e-04, Method: Composition-based stats.
+ Identities = 16/41 (39%), Positives = 29/41 (71%), Gaps = 1/41 (2%)
+
+Query  4   YAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNILD  43
+           +  E I+ KR  K G  +Y V+WKG++++ +TWEPE ++++
+Sbjct  6   FEVEAIVDKRQDKNGNTQYLVRWKGYDKQDDTWEPEQHLMN  46
+
+
+> sp|Q9Y6F8|CDY1_HUMAN Testis-specific chromodomain protein Y 1 
+OS=Homo sapiens OX=9606 GN=CDY1 PE=1 SV=1
+Length=540
+
+ Score = 39.7 bits (91),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 16/41 (39%), Positives = 29/41 (71%), Gaps = 1/41 (2%)
+
+Query  4   YAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNILD  43
+           +  E I+ KR  K G  +Y V+WKG++++ +TWEPE ++++
+Sbjct  6   FEVEAIVDKRQDKNGNTQYLVRWKGYDKQDDTWEPEQHLMN  46
+
+
+> sp|Q3TYA6|MPP8_MOUSE M-phase phosphoprotein 8 OS=Mus musculus 
+OX=10090 GN=Mphosph8 PE=1 SV=1
+Length=858
+
+ Score = 39.3 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 16/41 (39%), Positives = 27/41 (66%), Gaps = 0/41 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD  43
+           V+  E+I+  + + G   Y+V+WKG+    +TWEPEV++ D
+Sbjct  58  VFEVERILDMKCEGGKNLYKVRWKGYTSEDDTWEPEVHLED  98
+
+
+> sp|G3V8T1|MPP8_RAT M-phase phosphoprotein 8 OS=Rattus norvegicus 
+OX=10116 GN=Mphosph8 PE=2 SV=1
+Length=851
+
+ Score = 38.9 bits (89),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 16/41 (39%), Positives = 27/41 (66%), Gaps = 0/41 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD  43
+           V+  E+I+  + + G   Y+V+WKG+    +TWEPEV++ D
+Sbjct  58  VFEVERILDMKCEGGKNLYKVRWKGYTSDDDTWEPEVHLED  98
+
+
+
+Lambda      K        H        a         alpha
+   0.318    0.136    0.425    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969651158
+Results from round 2
+
+
+Query= 1PFB
+
+Length=55
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q9DBY5|CBX6_MOUSE Chromobox protein homolog 6 OS=Mus musculu...  91.9    1e-22
+  sp|P26017|PC_DROME Polycomb group protein Pc OS=Drosophila mela...  91.5    2e-22
+  sp|Q9QXV1|CBX8_MOUSE Chromobox protein homolog 8 OS=Mus musculu...  90.7    3e-22
+  sp|O55187|CBX4_MOUSE E3 SUMO-protein ligase CBX4 OS=Mus musculu...  92.3    3e-22
+  sp|P30658|CBX2_MOUSE Chromobox protein homolog 2 OS=Mus musculu...  91.9    4e-22
+  sp|Q14781|CBX2_HUMAN Chromobox protein homolog 2 OS=Homo sapien...  91.9    4e-22
+  sp|O00257|CBX4_HUMAN E3 SUMO-protein ligase CBX4 OS=Homo sapien...  91.9    4e-22
+  sp|O95931|CBX7_HUMAN Chromobox protein homolog 7 OS=Homo sapien...  88.8    7e-22
+  sp|Q9HC52|CBX8_HUMAN Chromobox protein homolog 8 OS=Homo sapien...  90.0    7e-22
+  sp|O95503|CBX6_HUMAN Chromobox protein homolog 6 OS=Homo sapien...  88.0    4e-21
+  sp|P29227|HP1_DROVI Heterochromatin protein 1 OS=Drosophila vir...  85.7    6e-21
+  sp|P60889|CBX7_RAT Chromobox protein homolog 7 OS=Rattus norveg...  85.0    6e-21
+  sp|P05205|HP1_DROME Heterochromatin protein 1 OS=Drosophila mel...  85.0    1e-20
+  sp|Q8VDS3|CBX7_MOUSE Chromobox protein homolog 7 OS=Mus musculu...  83.8    1e-20
+  sp|Q944N1|LHP1_SOLLC Chromo domain protein LHP1 OS=Solanum lyco...  82.6    4e-19
+  sp|Q5R6X7|CBX3_PONAB Chromobox protein homolog 3 OS=Pongo abeli...  80.3    4e-19
+  sp|Q13185|CBX3_HUMAN Chromobox protein homolog 3 OS=Homo sapien...  80.3    4e-19
+  sp|Q5F3W5|SUV92_CHICK Histone-lysine N-methyltransferase SUV39H...  82.3    6e-19
+  sp|Q9EQQ0|SUV92_MOUSE Histone-lysine N-methyltransferase SUV39H...  82.6    6e-19
+  sp|Q28CQ7|SUV92_XENTR Histone-lysine N-methyltransferase SUV39H...  81.9    8e-19
+  sp|Q946J8|LHP1_ARATH Chromo domain-containing protein LHP1 OS=A...  81.9    1e-18
+  sp|P23198|CBX3_MOUSE Chromobox protein homolog 3 OS=Mus musculu...  78.8    2e-18
+  sp|P83917|CBX1_MOUSE Chromobox protein homolog 1 OS=Mus musculu...  74.2    7e-17
+  sp|P83916|CBX1_HUMAN Chromobox protein homolog 1 OS=Homo sapien...  74.2    7e-17
+  sp|P34618|CEC1_CAEEL Chromo domain-containing protein cec-1 OS=...  74.6    1e-16
+  sp|Q339W7|LHP1_ORYSJ Probable chromo domain-containing protein ...  75.3    2e-16
+  sp|P45973|CBX5_HUMAN Chromobox protein homolog 5 OS=Homo sapien...  72.6    3e-16
+  sp|Q61686|CBX5_MOUSE Chromobox protein homolog 5 OS=Mus musculu...  72.2    5e-16
+  sp|Q8N8U2|CDYL2_HUMAN Chromodomain Y-like protein 2 OS=Homo sap...  73.8    1e-15
+  sp|Q9D5D8|CDYL2_MOUSE Chromodomain Y-like protein 2 OS=Mus musc...  73.4    1e-15
+  sp|Q9WTK2|CDYL_MOUSE Chromodomain Y-like protein OS=Mus musculu...  70.3    2e-14
+  sp|Q6AYK9|CDYL_RAT Chromodomain Y-like protein OS=Rattus norveg...  70.3    2e-14
+  sp|Q9Y232|CDYL_HUMAN Chromodomain Y-like protein OS=Homo sapien...  69.5    5e-14
+  sp|Q9Y6F7|CDY2_HUMAN Testis-specific chromodomain protein Y 2 O...  69.2    5e-14
+  sp|Q9Y6F8|CDY1_HUMAN Testis-specific chromodomain protein Y 1 O...  68.8    6e-14
+  sp|Q3TYA6|MPP8_MOUSE M-phase phosphoprotein 8 OS=Mus musculus O...  68.0    2e-13
+  sp|G3V8T1|MPP8_RAT M-phase phosphoprotein 8 OS=Rattus norvegicu...  67.2    3e-13
+  sp|Q99549|MPP8_HUMAN M-phase phosphoprotein 8 OS=Homo sapiens O...  66.8    4e-13
+  sp|Q10103|CHP1_SCHPO Chromo domain-containing protein 1 OS=Schi...  66.8    4e-13
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q4R3E0|SUV92_MACFA Histone-lysine N-methyltransferase SUV39H...  78.0    2e-17
+  sp|Q9H5I1|SUV92_HUMAN Histone-lysine N-methyltransferase SUV39H...  78.0    2e-17
+  sp|Q32PH7|SUV92_BOVIN Histone-lysine N-methyltransferase SUV39H...  77.2    4e-17
+  sp|Q6DGD3|SV91A_DANRE Histone-lysine N-methyltransferase SUV39H...  73.0    1e-15
+  sp|O54864|SUV91_MOUSE Histone-lysine N-methyltransferase SUV39H...  68.8    4e-14
+  sp|Q2NL30|SUV91_BOVIN Histone-lysine N-methyltransferase SUV39H...  67.6    1e-13
+  sp|Q5RB81|SUV91_PONAB Histone-lysine N-methyltransferase SUV39H...  67.2    1e-13
+  sp|O43463|SUV91_HUMAN Histone-lysine N-methyltransferase SUV39H...  67.2    1e-13
+  sp|Q6NRE8|SUV91_XENLA Histone-lysine N-methyltransferase SUV39H...  58.4    2e-10
+  sp|O60016|CLR4_SCHPO Histone-lysine N-methyltransferase, H3 lys...  49.5    3e-07
+  sp|P45968|CEC3_CAEEL Chromo domain-containing protein cec-3 OS=...  45.7    4e-06
+  sp|P40201|CHD1_MOUSE Chromodomain-helicase-DNA-binding protein ...  45.7    8e-06
+  sp|O14646|CHD1_HUMAN Chromodomain-helicase-DNA-binding protein ...  45.7    8e-06
+  sp|Q294B9|SUV39_DROPS Histone-lysine N-methyltransferase Su(var...  45.3    1e-05
+  sp|O42934|CHP2_SCHPO Chromo domain-containing protein 2 OS=Schi...  44.1    2e-05
+  sp|B6ZLK2|CHD1_CHICK Chromodomain-helicase-DNA-binding protein ...  44.9    2e-05
+  sp|Q8LPU5|CMT3_MAIZE DNA (cytosine-5)-methyltransferase 3 OS=Ze...  44.5    2e-05
+  sp|A0A0P0VUY4|CMT1_ORYSJ DNA (cytosine-5)-methyltransferase CMT...  44.1    3e-05
+  sp|Q5KQL9|CMT2_ORYSJ DNA (cytosine-5)-methyltransferase CMT2 OS...  44.1    3e-05
+  sp|E9PZM4|CHD2_MOUSE Chromodomain-helicase-DNA-binding protein ...  43.4    5e-05
+  sp|Q8LSQ2|SR43C_ORYSJ Probable signal recognition particle 43 k...  43.0    6e-05
+  sp|O14647|CHD2_HUMAN Chromodomain-helicase-DNA-binding protein ...  43.0    7e-05
+  sp|C0SQ89|CMT3_ORYSJ DNA (cytosine-5)-methyltransferase CMT3 OS...  42.6    9e-05
+  sp|Q19972|CEC4_CAEEL Chromo domain-containing protein cec-4 OS=...  41.4    1e-04
+  sp|Q94F87|CMT2_ARATH DNA (cytosine-5)-methyltransferase CMT2 OS...  42.2    1e-04
+  sp|Q9AXT8|CMT1_MAIZE DNA (cytosine-5)-methyltransferase 1 OS=Ze...  41.8    2e-04
+  sp|A9X4T1|CHD1_BOMMO Chromodomain-helicase-DNA-binding protein ...  41.8    2e-04
+  sp|P45975|SUV39_DROME Histone-lysine N-methyltransferase Su(var...  41.4    2e-04
+  sp|Q9ARI6|CMT2_MAIZE DNA (cytosine-5)-methyltransferase 2 OS=Ze...  40.7    4e-04
+  sp|Q08972|NEW1_YEAST [NU+] prion formation protein 1 OS=Sacchar...  40.7    5e-04
+  sp|Q7KU24|CHD1_DROME Chromodomain-helicase-DNA-binding protein ...  39.1    0.001
+  sp|Q8BYH8|CHD9_MOUSE Chromodomain-helicase-DNA-binding protein ...  39.1    0.001
+  sp|Q3L8U1|CHD9_HUMAN Chromodomain-helicase-DNA-binding protein ...  39.1    0.001
+  sp|O14134|ELF1_SCHPO mRNA export factor elf1 OS=Schizosaccharom...  38.3    0.002
+  sp|O22265|SR43C_ARATH Signal recognition particle 43 kDa protei...  37.2    0.004
+  sp|Q94F88|CMT3_ARATH DNA (cytosine-5)-methyltransferase CMT3 OS...  37.6    0.004
+
+
+> sp|Q9DBY5|CBX6_MOUSE Chromobox protein homolog 6 OS=Mus musculus 
+OX=10090 GN=Cbx6 PE=1 SV=2
+Length=414
+
+ Score = 91.9 bits (227),  Expect = 1e-22, Method: Composition-based stats.
+ Identities = 32/53 (60%), Positives = 42/53 (79%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+AAE II++R++KG +EY VKWKGW  +Y+TWEPE NILD RLI  +EQ  +
+Sbjct  10  VFAAESIIKRRIRKGRIEYLVKWKGWAIKYSTWEPEENILDSRLIAAFEQKER  62
+
+
+> sp|P26017|PC_DROME Polycomb group protein Pc OS=Drosophila melanogaster 
+OX=7227 GN=Pc PE=1 SV=1
+Length=390
+
+ Score = 91.5 bits (226),  Expect = 2e-22, Method: Composition-based stats.
+ Identities = 55/55 (100%), Positives = 55/55 (100%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK
+Sbjct  23  DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  77
+
+
+> sp|Q9QXV1|CBX8_MOUSE Chromobox protein homolog 8 OS=Mus musculus 
+OX=10090 GN=Cbx8 PE=1 SV=1
+Length=362
+
+ Score = 90.7 bits (224),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 29/53 (55%), Positives = 44/53 (83%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+AAE ++++R++KG +EY VKWKGW+Q+Y+TWEPE NILD RL+  +E+  +
+Sbjct  10  VFAAEALLKRRIRKGRMEYLVKWKGWSQKYSTWEPEENILDARLLAAFEERER  62
+
+
+> sp|O55187|CBX4_MOUSE E3 SUMO-protein ligase CBX4 OS=Mus musculus 
+OX=10090 GN=Cbx4 PE=1 SV=2
+Length=551
+
+ Score = 92.3 bits (228),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 29/53 (55%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+A E I +KR++KG VEY VKW+GW+ +YNTWEPE NILD RL+  ++   +
+Sbjct  10  VFAVESIEKKRIRKGRVEYLVKWRGWSPKYNTWEPEENILDPRLLIAFQNRER  62
+
+
+> sp|P30658|CBX2_MOUSE Chromobox protein homolog 2 OS=Mus musculus 
+OX=10090 GN=Cbx2 PE=1 SV=2
+Length=519
+
+ Score = 91.9 bits (227),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 27/52 (52%), Positives = 41/52 (79%), Gaps = 0/52 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+           V+AAE I+ KR++KG +EY VKW+GW+ ++N+WEPE NILD RL+  +++  
+Sbjct  11  VFAAECILSKRLRKGKLEYLVKWRGWSSKHNSWEPEENILDPRLLLAFQKKE  62
+
+
+> sp|Q14781|CBX2_HUMAN Chromobox protein homolog 2 OS=Homo sapiens 
+OX=9606 GN=CBX2 PE=1 SV=2
+Length=532
+
+ Score = 91.9 bits (227),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 27/52 (52%), Positives = 41/52 (79%), Gaps = 0/52 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+           V+AAE I+ KR++KG +EY VKW+GW+ ++N+WEPE NILD RL+  +++  
+Sbjct  11  VFAAECILSKRLRKGKLEYLVKWRGWSSKHNSWEPEENILDPRLLLAFQKKE  62
+
+
+> sp|O00257|CBX4_HUMAN E3 SUMO-protein ligase CBX4 OS=Homo sapiens 
+OX=9606 GN=CBX4 PE=1 SV=3
+Length=560
+
+ Score = 91.9 bits (227),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 29/53 (55%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+A E I +KR++KG VEY VKW+GW+ +YNTWEPE NILD RL+  ++   +
+Sbjct  10  VFAVESIEKKRIRKGRVEYLVKWRGWSPKYNTWEPEENILDPRLLIAFQNRER  62
+
+
+> sp|O95931|CBX7_HUMAN Chromobox protein homolog 7 OS=Homo sapiens 
+OX=9606 GN=CBX7 PE=1 SV=1
+Length=251
+
+ Score = 88.8 bits (219),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 31/53 (58%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+  +
+Sbjct  10  VFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEEKEE  62
+
+
+> sp|Q9HC52|CBX8_HUMAN Chromobox protein homolog 8 OS=Homo sapiens 
+OX=9606 GN=CBX8 PE=1 SV=3
+Length=389
+
+ Score = 90.0 bits (222),  Expect = 7e-22, Method: Composition-based stats.
+ Identities = 29/53 (55%), Positives = 44/53 (83%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+AAE ++++R++KG +EY VKWKGW+Q+Y+TWEPE NILD RL+  +E+  +
+Sbjct  10  VFAAEALLKRRIRKGRMEYLVKWKGWSQKYSTWEPEENILDARLLAAFEERER  62
+
+
+> sp|O95503|CBX6_HUMAN Chromobox protein homolog 6 OS=Homo sapiens 
+OX=9606 GN=CBX6 PE=1 SV=1
+Length=412
+
+ Score = 88.0 bits (217),  Expect = 4e-21, Method: Composition-based stats.
+ Identities = 32/53 (60%), Positives = 42/53 (79%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+AAE II++R++KG +EY VKWKGW  +Y+TWEPE NILD RLI  +EQ  +
+Sbjct  10  VFAAESIIKRRIRKGRIEYLVKWKGWAIKYSTWEPEENILDSRLIAAFEQKER  62
+
+
+> sp|P29227|HP1_DROVI Heterochromatin protein 1 OS=Drosophila virilis 
+OX=7244 GN=HP1A PE=3 SV=1
+Length=213
+
+ Score = 85.7 bits (211),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 28/52 (54%), Positives = 37/52 (71%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           YA EKI+ +RV+KG VEY +KWKG+ +  NTWEPE N+  + LI  YE + K
+Sbjct  24  YAVEKILDRRVRKGKVEYYLKWKGYAETENTWEPEGNLDCQDLIQQYELSRK  75
+
+
+> sp|P60889|CBX7_RAT Chromobox protein homolog 7 OS=Rattus norvegicus 
+OX=10116 GN=Cbx7 PE=2 SV=1
+Length=158
+
+ Score = 85.0 bits (209),  Expect = 6e-21, Method: Composition-based stats.
+ Identities = 31/53 (58%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+  +
+Sbjct  10  VFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEEKEE  62
+
+
+> sp|P05205|HP1_DROME Heterochromatin protein 1 OS=Drosophila melanogaster 
+OX=7227 GN=Su(var)205 PE=1 SV=2
+Length=206
+
+ Score = 85.0 bits (209),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 29/52 (56%), Positives = 37/52 (71%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           YA EKII +RV+KG VEY +KWKG+ +  NTWEPE N+  + LI  YE + K
+Sbjct  24  YAVEKIIDRRVRKGKVEYYLKWKGYPETENTWEPENNLDCQDLIQQYEASRK  75
+
+
+> sp|Q8VDS3|CBX7_MOUSE Chromobox protein homolog 7 OS=Mus musculus 
+OX=10090 GN=Cbx7 PE=1 SV=1
+Length=158
+
+ Score = 83.8 bits (206),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 31/53 (58%), Positives = 40/53 (75%), Gaps = 0/53 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+  +
+Sbjct  10  VFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEEKEE  62
+
+
+> sp|Q944N1|LHP1_SOLLC Chromo domain protein LHP1 OS=Solanum lycopersicum 
+OX=4081 GN=LHP1 PE=1 SV=2
+Length=399
+
+ Score = 82.6 bits (203),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 33/53 (62%), Gaps = 1/53 (2%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTNK  55
+            Y  E + ++R  KG V Y +KW+GW +  NTWEPE N+     +ID YE++ K
+Sbjct  93   YEIETVRRRRTVKGKVYYLIKWRGWPESANTWEPETNLSSCTDIIDAYEESLK  145
+
+
+> sp|Q5R6X7|CBX3_PONAB Chromobox protein homolog 3 OS=Pongo abelii 
+OX=9601 GN=CBX3 PE=2 SV=1
+Length=183
+
+ Score = 80.3 bits (197),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (62%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  30  FVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEAFLNSQK  81
+
+
+> sp|Q13185|CBX3_HUMAN Chromobox protein homolog 3 OS=Homo sapiens 
+OX=9606 GN=CBX3 PE=1 SV=4
+Length=183
+
+ Score = 80.3 bits (197),  Expect = 4e-19, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (62%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  30  FVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEAFLNSQK  81
+
+
+> sp|Q5F3W5|SUV92_CHICK Histone-lysine N-methyltransferase SUV39H2 
+OS=Gallus gallus OX=9031 GN=SUV39H2 PE=2 SV=1
+Length=407
+
+ Score = 82.3 bits (202),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 18/48 (38%), Positives = 29/48 (60%), Gaps = 0/48 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYE  51
+           Y  E +   +V++G   Y VKWKGW +  NTWEP+ N+   +L++ + 
+Sbjct  43  YEVEYLCDYKVEEGKEYYLVKWKGWPESSNTWEPQKNLKCPKLLENFL  90
+
+
+> sp|Q9EQQ0|SUV92_MOUSE Histone-lysine N-methyltransferase SUV39H2 
+OS=Mus musculus OX=10090 GN=Suv39h2 PE=1 SV=1
+Length=477
+
+ Score = 82.6 bits (203),  Expect = 6e-19, Method: Composition-based stats.
+ Identities = 21/52 (40%), Positives = 27/52 (52%), Gaps = 0/52 (0%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+            Y  E +   +V KGV  Y VKWKGW    NTWEP  N+   +L+  +    K
+Sbjct  118  YEVEYLCDYKVAKGVEYYLVKWKGWPDSTNTWEPLRNLRCPQLLRQFSDDKK  169
+
+
+> sp|Q28CQ7|SUV92_XENTR Histone-lysine N-methyltransferase SUV39H2 
+OS=Xenopus tropicalis OX=8364 GN=suv39h2 PE=2 SV=2
+Length=406
+
+ Score = 81.9 bits (201),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 19/47 (40%), Positives = 28/47 (60%), Gaps = 0/47 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+           Y  E +   R++KGV ++ VKWKGW +  NTWEP  N+    L+  +
+Sbjct  43  YEVEYLCDYRIEKGVEKFFVKWKGWPESCNTWEPTRNLKCPTLLKQF  89
+
+
+> sp|Q946J8|LHP1_ARATH Chromo domain-containing protein LHP1 OS=Arabidopsis 
+thaliana OX=3702 GN=LHP1 PE=1 SV=2
+Length=445
+
+ Score = 81.9 bits (201),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 34/53 (64%), Gaps = 1/53 (2%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD-RRLIDIYEQTNK  55
+            Y  E I +KRV+KG V+Y +KW+GW +  NTWEP  N+     +ID +E + K
+Sbjct  108  YEIEAIRRKRVRKGKVQYLIKWRGWPETANTWEPLENLQSIADVIDAFEGSLK  160
+
+
+> sp|P23198|CBX3_MOUSE Chromobox protein homolog 3 OS=Mus musculus 
+OX=10090 GN=Cbx3 PE=1 SV=2
+Length=183
+
+ Score = 78.8 bits (193),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 22/52 (42%), Positives = 32/52 (62%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  30  FVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEDFLNSQK  81
+
+
+> sp|Q4R3E0|SUV92_MACFA Histone-lysine N-methyltransferase SUV39H2 
+OS=Macaca fascicularis OX=9541 GN=SUV39H2 PE=2 SV=2
+Length=410
+
+ Score = 78.0 bits (191),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 18/49 (37%), Positives = 24/49 (49%), Gaps = 0/49 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           Y  E +   +V K +  Y VKWKGW    NTWEP  N+    L+  +  
+Sbjct  47  YEVEYLCDYKVVKDMEYYLVKWKGWPDSTNTWEPLQNLKCPLLLQQFSN  95
+
+
+> sp|Q9H5I1|SUV92_HUMAN Histone-lysine N-methyltransferase SUV39H2 
+OS=Homo sapiens OX=9606 GN=SUV39H2 PE=1 SV=2
+Length=410
+
+ Score = 78.0 bits (191),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 18/49 (37%), Positives = 24/49 (49%), Gaps = 0/49 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           Y  E +   +V K +  Y VKWKGW    NTWEP  N+    L+  +  
+Sbjct  47  YEVEYLCDYKVVKDMEYYLVKWKGWPDSTNTWEPLQNLKCPLLLQQFSN  95
+
+
+> sp|Q32PH7|SUV92_BOVIN Histone-lysine N-methyltransferase SUV39H2 
+OS=Bos taurus OX=9913 GN=SUV39H2 PE=2 SV=1
+Length=410
+
+ Score = 77.2 bits (189),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 18/47 (38%), Positives = 24/47 (51%), Gaps = 0/47 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+           Y  E +   +V K +  Y VKWKGW    NTWEP  N+    L+  +
+Sbjct  47  YEVEYLCDYKVVKDMEYYLVKWKGWPDSTNTWEPLQNLKCPLLLQQF  93
+
+
+> sp|P83917|CBX1_MOUSE Chromobox protein homolog 1 OS=Mus musculus 
+OX=10090 GN=Cbx1 PE=1 SV=1
+Length=185
+
+ Score = 74.2 bits (181),  Expect = 7e-17, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 30/46 (65%), Gaps = 0/46 (0%)
+
+Query  10  IQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + +RV KG VEY +KWKG++   NTWEPE N+    LI  + Q+ K
+Sbjct  27  LDRRVVKGKVEYLLKWKGFSDEDNTWEPEENLDCPDLIAEFLQSQK  72
+
+
+> sp|P83916|CBX1_HUMAN Chromobox protein homolog 1 OS=Homo sapiens 
+OX=9606 GN=CBX1 PE=1 SV=1
+Length=185
+
+ Score = 74.2 bits (181),  Expect = 7e-17, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 30/46 (65%), Gaps = 0/46 (0%)
+
+Query  10  IQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + +RV KG VEY +KWKG++   NTWEPE N+    LI  + Q+ K
+Sbjct  27  LDRRVVKGKVEYLLKWKGFSDEDNTWEPEENLDCPDLIAEFLQSQK  72
+
+
+> sp|P34618|CEC1_CAEEL Chromo domain-containing protein cec-1 OS=Caenorhabditis 
+elegans OX=6239 GN=cec-1 PE=2 SV=1
+Length=304
+
+ Score = 74.6 bits (182),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 20/52 (38%), Positives = 33/52 (63%), Gaps = 0/52 (0%)
+
+Query  3   VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+           +Y  E I++ R KKG  E+ +KW G++  +N+WEP+ NI+D  LI+ +    
+Sbjct  7   LYTVESILEHRKKKGKSEFYIKWLGYDHTHNSWEPKENIVDPTLIEAFFTRE  58
+
+
+> sp|Q339W7|LHP1_ORYSJ Probable chromo domain-containing protein 
+LHP1 OS=Oryza sativa subsp. japonica OX=39947 GN=LHP1 PE=2 
+SV=1
+Length=415
+
+ Score = 75.3 bits (184),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 21/53 (40%), Positives = 33/53 (62%), Gaps = 1/53 (2%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQTNK  55
+            Y  E I ++R++KG ++Y VKW+GW +  NTWEP  N+     +ID +E   +
+Sbjct  107  YEIEDIRRRRLRKGKLQYLVKWRGWPESANTWEPLENLSACSDIIDAFEMRLQ  159
+
+
+> sp|P45973|CBX5_HUMAN Chromobox protein homolog 5 OS=Homo sapiens 
+OX=9606 GN=CBX5 PE=1 SV=1
+Length=191
+
+ Score = 72.6 bits (177),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 24/52 (46%), Positives = 35/52 (67%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           Y  EK++ +RV KG VEY +KWKG+++ +NTWEPE N+    LI  + +  K
+Sbjct  20  YVVEKVLDRRVVKGQVEYLLKWKGFSEEHNTWEPEKNLDCPELISEFMKKYK  71
+
+
+> sp|Q61686|CBX5_MOUSE Chromobox protein homolog 5 OS=Mus musculus 
+OX=10090 GN=Cbx5 PE=1 SV=1
+Length=191
+
+ Score = 72.2 bits (176),  Expect = 5e-16, Method: Composition-based stats.
+ Identities = 23/52 (44%), Positives = 35/52 (67%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           Y  EK++ +R+ KG VEY +KWKG+++ +NTWEPE N+    LI  + +  K
+Sbjct  20  YVVEKVLDRRMVKGQVEYLLKWKGFSEEHNTWEPEKNLDCPELISEFMKKYK  71
+
+
+> sp|Q8N8U2|CDYL2_HUMAN Chromodomain Y-like protein 2 OS=Homo sapiens 
+OX=9606 GN=CDYL2 PE=1 SV=2
+Length=506
+
+ Score = 73.8 bits (180),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 31/50 (62%), Gaps = 2/50 (4%)
+
+Query  3   VYAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIY  50
+           +Y  E+I+ KR  KKG  EY ++WKG+    +TWEPE ++L     ID +
+Sbjct  6   LYEVERIVDKRKNKKGKWEYLIRWKGYGSTEDTWEPEHHLLHCEEFIDEF  55
+
+
+> sp|Q6DGD3|SV91A_DANRE Histone-lysine N-methyltransferase SUV39H1-A 
+OS=Danio rerio OX=7955 GN=suv39h1a PE=2 SV=2
+Length=411
+
+ Score = 73.0 bits (178),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 17/52 (33%), Positives = 26/52 (50%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           Y  E +   +  KG   + VKWKG+ +  NTWEP  N+    L+  + +  K
+Sbjct  43  YEVEYLCNYKKHKGREFFLVKWKGYEESENTWEPLKNLKCPILLHQFRKDMK  94
+
+
+> sp|Q9D5D8|CDYL2_MOUSE Chromodomain Y-like protein 2 OS=Mus musculus 
+OX=10090 GN=Cdyl2 PE=1 SV=1
+Length=503
+
+ Score = 73.4 bits (179),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 21/50 (42%), Positives = 31/50 (62%), Gaps = 2/50 (4%)
+
+Query  3   VYAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIY  50
+           +Y  E+I+ KR  KKG  EY ++WKG+    +TWEPE ++L     ID +
+Sbjct  6   LYEVERIVDKRKNKKGKWEYLIRWKGYGSTEDTWEPEHHLLHCEEFIDEF  55
+
+
+> sp|Q9WTK2|CDYL_MOUSE Chromodomain Y-like protein OS=Mus musculus 
+OX=10090 GN=Cdyl PE=1 SV=1
+Length=593
+
+ Score = 70.3 bits (171),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 19/51 (37%), Positives = 29/51 (57%), Gaps = 2/51 (4%)
+
+Query  5    AAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQT  53
+              E I+ KR  KKG  EY V+WKG++   +TWEPE +++     I  + + 
+Sbjct  57   QVESIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVNCEEYIHDFNRR  107
+
+
+> sp|Q6AYK9|CDYL_RAT Chromodomain Y-like protein OS=Rattus norvegicus 
+OX=10116 GN=Cdyl PE=1 SV=1
+Length=589
+
+ Score = 70.3 bits (171),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 19/51 (37%), Positives = 29/51 (57%), Gaps = 2/51 (4%)
+
+Query  5    AAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQT  53
+              E I+ KR  KKG  EY V+WKG++   +TWEPE +++     I  + + 
+Sbjct  56   QVESIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVNCEEYIHDFNRR  106
+
+
+> sp|O54864|SUV91_MOUSE Histone-lysine N-methyltransferase SUV39H1 
+OS=Mus musculus OX=10090 GN=Suv39h1 PE=1 SV=1
+Length=412
+
+ Score = 68.8 bits (167),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 13/49 (27%), Positives = 24/49 (49%), Gaps = 0/49 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           +  E +   +  +    Y VKW+G+    NTWEP  N+   R++  + +
+Sbjct  43  FEVEYLCDYKKIREQEYYLVKWRGYPDSENTWEPRQNLKCIRVLKQFHK  91
+
+
+> sp|Q9Y232|CDYL_HUMAN Chromodomain Y-like protein OS=Homo sapiens 
+OX=9606 GN=CDYL PE=1 SV=2
+Length=598
+
+ Score = 69.5 bits (169),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 19/51 (37%), Positives = 30/51 (59%), Gaps = 2/51 (4%)
+
+Query  5    AAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQT  53
+              E+I+ KR  KKG  EY V+WKG++   +TWEPE +++     I  + + 
+Sbjct  62   QVERIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVNCEEYIHDFNRR  112
+
+
+> sp|Q9Y6F7|CDY2_HUMAN Testis-specific chromodomain protein Y 2 
+OS=Homo sapiens OX=9606 GN=CDY2A PE=1 SV=1
+Length=541
+
+ Score = 69.2 bits (168),  Expect = 5e-14, Method: Composition-based stats.
+ Identities = 16/53 (30%), Positives = 32/53 (60%), Gaps = 2/53 (4%)
+
+Query  4   YAAEKIIQKRVKK-GVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQTN  54
+           +  E I+ KR  K G  +Y V+WKG++++ +TWEPE +++   + +  + +  
+Sbjct  6   FEVEAIVDKRQDKNGNTQYLVRWKGYDKQDDTWEPEQHLMNCEKCVHDFNRRQ  58
+
+
+> sp|Q9Y6F8|CDY1_HUMAN Testis-specific chromodomain protein Y 1 
+OS=Homo sapiens OX=9606 GN=CDY1 PE=1 SV=1
+Length=540
+
+ Score = 68.8 bits (167),  Expect = 6e-14, Method: Composition-based stats.
+ Identities = 16/53 (30%), Positives = 32/53 (60%), Gaps = 2/53 (4%)
+
+Query  4   YAAEKIIQKRVKK-GVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQTN  54
+           +  E I+ KR  K G  +Y V+WKG++++ +TWEPE +++   + +  + +  
+Sbjct  6   FEVEAIVDKRQDKNGNTQYLVRWKGYDKQDDTWEPEQHLMNCEKCVHDFNRRQ  58
+
+
+> sp|Q2NL30|SUV91_BOVIN Histone-lysine N-methyltransferase SUV39H1 
+OS=Bos taurus OX=9913 GN=SUV39H1 PE=2 SV=1
+Length=412
+
+ Score = 67.6 bits (164),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 12/49 (24%), Positives = 24/49 (49%), Gaps = 0/49 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           +  E +   +  +    Y VKW+G+    +TWEP  N+   R++  + +
+Sbjct  43  FEVEYLCDYKKIREQEYYLVKWRGYPDSESTWEPRQNLKCVRILKQFHK  91
+
+
+> sp|Q5RB81|SUV91_PONAB Histone-lysine N-methyltransferase SUV39H1 
+OS=Pongo abelii OX=9601 GN=SUV39H1 PE=2 SV=1
+Length=412
+
+ Score = 67.2 bits (163),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 12/49 (24%), Positives = 24/49 (49%), Gaps = 0/49 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           +  E +   +  +    Y VKW+G+    +TWEP  N+   R++  + +
+Sbjct  43  FEVEYLCDYKKIREQEYYLVKWRGYPDSESTWEPRQNLKCVRILKQFHK  91
+
+
+> sp|O43463|SUV91_HUMAN Histone-lysine N-methyltransferase SUV39H1 
+OS=Homo sapiens OX=9606 GN=SUV39H1 PE=1 SV=1
+Length=412
+
+ Score = 67.2 bits (163),  Expect = 1e-13, Method: Composition-based stats.
+ Identities = 12/49 (24%), Positives = 24/49 (49%), Gaps = 0/49 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+           +  E +   +  +    Y VKW+G+    +TWEP  N+   R++  + +
+Sbjct  43  FEVEYLCDYKKIREQEYYLVKWRGYPDSESTWEPRQNLKCVRILKQFHK  91
+
+
+> sp|Q3TYA6|MPP8_MOUSE M-phase phosphoprotein 8 OS=Mus musculus 
+OX=10090 GN=Mphosph8 PE=1 SV=1
+Length=858
+
+ Score = 68.0 bits (165),  Expect = 2e-13, Method: Composition-based stats.
+ Identities = 15/52 (29%), Positives = 31/52 (60%), Gaps = 1/52 (2%)
+
+Query  3    VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+            V+  E+I+  + + G   Y+V+WKG+    +TWEPEV++   + ++  + + 
+Sbjct  58   VFEVERILDMKCEGGKNLYKVRWKGYTSEDDTWEPEVHLEDCKEVLLEFRKK  109
+
+
+> sp|G3V8T1|MPP8_RAT M-phase phosphoprotein 8 OS=Rattus norvegicus 
+OX=10116 GN=Mphosph8 PE=2 SV=1
+Length=851
+
+ Score = 67.2 bits (163),  Expect = 3e-13, Method: Composition-based stats.
+ Identities = 15/52 (29%), Positives = 31/52 (60%), Gaps = 1/52 (2%)
+
+Query  3    VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+            V+  E+I+  + + G   Y+V+WKG+    +TWEPEV++   + ++  + + 
+Sbjct  58   VFEVERILDMKCEGGKNLYKVRWKGYTSDDDTWEPEVHLEDCKEVLLEFRKK  109
+
+
+> sp|Q99549|MPP8_HUMAN M-phase phosphoprotein 8 OS=Homo sapiens 
+OX=9606 GN=MPHOSPH8 PE=1 SV=2
+Length=860
+
+ Score = 66.8 bits (162),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 16/52 (31%), Positives = 32/52 (62%), Gaps = 1/52 (2%)
+
+Query  3    VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+            V+  EKI+  + + G V Y+V+WKG+    +TWEPE+++   + ++  + + 
+Sbjct  58   VFEVEKILDMKTEGGKVLYKVRWKGYTSDDDTWEPEIHLEDCKEVLLEFRKK  109
+
+
+> sp|Q10103|CHP1_SCHPO Chromo domain-containing protein 1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=chp1 PE=1 SV=1
+Length=960
+
+ Score = 66.8 bits (162),  Expect = 4e-13, Method: Composition-based stats.
+ Identities = 20/44 (45%), Positives = 26/44 (59%), Gaps = 1/44 (2%)
+
+Query  3   VYAAEKIIQKRVKK-GVVEYRVKWKGWNQRYNTWEPEVNILDRR  45
+           VY  E I+  RV K G+ EY +KW G++   NTWEPE N+    
+Sbjct  21  VYEVEDILADRVNKNGINEYYIKWAGYDWYDNTWEPEQNLFGAE  64
+
+
+> sp|Q6NRE8|SUV91_XENLA Histone-lysine N-methyltransferase SUV39H1 
+OS=Xenopus laevis OX=8355 GN=suv39h1 PE=2 SV=1
+Length=421
+
+ Score = 58.4 bits (140),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 11/47 (23%), Positives = 21/47 (45%), Gaps = 0/47 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+           +  E +   +  +    Y VKWK +    +TWEP  ++    L+  +
+Sbjct  46  FEVEYLWNYKKVQDQELYLVKWKYYPDSESTWEPRHHLKCNNLLKQF  92
+
+
+> sp|O60016|CLR4_SCHPO Histone-lysine N-methyltransferase, H3 lysine-9 
+specific OS=Schizosaccharomyces pombe (strain 972 / 
+ATCC 24843) OX=284812 GN=clr4 PE=1 SV=2
+Length=490
+
+ Score = 49.5 bits (117),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 14/55 (25%), Positives = 33/55 (60%), Gaps = 3/55 (5%)
+
+Query  4   YAAEKIIQKRV-KKGVVE-YRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQTNK  55
+           Y  E+I+ +++ + G V+ YR++W  ++ R +TWEP  N+     ++  +++  +
+Sbjct  8   YEVERIVDEKLDRNGAVKLYRIRWLNYSSRSDTWEPPENLSGCSAVLAEWKRRKR  62
+
+
+> sp|P45968|CEC3_CAEEL Chromo domain-containing protein cec-3 OS=Caenorhabditis 
+elegans OX=6239 GN=cec-3 PE=1 SV=1
+Length=339
+
+ Score = 45.7 bits (107),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 15/57 (26%), Positives = 31/57 (54%), Gaps = 2/57 (4%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD--RRLIDIYEQTNK  55
+           D ++  EKI+  +V   ++  +V+W G+    +TWEPE ++ +    ++  Y +  K
+Sbjct  21  DEIFEVEKILAHKVTDNLLVLQVRWLGYGADEDTWEPEEDLQECASEVVAEYYKKLK  77
+
+
+> sp|P40201|CHD1_MOUSE Chromodomain-helicase-DNA-binding protein 
+1 OS=Mus musculus OX=10090 GN=Chd1 PE=1 SV=3
+Length=1711
+
+ Score = 45.7 bits (107),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 15/50 (30%), Positives = 26/50 (52%), Gaps = 6/50 (12%)
+
+Query  3    VYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL  46
+            +YA E          +  + G ++Y +KWKGW+  +NTWE E  +  + +
+Sbjct  292  IYAVEADGDPNAGFERNKEPGDIQYLIKWKGWSHIHNTWETEETLKQQNV  341
+
+
+> sp|O14646|CHD1_HUMAN Chromodomain-helicase-DNA-binding protein 
+1 OS=Homo sapiens OX=9606 GN=CHD1 PE=1 SV=2
+Length=1710
+
+ Score = 45.7 bits (107),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 26/50 (52%), Gaps = 6/50 (12%)
+
+Query  3    VYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL  46
+            +YA E          K  + G ++Y +KWKGW+  +NTWE E  +  + +
+Sbjct  294  IYAVEADGDPNAGFEKNKEPGEIQYLIKWKGWSHIHNTWETEETLKQQNV  343
+
+
+> sp|Q294B9|SUV39_DROPS Histone-lysine N-methyltransferase Su(var)3-9 
+OS=Drosophila pseudoobscura pseudoobscura OX=46245 GN=Su(var)3-9 
+PE=3 SV=1
+Length=633
+
+ Score = 45.3 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 16/50 (32%), Positives = 25/50 (50%), Gaps = 0/50 (0%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQT  53
+            Y  EKI    V +    + VKW G++   NTWE  VN+ D   ++ + + 
+Sbjct  213  YIVEKIESVEVVQFQPVFFVKWLGYDVSANTWESYVNLSDCAEMEKFVER  262
+
+
+> sp|O42934|CHP2_SCHPO Chromo domain-containing protein 2 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=chp2 PE=3 SV=1
+Length=380
+
+ Score = 44.1 bits (103),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 19/58 (33%), Positives = 30/58 (52%), Gaps = 4/58 (7%)
+
+Query  1    DLVYAAEKIIQKRVKKGVV--EYRVKWKGWNQ-RYNTWEPEVNIL-DRRLIDIYEQTN  54
+            D  +A E I+  R+KK     +Y +KW+G++    NTW  E +      LID Y ++ 
+Sbjct  173  DEEFAVEMILDSRMKKDGSGFQYYLKWEGYDDPSDNTWNDEEDCAGCLELIDAYWESR  230
+
+
+> sp|B6ZLK2|CHD1_CHICK Chromodomain-helicase-DNA-binding protein 
+1 OS=Gallus gallus OX=9031 GN=CHD1 PE=1 SV=1
+Length=1719
+
+ Score = 44.9 bits (105),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 13/36 (36%), Positives = 23/36 (64%), Gaps = 0/36 (0%)
+
+Query  11   QKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL  46
+            +K  + G ++Y +KWKGW+  +NTWE E  +  + +
+Sbjct  304  EKSKELGEIQYLIKWKGWSHIHNTWETEETLKQQNV  339
+
+
+> sp|Q8LPU5|CMT3_MAIZE DNA (cytosine-5)-methyltransferase 3 OS=Zea 
+mays OX=4577 GN=DMT105 PE=2 SV=1
+Length=915
+
+ Score = 44.5 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 15/57 (26%), Positives = 28/57 (49%), Gaps = 5/57 (9%)
+
+Query  4    YAAEKIIQKRV----KKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTNK  55
+            +  +K+I  R     +K  V ++V+W+G+    +TWEP  N+      I  + Q  +
+Sbjct  445  FVVQKLIGIRYDGTGRKKGVYFKVQWEGYGPEEDTWEPIDNLSDCPLKIREFVQEGR  501
+
+
+> sp|A0A0P0VUY4|CMT1_ORYSJ DNA (cytosine-5)-methyltransferase CMT1 
+OS=Oryza sativa subsp. japonica OX=39947 GN=CMT1 PE=3 SV=1
+Length=1059
+
+ Score = 44.1 bits (103),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 12/58 (21%), Positives = 28/58 (48%), Gaps = 7/58 (12%)
+
+Query  3    VYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+            ++  E++++          K  + ++V+WKG++  Y+TWEP   +      I  + + 
+Sbjct  583  IFDVEELLEICYGDPSNTGKNGLWFKVRWKGYDPSYDTWEPIDGLSDCPERIKEFVEK  640
+
+
+> sp|Q5KQL9|CMT2_ORYSJ DNA (cytosine-5)-methyltransferase CMT2 
+OS=Oryza sativa subsp. japonica OX=39947 GN=CMT2 PE=2 SV=2
+Length=1319
+
+ Score = 44.1 bits (103),  Expect = 3e-05, Method: Composition-based stats.
+ Identities = 12/54 (22%), Positives = 26/54 (48%), Gaps = 7/54 (13%)
+
+Query  4    YAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIY  50
+            +   K++        +V K  + ++V+WKG+   ++TWEP   +   +  I  +
+Sbjct  863  FEVWKLVDICFGDPNKVSKHGLYFKVRWKGYGPHHDTWEPVEGLRNCKEAIRDF  916
+
+
+> sp|E9PZM4|CHD2_MOUSE Chromodomain-helicase-DNA-binding protein 
+2 OS=Mus musculus OX=10090 GN=Chd2 PE=1 SV=1
+Length=1827
+
+ Score = 43.4 bits (101),  Expect = 5e-05, Method: Composition-based stats.
+ Identities = 16/63 (25%), Positives = 33/63 (52%), Gaps = 11/63 (17%)
+
+Query  3    VYAAE------KIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYE  51
+            VYA E             ++G V+Y +KWKGW+  ++TWE E ++  +++     ++ ++
+Sbjct  283  VYAVEANGDPSDDFDTEREEGEVQYLIKWKGWSYIHSTWESEDSLQQQKVKGLKKLENFK  342
+
+Query  52   QTN  54
+            +  
+Sbjct  343  KKE  345
+
+
+> sp|Q8LSQ2|SR43C_ORYSJ Probable signal recognition particle 43 
+kDa protein, chloroplastic OS=Oryza sativa subsp. japonica 
+OX=39947 GN=Os03g0131900 PE=2 SV=1
+Length=388
+
+ Score = 43.0 bits (100),  Expect = 6e-05, Method: Composition-based stats.
+ Identities = 21/57 (37%), Positives = 28/57 (49%), Gaps = 7/57 (12%)
+
+Query  2    LVYAA-EKIIQKRVK---KGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            L YA  E ++ KR     +G  EY VKW   +    TWEP  N+ D  L+  +EQ  
+Sbjct  318  LEYAVAEAVVNKREAAEGEGKWEYLVKWV--DIEEATWEPAENV-DAELLQEFEQRQ  371
+
+
+> sp|O14647|CHD2_HUMAN Chromodomain-helicase-DNA-binding protein 
+2 OS=Homo sapiens OX=9606 GN=CHD2 PE=1 SV=2
+Length=1828
+
+ Score = 43.0 bits (100),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 11/49 (22%), Positives = 28/49 (57%), Gaps = 5/49 (10%)
+
+Query  11   QKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYEQTN  54
+                 +G ++Y +KWKGW+  ++TWE E ++  +++     ++ +++  
+Sbjct  297  DTEKDEGEIQYLIKWKGWSYIHSTWESEESLQQQKVKGLKKLENFKKKE  345
+
+
+> sp|C0SQ89|CMT3_ORYSJ DNA (cytosine-5)-methyltransferase CMT3 
+OS=Oryza sativa subsp. japonica OX=39947 GN=CMT3 PE=2 SV=1
+Length=907
+
+ Score = 42.6 bits (99),  Expect = 9e-05, Method: Composition-based stats.
+ Identities = 11/35 (31%), Positives = 20/35 (57%), Gaps = 1/35 (3%)
+
+Query  19   VEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQ  52
+            + ++V+WKG+ +  +TWEP  N+      I  + Q
+Sbjct  456  LYFKVQWKGYGREEDTWEPIENLRDCPLKIKEFVQ  490
+
+
+> sp|Q19972|CEC4_CAEEL Chromo domain-containing protein cec-4 OS=Caenorhabditis 
+elegans OX=6239 GN=cec-4 PE=1 SV=1
+Length=270
+
+ Score = 41.4 bits (96),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 16/55 (29%), Positives = 26/55 (47%), Gaps = 4/55 (7%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWN---QRYNTWEPEVNILDRRLIDIYEQTNK  55
+            YA E+++  R  KG   Y V+WKG+         WE E     + L+  Y++  +
+Sbjct  87   YAVERVLAHRKVKGSPLYLVQWKGYPHPVWNSEMWE-EDLDNCKDLLAAYKKHQE  140
+
+
+> sp|Q94F87|CMT2_ARATH DNA (cytosine-5)-methyltransferase CMT2 
+OS=Arabidopsis thaliana OX=3702 GN=CMT2 PE=2 SV=3
+Length=1295
+
+ Score = 42.2 bits (98),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 12/57 (21%), Positives = 25/57 (44%), Gaps = 7/57 (12%)
+
+Query  4    YAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQT  53
+            Y  EK++        +  K  ++++V WKG+    +TWE    +   +  I  +  +
+Sbjct  837  YEVEKLVDICFGDHDKTGKNGLKFKVHWKGYRSDEDTWELAEELSNCQDAIREFVTS  893
+
+
+> sp|Q9AXT8|CMT1_MAIZE DNA (cytosine-5)-methyltransferase 1 OS=Zea 
+mays OX=4577 GN=MET2A PE=1 SV=1
+Length=912
+
+ Score = 41.8 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 10/39 (26%), Positives = 22/39 (56%), Gaps = 1/39 (3%)
+
+Query  15   KKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQ  52
+            ++  + ++V+W+G+    +TWEP  N+    + I  + Q
+Sbjct  456  RENGIYFKVQWEGYGPEEDTWEPIDNLSDCPQKIREFVQ  494
+
+
+> sp|A9X4T1|CHD1_BOMMO Chromodomain-helicase-DNA-binding protein 
+1 OS=Bombyx mori OX=7091 GN=CHD1 PE=1 SV=1
+Length=1365
+
+ Score = 41.8 bits (97),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 13/27 (48%), Positives = 20/27 (74%), Gaps = 0/27 (0%)
+
+Query  20  EYRVKWKGWNQRYNTWEPEVNILDRRL  46
+           +Y +KWKGW+  +NTWE E  I D+++
+Sbjct  39  QYLIKWKGWSHIHNTWESEKTINDQKV  65
+
+
+> sp|P45975|SUV39_DROME Histone-lysine N-methyltransferase Su(var)3-9 
+OS=Drosophila melanogaster OX=7227 GN=Su(var)3-9 PE=1 
+SV=2
+Length=635
+
+ Score = 41.4 bits (96),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 13/52 (25%), Positives = 26/52 (50%), Gaps = 0/52 (0%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+            Y  E+I    + +    + VKW G++   NTWE   N+ D   ++ + + ++
+Sbjct  219  YVVERIECVEMDQYQPVFFVKWLGYHDSENTWESLANVADCAEMEKFVERHQ  270
+
+
+> sp|Q9ARI6|CMT2_MAIZE DNA (cytosine-5)-methyltransferase 2 OS=Zea 
+mays OX=4577 GN=ZMET5 PE=2 SV=1
+Length=915
+
+ Score = 40.7 bits (94),  Expect = 4e-04, Method: Composition-based stats.
+ Identities = 14/57 (25%), Positives = 27/57 (47%), Gaps = 5/57 (9%)
+
+Query  4    YAAEKIIQKRV----KKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTNK  55
+            +  +K+I  R     +K  V ++V+W+ +    +TWEP  N+      I  + Q  +
+Sbjct  445  FVVQKLIGIRYDGTGRKKGVYFKVQWEEYGPEEDTWEPIDNLSDCPLKIREFVQEGR  501
+
+
+> sp|Q08972|NEW1_YEAST [NU+] prion formation protein 1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=NEW1 
+PE=1 SV=1
+Length=1196
+
+ Score = 40.7 bits (94),  Expect = 5e-04, Method: Composition-based stats.
+ Identities = 15/53 (28%), Positives = 29/53 (55%), Gaps = 3/53 (6%)
+
+Query  5    AAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD---RRLIDIYEQTN  54
+            A E I+ ++  K   +Y VKWK W  +YN+W P+  +++    +L+  ++   
+Sbjct  943  AIEAIVGRQKLKKSFQYEVKWKYWKPKYNSWVPKDVLVEHGFEKLVQKFDDHE  995
+
+
+> sp|Q7KU24|CHD1_DROME Chromodomain-helicase-DNA-binding protein 
+1 OS=Drosophila melanogaster OX=7227 GN=Chd1 PE=1 SV=1
+Length=1883
+
+ Score = 39.1 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 13/41 (32%), Positives = 23/41 (56%), Gaps = 5/41 (12%)
+
+Query  20   EYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYEQTNK  55
+            ++ +KWKGW+  +NTWE E  + D +      +D + +  K
+Sbjct  367  QFLIKWKGWSYIHNTWESEATLRDMKAKGMKKLDNFIKKEK  407
+
+
+> sp|Q8BYH8|CHD9_MOUSE Chromodomain-helicase-DNA-binding protein 
+9 OS=Mus musculus OX=10090 GN=Chd9 PE=1 SV=2
+Length=2885
+
+ Score = 39.1 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 13/54 (24%), Positives = 23/54 (43%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D +        K   + V+ Y VKW       +TWE + ++   + I+ +EQ  
+Sbjct  775  DRILEVSFCEDKDTGESVIYYLVKWCSLPYEDSTWELKEDVDLAK-IEEFEQLQ  827
+
+
+> sp|Q3L8U1|CHD9_HUMAN Chromodomain-helicase-DNA-binding protein 
+9 OS=Homo sapiens OX=9606 GN=CHD9 PE=1 SV=2
+Length=2897
+
+ Score = 39.1 bits (90),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 14/54 (26%), Positives = 23/54 (43%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D V        K   + V+ Y VKW       +TWE + ++   + I+ +EQ  
+Sbjct  776  DRVLEVSFCEDKDTGEPVIYYLVKWCSLPYEDSTWELKEDVDLAK-IEEFEQLQ  828
+
+
+> sp|O14134|ELF1_SCHPO mRNA export factor elf1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=elf1 PE=1 
+SV=1
+Length=1057
+
+ Score = 38.3 bits (88),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 12/52 (23%), Positives = 25/52 (48%), Gaps = 3/52 (6%)
+
+Query  6    AEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD---RRLIDIYEQTN  54
+             E +I ++  K   +Y +KW G   +YNTW     +L+   ++ +  ++   
+Sbjct  822  VEALIGRQKLKKSFQYEIKWFGKPHKYNTWVSREILLENGFQKFVQAFDDME  873
+
+
+> sp|O22265|SR43C_ARATH Signal recognition particle 43 kDa protein, 
+chloroplastic OS=Arabidopsis thaliana OX=3702 GN=CAO PE=1 
+SV=2
+Length=373
+
+ Score = 37.2 bits (85),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 23/56 (41%), Positives = 31/56 (55%), Gaps = 6/56 (11%)
+
+Query  2    LVYAA-EKIIQKRV-KKGV-VEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            L YA  E +I KRV   G  +EY VKW   +    TWEP+ N+ D  L+ +Y+Q  
+Sbjct  317  LEYAVAESVIGKRVGDDGKTIEYLVKWT--DMSDATWEPQDNV-DSTLVLLYQQQQ  369
+
+
+> sp|Q94F88|CMT3_ARATH DNA (cytosine-5)-methyltransferase CMT3 
+OS=Arabidopsis thaliana OX=3702 GN=CMT3 PE=1 SV=2
+Length=839
+
+ Score = 37.6 bits (86),  Expect = 0.004, Method: Composition-based stats.
+ Identities = 13/55 (24%), Positives = 28/55 (51%), Gaps = 7/55 (13%)
+
+Query  3    VYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIY  50
+            V+  +KI+       K++ K  +  +V+W  ++  ++TWEP   +   R  I+ +
+Sbjct  381  VFTVDKIVGISFGVPKKLLKRGLYLKVRWLNYDDSHDTWEPIEGLSNCRGKIEEF  435
+
+
+
+Lambda      K        H        a         alpha
+   0.313    0.150    0.498    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0460    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969651158
+Results from round 3
+
+
+Query= 1PFB
+
+Length=55
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q9QXV1|CBX8_MOUSE Chromobox protein homolog 8 OS=Mus musculu...  88.0    3e-21
+  sp|Q9EQQ0|SUV92_MOUSE Histone-lysine N-methyltransferase SUV39H...  88.0    7e-21
+  sp|Q9HC52|CBX8_HUMAN Chromobox protein homolog 8 OS=Homo sapien...  87.3    7e-21
+  sp|Q9DBY5|CBX6_MOUSE Chromobox protein homolog 6 OS=Mus musculu...  87.6    7e-21
+  sp|O95503|CBX6_HUMAN Chromobox protein homolog 6 OS=Homo sapien...  86.1    2e-20
+  sp|O55187|CBX4_MOUSE E3 SUMO-protein ligase CBX4 OS=Mus musculu...  86.9    3e-20
+  sp|O00257|CBX4_HUMAN E3 SUMO-protein ligase CBX4 OS=Homo sapien...  86.5    4e-20
+  sp|P29227|HP1_DROVI Heterochromatin protein 1 OS=Drosophila vir...  83.0    6e-20
+  sp|O95931|CBX7_HUMAN Chromobox protein homolog 7 OS=Homo sapien...  83.4    6e-20
+  sp|P30658|CBX2_MOUSE Chromobox protein homolog 2 OS=Mus musculu...  84.9    1e-19
+  sp|Q4R3E0|SUV92_MACFA Histone-lysine N-methyltransferase SUV39H...  84.2    1e-19
+  sp|Q14781|CBX2_HUMAN Chromobox protein homolog 2 OS=Homo sapien...  84.9    1e-19
+  sp|Q9H5I1|SUV92_HUMAN Histone-lysine N-methyltransferase SUV39H...  84.2    1e-19
+  sp|P05205|HP1_DROME Heterochromatin protein 1 OS=Drosophila mel...  81.9    2e-19
+  sp|Q32PH7|SUV92_BOVIN Histone-lysine N-methyltransferase SUV39H...  83.4    2e-19
+  sp|Q5F3W5|SUV92_CHICK Histone-lysine N-methyltransferase SUV39H...  83.0    3e-19
+  sp|P26017|PC_DROME Polycomb group protein Pc OS=Drosophila mela...  82.6    3e-19
+  sp|Q6DGD3|SV91A_DANRE Histone-lysine N-methyltransferase SUV39H...  81.9    8e-19
+  sp|P60889|CBX7_RAT Chromobox protein homolog 7 OS=Rattus norveg...  78.8    1e-18
+  sp|Q28CQ7|SUV92_XENTR Histone-lysine N-methyltransferase SUV39H...  81.5    1e-18
+  sp|Q8VDS3|CBX7_MOUSE Chromobox protein homolog 7 OS=Mus musculu...  78.4    2e-18
+  sp|O54864|SUV91_MOUSE Histone-lysine N-methyltransferase SUV39H...  80.3    3e-18
+  sp|Q5R6X7|CBX3_PONAB Chromobox protein homolog 3 OS=Pongo abeli...  76.5    1e-17
+  sp|Q13185|CBX3_HUMAN Chromobox protein homolog 3 OS=Homo sapien...  76.5    1e-17
+  sp|Q944N1|LHP1_SOLLC Chromo domain protein LHP1 OS=Solanum lyco...  78.8    1e-17
+  sp|Q2NL30|SUV91_BOVIN Histone-lysine N-methyltransferase SUV39H...  78.4    1e-17
+  sp|Q5RB81|SUV91_PONAB Histone-lysine N-methyltransferase SUV39H...  78.4    2e-17
+  sp|O43463|SUV91_HUMAN Histone-lysine N-methyltransferase SUV39H...  78.4    2e-17
+  sp|P23198|CBX3_MOUSE Chromobox protein homolog 3 OS=Mus musculu...  75.7    2e-17
+  sp|Q339W7|LHP1_ORYSJ Probable chromo domain-containing protein ...  77.2    4e-17
+  sp|Q9Y6F7|CDY2_HUMAN Testis-specific chromodomain protein Y 2 O...  77.6    5e-17
+  sp|Q946J8|LHP1_ARATH Chromo domain-containing protein LHP1 OS=A...  77.2    5e-17
+  sp|Q9Y6F8|CDY1_HUMAN Testis-specific chromodomain protein Y 1 O...  77.6    5e-17
+  sp|Q6AYK9|CDYL_RAT Chromodomain Y-like protein OS=Rattus norveg...  77.2    8e-17
+  sp|Q9WTK2|CDYL_MOUSE Chromodomain Y-like protein OS=Mus musculu...  77.2    8e-17
+  sp|Q8N8U2|CDYL2_HUMAN Chromodomain Y-like protein 2 OS=Homo sap...  76.9    8e-17
+  sp|Q9Y232|CDYL_HUMAN Chromodomain Y-like protein OS=Homo sapien...  76.9    1e-16
+  sp|Q9D5D8|CDYL2_MOUSE Chromodomain Y-like protein 2 OS=Mus musc...  76.1    1e-16
+  sp|Q61686|CBX5_MOUSE Chromobox protein homolog 5 OS=Mus musculu...  73.0    2e-16
+  sp|P45973|CBX5_HUMAN Chromobox protein homolog 5 OS=Homo sapien...  72.6    3e-16
+  sp|P83917|CBX1_MOUSE Chromobox protein homolog 1 OS=Mus musculu...  71.1    1e-15
+  sp|P83916|CBX1_HUMAN Chromobox protein homolog 1 OS=Homo sapien...  71.1    1e-15
+  sp|P34618|CEC1_CAEEL Chromo domain-containing protein cec-1 OS=...  71.8    1e-15
+  sp|Q6NRE8|SUV91_XENLA Histone-lysine N-methyltransferase SUV39H...  72.2    2e-15
+  sp|Q99549|MPP8_HUMAN M-phase phosphoprotein 8 OS=Homo sapiens O...  69.9    3e-14
+  sp|Q3TYA6|MPP8_MOUSE M-phase phosphoprotein 8 OS=Mus musculus O...  69.5    4e-14
+  sp|G3V8T1|MPP8_RAT M-phase phosphoprotein 8 OS=Rattus norvegicu...  69.2    7e-14
+  sp|P45975|SUV39_DROME Histone-lysine N-methyltransferase Su(var...  66.5    5e-13
+  sp|Q5KQL9|CMT2_ORYSJ DNA (cytosine-5)-methyltransferase CMT2 OS...  66.5    8e-13
+  sp|Q294B9|SUV39_DROPS Histone-lysine N-methyltransferase Su(var...  65.7    9e-13
+  sp|Q10103|CHP1_SCHPO Chromo domain-containing protein 1 OS=Schi...  65.7    1e-12
+  sp|Q94F87|CMT2_ARATH DNA (cytosine-5)-methyltransferase CMT2 OS...  64.9    2e-12
+  sp|P45968|CEC3_CAEEL Chromo domain-containing protein cec-3 OS=...  63.0    4e-12
+  sp|Q8LPU5|CMT3_MAIZE DNA (cytosine-5)-methyltransferase 3 OS=Ze...  63.4    7e-12
+  sp|O60016|CLR4_SCHPO Histone-lysine N-methyltransferase, H3 lys...  63.0    7e-12
+  sp|A0A0P0VUY4|CMT1_ORYSJ DNA (cytosine-5)-methyltransferase CMT...  63.4    8e-12
+  sp|Q9AXT8|CMT1_MAIZE DNA (cytosine-5)-methyltransferase 1 OS=Ze...  61.1    4e-11
+  sp|Q8BYH8|CHD9_MOUSE Chromodomain-helicase-DNA-binding protein ...  61.1    5e-11
+  sp|Q9ARI6|CMT2_MAIZE DNA (cytosine-5)-methyltransferase 2 OS=Ze...  59.9    1e-10
+  sp|O42934|CHP2_SCHPO Chromo domain-containing protein 2 OS=Schi...  58.8    2e-10
+  sp|Q3L8U1|CHD9_HUMAN Chromodomain-helicase-DNA-binding protein ...  59.5    2e-10
+  sp|Q19972|CEC4_CAEEL Chromo domain-containing protein cec-4 OS=...  57.2    3e-10
+  sp|C0SQ89|CMT3_ORYSJ DNA (cytosine-5)-methyltransferase CMT3 OS...  58.0    5e-10
+  sp|O14646|CHD1_HUMAN Chromodomain-helicase-DNA-binding protein ...  57.6    8e-10
+  sp|P40201|CHD1_MOUSE Chromodomain-helicase-DNA-binding protein ...  57.6    8e-10
+  sp|E9PZM4|CHD2_MOUSE Chromodomain-helicase-DNA-binding protein ...  57.2    1e-09
+  sp|O14647|CHD2_HUMAN Chromodomain-helicase-DNA-binding protein ...  56.8    1e-09
+  sp|Q08972|NEW1_YEAST [NU+] prion formation protein 1 OS=Sacchar...  56.4    2e-09
+  sp|B6ZLK2|CHD1_CHICK Chromodomain-helicase-DNA-binding protein ...  54.9    6e-09
+  sp|Q8LSQ2|SR43C_ORYSJ Probable signal recognition particle 43 k...  51.0    8e-08
+  sp|Q7KU24|CHD1_DROME Chromodomain-helicase-DNA-binding protein ...  48.7    8e-07
+  sp|A9X4T1|CHD1_BOMMO Chromodomain-helicase-DNA-binding protein ...  48.0    1e-06
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q94F88|CMT3_ARATH DNA (cytosine-5)-methyltransferase CMT3 OS...  53.4    2e-08
+  sp|Q8TD26|CHD6_HUMAN Chromodomain-helicase-DNA-binding protein ...  50.7    2e-07
+  sp|D3ZA12|CHD6_RAT Chromodomain-helicase-DNA-binding protein 6 ...  50.3    3e-07
+  sp|A3KFM7|CHD6_MOUSE Chromodomain-helicase-DNA-binding protein ...  50.3    3e-07
+  sp|O49139|CMT1_ARATH Putative DNA (cytosine-5)-methyltransferas...  49.1    5e-07
+  sp|O14134|ELF1_SCHPO mRNA export factor elf1 OS=Schizosaccharom...  49.1    6e-07
+  sp|B5DE69|CHD8_XENTR Chromodomain-helicase-DNA-binding protein ...  48.4    1e-06
+  sp|Q9JIX5|CHD8_RAT Chromodomain-helicase-DNA-binding protein 8 ...  48.4    1e-06
+  sp|Q09XV5|CHD8_MOUSE Chromodomain-helicase-DNA-binding protein ...  48.0    1e-06
+  sp|Q9HCK8|CHD8_HUMAN Chromodomain-helicase-DNA-binding protein ...  47.6    2e-06
+  sp|A2AJK6|CHD7_MOUSE Chromodomain-helicase-DNA-binding protein ...  46.4    5e-06
+  sp|B0R0I6|CHD8_DANRE Chromodomain-helicase-DNA-binding protein ...  46.4    5e-06
+  sp|Q06A37|CHD7_CHICK Chromodomain-helicase-DNA-binding protein ...  46.0    8e-06
+  sp|Q9P2D1|CHD7_HUMAN Chromodomain-helicase-DNA-binding protein ...  45.3    1e-05
+  sp|F4IV99|CHR5_ARATH Protein CHROMATIN REMODELING 5 OS=Arabidop...  43.0    7e-05
+  sp|P40381|SWI6_SCHPO Chromatin-associated protein swi6 OS=Schiz...  40.6    3e-04
+  sp|Q9US25|HRP1_SCHPO Chromodomain helicase hrp1 OS=Schizosaccha...  41.0    3e-04
+  sp|O22265|SR43C_ARATH Signal recognition particle 43 kDa protei...  38.7    0.001
+  sp|Q12873|CHD3_HUMAN Chromodomain-helicase-DNA-binding protein ...  39.1    0.002
+  sp|O97159|CHDM_DROME Chromodomain-helicase-DNA-binding protein ...  37.6    0.005
+
+
+> sp|Q9QXV1|CBX8_MOUSE Chromobox protein homolog 8 OS=Mus musculus 
+OX=10090 GN=Cbx8 PE=1 SV=1
+Length=362
+
+ Score = 88.0 bits (217),  Expect = 3e-21, Method: Composition-based stats.
+ Identities = 29/55 (53%), Positives = 45/55 (82%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+AAE ++++R++KG +EY VKWKGW+Q+Y+TWEPE NILD RL+  +E+  +
+Sbjct  8   ERVFAAEALLKRRIRKGRMEYLVKWKGWSQKYSTWEPEENILDARLLAAFEERER  62
+
+
+> sp|Q9EQQ0|SUV92_MOUSE Histone-lysine N-methyltransferase SUV39H2 
+OS=Mus musculus OX=10090 GN=Suv39h2 PE=1 SV=1
+Length=477
+
+ Score = 88.0 bits (217),  Expect = 7e-21, Method: Composition-based stats.
+ Identities = 21/52 (40%), Positives = 27/52 (52%), Gaps = 0/52 (0%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+            Y  E +   +V KGV  Y VKWKGW    NTWEP  N+   +L+  +    K
+Sbjct  118  YEVEYLCDYKVAKGVEYYLVKWKGWPDSTNTWEPLRNLRCPQLLRQFSDDKK  169
+
+
+> sp|Q9HC52|CBX8_HUMAN Chromobox protein homolog 8 OS=Homo sapiens 
+OX=9606 GN=CBX8 PE=1 SV=3
+Length=389
+
+ Score = 87.3 bits (215),  Expect = 7e-21, Method: Composition-based stats.
+ Identities = 29/55 (53%), Positives = 45/55 (82%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+AAE ++++R++KG +EY VKWKGW+Q+Y+TWEPE NILD RL+  +E+  +
+Sbjct  8   ERVFAAEALLKRRIRKGRMEYLVKWKGWSQKYSTWEPEENILDARLLAAFEERER  62
+
+
+> sp|Q9DBY5|CBX6_MOUSE Chromobox protein homolog 6 OS=Mus musculus 
+OX=10090 GN=Cbx6 PE=1 SV=2
+Length=414
+
+ Score = 87.6 bits (216),  Expect = 7e-21, Method: Composition-based stats.
+ Identities = 32/55 (58%), Positives = 43/55 (78%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+AAE II++R++KG +EY VKWKGW  +Y+TWEPE NILD RLI  +EQ  +
+Sbjct  8   ERVFAAESIIKRRIRKGRIEYLVKWKGWAIKYSTWEPEENILDSRLIAAFEQKER  62
+
+
+> sp|O95503|CBX6_HUMAN Chromobox protein homolog 6 OS=Homo sapiens 
+OX=9606 GN=CBX6 PE=1 SV=1
+Length=412
+
+ Score = 86.1 bits (212),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 32/55 (58%), Positives = 43/55 (78%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+AAE II++R++KG +EY VKWKGW  +Y+TWEPE NILD RLI  +EQ  +
+Sbjct  8   ERVFAAESIIKRRIRKGRIEYLVKWKGWAIKYSTWEPEENILDSRLIAAFEQKER  62
+
+
+> sp|O55187|CBX4_MOUSE E3 SUMO-protein ligase CBX4 OS=Mus musculus 
+OX=10090 GN=Cbx4 PE=1 SV=2
+Length=551
+
+ Score = 86.9 bits (214),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 29/55 (53%), Positives = 41/55 (75%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+A E I +KR++KG VEY VKW+GW+ +YNTWEPE NILD RL+  ++   +
+Sbjct  8   EHVFAVESIEKKRIRKGRVEYLVKWRGWSPKYNTWEPEENILDPRLLIAFQNRER  62
+
+
+> sp|O00257|CBX4_HUMAN E3 SUMO-protein ligase CBX4 OS=Homo sapiens 
+OX=9606 GN=CBX4 PE=1 SV=3
+Length=560
+
+ Score = 86.5 bits (213),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 29/55 (53%), Positives = 41/55 (75%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+A E I +KR++KG VEY VKW+GW+ +YNTWEPE NILD RL+  ++   +
+Sbjct  8   EHVFAVESIEKKRIRKGRVEYLVKWRGWSPKYNTWEPEENILDPRLLIAFQNRER  62
+
+
+> sp|P29227|HP1_DROVI Heterochromatin protein 1 OS=Drosophila virilis 
+OX=7244 GN=HP1A PE=3 SV=1
+Length=213
+
+ Score = 83.0 bits (204),  Expect = 6e-20, Method: Composition-based stats.
+ Identities = 28/52 (54%), Positives = 37/52 (71%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           YA EKI+ +RV+KG VEY +KWKG+ +  NTWEPE N+  + LI  YE + K
+Sbjct  24  YAVEKILDRRVRKGKVEYYLKWKGYAETENTWEPEGNLDCQDLIQQYELSRK  75
+
+
+> sp|O95931|CBX7_HUMAN Chromobox protein homolog 7 OS=Homo sapiens 
+OX=9606 GN=CBX7 PE=1 SV=1
+Length=251
+
+ Score = 83.4 bits (205),  Expect = 6e-20, Method: Composition-based stats.
+ Identities = 31/55 (56%), Positives = 41/55 (75%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+  +
+Sbjct  8   EQVFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEEKEE  62
+
+
+> sp|P30658|CBX2_MOUSE Chromobox protein homolog 2 OS=Mus musculus 
+OX=10090 GN=Cbx2 PE=1 SV=2
+Length=519
+
+ Score = 84.9 bits (209),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 27/54 (50%), Positives = 42/54 (78%), Gaps = 0/54 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+           + V+AAE I+ KR++KG +EY VKW+GW+ ++N+WEPE NILD RL+  +++  
+Sbjct  9   EQVFAAECILSKRLRKGKLEYLVKWRGWSSKHNSWEPEENILDPRLLLAFQKKE  62
+
+
+> sp|Q4R3E0|SUV92_MACFA Histone-lysine N-methyltransferase SUV39H2 
+OS=Macaca fascicularis OX=9541 GN=SUV39H2 PE=2 SV=2
+Length=410
+
+ Score = 84.2 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 18/51 (35%), Positives = 24/51 (47%), Gaps = 0/51 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+           Y  E +   +V K +  Y VKWKGW    NTWEP  N+    L+  +    
+Sbjct  47  YEVEYLCDYKVVKDMEYYLVKWKGWPDSTNTWEPLQNLKCPLLLQQFSNDK  97
+
+
+> sp|Q14781|CBX2_HUMAN Chromobox protein homolog 2 OS=Homo sapiens 
+OX=9606 GN=CBX2 PE=1 SV=2
+Length=532
+
+ Score = 84.9 bits (209),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 27/54 (50%), Positives = 42/54 (78%), Gaps = 0/54 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+           + V+AAE I+ KR++KG +EY VKW+GW+ ++N+WEPE NILD RL+  +++  
+Sbjct  9   EQVFAAECILSKRLRKGKLEYLVKWRGWSSKHNSWEPEENILDPRLLLAFQKKE  62
+
+
+> sp|Q9H5I1|SUV92_HUMAN Histone-lysine N-methyltransferase SUV39H2 
+OS=Homo sapiens OX=9606 GN=SUV39H2 PE=1 SV=2
+Length=410
+
+ Score = 84.2 bits (207),  Expect = 1e-19, Method: Composition-based stats.
+ Identities = 18/51 (35%), Positives = 24/51 (47%), Gaps = 0/51 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+           Y  E +   +V K +  Y VKWKGW    NTWEP  N+    L+  +    
+Sbjct  47  YEVEYLCDYKVVKDMEYYLVKWKGWPDSTNTWEPLQNLKCPLLLQQFSNDK  97
+
+
+> sp|P05205|HP1_DROME Heterochromatin protein 1 OS=Drosophila melanogaster 
+OX=7227 GN=Su(var)205 PE=1 SV=2
+Length=206
+
+ Score = 81.9 bits (201),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 29/52 (56%), Positives = 37/52 (71%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           YA EKII +RV+KG VEY +KWKG+ +  NTWEPE N+  + LI  YE + K
+Sbjct  24  YAVEKIIDRRVRKGKVEYYLKWKGYPETENTWEPENNLDCQDLIQQYEASRK  75
+
+
+> sp|Q32PH7|SUV92_BOVIN Histone-lysine N-methyltransferase SUV39H2 
+OS=Bos taurus OX=9913 GN=SUV39H2 PE=2 SV=1
+Length=410
+
+ Score = 83.4 bits (205),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 18/51 (35%), Positives = 24/51 (47%), Gaps = 0/51 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+           Y  E +   +V K +  Y VKWKGW    NTWEP  N+    L+  +    
+Sbjct  47  YEVEYLCDYKVVKDMEYYLVKWKGWPDSTNTWEPLQNLKCPLLLQQFFNDK  97
+
+
+> sp|Q5F3W5|SUV92_CHICK Histone-lysine N-methyltransferase SUV39H2 
+OS=Gallus gallus OX=9031 GN=SUV39H2 PE=2 SV=1
+Length=407
+
+ Score = 83.0 bits (204),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 18/47 (38%), Positives = 29/47 (62%), Gaps = 0/47 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+           Y  E +   +V++G   Y VKWKGW +  NTWEP+ N+   +L++ +
+Sbjct  43  YEVEYLCDYKVEEGKEYYLVKWKGWPESSNTWEPQKNLKCPKLLENF  89
+
+
+> sp|P26017|PC_DROME Polycomb group protein Pc OS=Drosophila melanogaster 
+OX=7227 GN=Pc PE=1 SV=1
+Length=390
+
+ Score = 82.6 bits (203),  Expect = 3e-19, Method: Composition-based stats.
+ Identities = 55/55 (100%), Positives = 55/55 (100%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK
+Sbjct  23  DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  77
+
+
+> sp|Q6DGD3|SV91A_DANRE Histone-lysine N-methyltransferase SUV39H1-A 
+OS=Danio rerio OX=7955 GN=suv39h1a PE=2 SV=2
+Length=411
+
+ Score = 81.9 bits (201),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 17/52 (33%), Positives = 26/52 (50%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           Y  E +   +  KG   + VKWKG+ +  NTWEP  N+    L+  + +  K
+Sbjct  43  YEVEYLCNYKKHKGREFFLVKWKGYEESENTWEPLKNLKCPILLHQFRKDMK  94
+
+
+> sp|P60889|CBX7_RAT Chromobox protein homolog 7 OS=Rattus norvegicus 
+OX=10116 GN=Cbx7 PE=2 SV=1
+Length=158
+
+ Score = 78.8 bits (193),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 31/55 (56%), Positives = 41/55 (75%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+  +
+Sbjct  8   EQVFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEEKEE  62
+
+
+> sp|Q28CQ7|SUV92_XENTR Histone-lysine N-methyltransferase SUV39H2 
+OS=Xenopus tropicalis OX=8364 GN=suv39h2 PE=2 SV=2
+Length=406
+
+ Score = 81.5 bits (200),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 19/48 (40%), Positives = 28/48 (58%), Gaps = 0/48 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYE  51
+           Y  E +   R++KGV ++ VKWKGW +  NTWEP  N+    L+  + 
+Sbjct  43  YEVEYLCDYRIEKGVEKFFVKWKGWPESCNTWEPTRNLKCPTLLKQFY  90
+
+
+> sp|Q8VDS3|CBX7_MOUSE Chromobox protein homolog 7 OS=Mus musculus 
+OX=10090 GN=Cbx7 PE=1 SV=1
+Length=158
+
+ Score = 78.4 bits (192),  Expect = 2e-18, Method: Composition-based stats.
+ Identities = 31/55 (56%), Positives = 41/55 (75%), Gaps = 0/55 (0%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + V+A E I +KRV+KG VEY VKWKGW  +Y+TWEPE +ILD RL+  YE+  +
+Sbjct  8   EQVFAVESIRKKRVRKGKVEYLVKWKGWPPKYSTWEPEEHILDPRLVMAYEEKEE  62
+
+
+> sp|O54864|SUV91_MOUSE Histone-lysine N-methyltransferase SUV39H1 
+OS=Mus musculus OX=10090 GN=Suv39h1 PE=1 SV=1
+Length=412
+
+ Score = 80.3 bits (197),  Expect = 3e-18, Method: Composition-based stats.
+ Identities = 13/52 (25%), Positives = 25/52 (48%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  E +   +  +    Y VKW+G+    NTWEP  N+   R++  + +  +
+Sbjct  43  FEVEYLCDYKKIREQEYYLVKWRGYPDSENTWEPRQNLKCIRVLKQFHKDLE  94
+
+
+> sp|Q5R6X7|CBX3_PONAB Chromobox protein homolog 3 OS=Pongo abelii 
+OX=9601 GN=CBX3 PE=2 SV=1
+Length=183
+
+ Score = 76.5 bits (187),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 22/54 (41%), Positives = 32/54 (59%), Gaps = 0/54 (0%)
+
+Query  2   LVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+             +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  28  EEFVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEAFLNSQK  81
+
+
+> sp|Q13185|CBX3_HUMAN Chromobox protein homolog 3 OS=Homo sapiens 
+OX=9606 GN=CBX3 PE=1 SV=4
+Length=183
+
+ Score = 76.5 bits (187),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 22/54 (41%), Positives = 32/54 (59%), Gaps = 0/54 (0%)
+
+Query  2   LVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+             +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  28  EEFVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEAFLNSQK  81
+
+
+> sp|Q944N1|LHP1_SOLLC Chromo domain protein LHP1 OS=Solanum lycopersicum 
+OX=4081 GN=LHP1 PE=1 SV=2
+Length=399
+
+ Score = 78.8 bits (193),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 23/53 (43%), Positives = 33/53 (62%), Gaps = 1/53 (2%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTNK  55
+            Y  E + ++R  KG V Y +KW+GW +  NTWEPE N+     +ID YE++ K
+Sbjct  93   YEIETVRRRRTVKGKVYYLIKWRGWPESANTWEPETNLSSCTDIIDAYEESLK  145
+
+
+> sp|Q2NL30|SUV91_BOVIN Histone-lysine N-methyltransferase SUV39H1 
+OS=Bos taurus OX=9913 GN=SUV39H1 PE=2 SV=1
+Length=412
+
+ Score = 78.4 bits (192),  Expect = 1e-17, Method: Composition-based stats.
+ Identities = 12/52 (23%), Positives = 25/52 (48%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  E +   +  +    Y VKW+G+    +TWEP  N+   R++  + +  +
+Sbjct  43  FEVEYLCDYKKIREQEYYLVKWRGYPDSESTWEPRQNLKCVRILKQFHKDLE  94
+
+
+> sp|Q5RB81|SUV91_PONAB Histone-lysine N-methyltransferase SUV39H1 
+OS=Pongo abelii OX=9601 GN=SUV39H1 PE=2 SV=1
+Length=412
+
+ Score = 78.4 bits (192),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 12/52 (23%), Positives = 25/52 (48%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  E +   +  +    Y VKW+G+    +TWEP  N+   R++  + +  +
+Sbjct  43  FEVEYLCDYKKIREQEYYLVKWRGYPDSESTWEPRQNLKCVRILKQFHKDLE  94
+
+
+> sp|O43463|SUV91_HUMAN Histone-lysine N-methyltransferase SUV39H1 
+OS=Homo sapiens OX=9606 GN=SUV39H1 PE=1 SV=1
+Length=412
+
+ Score = 78.4 bits (192),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 12/52 (23%), Positives = 25/52 (48%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           +  E +   +  +    Y VKW+G+    +TWEP  N+   R++  + +  +
+Sbjct  43  FEVEYLCDYKKIREQEYYLVKWRGYPDSESTWEPRQNLKCVRILKQFHKDLE  94
+
+
+> sp|P23198|CBX3_MOUSE Chromobox protein homolog 3 OS=Mus musculus 
+OX=10090 GN=Cbx3 PE=1 SV=2
+Length=183
+
+ Score = 75.7 bits (185),  Expect = 2e-17, Method: Composition-based stats.
+ Identities = 22/54 (41%), Positives = 32/54 (59%), Gaps = 0/54 (0%)
+
+Query  2   LVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+             +  EK++ +RV  G VEY +KWKG+    NTWEPE N+    LI+ +  + K
+Sbjct  28  EEFVVEKVLDRRVVNGKVEYFLKWKGFTDADNTWEPEENLDCPELIEDFLNSQK  81
+
+
+> sp|Q339W7|LHP1_ORYSJ Probable chromo domain-containing protein 
+LHP1 OS=Oryza sativa subsp. japonica OX=39947 GN=LHP1 PE=2 
+SV=1
+Length=415
+
+ Score = 77.2 bits (189),  Expect = 4e-17, Method: Composition-based stats.
+ Identities = 21/53 (40%), Positives = 33/53 (62%), Gaps = 1/53 (2%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQTNK  55
+            Y  E I ++R++KG ++Y VKW+GW +  NTWEP  N+     +ID +E   +
+Sbjct  107  YEIEDIRRRRLRKGKLQYLVKWRGWPESANTWEPLENLSACSDIIDAFEMRLQ  159
+
+
+> sp|Q9Y6F7|CDY2_HUMAN Testis-specific chromodomain protein Y 2 
+OS=Homo sapiens OX=9606 GN=CDY2A PE=1 SV=1
+Length=541
+
+ Score = 77.6 bits (190),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 16/55 (29%), Positives = 31/55 (56%), Gaps = 2/55 (4%)
+
+Query  2   LVYAAEKIIQKRVKK-GVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTN  54
+             +  E I+ KR  K G  +Y V+WKG++++ +TWEPE ++    + +  + +  
+Sbjct  4   QEFEVEAIVDKRQDKNGNTQYLVRWKGYDKQDDTWEPEQHLMNCEKCVHDFNRRQ  58
+
+
+> sp|Q946J8|LHP1_ARATH Chromo domain-containing protein LHP1 OS=Arabidopsis 
+thaliana OX=3702 GN=LHP1 PE=1 SV=2
+Length=445
+
+ Score = 77.2 bits (189),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 24/53 (45%), Positives = 34/53 (64%), Gaps = 1/53 (2%)
+
+Query  4    YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD-RRLIDIYEQTNK  55
+            Y  E I +KRV+KG V+Y +KW+GW +  NTWEP  N+     +ID +E + K
+Sbjct  108  YEIEAIRRKRVRKGKVQYLIKWRGWPETANTWEPLENLQSIADVIDAFEGSLK  160
+
+
+> sp|Q9Y6F8|CDY1_HUMAN Testis-specific chromodomain protein Y 1 
+OS=Homo sapiens OX=9606 GN=CDY1 PE=1 SV=1
+Length=540
+
+ Score = 77.6 bits (190),  Expect = 5e-17, Method: Composition-based stats.
+ Identities = 16/55 (29%), Positives = 31/55 (56%), Gaps = 2/55 (4%)
+
+Query  2   LVYAAEKIIQKRVKK-GVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTN  54
+             +  E I+ KR  K G  +Y V+WKG++++ +TWEPE ++    + +  + +  
+Sbjct  4   QEFEVEAIVDKRQDKNGNTQYLVRWKGYDKQDDTWEPEQHLMNCEKCVHDFNRRQ  58
+
+
+> sp|Q6AYK9|CDYL_RAT Chromodomain Y-like protein OS=Rattus norvegicus 
+OX=10116 GN=Cdyl PE=1 SV=1
+Length=589
+
+ Score = 77.2 bits (189),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 20/56 (36%), Positives = 30/56 (54%), Gaps = 2/56 (4%)
+
+Query  1    DLVYAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTN  54
+            D     E I+ KR  KKG  EY V+WKG++   +TWEPE ++      I  + + +
+Sbjct  52   DAETQVESIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVNCEEYIHDFNRRH  107
+
+
+> sp|Q9WTK2|CDYL_MOUSE Chromodomain Y-like protein OS=Mus musculus 
+OX=10090 GN=Cdyl PE=1 SV=1
+Length=593
+
+ Score = 77.2 bits (189),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 20/56 (36%), Positives = 30/56 (54%), Gaps = 2/56 (4%)
+
+Query  1    DLVYAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTN  54
+            D     E I+ KR  KKG  EY V+WKG++   +TWEPE ++      I  + + +
+Sbjct  53   DAETQVESIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVNCEEYIHDFNRRH  108
+
+
+> sp|Q8N8U2|CDYL2_HUMAN Chromodomain Y-like protein 2 OS=Homo sapiens 
+OX=9606 GN=CDYL2 PE=1 SV=2
+Length=506
+
+ Score = 76.9 bits (188),  Expect = 8e-17, Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 31/51 (61%), Gaps = 2/51 (4%)
+
+Query  3   VYAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYE  51
+           +Y  E+I+ KR  KKG  EY ++WKG+    +TWEPE ++L     ID + 
+Sbjct  6   LYEVERIVDKRKNKKGKWEYLIRWKGYGSTEDTWEPEHHLLHCEEFIDEFN  56
+
+
+> sp|Q9Y232|CDYL_HUMAN Chromodomain Y-like protein OS=Homo sapiens 
+OX=9606 GN=CDYL PE=1 SV=2
+Length=598
+
+ Score = 76.9 bits (188),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 19/52 (37%), Positives = 30/52 (58%), Gaps = 2/52 (4%)
+
+Query  5    AAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTN  54
+              E+I+ KR  KKG  EY V+WKG++   +TWEPE ++      I  + + +
+Sbjct  62   QVERIVDKRKNKKGKTEYLVRWKGYDSEDDTWEPEQHLVNCEEYIHDFNRRH  113
+
+
+> sp|Q9D5D8|CDYL2_MOUSE Chromodomain Y-like protein 2 OS=Mus musculus 
+OX=10090 GN=Cdyl2 PE=1 SV=1
+Length=503
+
+ Score = 76.1 bits (186),  Expect = 1e-16, Method: Composition-based stats.
+ Identities = 21/51 (41%), Positives = 31/51 (61%), Gaps = 2/51 (4%)
+
+Query  3   VYAAEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYE  51
+           +Y  E+I+ KR  KKG  EY ++WKG+    +TWEPE ++L     ID + 
+Sbjct  6   LYEVERIVDKRKNKKGKWEYLIRWKGYGSTEDTWEPEHHLLHCEEFIDEFN  56
+
+
+> sp|Q61686|CBX5_MOUSE Chromobox protein homolog 5 OS=Mus musculus 
+OX=10090 GN=Cbx5 PE=1 SV=1
+Length=191
+
+ Score = 73.0 bits (178),  Expect = 2e-16, Method: Composition-based stats.
+ Identities = 23/52 (44%), Positives = 35/52 (67%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           Y  EK++ +R+ KG VEY +KWKG+++ +NTWEPE N+    LI  + +  K
+Sbjct  20  YVVEKVLDRRMVKGQVEYLLKWKGFSEEHNTWEPEKNLDCPELISEFMKKYK  71
+
+
+> sp|P45973|CBX5_HUMAN Chromobox protein homolog 5 OS=Homo sapiens 
+OX=9606 GN=CBX5 PE=1 SV=1
+Length=191
+
+ Score = 72.6 bits (177),  Expect = 3e-16, Method: Composition-based stats.
+ Identities = 24/52 (46%), Positives = 35/52 (67%), Gaps = 0/52 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           Y  EK++ +RV KG VEY +KWKG+++ +NTWEPE N+    LI  + +  K
+Sbjct  20  YVVEKVLDRRVVKGQVEYLLKWKGFSEEHNTWEPEKNLDCPELISEFMKKYK  71
+
+
+> sp|P83917|CBX1_MOUSE Chromobox protein homolog 1 OS=Mus musculus 
+OX=10090 GN=Cbx1 PE=1 SV=1
+Length=185
+
+ Score = 71.1 bits (173),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 30/46 (65%), Gaps = 0/46 (0%)
+
+Query  10  IQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + +RV KG VEY +KWKG++   NTWEPE N+    LI  + Q+ K
+Sbjct  27  LDRRVVKGKVEYLLKWKGFSDEDNTWEPEENLDCPDLIAEFLQSQK  72
+
+
+> sp|P83916|CBX1_HUMAN Chromobox protein homolog 1 OS=Homo sapiens 
+OX=9606 GN=CBX1 PE=1 SV=1
+Length=185
+
+ Score = 71.1 bits (173),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 22/46 (48%), Positives = 30/46 (65%), Gaps = 0/46 (0%)
+
+Query  10  IQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+           + +RV KG VEY +KWKG++   NTWEPE N+    LI  + Q+ K
+Sbjct  27  LDRRVVKGKVEYLLKWKGFSDEDNTWEPEENLDCPDLIAEFLQSQK  72
+
+
+> sp|P34618|CEC1_CAEEL Chromo domain-containing protein cec-1 OS=Caenorhabditis 
+elegans OX=6239 GN=cec-1 PE=2 SV=1
+Length=304
+
+ Score = 71.8 bits (175),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 20/53 (38%), Positives = 33/53 (62%), Gaps = 0/53 (0%)
+
+Query  2   LVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            +Y  E I++ R KKG  E+ +KW G++  +N+WEP+ NI+D  LI+ +    
+Sbjct  6   ELYTVESILEHRKKKGKSEFYIKWLGYDHTHNSWEPKENIVDPTLIEAFFTRE  58
+
+
+> sp|Q6NRE8|SUV91_XENLA Histone-lysine N-methyltransferase SUV39H1 
+OS=Xenopus laevis OX=8355 GN=suv39h1 PE=2 SV=1
+Length=421
+
+ Score = 72.2 bits (176),  Expect = 2e-15, Method: Composition-based stats.
+ Identities = 11/48 (23%), Positives = 21/48 (44%), Gaps = 0/48 (0%)
+
+Query  4   YAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYE  51
+           +  E +   +  +    Y VKWK +    +TWEP  ++    L+  + 
+Sbjct  46  FEVEYLWNYKKVQDQELYLVKWKYYPDSESTWEPRHHLKCNNLLKQFH  93
+
+
+> sp|Q99549|MPP8_HUMAN M-phase phosphoprotein 8 OS=Homo sapiens 
+OX=9606 GN=MPHOSPH8 PE=1 SV=2
+Length=860
+
+ Score = 69.9 bits (170),  Expect = 3e-14, Method: Composition-based stats.
+ Identities = 16/54 (30%), Positives = 33/54 (61%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+            + V+  EKI+  + + G V Y+V+WKG+    +TWEPE+++   + ++  + + 
+Sbjct  56   EDVFEVEKILDMKTEGGKVLYKVRWKGYTSDDDTWEPEIHLEDCKEVLLEFRKK  109
+
+
+> sp|Q3TYA6|MPP8_MOUSE M-phase phosphoprotein 8 OS=Mus musculus 
+OX=10090 GN=Mphosph8 PE=1 SV=1
+Length=858
+
+ Score = 69.5 bits (169),  Expect = 4e-14, Method: Composition-based stats.
+ Identities = 15/54 (28%), Positives = 32/54 (59%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+            + V+  E+I+  + + G   Y+V+WKG+    +TWEPEV++   + ++  + + 
+Sbjct  56   EDVFEVERILDMKCEGGKNLYKVRWKGYTSEDDTWEPEVHLEDCKEVLLEFRKK  109
+
+
+> sp|G3V8T1|MPP8_RAT M-phase phosphoprotein 8 OS=Rattus norvegicus 
+OX=10116 GN=Mphosph8 PE=2 SV=1
+Length=851
+
+ Score = 69.2 bits (168),  Expect = 7e-14, Method: Composition-based stats.
+ Identities = 15/54 (28%), Positives = 32/54 (59%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+            + V+  E+I+  + + G   Y+V+WKG+    +TWEPEV++   + ++  + + 
+Sbjct  56   EDVFEVERILDMKCEGGKNLYKVRWKGYTSDDDTWEPEVHLEDCKEVLLEFRKK  109
+
+
+> sp|P45975|SUV39_DROME Histone-lysine N-methyltransferase Su(var)3-9 
+OS=Drosophila melanogaster OX=7227 GN=Su(var)3-9 PE=1 
+SV=2
+Length=635
+
+ Score = 66.5 bits (161),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 13/53 (25%), Positives = 26/53 (49%), Gaps = 0/53 (0%)
+
+Query  3    VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+             Y  E+I    + +    + VKW G++   NTWE   N+ D   ++ + + ++
+Sbjct  218  EYVVERIECVEMDQYQPVFFVKWLGYHDSENTWESLANVADCAEMEKFVERHQ  270
+
+
+> sp|Q5KQL9|CMT2_ORYSJ DNA (cytosine-5)-methyltransferase CMT2 
+OS=Oryza sativa subsp. japonica OX=39947 GN=CMT2 PE=2 SV=2
+Length=1319
+
+ Score = 66.5 bits (161),  Expect = 8e-13, Method: Composition-based stats.
+ Identities = 12/57 (21%), Positives = 26/57 (46%), Gaps = 7/57 (12%)
+
+Query  2    LVYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYE  51
+              +   K++        +V K  + ++V+WKG+   ++TWEP   +   +  I  + 
+Sbjct  861  EEFEVWKLVDICFGDPNKVSKHGLYFKVRWKGYGPHHDTWEPVEGLRNCKEAIRDFV  917
+
+
+> sp|Q294B9|SUV39_DROPS Histone-lysine N-methyltransferase Su(var)3-9 
+OS=Drosophila pseudoobscura pseudoobscura OX=46245 GN=Su(var)3-9 
+PE=3 SV=1
+Length=633
+
+ Score = 65.7 bits (159),  Expect = 9e-13, Method: Composition-based stats.
+ Identities = 16/52 (31%), Positives = 26/52 (50%), Gaps = 0/52 (0%)
+
+Query  3    VYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+             Y  EKI    V +    + VKW G++   NTWE  VN+ D   ++ + + +
+Sbjct  212  EYIVEKIESVEVVQFQPVFFVKWLGYDVSANTWESYVNLSDCAEMEKFVERH  263
+
+
+> sp|Q10103|CHP1_SCHPO Chromo domain-containing protein 1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=chp1 PE=1 SV=1
+Length=960
+
+ Score = 65.7 bits (159),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 19/44 (43%), Positives = 25/44 (57%), Gaps = 1/44 (2%)
+
+Query  3   VYAAEKIIQKRVKKGVV-EYRVKWKGWNQRYNTWEPEVNILDRR  45
+           VY  E I+  RV K  + EY +KW G++   NTWEPE N+    
+Sbjct  21  VYEVEDILADRVNKNGINEYYIKWAGYDWYDNTWEPEQNLFGAE  64
+
+
+> sp|Q94F87|CMT2_ARATH DNA (cytosine-5)-methyltransferase CMT2 
+OS=Arabidopsis thaliana OX=3702 GN=CMT2 PE=2 SV=3
+Length=1295
+
+ Score = 64.9 bits (157),  Expect = 2e-12, Method: Composition-based stats.
+ Identities = 12/59 (20%), Positives = 25/59 (42%), Gaps = 7/59 (12%)
+
+Query  2    LVYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+              Y  EK++        +  K  ++++V WKG+    +TWE    +   +  I  +  +
+Sbjct  835  EEYEVEKLVDICFGDHDKTGKNGLKFKVHWKGYRSDEDTWELAEELSNCQDAIREFVTS  893
+
+
+> sp|P45968|CEC3_CAEEL Chromo domain-containing protein cec-3 OS=Caenorhabditis 
+elegans OX=6239 GN=cec-3 PE=1 SV=1
+Length=339
+
+ Score = 63.0 bits (152),  Expect = 4e-12, Method: Composition-based stats.
+ Identities = 15/57 (26%), Positives = 31/57 (54%), Gaps = 2/57 (4%)
+
+Query  1   DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDR--RLIDIYEQTNK  55
+           D ++  EKI+  +V   ++  +V+W G+    +TWEPE ++ +    ++  Y +  K
+Sbjct  21  DEIFEVEKILAHKVTDNLLVLQVRWLGYGADEDTWEPEEDLQECASEVVAEYYKKLK  77
+
+
+> sp|Q8LPU5|CMT3_MAIZE DNA (cytosine-5)-methyltransferase 3 OS=Zea 
+mays OX=4577 GN=DMT105 PE=2 SV=1
+Length=915
+
+ Score = 63.4 bits (153),  Expect = 7e-12, Method: Composition-based stats.
+ Identities = 15/58 (26%), Positives = 28/58 (48%), Gaps = 5/58 (9%)
+
+Query  3    VYAAEKIIQKRV----KKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTNK  55
+             +  +K+I  R     +K  V ++V+W+G+    +TWEP  N+      I  + Q  +
+Sbjct  444  EFVVQKLIGIRYDGTGRKKGVYFKVQWEGYGPEEDTWEPIDNLSDCPLKIREFVQEGR  501
+
+
+> sp|O60016|CLR4_SCHPO Histone-lysine N-methyltransferase, H3 lysine-9 
+specific OS=Schizosaccharomyces pombe (strain 972 / 
+ATCC 24843) OX=284812 GN=clr4 PE=1 SV=2
+Length=490
+
+ Score = 63.0 bits (152),  Expect = 7e-12, Method: Composition-based stats.
+ Identities = 12/57 (21%), Positives = 30/57 (53%), Gaps = 3/57 (5%)
+
+Query  2   LVYAAEKIIQKRVKKGVVE--YRVKWKGWNQRYNTWEPEVNIL-DRRLIDIYEQTNK  55
+             Y  E+I+ +++ +      YR++W  ++ R +TWEP  N+     ++  +++  +
+Sbjct  6   EEYEVERIVDEKLDRNGAVKLYRIRWLNYSSRSDTWEPPENLSGCSAVLAEWKRRKR  62
+
+
+> sp|A0A0P0VUY4|CMT1_ORYSJ DNA (cytosine-5)-methyltransferase CMT1 
+OS=Oryza sativa subsp. japonica OX=39947 GN=CMT1 PE=3 SV=1
+Length=1059
+
+ Score = 63.4 bits (153),  Expect = 8e-12, Method: Composition-based stats.
+ Identities = 12/60 (20%), Positives = 29/60 (48%), Gaps = 7/60 (12%)
+
+Query  1    DLVYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+            + ++  E++++          K  + ++V+WKG++  Y+TWEP   +      I  + + 
+Sbjct  581  EDIFDVEELLEICYGDPSNTGKNGLWFKVRWKGYDPSYDTWEPIDGLSDCPERIKEFVEK  640
+
+
+> sp|Q9AXT8|CMT1_MAIZE DNA (cytosine-5)-methyltransferase 1 OS=Zea 
+mays OX=4577 GN=MET2A PE=1 SV=1
+Length=912
+
+ Score = 61.1 bits (147),  Expect = 4e-11, Method: Composition-based stats.
+ Identities = 12/56 (21%), Positives = 27/56 (48%), Gaps = 5/56 (9%)
+
+Query  3    VYAAEKIIQK----RVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+             +  EK++        ++  + ++V+W+G+    +TWEP  N+    + I  + Q 
+Sbjct  440  EFVVEKLVGICYGGSDRENGIYFKVQWEGYGPEEDTWEPIDNLSDCPQKIREFVQE  495
+
+
+> sp|Q8BYH8|CHD9_MOUSE Chromodomain-helicase-DNA-binding protein 
+9 OS=Mus musculus OX=10090 GN=Chd9 PE=1 SV=2
+Length=2885
+
+ Score = 61.1 bits (147),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 13/54 (24%), Positives = 23/54 (43%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D +        K   + V+ Y VKW       +TWE + ++   + I+ +EQ  
+Sbjct  775  DRILEVSFCEDKDTGESVIYYLVKWCSLPYEDSTWELKEDVDLAK-IEEFEQLQ  827
+
+
+> sp|Q9ARI6|CMT2_MAIZE DNA (cytosine-5)-methyltransferase 2 OS=Zea 
+mays OX=4577 GN=ZMET5 PE=2 SV=1
+Length=915
+
+ Score = 59.9 bits (144),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 14/58 (24%), Positives = 27/58 (47%), Gaps = 5/58 (9%)
+
+Query  3    VYAAEKIIQKRV----KKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQTNK  55
+             +  +K+I  R     +K  V ++V+W+ +    +TWEP  N+      I  + Q  +
+Sbjct  444  EFVVQKLIGIRYDGTGRKKGVYFKVQWEEYGPEEDTWEPIDNLSDCPLKIREFVQEGR  501
+
+
+> sp|O42934|CHP2_SCHPO Chromo domain-containing protein 2 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 
+GN=chp2 PE=3 SV=1
+Length=380
+
+ Score = 58.8 bits (141),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 19/58 (33%), Positives = 30/58 (52%), Gaps = 4/58 (7%)
+
+Query  1    DLVYAAEKIIQKRVKKGV--VEYRVKWKGW-NQRYNTWEPEVNIL-DRRLIDIYEQTN  54
+            D  +A E I+  R+KK     +Y +KW+G+ +   NTW  E +      LID Y ++ 
+Sbjct  173  DEEFAVEMILDSRMKKDGSGFQYYLKWEGYDDPSDNTWNDEEDCAGCLELIDAYWESR  230
+
+
+> sp|Q3L8U1|CHD9_HUMAN Chromodomain-helicase-DNA-binding protein 
+9 OS=Homo sapiens OX=9606 GN=CHD9 PE=1 SV=2
+Length=2897
+
+ Score = 59.5 bits (143),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 14/54 (26%), Positives = 23/54 (43%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D V        K   + V+ Y VKW       +TWE + ++   + I+ +EQ  
+Sbjct  776  DRVLEVSFCEDKDTGEPVIYYLVKWCSLPYEDSTWELKEDVDLAK-IEEFEQLQ  828
+
+
+> sp|Q19972|CEC4_CAEEL Chromo domain-containing protein cec-4 OS=Caenorhabditis 
+elegans OX=6239 GN=cec-4 PE=1 SV=1
+Length=270
+
+ Score = 57.2 bits (137),  Expect = 3e-10, Method: Composition-based stats.
+ Identities = 16/56 (29%), Positives = 26/56 (46%), Gaps = 4/56 (7%)
+
+Query  3    VYAAEKIIQKRVKKGVVEYRVKWKGWN---QRYNTWEPEVNILDRRLIDIYEQTNK  55
+             YA E+++  R  KG   Y V+WKG+         WE E     + L+  Y++  +
+Sbjct  86   EYAVERVLAHRKVKGSPLYLVQWKGYPHPVWNSEMWE-EDLDNCKDLLAAYKKHQE  140
+
+
+> sp|C0SQ89|CMT3_ORYSJ DNA (cytosine-5)-methyltransferase CMT3 
+OS=Oryza sativa subsp. japonica OX=39947 GN=CMT3 PE=2 SV=1
+Length=907
+
+ Score = 58.0 bits (139),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 13/56 (23%), Positives = 26/56 (46%), Gaps = 5/56 (9%)
+
+Query  3    VYAAEKIIQK----RVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQT  53
+             +  EK+         ++  + ++V+WKG+ +  +TWEP  N+      I  + Q 
+Sbjct  436  EFVVEKLAGICYGGSGREDGLYFKVQWKGYGREEDTWEPIENLRDCPLKIKEFVQE  491
+
+
+> sp|O14646|CHD1_HUMAN Chromodomain-helicase-DNA-binding protein 
+1 OS=Homo sapiens OX=9606 GN=CHD1 PE=1 SV=2
+Length=1710
+
+ Score = 57.6 bits (138),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 18/64 (28%), Positives = 33/64 (52%), Gaps = 11/64 (17%)
+
+Query  3    VYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYE  51
+            +YA E          K  + G ++Y +KWKGW+  +NTWE E  +  + +     +D Y+
+Sbjct  294  IYAVEADGDPNAGFEKNKEPGEIQYLIKWKGWSHIHNTWETEETLKQQNVRGMKKLDNYK  353
+
+Query  52   QTNK  55
+            + ++
+Sbjct  354  KKDQ  357
+
+
+> sp|P40201|CHD1_MOUSE Chromodomain-helicase-DNA-binding protein 
+1 OS=Mus musculus OX=10090 GN=Chd1 PE=1 SV=3
+Length=1711
+
+ Score = 57.6 bits (138),  Expect = 8e-10, Method: Composition-based stats.
+ Identities = 17/64 (27%), Positives = 33/64 (52%), Gaps = 11/64 (17%)
+
+Query  3    VYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYE  51
+            +YA E          +  + G ++Y +KWKGW+  +NTWE E  +  + +     +D Y+
+Sbjct  292  IYAVEADGDPNAGFERNKEPGDIQYLIKWKGWSHIHNTWETEETLKQQNVRGMKKLDNYK  351
+
+Query  52   QTNK  55
+            + ++
+Sbjct  352  KKDQ  355
+
+
+> sp|E9PZM4|CHD2_MOUSE Chromodomain-helicase-DNA-binding protein 
+2 OS=Mus musculus OX=10090 GN=Chd2 PE=1 SV=1
+Length=1827
+
+ Score = 57.2 bits (137),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 16/63 (25%), Positives = 33/63 (52%), Gaps = 11/63 (17%)
+
+Query  3    VYAAEK------IIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYE  51
+            VYA E             ++G V+Y +KWKGW+  ++TWE E ++  +++     ++ ++
+Sbjct  283  VYAVEANGDPSDDFDTEREEGEVQYLIKWKGWSYIHSTWESEDSLQQQKVKGLKKLENFK  342
+
+Query  52   QTN  54
+            +  
+Sbjct  343  KKE  345
+
+
+> sp|O14647|CHD2_HUMAN Chromodomain-helicase-DNA-binding protein 
+2 OS=Homo sapiens OX=9606 GN=CHD2 PE=1 SV=2
+Length=1828
+
+ Score = 56.8 bits (136),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 15/63 (24%), Positives = 32/63 (51%), Gaps = 11/63 (17%)
+
+Query  3    VYAAEK------IIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYE  51
+            VYA E              +G ++Y +KWKGW+  ++TWE E ++  +++     ++ ++
+Sbjct  283  VYAIEANGDPSGDFDTEKDEGEIQYLIKWKGWSYIHSTWESEESLQQQKVKGLKKLENFK  342
+
+Query  52   QTN  54
+            +  
+Sbjct  343  KKE  345
+
+
+> sp|Q08972|NEW1_YEAST [NU+] prion formation protein 1 OS=Saccharomyces 
+cerevisiae (strain ATCC 204508 / S288c) OX=559292 GN=NEW1 
+PE=1 SV=1
+Length=1196
+
+ Score = 56.4 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 15/53 (28%), Positives = 29/53 (55%), Gaps = 3/53 (6%)
+
+Query  5    AAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD---RRLIDIYEQTN  54
+            A E I+ ++  K   +Y VKWK W  +YN+W P+  +++    +L+  ++   
+Sbjct  943  AIEAIVGRQKLKKSFQYEVKWKYWKPKYNSWVPKDVLVEHGFEKLVQKFDDHE  995
+
+
+> sp|B6ZLK2|CHD1_CHICK Chromodomain-helicase-DNA-binding protein 
+1 OS=Gallus gallus OX=9031 GN=CHD1 PE=1 SV=1
+Length=1719
+
+ Score = 54.9 bits (131),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 18/64 (28%), Positives = 33/64 (52%), Gaps = 11/64 (17%)
+
+Query  3    VYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYE  51
+            +YA E          K  + G ++Y +KWKGW+  +NTWE E  +  + +     +D Y+
+Sbjct  290  IYAVEVDGDPNAGFEKSKELGEIQYLIKWKGWSHIHNTWETEETLKQQNVKGMKKLDNYK  349
+
+Query  52   QTNK  55
+            + ++
+Sbjct  350  KKDQ  353
+
+
+> sp|Q94F88|CMT3_ARATH DNA (cytosine-5)-methyltransferase CMT3 
+OS=Arabidopsis thaliana OX=3702 GN=CMT3 PE=1 SV=2
+Length=839
+
+ Score = 53.4 bits (127),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 13/58 (22%), Positives = 29/58 (50%), Gaps = 7/58 (12%)
+
+Query  2    LVYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYEQ  52
+             V+  +KI+       K++ K  +  +V+W  ++  ++TWEP   +   R  I+ + +
+Sbjct  380  EVFTVDKIVGISFGVPKKLLKRGLYLKVRWLNYDDSHDTWEPIEGLSNCRGKIEEFVK  437
+
+
+> sp|Q8LSQ2|SR43C_ORYSJ Probable signal recognition particle 43 
+kDa protein, chloroplastic OS=Oryza sativa subsp. japonica 
+OX=39947 GN=Os03g0131900 PE=2 SV=1
+Length=388
+
+ Score = 51.0 bits (121),  Expect = 8e-08, Method: Composition-based stats.
+ Identities = 21/57 (37%), Positives = 28/57 (49%), Gaps = 7/57 (12%)
+
+Query  2    LVYAA-EKIIQKRV---KKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            L YA  E ++ KR     +G  EY VKW   +    TWEP  N+ D  L+  +EQ  
+Sbjct  318  LEYAVAEAVVNKREAAEGEGKWEYLVKWV--DIEEATWEPAENV-DAELLQEFEQRQ  371
+
+
+> sp|Q8TD26|CHD6_HUMAN Chromodomain-helicase-DNA-binding protein 
+6 OS=Homo sapiens OX=9606 GN=CHD6 PE=1 SV=4
+Length=2715
+
+ Score = 50.7 bits (120),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 12/54 (22%), Positives = 19/54 (35%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D +            + V  Y VKW       +TWE E ++ D   +  +E   
+Sbjct  378  DRILEVAHTKDAETGEEVTHYLVKWCSLPYEESTWELEEDV-DPAKVKEFESLQ  430
+
+
+> sp|D3ZA12|CHD6_RAT Chromodomain-helicase-DNA-binding protein 
+6 OS=Rattus norvegicus OX=10116 GN=Chd6 PE=1 SV=2
+Length=2698
+
+ Score = 50.3 bits (119),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 12/54 (22%), Positives = 19/54 (35%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D +            + V  Y VKW       +TWE E ++ D   +  +E   
+Sbjct  377  DRILEVAHTKDAETGEEVTHYLVKWCSLPYEESTWELEEDV-DPAKVKEFESLQ  429
+
+
+> sp|A3KFM7|CHD6_MOUSE Chromodomain-helicase-DNA-binding protein 
+6 OS=Mus musculus OX=10090 GN=Chd6 PE=1 SV=1
+Length=2711
+
+ Score = 50.3 bits (119),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 12/54 (22%), Positives = 19/54 (35%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D +            + V  Y VKW       +TWE E ++ D   +  +E   
+Sbjct  377  DRILEVAHTKDAETGEEVTHYLVKWCSLPYEESTWELEEDV-DPAKVKEFESLQ  429
+
+
+> sp|O49139|CMT1_ARATH Putative DNA (cytosine-5)-methyltransferase 
+CMT1 OS=Arabidopsis thaliana OX=3702 GN=CMT1 PE=5 SV=2
+Length=791
+
+ Score = 49.1 bits (116),  Expect = 5e-07, Method: Composition-based stats.
+ Identities = 13/56 (23%), Positives = 25/56 (45%), Gaps = 7/56 (13%)
+
+Query  3    VYAAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNI-LDRRLIDIYE  51
+             +  EK +       +   +  ++  V+WKG+N  Y+TWEP   +   +  +  Y 
+Sbjct  338  EFEVEKFLGIMFGDPQGTGEKTLQLMVRWKGYNSSYDTWEPYSGLGNCKEKLKEYV  393
+
+
+> sp|O14134|ELF1_SCHPO mRNA export factor elf1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=elf1 PE=1 
+SV=1
+Length=1057
+
+ Score = 49.1 bits (116),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 12/52 (23%), Positives = 25/52 (48%), Gaps = 3/52 (6%)
+
+Query  6    AEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILD---RRLIDIYEQTN  54
+             E +I ++  K   +Y +KW G   +YNTW     +L+   ++ +  ++   
+Sbjct  822  VEALIGRQKLKKSFQYEIKWFGKPHKYNTWVSREILLENGFQKFVQAFDDME  873
+
+
+> sp|Q7KU24|CHD1_DROME Chromodomain-helicase-DNA-binding protein 
+1 OS=Drosophila melanogaster OX=7227 GN=Chd1 PE=1 SV=1
+Length=1883
+
+ Score = 48.7 bits (115),  Expect = 8e-07, Method: Composition-based stats.
+ Identities = 13/41 (32%), Positives = 23/41 (56%), Gaps = 5/41 (12%)
+
+Query  20   EYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYEQTNK  55
+            ++ +KWKGW+  +NTWE E  + D +      +D + +  K
+Sbjct  367  QFLIKWKGWSYIHNTWESEATLRDMKAKGMKKLDNFIKKEK  407
+
+
+> sp|B5DE69|CHD8_XENTR Chromodomain-helicase-DNA-binding protein 
+8 OS=Xenopus tropicalis OX=8364 GN=chd8 PE=2 SV=2
+Length=2184
+
+ Score = 48.4 bits (114),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 13/54 (24%), Positives = 26/54 (48%), Gaps = 7/54 (13%)
+
+Query  5    AAEKIIQ------KRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+              ++I+       K   + VV Y VKW       +TWE + ++ D + I+ +++
+Sbjct  669  EVDRILDESHSTDKDNGEPVVYYLVKWCSLPYEDSTWELKEDVDDGK-IEEFKR  721
+
+
+> sp|Q9JIX5|CHD8_RAT Chromodomain-helicase-DNA-binding protein 
+8 OS=Rattus norvegicus OX=10116 GN=Chd8 PE=1 SV=2
+Length=2581
+
+ Score = 48.4 bits (114),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 11/54 (20%), Positives = 24/54 (44%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D +      + K   + V+ Y VKW       +TWE + ++ + + I  +++  
+Sbjct  727  DRILDESHSVDKDNGEPVIYYLVKWCSLPYEDSTWELKEDVDEGK-IREFKRIQ  779
+
+
+> sp|Q09XV5|CHD8_MOUSE Chromodomain-helicase-DNA-binding protein 
+8 OS=Mus musculus OX=10090 GN=Chd8 PE=1 SV=1
+Length=2582
+
+ Score = 48.0 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 11/54 (20%), Positives = 24/54 (44%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D +      + K   + V+ Y VKW       +TWE + ++ + + I  +++  
+Sbjct  729  DRILDESHSVDKDNGEPVIYYLVKWCSLPYEDSTWELKEDVDEGK-IREFKRIQ  781
+
+
+> sp|A9X4T1|CHD1_BOMMO Chromodomain-helicase-DNA-binding protein 
+1 OS=Bombyx mori OX=7091 GN=CHD1 PE=1 SV=1
+Length=1365
+
+ Score = 48.0 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 13/42 (31%), Positives = 24/42 (57%), Gaps = 5/42 (12%)
+
+Query  18  VVEYRVKWKGWNQRYNTWEPEVNILDRRL-----IDIYEQTN  54
+             +Y +KWKGW+  +NTWE E  I D+++     ++ + +  
+Sbjct  37  EPQYLIKWKGWSHIHNTWESEKTINDQKVKGLKKLENFIKKE  78
+
+
+> sp|Q9HCK8|CHD8_HUMAN Chromodomain-helicase-DNA-binding protein 
+8 OS=Homo sapiens OX=9606 GN=CHD8 PE=1 SV=5
+Length=2581
+
+ Score = 47.6 bits (112),  Expect = 2e-06, Method: Composition-based stats.
+ Identities = 12/54 (22%), Positives = 24/54 (44%), Gaps = 1/54 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTN  54
+            D +      I K   + V+ Y VKW       +TWE + ++ + + I  +++  
+Sbjct  727  DRILDESHSIDKDNGEPVIYYLVKWCSLPYEDSTWELKEDVDEGK-IREFKRIQ  779
+
+
+> sp|A2AJK6|CHD7_MOUSE Chromodomain-helicase-DNA-binding protein 
+7 OS=Mus musculus OX=10090 GN=Chd7 PE=1 SV=1
+Length=2986
+
+ Score = 46.4 bits (109),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 12/53 (23%), Positives = 24/53 (45%), Gaps = 6/53 (11%)
+
+Query  5    AAEKIIQ-----KRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+              ++I+          + V+ Y VKW       +TWE + +I   + I+ +E+
+Sbjct  873  EVDRIMDFARSTDDRGEPVIHYLVKWCSLPYEDSTWELKQDIDQTK-IEEFEK  924
+
+
+> sp|B0R0I6|CHD8_DANRE Chromodomain-helicase-DNA-binding protein 
+8 OS=Danio rerio OX=7955 GN=chd8 PE=3 SV=2
+Length=2511
+
+ Score = 46.4 bits (109),  Expect = 5e-06, Method: Composition-based stats.
+ Identities = 11/52 (21%), Positives = 23/52 (44%), Gaps = 1/52 (2%)
+
+Query  1    DLVYAAEKIIQKRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQ  52
+            D +      + K   + VV Y VKW        TWE + ++ + + ++ + +
+Sbjct  763  DRILDESHSVDKDNGEPVVYYLVKWCSLPYEDATWELKEDVDEGK-VEEFRK  813
+
+
+> sp|Q06A37|CHD7_CHICK Chromodomain-helicase-DNA-binding protein 
+7 OS=Gallus gallus OX=9031 GN=CHD7 PE=2 SV=1
+Length=3011
+
+ Score = 46.0 bits (108),  Expect = 8e-06, Method: Composition-based stats.
+ Identities = 12/62 (19%), Positives = 25/62 (40%), Gaps = 11/62 (18%)
+
+Query  1    DLVY-----AAEKIIQ--KRVKKGVV---EYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+            D ++       ++I+   +           Y VKW       +TWE + +I   + I+ +
+Sbjct  875  DELFNPDYVEIDRILDFSRSTDDNGEPVTHYLVKWCSLPYEDSTWELKQDIDQAK-IEEF  933
+
+Query  51   EQ  52
+            E+
+Sbjct  934  EK  935
+
+
+> sp|Q9P2D1|CHD7_HUMAN Chromodomain-helicase-DNA-binding protein 
+7 OS=Homo sapiens OX=9606 GN=CHD7 PE=1 SV=3
+Length=2997
+
+ Score = 45.3 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 13/62 (21%), Positives = 25/62 (40%), Gaps = 11/62 (18%)
+
+Query  1    DLVY-----AAEKIIQ-----KRVKKGVVEYRVKWKGWNQRYNTWEPEVNILDRRLIDIY  50
+            D ++       ++I+          + V  Y VKW       +TWE   +I   + I+ +
+Sbjct  874  DELFNPDYVEVDRIMDFARSTDDRGEPVTHYLVKWCSLPYEDSTWERRQDIDQAK-IEEF  932
+
+Query  51   EQ  52
+            E+
+Sbjct  933  EK  934
+
+
+> sp|F4IV99|CHR5_ARATH Protein CHROMATIN REMODELING 5 OS=Arabidopsis 
+thaliana OX=3702 GN=CHR5 PE=1 SV=1
+Length=1724
+
+ Score = 43.0 bits (100),  Expect = 7e-05, Method: Composition-based stats.
+ Identities = 19/56 (34%), Positives = 28/56 (50%), Gaps = 6/56 (11%)
+
+Query  5    AAEKIIQKRVKKGV-----VEYRVKWKGWNQRYNTWEPEVNILDRRL-IDIYEQTN  54
+              E+II  R+ K        EY VKW+G +    TWE +V+I   ++ ID Y+   
+Sbjct  534  QVERIIADRISKDGLGDVVPEYLVKWQGLSYAEATWEKDVDIAFAQVAIDEYKARE  589
+
+
+> sp|P40381|SWI6_SCHPO Chromatin-associated protein swi6 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=swi6 
+PE=1 SV=1
+Length=328
+
+ Score = 40.6 bits (94),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 15/51 (29%), Positives = 29/51 (57%), Gaps = 4/51 (8%)
+
+Query  8    KIIQKRVKK--GVVEYRVKWKGW-NQRYNTWEPEVNIL-DRRLIDIYEQTN  54
+            K+++ R+ +  G  EY +KW+G+ +   NTW  E +    ++LI+ Y   +
+Sbjct  85   KVLKHRMARKGGGYEYLLKWEGYDDPSDNTWSSEADCSGCKQLIEAYWNEH  135
+
+
+> sp|Q9US25|HRP1_SCHPO Chromodomain helicase hrp1 OS=Schizosaccharomyces 
+pombe (strain 972 / ATCC 24843) OX=284812 GN=hrp1 
+PE=1 SV=1
+Length=1373
+
+ Score = 41.0 bits (95),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 13/52 (25%), Positives = 21/52 (40%), Gaps = 3/52 (6%)
+
+Query  6    AEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPEVNI--LDRRLIDIYEQTN  54
+             E+I+     ++G  EY VKW+       TWE    I  +    +  + Q  
+Sbjct  306  VERIVASETNEEGKTEYFVKWRQLPYDNCTWEDADVIYSMAPNEVYQFLQRE  357
+
+
+> sp|O22265|SR43C_ARATH Signal recognition particle 43 kDa protein, 
+chloroplastic OS=Arabidopsis thaliana OX=3702 GN=CAO PE=1 
+SV=2
+Length=373
+
+ Score = 38.7 bits (89),  Expect = 0.001, Method: Composition-based stats.
+ Identities = 18/49 (37%), Positives = 25/49 (51%), Gaps = 5/49 (10%)
+
+Query  2    LVYAA-EKIIQKRVKKGV--VEYRVKWKGWNQRYNTWEPEVNILDRRLI  47
+            L YA  E +I KRV      +EY VKW   +    TWEP+ N+    ++
+Sbjct  317  LEYAVAESVIGKRVGDDGKTIEYLVKWT--DMSDATWEPQDNVDSTLVL  363
+
+
+> sp|Q12873|CHD3_HUMAN Chromodomain-helicase-DNA-binding protein 
+3 OS=Homo sapiens OX=9606 GN=CHD3 PE=1 SV=3
+Length=2000
+
+ Score = 39.1 bits (90),  Expect = 0.002, Method: Composition-based stats.
+ Identities = 15/51 (29%), Positives = 20/51 (39%), Gaps = 6/51 (12%)
+
+Query  6    AEKIIQKRVKKGVVE-YRVKWKGWNQRYNTWEPEVNILDRRLIDIYEQTNK  55
+              +II   V K     Y VKW+      +TWE      D   I  YE+  +
+Sbjct  633  VHRIINHSVDKKGNYHYLVKWRDLPYDQSTWE-----EDEMNIPEYEEHKQ  678
+
+
+> sp|O97159|CHDM_DROME Chromodomain-helicase-DNA-binding protein 
+Mi-2 homolog OS=Drosophila melanogaster OX=7227 GN=Mi-2 PE=1 
+SV=2
+Length=1982
+
+ Score = 37.6 bits (86),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 15/52 (29%), Positives = 23/52 (44%), Gaps = 2/52 (4%)
+
+Query  6    AEKIIQKRV-KKGVVEYRVKWKGWNQRYNTWEPE-VNILDRRLIDIYEQTNK  55
+             +++I  R  + G   Y VKW+      +TWE E  +I   R    Y Q  +
+Sbjct  614  VQRVINHRTARDGSTMYLVKWRELPYDKSTWEEEGDDIQGLRQAIDYYQDLR  665
+
+
+
+Lambda      K        H        a         alpha
+   0.311    0.151    0.528    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0459    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4969651158
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

@@ -16,7 +16,7 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import matthews_corrcoef
 from sklearn import tree
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import precision_score, recall_score, confusion_matrix, classification_report, accuracy_score, f1_score
+from sklearn.metrics import precision_score, recall_score, classification_report, accuracy_score, f1_score
 from sklearn import metrics
 
 actualfile = "../datasets/membrane-beta_4state.3line1.txt"
@@ -102,11 +102,11 @@ def top_window(window_input):
         for x in ch:
             final_Toplist.extend(structure_dict[x])
     #print(final_Toplist) 
-    return final_Toplist       
+    return np.array(final_Toplist)      
     
 def pssm_model(filename):
     x, y = templist, final_Toplist
-    clf_model = SVC(gamma=0.001, kernel='rbf', C=5.0).fit(x,y)
+    clf_model = SVC(gamma=0.001, kernel='rbf', C=5.0, class_weight = "balanced").fit(x,y)
     inputfile = 'PSSM_model.sav'
     joblib.dump(clf_model, inputfile)
     print ("Model trained!")
@@ -114,40 +114,41 @@ def pssm_model(filename):
 def pssm_svm(fold):
     #labels = [0,1,2,3]
     x, y = templist, final_Toplist
-    clf_model = SVC(gamma=0.001, kernel='rbf', C=5.0).fit(x,y)
+    clf_model = SVC(gamma=0.001, kernel='rbf', C=5.0, class_weight = "balanced").fit(x,y)
     prediction = clf_model.predict(templist)
     print ("Classification report for %s" % clf_model)
     print (metrics.classification_report(y, prediction))
-    y_pred = cross_val_predict(clf_model, x, y, cv=fold)
-    cm = confusion_matrix(y, y_pred, labels)
+    prediction = cross_val_predict(clf_model, x, y, cv=fold)
+    cm = confusion_matrix(y, prediction)
     print("Confusion Matrix: \n",cm)
     
 def pssm_splitMC():
     x, y = templist, final_Toplist
     X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
-    clf_model = SVC(gamma=0.001, kernel='rbf', C=5.0).fit(X_train, Y_train)
-    y_pred = clf_model.predict(X_test)
-    MC = matthews_corrcoef(Y_test, y_pred)
+    print(Y_test)
+    clf_model = SVC(gamma=0.01, kernel='rbf', C=10.0, class_weight = "balanced").fit(X_train, Y_train)
+    prediction = clf_model.predict(X_test)
+    MC = matthews_corrcoef(Y_test, prediction)
     print("Matthews correlation coefficient: ",MC)
     
 def pssm_RFC():
     x, y = templist, final_Toplist
     clf_model = RandomForestClassifier(random_state=15)
-    scores = cross_val_score(clf_model, x, y, cv=3, scoring = 'f1')
+    scores = cross_val_score(clf_model, x, y, cv=3, scoring = 'f1', class_weight = "balanced")
     score = np.mean(scores)
     print("Random Forest Classifier: ", score)
 
 def pssm_DT():
     x, y = templist, final_Toplist
     clf_model = tree.DecisionTreeClassifier(random_state=15)
-    scores = cross_val_score(clf_model, x, y, cv=3, scoring = 'f1')
+    scores = cross_val_score(clf_model, x, y, cv=3, scoring = 'f1', class_weight = "balanced")
     score = np.mean(scores)
     print("Decision Tree Classifier: ", score)
 
 if __name__ == '__main__':
     listID, listTop = gen(actualfile)
     final_pssmlist = extract()
-    templist = pssm_window(17, final_pssmlist)
+    templist = pssm_window(17, final_pssmlist) #took out final_pssmlist
     final_Toplist = top_window(17)
     pssm_svm(3)
     #pssm_split()

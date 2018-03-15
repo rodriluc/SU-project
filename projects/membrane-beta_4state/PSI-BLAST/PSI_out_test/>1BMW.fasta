@@ -1,0 +1,4403 @@
+PSIBLAST 2.2.31+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: uniprot_sprot.fasta
+           556,825 sequences; 199,652,254 total letters
+
+Results from round 1
+
+
+Query= 1BMW
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  sp|P43214|MPAP2_PHLPR Pollen allergen Phl p 2 OS=Phleum pratens...  200     1e-65
+  sp|P14947|MPAL2_LOLPR Pollen allergen Lol p 2-A OS=Lolium peren...  132     3e-39
+  sp|P93124|MPAG3_DACGL Pollen allergen Dac g 3 (Fragment) OS=Dac...  116     4e-33
+  sp|P14948|MPAL3_LOLPR Pollen allergen Lol p 3 OS=Lolium perenne...  114     3e-32
+  sp|Q8H7T4|EXB10_ORYSJ Expansin-B10 OS=Oryza sativa subsp. japon...  87.0    1e-20
+  sp|Q40638|EXPB1_ORYSJ Expansin-B1 OS=Oryza sativa subsp. japoni...  83.2    3e-19
+  sp|P14946|MPAL1_LOLPR Pollen allergen Lol p 1 OS=Lolium perenne...  82.4    7e-19
+  sp|P43213|MPAP1_PHLPR Pollen allergen Phl p 1 OS=Phleum pratens...  81.6    1e-18
+  sp|Q41260|MPAP1_PHAAQ Major pollen allergen Pha a 1 OS=Phalaris...  80.1    4e-18
+  sp|Q1ZYQ8|EXB10_MAIZE Expansin-B10 OS=Zea mays OX=4577 GN=EXPB1...  79.7    6e-18
+  sp|P43216|MPAH1_HOLLA Major pollen allergen Hol l 1 OS=Holcus l...  79.0    1e-17
+  sp|O04701|MPAC1_CYNDA Major pollen allergen Cyn d 1 OS=Cynodon ...  78.6    2e-17
+  sp|P0C1Y5|EXB11_MAIZE Expansin-B11 OS=Zea mays OX=4577 GN=EXPB1...  77.8    3e-17
+  sp|Q7XCG7|EXPB9_ORYSJ Expansin-B9 OS=Oryza sativa subsp. japoni...  74.7    4e-16
+  sp|P58738|EXPB1_MAIZE Expansin-B1 OS=Zea mays OX=4577 GN=EXPB1 ...  72.4    2e-15
+  sp|Q07154|EXPB9_MAIZE Expansin-B9 OS=Zea mays OX=4577 GN=EXPB9 ...  68.9    4e-14
+  sp|Q336T5|EXPB3_ORYSJ Expansin-B3 OS=Oryza sativa subsp. japoni...  68.9    4e-14
+  sp|Q9SHY6|EXPB2_ARATH Putative expansin-B2 OS=Arabidopsis thali...  67.8    1e-13
+  sp|Q7XT40|EXB15_ORYSJ Expansin-B15 OS=Oryza sativa subsp. japon...  67.0    2e-13
+  sp|Q9LD07|EXPB7_ORYSJ Expansin-B7 OS=Oryza sativa subsp. japoni...  65.5    1e-12
+  sp|Q10T32|EXPB8_ORYSJ Expansin-B8 OS=Oryza sativa subsp. japoni...  65.1    1e-12
+  sp|Q946J4|EXB13_ORYSJ Expansin-B13 OS=Oryza sativa subsp. japon...  62.8    5e-12
+  sp|Q5W6Z9|EXB18_ORYSJ Expansin-B18 OS=Oryza sativa subsp. japon...  63.2    6e-12
+  sp|Q10G40|EXB12_ORYSJ Expansin-B12 OS=Oryza sativa subsp. japon...  62.4    2e-11
+  sp|Q7XCA7|EXPB6_ORYSJ Expansin-B6 OS=Oryza sativa subsp. japoni...  61.2    3e-11
+  sp|Q7XT39|EXPB5_ORYSJ Expansin-B5 OS=Oryza sativa subsp. japoni...  60.8    5e-11
+  sp|O24230|EXPB2_ORYSJ Expansin-B2 OS=Oryza sativa subsp. japoni...  57.8    5e-10
+  sp|Q6H677|EXB14_ORYSJ Putative expansin-B14 OS=Oryza sativa sub...  57.0    1e-09
+  sp|Q94LR4|EXPB4_ORYSJ Expansin-B4 OS=Oryza sativa subsp. japoni...  55.5    5e-09
+  sp|Q6H676|EXB11_ORYSJ Expansin-B11 OS=Oryza sativa subsp. japon...  53.5    3e-08
+  sp|Q41183|MPAG2_DACGL Pollen allergen Dac g 2 (Fragment) OS=Dac...  47.8    2e-07
+  sp|Q9M203|EXPB5_ARATH Expansin-B5 OS=Arabidopsis thaliana OX=37...  49.7    5e-07
+  sp|F4IBJ3|EXB6L_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=37...  48.1    1e-06
+  sp|Q9SHD1|EXPB4_ARATH Expansin-B4 OS=Arabidopsis thaliana OX=37...  44.3    3e-05
+  sp|Q6IVU7|EXPB6_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=37...  44.3    3e-05
+  sp|O23547|EXLB1_ARATH Expansin-like B1 OS=Arabidopsis thaliana ...  40.8    5e-04
+  sp|Q9SVE5|EXLA2_ARATH Expansin-like A2 OS=Arabidopsis thaliana ...  40.0    8e-04
+
+
+> sp|P43214|MPAP2_PHLPR Pollen allergen Phl p 2 OS=Phleum pratense 
+OX=15957 GN=PHLPII PE=1 SV=1
+Length=122
+
+ Score = 200 bits (508),  Expect = 1e-65, Method: Compositional matrix adjust.
+ Identities = 96/96 (100%), Positives = 96/96 (100%), Gaps = 0/96 (0%)
+
+Query  1    VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL
+Sbjct  27   VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  86
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE
+Sbjct  87   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  122
+
+
+> sp|P14947|MPAL2_LOLPR Pollen allergen Lol p 2-A OS=Lolium perenne 
+OX=4522 PE=1 SV=1
+Length=97
+
+ Score = 132 bits (331),  Expect = 3e-39, Method: Compositional matrix adjust.
+ Identities = 61/94 (65%), Positives = 78/94 (83%), Gaps = 2/94 (2%)
+
+Query  4   VTFTVEKGSNEKHLAVLVKY--EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+           V FTVEKGS+EK+LA+ +KY  EGD+MAEVEL+EHGS+EW+A+ K   GVW   S++PL+
+Sbjct  4   VEFTVEKGSDEKNLALSIKYNKEGDSMAEVELKEHGSNEWLALKKNGDGVWEIKSDKPLK  63
+
+Query  62  GPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+           GPFNFRF++EKGM+NVFDDVVP  + +G TY PE
+Sbjct  64  GPFNFRFVSEKGMRNVFDDVVPADFKVGTTYKPE  97
+
+
+> sp|P93124|MPAG3_DACGL Pollen allergen Dac g 3 (Fragment) OS=Dactylis 
+glomerata OX=4509 PE=1 SV=1
+Length=96
+
+ Score = 116 bits (290),  Expect = 4e-33, Method: Compositional matrix adjust.
+ Identities = 56/96 (58%), Positives = 73/96 (76%), Gaps = 3/96 (3%)
+
+Query  3   KVTFTVEKGSNEKHLAVLVKYE--GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+           KVTF VEKGS+ K L + +KY   GDT+AEVELR+HGS+EW  +TK +G +W   S +PL
+Sbjct  2   KVTFKVEKGSDPKKLVLDIKYTRPGDTLAEVELRQHGSEEWEPLTK-KGNLWEVKSSKPL  60
+
+Query  61  QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            GPFNFRF+++ GM+NVFD+V+P  + IG TY PEE
+Sbjct  61  TGPFNFRFMSKGGMRNVFDEVIPTAFKIGTTYTPEE  96
+
+
+> sp|P14948|MPAL3_LOLPR Pollen allergen Lol p 3 OS=Lolium perenne 
+OX=4522 PE=1 SV=1
+Length=97
+
+ Score = 114 bits (284),  Expect = 3e-32, Method: Compositional matrix adjust.
+ Identities = 56/95 (59%), Positives = 71/95 (75%), Gaps = 3/95 (3%)
+
+Query  3   KVTFTVEKGSNEKHLAVLVKYE--GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+           KV  TVEKGS+ K L + +KY   GDT+AEVELR+HGS+EW  MTK +G +W   S +PL
+Sbjct  2   KVDLTVEKGSDAKTLVLNIKYTRPGDTLAEVELRQHGSEEWEPMTK-KGNLWEVKSAKPL  60
+
+Query  61  QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            GP NFRFL++ GMKNVFD+V+P  +T+G TY PE
+Sbjct  61  TGPMNFRFLSKGGMKNVFDEVIPTAFTVGKTYTPE  95
+
+
+> sp|Q8H7T4|EXB10_ORYSJ Expansin-B10 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB10 PE=2 SV=1
+Length=267
+
+ Score = 87.0 bits (214),  Expect = 1e-20, Method: Compositional matrix adjust.
+ Identities = 44/95 (46%), Positives = 60/95 (63%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VEKGSN  + AVLVKY G    + +VEL+E GS+EW  + +  G +W  D+ +PL
+Sbjct  169  KVTFHVEKGSNPNYFAVLVKYVGGDGDVVKVELKEKGSEEWKPLNESWGAIWRIDTPKPL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ R  TE   K V +DV+P+ +   A Y  E
+Sbjct  229  KGPFSLRVTTESDQKLVANDVIPDNWKANALYKSE  263
+
+
+> sp|Q40638|EXPB1_ORYSJ Expansin-B1 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB1a PE=1 SV=2
+Length=267
+
+ Score = 83.2 bits (204),  Expect = 3e-19, Method: Compositional matrix adjust.
+ Identities = 40/93 (43%), Positives = 62/93 (67%), Gaps = 4/93 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            K+TF +EK SN  +LA+LVKY   +GD + EVE++E GS+EW A+ +  G +W  D+ +P
+Sbjct  169  KITFHIEKASNPNYLALLVKYVAGDGDVV-EVEIKEKGSEEWKALKESWGAIWRIDTPKP  227
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            L+GPF+ R  TE G K + +D +P+ +   + Y
+Sbjct  228  LKGPFSVRVTTEGGEKIIAEDAIPDGWKADSVY  260
+
+
+> sp|P14946|MPAL1_LOLPR Pollen allergen Lol p 1 OS=Lolium perenne 
+OX=4522 PE=1 SV=2
+Length=263
+
+ Score = 82.4 bits (202),  Expect = 7e-19, Method: Compositional matrix adjust.
+ Identities = 41/94 (44%), Positives = 61/94 (65%), Gaps = 4/94 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            K TF VEK SN  +LA+LVKY   +GD +A V+++E G D+W+ + +  G VW  D+ + 
+Sbjct  169  KPTFHVEKASNPNYLAILVKYVDGDGDVVA-VDIKEKGKDKWIELKESWGAVWRIDTPDK  227
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+            L GPF  R+ TE G K+ F+DV+PE +    +Y+
+Sbjct  228  LTGPFTVRYTTEGGTKSEFEDVIPEGWKADTSYS  261
+
+
+> sp|P43213|MPAP1_PHLPR Pollen allergen Phl p 1 OS=Phleum pratense 
+OX=15957 GN=PHLPI PE=1 SV=1
+Length=263
+
+ Score = 81.6 bits (200),  Expect = 1e-18, Method: Compositional matrix adjust.
+ Identities = 41/93 (44%), Positives = 60/93 (65%), Gaps = 4/93 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            KVTF VEKGSN  +LA+LVKY   +GD +A V+++E G D+W+ + +  G +W  D+ + 
+Sbjct  169  KVTFHVEKGSNPNYLALLVKYVNGDGDVVA-VDIKEKGKDKWIELKESWGAIWRIDTPDK  227
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            L GPF  R+ TE G K   +DV+PE +    +Y
+Sbjct  228  LTGPFTVRYTTEGGTKTEAEDVIPEGWKADTSY  260
+
+
+> sp|Q41260|MPAP1_PHAAQ Major pollen allergen Pha a 1 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=269
+
+ Score = 80.1 bits (196),  Expect = 4e-18, Method: Compositional matrix adjust.
+ Identities = 40/87 (46%), Positives = 58/87 (67%), Gaps = 4/87 (5%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            K TF VEKGSN  +LA+LVKY   +GD +A V+++E G D+W+ + +  G +W  D+ + 
+Sbjct  175  KPTFHVEKGSNPNYLALLVKYVDGDGDVVA-VDIKEKGKDKWIELKESWGAIWRIDTPDK  233
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKY  86
+            L GPF  R+ TE G K  F+DV+PE +
+Sbjct  234  LTGPFTVRYTTEGGTKAEFEDVIPEGW  260
+
+
+> sp|Q1ZYQ8|EXB10_MAIZE Expansin-B10 OS=Zea mays OX=4577 GN=EXPB10 
+PE=1 SV=2
+Length=270
+
+ Score = 79.7 bits (195),  Expect = 6e-18, Method: Compositional matrix adjust.
+ Identities = 40/93 (43%), Positives = 58/93 (62%), Gaps = 4/93 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            KVTF +EKG    +LA+LVKY   +GD +A V+++E GSD +  +    G +W  DS++P
+Sbjct  176  KVTFHLEKGCGPNYLALLVKYVDGDGDIVA-VDVKEKGSDTYEPLKHSWGAIWRKDSDKP  234
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            L+GP   R  TE G K+V+DDV+P  +     Y
+Sbjct  235  LKGPLTVRLTTEGGTKSVYDDVIPANWKANTAY  267
+
+
+> sp|P43216|MPAH1_HOLLA Major pollen allergen Hol l 1 OS=Holcus 
+lanatus OX=29679 PE=1 SV=1
+Length=265
+
+ Score = 79.0 bits (193),  Expect = 1e-17, Method: Compositional matrix adjust.
+ Identities = 41/93 (44%), Positives = 58/93 (62%), Gaps = 4/93 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            K TF VEKGSN  +LA+LVKY   +GD +A V+++E G D+W+ + +  G VW  D+ + 
+Sbjct  171  KPTFHVEKGSNPNYLALLVKYIDGDGDVVA-VDIKEKGKDKWIELKESWGAVWRVDTPDK  229
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            L GPF  R+ TE G K   +DV+PE +     Y
+Sbjct  230  LTGPFTVRYTTEGGTKGEAEDVIPEGWKADTAY  262
+
+
+> sp|O04701|MPAC1_CYNDA Major pollen allergen Cyn d 1 OS=Cynodon 
+dactylon OX=28909 GN=CYND1 PE=1 SV=1
+Length=246
+
+ Score = 78.6 bits (192),  Expect = 2e-17, Method: Compositional matrix adjust.
+ Identities = 38/92 (41%), Positives = 57/92 (62%), Gaps = 2/92 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+TF +EKGSN+ +LA+LVKY  GD  +  V+++   SDE++ M    G +W  D ++PL
+Sbjct  147  KITFHIEKGSNDHYLALLVKYAAGDGNIVAVDIKPRDSDEFIPMKSSWGAIWRIDPKKPL  206
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            +GPF+ R  +E G   V DDV+P  +     Y
+Sbjct  207  KGPFSIRLTSEGGAHLVQDDVIPANWKPDTVY  238
+
+
+> sp|P0C1Y5|EXB11_MAIZE Expansin-B11 OS=Zea mays OX=4577 GN=EXPB11 
+PE=1 SV=1
+Length=269
+
+ Score = 77.8 bits (190),  Expect = 3e-17, Method: Compositional matrix adjust.
+ Identities = 39/93 (42%), Positives = 58/93 (62%), Gaps = 4/93 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            KVTF +EKG N  +LA+LVKY   +GD +A V+++E GSD +  +    G +W  DS++P
+Sbjct  175  KVTFHLEKGCNPNYLALLVKYVDGDGDIVA-VDIKEKGSDTYEPLKHSWGAIWRKDSDKP  233
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            ++GP   +  TE G K V+DDV+P  +     Y
+Sbjct  234  IKGPITVQLTTEGGTKTVYDDVIPAGWKPNTAY  266
+
+
+> sp|Q7XCG7|EXPB9_ORYSJ Expansin-B9 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB9 PE=2 SV=1
+Length=269
+
+ Score = 74.7 bits (182),  Expect = 4e-16, Method: Compositional matrix adjust.
+ Identities = 38/92 (41%), Positives = 52/92 (57%), Gaps = 2/92 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VEKGSN  +LAVLVK+  D   + +++L+E G   W  M    G +W  D+  PL
+Sbjct  171  KVTFHVEKGSNPNYLAVLVKFVADDGDVIQMDLQEAGLPAWRPMKLSWGAIWRMDTATPL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            + PF+ R  TE G   +  DV+P  +   A Y
+Sbjct  231  KAPFSIRVTTESGKSLIAKDVIPVNWMPDAIY  262
+
+
+> sp|P58738|EXPB1_MAIZE Expansin-B1 OS=Zea mays OX=4577 GN=EXPB1 
+PE=1 SV=2
+Length=269
+
+ Score = 72.4 bits (176),  Expect = 2e-15, Method: Compositional matrix adjust.
+ Identities = 35/92 (38%), Positives = 52/92 (57%), Gaps = 2/92 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+ F +EKG N  +LAVLVKY  D   +  +E+++  S EW  M    G +W  D+ + L
+Sbjct  171  KIVFHIEKGCNPNYLAVLVKYVADDGDIVLMEIQDKLSAEWKPMKLSWGAIWRMDTAKAL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            +GPF+ R  +E G K +  DV+P  +   A Y
+Sbjct  231  KGPFSIRLTSESGKKVIAKDVIPANWRPDAVY  262
+
+
+> sp|Q07154|EXPB9_MAIZE Expansin-B9 OS=Zea mays OX=4577 GN=EXPB9 
+PE=1 SV=2
+Length=269
+
+ Score = 68.9 bits (167),  Expect = 4e-14, Method: Compositional matrix adjust.
+ Identities = 32/92 (35%), Positives = 52/92 (57%), Gaps = 2/92 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+ F +EKG N  ++AVLVK+  D   +  +E+++  S EW  M    G +W  D+ + L
+Sbjct  171  KIVFHIEKGCNPNYVAVLVKFVADDGDIVLMEIQDKLSAEWKPMKLSWGAIWRMDTAKAL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            +GPF+ R  +E G K +  D++P  +   A Y
+Sbjct  231  KGPFSIRLTSESGKKVIAKDIIPANWRPDAVY  262
+
+
+> sp|Q336T5|EXPB3_ORYSJ Expansin-B3 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB3 PE=2 SV=2
+Length=268
+
+ Score = 68.9 bits (167),  Expect = 4e-14, Method: Compositional matrix adjust.
+ Identities = 38/92 (41%), Positives = 50/92 (54%), Gaps = 2/92 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VE+GSN  + AVLV+YE GD  + +V+L E  S  W  M +  G +W  DS   L
+Sbjct  169  KVTFHVEEGSNPVYFAVLVEYEDGDGDVVQVDLMEANSQSWTPMRESWGSIWRLDSNHRL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+              PF+ R   E G + V   V+P  +   A Y
+Sbjct  229  TAPFSLRITNESGKQLVASQVIPANWAPMAVY  260
+
+
+> sp|Q9SHY6|EXPB2_ARATH Putative expansin-B2 OS=Arabidopsis thaliana 
+OX=3702 GN=EXPB2 PE=3 SV=2
+Length=273
+
+ Score = 67.8 bits (164),  Expect = 1e-13, Method: Compositional matrix adjust.
+ Identities = 37/93 (40%), Positives = 53/93 (57%), Gaps = 4/93 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKY-EGDT-MAEVELREH-GSDEWVAMTKGEGGVWTFDSEEPL  60
+            VTF V+KGSN    AVLV Y  GD  +  +EL++   SD+W++M++  G VW  D   PL
+Sbjct  175  VTFQVDKGSNANSFAVLVAYVNGDGEIGRIELKQALDSDKWLSMSQSWGAVWKLDVSSPL  234
+
+Query  61   QGPFNFRFLT-EKGMKNVFDDVVPEKYTIGATY  92
+            + P + R  + E G   V  +V+P  +  GA Y
+Sbjct  235  RAPLSLRVTSLESGKTVVASNVIPANWQPGAIY  267
+
+
+> sp|Q7XT40|EXB15_ORYSJ Expansin-B15 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB15 PE=3 SV=2
+Length=264
+
+ Score = 67.0 bits (162),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 36/93 (39%), Positives = 52/93 (56%), Gaps = 3/93 (3%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GDT-MAEVELREHGSDE-WVAMTKGEGGVWTFDSEEP  59
+            K+TF V+ GSN  + AVLVKYE GD  ++ VEL + G+   W  M +  G VW  ++   
+Sbjct  166  KLTFVVDVGSNPNYFAVLVKYENGDGDLSGVELMQTGAGAAWTQMQQSWGAVWKLNAGSA  225
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            LQ PF+ R  +  G   V  +V+P  +  G +Y
+Sbjct  226  LQAPFSIRLTSSSGKTLVASNVIPSGWKPGMSY  258
+
+
+> sp|Q9LD07|EXPB7_ORYSJ Expansin-B7 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB7 PE=2 SV=1
+Length=327
+
+ Score = 65.5 bits (158),  Expect = 1e-12, Method: Composition-based stats.
+ Identities = 38/102 (37%), Positives = 54/102 (53%), Gaps = 12/102 (12%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREH-----GSDE-----WVAMTKGEGGV  51
+            VTF VE+GSN  ++A+LV+YE GD  + +V+L E      G D      W  M +  G +
+Sbjct  220  VTFHVEQGSNPVYMAILVEYENGDGDVVQVDLMESRYSTGGVDGTPTGVWTPMRESWGSI  279
+
+Query  52   WTFDSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+            W  D+  PLQGPF+ R   E G   + D V+P  +     Y+
+Sbjct  280  WRLDTNHPLQGPFSLRITNESGKTLIADQVIPADWQPNTVYS  321
+
+
+> sp|Q10T32|EXPB8_ORYSJ Expansin-B8 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB8 PE=2 SV=1
+Length=276
+
+ Score = 65.1 bits (157),  Expect = 1e-12, Method: Compositional matrix adjust.
+ Identities = 38/89 (43%), Positives = 54/89 (61%), Gaps = 4/89 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GDT-MAEVELREHGSD--EWVAMTKGEGGVWTFDSEE  58
+            KV F VE+GS+  +LAVLV+YE GD  +A+V+L+E G+    W  M +  G VW  DS  
+Sbjct  175  KVGFHVEEGSSPVYLAVLVEYENGDGDVAQVDLKEAGAGGGRWTPMRESWGSVWRLDSNH  234
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYT  87
+             L+ PF+ R  ++ G   V  DV+P  +T
+Sbjct  235  RLRAPFSIRIRSDSGKTLVAPDVIPLNWT  263
+
+
+> sp|Q946J4|EXB13_ORYSJ Expansin-B13 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB13 PE=3 SV=2
+Length=228
+
+ Score = 62.8 bits (151),  Expect = 5e-12, Method: Compositional matrix adjust.
+ Identities = 30/86 (35%), Positives = 51/86 (59%), Gaps = 1/86 (1%)
+
+Query  7    TVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNF  66
+             + K   ++ L   V  +GD + EVE++E GS+EW A+ +  G +W  D+ +PL+GPF+ 
+Sbjct  137  AMAKDGKDEELLKYVAGDGDVV-EVEIKEKGSEEWKALKESWGAIWRIDTPKPLKGPFSV  195
+
+Query  67   RFLTEKGMKNVFDDVVPEKYTIGATY  92
+            R  TE G K + +D +P+ +   + Y
+Sbjct  196  RVTTEGGEKIIAEDAIPDGWKADSVY  221
+
+
+> sp|Q5W6Z9|EXB18_ORYSJ Expansin-B18 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB18 PE=2 SV=1
+Length=264
+
+ Score = 63.2 bits (152),  Expect = 6e-12, Method: Compositional matrix adjust.
+ Identities = 33/92 (36%), Positives = 50/92 (54%), Gaps = 3/92 (3%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYE-GDT-MAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPL  60
+            +TF V+ GSN  + AVLVKYE GD  ++ ++L + G+   W  M +  G VW   +   L
+Sbjct  167  LTFAVDAGSNPSYFAVLVKYENGDGDLSGMDLMQTGAGAAWTPMQQSWGAVWKLSAGAAL  226
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            Q P + R  +  G   V  +V+P  +  GA+Y
+Sbjct  227  QAPLSIRLTSSSGKTLVASNVIPSGWKPGASY  258
+
+
+> sp|Q10G40|EXB12_ORYSJ Expansin-B12 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB12 PE=2 SV=2
+Length=313
+
+ Score = 62.4 bits (150),  Expect = 2e-11, Method: Composition-based stats.
+ Identities = 33/96 (34%), Positives = 50/96 (52%), Gaps = 5/96 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHG---SDEWVAMTKGEGGVWTFDSEE  58
+            +TF V+ GSN  +LA+LV+Y+ +   +A V++   G   S  W+ M +  G VW  +S  
+Sbjct  178  LTFVVDSGSNPNYLALLVEYDDNDSDLAAVDIMPIGAGASGSWIPMQQSWGAVWRLNSGS  237
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+             LQGPF+ R     G   V  + +P  +  G  Y P
+Sbjct  238  ALQGPFSVRLTFSSGQMFVASNAIPAGWNPGMAYQP  273
+
+
+> sp|Q7XCA7|EXPB6_ORYSJ Expansin-B6 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB6 PE=2 SV=1
+Length=275
+
+ Score = 61.2 bits (147),  Expect = 3e-11, Method: Compositional matrix adjust.
+ Identities = 35/99 (35%), Positives = 53/99 (54%), Gaps = 10/99 (10%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE---GDTMAEVELREHGSDE------WVAMTKGEGGVWT  53
+            K+ F VE+GSN  + AVLV+YE   GD + +V+L E  S        W  M +  G +W 
+Sbjct  171  KINFHVEEGSNPVYFAVLVEYEDLDGDVV-QVDLMESKSAYGGATGVWTPMRESWGSIWR  229
+
+Query  54   FDSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+             DS   LQ PF+ R  ++ G   V ++V+P  ++  + Y
+Sbjct  230  LDSNHRLQAPFSLRIRSDSGKTLVANNVIPANWSPNSNY  268
+
+
+> sp|Q7XT39|EXPB5_ORYSJ Expansin-B5 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB5 PE=2 SV=2
+Length=275
+
+ Score = 60.8 bits (146),  Expect = 5e-11, Method: Compositional matrix adjust.
+ Identities = 33/95 (35%), Positives = 48/95 (51%), Gaps = 5/95 (5%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSE--  57
+             V F V+ GSN  +LA+LV+Y   +GD  A   +   G   W AM +  G  W  +S   
+Sbjct  173  NVAFKVDAGSNPYYLAILVQYANGDGDLAAVHIMEARGGGGWKAMQQSWGATWRLNSNTG  232
+
+Query  58   EPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            +PL  PF+ R  +  G   V ++V+P  +  G TY
+Sbjct  233  KPLSPPFSIRLTSGSGKVLVANNVIPSGWQAGLTY  267
+
+
+> sp|O24230|EXPB2_ORYSJ Expansin-B2 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB2 PE=2 SV=2
+Length=261
+
+ Score = 57.8 bits (138),  Expect = 5e-10, Method: Compositional matrix adjust.
+ Identities = 30/96 (31%), Positives = 48/96 (50%), Gaps = 7/96 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREH-----GSDEWVAMTKGEGGVWTFDS  56
+            V F VE GSN  +LAVLV++     T+ ++++ E       +  W  M +  G +W  D+
+Sbjct  159  VNFHVEAGSNPVYLAVLVEFANKDGTVVQLDVMESLPSGKPTRVWTPMRRSWGSIWRLDA  218
+
+Query  57   EEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+               LQGPF+ R ++E G   +   V+P  +     Y
+Sbjct  219  NHRLQGPFSLRMVSESGQTVIAHQVIPANWRANTNY  254
+
+
+> sp|Q6H677|EXB14_ORYSJ Putative expansin-B14 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXPB14 PE=3 SV=1
+Length=273
+
+ Score = 57.0 bits (136),  Expect = 1e-09, Method: Compositional matrix adjust.
+ Identities = 35/96 (36%), Positives = 52/96 (54%), Gaps = 7/96 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYE-GDT-MAEVELREHGSDE----WVAMTKGEGGVWTFDS-  56
+            + F V+ GSN+ +LAVLV+ E GD  ++ V+L + G       W AM +  G VW ++S 
+Sbjct  168  IAFRVDAGSNQYYLAVLVEDEDGDGDLSAVDLMQSGGSGGGGSWAAMQQSWGAVWKYNSG  227
+
+Query  57   EEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+              PLQ P + R  +  G   V  +V+P  +  G TY
+Sbjct  228  PAPLQAPMSIRLTSGSGRTLVASNVIPAGWQPGGTY  263
+
+
+> sp|Q94LR4|EXPB4_ORYSJ Expansin-B4 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB4 PE=2 SV=1
+Length=286
+
+ Score = 55.5 bits (132),  Expect = 5e-09, Method: Compositional matrix adjust.
+ Identities = 34/92 (37%), Positives = 50/92 (54%), Gaps = 8/92 (9%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELRE----HG--SDEWVAMTKGEGGVWTF  54
+            K+ F VE+ SN  + AVLV+YE GD  + +V+L E    HG  +  W  M +  G +W  
+Sbjct  182  KIGFHVEEYSNPVYFAVLVEYEDGDGDVVQVDLMESKTAHGPPTGRWTPMRESWGSIWRL  241
+
+Query  55   DSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKY  86
+            D+   LQ PF+ R   E G   V ++V+P  +
+Sbjct  242  DTNHRLQAPFSIRIRNESGKTLVANNVIPANW  273
+
+
+> sp|Q6H676|EXB11_ORYSJ Expansin-B11 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB11 PE=2 SV=1
+Length=292
+
+ Score = 53.5 bits (127),  Expect = 3e-08, Method: Composition-based stats.
+ Identities = 30/94 (32%), Positives = 52/94 (55%), Gaps = 7/94 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYE---GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSE--E  58
+            + F V++G+N  +  VL+++E   GD  A V+L E G   W  M +  G +W ++S   +
+Sbjct  194  IAFRVDQGANPFYFEVLIEFEDGDGDLNA-VDLMEAGCG-WTPMVQNWGALWRYNSNTGK  251
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+             L+ PF+ R  ++ G   V ++V+P  +  G TY
+Sbjct  252  ALKAPFSLRLTSDSGKVLVANNVIPASWKPGVTY  285
+
+
+> sp|Q41183|MPAG2_DACGL Pollen allergen Dac g 2 (Fragment) OS=Dactylis 
+glomerata OX=4509 PE=1 SV=1
+Length=36
+
+ Score = 47.8 bits (112),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 24/33 (73%), Positives = 30/33 (91%), Gaps = 2/33 (6%)
+
+Query  4   VTFTVEKGSNEKHLAVLVKY--EGDTMAEVELR  34
+           VTFTVEKGS+EK+LA+ +KY  EGD+MAEVEL+
+Sbjct  4   VTFTVEKGSDEKNLALSIKYNKEGDSMAEVELK  36
+
+
+> sp|Q9M203|EXPB5_ARATH Expansin-B5 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB5 PE=2 SV=2
+Length=264
+
+ Score = 49.7 bits (117),  Expect = 5e-07, Method: Compositional matrix adjust.
+ Identities = 29/92 (32%), Positives = 49/92 (53%), Gaps = 4/92 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            +   V+ G+N  +++  VK+  GD   A +E++  G  +++ M +    VW      PL+
+Sbjct  161  IAIHVDAGANPYYMSFAVKFANGDGNFACIEVQPAGG-QYMKMEEMRSAVWRLSPGVPLK  219
+
+Query  62   GPFNFRFLTE-KGMKNVFDDVVPEKYTIGATY  92
+            GPFN R  +   G K +   V+PEK++ GA Y
+Sbjct  220  GPFNIRLTSAVSGKKIIAKGVIPEKWSPGAIY  251
+
+
+> sp|F4IBJ3|EXB6L_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB6 PE=3 SV=1
+Length=223
+
+ Score = 48.1 bits (113),  Expect = 1e-06, Method: Compositional matrix adjust.
+ Identities = 28/93 (30%), Positives = 49/93 (53%), Gaps = 4/93 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GDT-MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE GD  +A +E+ +    E++ M +    VW   S  PL
+Sbjct  125  NIAFRMDPGANPYYISFVVEYENGDGDLAYIEI-QPADGEFIPMQEMRSAVWKISSGSPL  183
+
+Query  61   QGPFNFRFLTEKGMKNVFD-DVVPEKYTIGATY  92
+             GPFN R  + +  K V   +V+P  +    TY
+Sbjct  184  TGPFNIRLTSAESHKVVLAYNVIPANWKPNETY  216
+
+
+> sp|Q9SHD1|EXPB4_ARATH Expansin-B4 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB4 PE=2 SV=1
+Length=259
+
+ Score = 44.3 bits (103),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 24/87 (28%), Positives = 49/87 (56%), Gaps = 4/87 (5%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GDT-MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE GD  ++ VE++  G   +++M +    VW  +S   L
+Sbjct  162  NIVFRMDAGANPYYISFVVEYENGDGDLSNVEIQPAGG-SFISMQEMRSAVWKVNSGSAL  220
+
+Query  61   QGPFNFRFLTEKGMKNVFD-DVVPEKY  86
+            +GPFN R  + +  K +   +V+P  +
+Sbjct  221  RGPFNIRLTSGESHKVIVAYNVIPANW  247
+
+
+> sp|Q6IVU7|EXPB6_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB6 PE=3 SV=1
+Length=259
+
+ Score = 44.3 bits (103),  Expect = 3e-05, Method: Compositional matrix adjust.
+ Identities = 27/93 (29%), Positives = 48/93 (52%), Gaps = 4/93 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GDT-MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE GD  +A  E++  G   ++ M +    VW  +S  PL
+Sbjct  161  NIAFRMDPGANPYYISFVVEYENGDGDLAYTEIQPAGG-TFIPMQEMRSAVWKVNSGSPL  219
+
+Query  61   QGPFNFRFLTEKGMKNVFD-DVVPEKYTIGATY  92
+             GPFN R  + +    V   +V+P  +    TY
+Sbjct  220  TGPFNIRLTSAESHNVVVAYNVIPANWKPNETY  252
+
+
+> sp|O23547|EXLB1_ARATH Expansin-like B1 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLB1 PE=2 SV=2
+Length=250
+
+ Score = 40.8 bits (94),  Expect = 5e-04, Method: Compositional matrix adjust.
+ Identities = 29/89 (33%), Positives = 43/89 (48%), Gaps = 7/89 (8%)
+
+Query  9    EKGSNEKHLAVLVKYEG--DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNF  66
+            EK  N  +LA+LV Y G  + +  VE+ +    EW  M +  G V   D + P +G    
+Sbjct  157  EKSYNPHYLAILVLYVGGVNDILAVEVWQEDCKEWRRMRRVFGAV--HDLQNPPRGTLTL  214
+
+Query  67   RFLT--EKGMKNVFD-DVVPEKYTIGATY  92
+            RFL     G+  +   + +P  +T GATY
+Sbjct  215  RFLVYGSAGINWIQSPNAIPADWTAGATY  243
+
+
+> sp|Q9SVE5|EXLA2_ARATH Expansin-like A2 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLA2 PE=2 SV=1
+Length=265
+
+ Score = 40.0 bits (92),  Expect = 8e-04, Method: Compositional matrix adjust.
+ Identities = 29/96 (30%), Positives = 45/96 (47%), Gaps = 8/96 (8%)
+
+Query  3    KVTFTVEKGS-NEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            K+   VE+ S N  +LA+ + Y+G    +  + + + GS  W  MT+  G VW  D    
+Sbjct  149  KMNVRVEESSKNPNYLAIKLLYQGGQTEVVAIYIAQVGSSHWSYMTRSHGAVWVTDKVP-  207
+
+Query  60   LQGPFNFRFLTEKGM--KNVFDD-VVPEKYTIGATY  92
+              G   FRF+   G   K V+   V+P  +  G +Y
+Sbjct  208  -NGALQFRFVVTAGYDGKMVWSQRVLPANWEAGKSY  242
+
+
+
+Lambda      K        H        a         alpha
+   0.312    0.133    0.397    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0410    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4887054120
+Results from round 2
+
+
+Query= 1BMW
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q8H7T4|EXB10_ORYSJ Expansin-B10 OS=Oryza sativa subsp. japon...  155     2e-46
+  sp|O04701|MPAC1_CYNDA Major pollen allergen Cyn d 1 OS=Cynodon ...  149     3e-44
+  sp|P43214|MPAP2_PHLPR Pollen allergen Phl p 2 OS=Phleum pratens...  144     9e-44
+  sp|Q336T5|EXPB3_ORYSJ Expansin-B3 OS=Oryza sativa subsp. japoni...  147     3e-43
+  sp|Q40638|EXPB1_ORYSJ Expansin-B1 OS=Oryza sativa subsp. japoni...  147     4e-43
+  sp|P58738|EXPB1_MAIZE Expansin-B1 OS=Zea mays OX=4577 GN=EXPB1 ...  146     7e-43
+  sp|Q7XCG7|EXPB9_ORYSJ Expansin-B9 OS=Oryza sativa subsp. japoni...  142     2e-41
+  sp|Q1ZYQ8|EXB10_MAIZE Expansin-B10 OS=Zea mays OX=4577 GN=EXPB1...  142     3e-41
+  sp|Q07154|EXPB9_MAIZE Expansin-B9 OS=Zea mays OX=4577 GN=EXPB9 ...  142     3e-41
+  sp|P43213|MPAP1_PHLPR Pollen allergen Phl p 1 OS=Phleum pratens...  141     7e-41
+  sp|P0C1Y5|EXB11_MAIZE Expansin-B11 OS=Zea mays OX=4577 GN=EXPB1...  140     1e-40
+  sp|Q7XCA7|EXPB6_ORYSJ Expansin-B6 OS=Oryza sativa subsp. japoni...  140     1e-40
+  sp|Q9LD07|EXPB7_ORYSJ Expansin-B7 OS=Oryza sativa subsp. japoni...  141     2e-40
+  sp|P14946|MPAL1_LOLPR Pollen allergen Lol p 1 OS=Lolium perenne...  139     3e-40
+  sp|P43216|MPAH1_HOLLA Major pollen allergen Hol l 1 OS=Holcus l...  139     3e-40
+  sp|Q10T32|EXPB8_ORYSJ Expansin-B8 OS=Oryza sativa subsp. japoni...  138     6e-40
+  sp|Q10G40|EXB12_ORYSJ Expansin-B12 OS=Oryza sativa subsp. japon...  139     7e-40
+  sp|Q94LR4|EXPB4_ORYSJ Expansin-B4 OS=Oryza sativa subsp. japoni...  138     1e-39
+  sp|Q7XT40|EXB15_ORYSJ Expansin-B15 OS=Oryza sativa subsp. japon...  137     2e-39
+  sp|Q41260|MPAP1_PHAAQ Major pollen allergen Pha a 1 OS=Phalaris...  136     5e-39
+  sp|Q7XT39|EXPB5_ORYSJ Expansin-B5 OS=Oryza sativa subsp. japoni...  135     2e-38
+  sp|Q5W6Z9|EXB18_ORYSJ Expansin-B18 OS=Oryza sativa subsp. japon...  134     2e-38
+  sp|O24230|EXPB2_ORYSJ Expansin-B2 OS=Oryza sativa subsp. japoni...  133     9e-38
+  sp|P93124|MPAG3_DACGL Pollen allergen Dac g 3 (Fragment) OS=Dac...  125     7e-37
+  sp|Q6H676|EXB11_ORYSJ Expansin-B11 OS=Oryza sativa subsp. japon...  130     1e-36
+  sp|P14947|MPAL2_LOLPR Pollen allergen Lol p 2-A OS=Lolium peren...  123     4e-36
+  sp|F4IBJ3|EXB6L_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=37...  125     2e-35
+  sp|Q9SHY6|EXPB2_ARATH Putative expansin-B2 OS=Arabidopsis thali...  126     3e-35
+  sp|Q6IVU7|EXPB6_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=37...  124     1e-34
+  sp|Q946J4|EXB13_ORYSJ Expansin-B13 OS=Oryza sativa subsp. japon...  123     2e-34
+  sp|Q6H677|EXB14_ORYSJ Putative expansin-B14 OS=Oryza sativa sub...  122     1e-33
+  sp|P14948|MPAL3_LOLPR Pollen allergen Lol p 3 OS=Lolium perenne...  116     2e-33
+  sp|Q9SHD1|EXPB4_ARATH Expansin-B4 OS=Arabidopsis thaliana OX=37...  120     7e-33
+  sp|Q9M203|EXPB5_ARATH Expansin-B5 OS=Arabidopsis thaliana OX=37...  115     5e-31
+  sp|Q9SVE5|EXLA2_ARATH Expansin-like A2 OS=Arabidopsis thaliana ...  97.0    3e-24
+  sp|O23547|EXLB1_ARATH Expansin-like B1 OS=Arabidopsis thaliana ...  94.3    3e-23
+  sp|Q41183|MPAG2_DACGL Pollen allergen Dac g 2 (Fragment) OS=Dac...  40.7    8e-05
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q9SKU2|EXPB1_ARATH Expansin-B1 OS=Arabidopsis thaliana OX=37...  101     1e-25
+  sp|Q9M0I2|EXPB3_ARATH Expansin-B3 OS=Arabidopsis thaliana OX=37...  100     2e-25
+  sp|Q7X6J9|EXB17_ORYSJ Expansin-B17 OS=Oryza sativa subsp. japon...  96.6    6e-24
+  sp|Q9LZT5|EXLA3_ARATH Expansin-like A3 OS=Arabidopsis thaliana ...  86.9    2e-20
+  sp|Q0DZ85|EXB16_ORYSJ Expansin-B16 OS=Oryza sativa subsp. japon...  86.6    3e-20
+  sp|Q9LZT4|EXLA1_ARATH Expansin-like A1 OS=Arabidopsis thaliana ...  84.2    2e-19
+  sp|Q8H274|EXLA3_ORYSJ Expansin-like A3 OS=Oryza sativa subsp. j...  81.6    1e-18
+  sp|Q10S70|EXLA1_ORYSJ Expansin-like A1 OS=Oryza sativa subsp. j...  73.5    1e-15
+  sp|Q7XCL0|EXLA2_ORYSJ Expansin-like A2 OS=Oryza sativa subsp. j...  70.0    2e-14
+  sp|Q850K7|EXLB1_ORYSJ Expansin-like B1 OS=Oryza sativa subsp. j...  65.8    5e-13
+  sp|Q5Z980|EXLA4_ORYSJ Expansin-like A4 OS=Oryza sativa subsp. j...  66.5    6e-13
+  sp|Q4PR51|EXP14_ORYSJ Expansin-A14 OS=Oryza sativa subsp. japon...  63.1    5e-12
+  sp|Q9XHX0|EXPA8_ORYSJ Expansin-A8 OS=Oryza sativa subsp. japoni...  62.7    6e-12
+  sp|Q7XUD0|EXP10_ORYSJ Expansin-A10 OS=Oryza sativa subsp. japon...  62.3    1e-11
+  sp|O22874|EXPA8_ARATH Expansin-A8 OS=Arabidopsis thaliana OX=37...  60.4    5e-11
+  sp|Q9FL77|EXP25_ARATH Expansin-A25 OS=Arabidopsis thaliana OX=3...  60.4    6e-11
+  sp|Q38866|EXPA2_ARATH Expansin-A2 OS=Arabidopsis thaliana OX=37...  60.0    6e-11
+  sp|Q7G6Z5|EXP19_ORYSJ Expansin-A19 OS=Oryza sativa subsp. japon...  60.0    8e-11
+  sp|Q4PR44|EXP22_ORYSJ Expansin-A22 OS=Oryza sativa subsp. japon...  60.4    8e-11
+  sp|Q9FL79|EXP23_ARATH Expansin-A23 OS=Arabidopsis thaliana OX=3...  60.0    9e-11
+  sp|Q4PR42|EXP24_ORYSJ Expansin-A24 OS=Oryza sativa subsp. japon...  60.0    1e-10
+  sp|Q10RK1|EXP20_ORYSJ Expansin-A20 OS=Oryza sativa subsp. japon...  58.8    2e-10
+  sp|Q4PR48|EXP18_ORYSJ Expansin-A18 OS=Oryza sativa subsp. japon...  58.8    2e-10
+  sp|Q9FL78|EXP26_ARATH Putative expansin-A26 OS=Arabidopsis thal...  58.8    2e-10
+  sp|Q4PNY1|EXP11_ORYSJ Expansin-A11 OS=Oryza sativa subsp. japon...  58.1    4e-10
+  sp|Q4PR43|EXP23_ORYSJ Expansin-A23 OS=Oryza sativa subsp. japon...  58.1    4e-10
+  sp|Q4PR40|EXP28_ORYSJ Expansin-A28 OS=Oryza sativa subsp. japon...  57.7    5e-10
+  sp|Q7XE35|EXP27_ORYSJ Putative expansin-A27 OS=Oryza sativa sub...  57.7    5e-10
+  sp|Q7G6Z2|EXP12_ORYSJ Expansin-A12 OS=Oryza sativa subsp. japon...  56.9    1e-09
+  sp|Q9FL76|EXP24_ARATH Expansin-A24 OS=Arabidopsis thaliana OX=3...  57.3    1e-09
+  sp|Q9FMA0|EXP14_ARATH Expansin-A14 OS=Arabidopsis thaliana OX=3...  56.1    2e-09
+  sp|Q2QP13|EXP26_ORYSJ Expansin-A26 OS=Oryza sativa subsp. japon...  56.5    2e-09
+  sp|Q4PR53|EXPA9_ORYSJ Expansin-A9 OS=Oryza sativa subsp. japoni...  55.7    2e-09
+  sp|Q9FL80|EXP22_ARATH Expansin-A22 OS=Arabidopsis thaliana OX=3...  55.0    6e-09
+  sp|Q6ZGU9|EXPA5_ORYSJ Expansin-A5 OS=Oryza sativa subsp. japoni...  55.0    7e-09
+  sp|Q7XWU8|EXPA1_ORYSJ Expansin-A1 OS=Oryza sativa subsp. japoni...  54.2    1e-08
+  sp|Q9LNU3|EXP11_ARATH Expansin-A11 OS=Arabidopsis thaliana OX=3...  53.8    1e-08
+  sp|Q4PR52|EXP13_ORYSJ Expansin-A13 OS=Oryza sativa subsp. japon...  53.8    1e-08
+  sp|Q40636|EXPA2_ORYSJ Expansin-A2 OS=Oryza sativa subsp. japoni...  53.4    2e-08
+  sp|Q9FL81|EXP21_ARATH Expansin-A21 OS=Arabidopsis thaliana OX=3...  53.4    2e-08
+  sp|Q9LDJ3|EXP12_ARATH Expansin-A12 OS=Arabidopsis thaliana OX=3...  52.3    5e-08
+  sp|O80622|EXP15_ARATH Expansin-A15 OS=Arabidopsis thaliana OX=3...  52.3    6e-08
+  sp|Q4PR41|EXP25_ORYSJ Expansin-A25 OS=Oryza sativa subsp. japon...  51.9    6e-08
+  sp|Q8W2X8|EXP30_ORYSJ Putative expansin-A30 OS=Oryza sativa sub...  51.5    1e-07
+  sp|Q9C554|EXPA1_ARATH Expansin-A1 OS=Arabidopsis thaliana OX=37...  51.5    1e-07
+  sp|Q69XV9|EXP16_ORYSJ Expansin-A16 OS=Oryza sativa subsp. japon...  51.5    1e-07
+  sp|Q4PR39|EXP29_ORYSJ Expansin-A29 OS=Oryza sativa subsp. japon...  51.5    1e-07
+  sp|Q6YYW5|EXP32_ORYSJ Expansin-A32 OS=Oryza sativa subsp. japon...  51.5    1e-07
+  sp|Q9SZM1|EXP20_ARATH Expansin-A20 OS=Arabidopsis thaliana OX=3...  51.1    1e-07
+  sp|Q9M9P0|EXP13_ARATH Expansin-A13 OS=Arabidopsis thaliana OX=3...  51.1    1e-07
+  sp|Q9M4X7|EXPA6_ORYSJ Expansin-A6 OS=Oryza sativa subsp. japoni...  51.1    2e-07
+  sp|Q9LDR9|EXP10_ARATH Expansin-A10 OS=Arabidopsis thaliana OX=3...  50.0    3e-07
+  sp|Q9LN94|EXPA7_ARATH Expansin-A7 OS=Arabidopsis thaliana OX=37...  50.0    4e-07
+  sp|Q40637|EXPA3_ORYSJ Expansin-A3 OS=Oryza sativa subsp. japoni...  49.2    6e-07
+  sp|Q9ZSI1|EXP17_ARATH Putative expansin-A17 OS=Arabidopsis thal...  48.8    1e-06
+  sp|Q9LZ99|EXPA9_ARATH Expansin-A9 OS=Arabidopsis thaliana OX=37...  48.4    1e-06
+  sp|Q75I75|EXP31_ORYSJ Expansin-A31 OS=Oryza sativa subsp. japon...  48.0    1e-06
+  sp|Q10KN4|EXP21_ORYSJ Expansin-A21 OS=Oryza sativa subsp. japon...  46.9    4e-06
+  sp|Q9LQ07|EXP18_ARATH Expansin-A18 OS=Arabidopsis thaliana OX=3...  46.9    4e-06
+  sp|Q0DHB7|EXPA4_ORYSJ Expansin-A4 OS=Oryza sativa subsp. japoni...  45.3    1e-05
+  sp|A2Y5R6|EXPA4_ORYSI Expansin-A4 OS=Oryza sativa subsp. indica...  45.3    1e-05
+  sp|Q4PR50|EXP15_ORYSJ Expansin-A15 OS=Oryza sativa subsp. japon...  45.3    1e-05
+  sp|Q38864|EXPA5_ARATH Expansin-A5 OS=Arabidopsis thaliana OX=37...  44.6    2e-05
+  sp|Q9M2S9|EXP16_ARATH Expansin-A16 OS=Arabidopsis thaliana OX=3...  43.0    8e-05
+  sp|P0C1Y4|EXP33_ORYSJ Expansin-A33 OS=Oryza sativa subsp. japon...  42.6    1e-04
+  sp|Q852A1|EXPA7_ORYSJ Expansin-A7 OS=Oryza sativa subsp. japoni...  42.6    1e-04
+  sp|O80932|EXPA3_ARATH Expansin-A3 OS=Arabidopsis thaliana OX=37...  42.3    2e-04
+  sp|O48818|EXPA4_ARATH Expansin-A4 OS=Arabidopsis thaliana OX=37...  41.5    3e-04
+  sp|Q86AV4|EXPL5_DICDI Expansin-like protein 5 OS=Dictyostelium ...  39.9    8e-04
+  sp|Q38865|EXPA6_ARATH Expansin-A6 OS=Arabidopsis thaliana OX=37...  38.0    0.005
+
+
+> sp|Q8H7T4|EXB10_ORYSJ Expansin-B10 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB10 PE=2 SV=1
+Length=267
+
+ Score = 155 bits (392),  Expect = 2e-46, Method: Composition-based stats.
+ Identities = 44/95 (46%), Positives = 60/95 (63%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VEKGSN  + AVLVKY G    + +VEL+E GS+EW  + +  G +W  D+ +PL
+Sbjct  169  KVTFHVEKGSNPNYFAVLVKYVGGDGDVVKVELKEKGSEEWKPLNESWGAIWRIDTPKPL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ R  TE   K V +DV+P+ +   A Y  E
+Sbjct  229  KGPFSLRVTTESDQKLVANDVIPDNWKANALYKSE  263
+
+
+> sp|O04701|MPAC1_CYNDA Major pollen allergen Cyn d 1 OS=Cynodon 
+dactylon OX=28909 GN=CYND1 PE=1 SV=1
+Length=246
+
+ Score = 149 bits (376),  Expect = 3e-44, Method: Composition-based stats.
+ Identities = 38/95 (40%), Positives = 58/95 (61%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GDT-MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+TF +EKGSN+ +LA+LVKY  GD  +  V+++   SDE++ M    G +W  D ++PL
+Sbjct  147  KITFHIEKGSNDHYLALLVKYAAGDGNIVAVDIKPRDSDEFIPMKSSWGAIWRIDPKKPL  206
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ R  +E G   V DDV+P  +     Y  +
+Sbjct  207  KGPFSIRLTSEGGAHLVQDDVIPANWKPDTVYTSK  241
+
+
+> sp|P43214|MPAP2_PHLPR Pollen allergen Phl p 2 OS=Phleum pratense 
+OX=15957 GN=PHLPII PE=1 SV=1
+Length=122
+
+ Score = 144 bits (363),  Expect = 9e-44, Method: Composition-based stats.
+ Identities = 96/96 (100%), Positives = 96/96 (100%), Gaps = 0/96 (0%)
+
+Query  1    VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL
+Sbjct  27   VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  86
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE
+Sbjct  87   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  122
+
+
+> sp|Q336T5|EXPB3_ORYSJ Expansin-B3 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB3 PE=2 SV=2
+Length=268
+
+ Score = 147 bits (371),  Expect = 3e-43, Method: Composition-based stats.
+ Identities = 37/94 (39%), Positives = 50/94 (53%), Gaps = 2/94 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VE+GSN  + AVLV+Y +GD  + +V+L E  S  W  M +  G +W  DS   L
+Sbjct  169  KVTFHVEEGSNPVYFAVLVEYEDGDGDVVQVDLMEANSQSWTPMRESWGSIWRLDSNHRL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+              PF+ R   E G + V   V+P  +   A Y  
+Sbjct  229  TAPFSLRITNESGKQLVASQVIPANWAPMAVYRS  262
+
+
+> sp|Q40638|EXPB1_ORYSJ Expansin-B1 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB1a PE=1 SV=2
+Length=267
+
+ Score = 147 bits (370),  Expect = 4e-43, Method: Composition-based stats.
+ Identities = 40/94 (43%), Positives = 61/94 (65%), Gaps = 2/94 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+TF +EK SN  +LA+LVKY  GD  + EVE++E GS+EW A+ +  G +W  D+ +PL
+Sbjct  169  KITFHIEKASNPNYLALLVKYVAGDGDVVEVEIKEKGSEEWKALKESWGAIWRIDTPKPL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            +GPF+ R  TE G K + +D +P+ +   + Y  
+Sbjct  229  KGPFSVRVTTEGGEKIIAEDAIPDGWKADSVYKS  262
+
+
+> sp|P58738|EXPB1_MAIZE Expansin-B1 OS=Zea mays OX=4577 GN=EXPB1 
+PE=1 SV=2
+Length=269
+
+ Score = 146 bits (368),  Expect = 7e-43, Method: Composition-based stats.
+ Identities = 35/94 (37%), Positives = 52/94 (55%), Gaps = 2/94 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+ F +EKG N  +LAVLVKY  D   +  +E+++  S EW  M    G +W  D+ + L
+Sbjct  171  KIVFHIEKGCNPNYLAVLVKYVADDGDIVLMEIQDKLSAEWKPMKLSWGAIWRMDTAKAL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            +GPF+ R  +E G K +  DV+P  +   A Y  
+Sbjct  231  KGPFSIRLTSESGKKVIAKDVIPANWRPDAVYTS  264
+
+
+> sp|Q7XCG7|EXPB9_ORYSJ Expansin-B9 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB9 PE=2 SV=1
+Length=269
+
+ Score = 142 bits (359),  Expect = 2e-41, Method: Composition-based stats.
+ Identities = 38/92 (41%), Positives = 52/92 (57%), Gaps = 2/92 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VEKGSN  +LAVLVK+  D   + +++L+E G   W  M    G +W  D+  PL
+Sbjct  171  KVTFHVEKGSNPNYLAVLVKFVADDGDVIQMDLQEAGLPAWRPMKLSWGAIWRMDTATPL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            + PF+ R  TE G   +  DV+P  +   A Y
+Sbjct  231  KAPFSIRVTTESGKSLIAKDVIPVNWMPDAIY  262
+
+
+> sp|Q1ZYQ8|EXB10_MAIZE Expansin-B10 OS=Zea mays OX=4577 GN=EXPB10 
+PE=1 SV=2
+Length=270
+
+ Score = 142 bits (358),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 39/95 (41%), Positives = 58/95 (61%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF +EKG    +LA+LVKY +GD  +  V+++E GSD +  +    G +W  DS++PL
+Sbjct  176  KVTFHLEKGCGPNYLALLVKYVDGDGDIVAVDVKEKGSDTYEPLKHSWGAIWRKDSDKPL  235
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GP   R  TE G K+V+DDV+P  +     Y  +
+Sbjct  236  KGPLTVRLTTEGGTKSVYDDVIPANWKANTAYTAK  270
+
+
+> sp|Q07154|EXPB9_MAIZE Expansin-B9 OS=Zea mays OX=4577 GN=EXPB9 
+PE=1 SV=2
+Length=269
+
+ Score = 142 bits (358),  Expect = 3e-41, Method: Composition-based stats.
+ Identities = 32/94 (34%), Positives = 52/94 (55%), Gaps = 2/94 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+ F +EKG N  ++AVLVK+  D   +  +E+++  S EW  M    G +W  D+ + L
+Sbjct  171  KIVFHIEKGCNPNYVAVLVKFVADDGDIVLMEIQDKLSAEWKPMKLSWGAIWRMDTAKAL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            +GPF+ R  +E G K +  D++P  +   A Y  
+Sbjct  231  KGPFSIRLTSESGKKVIAKDIIPANWRPDAVYTS  264
+
+
+> sp|P43213|MPAP1_PHLPR Pollen allergen Phl p 1 OS=Phleum pratense 
+OX=15957 GN=PHLPI PE=1 SV=1
+Length=263
+
+ Score = 141 bits (355),  Expect = 7e-41, Method: Composition-based stats.
+ Identities = 40/95 (42%), Positives = 59/95 (62%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VEKGSN  +LA+LVKY  GD  +  V+++E G D+W+ + +  G +W  D+ + L
+Sbjct  169  KVTFHVEKGSNPNYLALLVKYVNGDGDVVAVDIKEKGKDKWIELKESWGAIWRIDTPDKL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+             GPF  R+ TE G K   +DV+PE +    +Y  +
+Sbjct  229  TGPFTVRYTTEGGTKTEAEDVIPEGWKADTSYESK  263
+
+
+> sp|P0C1Y5|EXB11_MAIZE Expansin-B11 OS=Zea mays OX=4577 GN=EXPB11 
+PE=1 SV=1
+Length=269
+
+ Score = 140 bits (354),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 38/95 (40%), Positives = 58/95 (61%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF +EKG N  +LA+LVKY +GD  +  V+++E GSD +  +    G +W  DS++P+
+Sbjct  175  KVTFHLEKGCNPNYLALLVKYVDGDGDIVAVDIKEKGSDTYEPLKHSWGAIWRKDSDKPI  234
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GP   +  TE G K V+DDV+P  +     Y  +
+Sbjct  235  KGPITVQLTTEGGTKTVYDDVIPAGWKPNTAYTAK  269
+
+
+> sp|Q7XCA7|EXPB6_ORYSJ Expansin-B6 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB6 PE=2 SV=1
+Length=275
+
+ Score = 140 bits (354),  Expect = 1e-40, Method: Composition-based stats.
+ Identities = 33/100 (33%), Positives = 51/100 (51%), Gaps = 8/100 (8%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEG--DTMAEVELREHGS------DEWVAMTKGEGGVWTF  54
+            K+ F VE+GSN  + AVLV+YE     + +V+L E  S        W  M +  G +W  
+Sbjct  171  KINFHVEEGSNPVYFAVLVEYEDLDGDVVQVDLMESKSAYGGATGVWTPMRESWGSIWRL  230
+
+Query  55   DSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            DS   LQ PF+ R  ++ G   V ++V+P  ++  + Y  
+Sbjct  231  DSNHRLQAPFSLRIRSDSGKTLVANNVIPANWSPNSNYRS  270
+
+
+> sp|Q9LD07|EXPB7_ORYSJ Expansin-B7 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB7 PE=2 SV=1
+Length=327
+
+ Score = 141 bits (356),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 36/103 (35%), Positives = 53/103 (51%), Gaps = 12/103 (12%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREH----------GSDEWVAMTKGEGGV  51
+            VTF VE+GSN  ++A+LV+YE GD  + +V+L E            +  W  M +  G +
+Sbjct  220  VTFHVEQGSNPVYMAILVEYENGDGDVVQVDLMESRYSTGGVDGTPTGVWTPMRESWGSI  279
+
+Query  52   WTFDSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            W  D+  PLQGPF+ R   E G   + D V+P  +     Y+ 
+Sbjct  280  WRLDTNHPLQGPFSLRITNESGKTLIADQVIPADWQPNTVYSS  322
+
+
+> sp|P14946|MPAL1_LOLPR Pollen allergen Lol p 1 OS=Lolium perenne 
+OX=4522 PE=1 SV=2
+Length=263
+
+ Score = 139 bits (351),  Expect = 3e-40, Method: Composition-based stats.
+ Identities = 40/95 (42%), Positives = 61/95 (64%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K TF VEK SN  +LA+LVKY +GD  +  V+++E G D+W+ + +  G VW  D+ + L
+Sbjct  169  KPTFHVEKASNPNYLAILVKYVDGDGDVVAVDIKEKGKDKWIELKESWGAVWRIDTPDKL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+             GPF  R+ TE G K+ F+DV+PE +    +Y+ +
+Sbjct  229  TGPFTVRYTTEGGTKSEFEDVIPEGWKADTSYSAK  263
+
+
+> sp|P43216|MPAH1_HOLLA Major pollen allergen Hol l 1 OS=Holcus 
+lanatus OX=29679 PE=1 SV=1
+Length=265
+
+ Score = 139 bits (350),  Expect = 3e-40, Method: Composition-based stats.
+ Identities = 40/95 (42%), Positives = 58/95 (61%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K TF VEKGSN  +LA+LVKY +GD  +  V+++E G D+W+ + +  G VW  D+ + L
+Sbjct  171  KPTFHVEKGSNPNYLALLVKYIDGDGDVVAVDIKEKGKDKWIELKESWGAVWRVDTPDKL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+             GPF  R+ TE G K   +DV+PE +     Y  +
+Sbjct  231  TGPFTVRYTTEGGTKGEAEDVIPEGWKADTAYEAK  265
+
+
+> sp|Q10T32|EXPB8_ORYSJ Expansin-B8 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB8 PE=2 SV=1
+Length=276
+
+ Score = 138 bits (349),  Expect = 6e-40, Method: Composition-based stats.
+ Identities = 39/96 (41%), Positives = 54/96 (56%), Gaps = 4/96 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHG--SDEWVAMTKGEGGVWTFDSEE  58
+            KV F VE+GS+  +LAVLV+YE GD  +A+V+L+E G     W  M +  G VW  DS  
+Sbjct  175  KVGFHVEEGSSPVYLAVLVEYENGDGDVAQVDLKEAGAGGGRWTPMRESWGSVWRLDSNH  234
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+             L+ PF+ R  ++ G   V  DV+P  +T    Y  
+Sbjct  235  RLRAPFSIRIRSDSGKTLVAPDVIPLNWTPNTFYRS  270
+
+
+> sp|Q10G40|EXB12_ORYSJ Expansin-B12 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB12 PE=2 SV=2
+Length=313
+
+ Score = 139 bits (351),  Expect = 7e-40, Method: Composition-based stats.
+ Identities = 33/96 (34%), Positives = 50/96 (52%), Gaps = 5/96 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHG---SDEWVAMTKGEGGVWTFDSEE  58
+            +TF V+ GSN  +LA+LV+Y+ +   +A V++   G   S  W+ M +  G VW  +S  
+Sbjct  178  LTFVVDSGSNPNYLALLVEYDDNDSDLAAVDIMPIGAGASGSWIPMQQSWGAVWRLNSGS  237
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+             LQGPF+ R     G   V  + +P  +  G  Y P
+Sbjct  238  ALQGPFSVRLTFSSGQMFVASNAIPAGWNPGMAYQP  273
+
+
+> sp|Q94LR4|EXPB4_ORYSJ Expansin-B4 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB4 PE=2 SV=1
+Length=286
+
+ Score = 138 bits (347),  Expect = 1e-39, Method: Composition-based stats.
+ Identities = 32/100 (32%), Positives = 49/100 (49%), Gaps = 8/100 (8%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREH------GSDEWVAMTKGEGGVWTF  54
+            K+ F VE+ SN  + AVLV+Y +GD  + +V+L E        +  W  M +  G +W  
+Sbjct  182  KIGFHVEEYSNPVYFAVLVEYEDGDGDVVQVDLMESKTAHGPPTGRWTPMRESWGSIWRL  241
+
+Query  55   DSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            D+   LQ PF+ R   E G   V ++V+P  +     Y  
+Sbjct  242  DTNHRLQAPFSIRIRNESGKTLVANNVIPANWRPNTFYRS  281
+
+
+> sp|Q7XT40|EXB15_ORYSJ Expansin-B15 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB15 PE=3 SV=2
+Length=264
+
+ Score = 137 bits (344),  Expect = 2e-39, Method: Composition-based stats.
+ Identities = 36/93 (39%), Positives = 52/93 (56%), Gaps = 3/93 (3%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEP  59
+            K+TF V+ GSN  + AVLVKYE GD  ++ VEL + G+   W  M +  G VW  ++   
+Sbjct  166  KLTFVVDVGSNPNYFAVLVKYENGDGDLSGVELMQTGAGAAWTQMQQSWGAVWKLNAGSA  225
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            LQ PF+ R  +  G   V  +V+P  +  G +Y
+Sbjct  226  LQAPFSIRLTSSSGKTLVASNVIPSGWKPGMSY  258
+
+
+> sp|Q41260|MPAP1_PHAAQ Major pollen allergen Pha a 1 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=269
+
+ Score = 136 bits (343),  Expect = 5e-39, Method: Composition-based stats.
+ Identities = 39/90 (43%), Positives = 57/90 (63%), Gaps = 2/90 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K TF VEKGSN  +LA+LVKY +GD  +  V+++E G D+W+ + +  G +W  D+ + L
+Sbjct  175  KPTFHVEKGSNPNYLALLVKYVDGDGDVVAVDIKEKGKDKWIELKESWGAIWRIDTPDKL  234
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGA  90
+             GPF  R+ TE G K  F+DV+PE +    
+Sbjct  235  TGPFTVRYTTEGGTKAEFEDVIPEGWKADT  264
+
+
+> sp|Q7XT39|EXPB5_ORYSJ Expansin-B5 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB5 PE=2 SV=2
+Length=275
+
+ Score = 135 bits (340),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 33/97 (34%), Positives = 48/97 (49%), Gaps = 5/97 (5%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY---EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSE--  57
+             V F V+ GSN  +LA+LV+Y   +GD  A   +   G   W AM +  G  W  +S   
+Sbjct  173  NVAFKVDAGSNPYYLAILVQYANGDGDLAAVHIMEARGGGGWKAMQQSWGATWRLNSNTG  232
+
+Query  58   EPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            +PL  PF+ R  +  G   V ++V+P  +  G TY  
+Sbjct  233  KPLSPPFSIRLTSGSGKVLVANNVIPSGWQAGLTYRS  269
+
+
+> sp|Q5W6Z9|EXB18_ORYSJ Expansin-B18 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB18 PE=2 SV=1
+Length=264
+
+ Score = 134 bits (338),  Expect = 2e-38, Method: Composition-based stats.
+ Identities = 33/94 (35%), Positives = 50/94 (53%), Gaps = 3/94 (3%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPL  60
+            +TF V+ GSN  + AVLVKYE GD  ++ ++L + G+   W  M +  G VW   +   L
+Sbjct  167  LTFAVDAGSNPSYFAVLVKYENGDGDLSGMDLMQTGAGAAWTPMQQSWGAVWKLSAGAAL  226
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            Q P + R  +  G   V  +V+P  +  GA+Y  
+Sbjct  227  QAPLSIRLTSSSGKTLVASNVIPSGWKPGASYTS  260
+
+
+> sp|O24230|EXPB2_ORYSJ Expansin-B2 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB2 PE=2 SV=2
+Length=261
+
+ Score = 133 bits (334),  Expect = 9e-38, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 48/99 (48%), Gaps = 7/99 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDT--MAEVELRE-----HGSDEWVAMTKGEGGVWTFDS  56
+            V F VE GSN  +LAVLV++      + ++++ E       +  W  M +  G +W  D+
+Sbjct  159  VNFHVEAGSNPVYLAVLVEFANKDGTVVQLDVMESLPSGKPTRVWTPMRRSWGSIWRLDA  218
+
+Query  57   EEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+               LQGPF+ R ++E G   +   V+P  +     Y  +
+Sbjct  219  NHRLQGPFSLRMVSESGQTVIAHQVIPANWRANTNYGSK  257
+
+
+> sp|P93124|MPAG3_DACGL Pollen allergen Dac g 3 (Fragment) OS=Dactylis 
+glomerata OX=4509 PE=1 SV=1
+Length=96
+
+ Score = 125 bits (315),  Expect = 7e-37, Method: Composition-based stats.
+ Identities = 56/96 (58%), Positives = 73/96 (76%), Gaps = 3/96 (3%)
+
+Query  3   KVTFTVEKGSNEKHLAVLVKYE--GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+           KVTF VEKGS+ K L + +KY   GDT+AEVELR+HGS+EW  +TK +G +W   S +PL
+Sbjct  2   KVTFKVEKGSDPKKLVLDIKYTRPGDTLAEVELRQHGSEEWEPLTK-KGNLWEVKSSKPL  60
+
+Query  61  QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            GPFNFRF+++ GM+NVFD+V+P  + IG TY PEE
+Sbjct  61  TGPFNFRFMSKGGMRNVFDEVIPTAFKIGTTYTPEE  96
+
+
+> sp|Q6H676|EXB11_ORYSJ Expansin-B11 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB11 PE=2 SV=1
+Length=292
+
+ Score = 130 bits (328),  Expect = 1e-36, Method: Composition-based stats.
+ Identities = 28/96 (29%), Positives = 52/96 (54%), Gaps = 5/96 (5%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSE--E  58
+             + F V++G+N  +  VL+++ +GD  +  V+L E G   W  M +  G +W ++S   +
+Sbjct  193  NIAFRVDQGANPFYFEVLIEFEDGDGDLNAVDLMEAGCG-WTPMVQNWGALWRYNSNTGK  251
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+             L+ PF+ R  ++ G   V ++V+P  +  G TY  
+Sbjct  252  ALKAPFSLRLTSDSGKVLVANNVIPASWKPGVTYRS  287
+
+
+> sp|P14947|MPAL2_LOLPR Pollen allergen Lol p 2-A OS=Lolium perenne 
+OX=4522 PE=1 SV=1
+Length=97
+
+ Score = 123 bits (310),  Expect = 4e-36, Method: Composition-based stats.
+ Identities = 61/94 (65%), Positives = 78/94 (83%), Gaps = 2/94 (2%)
+
+Query  4   VTFTVEKGSNEKHLAVLVKY--EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+           V FTVEKGS+EK+LA+ +KY  EGD+MAEVEL+EHGS+EW+A+ K   GVW   S++PL+
+Sbjct  4   VEFTVEKGSDEKNLALSIKYNKEGDSMAEVELKEHGSNEWLALKKNGDGVWEIKSDKPLK  63
+
+Query  62  GPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+           GPFNFRF++EKGM+NVFDDVVP  + +G TY PE
+Sbjct  64  GPFNFRFVSEKGMRNVFDDVVPADFKVGTTYKPE  97
+
+
+> sp|F4IBJ3|EXB6L_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB6 PE=3 SV=1
+Length=223
+
+ Score = 125 bits (315),  Expect = 2e-35, Method: Composition-based stats.
+ Identities = 28/95 (29%), Positives = 49/95 (52%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE GD  +A +E++     E++ M +    VW   S  PL
+Sbjct  125  NIAFRMDPGANPYYISFVVEYENGDGDLAYIEIQPAD-GEFIPMQEMRSAVWKISSGSPL  183
+
+Query  61   QGPFNFRFLTEKGMKNV-FDDVVPEKYTIGATYAP  94
+             GPFN R  + +  K V   +V+P  +    TY  
+Sbjct  184  TGPFNIRLTSAESHKVVLAYNVIPANWKPNETYRS  218
+
+
+> sp|Q9SHY6|EXPB2_ARATH Putative expansin-B2 OS=Arabidopsis thaliana 
+OX=3702 GN=EXPB2 PE=3 SV=2
+Length=273
+
+ Score = 126 bits (317),  Expect = 3e-35, Method: Composition-based stats.
+ Identities = 37/95 (39%), Positives = 53/95 (56%), Gaps = 4/95 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKY-EGDT-MAEVELREH-GSDEWVAMTKGEGGVWTFDSEEPL  60
+            VTF V+KGSN    AVLV Y  GD  +  +EL++   SD+W++M++  G VW  D   PL
+Sbjct  175  VTFQVDKGSNANSFAVLVAYVNGDGEIGRIELKQALDSDKWLSMSQSWGAVWKLDVSSPL  234
+
+Query  61   QGPFNFRFLT-EKGMKNVFDDVVPEKYTIGATYAP  94
+            + P + R  + E G   V  +V+P  +  GA Y  
+Sbjct  235  RAPLSLRVTSLESGKTVVASNVIPANWQPGAIYKS  269
+
+
+> sp|Q6IVU7|EXPB6_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB6 PE=3 SV=1
+Length=259
+
+ Score = 124 bits (312),  Expect = 1e-34, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 48/95 (51%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE GD  +A  E++  G   ++ M +    VW  +S  PL
+Sbjct  161  NIAFRMDPGANPYYISFVVEYENGDGDLAYTEIQPAG-GTFIPMQEMRSAVWKVNSGSPL  219
+
+Query  61   QGPFNFRFLTEKGMK-NVFDDVVPEKYTIGATYAP  94
+             GPFN R  + +     V  +V+P  +    TY  
+Sbjct  220  TGPFNIRLTSAESHNVVVAYNVIPANWKPNETYRS  254
+
+
+> sp|Q946J4|EXB13_ORYSJ Expansin-B13 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB13 PE=3 SV=2
+Length=228
+
+ Score = 123 bits (308),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 30/88 (34%), Positives = 51/88 (58%), Gaps = 1/88 (1%)
+
+Query  7    TVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNF  66
+             + K   ++ L   V  +GD + EVE++E GS+EW A+ +  G +W  D+ +PL+GPF+ 
+Sbjct  137  AMAKDGKDEELLKYVAGDGD-VVEVEIKEKGSEEWKALKESWGAIWRIDTPKPLKGPFSV  195
+
+Query  67   RFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            R  TE G K + +D +P+ +   + Y  
+Sbjct  196  RVTTEGGEKIIAEDAIPDGWKADSVYKS  223
+
+
+> sp|Q6H677|EXB14_ORYSJ Putative expansin-B14 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXPB14 PE=3 SV=1
+Length=273
+
+ Score = 122 bits (306),  Expect = 1e-33, Method: Composition-based stats.
+ Identities = 34/98 (35%), Positives = 52/98 (53%), Gaps = 7/98 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDE----WVAMTKGEGGVWTFDSE  57
+            + F V+ GSN+ +LAVLV+  +GD  ++ V+L + G       W AM +  G VW ++S 
+Sbjct  168  IAFRVDAGSNQYYLAVLVEDEDGDGDLSAVDLMQSGGSGGGGSWAAMQQSWGAVWKYNSG  227
+
+Query  58   E-PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+              PLQ P + R  +  G   V  +V+P  +  G TY  
+Sbjct  228  PAPLQAPMSIRLTSGSGRTLVASNVIPAGWQPGGTYRS  265
+
+
+> sp|P14948|MPAL3_LOLPR Pollen allergen Lol p 3 OS=Lolium perenne 
+OX=4522 PE=1 SV=1
+Length=97
+
+ Score = 116 bits (292),  Expect = 2e-33, Method: Composition-based stats.
+ Identities = 56/95 (59%), Positives = 71/95 (75%), Gaps = 3/95 (3%)
+
+Query  3   KVTFTVEKGSNEKHLAVLVKYE--GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+           KV  TVEKGS+ K L + +KY   GDT+AEVELR+HGS+EW  MTK +G +W   S +PL
+Sbjct  2   KVDLTVEKGSDAKTLVLNIKYTRPGDTLAEVELRQHGSEEWEPMTK-KGNLWEVKSAKPL  60
+
+Query  61  QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            GP NFRFL++ GMKNVFD+V+P  +T+G TY PE
+Sbjct  61  TGPMNFRFLSKGGMKNVFDEVIPTAFTVGKTYTPE  95
+
+
+> sp|Q9SHD1|EXPB4_ARATH Expansin-B4 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB4 PE=2 SV=1
+Length=259
+
+ Score = 120 bits (300),  Expect = 7e-33, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 51/95 (54%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYE-GD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE GD  ++ VE++  G   +++M +    VW  +S   L
+Sbjct  162  NIVFRMDAGANPYYISFVVEYENGDGDLSNVEIQPAG-GSFISMQEMRSAVWKVNSGSAL  220
+
+Query  61   QGPFNFRFLTEKGMKN-VFDDVVPEKYTIGATYAP  94
+            +GPFN R  + +  K  V  +V+P  +    +Y  
+Sbjct  221  RGPFNIRLTSGESHKVIVAYNVIPANWKPDESYRS  255
+
+
+> sp|Q9M203|EXPB5_ARATH Expansin-B5 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB5 PE=2 SV=2
+Length=264
+
+ Score = 115 bits (288),  Expect = 5e-31, Method: Composition-based stats.
+ Identities = 31/99 (31%), Positives = 52/99 (53%), Gaps = 6/99 (6%)
+
+Query  2    PK--VTFTVEKGSNEKHLAVLVKY-EGDT-MAEVELREHGSDEWVAMTKGEGGVWTFDSE  57
+            PK  +   V+ G+N  +++  VK+  GD   A +E++  G  +++ M +    VW     
+Sbjct  157  PKTMIAIHVDAGANPYYMSFAVKFANGDGNFACIEVQPAG-GQYMKMEEMRSAVWRLSPG  215
+
+Query  58   EPLQGPFNFRFLTE-KGMKNVFDDVVPEKYTIGATYAPE  95
+             PL+GPFN R  +   G K +   V+PEK++ GA Y  +
+Sbjct  216  VPLKGPFNIRLTSAVSGKKIIAKGVIPEKWSPGAIYHSK  254
+
+
+> sp|Q9SKU2|EXPB1_ARATH Expansin-B1 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB1 PE=2 SV=1
+Length=271
+
+ Score = 101 bits (251),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 29/95 (31%), Positives = 46/95 (48%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F V  GS +  L++L++YE     +  + +R+ GS EW++M    G  W    E PL
+Sbjct  170  NIAFHVNAGSTDYWLSLLIEYEDGEGDIGSMHIRQAGSKEWISMKHIWGANWCI-VEGPL  228
+
+Query  61   QGPFNFRFLT-EKGMKNVFDDVVPEKYTIGATYAP  94
+            +GPF+ +  T          DV+P  +   ATY  
+Sbjct  229  KGPFSVKLTTLSNNKTLSATDVIPSNWVPKATYTS  263
+
+
+> sp|Q9M0I2|EXPB3_ARATH Expansin-B3 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB3 PE=2 SV=2
+Length=264
+
+ Score = 100 bits (250),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 29/95 (31%), Positives = 47/95 (49%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F V +GS +  L++LV++E     +  + +R+ G+ EW+ M    G  W      PL
+Sbjct  163  NIAFHVNEGSTDFWLSLLVEFEDGEGDIGSMHIRQAGAREWLEMKHVWGANWCI-IGGPL  221
+
+Query  61   QGPFNFRFLT-EKGMKNVFDDVVPEKYTIGATYAP  94
+            +GPF+ +  T   G      DVVP  +   ATY+ 
+Sbjct  222  KGPFSIKLTTLSAGKTLSATDVVPRNWAPKATYSS  256
+
+
+> sp|Q9SVE5|EXLA2_ARATH Expansin-like A2 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLA2 PE=2 SV=1
+Length=265
+
+ Score = 97.0 bits (240),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 29/96 (30%), Positives = 46/96 (48%), Gaps = 8/96 (8%)
+
+Query  3    KVTFTVEKGS-NEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            K+   VE+ S N  +LA+ + Y+G    +  + + + GS  W  MT+  G VW  D  + 
+Sbjct  149  KMNVRVEESSKNPNYLAIKLLYQGGQTEVVAIYIAQVGSSHWSYMTRSHGAVWVTD--KV  206
+
+Query  60   LQGPFNFRFLTEKGM--KNVFDD-VVPEKYTIGATY  92
+              G   FRF+   G   K V+   V+P  +  G +Y
+Sbjct  207  PNGALQFRFVVTAGYDGKMVWSQRVLPANWEAGKSY  242
+
+
+> sp|Q7X6J9|EXB17_ORYSJ Expansin-B17 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB17 PE=3 SV=2
+Length=278
+
+ Score = 96.6 bits (239),  Expect = 6e-24, Method: Composition-based stats.
+ Identities = 28/95 (29%), Positives = 44/95 (46%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F V +GS    L++LV++E     +  +++++  S EW+ M    G  W      PL
+Sbjct  177  NIAFRVNEGSTNFWLSLLVEFEDGQGDIGSMQIKQANSVEWLDMKHVWGATWCLVRG-PL  235
+
+Query  61   QGPFNFRFLTEKGMK-NVFDDVVPEKYTIGATYAP  94
+             GPF+ R  T    K     DV+P  +   ATY  
+Sbjct  236  VGPFSVRLTTLSAQKALTARDVIPRNWKPTATYTS  270
+
+
+> sp|O23547|EXLB1_ARATH Expansin-like B1 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLB1 PE=2 SV=2
+Length=250
+
+ Score = 94.3 bits (233),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 29/91 (32%), Positives = 43/91 (47%), Gaps = 7/91 (8%)
+
+Query  9    EKGSNEKHLAVLVKYEG--DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNF  66
+            EK  N  +LA+LV Y G  + +  VE+ +    EW  M +  G V   D + P +G    
+Sbjct  157  EKSYNPHYLAILVLYVGGVNDILAVEVWQEDCKEWRRMRRVFGAV--HDLQNPPRGTLTL  214
+
+Query  67   RFLT--EKGMKNVFD-DVVPEKYTIGATYAP  94
+            RFL     G+  +   + +P  +T GATY  
+Sbjct  215  RFLVYGSAGINWIQSPNAIPADWTAGATYDS  245
+
+
+> sp|Q9LZT5|EXLA3_ARATH Expansin-like A3 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLA3 PE=2 SV=1
+Length=263
+
+ Score = 86.9 bits (214),  Expect = 2e-20, Method: Composition-based stats.
+ Identities = 25/96 (26%), Positives = 43/96 (45%), Gaps = 8/96 (8%)
+
+Query  3    KVTFTVEKGSN-EKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             +   VE+ S    +LA+ + Y+G    +  +++   GS +W  M++  G VW  D  + 
+Sbjct  148  NLNVRVEEASKKPNYLAIKLLYQGGQTEVVGIDIAPVGSSQWSYMSRSHGAVWATD--KV  205
+
+Query  60   LQGPFNFRFLTEKGM--KNVFDD-VVPEKYTIGATY  92
+              G   F+F    G   K V+   V+P  +  G  Y
+Sbjct  206  PTGALQFKFTVTGGYDGKTVWSKRVLPANWNSGRIY  241
+
+
+> sp|Q0DZ85|EXB16_ORYSJ Expansin-B16 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB16 PE=3 SV=1
+Length=272
+
+ Score = 86.6 bits (213),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 29/95 (31%), Positives = 50/95 (53%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY-EGD-TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F V +GS    L++LV++ +GD  +  ++L++  S +W  M    G  W+  +  PL
+Sbjct  174  NIAFHVNEGSTTFWLSLLVEFEDGDGDIGSMQLKQANSAQWQDMKHIWGATWSL-TPGPL  232
+
+Query  61   QGPFNFRFLTEKGMKNV-FDDVVPEKYTIGATYAP  94
+             GPF+ R  T    + +   DV+P+ +T  ATY  
+Sbjct  233  VGPFSVRLTTLTTRQTLSAQDVIPKNWTPKATYTS  267
+
+
+> sp|Q9LZT4|EXLA1_ARATH Expansin-like A1 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLA1 PE=2 SV=1
+Length=265
+
+ Score = 84.2 bits (207),  Expect = 2e-19, Method: Composition-based stats.
+ Identities = 25/97 (26%), Positives = 43/97 (44%), Gaps = 9/97 (9%)
+
+Query  3    KVTFTVEKGSN-EKHLAVLVKYEGDT--MAEVELREHGSD-EWVAMTKGEGGVWTFDSEE  58
+             +   VE+ S    +L + + Y+G    +  +++ + GS   W  MT+  G VW  D  +
+Sbjct  148  NMNVRVEEASKKPNYLEIKLLYQGGQTEVVSIDIAQVGSSPNWGYMTRSHGAVWVTD--K  205
+
+Query  59   PLQGPFNFRFLTEKGM--KNVFDD-VVPEKYTIGATY  92
+               G   FRF+   G   K ++   V+P  +  G  Y
+Sbjct  206  VPTGAIQFRFVVTGGYDGKMIWSQSVLPSNWEAGKIY  242
+
+
+> sp|Q8H274|EXLA3_ORYSJ Expansin-like A3 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLA3 PE=2 SV=1
+Length=276
+
+ Score = 81.6 bits (200),  Expect = 1e-18, Method: Composition-based stats.
+ Identities = 28/97 (29%), Positives = 45/97 (46%), Gaps = 9/97 (9%)
+
+Query  3    KVTFTVEKGSN-EKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             ++  VE+ S    +L +   Y+G    +  V++ + GS +W  MT+  G VW+ D    
+Sbjct  159  NLSILVEEQSKRPNNLVIKFLYQGGQTDILAVDVAQVGSSDWRFMTRVYGPVWSID--RA  216
+
+Query  60   LQGPFNFRFLTEKGM--KNVFDD--VVPEKYTIGATY  92
+              GP  FR +   G   K V+ D  V+P  +  G  Y
+Sbjct  217  PNGPLQFRAVVTGGYDGKWVWADREVLPANWQPGQVY  253
+
+
+> sp|Q10S70|EXLA1_ORYSJ Expansin-like A1 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLA1 PE=2 SV=1
+Length=279
+
+ Score = 73.5 bits (179),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 25/96 (26%), Positives = 43/96 (45%), Gaps = 9/96 (9%)
+
+Query  4    VTFTVEKGS-NEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            ++  V++ S     L +   Y+G    +  V++ + GS  W  MT+  G  W+  +  P 
+Sbjct  163  LSVRVDERSRGPNELTISFLYQGGQTDIVAVDVAQVGSSSWKFMTREHGPSWSMANAPP-  221
+
+Query  61   QGPFNFRFLTEKGM--KNVFDD--VVPEKYTIGATY  92
+             GP   R +   G   K V+ D  V+P ++  G  Y
+Sbjct  222  -GPLQMRLVVTGGYDGKWVWADREVLPRRWRAGEVY  256
+
+
+> sp|Q7XCL0|EXLA2_ORYSJ Expansin-like A2 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLA2 PE=2 SV=1
+Length=275
+
+ Score = 70.0 bits (170),  Expect = 2e-14, Method: Composition-based stats.
+ Identities = 27/97 (28%), Positives = 45/97 (46%), Gaps = 9/97 (9%)
+
+Query  3    KVTFTVEKGSNE-KHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             ++  VE+ S   + L++   Y+G    +  V++   GS  W  MT+  G  W   + + 
+Sbjct  158  NLSIRVEEKSRPPRELSIRFLYQGGQTDIVAVDVATVGSSNWKFMTRDYGPAW--STAQA  215
+
+Query  60   LQGPFNFRFLTEKGM--KNVFDD--VVPEKYTIGATY  92
+              GP  FR +   G   K V+ D  V+P ++T G  Y
+Sbjct  216  PAGPLQFRVVVTGGYDGKWVWADGEVLPRRWTAGRVY  252
+
+
+> sp|Q850K7|EXLB1_ORYSJ Expansin-like B1 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLB1 PE=2 SV=2
+Length=256
+
+ Score = 65.8 bits (159),  Expect = 5e-13, Method: Composition-based stats.
+ Identities = 25/101 (25%), Positives = 43/101 (43%), Gaps = 11/101 (11%)
+
+Query  3    KVTFTVEKGSN-EKHLAVLVKYE--GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             + F + + SN   +L   + Y+     +  V+L E  +     +++  G VW   +  P
+Sbjct  151  NIVFKITESSNFPNYLEFEIWYQQGNQDIIAVQLCETVNLTCQLLSRTHGAVWA--AVSP  208
+
+Query  60   LQGPFNFRFLTEKG------MKNVFDDVVPEKYTIGATYAP  94
+              GP + R L   G         V  ++VP+ +T GATY  
+Sbjct  209  PSGPLSIRMLFSSGAPRGGDTWLVPTNIVPQNWTAGATYDS  249
+
+
+> sp|Q5Z980|EXLA4_ORYSJ Expansin-like A4 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLA4 PE=2 SV=1
+Length=313
+
+ Score = 66.5 bits (161),  Expect = 6e-13, Method: Composition-based stats.
+ Identities = 29/107 (27%), Positives = 44/107 (41%), Gaps = 19/107 (18%)
+
+Query  3    KVTFTVEKGS-NEKHLAVLVKYEGD--TMAEVELREHGS--------DEWVAMTKGEGG-  50
+            ++   VE+ S N  HLA+   Y+G    +A VE+ +  +          W  MT+ +G  
+Sbjct  175  RLAVRVEEASRNPTHLAIRFLYQGGQTDIAAVEIAQANATPPSSSYYSSWRYMTRRDGAP  234
+
+Query  51   -VWTFDSEEPLQGPFNFR--FLTEKGMKNVFDD--VVPEKYTIGATY  92
+             VWT  +     GP   R       G K +  D  V+P  +  G  Y
+Sbjct  235  GVWT--TSRAPVGPLRLRVVVTAGSGGKWLRSDGEVLPADWRPGEVY  279
+
+
+> sp|Q4PR51|EXP14_ORYSJ Expansin-A14 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA14 PE=2 SV=2
+Length=262
+
+ Score = 63.1 bits (152),  Expect = 5e-12, Method: Composition-based stats.
+ Identities = 17/71 (24%), Positives = 31/71 (44%), Gaps = 3/71 (4%)
+
+Query  26   DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMKNVFDDVVPE  84
+             ++  +++    S +W+ M +  G  W   S   L G   +FR     G   VF ++VP 
+Sbjct  190  GSIKSMDIMGSNSTDWMPMVRNWGANWH--SLSYLTGQTLSFRVTNMDGQTLVFKNIVPS  247
+
+Query  85   KYTIGATYAPE  95
+             +  G T+  +
+Sbjct  248  GWKFGQTFTSK  258
+
+
+> sp|Q9XHX0|EXPA8_ORYSJ Expansin-A8 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA8 PE=2 SV=1
+Length=251
+
+ Score = 62.7 bits (151),  Expect = 6e-12, Method: Composition-based stats.
+ Identities = 28/93 (30%), Positives = 39/93 (42%), Gaps = 6/93 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + F V   S      VLV   G + A  ++   GS   W+AM++  G  W   S   L G
+Sbjct  158  IRFAVNGHS--YFELVLVTNVGGSGAVAQMWIKGSGTGWMAMSRNWGANWQ--SNARLDG  213
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+               +FR   + G      DV P  ++ GATY  
+Sbjct  214  QALSFRVQADDGRVVTAADVAPAGWSFGATYTS  246
+
+
+> sp|Q7XUD0|EXP10_ORYSJ Expansin-A10 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA10 PE=2 SV=2
+Length=257
+
+ Score = 62.3 bits (150),  Expect = 1e-11, Method: Composition-based stats.
+ Identities = 25/95 (26%), Positives = 44/95 (46%), Gaps = 6/95 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            V F V   S    L VL+   G    +  V+++   S  W++M +  G +W  +S+   Q
+Sbjct  164  VRFAVAGRS--FFLTVLISNVGGAGDVRSVKIKGTESG-WLSMGRNWGQIWHINSDFRGQ  220
+
+Query  62   GPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+             P +F   +  G      +VVP+++  G TY  ++
+Sbjct  221  -PLSFELTSSDGKTLTNYNVVPKEWDFGKTYTGKQ  254
+
+
+> sp|O22874|EXPA8_ARATH Expansin-A8 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA8 PE=2 SV=1
+Length=253
+
+ Score = 60.4 bits (145),  Expect = 5e-11, Method: Composition-based stats.
+ Identities = 21/73 (29%), Positives = 32/73 (44%), Gaps = 2/73 (3%)
+
+Query  21   VKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNFRFLTEKGMKNVFDD  80
+            V   GD +  V ++   +  W AM++  G  W  +S    Q   +F+  T  G   V +D
+Sbjct  179  VGGAGD-VHAVSIKGSKTQSWQAMSRNWGQNWQSNSYMNDQS-LSFQVTTSDGRTLVSND  236
+
+Query  81   VVPEKYTIGATYA  93
+            V P  +  G TY 
+Sbjct  237  VAPSNWQFGQTYQ  249
+
+
+> sp|Q9FL77|EXP25_ARATH Expansin-A25 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA25 PE=2 SV=2
+Length=276
+
+ Score = 60.4 bits (145),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 24/89 (27%), Positives = 38/89 (43%), Gaps = 4/89 (4%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE--WVAMTKGEGGVWTFDSEEPLQGP  63
+               E   N   L +L  Y      +++L +   D+  W+ M K  G  WT       QG 
+Sbjct  184  VKFETKGNPYFLMIL-PYNVGGAGDIKLMQVKGDKTGWITMQKNWGQNWTTGVNLTGQG-  241
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+             +FR  T  G+   F++V+P  +  G T+
+Sbjct  242  ISFRVTTSDGVTKDFNNVMPNNWGFGQTF  270
+
+
+> sp|Q38866|EXPA2_ARATH Expansin-A2 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA2 PE=2 SV=2
+Length=255
+
+ Score = 60.0 bits (144),  Expect = 6e-11, Method: Composition-based stats.
+ Identities = 23/85 (27%), Positives = 36/85 (42%), Gaps = 5/85 (6%)
+
+Query  12   SNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRF  68
+             N     VL+   G    +  V L+   +D+W +M++  G  W   S   L+G   +F+ 
+Sbjct  169  GNPYFDLVLITNVGGAGDIRAVSLKGSKTDQWQSMSRNWGQNWQ--SNTYLRGQSLSFQV  226
+
+Query  69   LTEKGMKNVFDDVVPEKYTIGATYA  93
+                G   V  DVVP  +  G T+ 
+Sbjct  227  TDSDGRTVVSYDVVPHDWQFGQTFE  251
+
+
+> sp|Q7G6Z5|EXP19_ORYSJ Expansin-A19 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA19 PE=2 SV=1
+Length=249
+
+ Score = 60.0 bits (144),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 23/90 (26%), Positives = 36/90 (40%), Gaps = 2/90 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FT+  G N   L ++    G         +     W+ MT+  G  W   +    Q  
+Sbjct  155  VRFTIN-GFNYFELVLVTNMAGSGSIASMSVKGSCTGWIQMTRNWGANWQCLAGLAGQA-  212
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+             +F   +  G   VFDD VP  ++ G T++
+Sbjct  213  LSFNVTSTGGQTIVFDDAVPAGWSFGQTFS  242
+
+
+> sp|Q4PR44|EXP22_ORYSJ Expansin-A22 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA22 PE=2 SV=2
+Length=280
+
+ Score = 60.4 bits (145),  Expect = 8e-11, Method: Composition-based stats.
+ Identities = 18/71 (25%), Positives = 31/71 (44%), Gaps = 3/71 (4%)
+
+Query  26   DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP-FNFRFLTEKGMKNVFDDVVPE  84
+              +  +++    S +W+ M +  G  W   S   L G   +FR     G   VF ++VP 
+Sbjct  208  GLIKSMDVMGSNSTDWLPMVRNWGANWH--SLSYLTGQMLSFRVTNMDGQTLVFRNIVPS  265
+
+Query  85   KYTIGATYAPE  95
+             +  G T+A +
+Sbjct  266  GWKFGQTFASK  276
+
+
+> sp|Q9FL79|EXP23_ARATH Expansin-A23 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA23 PE=2 SV=3
+Length=275
+
+ Score = 60.0 bits (144),  Expect = 9e-11, Method: Composition-based stats.
+ Identities = 24/89 (27%), Positives = 38/89 (43%), Gaps = 4/89 (4%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE--WVAMTKGEGGVWTFDSEEPLQGP  63
+               E   N   L +L  Y      +++L +   D+  W+ M K  G  WT       QG 
+Sbjct  183  VKFETKGNPYFLMIL-PYNVGGAGDIKLMQVKGDKTGWITMQKNWGQNWTTGVNLTGQG-  240
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+             +FR  T  G+   F++V+P  +  G T+
+Sbjct  241  ISFRVTTSDGVTKDFNNVMPNNWGFGQTF  269
+
+
+> sp|Q4PR42|EXP24_ORYSJ Expansin-A24 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA24 PE=2 SV=2
+Length=278
+
+ Score = 60.0 bits (144),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 18/71 (25%), Positives = 32/71 (45%), Gaps = 3/71 (4%)
+
+Query  26   DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP-FNFRFLTEKGMKNVFDDVVPE  84
+             ++  +++    S +W+ M +  G  W   S   L G   +FR     G   VF ++VP 
+Sbjct  206  GSIKSMDIMGSNSTDWMPMVRNWGANWH--SLSYLTGQMLSFRVTNMDGQTLVFRNIVPS  263
+
+Query  85   KYTIGATYAPE  95
+             +  G T+A +
+Sbjct  264  GWKFGQTFASK  274
+
+
+> sp|Q10RK1|EXP20_ORYSJ Expansin-A20 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA20 PE=2 SV=1
+Length=240
+
+ Score = 58.8 bits (141),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 23/84 (27%), Positives = 36/84 (43%), Gaps = 3/84 (4%)
+
+Query  11   GSNEKHLAVLVKYEGDTMAEVELREHGS-DEWVAMTKGEGGVWTFDSEEPLQGPFNFRFL  69
+            G N   L ++    G   + V +   GS   W+ MT+  G  W   +    Q   +F   
+Sbjct  152  GFNYFELVLVTNMAGSG-SIVSMSVKGSCTGWIQMTRNWGANWQCLAGLAGQA-LSFNVT  209
+
+Query  70   TEKGMKNVFDDVVPEKYTIGATYA  93
+            +  G   VFDD VP  ++ G T++
+Sbjct  210  STGGQTIVFDDAVPAGWSFGQTFS  233
+
+
+> sp|Q4PR48|EXP18_ORYSJ Expansin-A18 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA18 PE=2 SV=2
+Length=249
+
+ Score = 58.8 bits (141),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 20/83 (24%), Positives = 33/83 (40%), Gaps = 1/83 (1%)
+
+Query  11   GSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNFRFLT  70
+            G N   L ++    G         +  S  W+ M++  G  W   +    Q   +F   +
+Sbjct  161  GLNYFELVLVTNMAGSGSIASMSVKGSSTGWIQMSRNWGANWQCLAGLAGQA-LSFTVTS  219
+
+Query  71   EKGMKNVFDDVVPEKYTIGATYA  93
+              G   VFD VVP  ++ G T++
+Sbjct  220  TGGQTIVFDSVVPAGWSFGQTFS  242
+
+
+> sp|Q9FL78|EXP26_ARATH Putative expansin-A26 OS=Arabidopsis thaliana 
+OX=3702 GN=EXPA26 PE=3 SV=2
+Length=279
+
+ Score = 58.8 bits (141),  Expect = 2e-10, Method: Composition-based stats.
+ Identities = 25/89 (28%), Positives = 41/89 (46%), Gaps = 4/89 (4%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+               E   N   L VL+   G    +  V+++E+ +  W+ M K  G  WT  +    QG 
+Sbjct  187  VKFETKGNPYFLMVLIYNVGGAGDIKYVQVKENKTG-WITMKKNWGQNWTTSTVLTGQG-  244
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+             +FR  T  G+   F +V+P+ +  G T+
+Sbjct  245  LSFRVTTTDGITKDFWNVMPKNWGFGQTF  273
+
+
+> sp|Q4PNY1|EXP11_ORYSJ Expansin-A11 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA11 PE=2 SV=2
+Length=248
+
+ Score = 58.1 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 22/78 (28%), Positives = 33/78 (42%), Gaps = 5/78 (6%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD +  V ++   S  W AM+   G  W   +   L G P +FR     G  
+Sbjct  171  LVTNVGGAGD-VTAVSVKGSRSG-WQAMSHNWGANWQNGAN--LDGQPLSFRVTASDGRT  226
+
+Query  76   NVFDDVVPEKYTIGATYA  93
+               D+V P  ++ G T++
+Sbjct  227  VTSDNVAPSGWSFGQTFS  244
+
+
+> sp|Q4PR43|EXP23_ORYSJ Expansin-A23 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA23.1 PE=2 SV=2
+Length=267
+
+ Score = 58.1 bits (139),  Expect = 4e-10, Method: Composition-based stats.
+ Identities = 18/72 (25%), Positives = 31/72 (43%), Gaps = 3/72 (4%)
+
+Query  25   GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP-FNFRFLTEKGMKNVFDDVVP  83
+              ++  +E+    + +W+ M +  G  W   S   L G   +FR         VF +VVP
+Sbjct  194  AGSIKSMEVMGSNTADWMPMARNWGAQWH--SLAYLTGQGLSFRVTNTDDQTLVFTNVVP  251
+
+Query  84   EKYTIGATYAPE  95
+              +  G T+A +
+Sbjct  252  PGWKFGQTFASK  263
+
+
+> sp|Q4PR40|EXP28_ORYSJ Expansin-A28 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA28 PE=2 SV=2
+Length=255
+
+ Score = 57.7 bits (138),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 37/94 (39%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-  62
+            V FTV  G N   L ++    G    +    +     W+ + +  G  W  +S   L G 
+Sbjct  161  VRFTV-SGFNYFELVLITNVAGSGSVQAMSVKGSKTGWIPLARNWGANWQCNS--ALVGQ  217
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+              +FR  +  G     + VVPE +  G T+   +
+Sbjct  218  ALSFRVTSTGGQTLQINSVVPEWWEFGTTFTSNQ  251
+
+
+> sp|Q7XE35|EXP27_ORYSJ Putative expansin-A27 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXPA27 PE=3 SV=2
+Length=255
+
+ Score = 57.7 bits (138),  Expect = 5e-10, Method: Composition-based stats.
+ Identities = 29/93 (31%), Positives = 42/93 (45%), Gaps = 8/93 (9%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            V FTV  G  +    VLV     +  +A V +R  G+  W+ M++  G  W   S   L 
+Sbjct  161  VRFTV--GGFDHFELVLVANVAGSGSVAAVSVRGAGTG-WLQMSRNWGANWQ--SLAGLA  215
+
+Query  62   G-PFNFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+            G P +F   T  G   +F DV P  +  G T++
+Sbjct  216  GQPLSFGVTTTGGQYILFQDVAPAGWKFGQTFS  248
+
+
+> sp|Q7G6Z2|EXP12_ORYSJ Expansin-A12 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA12 PE=2 SV=1
+Length=250
+
+ Score = 56.9 bits (136),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 20/84 (24%), Positives = 34/84 (40%), Gaps = 2/84 (2%)
+
+Query  12   SNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGPFNFRFLT  70
+             N     VL+   G   +   ++  G+   WV M++  G  W  ++    Q   +F   +
+Sbjct  163  GNSYFELVLITNVGGPGSIKSVQIKGTKTGWVTMSRNWGANWQANNYLNNQA-ISFSVTS  221
+
+Query  71   EKGMKNVFDDVVPEKYTIGATYAP  94
+              G   VF+DV P  +  G T+  
+Sbjct  222  TAGKTLVFEDVAPSNWQFGQTFTS  245
+
+
+> sp|Q9FL76|EXP24_ARATH Expansin-A24 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA24 PE=2 SV=2
+Length=312
+
+ Score = 57.3 bits (137),  Expect = 1e-09, Method: Composition-based stats.
+ Identities = 22/87 (25%), Positives = 31/87 (36%), Gaps = 6/87 (7%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSD--EWVAMTKGEGGVWTFDSEEPLQGP  63
+               E   N   L +L  Y       V   +      +W+AM K  G +W   +   L G 
+Sbjct  219  VKFEIKGNPHFLMIL-PYNVGGAGAVRAMQIKGTRTQWIAMKKNWGQIW--STGVVLTGQ  275
+
+Query  64   -FNFRFLTEKGMKNVFDDVVPEKYTIG  89
+              +FR  T  G+   F DV P  +   
+Sbjct  276  CLSFRLTTSDGVMKEFIDVTPPDWKCN  302
+
+
+> sp|Q9FMA0|EXP14_ARATH Expansin-A14 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA14 PE=2 SV=1
+Length=255
+
+ Score = 56.1 bits (134),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 19/81 (23%), Positives = 36/81 (44%), Gaps = 5/81 (6%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD ++ V ++   +  W +M++  G  W   S   L G   +F+  T  G  
+Sbjct  174  LITNVAGAGDVIS-VSIKGTNT-RWQSMSRNWGQNWQ--SNAKLDGQALSFKVTTSDGRT  229
+
+Query  76   NVFDDVVPEKYTIGATYAPEE  96
+             + ++  P  ++ G TY  ++
+Sbjct  230  VISNNATPRNWSFGQTYTGKQ  250
+
+
+> sp|Q2QP13|EXP26_ORYSJ Expansin-A26 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA26 PE=2 SV=1
+Length=290
+
+ Score = 56.5 bits (135),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 22/88 (25%), Positives = 36/88 (41%), Gaps = 5/88 (6%)
+
+Query  12   SNEKHLAVLVKYEGDTMAEVELREHGSD--EWVAMTKGEGGVWTFDSEEPLQG-PFNFRF  68
+             N  +  V+VK  G     V+L   G+   +W  + +  G +W  ++   L G    FR 
+Sbjct  203  GNPSYNMVMVKNVGGAGDVVKLTVKGTKRVKWTPLQRSWGQLWKTEAN--LTGESLTFRV  260
+
+Query  69   LTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            +T    K     V P  +T   TY  ++
+Sbjct  261  MTGDHRKATSWRVAPRDWTYDNTYQAKK  288
+
+
+> sp|Q4PR53|EXPA9_ORYSJ Expansin-A9 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA9 PE=2 SV=2
+Length=254
+
+ Score = 55.7 bits (133),  Expect = 2e-09, Method: Composition-based stats.
+ Identities = 23/86 (27%), Positives = 36/86 (42%), Gaps = 4/86 (5%)
+
+Query  12   SNEKHLAVLVKYEGDTMAEVELREHGSD-EWVAMTKGEGGVWTFDSEEPLQG-PFNFRFL  69
+             ++ +  VLV     + A       GS  EW++M++  G  W   S   L G   +FR  
+Sbjct  166  GHDYYELVLVTNVAGSGAVAAAWVKGSGTEWLSMSRNWGENWQ--SNAYLTGQALSFRVQ  223
+
+Query  70   TEKGMKNVFDDVVPEKYTIGATYAPE  95
+             + G      DV P  +  G+TY  +
+Sbjct  224  ADDGGVVTAYDVAPANWQFGSTYQSD  249
+
+
+> sp|Q9FL80|EXP22_ARATH Expansin-A22 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA22 PE=2 SV=3
+Length=279
+
+ Score = 55.0 bits (131),  Expect = 6e-09, Method: Composition-based stats.
+ Identities = 24/88 (27%), Positives = 37/88 (42%), Gaps = 2/88 (2%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGPF  64
+               E   N   L VL+   G       ++  G+   W+ M K  G  WT  +    QG  
+Sbjct  187  VKFETKGNPYFLMVLIYNVGGAGDIKYVQVKGNKTGWITMKKNWGQNWTTITVLTGQG-L  245
+
+Query  65   NFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            +FR  T  G+   F +V+P+ +  G T+
+Sbjct  246  SFRVTTSDGITKDFWNVMPKNWGFGQTF  273
+
+
+> sp|Q6ZGU9|EXPA5_ORYSJ Expansin-A5 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA5 PE=2 SV=1
+Length=291
+
+ Score = 55.0 bits (131),  Expect = 7e-09, Method: Composition-based stats.
+ Identities = 22/78 (28%), Positives = 35/78 (45%), Gaps = 4/78 (5%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD +  V ++   S  W A+++  G  W   S   L G   +FR  T  G  
+Sbjct  212  LVTNVGGAGD-VHAVAVKSERSAAWQALSRNWGQNWQ--SAALLDGQALSFRVTTGDGRS  268
+
+Query  76   NVFDDVVPEKYTIGATYA  93
+             V ++ VP  ++ G T++
+Sbjct  269  VVSNNAVPRGWSFGQTFS  286
+
+
+> sp|Q7XWU8|EXPA1_ORYSJ Expansin-A1 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA1 PE=2 SV=2
+Length=261
+
+ Score = 54.2 bits (129),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 23/85 (27%), Positives = 36/85 (42%), Gaps = 4/85 (5%)
+
+Query  14   EKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTE  71
+            +    VLV   G   +   +   GS   W+AM++  G  W   S   L G   +F+  + 
+Sbjct  176  DYFELVLVSNVGGVGSIQSVSIKGSRTGWMAMSRNWGVNWQ--SNAYLDGQSLSFKVTSS  233
+
+Query  72   KGMKNVFDDVVPEKYTIGATYAPEE  96
+             G    F DV P  +T G T++  +
+Sbjct  234  DGQTLTFLDVAPAGWTFGQTFSTSQ  258
+
+
+> sp|Q9LNU3|EXP11_ARATH Expansin-A11 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA11 PE=2 SV=1
+Length=252
+
+ Score = 53.8 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 24/93 (26%), Positives = 38/93 (41%), Gaps = 6/93 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            V F +     +    V ++  G   +   +   GS   W+AM++  G  W   S   L G
+Sbjct  160  VRFRIN--GRDYFELVNIQNVGGAGSIKSVSIKGSKTGWLAMSRNWGANWQ--SNAYLDG  215
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+               +F   T  G   VF +VVP  ++ G  Y+ 
+Sbjct  216  QALSFSITTTDGATRVFLNVVPSSWSFGQIYSS  248
+
+
+> sp|Q4PR52|EXP13_ORYSJ Expansin-A13 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA13 PE=2 SV=2
+Length=262
+
+ Score = 53.8 bits (128),  Expect = 1e-08, Method: Composition-based stats.
+ Identities = 22/86 (26%), Positives = 37/86 (43%), Gaps = 5/86 (6%)
+
+Query  12   SNEKHLAVLVKYEG--DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP-FNFRF  68
+             ++    VL+   G   ++  ++++   S +W+AM    G  W   S   L G   +FR 
+Sbjct  174  GHDYFQLVLLTNVGAAGSIKAMDVKGSKSPDWMAMAHNWGAQWH--SLAYLTGQGLSFRV  231
+
+Query  69   LTEKGMKNVFDDVVPEKYTIGATYAP  94
+                G   VF +VV   +  G T+A 
+Sbjct  232  TITDGQTLVFPNVVRPGWRFGQTFAS  257
+
+
+> sp|Q40636|EXPA2_ORYSJ Expansin-A2 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA2 PE=2 SV=2
+Length=251
+
+ Score = 53.4 bits (127),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 20/78 (26%), Positives = 31/78 (40%), Gaps = 5/78 (6%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD +  V ++   S  W  M++  G  W   S   L G   +F+     G  
+Sbjct  174  LVTNVAGPGD-VQSVSIKGS-STGWQPMSRNWGQNWQ--SNSYLDGQSLSFQVAVSDGRT  229
+
+Query  76   NVFDDVVPEKYTIGATYA  93
+               ++VVP  +  G T+ 
+Sbjct  230  VTSNNVVPAGWQFGQTFE  247
+
+
+> sp|Q9FL81|EXP21_ARATH Expansin-A21 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA21 PE=2 SV=3
+Length=262
+
+ Score = 53.4 bits (127),  Expect = 2e-08, Method: Composition-based stats.
+ Identities = 27/92 (29%), Positives = 38/92 (41%), Gaps = 10/92 (11%)
+
+Query  6    FTVEKGSNEKHLAVL---VKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQ  61
+               E   N   L +L   V   GD +A   +   GS   WV M++  G  WT +    L 
+Sbjct  170  VKFEVKGNPNILTILPYNVGGAGDIIA---VSAKGSKTAWVVMSRYWGQNWTTNVN--LT  224
+
+Query  62   G-PFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+            G   + R  T  G+   F DV+P  +  G T+
+Sbjct  225  GQSVSLRVTTSDGITKDFTDVMPASWGFGQTF  256
+
+
+> sp|Q9LDJ3|EXP12_ARATH Expansin-A12 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA12 PE=2 SV=1
+Length=252
+
+ Score = 52.3 bits (124),  Expect = 5e-08, Method: Composition-based stats.
+ Identities = 22/92 (24%), Positives = 37/92 (40%), Gaps = 3/92 (3%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FT+    N   + +     G ++  V +R      W+ MT+  G  W   S   L+G 
+Sbjct  157  VRFTMRGQGNFNMVMISNVGGGGSVRSVAVRGSKGKTWLQMTRNWGANWQ--SSGDLRGQ  214
+
+Query  64   -FNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+              +F+          F +VVP  +  G T++ 
+Sbjct  215  RLSFKVTLTDSKTQTFLNVVPSSWWFGQTFSS  246
+
+
+> sp|O80622|EXP15_ARATH Expansin-A15 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA15 PE=2 SV=2
+Length=253
+
+ Score = 52.3 bits (124),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 19/81 (23%), Positives = 30/81 (37%), Gaps = 4/81 (5%)
+
+Query  15   KHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEK  72
+                VLV   G       +   GS   W  M++  G  W   S   L G   +F+     
+Sbjct  170  YFNLVLVTNVGGAGDVHSVAVKGSRTRWQQMSRNWGQNWQ--SNNLLNGQALSFKVTASD  227
+
+Query  73   GMKNVFDDVVPEKYTIGATYA  93
+            G   V +++ P  ++ G T+ 
+Sbjct  228  GRTVVSNNIAPASWSFGQTFT  248
+
+
+> sp|Q4PR41|EXP25_ORYSJ Expansin-A25 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA25 PE=2 SV=2
+Length=255
+
+ Score = 51.9 bits (123),  Expect = 6e-08, Method: Composition-based stats.
+ Identities = 18/86 (21%), Positives = 32/86 (37%), Gaps = 1/86 (1%)
+
+Query  11   GSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNFRFLT  70
+            G N   L ++    G         + GS  W+ + +  G  W  +S    Q   +F   +
+Sbjct  167  GFNFFELVLVSNVAGSGSVRSVSVKGGSTGWITLNRNWGANWQCNSGLVGQA-LSFAVTS  225
+
+Query  71   EKGMKNVFDDVVPEKYTIGATYAPEE  96
+              G      +VVP  ++ G T+   +
+Sbjct  226  TGGQTLYIYNVVPSWWSFGMTFTSNQ  251
+
+
+> sp|Q8W2X8|EXP30_ORYSJ Putative expansin-A30 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXPA30 PE=3 SV=1
+Length=266
+
+ Score = 51.5 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 18/86 (21%), Positives = 32/86 (37%), Gaps = 6/86 (7%)
+
+Query  12   SNEKHLAVLV---KYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNFRF  68
+             N   L   V      GD + ++ ++  G   WV M+   G  +   ++   Q   +F+ 
+Sbjct  177  GNPYWLLAYVMNVAGAGD-VGDMWVKAGGGGGWVRMSHNWGASYQAFAQLGGQA-LSFKV  234
+
+Query  69   LT-EKGMKNVFDDVVPEKYTIGATYA  93
+             +   G   +   V P  +  G TY 
+Sbjct  235  TSYTTGQTILAAGVTPASWCFGLTYQ  260
+
+
+> sp|Q9C554|EXPA1_ARATH Expansin-A1 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA1 PE=2 SV=1
+Length=250
+
+ Score = 51.5 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 20/81 (25%), Positives = 30/81 (37%), Gaps = 4/81 (5%)
+
+Query  15   KHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEK  72
+                VL+   G           GS   W AM++  G  W   S   L G   +F+  T  
+Sbjct  167  YFNLVLITNVGGAGDVHSAMVKGSRTGWQAMSRNWGQNWQ--SNSYLNGQSLSFKVTTSD  224
+
+Query  73   GMKNVFDDVVPEKYTIGATYA  93
+            G   V ++V    ++ G T+ 
+Sbjct  225  GQTIVSNNVANAGWSFGQTFT  245
+
+
+> sp|Q69XV9|EXP16_ORYSJ Expansin-A16 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA16 PE=2 SV=1
+Length=260
+
+ Score = 51.5 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 20/82 (24%), Positives = 35/82 (43%), Gaps = 7/82 (9%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGM  74
+            L   V  +G+  A   ++  GS   W+ M +  G  W  D++  L+G P +F     +G 
+Sbjct  181  LITNVAADGEVAA---VKVKGSRTGWIPMGRNWGQNWQCDAD--LRGQPLSFEVTGGRGR  235
+
+Query  75   KNVFDDVVPEKYTIGATYAPEE  96
+              V   V P  +    T+  ++
+Sbjct  236  TVVAYSVAPPDWMFAQTFEGKQ  257
+
+
+> sp|Q4PR39|EXP29_ORYSJ Expansin-A29 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA29 PE=2 SV=2
+Length=263
+
+ Score = 51.5 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 18/59 (31%), Positives = 26/59 (44%), Gaps = 1/59 (2%)
+
+Query  38   SDEWVAMTKGEGGVWTFDSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+               W+AM++  G  W   +    QG  +FR     G   VF  VVP  +  G T+A  +
+Sbjct  203  GAGWMAMSRNWGANWQSLAYLDGQG-LSFRVTATDGQTIVFAGVVPPSWRFGQTFASTQ  260
+
+
+> sp|Q6YYW5|EXP32_ORYSJ Expansin-A32 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA32 PE=2 SV=1
+Length=269
+
+ Score = 51.5 bits (122),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 20/85 (24%), Positives = 33/85 (39%), Gaps = 5/85 (6%)
+
+Query  12   SNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRF  68
+             N     V+V   G    +A + ++ +   +W  + +  G  W   + E L G    FR 
+Sbjct  181  GNPYFNLVMVSNVGGAGDVAGLSVKGNKRVKWTPLKRNWGQEWQ--TSEVLTGESLTFRV  238
+
+Query  69   LTEKGMKNVFDDVVPEKYTIGATYA  93
+            +T    K     V+P  +  G TY 
+Sbjct  239  MTGDHRKATSWHVLPPDWQFGVTYQ  263
+
+
+> sp|Q9SZM1|EXP20_ARATH Expansin-A20 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA20 PE=2 SV=1
+Length=256
+
+ Score = 51.1 bits (121),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 18/87 (21%), Positives = 32/87 (37%), Gaps = 2/87 (2%)
+
+Query  11   GSNEKHLAVLVKYEGDTMAEVELREHG-SDEWVAMTKGEGGVWTFDSEEPLQGPFNFRFL  69
+              +     VL+   G     V ++  G +  W+ M +  G  W   S + +    +F   
+Sbjct  168  SGSSHFFQVLISNVGLDGEVVGVKVKGHTTAWIPMARNWGQNW-HSSLDLIGQSLSFEVT  226
+
+Query  70   TEKGMKNVFDDVVPEKYTIGATYAPEE  96
+             + G      DV P  +  G TY  ++
+Sbjct  227  LKGGKTIASYDVAPPYWRFGMTYQGKQ  253
+
+
+> sp|Q9M9P0|EXP13_ARATH Expansin-A13 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA13 PE=2 SV=2
+Length=266
+
+ Score = 51.1 bits (121),  Expect = 1e-07, Method: Composition-based stats.
+ Identities = 21/96 (22%), Positives = 43/96 (45%), Gaps = 8/96 (8%)
+
+Query  4    VTFTVEKGSNEKHLAVL---VKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            + FTV+ G     ++VL   V   GD +A V+++   +  W+ M +  G  W  +++   
+Sbjct  172  MRFTVDGGG--IFISVLITNVAGSGD-IAAVKIKGSRTG-WLPMGRNWGQNWHINADLRN  227
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            Q   +F   +         +V P+ +  G T+  ++
+Sbjct  228  QA-LSFEVTSSDRSTVTSYNVSPKNWNYGQTFEGKQ  262
+
+
+> sp|Q9M4X7|EXPA6_ORYSJ Expansin-A6 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA6 PE=2 SV=1
+Length=259
+
+ Score = 51.1 bits (121),  Expect = 2e-07, Method: Composition-based stats.
+ Identities = 15/54 (28%), Positives = 20/54 (37%), Gaps = 3/54 (6%)
+
+Query  41   WVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+            W  M++  G  W   S   L G   +FR     G      DV P  +  G T+ 
+Sbjct  204  WQPMSRNWGQNWQ--SNAYLDGKALSFRVTAGDGRSLTCADVAPAGWQFGQTFE  255
+
+
+> sp|Q9LDR9|EXP10_ARATH Expansin-A10 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA10 PE=2 SV=1
+Length=249
+
+ Score = 50.0 bits (118),  Expect = 3e-07, Method: Composition-based stats.
+ Identities = 21/81 (26%), Positives = 30/81 (37%), Gaps = 4/81 (5%)
+
+Query  15   KHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEK  72
+                VL+   G           GS   W AM++  G  W   S   L G   +F+  T  
+Sbjct  166  YFNLVLITNVGGAGDVHSAAIKGSRTVWQAMSRNWGQNWQ--SNSYLNGQALSFKVTTSD  223
+
+Query  73   GMKNVFDDVVPEKYTIGATYA  93
+            G   V  +  P  ++ G T+A
+Sbjct  224  GRTVVSFNAAPAGWSYGQTFA  244
+
+
+> sp|Q9LN94|EXPA7_ARATH Expansin-A7 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA7 PE=3 SV=1
+Length=262
+
+ Score = 50.0 bits (118),  Expect = 4e-07, Method: Composition-based stats.
+ Identities = 20/86 (23%), Positives = 31/86 (36%), Gaps = 5/86 (6%)
+
+Query  12   SNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-PFNFRFL  69
+             N   L + V   G       +   GS   W++M+   G  +   S   L G   +FR  
+Sbjct  174  GNSYWLLIFVMNVGGAGDIKSMAVKGSRTNWISMSHNWGASYQAFSS--LYGQSLSFRVT  231
+
+Query  70   T-EKGMKNVFDDVVPEKYTIGATYAP  94
+            +   G      +V P  ++ G TY  
+Sbjct  232  SYTTGETIYAWNVAPANWSGGKTYKS  257
+
+
+> sp|Q40637|EXPA3_ORYSJ Expansin-A3 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA3 PE=2 SV=2
+Length=255
+
+ Score = 49.2 bits (116),  Expect = 6e-07, Method: Composition-based stats.
+ Identities = 22/85 (26%), Positives = 36/85 (42%), Gaps = 4/85 (5%)
+
+Query  11   GSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-PFNFRF  68
+              ++    V V   G +    ++   GS+  W+AM++  G  W   S   L G   +F  
+Sbjct  167  SGHDYFELVTVTNVGGSGVVAQMSIKGSNTGWMAMSRNWGANWQ--SNAYLAGQSLSFIV  224
+
+Query  69   LTEKGMKNVFDDVVPEKYTIGATYA  93
+              + G K    +V P  +  GATY+
+Sbjct  225  QLDDGRKVTAWNVAPSNWFFGATYS  249
+
+
+> sp|Q9ZSI1|EXP17_ARATH Putative expansin-A17 OS=Arabidopsis thaliana 
+OX=3702 GN=EXPA17 PE=2 SV=1
+Length=255
+
+ Score = 48.8 bits (115),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 15/84 (18%), Positives = 35/84 (42%), Gaps = 6/84 (7%)
+
+Query  15   KHLAVLVKYE---GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLT  70
+             +  +++      G  +++V ++   S++W  M++  G    + S   L G   +F+   
+Sbjct  170  NYFELVLISNVAGGGEISKVWIKGSKSNKWETMSRNWGA--NYQSNTYLNGQSLSFKVQL  227
+
+Query  71   EKGMKNVFDDVVPEKYTIGATYAP  94
+              G      +VVP  +  G ++  
+Sbjct  228  SDGSIKAALNVVPSNWRFGQSFKS  251
+
+
+> sp|Q9LZ99|EXPA9_ARATH Expansin-A9 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA9 PE=2 SV=1
+Length=258
+
+ Score = 48.4 bits (114),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 20/79 (25%), Positives = 36/79 (46%), Gaps = 7/79 (9%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSD-EWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGM  74
+            L   V   GD    +++   GS+ +W+ +++  G  W   S   L G   +FR  T  G 
+Sbjct  179  LVTNVAGAGDV---IKVSVKGSNTQWLDLSRNWGQNWQ--SNALLVGQSLSFRVKTSDGR  233
+
+Query  75   KNVFDDVVPEKYTIGATYA  93
+             +  +++ P  +  G TY+
+Sbjct  234  SSTSNNIAPSNWQFGQTYS  252
+
+
+> sp|Q75I75|EXP31_ORYSJ Expansin-A31 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA31 PE=2 SV=2
+Length=256
+
+ Score = 48.0 bits (113),  Expect = 1e-06, Method: Composition-based stats.
+ Identities = 22/90 (24%), Positives = 34/90 (38%), Gaps = 2/90 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FTV  G N   L ++    G         +  +  W+ M++  G  W   +    Q  
+Sbjct  162  VRFTV-AGLNYFELVLITNVAGSGSVASAWIKGTNTGWIQMSRNWGANWQSLAGLAGQA-  219
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+             +F   T  G    F DV P  +  G T++
+Sbjct  220  LSFAVTTTGGQYLQFQDVAPAWWQFGQTFS  249
+
+
+> sp|Q10KN4|EXP21_ORYSJ Expansin-A21 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA21 PE=2 SV=1
+Length=264
+
+ Score = 46.9 bits (110),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 21/84 (25%), Positives = 30/84 (36%), Gaps = 7/84 (8%)
+
+Query  15   KHLAVLVKYEGD--TMAEVELREHGSDE--WVAMTKGEGGVWTFDSEEPLQG-PFNFRFL  69
+                VLV   G    +  V ++  G  +  W AM +  G  W   S   L G   +F   
+Sbjct  178  YFNLVLVSNVGGAGDVHAVAVKAGGGRKARWQAMARNWGQNWQ--SGALLDGQALSFTVT  235
+
+Query  70   TEKGMKNVFDDVVPEKYTIGATYA  93
+            T      V  +V P  +  G T+ 
+Sbjct  236  TGDRRSVVSYNVAPAGWAFGQTFT  259
+
+
+> sp|Q9LQ07|EXP18_ARATH Expansin-A18 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA18 PE=2 SV=1
+Length=257
+
+ Score = 46.9 bits (110),  Expect = 4e-06, Method: Composition-based stats.
+ Identities = 21/95 (22%), Positives = 35/95 (37%), Gaps = 7/95 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + F  E   N   L V V   G       +   GS   W+ M+   G  +   S   L G
+Sbjct  163  IRFKFE--GNGYWLLVYVMNVGGPGDIKTMAVKGSRTGWINMSHNWGASYQAFSS--LYG  218
+
+Query  63   -PFNFRFLTEKGMKNVFD-DVVPEKYTIGATYAPE  95
+               +FR  +    + ++  +  P  ++ G TY  +
+Sbjct  219  QSLSFRLTSYTTRQTIYAYNAAPASWSAGKTYQSK  253
+
+
+> sp|Q0DHB7|EXPA4_ORYSJ Expansin-A4 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA4 PE=2 SV=1
+Length=246
+
+ Score = 45.3 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 17/78 (22%), Positives = 29/78 (37%), Gaps = 5/78 (6%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD +  V ++   +  W  M++  G  W   S   L G   +F+     G  
+Sbjct  169  LVTNVAGAGD-VRSVSIKGSRTG-WQPMSRNWGQNWQ--SNAFLDGQSLSFQVTASDGRT  224
+
+Query  76   NVFDDVVPEKYTIGATYA  93
+               ++V    +  G T+ 
+Sbjct  225  VTSNNVAHPGWQFGQTFE  242
+
+
+> sp|A2Y5R6|EXPA4_ORYSI Expansin-A4 OS=Oryza sativa subsp. indica 
+OX=39946 GN=EXPA4 PE=2 SV=1
+Length=246
+
+ Score = 45.3 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 17/78 (22%), Positives = 29/78 (37%), Gaps = 5/78 (6%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD +  V ++   +  W  M++  G  W   S   L G   +F+     G  
+Sbjct  169  LVTNVAGAGD-VRSVSIKGSRTG-WQPMSRNWGQNWQ--SNAFLDGQSLSFQVTASDGRT  224
+
+Query  76   NVFDDVVPEKYTIGATYA  93
+               ++V    +  G T+ 
+Sbjct  225  VTSNNVAHPGWQFGQTFE  242
+
+
+> sp|Q4PR50|EXP15_ORYSJ Expansin-A15 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA15 PE=2 SV=2
+Length=260
+
+ Score = 45.3 bits (106),  Expect = 1e-05, Method: Composition-based stats.
+ Identities = 12/54 (22%), Positives = 23/54 (43%), Gaps = 3/54 (6%)
+
+Query  42   VAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            + +++  G  W   S   L G    F   +  G   VF ++VP  +  G +++ 
+Sbjct  203  MPLSRNWGANWQ--SHAGLVGQTLTFGVTSTGGQTLVFQNIVPAWWKFGQSFSS  254
+
+
+> sp|Q38864|EXPA5_ARATH Expansin-A5 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA5 PE=2 SV=1
+Length=255
+
+ Score = 44.6 bits (104),  Expect = 2e-05, Method: Composition-based stats.
+ Identities = 21/81 (26%), Positives = 29/81 (36%), Gaps = 4/81 (5%)
+
+Query  15   KHLAVLVKYEGDTMAEVELREHGSD-EWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEK  72
+                VLV   G       +   GS  +W  M++  G  W   S   L G   +F   T  
+Sbjct  171  YFNLVLVTNVGGAGDVHSVSMKGSRTKWQLMSRNWGQNWQ--SNSYLNGQSLSFVVTTSD  228
+
+Query  73   GMKNVFDDVVPEKYTIGATYA  93
+                V  +V P  ++ G TY 
+Sbjct  229  RRSVVSFNVAPPTWSFGQTYT  249
+
+
+> sp|Q41183|MPAG2_DACGL Pollen allergen Dac g 2 (Fragment) OS=Dactylis 
+glomerata OX=4509 PE=1 SV=1
+Length=36
+
+ Score = 40.7 bits (94),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 24/33 (73%), Positives = 30/33 (91%), Gaps = 2/33 (6%)
+
+Query  4   VTFTVEKGSNEKHLAVLVKY--EGDTMAEVELR  34
+           VTFTVEKGS+EK+LA+ +KY  EGD+MAEVEL+
+Sbjct  4   VTFTVEKGSDEKNLALSIKYNKEGDSMAEVELK  36
+
+
+> sp|Q9M2S9|EXP16_ARATH Expansin-A16 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA16 PE=2 SV=1
+Length=260
+
+ Score = 43.0 bits (100),  Expect = 8e-05, Method: Composition-based stats.
+ Identities = 17/77 (22%), Positives = 32/77 (42%), Gaps = 5/77 (6%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD +A   ++   +  W+++T+  G  W   S   L G   +FR  +     
+Sbjct  181  LITNVAGAGD-IARTSVKGSKTG-WMSLTRNWGQNWQ--SNAVLVGQSLSFRVTSSDRRT  236
+
+Query  76   NVFDDVVPEKYTIGATY  92
+            +   ++ P  +  G T+
+Sbjct  237  STSWNIAPSNWQFGQTF  253
+
+
+> sp|P0C1Y4|EXP33_ORYSJ Expansin-A33 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA33 PE=3 SV=1
+Length=248
+
+ Score = 42.6 bits (99),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 15/86 (17%), Positives = 36/86 (42%), Gaps = 5/86 (6%)
+
+Query  12   SNEKHLAVLVKYE---GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNFRF  68
+            S   +  ++  +       +A+V ++   +D W+AM++  G  W  ++    Q   +F+ 
+Sbjct  161  SGRDYFELVTVFNVGGSGVVAQVSIKGSKTD-WMAMSRNWGQNWQSNAYLNTQS-LSFKV  218
+
+Query  69   LTEKGMKNVFDDVVPEKYTIGATYAP  94
+              +   +    ++ P  +  G TY  
+Sbjct  219  KLDDAREVTVWNIAPSNWNFGTTYTS  244
+
+
+> sp|Q852A1|EXPA7_ORYSJ Expansin-A7 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA7 PE=2 SV=1
+Length=264
+
+ Score = 42.6 bits (99),  Expect = 1e-04, Method: Composition-based stats.
+ Identities = 17/78 (22%), Positives = 27/78 (35%), Gaps = 5/78 (6%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD +      +  S  W+ M++  G  W   S   L G   +FR        
+Sbjct  185  LITNVAGAGDIVRAS--VKGTSTGWMPMSRNWGQNWQ--SNSVLVGQALSFRVTGSDRRT  240
+
+Query  76   NVFDDVVPEKYTIGATYA  93
+            +   +  P  +  G T+ 
+Sbjct  241  STSWNAAPAGWHFGQTFE  258
+
+
+> sp|O80932|EXPA3_ARATH Expansin-A3 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA3 PE=2 SV=1
+Length=262
+
+ Score = 42.3 bits (98),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 20/78 (26%), Positives = 32/78 (41%), Gaps = 5/78 (6%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMK  75
+            L   V   GD +  V ++   +D WV M++  G  W   S   L G   +FR        
+Sbjct  183  LVTNVAGAGD-INGVSVKGSKTD-WVRMSRNWGQNWQ--SNAVLIGQSLSFRVTASDRRS  238
+
+Query  76   NVFDDVVPEKYTIGATYA  93
+            +   +V P  +  G T++
+Sbjct  239  STSWNVAPATWQFGQTFS  256
+
+
+> sp|O48818|EXPA4_ARATH Expansin-A4 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA4 PE=1 SV=1
+Length=257
+
+ Score = 41.5 bits (96),  Expect = 3e-04, Method: Composition-based stats.
+ Identities = 18/78 (23%), Positives = 30/78 (38%), Gaps = 7/78 (9%)
+
+Query  17   LAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGM  74
+            L   V   GD +        GS   W+++++  G  W   S   L G   +FR       
+Sbjct  178  LITNVAGAGDIVRA---SVKGSRTGWMSLSRNWGQNWQ--SNAVLVGQALSFRVTGSDRR  232
+
+Query  75   KNVFDDVVPEKYTIGATY  92
+             +   ++VP  +  G T+
+Sbjct  233  TSTSWNMVPSNWQFGQTF  250
+
+
+> sp|Q86AV4|EXPL5_DICDI Expansin-like protein 5 OS=Dictyostelium 
+discoideum OX=44689 GN=expl5 PE=2 SV=1
+Length=238
+
+ Score = 39.9 bits (92),  Expect = 8e-04, Method: Composition-based stats.
+ Identities = 16/72 (22%), Positives = 27/72 (38%), Gaps = 3/72 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG  62
+             V   ++ GSN    + LV      + +V ++  GS  +V +T+     W         G
+Sbjct  145  NVKVMLKDGSNAYWTSFLVFNNAIDVKQVSIKLSGSSTYVPLTQTTYNYW---PSSITAG  201
+
+Query  63   PFNFRFLTEKGM  74
+             F  R  +  G 
+Sbjct  202  SFQVRIESIGGE  213
+
+
+> sp|Q38865|EXPA6_ARATH Expansin-A6 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA6 PE=2 SV=2
+Length=257
+
+ Score = 38.0 bits (87),  Expect = 0.005, Method: Composition-based stats.
+ Identities = 12/54 (22%), Positives = 22/54 (41%), Gaps = 3/54 (6%)
+
+Query  40   EWVAMTKGEGGVWTFDSEEPLQG-PFNFRFLTEKGMKNVFDDVVPEKYTIGATY  92
+             W+ M++  G  W   S   L G   +FR  +     +   ++ P  +  G T+
+Sbjct  199  SWMTMSRNWGQNWQ--SNSVLVGQSLSFRVTSSDRRSSTSWNIAPANWKFGQTF  250
+
+
+
+Lambda      K        H        a         alpha
+   0.306    0.143    0.452    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0444    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4887054120
+Results from round 3
+
+
+Query= 1BMW
+
+Length=96
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+Sequences used in model and found again:
+
+  sp|Q8H7T4|EXB10_ORYSJ Expansin-B10 OS=Oryza sativa subsp. japon...  139     2e-40
+  sp|O04701|MPAC1_CYNDA Major pollen allergen Cyn d 1 OS=Cynodon ...  137     9e-40
+  sp|Q40638|EXPB1_ORYSJ Expansin-B1 OS=Oryza sativa subsp. japoni...  133     8e-38
+  sp|P58738|EXPB1_MAIZE Expansin-B1 OS=Zea mays OX=4577 GN=EXPB1 ...  130     6e-37
+  sp|P43213|MPAP1_PHLPR Pollen allergen Phl p 1 OS=Phleum pratens...  129     2e-36
+  sp|Q1ZYQ8|EXB10_MAIZE Expansin-B10 OS=Zea mays OX=4577 GN=EXPB1...  129     2e-36
+  sp|P43214|MPAP2_PHLPR Pollen allergen Phl p 2 OS=Phleum pratens...  123     1e-35
+  sp|P0C1Y5|EXB11_MAIZE Expansin-B11 OS=Zea mays OX=4577 GN=EXPB1...  126     4e-35
+  sp|Q07154|EXPB9_MAIZE Expansin-B9 OS=Zea mays OX=4577 GN=EXPB9 ...  125     6e-35
+  sp|P14946|MPAL1_LOLPR Pollen allergen Lol p 1 OS=Lolium perenne...  124     2e-34
+  sp|Q7XCG7|EXPB9_ORYSJ Expansin-B9 OS=Oryza sativa subsp. japoni...  124     3e-34
+  sp|Q336T5|EXPB3_ORYSJ Expansin-B3 OS=Oryza sativa subsp. japoni...  123     3e-34
+  sp|P43216|MPAH1_HOLLA Major pollen allergen Hol l 1 OS=Holcus l...  123     3e-34
+  sp|Q41260|MPAP1_PHAAQ Major pollen allergen Pha a 1 OS=Phalaris...  121     4e-33
+  sp|Q7XCA7|EXPB6_ORYSJ Expansin-B6 OS=Oryza sativa subsp. japoni...  120     9e-33
+  sp|Q10G40|EXB12_ORYSJ Expansin-B12 OS=Oryza sativa subsp. japon...  119     3e-32
+  sp|Q7XT39|EXPB5_ORYSJ Expansin-B5 OS=Oryza sativa subsp. japoni...  118     3e-32
+  sp|Q9LD07|EXPB7_ORYSJ Expansin-B7 OS=Oryza sativa subsp. japoni...  119     5e-32
+  sp|Q5W6Z9|EXB18_ORYSJ Expansin-B18 OS=Oryza sativa subsp. japon...  117     8e-32
+  sp|Q6H676|EXB11_ORYSJ Expansin-B11 OS=Oryza sativa subsp. japon...  118     9e-32
+  sp|O24230|EXPB2_ORYSJ Expansin-B2 OS=Oryza sativa subsp. japoni...  116     1e-31
+  sp|Q94LR4|EXPB4_ORYSJ Expansin-B4 OS=Oryza sativa subsp. japoni...  116     2e-31
+  sp|Q10T32|EXPB8_ORYSJ Expansin-B8 OS=Oryza sativa subsp. japoni...  116     2e-31
+  sp|Q7XT40|EXB15_ORYSJ Expansin-B15 OS=Oryza sativa subsp. japon...  116     2e-31
+  sp|Q38866|EXPA2_ARATH Expansin-A2 OS=Arabidopsis thaliana OX=37...  115     3e-31
+  sp|Q9M0I2|EXPB3_ARATH Expansin-B3 OS=Arabidopsis thaliana OX=37...  113     2e-30
+  sp|F4IBJ3|EXB6L_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=37...  112     3e-30
+  sp|Q9SHY6|EXPB2_ARATH Putative expansin-B2 OS=Arabidopsis thali...  113     4e-30
+  sp|Q9SKU2|EXPB1_ARATH Expansin-B1 OS=Arabidopsis thaliana OX=37...  113     5e-30
+  sp|O22874|EXPA8_ARATH Expansin-A8 OS=Arabidopsis thaliana OX=37...  111     1e-29
+  sp|Q9FL78|EXP26_ARATH Putative expansin-A26 OS=Arabidopsis thal...  111     1e-29
+  sp|Q9FL80|EXP22_ARATH Expansin-A22 OS=Arabidopsis thaliana OX=3...  111     1e-29
+  sp|Q6H677|EXB14_ORYSJ Putative expansin-B14 OS=Oryza sativa sub...  111     1e-29
+  sp|P14947|MPAL2_LOLPR Pollen allergen Lol p 2-A OS=Lolium peren...  106     3e-29
+  sp|Q946J4|EXB13_ORYSJ Expansin-B13 OS=Oryza sativa subsp. japon...  108     8e-29
+  sp|Q6IVU7|EXPB6_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=37...  109     1e-28
+  sp|O80622|EXP15_ARATH Expansin-A15 OS=Arabidopsis thaliana OX=3...  108     1e-28
+  sp|Q7XUD0|EXP10_ORYSJ Expansin-A10 OS=Oryza sativa subsp. japon...  108     1e-28
+  sp|Q4PNY1|EXP11_ORYSJ Expansin-A11 OS=Oryza sativa subsp. japon...  108     2e-28
+  sp|P93124|MPAG3_DACGL Pollen allergen Dac g 3 (Fragment) OS=Dac...  104     2e-28
+  sp|Q9FL77|EXP25_ARATH Expansin-A25 OS=Arabidopsis thaliana OX=3...  108     3e-28
+  sp|Q4PR51|EXP14_ORYSJ Expansin-A14 OS=Oryza sativa subsp. japon...  108     3e-28
+  sp|Q7XWU8|EXPA1_ORYSJ Expansin-A1 OS=Oryza sativa subsp. japoni...  107     5e-28
+  sp|Q7X6J9|EXB17_ORYSJ Expansin-B17 OS=Oryza sativa subsp. japon...  107     6e-28
+  sp|Q9FL79|EXP23_ARATH Expansin-A23 OS=Arabidopsis thaliana OX=3...  106     8e-28
+  sp|Q9C554|EXPA1_ARATH Expansin-A1 OS=Arabidopsis thaliana OX=37...  106     1e-27
+  sp|Q4PR44|EXP22_ORYSJ Expansin-A22 OS=Oryza sativa subsp. japon...  106     2e-27
+  sp|Q38864|EXPA5_ARATH Expansin-A5 OS=Arabidopsis thaliana OX=37...  105     2e-27
+  sp|Q4PR42|EXP24_ORYSJ Expansin-A24 OS=Oryza sativa subsp. japon...  106     2e-27
+  sp|Q40636|EXPA2_ORYSJ Expansin-A2 OS=Oryza sativa subsp. japoni...  105     2e-27
+  sp|Q7G6Z5|EXP19_ORYSJ Expansin-A19 OS=Oryza sativa subsp. japon...  105     2e-27
+  sp|Q9SHD1|EXPB4_ARATH Expansin-B4 OS=Arabidopsis thaliana OX=37...  105     3e-27
+  sp|Q9FMA0|EXP14_ARATH Expansin-A14 OS=Arabidopsis thaliana OX=3...  104     3e-27
+  sp|Q4PR48|EXP18_ORYSJ Expansin-A18 OS=Oryza sativa subsp. japon...  104     5e-27
+  sp|Q9M4X7|EXPA6_ORYSJ Expansin-A6 OS=Oryza sativa subsp. japoni...  104     7e-27
+  sp|Q9M9P0|EXP13_ARATH Expansin-A13 OS=Arabidopsis thaliana OX=3...  104     9e-27
+  sp|Q9XHX0|EXPA8_ORYSJ Expansin-A8 OS=Oryza sativa subsp. japoni...  103     1e-26
+  sp|Q7G6Z2|EXP12_ORYSJ Expansin-A12 OS=Oryza sativa subsp. japon...  103     1e-26
+  sp|Q9LDR9|EXP10_ARATH Expansin-A10 OS=Arabidopsis thaliana OX=3...  103     1e-26
+  sp|Q4PR43|EXP23_ORYSJ Expansin-A23 OS=Oryza sativa subsp. japon...  103     1e-26
+  sp|Q0DHB7|EXPA4_ORYSJ Expansin-A4 OS=Oryza sativa subsp. japoni...  103     2e-26
+  sp|A2Y5R6|EXPA4_ORYSI Expansin-A4 OS=Oryza sativa subsp. indica...  103     2e-26
+  sp|Q9SZM1|EXP20_ARATH Expansin-A20 OS=Arabidopsis thaliana OX=3...  102     3e-26
+  sp|Q69XV9|EXP16_ORYSJ Expansin-A16 OS=Oryza sativa subsp. japon...  102     3e-26
+  sp|Q9M203|EXPB5_ARATH Expansin-B5 OS=Arabidopsis thaliana OX=37...  102     4e-26
+  sp|Q4PR39|EXP29_ORYSJ Expansin-A29 OS=Oryza sativa subsp. japon...  102     4e-26
+  sp|Q4PR52|EXP13_ORYSJ Expansin-A13 OS=Oryza sativa subsp. japon...  102     4e-26
+  sp|Q9LNU3|EXP11_ARATH Expansin-A11 OS=Arabidopsis thaliana OX=3...  101     5e-26
+  sp|Q10RK1|EXP20_ORYSJ Expansin-A20 OS=Oryza sativa subsp. japon...  101     7e-26
+  sp|P14948|MPAL3_LOLPR Pollen allergen Lol p 3 OS=Lolium perenne...  97.6    7e-26
+  sp|Q9FL81|EXP21_ARATH Expansin-A21 OS=Arabidopsis thaliana OX=3...  101     8e-26
+  sp|Q4PR40|EXP28_ORYSJ Expansin-A28 OS=Oryza sativa subsp. japon...  100     1e-25
+  sp|Q7XE35|EXP27_ORYSJ Putative expansin-A27 OS=Oryza sativa sub...  100     2e-25
+  sp|Q9LDJ3|EXP12_ARATH Expansin-A12 OS=Arabidopsis thaliana OX=3...  100     2e-25
+  sp|Q4PR41|EXP25_ORYSJ Expansin-A25 OS=Oryza sativa subsp. japon...  98.8    7e-25
+  sp|Q9LZ99|EXPA9_ARATH Expansin-A9 OS=Arabidopsis thaliana OX=37...  98.8    7e-25
+  sp|Q6ZGU9|EXPA5_ORYSJ Expansin-A5 OS=Oryza sativa subsp. japoni...  99.2    7e-25
+  sp|Q852A1|EXPA7_ORYSJ Expansin-A7 OS=Oryza sativa subsp. japoni...  98.8    9e-25
+  sp|O48818|EXPA4_ARATH Expansin-A4 OS=Arabidopsis thaliana OX=37...  98.4    1e-24
+  sp|Q9M2S9|EXP16_ARATH Expansin-A16 OS=Arabidopsis thaliana OX=3...  98.4    1e-24
+  sp|Q40637|EXPA3_ORYSJ Expansin-A3 OS=Oryza sativa subsp. japoni...  98.0    1e-24
+  sp|Q10KN4|EXP21_ORYSJ Expansin-A21 OS=Oryza sativa subsp. japon...  98.0    1e-24
+  sp|O80932|EXPA3_ARATH Expansin-A3 OS=Arabidopsis thaliana OX=37...  97.3    3e-24
+  sp|Q75I75|EXP31_ORYSJ Expansin-A31 OS=Oryza sativa subsp. japon...  96.1    7e-24
+  sp|Q9LQ07|EXP18_ARATH Expansin-A18 OS=Arabidopsis thaliana OX=3...  95.7    1e-23
+  sp|Q9FL76|EXP24_ARATH Expansin-A24 OS=Arabidopsis thaliana OX=3...  96.1    1e-23
+  sp|P0C1Y4|EXP33_ORYSJ Expansin-A33 OS=Oryza sativa subsp. japon...  94.9    1e-23
+  sp|Q8H274|EXLA3_ORYSJ Expansin-like A3 OS=Oryza sativa subsp. j...  95.3    1e-23
+  sp|Q9SVE5|EXLA2_ARATH Expansin-like A2 OS=Arabidopsis thaliana ...  94.6    3e-23
+  sp|Q9LN94|EXPA7_ARATH Expansin-A7 OS=Arabidopsis thaliana OX=37...  94.6    3e-23
+  sp|Q9ZSI1|EXP17_ARATH Putative expansin-A17 OS=Arabidopsis thal...  93.4    7e-23
+  sp|Q4PR53|EXPA9_ORYSJ Expansin-A9 OS=Oryza sativa subsp. japoni...  91.9    3e-22
+  sp|Q0DZ85|EXB16_ORYSJ Expansin-B16 OS=Oryza sativa subsp. japon...  91.5    4e-22
+  sp|Q6YYW5|EXP32_ORYSJ Expansin-A32 OS=Oryza sativa subsp. japon...  91.1    5e-22
+  sp|Q9LZT5|EXLA3_ARATH Expansin-like A3 OS=Arabidopsis thaliana ...  90.3    9e-22
+  sp|Q4PR50|EXP15_ORYSJ Expansin-A15 OS=Oryza sativa subsp. japon...  89.2    2e-21
+  sp|Q2QP13|EXP26_ORYSJ Expansin-A26 OS=Oryza sativa subsp. japon...  89.6    2e-21
+  sp|Q10S70|EXLA1_ORYSJ Expansin-like A1 OS=Oryza sativa subsp. j...  87.6    9e-21
+  sp|Q7XCL0|EXLA2_ORYSJ Expansin-like A2 OS=Oryza sativa subsp. j...  86.5    3e-20
+  sp|O23547|EXLB1_ARATH Expansin-like B1 OS=Arabidopsis thaliana ...  86.1    3e-20
+  sp|Q9LZT4|EXLA1_ARATH Expansin-like A1 OS=Arabidopsis thaliana ...  85.7    4e-20
+  sp|Q8W2X8|EXP30_ORYSJ Putative expansin-A30 OS=Oryza sativa sub...  85.3    7e-20
+  sp|Q850K7|EXLB1_ORYSJ Expansin-like B1 OS=Oryza sativa subsp. j...  82.2    8e-19
+  sp|Q5Z980|EXLA4_ORYSJ Expansin-like A4 OS=Oryza sativa subsp. j...  73.8    1e-15
+  sp|Q86AV4|EXPL5_DICDI Expansin-like protein 5 OS=Dictyostelium ...  59.1    1e-10
+
+Sequences not found previously or not previously below threshold:
+
+  sp|Q38865|EXPA6_ARATH Expansin-A6 OS=Arabidopsis thaliana OX=37...  87.2    1e-20
+  sp|Q4PR49|EXP17_ORYSJ Expansin-A17 OS=Oryza sativa subsp. japon...  56.0    3e-09
+  sp|Q55G31|EXPL1_DICDI Expansin-like protein 1 OS=Dictyostelium ...  47.6    3e-06
+  sp|Q7KWS2|EXPL3_DICDI Expansin-like protein 3 OS=Dictyostelium ...  46.8    7e-06
+  sp|Q55G32|EXPL6_DICDI Expansin-like protein 6 OS=Dictyostelium ...  42.6    2e-04
+
+
+> sp|Q8H7T4|EXB10_ORYSJ Expansin-B10 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB10 PE=2 SV=1
+Length=267
+
+ Score = 139 bits (351),  Expect = 2e-40, Method: Composition-based stats.
+ Identities = 42/95 (44%), Positives = 58/95 (61%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEVEL--REHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VEKGSN  + AVLVKY G     V++  +E GS+EW  + +  G +W  D+ +PL
+Sbjct  169  KVTFHVEKGSNPNYFAVLVKYVGGDGDVVKVELKEKGSEEWKPLNESWGAIWRIDTPKPL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ R  TE   K V +DV+P+ +   A Y  E
+Sbjct  229  KGPFSLRVTTESDQKLVANDVIPDNWKANALYKSE  263
+
+
+> sp|O04701|MPAC1_CYNDA Major pollen allergen Cyn d 1 OS=Cynodon 
+dactylon OX=28909 GN=CYND1 PE=1 SV=1
+Length=246
+
+ Score = 137 bits (346),  Expect = 9e-40, Method: Composition-based stats.
+ Identities = 36/95 (38%), Positives = 56/95 (59%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+TF +EKGSN+ +LA+LVKY      +  V+++   SDE++ M    G +W  D ++PL
+Sbjct  147  KITFHIEKGSNDHYLALLVKYAAGDGNIVAVDIKPRDSDEFIPMKSSWGAIWRIDPKKPL  206
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ R  +E G   V DDV+P  +     Y  +
+Sbjct  207  KGPFSIRLTSEGGAHLVQDDVIPANWKPDTVYTSK  241
+
+
+> sp|Q40638|EXPB1_ORYSJ Expansin-B1 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB1a PE=1 SV=2
+Length=267
+
+ Score = 133 bits (334),  Expect = 8e-38, Method: Composition-based stats.
+ Identities = 37/95 (39%), Positives = 57/95 (60%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEVEL--REHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+TF +EK SN  +LA+LVKY       VE+  +E GS+EW A+ +  G +W  D+ +PL
+Sbjct  169  KITFHIEKASNPNYLALLVKYVAGDGDVVEVEIKEKGSEEWKALKESWGAIWRIDTPKPL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ R  TE G K + +D +P+ +   + Y   
+Sbjct  229  KGPFSVRVTTEGGEKIIAEDAIPDGWKADSVYKSN  263
+
+
+> sp|P58738|EXPB1_MAIZE Expansin-B1 OS=Zea mays OX=4577 GN=EXPB1 
+PE=1 SV=2
+Length=269
+
+ Score = 130 bits (328),  Expect = 6e-37, Method: Composition-based stats.
+ Identities = 36/95 (38%), Positives = 51/95 (54%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEV--ELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+ F +EKG N  +LAVLVKY  D    V  E+++  S EW  M    G +W  D+ + L
+Sbjct  171  KIVFHIEKGCNPNYLAVLVKYVADDGDIVLMEIQDKLSAEWKPMKLSWGAIWRMDTAKAL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ R  +E G K +  DV+P  +   A Y   
+Sbjct  231  KGPFSIRLTSESGKKVIAKDVIPANWRPDAVYTSN  265
+
+
+> sp|P43213|MPAP1_PHLPR Pollen allergen Phl p 1 OS=Phleum pratense 
+OX=15957 GN=PHLPI PE=1 SV=1
+Length=263
+
+ Score = 129 bits (325),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 38/95 (40%), Positives = 57/95 (60%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VEKGSN  +LA+LVKY      +  V+++E G D+W+ + +  G +W  D+ + L
+Sbjct  169  KVTFHVEKGSNPNYLALLVKYVNGDGDVVAVDIKEKGKDKWIELKESWGAIWRIDTPDKL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+             GPF  R+ TE G K   +DV+PE +    +Y  +
+Sbjct  229  TGPFTVRYTTEGGTKTEAEDVIPEGWKADTSYESK  263
+
+
+> sp|Q1ZYQ8|EXB10_MAIZE Expansin-B10 OS=Zea mays OX=4577 GN=EXPB10 
+PE=1 SV=2
+Length=270
+
+ Score = 129 bits (325),  Expect = 2e-36, Method: Composition-based stats.
+ Identities = 37/95 (39%), Positives = 55/95 (58%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF +EKG    +LA+LVKY      +  V+++E GSD +  +    G +W  DS++PL
+Sbjct  176  KVTFHLEKGCGPNYLALLVKYVDGDGDIVAVDVKEKGSDTYEPLKHSWGAIWRKDSDKPL  235
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GP   R  TE G K+V+DDV+P  +     Y  +
+Sbjct  236  KGPLTVRLTTEGGTKSVYDDVIPANWKANTAYTAK  270
+
+
+> sp|P43214|MPAP2_PHLPR Pollen allergen Phl p 2 OS=Phleum pratense 
+OX=15957 GN=PHLPII PE=1 SV=1
+Length=122
+
+ Score = 123 bits (310),  Expect = 1e-35, Method: Composition-based stats.
+ Identities = 96/96 (100%), Positives = 96/96 (100%), Gaps = 0/96 (0%)
+
+Query  1    VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL
+Sbjct  27   VPKVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  86
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE
+Sbjct  87   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  122
+
+
+> sp|P0C1Y5|EXB11_MAIZE Expansin-B11 OS=Zea mays OX=4577 GN=EXPB11 
+PE=1 SV=1
+Length=269
+
+ Score = 126 bits (316),  Expect = 4e-35, Method: Composition-based stats.
+ Identities = 36/95 (38%), Positives = 55/95 (58%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF +EKG N  +LA+LVKY      +  V+++E GSD +  +    G +W  DS++P+
+Sbjct  175  KVTFHLEKGCNPNYLALLVKYVDGDGDIVAVDIKEKGSDTYEPLKHSWGAIWRKDSDKPI  234
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GP   +  TE G K V+DDV+P  +     Y  +
+Sbjct  235  KGPITVQLTTEGGTKTVYDDVIPAGWKPNTAYTAK  269
+
+
+> sp|Q07154|EXPB9_MAIZE Expansin-B9 OS=Zea mays OX=4577 GN=EXPB9 
+PE=1 SV=2
+Length=269
+
+ Score = 125 bits (315),  Expect = 6e-35, Method: Composition-based stats.
+ Identities = 33/95 (35%), Positives = 51/95 (54%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEV--ELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K+ F +EKG N  ++AVLVK+  D    V  E+++  S EW  M    G +W  D+ + L
+Sbjct  171  KIVFHIEKGCNPNYVAVLVKFVADDGDIVLMEIQDKLSAEWKPMKLSWGAIWRMDTAKAL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ R  +E G K +  D++P  +   A Y   
+Sbjct  231  KGPFSIRLTSESGKKVIAKDIIPANWRPDAVYTSN  265
+
+
+> sp|P14946|MPAL1_LOLPR Pollen allergen Lol p 1 OS=Lolium perenne 
+OX=4522 PE=1 SV=2
+Length=263
+
+ Score = 124 bits (311),  Expect = 2e-34, Method: Composition-based stats.
+ Identities = 38/95 (40%), Positives = 58/95 (61%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K TF VEK SN  +LA+LVKY      +  V+++E G D+W+ + +  G VW  D+ + L
+Sbjct  169  KPTFHVEKASNPNYLAILVKYVDGDGDVVAVDIKEKGKDKWIELKESWGAVWRIDTPDKL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+             GPF  R+ TE G K+ F+DV+PE +    +Y+ +
+Sbjct  229  TGPFTVRYTTEGGTKSEFEDVIPEGWKADTSYSAK  263
+
+
+> sp|Q7XCG7|EXPB9_ORYSJ Expansin-B9 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB9 PE=2 SV=1
+Length=269
+
+ Score = 124 bits (311),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 38/95 (40%), Positives = 50/95 (53%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAE--VELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VEKGSN  +LAVLVK+  D      ++L+E G   W  M    G +W  D+  PL
+Sbjct  171  KVTFHVEKGSNPNYLAVLVKFVADDGDVIQMDLQEAGLPAWRPMKLSWGAIWRMDTATPL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            + PF+ R  TE G   +  DV+P  +   A Y   
+Sbjct  231  KAPFSIRVTTESGKSLIAKDVIPVNWMPDAIYVSN  265
+
+
+> sp|Q336T5|EXPB3_ORYSJ Expansin-B3 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB3 PE=2 SV=2
+Length=268
+
+ Score = 123 bits (310),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 36/94 (38%), Positives = 48/94 (51%), Gaps = 2/94 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            KVTF VE+GSN  + AVLV+YE     + +V+L E  S  W  M +  G +W  DS   L
+Sbjct  169  KVTFHVEEGSNPVYFAVLVEYEDGDGDVVQVDLMEANSQSWTPMRESWGSIWRLDSNHRL  228
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+              PF+ R   E G + V   V+P  +   A Y  
+Sbjct  229  TAPFSLRITNESGKQLVASQVIPANWAPMAVYRS  262
+
+
+> sp|P43216|MPAH1_HOLLA Major pollen allergen Hol l 1 OS=Holcus 
+lanatus OX=29679 PE=1 SV=1
+Length=265
+
+ Score = 123 bits (310),  Expect = 3e-34, Method: Composition-based stats.
+ Identities = 38/95 (40%), Positives = 55/95 (58%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKY--EGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K TF VEKGSN  +LA+LVKY      +  V+++E G D+W+ + +  G VW  D+ + L
+Sbjct  171  KPTFHVEKGSNPNYLALLVKYIDGDGDVVAVDIKEKGKDKWIELKESWGAVWRVDTPDKL  230
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+             GPF  R+ TE G K   +DV+PE +     Y  +
+Sbjct  231  TGPFTVRYTTEGGTKGEAEDVIPEGWKADTAYEAK  265
+
+
+> sp|Q41260|MPAP1_PHAAQ Major pollen allergen Pha a 1 OS=Phalaris 
+aquatica OX=28479 PE=1 SV=1
+Length=269
+
+ Score = 121 bits (303),  Expect = 4e-33, Method: Composition-based stats.
+ Identities = 38/95 (40%), Positives = 56/95 (59%), Gaps = 2/95 (2%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            K TF VEKGSN  +LA+LVKY      +  V+++E G D+W+ + +  G +W  D+ + L
+Sbjct  175  KPTFHVEKGSNPNYLALLVKYVDGDGDVVAVDIKEKGKDKWIELKESWGAIWRIDTPDKL  234
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+             GPF  R+ TE G K  F+DV+PE +      A +
+Sbjct  235  TGPFTVRYTTEGGTKAEFEDVIPEGWKADTHDASK  269
+
+
+> sp|Q7XCA7|EXPB6_ORYSJ Expansin-B6 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB6 PE=2 SV=1
+Length=275
+
+ Score = 120 bits (301),  Expect = 9e-33, Method: Composition-based stats.
+ Identities = 33/100 (33%), Positives = 51/100 (51%), Gaps = 8/100 (8%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEG--DTMAEVELREHGS------DEWVAMTKGEGGVWTF  54
+            K+ F VE+GSN  + AVLV+YE     + +V+L E  S        W  M +  G +W  
+Sbjct  171  KINFHVEEGSNPVYFAVLVEYEDLDGDVVQVDLMESKSAYGGATGVWTPMRESWGSIWRL  230
+
+Query  55   DSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            DS   LQ PF+ R  ++ G   V ++V+P  ++  + Y  
+Sbjct  231  DSNHRLQAPFSLRIRSDSGKTLVANNVIPANWSPNSNYRS  270
+
+
+> sp|Q10G40|EXB12_ORYSJ Expansin-B12 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB12 PE=2 SV=2
+Length=313
+
+ Score = 119 bits (299),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 33/96 (34%), Positives = 48/96 (50%), Gaps = 5/96 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKY--EGDTMAEVELREHG---SDEWVAMTKGEGGVWTFDSEE  58
+            +TF V+ GSN  +LA+LV+Y      +A V++   G   S  W+ M +  G VW  +S  
+Sbjct  178  LTFVVDSGSNPNYLALLVEYDDNDSDLAAVDIMPIGAGASGSWIPMQQSWGAVWRLNSGS  237
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+             LQGPF+ R     G   V  + +P  +  G  Y P
+Sbjct  238  ALQGPFSVRLTFSSGQMFVASNAIPAGWNPGMAYQP  273
+
+
+> sp|Q7XT39|EXPB5_ORYSJ Expansin-B5 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB5 PE=2 SV=2
+Length=275
+
+ Score = 118 bits (297),  Expect = 3e-32, Method: Composition-based stats.
+ Identities = 33/97 (34%), Positives = 47/97 (48%), Gaps = 5/97 (5%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTM--AEVELREH-GSDEWVAMTKGEGGVWTFDSE--  57
+             V F V+ GSN  +LA+LV+Y       A V + E  G   W AM +  G  W  +S   
+Sbjct  173  NVAFKVDAGSNPYYLAILVQYANGDGDLAAVHIMEARGGGGWKAMQQSWGATWRLNSNTG  232
+
+Query  58   EPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            +PL  PF+ R  +  G   V ++V+P  +  G TY  
+Sbjct  233  KPLSPPFSIRLTSGSGKVLVANNVIPSGWQAGLTYRS  269
+
+
+> sp|Q9LD07|EXPB7_ORYSJ Expansin-B7 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB7 PE=2 SV=1
+Length=327
+
+ Score = 119 bits (298),  Expect = 5e-32, Method: Composition-based stats.
+ Identities = 32/103 (31%), Positives = 48/103 (47%), Gaps = 12/103 (12%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELR------------EHGSDEWVAMTKGEGGV  51
+            VTF VE+GSN  ++A+LV+YE      V++                +  W  M +  G +
+Sbjct  220  VTFHVEQGSNPVYMAILVEYENGDGDVVQVDLMESRYSTGGVDGTPTGVWTPMRESWGSI  279
+
+Query  52   WTFDSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            W  D+  PLQGPF+ R   E G   + D V+P  +     Y+ 
+Sbjct  280  WRLDTNHPLQGPFSLRITNESGKTLIADQVIPADWQPNTVYSS  322
+
+
+> sp|Q5W6Z9|EXB18_ORYSJ Expansin-B18 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB18 PE=2 SV=1
+Length=264
+
+ Score = 117 bits (294),  Expect = 8e-32, Method: Composition-based stats.
+ Identities = 31/94 (33%), Positives = 46/94 (49%), Gaps = 3/94 (3%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMA--EVELREHGSDE-WVAMTKGEGGVWTFDSEEPL  60
+            +TF V+ GSN  + AVLVKYE        ++L + G+   W  M +  G VW   +   L
+Sbjct  167  LTFAVDAGSNPSYFAVLVKYENGDGDLSGMDLMQTGAGAAWTPMQQSWGAVWKLSAGAAL  226
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            Q P + R  +  G   V  +V+P  +  GA+Y  
+Sbjct  227  QAPLSIRLTSSSGKTLVASNVIPSGWKPGASYTS  260
+
+
+> sp|Q6H676|EXB11_ORYSJ Expansin-B11 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB11 PE=2 SV=1
+Length=292
+
+ Score = 118 bits (295),  Expect = 9e-32, Method: Composition-based stats.
+ Identities = 27/96 (28%), Positives = 49/96 (51%), Gaps = 5/96 (5%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMA--EVELREHGSDEWVAMTKGEGGVWTFDSE--E  58
+             + F V++G+N  +  VL+++E        V+L E G   W  M +  G +W ++S   +
+Sbjct  193  NIAFRVDQGANPFYFEVLIEFEDGDGDLNAVDLMEAGCG-WTPMVQNWGALWRYNSNTGK  251
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+             L+ PF+ R  ++ G   V ++V+P  +  G TY  
+Sbjct  252  ALKAPFSLRLTSDSGKVLVANNVIPASWKPGVTYRS  287
+
+
+> sp|O24230|EXPB2_ORYSJ Expansin-B2 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB2 PE=2 SV=2
+Length=261
+
+ Score = 116 bits (292),  Expect = 1e-31, Method: Composition-based stats.
+ Identities = 30/99 (30%), Positives = 45/99 (45%), Gaps = 7/99 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVEL-------REHGSDEWVAMTKGEGGVWTFDS  56
+            V F VE GSN  +LAVLV++       V+L           +  W  M +  G +W  D+
+Sbjct  159  VNFHVEAGSNPVYLAVLVEFANKDGTVVQLDVMESLPSGKPTRVWTPMRRSWGSIWRLDA  218
+
+Query  57   EEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+               LQGPF+ R ++E G   +   V+P  +     Y  +
+Sbjct  219  NHRLQGPFSLRMVSESGQTVIAHQVIPANWRANTNYGSK  257
+
+
+> sp|Q94LR4|EXPB4_ORYSJ Expansin-B4 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB4 PE=2 SV=1
+Length=286
+
+ Score = 116 bits (292),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 31/100 (31%), Positives = 47/100 (47%), Gaps = 8/100 (8%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREHGS------DEWVAMTKGEGGVWTF  54
+            K+ F VE+ SN  + AVLV+YE     + +V+L E  +        W  M +  G +W  
+Sbjct  182  KIGFHVEEYSNPVYFAVLVEYEDGDGDVVQVDLMESKTAHGPPTGRWTPMRESWGSIWRL  241
+
+Query  55   DSEEPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            D+   LQ PF+ R   E G   V ++V+P  +     Y  
+Sbjct  242  DTNHRLQAPFSIRIRNESGKTLVANNVIPANWRPNTFYRS  281
+
+
+> sp|Q10T32|EXPB8_ORYSJ Expansin-B8 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB8 PE=2 SV=1
+Length=276
+
+ Score = 116 bits (291),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 33/96 (34%), Positives = 46/96 (48%), Gaps = 4/96 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEVEL----REHGSDEWVAMTKGEGGVWTFDSEE  58
+            KV F VE+GS+  +LAVLV+YE       ++       G   W  M +  G VW  DS  
+Sbjct  175  KVGFHVEEGSSPVYLAVLVEYENGDGDVAQVDLKEAGAGGGRWTPMRESWGSVWRLDSNH  234
+
+Query  59   PLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+             L+ PF+ R  ++ G   V  DV+P  +T    Y  
+Sbjct  235  RLRAPFSIRIRSDSGKTLVAPDVIPLNWTPNTFYRS  270
+
+
+> sp|Q7XT40|EXB15_ORYSJ Expansin-B15 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB15 PE=3 SV=2
+Length=264
+
+ Score = 116 bits (290),  Expect = 2e-31, Method: Composition-based stats.
+ Identities = 34/95 (36%), Positives = 48/95 (51%), Gaps = 3/95 (3%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMA--EVELREHGSDE-WVAMTKGEGGVWTFDSEEP  59
+            K+TF V+ GSN  + AVLVKYE        VEL + G+   W  M +  G VW  ++   
+Sbjct  166  KLTFVVDVGSNPNYFAVLVKYENGDGDLSGVELMQTGAGAAWTQMQQSWGAVWKLNAGSA  225
+
+Query  60   LQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+            LQ PF+ R  +  G   V  +V+P  +  G +Y  
+Sbjct  226  LQAPFSIRLTSSSGKTLVASNVIPSGWKPGMSYIS  260
+
+
+> sp|Q38866|EXPA2_ARATH Expansin-A2 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA2 PE=2 SV=2
+Length=255
+
+ Score = 115 bits (289),  Expect = 3e-31, Method: Composition-based stats.
+ Identities = 25/96 (26%), Positives = 41/96 (43%), Gaps = 7/96 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            + FT+    N     VL+   G    +  V L+   +D+W +M++  G  W   S   L+
+Sbjct  163  IRFTIN--GNPYFDLVLITNVGGAGDIRAVSLKGSKTDQWQSMSRNWGQNWQ--SNTYLR  218
+
+Query  62   G-PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            G   +F+     G   V  DVVP  +  G T+   +
+Sbjct  219  GQSLSFQVTDSDGRTVVSYDVVPHDWQFGQTFEGGQ  254
+
+
+> sp|Q9M0I2|EXPB3_ARATH Expansin-B3 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB3 PE=2 SV=2
+Length=264
+
+ Score = 113 bits (284),  Expect = 2e-30, Method: Composition-based stats.
+ Identities = 29/96 (30%), Positives = 47/96 (49%), Gaps = 4/96 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F V +GS +  L++LV++E     +  + +R+ G+ EW+ M    G  W      PL
+Sbjct  163  NIAFHVNEGSTDFWLSLLVEFEDGEGDIGSMHIRQAGAREWLEMKHVWGANWCII-GGPL  221
+
+Query  61   QGPFNFRFLT-EKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ +  T   G      DVVP  +   ATY+  
+Sbjct  222  KGPFSIKLTTLSAGKTLSATDVVPRNWAPKATYSSR  257
+
+
+> sp|F4IBJ3|EXB6L_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB6 PE=3 SV=1
+Length=223
+
+ Score = 112 bits (280),  Expect = 3e-30, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 46/95 (48%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTM--AEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE      A +E++     E++ M +    VW   S  PL
+Sbjct  125  NIAFRMDPGANPYYISFVVEYENGDGDLAYIEIQPAD-GEFIPMQEMRSAVWKISSGSPL  183
+
+Query  61   QGPFNFRFLTEKGMKNV-FDDVVPEKYTIGATYAP  94
+             GPFN R  + +  K V   +V+P  +    TY  
+Sbjct  184  TGPFNIRLTSAESHKVVLAYNVIPANWKPNETYRS  218
+
+
+> sp|Q9SHY6|EXPB2_ARATH Putative expansin-B2 OS=Arabidopsis thaliana 
+OX=3702 GN=EXPB2 PE=3 SV=2
+Length=273
+
+ Score = 113 bits (282),  Expect = 4e-30, Method: Composition-based stats.
+ Identities = 35/96 (36%), Positives = 51/96 (53%), Gaps = 4/96 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDT--MAEVELREH-GSDEWVAMTKGEGGVWTFDSEEPL  60
+            VTF V+KGSN    AVLV Y      +  +EL++   SD+W++M++  G VW  D   PL
+Sbjct  175  VTFQVDKGSNANSFAVLVAYVNGDGEIGRIELKQALDSDKWLSMSQSWGAVWKLDVSSPL  234
+
+Query  61   QGPFNFRFLT-EKGMKNVFDDVVPEKYTIGATYAPE  95
+            + P + R  + E G   V  +V+P  +  GA Y   
+Sbjct  235  RAPLSLRVTSLESGKTVVASNVIPANWQPGAIYKSN  270
+
+
+> sp|Q9SKU2|EXPB1_ARATH Expansin-B1 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB1 PE=2 SV=1
+Length=271
+
+ Score = 113 bits (282),  Expect = 5e-30, Method: Composition-based stats.
+ Identities = 29/96 (30%), Positives = 46/96 (48%), Gaps = 4/96 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F V  GS +  L++L++YE     +  + +R+ GS EW++M    G  W    E PL
+Sbjct  170  NIAFHVNAGSTDYWLSLLIEYEDGEGDIGSMHIRQAGSKEWISMKHIWGANWCI-VEGPL  228
+
+Query  61   QGPFNFRFLT-EKGMKNVFDDVVPEKYTIGATYAPE  95
+            +GPF+ +  T          DV+P  +   ATY   
+Sbjct  229  KGPFSVKLTTLSNNKTLSATDVIPSNWVPKATYTSR  264
+
+
+> sp|O22874|EXPA8_ARATH Expansin-A8 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA8 PE=2 SV=1
+Length=253
+
+ Score = 111 bits (278),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 23/95 (24%), Positives = 39/95 (41%), Gaps = 5/95 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            + FT+    +     VL+   G    +  V ++   +  W AM++  G  W  +S    Q
+Sbjct  161  IRFTIN--GHSYFNLVLISNVGGAGDVHAVSIKGSKTQSWQAMSRNWGQNWQSNSYMNDQ  218
+
+Query  62   GPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+               +F+  T  G   V +DV P  +  G TY   +
+Sbjct  219  -SLSFQVTTSDGRTLVSNDVAPSNWQFGQTYQGGQ  252
+
+
+> sp|Q9FL78|EXP26_ARATH Putative expansin-A26 OS=Arabidopsis thaliana 
+OX=3702 GN=EXPA26 PE=3 SV=2
+Length=279
+
+ Score = 111 bits (279),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 23/91 (25%), Positives = 36/91 (40%), Gaps = 2/91 (2%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREH-GSDEWVAMTKGEGGVWTFDSEEPLQGPF  64
+               E   N   L VL+   G       ++       W+ M K  G  WT  +    QG  
+Sbjct  187  VKFETKGNPYFLMVLIYNVGGAGDIKYVQVKENKTGWITMKKNWGQNWTTSTVLTGQG-L  245
+
+Query  65   NFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +FR  T  G+   F +V+P+ +  G T+  +
+Sbjct  246  SFRVTTTDGITKDFWNVMPKNWGFGQTFDGK  276
+
+
+> sp|Q9FL80|EXP22_ARATH Expansin-A22 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA22 PE=2 SV=3
+Length=279
+
+ Score = 111 bits (279),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 24/91 (26%), Positives = 37/91 (41%), Gaps = 2/91 (2%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGPF  64
+               E   N   L VL+   G       ++  G+   W+ M K  G  WT  +    QG  
+Sbjct  187  VKFETKGNPYFLMVLIYNVGGAGDIKYVQVKGNKTGWITMKKNWGQNWTTITVLTGQG-L  245
+
+Query  65   NFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +FR  T  G+   F +V+P+ +  G T+   
+Sbjct  246  SFRVTTSDGITKDFWNVMPKNWGFGQTFDGR  276
+
+
+> sp|Q6H677|EXB14_ORYSJ Putative expansin-B14 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXPB14 PE=3 SV=1
+Length=273
+
+ Score = 111 bits (279),  Expect = 1e-29, Method: Composition-based stats.
+ Identities = 33/98 (34%), Positives = 48/98 (49%), Gaps = 7/98 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMA--EVELREHGSDE----WVAMTKGEGGVWTFDSE  57
+            + F V+ GSN+ +LAVLV+ E        V+L + G       W AM +  G VW ++S 
+Sbjct  168  IAFRVDAGSNQYYLAVLVEDEDGDGDLSAVDLMQSGGSGGGGSWAAMQQSWGAVWKYNSG  227
+
+Query  58   -EPLQGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+              PLQ P + R  +  G   V  +V+P  +  G TY  
+Sbjct  228  PAPLQAPMSIRLTSGSGRTLVASNVIPAGWQPGGTYRS  265
+
+
+> sp|P14947|MPAL2_LOLPR Pollen allergen Lol p 2-A OS=Lolium perenne 
+OX=4522 PE=1 SV=1
+Length=97
+
+ Score = 106 bits (265),  Expect = 3e-29, Method: Composition-based stats.
+ Identities = 60/94 (64%), Positives = 77/94 (82%), Gaps = 2/94 (2%)
+
+Query  4   VTFTVEKGSNEKHLAVLVKYE--GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+           V FTVEKGS+EK+LA+ +KY   GD+MAEVEL+EHGS+EW+A+ K   GVW   S++PL+
+Sbjct  4   VEFTVEKGSDEKNLALSIKYNKEGDSMAEVELKEHGSNEWLALKKNGDGVWEIKSDKPLK  63
+
+Query  62  GPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+           GPFNFRF++EKGM+NVFDDVVP  + +G TY PE
+Sbjct  64  GPFNFRFVSEKGMRNVFDDVVPADFKVGTTYKPE  97
+
+
+> sp|Q946J4|EXB13_ORYSJ Expansin-B13 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB13 PE=3 SV=2
+Length=228
+
+ Score = 108 bits (271),  Expect = 8e-29, Method: Composition-based stats.
+ Identities = 30/89 (34%), Positives = 51/89 (57%), Gaps = 1/89 (1%)
+
+Query  7    TVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPFNF  66
+             + K   ++ L   V  +GD + EVE++E GS+EW A+ +  G +W  D+ +PL+GPF+ 
+Sbjct  137  AMAKDGKDEELLKYVAGDGD-VVEVEIKEKGSEEWKALKESWGAIWRIDTPKPLKGPFSV  195
+
+Query  67   RFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            R  TE G K + +D +P+ +   + Y   
+Sbjct  196  RVTTEGGEKIIAEDAIPDGWKADSVYKSN  224
+
+
+> sp|Q6IVU7|EXPB6_ARATH Expansin-B6 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB6 PE=3 SV=1
+Length=259
+
+ Score = 109 bits (272),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 45/95 (47%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTM--AEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE      A  E++  G   ++ M +    VW  +S  PL
+Sbjct  161  NIAFRMDPGANPYYISFVVEYENGDGDLAYTEIQPAG-GTFIPMQEMRSAVWKVNSGSPL  219
+
+Query  61   QGPFNFRFLT-EKGMKNVFDDVVPEKYTIGATYAP  94
+             GPFN R  + E     V  +V+P  +    TY  
+Sbjct  220  TGPFNIRLTSAESHNVVVAYNVIPANWKPNETYRS  254
+
+
+> sp|O80622|EXP15_ARATH Expansin-A15 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA15 PE=2 SV=2
+Length=253
+
+ Score = 108 bits (271),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 19/94 (20%), Positives = 36/94 (38%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VLV   G       +   GS   W  M++  G  W  ++    Q 
+Sbjct  161  IRFTIN--GHSYFNLVLVTNVGGAGDVHSVAVKGSRTRWQQMSRNWGQNWQSNNLLNGQA  218
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+              +F+     G   V +++ P  ++ G T+   +
+Sbjct  219  -LSFKVTASDGRTVVSNNIAPASWSFGQTFTGRQ  251
+
+
+> sp|Q7XUD0|EXP10_ORYSJ Expansin-A10 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA10 PE=2 SV=2
+Length=257
+
+ Score = 108 bits (271),  Expect = 1e-28, Method: Composition-based stats.
+ Identities = 24/94 (26%), Positives = 42/94 (45%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGS-DEWVAMTKGEGGVWTFDSEEPLQG  62
+            V F V   S    L VL+   G       ++  G+   W++M +  G +W  +S+   Q 
+Sbjct  164  VRFAVAGRS--FFLTVLISNVGGAGDVRSVKIKGTESGWLSMGRNWGQIWHINSDFRGQ-  220
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            P +F   +  G      +VVP+++  G TY  ++
+Sbjct  221  PLSFELTSSDGKTLTNYNVVPKEWDFGKTYTGKQ  254
+
+
+> sp|Q4PNY1|EXP11_ORYSJ Expansin-A11 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA11 PE=2 SV=2
+Length=248
+
+ Score = 108 bits (270),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 23/94 (24%), Positives = 36/94 (38%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGS-DEWVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VLV   G       +   GS   W AM+   G  W   +    Q 
+Sbjct  157  IRFTIT--GHSYFNLVLVTNVGGAGDVTAVSVKGSRSGWQAMSHNWGANWQNGANLDGQ-  213
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            P +FR     G     D+V P  ++ G T++  +
+Sbjct  214  PLSFRVTASDGRTVTSDNVAPSGWSFGQTFSGGQ  247
+
+
+> sp|P93124|MPAG3_DACGL Pollen allergen Dac g 3 (Fragment) OS=Dactylis 
+glomerata OX=4509 PE=1 SV=1
+Length=96
+
+ Score = 104 bits (260),  Expect = 2e-28, Method: Composition-based stats.
+ Identities = 56/96 (58%), Positives = 73/96 (76%), Gaps = 3/96 (3%)
+
+Query  3   KVTFTVEKGSNEKHLAVLVKYE--GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+           KVTF VEKGS+ K L + +KY   GDT+AEVELR+HGS+EW  +TK +G +W   S +PL
+Sbjct  2   KVTFKVEKGSDPKKLVLDIKYTRPGDTLAEVELRQHGSEEWEPLTK-KGNLWEVKSSKPL  60
+
+Query  61  QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            GPFNFRF+++ GM+NVFD+V+P  + IG TY PEE
+Sbjct  61  TGPFNFRFMSKGGMRNVFDEVIPTAFKIGTTYTPEE  96
+
+
+> sp|Q9FL77|EXP25_ARATH Expansin-A25 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA25 PE=2 SV=2
+Length=276
+
+ Score = 108 bits (270),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 23/91 (25%), Positives = 35/91 (38%), Gaps = 2/91 (2%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGPF  64
+               E   N   L +L    G       ++  G    W+ M K  G  WT       QG  
+Sbjct  184  VKFETKGNPYFLMILPYNVGGAGDIKLMQVKGDKTGWITMQKNWGQNWTTGVNLTGQG-I  242
+
+Query  65   NFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +FR  T  G+   F++V+P  +  G T+  +
+Sbjct  243  SFRVTTSDGVTKDFNNVMPNNWGFGQTFDGK  273
+
+
+> sp|Q4PR51|EXP14_ORYSJ Expansin-A14 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA14 PE=2 SV=2
+Length=262
+
+ Score = 108 bits (269),  Expect = 3e-28, Method: Composition-based stats.
+ Identities = 23/95 (24%), Positives = 40/95 (42%), Gaps = 7/95 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEG--DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            V FT+    ++    VLV       ++  +++    S +W+ M +  G  W   S   L 
+Sbjct  168  VRFTIN--GHDYFNLVLVTNVATTGSIKSMDIMGSNSTDWMPMVRNWGANWH--SLSYLT  223
+
+Query  62   GP-FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            G   +FR     G   VF ++VP  +  G T+  +
+Sbjct  224  GQTLSFRVTNMDGQTLVFKNIVPSGWKFGQTFTSK  258
+
+
+> sp|Q7XWU8|EXPA1_ORYSJ Expansin-A1 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA1 PE=2 SV=2
+Length=261
+
+ Score = 107 bits (267),  Expect = 5e-28, Method: Composition-based stats.
+ Identities = 26/95 (27%), Positives = 40/95 (42%), Gaps = 6/95 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            V FT+     +    VLV   G   +   +   GS   W+AM++  G  W   S   L G
+Sbjct  168  VRFTIN--GRDYFELVLVSNVGGVGSIQSVSIKGSRTGWMAMSRNWGVNWQ--SNAYLDG  223
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+               +F+  +  G    F DV P  +T G T++  +
+Sbjct  224  QSLSFKVTSSDGQTLTFLDVAPAGWTFGQTFSTSQ  258
+
+
+> sp|Q7X6J9|EXB17_ORYSJ Expansin-B17 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB17 PE=3 SV=2
+Length=278
+
+ Score = 107 bits (267),  Expect = 6e-28, Method: Composition-based stats.
+ Identities = 28/96 (29%), Positives = 44/96 (46%), Gaps = 4/96 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F V +GS    L++LV++E     +  +++++  S EW+ M    G  W      PL
+Sbjct  177  NIAFRVNEGSTNFWLSLLVEFEDGQGDIGSMQIKQANSVEWLDMKHVWGATWCLVRG-PL  235
+
+Query  61   QGPFNFRFLTEKGMK-NVFDDVVPEKYTIGATYAPE  95
+             GPF+ R  T    K     DV+P  +   ATY   
+Sbjct  236  VGPFSVRLTTLSAQKALTARDVIPRNWKPTATYTSR  271
+
+
+> sp|Q9FL79|EXP23_ARATH Expansin-A23 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA23 PE=2 SV=3
+Length=275
+
+ Score = 106 bits (266),  Expect = 8e-28, Method: Composition-based stats.
+ Identities = 23/91 (25%), Positives = 35/91 (38%), Gaps = 2/91 (2%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGPF  64
+               E   N   L +L    G       ++  G    W+ M K  G  WT       QG  
+Sbjct  183  VKFETKGNPYFLMILPYNVGGAGDIKLMQVKGDKTGWITMQKNWGQNWTTGVNLTGQG-I  241
+
+Query  65   NFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            +FR  T  G+   F++V+P  +  G T+  +
+Sbjct  242  SFRVTTSDGVTKDFNNVMPNNWGFGQTFDGK  272
+
+
+> sp|Q9C554|EXPA1_ARATH Expansin-A1 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA1 PE=2 SV=1
+Length=250
+
+ Score = 106 bits (264),  Expect = 1e-27, Method: Composition-based stats.
+ Identities = 21/94 (22%), Positives = 36/94 (38%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VL+   G           GS   W AM++  G  W  +S    Q 
+Sbjct  158  IRFTIN--GHSYFNLVLITNVGGAGDVHSAMVKGSRTGWQAMSRNWGQNWQSNSYLNGQ-  214
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+              +F+  T  G   V ++V    ++ G T+   +
+Sbjct  215  SLSFKVTTSDGQTIVSNNVANAGWSFGQTFTGAQ  248
+
+
+> sp|Q4PR44|EXP22_ORYSJ Expansin-A22 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA22 PE=2 SV=2
+Length=280
+
+ Score = 106 bits (264),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 24/95 (25%), Positives = 40/95 (42%), Gaps = 7/95 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEG--DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            V FT+    ++    VLV        +  +++    S +W+ M +  G  W   S   L 
+Sbjct  186  VRFTIN--GHDYFNLVLVTNVATTGLIKSMDVMGSNSTDWLPMVRNWGANWH--SLSYLT  241
+
+Query  62   GP-FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            G   +FR     G   VF ++VP  +  G T+A +
+Sbjct  242  GQMLSFRVTNMDGQTLVFRNIVPSGWKFGQTFASK  276
+
+
+> sp|Q38864|EXPA5_ARATH Expansin-A5 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA5 PE=2 SV=1
+Length=255
+
+ Score = 105 bits (263),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 22/94 (23%), Positives = 34/94 (36%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VLV   G       +   GS   W  M++  G  W  +S    Q 
+Sbjct  162  IRFTIN--GHSYFNLVLVTNVGGAGDVHSVSMKGSRTKWQLMSRNWGQNWQSNSYLNGQ-  218
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+              +F   T      V  +V P  ++ G TY   +
+Sbjct  219  SLSFVVTTSDRRSVVSFNVAPPTWSFGQTYTGGQ  252
+
+
+> sp|Q4PR42|EXP24_ORYSJ Expansin-A24 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA24 PE=2 SV=2
+Length=278
+
+ Score = 106 bits (264),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 24/95 (25%), Positives = 41/95 (43%), Gaps = 7/95 (7%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEG--DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            V FT+    ++    VLV       ++  +++    S +W+ M +  G  W   S   L 
+Sbjct  184  VRFTIN--GHDYFNLVLVTNVATTGSIKSMDIMGSNSTDWMPMVRNWGANWH--SLSYLT  239
+
+Query  62   GP-FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            G   +FR     G   VF ++VP  +  G T+A +
+Sbjct  240  GQMLSFRVTNMDGQTLVFRNIVPSGWKFGQTFASK  274
+
+
+> sp|Q40636|EXPA2_ORYSJ Expansin-A2 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA2 PE=2 SV=2
+Length=251
+
+ Score = 105 bits (262),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 21/95 (22%), Positives = 34/95 (36%), Gaps = 6/95 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VLV           +   GS   W  M++  G  W   S   L G
+Sbjct  160  IRFTIN--GHSYFNLVLVTNVAGPGDVQSVSIKGSSTGWQPMSRNWGQNWQ--SNSYLDG  215
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+               +F+     G     ++VVP  +  G T+   +
+Sbjct  216  QSLSFQVAVSDGRTVTSNNVVPAGWQFGQTFEGGQ  250
+
+
+> sp|Q7G6Z5|EXP19_ORYSJ Expansin-A19 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA19 PE=2 SV=1
+Length=249
+
+ Score = 105 bits (262),  Expect = 2e-27, Method: Composition-based stats.
+ Identities = 23/90 (26%), Positives = 36/90 (40%), Gaps = 2/90 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FT+  G N   L ++    G         +     W+ MT+  G  W   +    Q  
+Sbjct  155  VRFTIN-GFNYFELVLVTNMAGSGSIASMSVKGSCTGWIQMTRNWGANWQCLAGLAGQA-  212
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+             +F   +  G   VFDD VP  ++ G T++
+Sbjct  213  LSFNVTSTGGQTIVFDDAVPAGWSFGQTFS  242
+
+
+> sp|Q9SHD1|EXPB4_ARATH Expansin-B4 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB4 PE=2 SV=1
+Length=259
+
+ Score = 105 bits (262),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 24/95 (25%), Positives = 47/95 (49%), Gaps = 4/95 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMA--EVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F ++ G+N  +++ +V+YE        VE++  G   +++M +    VW  +S   L
+Sbjct  162  NIVFRMDAGANPYYISFVVEYENGDGDLSNVEIQPAG-GSFISMQEMRSAVWKVNSGSAL  220
+
+Query  61   QGPFNFRFLTEKGMKN-VFDDVVPEKYTIGATYAP  94
+            +GPFN R  + +  K  V  +V+P  +    +Y  
+Sbjct  221  RGPFNIRLTSGESHKVIVAYNVIPANWKPDESYRS  255
+
+
+> sp|Q9FMA0|EXP14_ARATH Expansin-A14 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA14 PE=2 SV=1
+Length=255
+
+ Score = 104 bits (261),  Expect = 3e-27, Method: Composition-based stats.
+ Identities = 17/94 (18%), Positives = 40/94 (43%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VL+         + +   G++  W +M++  G  W  +++   Q 
+Sbjct  160  IRFTIN--GHSYFNLVLITNVAGAGDVISVSIKGTNTRWQSMSRNWGQNWQSNAKLDGQA  217
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+              +F+  T  G   + ++  P  ++ G TY  ++
+Sbjct  218  -LSFKVTTSDGRTVISNNATPRNWSFGQTYTGKQ  250
+
+
+> sp|Q4PR48|EXP18_ORYSJ Expansin-A18 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA18 PE=2 SV=2
+Length=249
+
+ Score = 104 bits (260),  Expect = 5e-27, Method: Composition-based stats.
+ Identities = 23/93 (25%), Positives = 38/93 (41%), Gaps = 2/93 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FT+  G N   L ++    G         +  S  W+ M++  G  W   +    Q  
+Sbjct  155  VRFTI-TGLNYFELVLVTNMAGSGSIASMSVKGSSTGWIQMSRNWGANWQCLAGLAGQA-  212
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+             +F   +  G   VFD VVP  ++ G T++  +
+Sbjct  213  LSFTVTSTGGQTIVFDSVVPAGWSFGQTFSTYQ  245
+
+
+> sp|Q9M4X7|EXPA6_ORYSJ Expansin-A6 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA6 PE=2 SV=1
+Length=259
+
+ Score = 104 bits (259),  Expect = 7e-27, Method: Composition-based stats.
+ Identities = 26/101 (26%), Positives = 33/101 (33%), Gaps = 12/101 (12%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-------WVAMTKGEGGVWTFDS  56
+            V FTV    +     VLV   G       L   GS         W  M++  G  W   S
+Sbjct  162  VRFTVN--GHAYFNLVLVTNVGGAGDVRSLAVKGSGSGSRVGGRWQPMSRNWGQNWQ--S  217
+
+Query  57   EEPLQG-PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+               L G   +FR     G      DV P  +  G T+   +
+Sbjct  218  NAYLDGKALSFRVTAGDGRSLTCADVAPAGWQFGQTFEGRQ  258
+
+
+> sp|Q9M9P0|EXP13_ARATH Expansin-A13 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA13 PE=2 SV=2
+Length=266
+
+ Score = 104 bits (259),  Expect = 9e-27, Method: Composition-based stats.
+ Identities = 18/94 (19%), Positives = 39/94 (41%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FTV+ G     ++VL+     +     ++  GS   W+ M +  G  W  +++   Q 
+Sbjct  172  MRFTVDGGG--IFISVLITNVAGSGDIAAVKIKGSRTGWLPMGRNWGQNWHINADLRNQA  229
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+              +F   +         +V P+ +  G T+  ++
+Sbjct  230  -LSFEVTSSDRSTVTSYNVSPKNWNYGQTFEGKQ  262
+
+
+> sp|Q9XHX0|EXPA8_ORYSJ Expansin-A8 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA8 PE=2 SV=1
+Length=251
+
+ Score = 103 bits (258),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 27/93 (29%), Positives = 39/93 (42%), Gaps = 6/93 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + F V    +     VLV   G + A  ++   GS   W+AM++  G  W   S   L G
+Sbjct  158  IRFAVN--GHSYFELVLVTNVGGSGAVAQMWIKGSGTGWMAMSRNWGANWQ--SNARLDG  213
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+               +FR   + G      DV P  ++ GATY  
+Sbjct  214  QALSFRVQADDGRVVTAADVAPAGWSFGATYTS  246
+
+
+> sp|Q7G6Z2|EXP12_ORYSJ Expansin-A12 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA12 PE=2 SV=1
+Length=250
+
+ Score = 103 bits (257),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 23/92 (25%), Positives = 38/92 (41%), Gaps = 4/92 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            V FT+    N     VL+   G   +   ++  G+   WV M++  G  W  ++    Q 
+Sbjct  157  VRFTIN--GNSYFELVLITNVGGPGSIKSVQIKGTKTGWVTMSRNWGANWQANNYLNNQA  214
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAP  94
+              +F   +  G   VF+DV P  +  G T+  
+Sbjct  215  -ISFSVTSTAGKTLVFEDVAPSNWQFGQTFTS  245
+
+
+> sp|Q9LDR9|EXP10_ARATH Expansin-A10 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA10 PE=2 SV=1
+Length=249
+
+ Score = 103 bits (257),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 22/94 (23%), Positives = 36/94 (38%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VL+   G           GS   W AM++  G  W  +S    Q 
+Sbjct  157  IRFTIN--GHSYFNLVLITNVGGAGDVHSAAIKGSRTVWQAMSRNWGQNWQSNSYLNGQA  214
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+              +F+  T  G   V  +  P  ++ G T+A  +
+Sbjct  215  -LSFKVTTSDGRTVVSFNAAPAGWSYGQTFAGGQ  247
+
+
+> sp|Q4PR43|EXP23_ORYSJ Expansin-A23 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA23.1 PE=2 SV=2
+Length=267
+
+ Score = 103 bits (258),  Expect = 1e-26, Method: Composition-based stats.
+ Identities = 22/94 (23%), Positives = 40/94 (43%), Gaps = 5/94 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEG--DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            + FT+    ++    VLV       ++  +E+    + +W+ M +  G  W   +    Q
+Sbjct  173  LRFTIN--GHDYFQLVLVTNVAAAGSIKSMEVMGSNTADWMPMARNWGAQWHSLAYLTGQ  230
+
+Query  62   GPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            G  +FR         VF +VVP  +  G T+A +
+Sbjct  231  G-LSFRVTNTDDQTLVFTNVVPPGWKFGQTFASK  263
+
+
+> sp|Q0DHB7|EXPA4_ORYSJ Expansin-A4 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA4 PE=2 SV=1
+Length=246
+
+ Score = 103 bits (256),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 21/95 (22%), Positives = 32/95 (34%), Gaps = 6/95 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            V FTV    +     VLV           +   GS   W  M++  G  W   S   L G
+Sbjct  155  VRFTVN--GHSYFNLVLVTNVAGAGDVRSVSIKGSRTGWQPMSRNWGQNWQ--SNAFLDG  210
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+               +F+     G     ++V    +  G T+   +
+Sbjct  211  QSLSFQVTASDGRTVTSNNVAHPGWQFGQTFEGGQ  245
+
+
+> sp|A2Y5R6|EXPA4_ORYSI Expansin-A4 OS=Oryza sativa subsp. indica 
+OX=39946 GN=EXPA4 PE=2 SV=1
+Length=246
+
+ Score = 103 bits (256),  Expect = 2e-26, Method: Composition-based stats.
+ Identities = 21/95 (22%), Positives = 32/95 (34%), Gaps = 6/95 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            V FTV    +     VLV           +   GS   W  M++  G  W   S   L G
+Sbjct  155  VRFTVN--GHSYFNLVLVTNVAGAGDVRSVSIKGSRTGWQPMSRNWGQNWQ--SNAFLDG  210
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+               +F+     G     ++V    +  G T+   +
+Sbjct  211  QSLSFQVTASDGRTVTSNNVAHPGWQFGQTFEGGQ  245
+
+
+> sp|Q9SZM1|EXP20_ARATH Expansin-A20 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA20 PE=2 SV=1
+Length=256
+
+ Score = 102 bits (255),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 18/91 (20%), Positives = 31/91 (34%), Gaps = 2/91 (2%)
+
+Query  7    TVEKGSNEKHLAVLVKYEGDTMAEVELREHG-SDEWVAMTKGEGGVWTFDSEEPLQGPFN  65
+                  +     VL+   G     V ++  G +  W+ M +  G  W    +   Q   +
+Sbjct  164  RFSLSGSSHFFQVLISNVGLDGEVVGVKVKGHTTAWIPMARNWGQNWHSSLDLIGQ-SLS  222
+
+Query  66   FRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            F    + G      DV P  +  G TY  ++
+Sbjct  223  FEVTLKGGKTIASYDVAPPYWRFGMTYQGKQ  253
+
+
+> sp|Q69XV9|EXP16_ORYSJ Expansin-A16 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA16 PE=2 SV=1
+Length=260
+
+ Score = 102 bits (254),  Expect = 3e-26, Method: Composition-based stats.
+ Identities = 21/94 (22%), Positives = 38/94 (40%), Gaps = 4/94 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+  G++   L VL+           ++  GS   W+ M +  G  W  D++   Q 
+Sbjct  167  MRFTITGGAS--FLQVLITNVAADGEVAAVKVKGSRTGWIPMGRNWGQNWQCDADLRGQ-  223
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            P +F     +G   V   V P  +    T+  ++
+Sbjct  224  PLSFEVTGGRGRTVVAYSVAPPDWMFAQTFEGKQ  257
+
+
+> sp|Q9M203|EXPB5_ARATH Expansin-B5 OS=Arabidopsis thaliana OX=3702 
+GN=EXPB5 PE=2 SV=2
+Length=264
+
+ Score = 102 bits (254),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 27/95 (28%), Positives = 48/95 (51%), Gaps = 4/95 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTM--AEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            +   V+ G+N  +++  VK+       A +E++  G  +++ M +    VW      PL+
+Sbjct  161  IAIHVDAGANPYYMSFAVKFANGDGNFACIEVQPAG-GQYMKMEEMRSAVWRLSPGVPLK  219
+
+Query  62   GPFNFRFLTE-KGMKNVFDDVVPEKYTIGATYAPE  95
+            GPFN R  +   G K +   V+PEK++ GA Y  +
+Sbjct  220  GPFNIRLTSAVSGKKIIAKGVIPEKWSPGAIYHSK  254
+
+
+> sp|Q4PR39|EXP29_ORYSJ Expansin-A29 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA29 PE=2 SV=2
+Length=263
+
+ Score = 102 bits (254),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 27/96 (28%), Positives = 38/96 (40%), Gaps = 6/96 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSD---EWVAMTKGEGGVWTFDSEEPL  60
+            V FTV     +    VLV       +   +   GS     W+AM++  G  W   +    
+Sbjct  168  VRFTV--AGRDYFELVLVTNVAAAGSVRSMEVRGSRRGAGWMAMSRNWGANWQSLAYLDG  225
+
+Query  61   QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            QG  +FR     G   VF  VVP  +  G T+A  +
+Sbjct  226  QG-LSFRVTATDGQTIVFAGVVPPSWRFGQTFASTQ  260
+
+
+> sp|Q4PR52|EXP13_ORYSJ Expansin-A13 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA13 PE=2 SV=2
+Length=262
+
+ Score = 102 bits (254),  Expect = 4e-26, Method: Composition-based stats.
+ Identities = 24/94 (26%), Positives = 41/94 (44%), Gaps = 5/94 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEG--DTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            V FT+    ++    VL+   G   ++  ++++   S +W+AM    G  W   +    Q
+Sbjct  168  VRFTIN--GHDYFQLVLLTNVGAAGSIKAMDVKGSKSPDWMAMAHNWGAQWHSLAYLTGQ  225
+
+Query  62   GPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            G  +FR     G   VF +VV   +  G T+A  
+Sbjct  226  G-LSFRVTITDGQTLVFPNVVRPGWRFGQTFASN  258
+
+
+> sp|Q9LNU3|EXP11_ARATH Expansin-A11 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA11 PE=2 SV=1
+Length=252
+
+ Score = 101 bits (253),  Expect = 5e-26, Method: Composition-based stats.
+ Identities = 24/94 (26%), Positives = 38/94 (40%), Gaps = 6/94 (6%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            V F +     +    V ++  G   +   +   GS   W+AM++  G  W   S   L G
+Sbjct  160  VRFRIN--GRDYFELVNIQNVGGAGSIKSVSIKGSKTGWLAMSRNWGANWQ--SNAYLDG  215
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+               +F   T  G   VF +VVP  ++ G  Y+  
+Sbjct  216  QALSFSITTTDGATRVFLNVVPSSWSFGQIYSSN  249
+
+
+> sp|Q10RK1|EXP20_ORYSJ Expansin-A20 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA20 PE=2 SV=1
+Length=240
+
+ Score = 101 bits (251),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 22/90 (24%), Positives = 35/90 (39%), Gaps = 2/90 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V F +  G N   L ++    G         +     W+ MT+  G  W   +    Q  
+Sbjct  146  VRFIIN-GFNYFELVLVTNMAGSGSIVSMSVKGSCTGWIQMTRNWGANWQCLAGLAGQA-  203
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+             +F   +  G   VFDD VP  ++ G T++
+Sbjct  204  LSFNVTSTGGQTIVFDDAVPAGWSFGQTFS  233
+
+
+> sp|P14948|MPAL3_LOLPR Pollen allergen Lol p 3 OS=Lolium perenne 
+OX=4522 PE=1 SV=1
+Length=97
+
+ Score = 97.6 bits (242),  Expect = 7e-26, Method: Composition-based stats.
+ Identities = 56/95 (59%), Positives = 71/95 (75%), Gaps = 3/95 (3%)
+
+Query  3   KVTFTVEKGSNEKHLAVLVKYE--GDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+           KV  TVEKGS+ K L + +KY   GDT+AEVELR+HGS+EW  MTK +G +W   S +PL
+Sbjct  2   KVDLTVEKGSDAKTLVLNIKYTRPGDTLAEVELRQHGSEEWEPMTK-KGNLWEVKSAKPL  60
+
+Query  61  QGPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            GP NFRFL++ GMKNVFD+V+P  +T+G TY PE
+Sbjct  61  TGPMNFRFLSKGGMKNVFDEVIPTAFTVGKTYTPE  95
+
+
+> sp|Q9FL81|EXP21_ARATH Expansin-A21 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA21 PE=2 SV=3
+Length=262
+
+ Score = 101 bits (252),  Expect = 8e-26, Method: Composition-based stats.
+ Identities = 23/91 (25%), Positives = 35/91 (38%), Gaps = 2/91 (2%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGPF  64
+               E   N   L +L    G     + +   GS   WV M++  G  WT +     Q   
+Sbjct  170  VKFEVKGNPNILTILPYNVGGAGDIIAVSAKGSKTAWVVMSRYWGQNWTTNVNLTGQ-SV  228
+
+Query  65   NFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+            + R  T  G+   F DV+P  +  G T+  +
+Sbjct  229  SLRVTTSDGITKDFTDVMPASWGFGQTFDGK  259
+
+
+> sp|Q4PR40|EXP28_ORYSJ Expansin-A28 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA28 PE=2 SV=2
+Length=255
+
+ Score = 100 bits (250),  Expect = 1e-25, Method: Composition-based stats.
+ Identities = 22/93 (24%), Positives = 36/93 (39%), Gaps = 2/93 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FTV  G N   L ++    G    +    +     W+ + +  G  W  +S    Q  
+Sbjct  161  VRFTV-SGFNYFELVLITNVAGSGSVQAMSVKGSKTGWIPLARNWGANWQCNSALVGQA-  218
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+             +FR  +  G     + VVPE +  G T+   +
+Sbjct  219  LSFRVTSTGGQTLQINSVVPEWWEFGTTFTSNQ  251
+
+
+> sp|Q7XE35|EXP27_ORYSJ Putative expansin-A27 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXPA27 PE=3 SV=2
+Length=255
+
+ Score = 100 bits (250),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 24/95 (25%), Positives = 39/95 (41%), Gaps = 5/95 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            V FTV  G  +    VLV     + +   +   G+   W+ M++  G  W   +    Q 
+Sbjct  161  VRFTV--GGFDHFELVLVANVAGSGSVAAVSVRGAGTGWLQMSRNWGANWQSLAGLAGQ-  217
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATY-APEE  96
+            P +F   T  G   +F DV P  +  G T+   ++
+Sbjct  218  PLSFGVTTTGGQYILFQDVAPAGWKFGQTFSTSKQ  252
+
+
+> sp|Q9LDJ3|EXP12_ARATH Expansin-A12 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA12 PE=2 SV=1
+Length=252
+
+ Score = 100 bits (249),  Expect = 2e-25, Method: Composition-based stats.
+ Identities = 22/93 (24%), Positives = 37/93 (40%), Gaps = 3/93 (3%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FT+    N   + +     G ++  V +R      W+ MT+  G  W   S   L+G 
+Sbjct  157  VRFTMRGQGNFNMVMISNVGGGGSVRSVAVRGSKGKTWLQMTRNWGANWQ--SSGDLRGQ  214
+
+Query  64   -FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              +F+          F +VVP  +  G T++  
+Sbjct  215  RLSFKVTLTDSKTQTFLNVVPSSWWFGQTFSSR  247
+
+
+> sp|Q4PR41|EXP25_ORYSJ Expansin-A25 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA25 PE=2 SV=2
+Length=255
+
+ Score = 98.8 bits (245),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 20/93 (22%), Positives = 36/93 (39%), Gaps = 2/93 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            + FT+  G N   L ++    G         + GS  W+ + +  G  W  +S    Q  
+Sbjct  161  IRFTM-GGFNFFELVLVSNVAGSGSVRSVSVKGGSTGWITLNRNWGANWQCNSGLVGQA-  218
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+             +F   +  G      +VVP  ++ G T+   +
+Sbjct  219  LSFAVTSTGGQTLYIYNVVPSWWSFGMTFTSNQ  251
+
+
+> sp|Q9LZ99|EXPA9_ARATH Expansin-A9 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA9 PE=2 SV=1
+Length=258
+
+ Score = 98.8 bits (245),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 19/93 (20%), Positives = 40/93 (43%), Gaps = 4/93 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+     +    VLV         +++   GS+  W+ +++  G  W  ++    Q 
+Sbjct  165  IRFTIN--GFKYFNLVLVTNVAGAGDVIKVSVKGSNTQWLDLSRNWGQNWQSNALLVGQ-  221
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              +FR  T  G  +  +++ P  +  G TY+ +
+Sbjct  222  SLSFRVKTSDGRSSTSNNIAPSNWQFGQTYSGK  254
+
+
+> sp|Q6ZGU9|EXPA5_ORYSJ Expansin-A5 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA5 PE=2 SV=1
+Length=291
+
+ Score = 99.2 bits (246),  Expect = 7e-25, Method: Composition-based stats.
+ Identities = 22/95 (23%), Positives = 40/95 (42%), Gaps = 5/95 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQ  61
+            + FT+    +     VLV   G    +  V ++   S  W A+++  G  W   +    Q
+Sbjct  198  IRFTIN--GHSYFNLVLVTNVGGAGDVHAVAVKSERSAAWQALSRNWGQNWQSAALLDGQ  255
+
+Query  62   GPFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+               +FR  T  G   V ++ VP  ++ G T++  +
+Sbjct  256  A-LSFRVTTGDGRSVVSNNAVPRGWSFGQTFSGAQ  289
+
+
+> sp|Q852A1|EXPA7_ORYSJ Expansin-A7 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA7 PE=2 SV=1
+Length=264
+
+ Score = 98.8 bits (245),  Expect = 9e-25, Method: Composition-based stats.
+ Identities = 18/93 (19%), Positives = 31/93 (33%), Gaps = 4/93 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            V FT+          VL+         V     G+   W+ M++  G  W  +S    Q 
+Sbjct  171  VRFTIN--GFRYFNLVLITNVAGAGDIVRASVKGTSTGWMPMSRNWGQNWQSNSVLVGQA  228
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              +FR        +   +  P  +  G T+  +
+Sbjct  229  -LSFRVTGSDRRTSTSWNAAPAGWHFGQTFEGK  260
+
+
+> sp|O48818|EXPA4_ARATH Expansin-A4 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA4 PE=1 SV=1
+Length=257
+
+ Score = 98.4 bits (244),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 17/93 (18%), Positives = 35/93 (38%), Gaps = 4/93 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VL+         V     GS   W+++++  G  W  ++    Q 
+Sbjct  164  IRFTIN--GHRYFNLVLITNVAGAGDIVRASVKGSRTGWMSLSRNWGQNWQSNAVLVGQA  221
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              +FR        +   ++VP  +  G T+  +
+Sbjct  222  -LSFRVTGSDRRTSTSWNMVPSNWQFGQTFVGK  253
+
+
+> sp|Q9M2S9|EXP16_ARATH Expansin-A16 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA16 PE=2 SV=1
+Length=260
+
+ Score = 98.4 bits (244),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 16/93 (17%), Positives = 34/93 (37%), Gaps = 4/93 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+    +     VL+               GS   W+++T+  G  W  ++    Q 
+Sbjct  167  IRFTIN--GHRYFNLVLITNVAGAGDIARTSVKGSKTGWMSLTRNWGQNWQSNAVLVGQ-  223
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              +FR  +     +   ++ P  +  G T+  +
+Sbjct  224  SLSFRVTSSDRRTSTSWNIAPSNWQFGQTFVGK  256
+
+
+> sp|Q40637|EXPA3_ORYSJ Expansin-A3 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA3 PE=2 SV=2
+Length=255
+
+ Score = 98.0 bits (243),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 20/89 (22%), Positives = 36/89 (40%), Gaps = 2/89 (2%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGPF  64
+                   ++    V V   G +    ++   GS+  W+AM++  G  W  ++    Q   
+Sbjct  162  IRFAISGHDYFELVTVTNVGGSGVVAQMSIKGSNTGWMAMSRNWGANWQSNAYLAGQ-SL  220
+
+Query  65   NFRFLTEKGMKNVFDDVVPEKYTIGATYA  93
+            +F    + G K    +V P  +  GATY+
+Sbjct  221  SFIVQLDDGRKVTAWNVAPSNWFFGATYS  249
+
+
+> sp|Q10KN4|EXP21_ORYSJ Expansin-A21 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA21 PE=2 SV=1
+Length=264
+
+ Score = 98.0 bits (243),  Expect = 1e-24, Method: Composition-based stats.
+ Identities = 21/98 (21%), Positives = 31/98 (32%), Gaps = 9/98 (9%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE----WVAMTKGEGGVWTFDSEEP  59
+            + FT+    +     VLV   G       +           W AM +  G  W   S   
+Sbjct  169  MRFTIN--GHSYFNLVLVSNVGGAGDVHAVAVKAGGGRKARWQAMARNWGQNWQ--SGAL  224
+
+Query  60   LQG-PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            L G   +F   T      V  +V P  +  G T+   +
+Sbjct  225  LDGQALSFTVTTGDRRSVVSYNVAPAGWAFGQTFTGRQ  262
+
+
+> sp|O80932|EXPA3_ARATH Expansin-A3 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA3 PE=2 SV=1
+Length=262
+
+ Score = 97.3 bits (241),  Expect = 3e-24, Method: Composition-based stats.
+ Identities = 20/93 (22%), Positives = 33/93 (35%), Gaps = 4/93 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FTV          VLV           +   GS   WV M++  G  W  ++    Q 
+Sbjct  169  IRFTVN--GFRYFNLVLVTNVAGAGDINGVSVKGSKTDWVRMSRNWGQNWQSNAVLIGQ-  225
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              +FR        +   +V P  +  G T++ +
+Sbjct  226  SLSFRVTASDRRSSTSWNVAPATWQFGQTFSGK  258
+
+
+> sp|Q75I75|EXP31_ORYSJ Expansin-A31 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA31 PE=2 SV=2
+Length=256
+
+ Score = 96.1 bits (238),  Expect = 7e-24, Method: Composition-based stats.
+ Identities = 22/93 (24%), Positives = 35/93 (38%), Gaps = 2/93 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FTV  G N   L ++    G         +  +  W+ M++  G  W   +    Q  
+Sbjct  162  VRFTV-AGLNYFELVLITNVAGSGSVASAWIKGTNTGWIQMSRNWGANWQSLAGLAGQA-  219
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+             +F   T  G    F DV P  +  G T++  +
+Sbjct  220  LSFAVTTTGGQYLQFQDVAPAWWQFGQTFSTYQ  252
+
+
+> sp|Q9LQ07|EXP18_ARATH Expansin-A18 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA18 PE=2 SV=1
+Length=257
+
+ Score = 95.7 bits (237),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 20/94 (21%), Positives = 31/94 (33%), Gaps = 5/94 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + F  E   N   L V V   G       +   GS   W+ M+   G  +   S    Q 
+Sbjct  163  IRFKFE--GNGYWLLVYVMNVGGPGDIKTMAVKGSRTGWINMSHNWGASYQAFSSLYGQ-  219
+
+Query  63   PFNFRFLT-EKGMKNVFDDVVPEKYTIGATYAPE  95
+              +FR  +          +  P  ++ G TY  +
+Sbjct  220  SLSFRLTSYTTRQTIYAYNAAPASWSAGKTYQSK  253
+
+
+> sp|Q9FL76|EXP24_ARATH Expansin-A24 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA24 PE=2 SV=2
+Length=312
+
+ Score = 96.1 bits (238),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 24/93 (26%), Positives = 37/93 (40%), Gaps = 5/93 (5%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGP-  63
+               E   N   L +L    G   A   ++  G+   W+AM K  G +W   +   L G  
+Sbjct  219  VKFEIKGNPHFLMILPYNVGGAGAVRAMQIKGTRTQWIAMKKNWGQIW--STGVVLTGQC  276
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTI-GATYAPE  95
+             +FR  T  G+   F DV P  +   G ++  +
+Sbjct  277  LSFRLTTSDGVMKEFIDVTPPDWKCNGQSFDGK  309
+
+
+> sp|P0C1Y4|EXP33_ORYSJ Expansin-A33 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA33 PE=3 SV=1
+Length=248
+
+ Score = 94.9 bits (235),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 18/93 (19%), Positives = 36/93 (39%), Gaps = 4/93 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+     +    V V   G +    ++   GS   W+AM++  G  W  ++    Q 
+Sbjct  156  IRFTI--SGRDYFELVTVFNVGGSGVVAQVSIKGSKTDWMAMSRNWGQNWQSNAYLNTQ-  212
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              +F+   +   +    ++ P  +  G TY   
+Sbjct  213  SLSFKVKLDDAREVTVWNIAPSNWNFGTTYTSN  245
+
+
+> sp|Q8H274|EXLA3_ORYSJ Expansin-like A3 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLA3 PE=2 SV=1
+Length=276
+
+ Score = 95.3 bits (236),  Expect = 1e-23, Method: Composition-based stats.
+ Identities = 28/98 (29%), Positives = 45/98 (46%), Gaps = 9/98 (9%)
+
+Query  3    KVTFTVEKGSN-EKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             ++  VE+ S    +L +   Y+G    +  V++ + GS +W  MT+  G VW+ D    
+Sbjct  159  NLSILVEEQSKRPNNLVIKFLYQGGQTDILAVDVAQVGSSDWRFMTRVYGPVWSID--RA  216
+
+Query  60   LQGPFNFRFLTEKGM--KNVFDD--VVPEKYTIGATYA  93
+              GP  FR +   G   K V+ D  V+P  +  G  Y 
+Sbjct  217  PNGPLQFRAVVTGGYDGKWVWADREVLPANWQPGQVYD  254
+
+
+> sp|Q9SVE5|EXLA2_ARATH Expansin-like A2 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLA2 PE=2 SV=1
+Length=265
+
+ Score = 94.6 bits (234),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 29/98 (30%), Positives = 46/98 (47%), Gaps = 8/98 (8%)
+
+Query  3    KVTFTVEKGS-NEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+            K+   VE+ S N  +LA+ + Y+G    +  + + + GS  W  MT+  G VW  D  + 
+Sbjct  149  KMNVRVEESSKNPNYLAIKLLYQGGQTEVVAIYIAQVGSSHWSYMTRSHGAVWVTD--KV  206
+
+Query  60   LQGPFNFRFLTEKGM--KNVFDD-VVPEKYTIGATYAP  94
+              G   FRF+   G   K V+   V+P  +  G +Y  
+Sbjct  207  PNGALQFRFVVTAGYDGKMVWSQRVLPANWEAGKSYDA  244
+
+
+> sp|Q9LN94|EXPA7_ARATH Expansin-A7 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA7 PE=3 SV=1
+Length=262
+
+ Score = 94.6 bits (234),  Expect = 3e-23, Method: Composition-based stats.
+ Identities = 19/90 (21%), Positives = 31/90 (34%), Gaps = 3/90 (3%)
+
+Query  7    TVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQGPFN  65
+              +   N   L + V   G       +   GS   W++M+   G  +   S    Q   +
+Sbjct  169  RFQFQGNSYWLLIFVMNVGGAGDIKSMAVKGSRTNWISMSHNWGASYQAFSSLYGQ-SLS  227
+
+Query  66   FRFLT-EKGMKNVFDDVVPEKYTIGATYAP  94
+            FR  +   G      +V P  ++ G TY  
+Sbjct  228  FRVTSYTTGETIYAWNVAPANWSGGKTYKS  257
+
+
+> sp|Q9ZSI1|EXP17_ARATH Putative expansin-A17 OS=Arabidopsis thaliana 
+OX=3702 GN=EXPA17 PE=2 SV=1
+Length=255
+
+ Score = 93.4 bits (231),  Expect = 7e-23, Method: Composition-based stats.
+ Identities = 20/94 (21%), Positives = 40/94 (43%), Gaps = 5/94 (5%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDT-MAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+  G N   L ++    G   +++V ++   S++W  M++  G  +   S   L G
+Sbjct  162  MRFTIN-GRNYFELVLISNVAGGGEISKVWIKGSKSNKWETMSRNWGANYQ--SNTYLNG  218
+
+Query  63   -PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+               +F+     G      +VVP  +  G ++   
+Sbjct  219  QSLSFKVQLSDGSIKAALNVVPSNWRFGQSFKSN  252
+
+
+> sp|Q4PR53|EXPA9_ORYSJ Expansin-A9 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA9 PE=2 SV=2
+Length=254
+
+ Score = 91.9 bits (227),  Expect = 3e-22, Method: Composition-based stats.
+ Identities = 22/92 (24%), Positives = 35/92 (38%), Gaps = 4/92 (4%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDE-WVAMTKGEGGVWTFDSEEPLQG-P  63
+                   ++ +  VLV     + A       GS   W++M++  G  W   S   L G  
+Sbjct  160  IRFGIAGHDYYELVLVTNVAGSGAVAAAWVKGSGTEWLSMSRNWGENWQ--SNAYLTGQA  217
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+             +FR   + G      DV P  +  G+TY  +
+Sbjct  218  LSFRVQADDGGVVTAYDVAPANWQFGSTYQSD  249
+
+
+> sp|Q0DZ85|EXB16_ORYSJ Expansin-B16 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPB16 PE=3 SV=1
+Length=272
+
+ Score = 91.5 bits (226),  Expect = 4e-22, Method: Composition-based stats.
+ Identities = 28/96 (29%), Positives = 47/96 (49%), Gaps = 4/96 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAE--VELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+             + F V +GS    L++LV++E        ++L++  S +W  M    G  W+  +  PL
+Sbjct  174  NIAFHVNEGSTTFWLSLLVEFEDGDGDIGSMQLKQANSAQWQDMKHIWGATWSL-TPGPL  232
+
+Query  61   QGPFNFRFLTEKGMKNV-FDDVVPEKYTIGATYAPE  95
+             GPF+ R  T    + +   DV+P+ +T  ATY   
+Sbjct  233  VGPFSVRLTTLTTRQTLSAQDVIPKNWTPKATYTSR  268
+
+
+> sp|Q6YYW5|EXP32_ORYSJ Expansin-A32 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA32 PE=2 SV=1
+Length=269
+
+ Score = 91.1 bits (225),  Expect = 5e-22, Method: Composition-based stats.
+ Identities = 21/88 (24%), Positives = 31/88 (35%), Gaps = 5/88 (6%)
+
+Query  12   SNEKHLAVLVKYEGDTMAEVELREHGSD--EWVAMTKGEGGVWTFDSEEPLQG-PFNFRF  68
+             N     V+V   G       L   G+   +W  + +  G  W   + E L G    FR 
+Sbjct  181  GNPYFNLVMVSNVGGAGDVAGLSVKGNKRVKWTPLKRNWGQEWQ--TSEVLTGESLTFRV  238
+
+Query  69   LTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            +T    K     V+P  +  G TY   +
+Sbjct  239  MTGDHRKATSWHVLPPDWQFGVTYQATK  266
+
+
+> sp|Q9LZT5|EXLA3_ARATH Expansin-like A3 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLA3 PE=2 SV=1
+Length=263
+
+ Score = 90.3 bits (223),  Expect = 9e-22, Method: Composition-based stats.
+ Identities = 23/98 (23%), Positives = 40/98 (41%), Gaps = 8/98 (8%)
+
+Query  3    KVTFTVEKGSN-EKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             +   VE+ S    +LA+ + Y+G    +  +++   GS +W  M++  G VW  D  + 
+Sbjct  148  NLNVRVEEASKKPNYLAIKLLYQGGQTEVVGIDIAPVGSSQWSYMSRSHGAVWATD--KV  205
+
+Query  60   LQGPFNFRFLTE---KGMKNVFDDVVPEKYTIGATYAP  94
+              G   F+F       G       V+P  +  G  Y  
+Sbjct  206  PTGALQFKFTVTGGYDGKTVWSKRVLPANWNSGRIYDA  243
+
+
+> sp|Q4PR50|EXP15_ORYSJ Expansin-A15 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA15 PE=2 SV=2
+Length=260
+
+ Score = 89.2 bits (220),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 17/92 (18%), Positives = 36/92 (39%), Gaps = 2/92 (2%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGP  63
+            V FT+  G N   L ++    G    +    +  + + + +++  G  W   +    Q  
+Sbjct  166  VRFTM-GGFNYFELVLISNVAGSGSIQSVWVKGPNTDRMPLSRNWGANWQSHAGLVGQ-T  223
+
+Query  64   FNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              F   +  G   VF ++VP  +  G +++  
+Sbjct  224  LTFGVTSTGGQTLVFQNIVPAWWKFGQSFSSN  255
+
+
+> sp|Q2QP13|EXP26_ORYSJ Expansin-A26 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA26 PE=2 SV=1
+Length=290
+
+ Score = 89.6 bits (221),  Expect = 2e-21, Method: Composition-based stats.
+ Identities = 22/88 (25%), Positives = 36/88 (41%), Gaps = 5/88 (6%)
+
+Query  12   SNEKHLAVLVKYEGDTMAEVELREHGSD--EWVAMTKGEGGVWTFDSEEPLQG-PFNFRF  68
+             N  +  V+VK  G     V+L   G+   +W  + +  G +W  ++   L G    FR 
+Sbjct  203  GNPSYNMVMVKNVGGAGDVVKLTVKGTKRVKWTPLQRSWGQLWKTEAN--LTGESLTFRV  260
+
+Query  69   LTEKGMKNVFDDVVPEKYTIGATYAPEE  96
+            +T    K     V P  +T   TY  ++
+Sbjct  261  MTGDHRKATSWRVAPRDWTYDNTYQAKK  288
+
+
+> sp|Q10S70|EXLA1_ORYSJ Expansin-like A1 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLA1 PE=2 SV=1
+Length=279
+
+ Score = 87.6 bits (216),  Expect = 9e-21, Method: Composition-based stats.
+ Identities = 25/97 (26%), Positives = 43/97 (44%), Gaps = 9/97 (9%)
+
+Query  4    VTFTVEKGS-NEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPL  60
+            ++  V++ S     L +   Y+G    +  V++ + GS  W  MT+  G  W+  +  P 
+Sbjct  163  LSVRVDERSRGPNELTISFLYQGGQTDIVAVDVAQVGSSSWKFMTREHGPSWSMANAPP-  221
+
+Query  61   QGPFNFRFLTEKGM--KNVFDD--VVPEKYTIGATYA  93
+             GP   R +   G   K V+ D  V+P ++  G  Y 
+Sbjct  222  -GPLQMRLVVTGGYDGKWVWADREVLPRRWRAGEVYD  257
+
+
+> sp|Q38865|EXPA6_ARATH Expansin-A6 OS=Arabidopsis thaliana OX=3702 
+GN=EXPA6 PE=2 SV=2
+Length=257
+
+ Score = 87.2 bits (215),  Expect = 1e-20, Method: Composition-based stats.
+ Identities = 19/93 (20%), Positives = 34/93 (37%), Gaps = 4/93 (4%)
+
+Query  4    VTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGS-DEWVAMTKGEGGVWTFDSEEPLQG  62
+            + FT+          VLV         V L   G+   W+ M++  G  W  +S    Q 
+Sbjct  164  IRFTIN--GFRYFNLVLVTNVAGAGNIVRLGVKGTHTSWMTMSRNWGQNWQSNSVLVGQ-  220
+
+Query  63   PFNFRFLTEKGMKNVFDDVVPEKYTIGATYAPE  95
+              +FR  +     +   ++ P  +  G T+  +
+Sbjct  221  SLSFRVTSSDRRSSTSWNIAPANWKFGQTFMGK  253
+
+
+> sp|Q7XCL0|EXLA2_ORYSJ Expansin-like A2 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLA2 PE=2 SV=1
+Length=275
+
+ Score = 86.5 bits (213),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 27/99 (27%), Positives = 45/99 (45%), Gaps = 9/99 (9%)
+
+Query  3    KVTFTVEKGSNE-KHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             ++  VE+ S   + L++   Y+G    +  V++   GS  W  MT+  G  W   + + 
+Sbjct  158  NLSIRVEEKSRPPRELSIRFLYQGGQTDIVAVDVATVGSSNWKFMTRDYGPAW--STAQA  215
+
+Query  60   LQGPFNFRFLTEKGM--KNVFDD--VVPEKYTIGATYAP  94
+              GP  FR +   G   K V+ D  V+P ++T G  Y  
+Sbjct  216  PAGPLQFRVVVTGGYDGKWVWADGEVLPRRWTAGRVYDA  254
+
+
+> sp|O23547|EXLB1_ARATH Expansin-like B1 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLB1 PE=2 SV=2
+Length=250
+
+ Score = 86.1 bits (212),  Expect = 3e-20, Method: Composition-based stats.
+ Identities = 29/99 (29%), Positives = 45/99 (45%), Gaps = 8/99 (8%)
+
+Query  3    KVTFTV-EKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             + + + EK  N  +LA+LV Y G    +  VE+ +    EW  M +  G V   D + P
+Sbjct  150  NLVYKIHEKSYNPHYLAILVLYVGGVNDILAVEVWQEDCKEWRRMRRVFGAV--HDLQNP  207
+
+Query  60   LQGPFNFRFLT--EKGMKNV-FDDVVPEKYTIGATYAPE  95
+             +G    RFL     G+  +   + +P  +T GATY   
+Sbjct  208  PRGTLTLRFLVYGSAGINWIQSPNAIPADWTAGATYDSN  246
+
+
+> sp|Q9LZT4|EXLA1_ARATH Expansin-like A1 OS=Arabidopsis thaliana 
+OX=3702 GN=EXLA1 PE=2 SV=1
+Length=265
+
+ Score = 85.7 bits (211),  Expect = 4e-20, Method: Composition-based stats.
+ Identities = 25/99 (25%), Positives = 43/99 (43%), Gaps = 9/99 (9%)
+
+Query  3    KVTFTVEKGSN-EKHLAVLVKYEGD--TMAEVELREHGSD-EWVAMTKGEGGVWTFDSEE  58
+             +   VE+ S    +L + + Y+G    +  +++ + GS   W  MT+  G VW  D  +
+Sbjct  148  NMNVRVEEASKKPNYLEIKLLYQGGQTEVVSIDIAQVGSSPNWGYMTRSHGAVWVTD--K  205
+
+Query  59   PLQGPFNFRFLTEKGM--KNVFDD-VVPEKYTIGATYAP  94
+               G   FRF+   G   K ++   V+P  +  G  Y  
+Sbjct  206  VPTGAIQFRFVVTGGYDGKMIWSQSVLPSNWEAGKIYDA  244
+
+
+> sp|Q8W2X8|EXP30_ORYSJ Putative expansin-A30 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXPA30 PE=3 SV=1
+Length=266
+
+ Score = 85.3 bits (210),  Expect = 7e-20, Method: Composition-based stats.
+ Identities = 16/92 (17%), Positives = 30/92 (33%), Gaps = 4/92 (4%)
+
+Query  7    TVEKGSNEKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQGPF  64
+                  N   L   V        + ++ ++  G   WV M+   G  +   ++   Q   
+Sbjct  172  RFALQGNPYWLLAYVMNVAGAGDVGDMWVKAGGGGGWVRMSHNWGASYQAFAQLGGQA-L  230
+
+Query  65   NFRFLT-EKGMKNVFDDVVPEKYTIGATYAPE  95
+            +F+  +   G   +   V P  +  G TY   
+Sbjct  231  SFKVTSYTTGQTILAAGVTPASWCFGLTYQAR  262
+
+
+> sp|Q850K7|EXLB1_ORYSJ Expansin-like B1 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLB1 PE=2 SV=2
+Length=256
+
+ Score = 82.2 bits (202),  Expect = 8e-19, Method: Composition-based stats.
+ Identities = 26/101 (26%), Positives = 43/101 (43%), Gaps = 11/101 (11%)
+
+Query  3    KVTFTVEKGSN-EKHLAVLVKYEGD--TMAEVELREHGSDEWVAMTKGEGGVWTFDSEEP  59
+             + F + + SN   +L   + Y+     +  V+L E  +     +++  G VW   S  P
+Sbjct  151  NIVFKITESSNFPNYLEFEIWYQQGNQDIIAVQLCETVNLTCQLLSRTHGAVWAAVS--P  208
+
+Query  60   LQGPFNFRFLTEKG------MKNVFDDVVPEKYTIGATYAP  94
+              GP + R L   G         V  ++VP+ +T GATY  
+Sbjct  209  PSGPLSIRMLFSSGAPRGGDTWLVPTNIVPQNWTAGATYDS  249
+
+
+> sp|Q5Z980|EXLA4_ORYSJ Expansin-like A4 OS=Oryza sativa subsp. 
+japonica OX=39947 GN=EXLA4 PE=2 SV=1
+Length=313
+
+ Score = 73.8 bits (180),  Expect = 1e-15, Method: Composition-based stats.
+ Identities = 29/108 (27%), Positives = 44/108 (41%), Gaps = 19/108 (18%)
+
+Query  3    KVTFTVEKGS-NEKHLAVLVKYEGD--TMAEVELREHGSDE--------WVAMTKGEGG-  50
+            ++   VE+ S N  HLA+   Y+G    +A VE+ +  +          W  MT+ +G  
+Sbjct  175  RLAVRVEEASRNPTHLAIRFLYQGGQTDIAAVEIAQANATPPSSSYYSSWRYMTRRDGAP  234
+
+Query  51   -VWTFDSEEPLQGPFNFR--FLTEKGMKNVFDD--VVPEKYTIGATYA  93
+             VWT  +     GP   R       G K +  D  V+P  +  G  Y 
+Sbjct  235  GVWT--TSRAPVGPLRLRVVVTAGSGGKWLRSDGEVLPADWRPGEVYD  280
+
+
+> sp|Q86AV4|EXPL5_DICDI Expansin-like protein 5 OS=Dictyostelium 
+discoideum OX=44689 GN=expl5 PE=2 SV=1
+Length=238
+
+ Score = 59.1 bits (142),  Expect = 1e-10, Method: Composition-based stats.
+ Identities = 16/72 (22%), Positives = 27/72 (38%), Gaps = 3/72 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG  62
+             V   ++ GSN    + LV      + +V ++  GS  +V +T+     W         G
+Sbjct  145  NVKVMLKDGSNAYWTSFLVFNNAIDVKQVSIKLSGSSTYVPLTQTTYNYW---PSSITAG  201
+
+Query  63   PFNFRFLTEKGM  74
+             F  R  +  G 
+Sbjct  202  SFQVRIESIGGE  213
+
+
+> sp|Q4PR49|EXP17_ORYSJ Expansin-A17 OS=Oryza sativa subsp. japonica 
+OX=39947 GN=EXPA17 PE=2 SV=2
+Length=284
+
+ Score = 56.0 bits (134),  Expect = 3e-09, Method: Composition-based stats.
+ Identities = 12/94 (13%), Positives = 20/94 (21%), Gaps = 5/94 (5%)
+
+Query  6    FTVEKGSNEKHLAVLVKYEGDTMAEVELREH---GSDEWVAMTKGEGGVWTFDSEEPLQG  62
+                   N   L + V   G       L      G   W+      G  +   +      
+Sbjct  186  VRFCLQGNHYWLLLYVMNVGGAGDVSSLSVKTSGGGGAWIQAAHNWGITYQVFAALDNSD  245
+
+Query  63   PFNFRFLTEKG--MKNVFDDVVPEKYTIGATYAP  94
+                +  T        +  D +   +  G  Y  
+Sbjct  246  GLTVKLTTYSTPQQTIIVSDAISPWWITGLCYQG  279
+
+
+> sp|Q55G31|EXPL1_DICDI Expansin-like protein 1 OS=Dictyostelium 
+discoideum OX=44689 GN=expl1 PE=2 SV=1
+Length=286
+
+ Score = 47.6 bits (112),  Expect = 3e-06, Method: Composition-based stats.
+ Identities = 16/72 (22%), Positives = 31/72 (43%), Gaps = 2/72 (3%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG  62
+             V   ++ GSN+   A L+     T+ +V ++  G   + ++T+     W   S   + G
+Sbjct  145  NVKIMMKDGSNDYWTAFLIYNSKVTIKDVSVKITGKSTYTSLTQSSYNYW--ISPNMVPG  202
+
+Query  63   PFNFRFLTEKGM  74
+             F+ R  +  G 
+Sbjct  203  SFDVRIESVGGE  214
+
+
+> sp|Q7KWS2|EXPL3_DICDI Expansin-like protein 3 OS=Dictyostelium 
+discoideum OX=44689 GN=expl3 PE=2 SV=1
+Length=335
+
+ Score = 46.8 bits (110),  Expect = 7e-06, Method: Composition-based stats.
+ Identities = 13/72 (18%), Positives = 29/72 (40%), Gaps = 3/72 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKGEGGVWTFDSEEPLQG  62
+             V   ++ GSN+   +  V      + +V ++   S+++V +++     W         G
+Sbjct  143  NVKIMMKDGSNDFWTSFFVFNSKVIIKQVSIKLSNSNQFVPLSQTTYNYW---PTSITGG  199
+
+Query  63   PFNFRFLTEKGM  74
+             F+ R  +  G 
+Sbjct  200  QFHVRIESIGGE  211
+
+
+> sp|Q55G32|EXPL6_DICDI Expansin-like protein 6 OS=Dictyostelium 
+discoideum OX=44689 GN=expl6 PE=2 SV=1
+Length=292
+
+ Score = 42.6 bits (99),  Expect = 2e-04, Method: Composition-based stats.
+ Identities = 15/73 (21%), Positives = 31/73 (42%), Gaps = 3/73 (4%)
+
+Query  3    KVTFTVEKGSNEKHLAVLVKYEGDTMAEVELREHGSDEWVAMTKG-EGGVWTFDSEEPLQ  61
+             V   ++ GSNE   + L+      + +V ++   S +++ + +  +G  W   S   + 
+Sbjct  150  NVKIMMKDGSNEFWTSFLIFNSRILIKQVSIKLSNSQQFIDLNRQPQGNYW--PSTNMVS  207
+
+Query  62   GPFNFRFLTEKGM  74
+            G F  R  +  G 
+Sbjct  208  GEFEVRIESIGGE  220
+
+
+
+Lambda      K        H        a         alpha
+   0.310    0.152    0.518    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.267   0.0472    0.140     1.90     42.6     43.6 
+
+Effective search space used: 4887054120
+
+
+  Database: uniprot_sprot.fasta
+    Posted date:  Mar 12, 2018 12:49 PM
+  Number of letters in database: 199,652,254
+  Number of sequences in database:  556,825
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 11, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

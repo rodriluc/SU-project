@@ -1,0 +1,68 @@
+
+Classification report for SVC(C=10.0, cache_size=200, class_weight='balanced', coef0=0.0,
+  decision_function_shape='ovr', degree=3, gamma=0.01, kernel='rbf',
+  max_iter=-1, probability=False, random_state=None, shrinking=True,
+  tol=0.001, verbose=False)
+             precision    recall  f1-score   support
+
+          0       0.85      0.39      0.53       911
+          1       0.09      0.09      0.09       139
+          2       0.14      0.20      0.17       143
+          3       0.22      0.55      0.31       281
+
+avg / total       0.59      0.37      0.41      1474
+
+Confusion Matrix SVC: 
+[[354  76  69 412]
+ [ 13  13  49  64]
+ [ 14  19  29  81]
+ [ 34  39  54 154]]
+Matthews correlation coefficient (SVC model): 
+0.13868438279
+
+Classification report for RandomForestClassifier(bootstrap=True, class_weight='balanced',
+            criterion='gini', max_depth=None, max_features=4,
+            max_leaf_nodes=None, min_impurity_decrease=0.0,
+            min_impurity_split=None, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            n_estimators=100, n_jobs=1, oob_score=False, random_state=None,
+            verbose=0, warm_start=False)
+             precision    recall  f1-score   support
+
+          0       0.81      0.61      0.70       911
+          1       0.12      0.10      0.11       139
+          2       0.15      0.34      0.21       143
+          3       0.30      0.38      0.34       281
+
+avg / total       0.59      0.49      0.53      1474
+
+Confusion Matrix RF: 
+[[556  58 131 166]
+ [ 25  14  65  35]
+ [ 33  16  48  46]
+ [ 71  30  73 107]]
+Matthews correlation coefficient (RF model): 
+0.212216164161
+
+Classification report for DecisionTreeClassifier(class_weight='balanced', criterion='gini',
+            max_depth=None, max_features=None, max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_impurity_split=None,
+            min_samples_leaf=1, min_samples_split=2,
+            min_weight_fraction_leaf=0.0, presort=False, random_state=None,
+            splitter='best')
+             precision    recall  f1-score   support
+
+          0       0.83      0.58      0.68       911
+          1       0.11      0.11      0.11       139
+          2       0.15      0.34      0.20       143
+          3       0.30      0.40      0.35       281
+
+avg / total       0.60      0.48      0.52      1474
+
+Confusion Matrix DT: 
+[[528  68 138 177]
+ [ 23  15  66  35]
+ [ 28  19  48  48]
+ [ 57  35  76 113]]
+Matthews correlation coefficient (DT model): 
+0.215888392237
