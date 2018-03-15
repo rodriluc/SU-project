@@ -2,3 +2,5 @@ Today's goals:
   1. Troubleshoot why confusion matrix is giving me 0s for 2 of my labels
   2. Predictor for PSSM
   3. Get all scores and plots
+
+I finished the predictor for my PSSM and my output file looks good. I am now going to focus on my scores and plots. 
