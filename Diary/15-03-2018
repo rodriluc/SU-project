@@ -3,4 +3,4 @@ Today's goals:
   2. Predictor for PSSM
   3. Get all scores and plots
 
-I finished the predictor for my PSSM and my output file looks good. I am now going to focus on my scores and plots. 
+I finished the predictor for my PSSM and my output file looks good. I am now going to focus on my scores and plots. I wrote a code to get the confusion plot as I have managed to get all the scores for all 3 models (SCV, RF, DT) and confusion matrix. I plotted my best one which was the Decision Tree. 
