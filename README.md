@@ -1,6 +1,7 @@
 # SU-project
 
-Beta barrel (4 state) individual assignment
+**Beta barrel (4 state) individual assignment**
+
 1. clean_CV includes functions for:
     -parser  
     -window list  
@@ -28,7 +29,7 @@ Beta barrel (4 state) individual assignment
 Trained my model with all the proteins I was given (42 proteins) and window size 17 with a linear kernel.
 Used "testingdata_pred.txt" as my test file for predictor. 
 
-For PSSM portion:
+**For PSSM portion:**
 
 1. all_pssm includes functions to:  
     -parse and prepare input for predictor  
