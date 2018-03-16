@@ -53,7 +53,7 @@ for filename in os.listdir(test1):
 #PSSM window sized list
 
 main_list = []
-window_input = 17
+window_input = 21
 pad = window_input//2
 zero = np.zeros(20, dtype=int)
 
@@ -160,12 +160,12 @@ with open("PSSM_prediction.txt", "w") as fn:
         
 print("Done!") 
 
-with open("PSSM_prediction_scores.txt", "w") as fn:
+with open("PSSM_prediction_scores21.txt", "w") as fn:
 
 #Confusion Matrix for SVC
     x, y = templist, np.array(final_Toplist)
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
-    clf_model = SVC(gamma=0.01, kernel='rbf', C=10.0, class_weight = "balanced").fit(X_train, Y_train)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
+    clf_model = SVC(gamma=0.01, kernel='rbf', C=10, class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     fn.write("\n")
     fn.write("Classification report for %s" % clf_model)
@@ -180,8 +180,8 @@ with open("PSSM_prediction_scores.txt", "w") as fn:
     
 #MCC
     x, y = templist, np.array(final_Toplist)
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
-    clf_model = SVC(gamma=0.01, kernel='rbf', C=10.0, class_weight = "balanced").fit(X_train, Y_train)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
+    clf_model = SVC(gamma=0.01, kernel='rbf', C=10, class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     MC = matthews_corrcoef(Y_test, prediction)
     fn.write("Matthews correlation coefficient (SVC model): ")
@@ -193,7 +193,7 @@ with open("PSSM_prediction_scores.txt", "w") as fn:
     
 #Confusion Matrix for RF
     x, y = templist, np.array(final_Toplist)
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
     clf_model = RandomForestClassifier(n_estimators=100, max_features=4, class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     fn.write("Classification report for %s" % clf_model)
@@ -206,7 +206,7 @@ with open("PSSM_prediction_scores.txt", "w") as fn:
     fn.write(str(cm))
     fn.write("\n")
 
-#random forest
+#random forest (BEST!!!)
     #print (len(templist), len(np.array(final_Toplist)))    
     x, y = templist, np.array(final_Toplist)
     clf_model = RandomForestClassifier(n_estimators=100, max_features=4, class_weight = "balanced").fit(X_train, Y_train)
@@ -220,7 +220,7 @@ with open("PSSM_prediction_scores.txt", "w") as fn:
     
 #Confusion Matrix for DT
     x, y = templist, np.array(final_Toplist)
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
     clf_model = tree.DecisionTreeClassifier(class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     fn.write("Classification report for %s" % clf_model)

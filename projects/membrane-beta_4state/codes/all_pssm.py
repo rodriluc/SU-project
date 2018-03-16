@@ -106,7 +106,8 @@ def top_window(window_input):
     
 def pssm_model(filename):
     x, y = templist, final_Toplist
-    clf_model = SVC(gamma=0.001, kernel='rbf', C=5.0, class_weight = "balanced").fit(x,y)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
+    clf_model = SVC(gamma=0.01, kernel='rbf', C=10, class_weight = "balanced").fit(X_train, Y_train)
     inputfile = 'PSSM_model.sav'
     joblib.dump(clf_model, inputfile)
     print ("Model trained!")
@@ -114,7 +115,7 @@ def pssm_model(filename):
 def pssm_svm(fold):
     #labels = [0,1,2,3]
     x, y = templist, final_Toplist
-    clf_model = SVC(gamma=0.001, kernel='rbf', C=5.0, class_weight = "balanced").fit(x,y)
+    clf_model = SVC(gamma=0.01, kernel='rbf', C=10, class_weight = "balanced").fit(x,y)
     prediction = clf_model.predict(templist)
     print ("Classification report for %s" % clf_model)
     print (metrics.classification_report(y, prediction))
@@ -124,9 +125,9 @@ def pssm_svm(fold):
     
 def pssm_splitMC():
     x, y = templist, final_Toplist
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
     print(Y_test)
-    clf_model = SVC(gamma=0.01, kernel='rbf', C=10.0, class_weight = "balanced").fit(X_train, Y_train)
+    clf_model = SVC(gamma=0.01, kernel='rbf', C=10, class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     MC = matthews_corrcoef(Y_test, prediction)
     print("Matthews correlation coefficient: ",MC)
@@ -148,10 +149,10 @@ def pssm_DT():
 if __name__ == '__main__':
     listID, listTop = gen(actualfile)
     final_pssmlist = extract()
-    templist = pssm_window(17, final_pssmlist) #took out final_pssmlist
-    final_Toplist = top_window(17)
+    templist = pssm_window(21, final_pssmlist) #took out final_pssmlist
+    final_Toplist = top_window(21)
     pssm_svm(3)
-    #pssm_split()
+    #pssm_splitMC()
     #pssm_RFC()
     #pssm_DT()        
     #pssm_model(PSSM_containingfile)  

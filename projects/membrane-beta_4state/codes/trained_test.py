@@ -70,7 +70,7 @@ def trained_test(infile):
     x = endfile['arr_0.npy']
     y = endfile['arr_1.npy']
 
-    clf_model = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(x,y) #train
+    clf_model = svm.SVC(gamma=0.01, kernel = 'linear', C=10).fit(x,y) #train
 
     result = clf_model.predict(AA_array) #test on training data
     for element in result:

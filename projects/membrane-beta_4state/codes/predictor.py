@@ -73,8 +73,8 @@ def pred(infile2):
 
    
 if __name__ == '__main__':
-    print(inputSVM(test1, 17))
-    #x=inputSVM(test1, 17)
+    print(inputSVM(test1, 21))
+    #x=inputSVM(test1, 21)
     #print(pred(x))
     
    

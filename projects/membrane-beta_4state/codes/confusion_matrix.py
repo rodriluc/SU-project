@@ -59,7 +59,7 @@ for filename in os.listdir(test1):
 #PSSM window sized list
 
 main_list = []
-window_input = 17
+window_input = 21
 pad = window_input//2
 zero = np.zeros(20, dtype=int)
 
@@ -158,3 +158,4 @@ plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
                       title='Normalized confusion matrix')
 
 plt.show()
+plt.savefig("Confusion matrix plots, ws 21")

@@ -71,7 +71,7 @@ def inputSVM(infile, window_input):
                 AAlist.extend(AA_seq_dict['X'])
 
         final_AAlist.append(AAlist) 
-                
+    #print (final_AAlist)      
 ###################################################################################
 # Convert into SVM input vector: topology to numerical
 ###################################################################################
@@ -88,7 +88,7 @@ def inputSVM(infile, window_input):
     #x,y = final_AAlist, final_Toplist #testing set
     outfile = 'SVM_test'
     np.savez(outfile, x=final_AAlist, y=final_Toplist)       
-    return (final_AAlist, final_Toplist)
+    return final_AAlist, final_Toplist
     #return len(x), len(y)
 ###################################################################################
 # SVM model and training
@@ -96,9 +96,6 @@ def inputSVM(infile, window_input):
     
 def SVM(infile): 
     Top_output = []   
-    '''array_data = inputSVM(infile)
-    x = array_data[0] 
-    y = array_data[1]'''
     
     np.set_printoptions(threshold = np.inf) #svm
     loaded = np.load('SVM_test.npz')
@@ -106,7 +103,7 @@ def SVM(infile):
     Y = loaded['y']
     #print (len(X), len(Y))
     
-    clf_model = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(X,Y) 
+    clf_model = svm.SVC(gamma=0.01, kernel = 'rbf', C=10).fit(X,Y) 
     result = clf_model.predict(X) 
     
     for element in result:
@@ -121,7 +118,8 @@ def SVM(infile):
     
 def cross_val(infile):
     clf_model = SVM(infile)
-    array_data = inputSVM(infile)
+    #window_input = 17
+    array_data = inputSVM(infile, window_input)
     AA_array = array_data[0] 
     Top_array = array_data[1] 
     
@@ -133,7 +131,7 @@ def cross_val(infile):
 if __name__ == '__main__':
     #inputSVM(testfile)
     #SVM(testfile)
-    print(inputSVM(testfile, 17))
-    #print(SVM(testfile))
-    #print(cross_val(smalltestfile))
+    inputSVM(testfile, 21)
+    SVM(testfile)
+    #print(cross_val(testfile))
     

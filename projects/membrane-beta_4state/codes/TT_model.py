@@ -125,25 +125,20 @@ else:
     print("You're good!")
 
 ###################################################################################
-# Predict/Cross-validation (cross_val_score) - Multi-class classification
+# Save model
 ###################################################################################    
 
 AA_array = np.array(final_AAlist)
 Top_array = np.array(final_Toplist)
-x,y = AA_array[:-1], Top_array[:-1] #testing set
+x,y = AA_array, Top_array #testing set
 
 clf_model = svm.SVC(gamma=0.001, kernel = 'linear', C=1.0).fit(x,y) 
-joblib.dump(clf_model, "TTmodel.pk1")
+joblib.dump(clf_model, "TTmodel.pkl")
 
-cross_val = int(input("Fold of cross-validation: "))
-print ("Prediction: ", clf_model.predict(AA_array)) 
-cvs = cross_val_score(clf_model, AA_array, Top_array, cv = cross_val) #scoring="precision"
-avg = np.average(cvs) #np.mean
-return avg
 
 end = time.time()
 time = end-start
-print(time)
+
 
 
  
