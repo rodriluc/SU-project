@@ -1,0 +1,1 @@
+Today, I optimized my models even more and re-ran them for both. I also decided to split the dataset 80% to train and 20% to test for my PSSM predictor, instead of the 50 unique proteins to see the difference in scores. I also rebuilt my confusion matrix plots and created new plots to look at teh optimization of my model with gridsearch. I have now pushed my final scripts!
