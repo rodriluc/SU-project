@@ -27,3 +27,14 @@ Beta barrel (4 state) individual assignment
       
 Trained my model with all the proteins I was given (42 proteins) and window size 17 with a linear kernel.
 Used "testingdata_pred.txt" as my test file for predictor. 
+
+For PSSM portion:
+
+1. all_pssm includes functions to:
+    -parse and prepare input for predictor
+    -optimized version (PSSM_model.sav)
+    
+2. PSSM_predictor
+    -predicts topology on 50 proteins using model
+    -"PSSM_prediction.txt" is the output for the predicted topology of 50 proteins
+    -"PSSM_prediction_scores.txt" is all the data of my scores
