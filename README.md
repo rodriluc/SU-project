@@ -2,9 +2,9 @@
 
 Beta barrel (4 state) individual assignment
 1. clean_CV includes functions for:
-      -parser
-      -window list
-      -binary list of aa
+    -parser  
+    -window list  
+    -binary list of aa  
     -numerical list of topology
     -topology back to ch
     -save into .npz file
