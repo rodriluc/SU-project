@@ -39,3 +39,5 @@ Used "testingdata_pred.txt" as my test file for predictor.
     -predicts topology on 50 proteins using model  
     -"PSSM_prediction.txt" is the output for the predicted topology of 50 proteins  
     -"PSSM_prediction_scores.txt" is all the data of my scores  
+    
+Trained my model with the PSSMs found in folder "PSSM" and tested on the PSSMs found in folder "PSSM_50test", both located in "PSI-BLAST".
