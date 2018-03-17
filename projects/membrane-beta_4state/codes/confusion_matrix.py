@@ -28,7 +28,7 @@ from sklearn import svm, datasets
 
 
 
-actualfile = "../datasets/membrane-beta_4state.3line.txt"
+actualfile = "../datasets/membrane-beta_4state.3line1.txt"
 file1 = "../datasets/50unique.3line.txt"
 
 test1 = "../PSI-BLAST/PSSM_50test" #50 sample file to predict topology
@@ -40,7 +40,7 @@ PSSM_containingfile = "../PSI-BLAST/PSSM"
 listID = []
 listTop = []
 
-with open(file1) as pf:
+with open(actualfile) as pf:
     lines = [line.strip() for line in pf]
 listID = lines[0::3]
 listTop = lines[2::3]
@@ -48,8 +48,8 @@ listTop = lines[2::3]
 
 #extract matrix needed for each file in my PSSM directory
 final_pssmlist = []
-for filename in os.listdir(test1):
-    path_open = os.path.join(test1, filename)
+for filename in os.listdir(PSSM_containingfile):
+    path_open = os.path.join(PSSM_containingfile, filename)
     
     if filename.endswith(".pssm"): 
         
@@ -103,8 +103,8 @@ for ch in listTop:
             
 
 x, y = templist, np.array(final_Toplist)
-X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
-clf_model = tree.DecisionTreeClassifier(class_weight = "balanced").fit(X_train, Y_train)
+X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
+clf_model = RandomForestClassifier(n_estimators=100, max_features=4, class_weight = "balanced").fit(X_train, Y_train)
 prediction = clf_model.predict(X_test)
 cm = confusion_matrix(Y_test, prediction)
 classes = [0,1,2,3] #i,P,L, o

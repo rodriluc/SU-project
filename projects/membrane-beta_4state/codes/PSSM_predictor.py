@@ -34,7 +34,7 @@ PSSM_containingfile = "../PSI-BLAST/PSSM"
 listID = []
 listTop = []
 
-with open(file1) as pf:
+with open(actualfile) as pf:
     lines = [line.strip() for line in pf]
 listID = lines[0::3]
 listTop = lines[2::3]
@@ -42,8 +42,8 @@ listTop = lines[2::3]
 
 #extract matrix needed for each file in my PSSM directory
 final_pssmlist = []
-for filename in os.listdir(test1):
-    path_open = os.path.join(test1, filename)
+for filename in os.listdir(PSSM_containingfile):
+    path_open = os.path.join(PSSM_containingfile, filename)
     
     if filename.endswith(".pssm"): 
         
@@ -151,7 +151,7 @@ with open("PSSM_prediction.txt", "w") as fn:
             fn.write(filelines[0])
             fn.write("\n")
             fn.write(filelines[1])
-            fn.write("\n predicted topology:\n")
+            fn.write("\npredicted topology:\n")
             outputPred = outputPred +len(filelines[i+1])
             x ="".join(Top_output[init:outputPred])
             fn.write(x)
