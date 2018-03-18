@@ -83,9 +83,9 @@ with open("prediction.txt", "w") as fn:
     for i in range(len(filelines)):
         # id plus sequence imprime les deux 
         if filelines[i].startswith (">"):
-            fn.write(filelines[0])
+            fn.write(filelines[i])
             fn.write("\n")
-            fn.write(filelines[1])
+            fn.write(filelines[i+1])
             fn.write("\n")
             outputPred = outputPred +len(filelines[i+1])
             x ="".join(Top_output[init:outputPred])
@@ -100,7 +100,7 @@ with open("prediction_scores_withoutPSSM.txt", "w") as fn:
 
 #Confusion Matrix for SVC
     x, y = final_AAlist, Top_output
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
     clf_model = SVC(gamma=0.01, kernel='rbf', C=10, class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     fn.write("\n")
@@ -116,7 +116,7 @@ with open("prediction_scores_withoutPSSM.txt", "w") as fn:
     print ("done with cm SVC")
 #MCC
     x, y = final_AAlist, Top_output
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
     clf_model = SVC(gamma=0.01, kernel='rbf', C=10, class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     MC = matthews_corrcoef(Y_test, prediction)
@@ -129,7 +129,7 @@ with open("prediction_scores_withoutPSSM.txt", "w") as fn:
     
 #Confusion Matrix for RF
     x, y = final_AAlist, Top_output
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
     clf_model = RandomForestClassifier(n_estimators=100, max_features=4, class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     fn.write("Classification report for %s" % clf_model)
@@ -158,7 +158,7 @@ with open("prediction_scores_withoutPSSM.txt", "w") as fn:
     
 #Confusion Matrix for DT
     x, y = final_AAlist, Top_output
-    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.30, random_state=15)
+    X_train, X_test, Y_train, Y_test = train_test_split(x, y, test_size=0.20, random_state=15)
     clf_model = tree.DecisionTreeClassifier(class_weight = "balanced").fit(X_train, Y_train)
     prediction = clf_model.predict(X_test)
     fn.write("Classification report for %s" % clf_model)

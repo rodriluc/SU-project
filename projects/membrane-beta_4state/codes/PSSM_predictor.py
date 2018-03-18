@@ -24,7 +24,7 @@ from structure_dict import structure_dict
 from structure_decode_dict import structure_decode_dict
 
 
-actualfile = "../datasets/membrane-beta_4state.3line.txt"
+actualfile = "../datasets/membrane-beta_4state.3line1.txt"
 file1 = "../datasets/50unique.3line.txt"
 
 test1 = "../PSI-BLAST/PSSM_50test" #50 sample file to predict topology
@@ -34,7 +34,7 @@ PSSM_containingfile = "../PSI-BLAST/PSSM"
 listID = []
 listTop = []
 
-with open(actualfile) as pf:
+with open(actualfile) as pf: #file1 for 50 proteins
     lines = [line.strip() for line in pf]
 listID = lines[0::3]
 listTop = lines[2::3]
@@ -42,8 +42,8 @@ listTop = lines[2::3]
 
 #extract matrix needed for each file in my PSSM directory
 final_pssmlist = []
-for filename in os.listdir(PSSM_containingfile):
-    path_open = os.path.join(PSSM_containingfile, filename)
+for filename in os.listdir(PSSM_containingfile): #test1 for 50 proteins
+    path_open = os.path.join(PSSM_containingfile, filename) #test1 for 50 proteins
     
     if filename.endswith(".pssm"): 
         
@@ -59,22 +59,22 @@ zero = np.zeros(20, dtype=int)
 
 for element in final_pssmlist:
     win_list = []
-    for array in range(0, len(element)):
+    for array1 in range(0, len(element)):
         temp_window =[]
-        if array <= 0:
-            seq_window = element[(array):(array+pad+1)]
+        if array1 <= 0:
+            seq_window = element[(array1):(array1+pad+1)]
             diff = window_input-len(seq_window)
             for i in range(0, diff):
                 temp_window.append(zero)
             temp_window.extend(seq_window)   
-        elif array > 0 and array < pad: 
-            seq_window = element[0:(array+pad+1)]
+        elif array1 > 0 and array1 < pad: 
+            seq_window = element[0:(array1+pad+1)]
             diff = window_input-len(seq_window)
             for i in range(0, diff):
                 temp_window.append(zero)
             temp_window.extend(seq_window)   
-        elif array >= pad:
-            seq_window3 = element[(array-pad):(array+pad+1)]
+        elif array1 >= pad:
+            seq_window3 = element[(array1-pad):(array1+pad+1)]
             if len(seq_window) == window_input:  
                 temp_window.extend(seq_window)    
             if len(seq_window) < window_input: 
@@ -107,13 +107,14 @@ final_AAlist = []
 listaa_window = []
 
 all_list = []
-filename = open(file1, "r")
+filename = open(actualfile, "r") #file1 for 50 proteins
 filelines = filename.read().splitlines()
 
-with open(file1) as pf:
+with open(actualfile) as pf: #file1 for 50 proteins
     lines = [line.strip() for line in pf]
 listID_out = lines[0::3]
 listaa = lines[1::3]
+#print(listID_out)
 
 for zeroseq in listaa:
     zeroseq = ((pad)*'0')+zeroseq+((pad)*'0')
@@ -148,9 +149,9 @@ with open("PSSM_prediction.txt", "w") as fn:
     for i in range(len(filelines)):
         
         if filelines[i].startswith (">"):
-            fn.write(filelines[0])
+            fn.write(filelines[i])
             fn.write("\n")
-            fn.write(filelines[1])
+            fn.write(filelines[i+1])
             fn.write("\npredicted topology:\n")
             outputPred = outputPred +len(filelines[i+1])
             x ="".join(Top_output[init:outputPred])
