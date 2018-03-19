@@ -36,8 +36,8 @@ Used "testingdata_pred.txt" as my test file for predictor.
     - optimized version (PSSM_model.sav)  
     
 2. PSSM_predictor  
-    - predicts topology on 50 proteins using model  
-    - "PSSM_prediction.txt" is the output for the predicted topology of 50 proteins  
+    - predicts topology on 50 proteins using model, currently split as 80% train and 20% test on original dataset (membrane-beta_4state.3line1.txt)  
+    - "PSSM_prediction.txt" is the output for the predicted topology of 50 proteins, currently 80% train and 20% test results   
     - "PSSM_prediction_scores.txt" is all the data of my scores  
     
-Trained my model with the PSSMs found in folder "PSSM" and tested on the PSSMs found in folder "PSSM_50test", both located in "PSI-BLAST".
+Trained my model with the PSSMs found in folder "PSSM" and tested on the PSSMs found in folder "PSSM_50test", both located in "PSI-BLAST". But my predictor is currently set-up to train 80% of my dataset and test 20% of it.
